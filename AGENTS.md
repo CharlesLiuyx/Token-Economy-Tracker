@@ -3,8 +3,8 @@
 每日自动更新的 AI 货币化仪表盘：Frontier Lab ARR 估算、Token 用量（OpenRouter / Vercel
 Gateway / SDK 下载）、GPU 租赁价格、AI 数据中心建设。产物为纯静态单文件 HTML。
 
-**当前状态：M0–M4 已完成（六源 + ARR 拟合 + 全部面板，页面离线可开）。
-M5 待办：建 GitHub 仓库 + 开 Pages（workflow 已备好 .github/workflows/daily.yml）。
+**当前状态：M0–M5 全部完成。线上：<https://charlesliuyx.github.io/Token-Economy-Tracker/>
+（GitHub Actions 每日 00:30 UTC 自动更新；M5 验收=连续 3 天成功，观察至 2026-07-15）。
 动手前先读 [docs/PLAN.md](docs/PLAN.md)，进度看 [docs/worklog.md](docs/worklog.md)。**
 
 ## 架构一句话
