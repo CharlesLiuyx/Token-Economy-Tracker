@@ -1,0 +1,90 @@
+{
+ "weekly_chart": [
+  {
+   "x": "2026-06-29",
+   "ys": {
+    "deepseek/deepseek-v4-flash-20260423": 5339678745733,
+    "xiaomi/mimo-v2.5-20260422": 4381056827095,
+    "minimax/minimax-m3-20260531": 4112339614972,
+    "tencent/hy3-preview-20260421": 3127455657682,
+    "z-ai/glm-5.2-20260616": 2578159576426,
+    "deepseek/deepseek-v4-pro-20260423": 2360347086471,
+    "anthropic/claude-4.7-opus-20260416": 2190998016200,
+    "anthropic/claude-4.8-opus-20260528": 2091800208986,
+    "stepfun/step-3.7-flash-20260528": 1554123864396,
+    "Others": 18983778666077
+   }
+  },
+  {
+   "x": "2026-07-06",
+   "ys": {
+    "tencent/hy3-20260706:free": 5392207190169,
+    "xiaomi/mimo-v2.5-20260422": 5176656763195,
+    "deepseek/deepseek-v4-flash-20260423": 4802134986852,
+    "minimax/minimax-m3-20260531": 3932258224444,
+    "z-ai/glm-5.2-20260616": 2962753045016,
+    "deepseek/deepseek-v4-pro-20260423": 2644610224434,
+    "anthropic/claude-4.7-opus-20260416": 2136581791789,
+    "anthropic/claude-4.8-opus-20260528": 1890793617322,
+    "nvidia/nemotron-3-ultra-550b-a55b-20260604:free": 1716028638746,
+    "Others": 17355590639181
+   }
+  },
+  "… 共 52 周"
+ ],
+ "models_week": [
+  {
+   "date": "2026-07-11",
+   "permaslug": "tencent/hy3-20260706",
+   "variant": "free",
+   "prompt_tokens": 4887396552334,
+   "completion_tokens": 109889452257,
+   "reasoning_tokens": 0,
+   "requests": 76044704,
+   "change": null
+  },
+  {
+   "date": "2026-07-11",
+   "permaslug": "x-ai/grok-4.5-20260708",
+   "variant": "standard",
+   "prompt_tokens": 127064205719,
+   "completion_tokens": 3313061614,
+   "reasoning_tokens": 0,
+   "requests": 3152611,
+   "change": null
+  },
+  {
+   "date": "2026-07-11",
+   "permaslug": "openai/gpt-5.6-sol-20260709",
+   "variant": "standard",
+   "prompt_tokens": 99363756106,
+   "completion_tokens": 1598253438,
+   "reasoning_tokens": 0,
+   "requests": 2207634,
+   "change": null
+  },
+  "… 共 432 行"
+ ],
+ "top_apps": {
+  "day": [
+   {
+    "title": "Hermes Agent",
+    "total_tokens": 935694322154,
+    "rank": 2
+   },
+   {
+    "title": "Kilo Code",
+    "total_tokens": 246784483991,
+    "rank": 4
+   },
+   {
+    "title": "Claude Code",
+    "total_tokens": 158593165820,
+    "rank": 6
+   }
+  ],
+  "week": [
+   "… 同构"
+  ]
+ }
+}

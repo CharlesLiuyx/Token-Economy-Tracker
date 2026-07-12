@@ -1,0 +1,82 @@
+# 每日数据更新：make update && make build → commit → Pages（PLAN §8）
+name: daily-update
+
+on:
+  schedule:
+    - cron: "30 0 * * *"   # 00:30 UTC，北京 08:30 前出数
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install -q -r requirements.txt
+
+      - name: Fetch all sources (single-source failure tolerated)
+        run: make update
+
+      - name: Run tests
+        run: make test
+
+      - name: Build site
+        run: make build
+
+      - name: Commit data + site
+        run: |
+          git config user.name "token-tracker-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data site/index.html
+          git diff --cached --quiet || git commit -m "data: $(date -u +%F)"
+          git push
+
+      # 连续失败告警：workflow 失败 ≥2 天时开/更新 Issue（runbook 有手动救场步骤）
+      - name: Alert on repeated failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "daily-update 连续失败，需要人工介入";
+            const {data: issues} = await github.rest.issues.listForRepo({
+              ...context.repo, state: "open", labels: "pipeline-failure"});
+            const body = `Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}\n时间: ${new Date().toISOString()}\n\n排查步骤见 docs/runbook.md`;
+            if (issues.length) {
+              await github.rest.issues.createComment({...context.repo, issue_number: issues[0].number, body});
+            } else {
+              await github.rest.issues.create({...context.repo, title, body, labels: ["pipeline-failure"]});
+            }
+
+  deploy-pages:
+    needs: update
+    if: success()
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # 取 update job 刚推送的最新提交
+      - run: git pull --ff-only
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - uses: actions/deploy-pages@v4

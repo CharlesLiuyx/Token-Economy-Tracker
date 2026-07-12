@@ -1,0 +1,3 @@
+{% from '_macros.j2' import chart_panel with context %}
+{{ chart_panel('or_tracked', '重点模型 Token · 滚动 7 天 (B) — OpenRouter', 'orange', 'openrouter',
+               note='口径：OpenRouter 平台切片（不含各 lab 直连流量）；序列由每日快照累积，自 2026-07-12 起。') }}

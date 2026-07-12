@@ -1,0 +1,26 @@
+{# 面板外壳宏：彩色标题条（假窗口控件）+ 新鲜度徽章 + 奶油底身体 #}
+
+{% macro badge(source) -%}
+{%- set st = source_status.get(source, {}) -%}
+<span class="badge badge-{{ st.freshness or 'missing' }}"
+      title="{{ (st.error or ('数据截至 ' ~ (st.snapshot_date or '?'))) | e }}">{{ st.snapshot_date or '—' }}</span>
+{%- endmacro %}
+
+{% macro panel_head(title, tone, source) -%}
+<header class="panel-head tone-{{ tone }}">
+  <span class="dots"><i></i><i></i><i></i></span>
+  <h3>{{ title }}</h3>
+  {{ badge(source) }}
+  <span class="fake-x">×</span>
+</header>
+{%- endmacro %}
+
+{% macro chart_panel(id, title, tone, source, note='', tall=False) -%}
+<section class="panel">
+  {{ panel_head(title, tone, source) }}
+  <div class="panel-body">
+    <div class="chart-box{{ ' tall' if tall else '' }}"><canvas id="chart-{{ id }}"></canvas></div>
+    {% if note %}<p class="note">{{ note }}</p>{% endif %}
+  </div>
+</section>
+{%- endmacro %}

@@ -1,0 +1,15 @@
+{% from '_macros.j2' import panel_head with context %}
+<section class="panel">
+  {{ panel_head('建设动态 — 相关新闻流', 'green', 'news') }}
+  <div class="panel-body">
+    <ul class="news-list">
+      {% for n in news %}
+      <li class="{{ 'highlight' if n.highlight else '' }}">
+        <span class="news-date">{{ n.date }}</span>
+        <a class="news-title" href="{{ n.link | e }}" target="_blank" rel="noopener">{{ n.title | e }}</a>
+        <span class="news-source">{{ n.source | e }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

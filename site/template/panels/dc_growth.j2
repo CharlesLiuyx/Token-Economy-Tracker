@@ -1,0 +1,3 @@
+{% from '_macros.j2' import chart_panel with context %}
+{{ chart_panel('dc_growth', '行业累计增长（样本内站点 · 按建设进度）', 'pink', 'epoch_datacenters',
+               note='Source: Epoch AI Frontier Data Centers (CC-BY)。柱=累计功率 GW，线=累计 H100-eq（右轴）；截至构建日。与「当前投运」卡片的差异来自源头两张表（timelines vs sites）口径独立。', tall=True) }}

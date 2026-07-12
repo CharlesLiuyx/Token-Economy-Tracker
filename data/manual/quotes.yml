@@ -1,0 +1,12 @@
+# 专家观点 / Podcast 摘录（面板 2h，人工维护，AI 辅助整理）。
+# 收录标准：先手工少量高质量，形成手感后再定标准（PLAN §11 开放问题）。
+# 每条：speaker / role / date / quote / source_url；quote 保持原文，不转述。
+#
+# quotes:
+#   - speaker: Example Person
+#     role: CEO, Example Lab
+#     date: 2026-01-01
+#     quote: "Original quote text."
+#     source_url: https://example.com/podcast
+
+quotes: []

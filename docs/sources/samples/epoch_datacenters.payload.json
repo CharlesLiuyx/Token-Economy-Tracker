@@ -1,0 +1,66 @@
+{
+ "sites": [
+  {
+   "name": "Colossus 2",
+   "h100_equivalents": 1389590.7023749368,
+   "power_mw": 946.0,
+   "capital_cost_busd": 35.836372,
+   "owner": "SpaceXAI",
+   "users": [
+    "Anthropic",
+    " Cursor",
+    " SpaceXAI"
+   ],
+   "chip_types": [
+    "B200",
+    "B300"
+   ],
+   "country": "United States"
+  },
+  {
+   "name": "Meta Prometheus",
+   "h100_equivalents": 763011.622031329,
+   "power_mw": 631.0,
+   "capital_cost_busd": 23.903541999999998,
+   "owner": "Meta",
+   "users": [
+    "Meta"
+   ],
+   "chip_types": [
+    "B200"
+   ],
+   "country": "United States"
+  },
+  "… 共 72 条"
+ ],
+ "timelines": [
+  {
+   "site": "Colossus 2",
+   "date": "2025-02-28",
+   "it_power_mw": 0.0,
+   "power_mw": 0.0,
+   "h100_equivalents": 0.0
+  },
+  {
+   "site": "Colossus 2",
+   "date": "2025-09-08",
+   "it_power_mw": 0.0,
+   "power_mw": 0.0,
+   "h100_equivalents": 0.0
+  },
+  {
+   "site": "Colossus 2",
+   "date": "2025-10-19",
+   "it_power_mw": 239.0,
+   "power_mw": 323.0,
+   "h100_equivalents": 277918.1404749874
+  },
+  "… 共 411 条"
+ ],
+ "aggregates": {
+  "site_count": 72,
+  "total_power_mw": 11156.8,
+  "total_h100_equivalents": 10767511,
+  "total_capital_cost_busd": 422.64
+ }
+}

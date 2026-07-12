@@ -1,0 +1,7483 @@
+{
+ "schema_version": 1,
+ "source": "vercel_gateway",
+ "snapshot_date": "2026-07-12",
+ "fetched_at": "2026-07-12T09:04:29+00:00",
+ "source_meta": {
+  "kind": "scrape"
+ },
+ "payload": {
+  "series": [
+   {
+    "day": "2026-05-13",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Sonnet 4.6",
+      15.7033
+     ],
+     [
+      "Claude Opus 4.6",
+      14.0367
+     ],
+     [
+      "GPT 5.5",
+      5.2164
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.6234
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.0959
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-13",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      14.4182
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      9.5528
+     ],
+     [
+      "text-embedding-3-small",
+      7.6235
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.5277
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.8659
+     ],
+     [
+      "DeepSeek V4 Flash",
+      3.3121
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.0709
+     ],
+     [
+      "text-embedding-3-large",
+      2.0479
+     ],
+     [
+      "GPT-4o mini",
+      1.6936
+     ],
+     [
+      "DeepSeek V4 Pro",
+      0.9635
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-13",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      19.3308
+     ],
+     [
+      "DeepSeek V4 Flash",
+      12.2072
+     ],
+     [
+      "Claude Sonnet 4.6",
+      11.5518
+     ],
+     [
+      "DeepSeek V4 Pro",
+      4.5112
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.0823
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.1513
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-14",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Sonnet 4.6",
+      15.3426
+     ],
+     [
+      "Claude Opus 4.6",
+      14.4974
+     ],
+     [
+      "GPT 5.5",
+      5.0058
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5841
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.9632
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-14",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      17.9022
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      9.1752
+     ],
+     [
+      "text-embedding-3-small",
+      6.5793
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      5.6507
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.5517
+     ],
+     [
+      "DeepSeek V4 Flash",
+      3.3365
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.9859
+     ],
+     [
+      "text-embedding-3-large",
+      1.9271
+     ],
+     [
+      "GPT-4o mini",
+      1.6857
+     ],
+     [
+      "DeepSeek V4 Pro",
+      0.9812
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-14",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      21.1758
+     ],
+     [
+      "DeepSeek V4 Flash",
+      12.9652
+     ],
+     [
+      "Claude Sonnet 4.6",
+      10.8023
+     ],
+     [
+      "DeepSeek V4 Pro",
+      4.7448
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.9234
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      0.9545
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-15",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.6",
+      15.6812
+     ],
+     [
+      "Claude Sonnet 4.6",
+      15.2045
+     ],
+     [
+      "GPT 5.5",
+      4.4866
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.2844
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.675
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-15",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      24.6679
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      9.181
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.9173
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      3.7664
+     ],
+     [
+      "DeepSeek V4 Flash",
+      3.653
+     ],
+     [
+      "text-embedding-3-small",
+      2.9727
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5762
+     ],
+     [
+      "text-embedding-3-large",
+      2.0186
+     ],
+     [
+      "GPT-4o mini",
+      1.7627
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.0939
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-15",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      21.9175
+     ],
+     [
+      "DeepSeek V4 Flash",
+      13.7864
+     ],
+     [
+      "Claude Sonnet 4.6",
+      11.2714
+     ],
+     [
+      "DeepSeek V4 Pro",
+      5.061
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5886
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      0.8483
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-16",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Sonnet 4.6",
+      16.061
+     ],
+     [
+      "Claude Opus 4.6",
+      12.1344
+     ],
+     [
+      "GPT 5.5",
+      3.0329
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.7933
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.1904
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-16",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      16.3939
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      10.9311
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      7.3675
+     ],
+     [
+      "text-embedding-3-small",
+      5.0874
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.1151
+     ],
+     [
+      "DeepSeek V4 Flash",
+      3.9301
+     ],
+     [
+      "text-embedding-3-large",
+      3.0838
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.0607
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.5461
+     ],
+     [
+      "GPT-4o mini",
+      1.3227
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-16",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      20.6431
+     ],
+     [
+      "DeepSeek V4 Flash",
+      14.3384
+     ],
+     [
+      "Claude Sonnet 4.6",
+      10.7009
+     ],
+     [
+      "DeepSeek V4 Pro",
+      6.6657
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      2.3084
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.2279
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-17",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Sonnet 4.6",
+      14.3392
+     ],
+     [
+      "Claude Opus 4.6",
+      10.4092
+     ],
+     [
+      "GPT 5.5",
+      6.1311
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.5683
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.1137
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-17",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      17.6461
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      8.5697
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      7.8134
+     ],
+     [
+      "DeepSeek V4 Flash",
+      3.8873
+     ],
+     [
+      "text-embedding-3-small",
+      3.8395
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.6871
+     ],
+     [
+      "text-embedding-3-large",
+      2.676
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.8649
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.4962
+     ],
+     [
+      "GPT-4o mini",
+      1.2301
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-17",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      20.2906
+     ],
+     [
+      "DeepSeek V4 Flash",
+      14.0413
+     ],
+     [
+      "Claude Sonnet 4.6",
+      10.1871
+     ],
+     [
+      "DeepSeek V4 Pro",
+      6.3843
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.2223
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.8965
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-18",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.6",
+      14.7137
+     ],
+     [
+      "Claude Sonnet 4.6",
+      14.4791
+     ],
+     [
+      "GPT 5.5",
+      5.9781
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5781
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.2737
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-18",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      16.6601
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      9.702
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      8.783
+     ],
+     [
+      "DeepSeek V4 Flash",
+      4.2747
+     ],
+     [
+      "text-embedding-3-small",
+      4.0876
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.8301
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.2702
+     ],
+     [
+      "text-embedding-3-large",
+      1.9923
+     ],
+     [
+      "GPT-4o mini",
+      1.583
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.1342
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-18",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      21.24
+     ],
+     [
+      "DeepSeek V4 Flash",
+      15.0652
+     ],
+     [
+      "Claude Sonnet 4.6",
+      9.7603
+     ],
+     [
+      "DeepSeek V4 Pro",
+      4.696
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.7863
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.7673
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-19",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Sonnet 4.6",
+      15.7122
+     ],
+     [
+      "Claude Opus 4.6",
+      14.2594
+     ],
+     [
+      "GPT 5.5",
+      6.0722
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5888
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.0605
+     ],
+     [
+      "Gemini 3.5 Flash",
+      0.1663
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-19",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      15.5795
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      9.598
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      7.6865
+     ],
+     [
+      "DeepSeek V4 Flash",
+      4.262
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.7666
+     ],
+     [
+      "text-embedding-3-small",
+      3.1085
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.4588
+     ],
+     [
+      "text-embedding-3-large",
+      2.0231
+     ],
+     [
+      "GPT-4o mini",
+      1.6478
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.2433
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-19",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      19.9297
+     ],
+     [
+      "DeepSeek V4 Flash",
+      14.8107
+     ],
+     [
+      "Claude Sonnet 4.6",
+      10.3901
+     ],
+     [
+      "DeepSeek V4 Pro",
+      4.443
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.6927
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.6611
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-20",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.6",
+      14.7045
+     ],
+     [
+      "Claude Sonnet 4.6",
+      14.5378
+     ],
+     [
+      "GPT 5.5",
+      5.3715
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.6554
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.1122
+     ],
+     [
+      "Gemini 3.5 Flash",
+      0.8361
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-20",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      15.203
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      10.1521
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.914
+     ],
+     [
+      "DeepSeek V4 Flash",
+      4.8534
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.0849
+     ],
+     [
+      "text-embedding-3-small",
+      2.7556
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.7356
+     ],
+     [
+      "text-embedding-3-large",
+      2.2043
+     ],
+     [
+      "GPT-4o mini",
+      1.939
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.3512
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-20",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      20.0971
+     ],
+     [
+      "DeepSeek V4 Flash",
+      15.9474
+     ],
+     [
+      "Claude Sonnet 4.6",
+      10.1932
+     ],
+     [
+      "DeepSeek V4 Pro",
+      4.4786
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.9467
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.6847
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-21",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.6",
+      16.8161
+     ],
+     [
+      "Claude Sonnet 4.6",
+      14.4225
+     ],
+     [
+      "GPT 5.5",
+      6.1263
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.8207
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.8902
+     ],
+     [
+      "Gemini 3.5 Flash",
+      0.7875
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-21",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      14.5509
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      10.2615
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.9718
+     ],
+     [
+      "DeepSeek V4 Flash",
+      5.4508
+     ],
+     [
+      "text-embedding-3-small",
+      4.7506
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.1952
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.0443
+     ],
+     [
+      "text-embedding-3-large",
+      2.122
+     ],
+     [
+      "GPT-4o mini",
+      1.732
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.5461
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-21",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      20.723
+     ],
+     [
+      "DeepSeek V4 Flash",
+      16.4708
+     ],
+     [
+      "Claude Sonnet 4.6",
+      10.0058
+     ],
+     [
+      "DeepSeek V4 Pro",
+      5.446
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.1295
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.1335
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-22",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.6",
+      16.0883
+     ],
+     [
+      "Claude Sonnet 4.6",
+      13.9655
+     ],
+     [
+      "GPT 5.5",
+      5.2748
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.7028
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.8934
+     ],
+     [
+      "Gemini 3.5 Flash",
+      0.8792
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-22",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      12.455
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      9.7788
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.7794
+     ],
+     [
+      "text-embedding-3-small",
+      5.1346
+     ],
+     [
+      "DeepSeek V4 Flash",
+      4.3941
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.9459
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.1658
+     ],
+     [
+      "text-embedding-3-large",
+      2.2685
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.8695
+     ],
+     [
+      "GPT-4o mini",
+      1.5503
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-22",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      19.0249
+     ],
+     [
+      "DeepSeek V4 Flash",
+      15.0241
+     ],
+     [
+      "Claude Sonnet 4.6",
+      9.6062
+     ],
+     [
+      "DeepSeek V4 Pro",
+      8.2847
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.9702
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.0167
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-23",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Sonnet 4.6",
+      14.2271
+     ],
+     [
+      "Claude Opus 4.6",
+      12.7552
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.9977
+     ],
+     [
+      "GPT 5.5",
+      3.3496
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5883
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.3273
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-23",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      12.7207
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      7.9468
+     ],
+     [
+      "text-embedding-3-small",
+      6.7733
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      6.7089
+     ],
+     [
+      "DeepSeek V4 Flash",
+      3.6816
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.4746
+     ],
+     [
+      "text-embedding-3-large",
+      3.1498
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.4322
+     ],
+     [
+      "GPT-4o mini",
+      2.3841
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.3401
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-23",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      17.5005
+     ],
+     [
+      "DeepSeek V4 Flash",
+      13.5625
+     ],
+     [
+      "DeepSeek V4 Pro",
+      10.3699
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.7738
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.514
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.5129
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-24",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Sonnet 4.6",
+      13.7893
+     ],
+     [
+      "Claude Opus 4.6",
+      11.7049
+     ],
+     [
+      "Gemini 3.5 Flash",
+      4.1772
+     ],
+     [
+      "GPT 5.5",
+      3.4763
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.7101
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.4975
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-24",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      15.1283
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      6.7245
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      5.1577
+     ],
+     [
+      "text-embedding-3-small",
+      3.7444
+     ],
+     [
+      "DeepSeek V4 Flash",
+      3.6275
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.5148
+     ],
+     [
+      "text-embedding-3-large",
+      3.0872
+     ],
+     [
+      "GPT-4o mini",
+      2.7228
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.4099
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.265
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-24",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      18.5799
+     ],
+     [
+      "DeepSeek V4 Flash",
+      12.0313
+     ],
+     [
+      "DeepSeek V4 Pro",
+      10.2089
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.8237
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5342
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.239
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-25",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.6",
+      14.3979
+     ],
+     [
+      "Claude Sonnet 4.6",
+      13.3373
+     ],
+     [
+      "Gemini 3.5 Flash",
+      6.1633
+     ],
+     [
+      "GPT 5.5",
+      3.3358
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.2514
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.0142
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-25",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      14.4064
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      8.0386
+     ],
+     [
+      "DeepSeek V4 Flash",
+      5.4604
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      4.7341
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.4983
+     ],
+     [
+      "text-embedding-3-small",
+      3.4225
+     ],
+     [
+      "GPT-4o mini",
+      2.5512
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.477
+     ],
+     [
+      "text-embedding-3-large",
+      2.3517
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.2639
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-25",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      17.6947
+     ],
+     [
+      "DeepSeek V4 Flash",
+      12.853
+     ],
+     [
+      "DeepSeek V4 Pro",
+      9.793
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.7334
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.4203
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.2218
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-26",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.6",
+      15.28
+     ],
+     [
+      "Claude Sonnet 4.6",
+      13.0666
+     ],
+     [
+      "Gemini 3.5 Flash",
+      5.1017
+     ],
+     [
+      "GPT 5.5",
+      5.0626
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.9049
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.3566
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-26",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      12.5951
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      7.7336
+     ],
+     [
+      "DeepSeek V4 Flash",
+      4.7592
+     ],
+     [
+      "text-embedding-3-small",
+      3.9309
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      3.5536
+     ],
+     [
+      "Claude Sonnet 4.6",
+      2.9763
+     ],
+     [
+      "GPT-4o mini",
+      2.6444
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.9409
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.9103
+     ],
+     [
+      "text-embedding-3-large",
+      1.6452
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-26",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      19.4807
+     ],
+     [
+      "DeepSeek V4 Flash",
+      12.4714
+     ],
+     [
+      "Claude Sonnet 4.6",
+      9.365
+     ],
+     [
+      "DeepSeek V4 Pro",
+      8.5824
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.6711
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.0703
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-27",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.6",
+      14.6911
+     ],
+     [
+      "Claude Sonnet 4.6",
+      12.6553
+     ],
+     [
+      "Gemini 3.5 Flash",
+      10.3254
+     ],
+     [
+      "GPT 5.5",
+      5.0258
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.0508
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.0331
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-27",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      14.8631
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      8.7772
+     ],
+     [
+      "text-embedding-3-small",
+      8.0394
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.5729
+     ],
+     [
+      "DeepSeek V4 Flash",
+      5.4274
+     ],
+     [
+      "GPT-4o mini",
+      3.8287
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.5786
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5003
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.1814
+     ],
+     [
+      "text-embedding-3-large",
+      2.0338
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-27",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      18.3142
+     ],
+     [
+      "DeepSeek V4 Flash",
+      12.8081
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.5209
+     ],
+     [
+      "DeepSeek V4 Pro",
+      8.0871
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5769
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.6658
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-28",
+    "metric": "cost",
+    "shares": [
+     [
+      "Gemini 3.5 Flash",
+      15.5191
+     ],
+     [
+      "Claude Opus 4.6",
+      15.2218
+     ],
+     [
+      "Claude Sonnet 4.6",
+      12.3996
+     ],
+     [
+      "GPT 5.5",
+      5.9561
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.7416
+     ],
+     [
+      "Claude Opus 4.8",
+      2.6097
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.1625
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-28",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      13.2342
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      8.4676
+     ],
+     [
+      "DeepSeek V4 Flash",
+      4.7115
+     ],
+     [
+      "text-embedding-3-small",
+      3.9178
+     ],
+     [
+      "GPT-4o mini",
+      3.7872
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      3.7366
+     ],
+     [
+      "Claude Sonnet 4.6",
+      2.8745
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.1762
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.0669
+     ],
+     [
+      "text-embedding-3-large",
+      2.0368
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-28",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      17.9397
+     ],
+     [
+      "DeepSeek V4 Flash",
+      13.062
+     ],
+     [
+      "DeepSeek V4 Pro",
+      10.4025
+     ],
+     [
+      "Claude Sonnet 4.6",
+      6.935
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5341
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.8295
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-29",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      22.6084
+     ],
+     [
+      "Claude Sonnet 4.6",
+      13.6048
+     ],
+     [
+      "Claude Opus 4.6",
+      13.0838
+     ],
+     [
+      "GPT 5.5",
+      6.7733
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.6842
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.2951
+     ],
+     [
+      "Gemini 3.5 Flash",
+      2.1033
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-29",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      15.0243
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      9.2233
+     ],
+     [
+      "DeepSeek V4 Flash",
+      5.5575
+     ],
+     [
+      "text-embedding-3-small",
+      5.488
+     ],
+     [
+      "GPT-4o mini",
+      4.0726
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      3.7395
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.2876
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.7597
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.4013
+     ],
+     [
+      "text-embedding-3-large",
+      2.3794
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-29",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      20.8299
+     ],
+     [
+      "DeepSeek V4 Flash",
+      14.449
+     ],
+     [
+      "DeepSeek V4 Pro",
+      11.7947
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.6377
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.6095
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.9404
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-30",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      40.6336
+     ],
+     [
+      "Claude Sonnet 4.6",
+      12.5203
+     ],
+     [
+      "Claude Opus 4.6",
+      8.6603
+     ],
+     [
+      "GPT 5.5",
+      3.6981
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.4053
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.822
+     ],
+     [
+      "Gemini 3.5 Flash",
+      1.0084
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-30",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      16.425
+     ],
+     [
+      "text-embedding-3-small",
+      8.3575
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.0984
+     ],
+     [
+      "DeepSeek V4 Flash",
+      5.0531
+     ],
+     [
+      "text-embedding-3-large",
+      4.281
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      4.0155
+     ],
+     [
+      "GPT-4o mini",
+      2.9351
+     ],
+     [
+      "Claude Sonnet 4.6",
+      2.7188
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.3985
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.0677
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-30",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      22.3531
+     ],
+     [
+      "DeepSeek V4 Flash",
+      14.2142
+     ],
+     [
+      "DeepSeek V4 Pro",
+      11.5047
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.0012
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.1938
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.4999
+     ],
+     [
+      "Step 3.7 Flash",
+      0.0352
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-31",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      28.627
+     ],
+     [
+      "Claude Sonnet 4.6",
+      14.3317
+     ],
+     [
+      "Claude Opus 4.6",
+      7.972
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      4.4607
+     ],
+     [
+      "GPT 5.5",
+      4.3956
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.2306
+     ],
+     [
+      "Gemini 3.5 Flash",
+      1.5484
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-31",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      20.0873
+     ],
+     [
+      "DeepSeek V4 Flash",
+      7.0494
+     ],
+     [
+      "text-embedding-3-large",
+      6.4417
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.6552
+     ],
+     [
+      "text-embedding-3-small",
+      5.3436
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      4.9571
+     ],
+     [
+      "Claude Sonnet 4.6",
+      2.9305
+     ],
+     [
+      "GPT-4o mini",
+      2.8732
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.3418
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.9081
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-05-31",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      24.2221
+     ],
+     [
+      "DeepSeek V4 Flash",
+      14.3124
+     ],
+     [
+      "DeepSeek V4 Pro",
+      11.2269
+     ],
+     [
+      "Claude Sonnet 4.6",
+      6.8176
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.1062
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.5118
+     ],
+     [
+      "Step 3.7 Flash",
+      0.0404
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-01",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      24.4767
+     ],
+     [
+      "Claude Sonnet 4.6",
+      13.1561
+     ],
+     [
+      "Claude Opus 4.6",
+      9.7985
+     ],
+     [
+      "GPT 5.5",
+      6.4983
+     ],
+     [
+      "Gemini 3.5 Flash",
+      4.7537
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      4.2011
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5377
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-01",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      19.4718
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      8.2985
+     ],
+     [
+      "DeepSeek V4 Flash",
+      6.3945
+     ],
+     [
+      "text-embedding-3-small",
+      4.7119
+     ],
+     [
+      "text-embedding-3-large",
+      4.5938
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      4.2958
+     ],
+     [
+      "GPT-4o mini",
+      3.4205
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.0309
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.3262
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.8205
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-01",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      27.1739
+     ],
+     [
+      "DeepSeek V4 Flash",
+      10.3493
+     ],
+     [
+      "DeepSeek V4 Pro",
+      7.7088
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.2667
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.7427
+     ],
+     [
+      "MiniMax M3",
+      2.2288
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.9724
+     ],
+     [
+      "Step 3.7 Flash",
+      0.0131
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-02",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      25.4321
+     ],
+     [
+      "Claude Sonnet 4.6",
+      13.71
+     ],
+     [
+      "Claude Opus 4.6",
+      11.6346
+     ],
+     [
+      "GPT 5.5",
+      5.8218
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.9709
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.2891
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5526
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-02",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      11.9734
+     ],
+     [
+      "DeepSeek V4 Flash",
+      5.883
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.017
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      3.6849
+     ],
+     [
+      "text-embedding-3-small",
+      3.6133
+     ],
+     [
+      "GPT-4o mini",
+      2.8991
+     ],
+     [
+      "Claude Sonnet 4.6",
+      2.1437
+     ],
+     [
+      "text-embedding-3-large",
+      2.1171
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.6858
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.2125
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-02",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      24.3694
+     ],
+     [
+      "DeepSeek V4 Flash",
+      11.45
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.4836
+     ],
+     [
+      "DeepSeek V4 Pro",
+      7.3841
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.9137
+     ],
+     [
+      "MiniMax M3",
+      2.6696
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      2.5855
+     ],
+     [
+      "Step 3.7 Flash",
+      0.2247
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-03",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      26.0865
+     ],
+     [
+      "Claude Sonnet 4.6",
+      14.0916
+     ],
+     [
+      "Claude Opus 4.6",
+      12.5067
+     ],
+     [
+      "GPT 5.5",
+      5.7769
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.8863
+     ],
+     [
+      "Gemini 3.5 Flash",
+      2.97
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.4199
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-03",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      17.9429
+     ],
+     [
+      "DeepSeek V4 Flash",
+      8.1099
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      7.8732
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.5288
+     ],
+     [
+      "GPT-4o mini",
+      4.5197
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.3424
+     ],
+     [
+      "text-embedding-3-small",
+      2.9918
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5317
+     ],
+     [
+      "text-embedding-3-large",
+      2.1438
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.9268
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-03",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      23.945
+     ],
+     [
+      "DeepSeek V4 Flash",
+      10.4485
+     ],
+     [
+      "DeepSeek V4 Pro",
+      8.785
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.2105
+     ],
+     [
+      "MiniMax M3",
+      3.9149
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.7973
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      2.5687
+     ],
+     [
+      "Step 3.7 Flash",
+      0.6302
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-04",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      26.3407
+     ],
+     [
+      "Claude Sonnet 4.6",
+      14.1222
+     ],
+     [
+      "GPT 5.5",
+      11.7256
+     ],
+     [
+      "Claude Opus 4.6",
+      10.3241
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.7774
+     ],
+     [
+      "Gemini 3.5 Flash",
+      2.6667
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.9866
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-04",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      16.6633
+     ],
+     [
+      "DeepSeek V4 Flash",
+      7.5366
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      6.3396
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      5.661
+     ],
+     [
+      "GPT-4o mini",
+      4.2266
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.4886
+     ],
+     [
+      "text-embedding-3-small",
+      3.4114
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.9086
+     ],
+     [
+      "text-embedding-3-large",
+      2.1934
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.9858
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-04",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      21.6794
+     ],
+     [
+      "DeepSeek V4 Flash",
+      11.0366
+     ],
+     [
+      "Claude Sonnet 4.6",
+      9.3076
+     ],
+     [
+      "DeepSeek V4 Pro",
+      9.1147
+     ],
+     [
+      "MiniMax M3",
+      5.5448
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5558
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.6441
+     ],
+     [
+      "Step 3.7 Flash",
+      0.7401
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-05",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      29.0746
+     ],
+     [
+      "Claude Sonnet 4.6",
+      14.464
+     ],
+     [
+      "Claude Opus 4.6",
+      11.8737
+     ],
+     [
+      "Gemini 3.5 Flash",
+      4.7948
+     ],
+     [
+      "GPT 5.5",
+      4.0634
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.9845
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.2154
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-05",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      16.455
+     ],
+     [
+      "DeepSeek V4 Flash",
+      8.2478
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.1536
+     ],
+     [
+      "Claude Sonnet 4.6",
+      5.4606
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.1379
+     ],
+     [
+      "Claude Haiku 4.5",
+      4.3612
+     ],
+     [
+      "GPT-4o mini",
+      4.333
+     ],
+     [
+      "text-embedding-3-small",
+      2.7855
+     ],
+     [
+      "text-embedding-3-large",
+      2.3701
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.0857
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-05",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      20.8381
+     ],
+     [
+      "DeepSeek V4 Flash",
+      11.1176
+     ],
+     [
+      "Claude Sonnet 4.6",
+      9.163
+     ],
+     [
+      "DeepSeek V4 Pro",
+      8.6779
+     ],
+     [
+      "MiniMax M3",
+      4.8851
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.6912
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      2.0646
+     ],
+     [
+      "Step 3.7 Flash",
+      0.9307
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-06",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      25.1155
+     ],
+     [
+      "Claude Sonnet 4.6",
+      18.0035
+     ],
+     [
+      "Claude Opus 4.6",
+      6.8672
+     ],
+     [
+      "Claude Haiku 4.5",
+      4.5857
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.8254
+     ],
+     [
+      "GPT 5.5",
+      3.1278
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.0187
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-06",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      14.4277
+     ],
+     [
+      "DeepSeek V4 Flash",
+      9.6847
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      9.0814
+     ],
+     [
+      "Claude Haiku 4.5",
+      6.4931
+     ],
+     [
+      "Claude Sonnet 4.6",
+      6.0882
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      4.1586
+     ],
+     [
+      "text-embedding-3-small",
+      3.2037
+     ],
+     [
+      "text-embedding-3-large",
+      2.9033
+     ],
+     [
+      "GPT-4o mini",
+      2.6168
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.5216
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-06",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      15.1249
+     ],
+     [
+      "DeepSeek V4 Flash",
+      14.9785
+     ],
+     [
+      "DeepSeek V4 Pro",
+      11.7226
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.2188
+     ],
+     [
+      "MiniMax M3",
+      7.4668
+     ],
+     [
+      "Claude Haiku 4.5",
+      4.6459
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      3.429
+     ],
+     [
+      "Step 3.7 Flash",
+      1.1678
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-07",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      18.7308
+     ],
+     [
+      "Claude Sonnet 4.6",
+      14.2262
+     ],
+     [
+      "GPT 5.5",
+      8.0956
+     ],
+     [
+      "Gemini 3.5 Flash",
+      7.7254
+     ],
+     [
+      "Claude Opus 4.6",
+      5.5112
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.8337
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.7696
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-07",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      17.7635
+     ],
+     [
+      "DeepSeek V4 Flash",
+      9.234
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      7.2539
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.0987
+     ],
+     [
+      "Claude Haiku 4.5",
+      4.9724
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.8655
+     ],
+     [
+      "text-embedding-3-small",
+      3.1296
+     ],
+     [
+      "GPT-4o mini",
+      2.8147
+     ],
+     [
+      "text-embedding-3-large",
+      2.7332
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.5737
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-07",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      20.1642
+     ],
+     [
+      "DeepSeek V4 Flash",
+      14.4181
+     ],
+     [
+      "DeepSeek V4 Pro",
+      11.8624
+     ],
+     [
+      "MiniMax M3",
+      7.1896
+     ],
+     [
+      "Claude Sonnet 4.6",
+      6.0673
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      2.8208
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.1352
+     ],
+     [
+      "Step 3.7 Flash",
+      1.0822
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-08",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      23.0247
+     ],
+     [
+      "Claude Sonnet 4.6",
+      12.8236
+     ],
+     [
+      "Claude Opus 4.6",
+      11.0229
+     ],
+     [
+      "GPT 5.5",
+      7.2248
+     ],
+     [
+      "Gemini 3.5 Flash",
+      5.7003
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.5871
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.6183
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-08",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      17.8139
+     ],
+     [
+      "DeepSeek V4 Flash",
+      8.6538
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.5141
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.8422
+     ],
+     [
+      "text-embedding-3-small",
+      4.5976
+     ],
+     [
+      "Claude Haiku 4.5",
+      4.481
+     ],
+     [
+      "GPT-4o mini",
+      3.3972
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.2586
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.4406
+     ],
+     [
+      "text-embedding-3-large",
+      2.0777
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-08",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      21.6466
+     ],
+     [
+      "DeepSeek V4 Flash",
+      12.2819
+     ],
+     [
+      "DeepSeek V4 Pro",
+      9.8313
+     ],
+     [
+      "MiniMax M3",
+      6.8366
+     ],
+     [
+      "Claude Sonnet 4.6",
+      6.6596
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.6511
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      2.4837
+     ],
+     [
+      "Step 3.7 Flash",
+      0.9282
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-09",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      31.3331
+     ],
+     [
+      "Claude Sonnet 4.6",
+      12.4839
+     ],
+     [
+      "Claude Opus 4.6",
+      9.9095
+     ],
+     [
+      "Gemini 3.5 Flash",
+      4.484
+     ],
+     [
+      "GPT 5.5",
+      3.8949
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.5241
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.0734
+     ],
+     [
+      "Claude Fable 5",
+      2.0029
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-09",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      16.3692
+     ],
+     [
+      "DeepSeek V4 Flash",
+      10.7583
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      5.3704
+     ],
+     [
+      "text-embedding-3-small",
+      5.2811
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.1348
+     ],
+     [
+      "GPT-4o mini",
+      3.804
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.4168
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5317
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.4939
+     ],
+     [
+      "text-embedding-3-large",
+      1.931
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-09",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      19.2202
+     ],
+     [
+      "DeepSeek V4 Flash",
+      13.5509
+     ],
+     [
+      "DeepSeek V4 Pro",
+      9.9647
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.686
+     ],
+     [
+      "MiniMax M3",
+      5.7058
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.8081
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      2.4815
+     ],
+     [
+      "Step 3.7 Flash",
+      0.797
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-10",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      28.3591
+     ],
+     [
+      "Claude Sonnet 4.6",
+      12.4166
+     ],
+     [
+      "Claude Fable 5",
+      9.7402
+     ],
+     [
+      "Claude Opus 4.6",
+      8.8492
+     ],
+     [
+      "Gemini 3.5 Flash",
+      4.3218
+     ],
+     [
+      "GPT 5.5",
+      4.1926
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.1774
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.9909
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-10",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      14.4644
+     ],
+     [
+      "DeepSeek V4 Flash",
+      12.0307
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      5.6511
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.1648
+     ],
+     [
+      "text-embedding-3-small",
+      4.6112
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.088
+     ],
+     [
+      "GPT-4o mini",
+      3.9577
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.3743
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.9796
+     ],
+     [
+      "text-embedding-3-large",
+      1.8475
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-10",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      18.1842
+     ],
+     [
+      "DeepSeek V4 Flash",
+      14.7263
+     ],
+     [
+      "DeepSeek V4 Pro",
+      9.1465
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.2129
+     ],
+     [
+      "MiniMax M3",
+      2.9814
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.9611
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      2.5939
+     ],
+     [
+      "Step 3.7 Flash",
+      0.6667
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-11",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Fable 5",
+      14.8008
+     ],
+     [
+      "Claude Sonnet 4.6",
+      14.067
+     ],
+     [
+      "Claude Opus 4.8",
+      12.2216
+     ],
+     [
+      "Claude Opus 4.6",
+      11.6637
+     ],
+     [
+      "GPT 5.5",
+      6.7789
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.9275
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.6606
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.4725
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-11",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      13.5474
+     ],
+     [
+      "Gemini 3 Flash",
+      12.9548
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.8483
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      6.3956
+     ],
+     [
+      "text-embedding-3-small",
+      5.1362
+     ],
+     [
+      "GPT-4o mini",
+      4.3645
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.8457
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.78
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.3773
+     ],
+     [
+      "text-embedding-3-large",
+      2.1789
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-11",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      17.9757
+     ],
+     [
+      "DeepSeek V4 Flash",
+      16.0769
+     ],
+     [
+      "DeepSeek V4 Pro",
+      9.4328
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.5617
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      3.4065
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.3314
+     ],
+     [
+      "MiniMax M3",
+      2.934
+     ],
+     [
+      "Step 3.7 Flash",
+      0.6712
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-12",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Sonnet 4.6",
+      14.6835
+     ],
+     [
+      "Claude Opus 4.8",
+      14.0011
+     ],
+     [
+      "Claude Opus 4.6",
+      12.5517
+     ],
+     [
+      "Claude Fable 5",
+      12.001
+     ],
+     [
+      "GPT 5.5",
+      7.58
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.8452
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.3395
+     ],
+     [
+      "Gemini 3.5 Flash",
+      1.9721
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-12",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      14.1788
+     ],
+     [
+      "Gemini 3 Flash",
+      10.6323
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      7.6687
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.821
+     ],
+     [
+      "GPT-4o mini",
+      4.141
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.1191
+     ],
+     [
+      "text-embedding-3-small",
+      3.6238
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.9651
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.7869
+     ],
+     [
+      "text-embedding-3-large",
+      2.3498
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-12",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      17.2545
+     ],
+     [
+      "DeepSeek V4 Flash",
+      17.0202
+     ],
+     [
+      "DeepSeek V4 Pro",
+      11.1112
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.565
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      5.8904
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.2323
+     ],
+     [
+      "MiniMax M3",
+      3.1507
+     ],
+     [
+      "Step 3.7 Flash",
+      0.5558
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-13",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      23.1393
+     ],
+     [
+      "Claude Sonnet 4.6",
+      16.6665
+     ],
+     [
+      "GPT 5.5",
+      5.6162
+     ],
+     [
+      "Claude Opus 4.6",
+      5.4589
+     ],
+     [
+      "Gemini 3.5 Flash",
+      5.3728
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      5.0235
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5421
+     ],
+     [
+      "Claude Fable 5",
+      0.6606
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-13",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      16.0056
+     ],
+     [
+      "Gemini 3 Flash",
+      11.4033
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      5.6241
+     ],
+     [
+      "text-embedding-3-small",
+      4.6011
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.0847
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      3.9321
+     ],
+     [
+      "text-embedding-3-large",
+      3.1661
+     ],
+     [
+      "GPT-4o mini",
+      3.0174
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.9727
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.4249
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-13",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      20.8771
+     ],
+     [
+      "DeepSeek V4 Pro",
+      13.4908
+     ],
+     [
+      "Gemini 3 Flash",
+      13.0141
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.4313
+     ],
+     [
+      "MiniMax M3",
+      4.2145
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      2.9911
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.8207
+     ],
+     [
+      "Step 3.7 Flash",
+      0.7315
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-14",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      25.3059
+     ],
+     [
+      "Claude Sonnet 4.6",
+      14.0853
+     ],
+     [
+      "GPT 5.5",
+      11.0271
+     ],
+     [
+      "Gemini 3.5 Flash",
+      4.9934
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      4.7746
+     ],
+     [
+      "Claude Opus 4.6",
+      4.3937
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.0794
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-14",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      16.0093
+     ],
+     [
+      "Gemini 3 Flash",
+      13.3111
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.8383
+     ],
+     [
+      "text-embedding-3-small",
+      4.0821
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      3.7396
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.5066
+     ],
+     [
+      "GPT-4o mini",
+      3.391
+     ],
+     [
+      "text-embedding-3-large",
+      3.0672
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.8257
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.0952
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-14",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      17.6545
+     ],
+     [
+      "Gemini 3 Flash",
+      12.4218
+     ],
+     [
+      "DeepSeek V4 Pro",
+      12.113
+     ],
+     [
+      "Claude Sonnet 4.6",
+      6.3792
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      4.6548
+     ],
+     [
+      "MiniMax M3",
+      3.5026
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.9734
+     ],
+     [
+      "Step 3.7 Flash",
+      0.7156
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-15",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      21.4427
+     ],
+     [
+      "Claude Sonnet 4.6",
+      13.8361
+     ],
+     [
+      "GPT 5.5",
+      10.9481
+     ],
+     [
+      "Claude Opus 4.6",
+      10.565
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      4.1321
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.9229
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.4192
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-15",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      13.9537
+     ],
+     [
+      "DeepSeek V4 Flash",
+      12.479
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.0709
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.6052
+     ],
+     [
+      "GPT-4o mini",
+      4.0268
+     ],
+     [
+      "text-embedding-3-small",
+      4.0014
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.6299
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5382
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.384
+     ],
+     [
+      "text-embedding-3-large",
+      2.1289
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-15",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      17.1411
+     ],
+     [
+      "DeepSeek V4 Flash",
+      17.015
+     ],
+     [
+      "DeepSeek V4 Pro",
+      10.6557
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.3446
+     ],
+     [
+      "MiniMax M3",
+      3.8277
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.7908
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      2.6876
+     ],
+     [
+      "Step 3.7 Flash",
+      0.5233
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-16",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      21.0284
+     ],
+     [
+      "GPT 5.5",
+      15.9071
+     ],
+     [
+      "Claude Sonnet 4.6",
+      14.2761
+     ],
+     [
+      "Claude Opus 4.6",
+      10.1421
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.6477
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.3672
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.3797
+     ],
+     [
+      "GLM 5.2",
+      0.0622
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-16",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      12.4857
+     ],
+     [
+      "Gemini 3 Flash",
+      11.9529
+     ],
+     [
+      "text-embedding-3-small",
+      8.9686
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.133
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      4.3286
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.0543
+     ],
+     [
+      "GPT-4o mini",
+      3.9674
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.7375
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.0485
+     ],
+     [
+      "text-embedding-3-large",
+      2.0217
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-16",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      16.6941
+     ],
+     [
+      "Gemini 3 Flash",
+      14.3873
+     ],
+     [
+      "DeepSeek V4 Pro",
+      8.7316
+     ],
+     [
+      "MiniMax M3",
+      8.5106
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.7809
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.9877
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      2.6214
+     ],
+     [
+      "Step 3.7 Flash",
+      0.4924
+     ],
+     [
+      "GLM 5.2",
+      0.0818
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-17",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      24.1304
+     ],
+     [
+      "Claude Sonnet 4.6",
+      14.3189
+     ],
+     [
+      "GPT 5.5",
+      13.0539
+     ],
+     [
+      "Claude Opus 4.6",
+      10.2379
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.7222
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.6163
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.3036
+     ],
+     [
+      "GLM 5.2",
+      0.4516
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-17",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      12.0141
+     ],
+     [
+      "text-embedding-3-small",
+      11.4674
+     ],
+     [
+      "Gemini 3 Flash",
+      10.9758
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      7.1362
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.6324
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.0535
+     ],
+     [
+      "GPT-4o mini",
+      4.0232
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.4954
+     ],
+     [
+      "text-embedding-3-large",
+      1.9696
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.9409
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-17",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      17.2731
+     ],
+     [
+      "Gemini 3 Flash",
+      14.0997
+     ],
+     [
+      "DeepSeek V4 Pro",
+      8.4966
+     ],
+     [
+      "MiniMax M3",
+      8.3116
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.777
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.9927
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      2.9458
+     ],
+     [
+      "GLM 5.2",
+      0.4938
+     ],
+     [
+      "Step 3.7 Flash",
+      0.3301
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-18",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      25.966
+     ],
+     [
+      "Claude Sonnet 4.6",
+      13.2017
+     ],
+     [
+      "GPT 5.5",
+      12.9195
+     ],
+     [
+      "Claude Opus 4.6",
+      10.0021
+     ],
+     [
+      "Gemini 3.5 Flash",
+      6.9625
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.1845
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.2798
+     ],
+     [
+      "GLM 5.2",
+      0.716
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-18",
+    "metric": "requests",
+    "shares": [
+     [
+      "text-embedding-3-small",
+      12.764
+     ],
+     [
+      "DeepSeek V4 Flash",
+      11.5699
+     ],
+     [
+      "Gemini 3 Flash",
+      10.5252
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.5498
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      4.8721
+     ],
+     [
+      "GPT-4o mini",
+      4.0922
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.8947
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.4216
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.176
+     ],
+     [
+      "text-embedding-3-large",
+      1.9778
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-18",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      15.8441
+     ],
+     [
+      "Gemini 3 Flash",
+      12.2473
+     ],
+     [
+      "DeepSeek V4 Pro",
+      9.3351
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.7093
+     ],
+     [
+      "MiniMax M3",
+      4.9224
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.2082
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      2.407
+     ],
+     [
+      "GLM 5.2",
+      0.9537
+     ],
+     [
+      "Step 3.7 Flash",
+      0.4306
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-19",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      23.8623
+     ],
+     [
+      "GPT 5.5",
+      16.1434
+     ],
+     [
+      "Claude Sonnet 4.6",
+      11.9643
+     ],
+     [
+      "Gemini 3.5 Flash",
+      11.5263
+     ],
+     [
+      "Claude Opus 4.6",
+      7.3167
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.2892
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.3359
+     ],
+     [
+      "GLM 5.2",
+      0.8468
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-19",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      15.6497
+     ],
+     [
+      "Gemini 3 Flash",
+      7.619
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.5696
+     ],
+     [
+      "text-embedding-3-small",
+      5.3517
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      4.4569
+     ],
+     [
+      "GPT-4o mini",
+      4.1246
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.9224
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5046
+     ],
+     [
+      "text-embedding-3-large",
+      2.3688
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.4436
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-19",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      17.2013
+     ],
+     [
+      "Gemini 3 Flash",
+      10.1849
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.9114
+     ],
+     [
+      "DeepSeek V4 Pro",
+      6.137
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.7686
+     ],
+     [
+      "MiniMax M3",
+      3.482
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.7127
+     ],
+     [
+      "GLM 5.2",
+      1.2722
+     ],
+     [
+      "Step 3.7 Flash",
+      0.5278
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-20",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      31.8478
+     ],
+     [
+      "GPT 5.5",
+      15.3412
+     ],
+     [
+      "Gemini 3.5 Flash",
+      9.8521
+     ],
+     [
+      "Claude Sonnet 4.6",
+      9.1034
+     ],
+     [
+      "Claude Opus 4.6",
+      3.6077
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.832
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.8093
+     ],
+     [
+      "GLM 5.2",
+      1.6381
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-20",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      13.8892
+     ],
+     [
+      "Gemini 3 Flash",
+      7.0423
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      5.5933
+     ],
+     [
+      "text-embedding-3-small",
+      4.2034
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.428
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      3.3477
+     ],
+     [
+      "text-embedding-3-large",
+      2.8064
+     ],
+     [
+      "GPT-4o mini",
+      2.6497
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.4284
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.5398
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-20",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      16.7158
+     ],
+     [
+      "Gemini 3 Flash",
+      8.0984
+     ],
+     [
+      "MiniMax M3",
+      6.7945
+     ],
+     [
+      "Claude Sonnet 4.6",
+      6.6006
+     ],
+     [
+      "DeepSeek V4 Pro",
+      6.5623
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.3441
+     ],
+     [
+      "GLM 5.2",
+      2.0156
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.348
+     ],
+     [
+      "Step 3.7 Flash",
+      0.7275
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-21",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      21.2329
+     ],
+     [
+      "GPT 5.5",
+      14.6053
+     ],
+     [
+      "Gemini 3.5 Flash",
+      12.0038
+     ],
+     [
+      "Claude Sonnet 4.6",
+      10.1936
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.7623
+     ],
+     [
+      "Claude Opus 4.6",
+      3.2819
+     ],
+     [
+      "GLM 5.2",
+      2.156
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.9846
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-21",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      12.8706
+     ],
+     [
+      "Gemini 3 Flash",
+      8.5386
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.8288
+     ],
+     [
+      "text-embedding-3-small",
+      4.5801
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      4.3534
+     ],
+     [
+      "GPT-4o mini",
+      3.5078
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.2114
+     ],
+     [
+      "text-embedding-3-large",
+      2.8434
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.1348
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.0612
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-21",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      16.0954
+     ],
+     [
+      "Gemini 3 Flash",
+      9.6767
+     ],
+     [
+      "DeepSeek V4 Pro",
+      8.296
+     ],
+     [
+      "Claude Sonnet 4.6",
+      5.8855
+     ],
+     [
+      "MiniMax M3",
+      5.0346
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.9234
+     ],
+     [
+      "GLM 5.2",
+      2.2785
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.5463
+     ],
+     [
+      "Step 3.7 Flash",
+      0.8562
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-22",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      24.0834
+     ],
+     [
+      "Claude Sonnet 4.6",
+      12.6898
+     ],
+     [
+      "GPT 5.5",
+      11.6306
+     ],
+     [
+      "Claude Opus 4.6",
+      9.5723
+     ],
+     [
+      "Gemini 3.5 Flash",
+      8.1743
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.7868
+     ],
+     [
+      "GLM 5.2",
+      2.1658
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.6941
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-22",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      13.7568
+     ],
+     [
+      "Gemini 3 Flash",
+      10.3401
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      7.2916
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.7964
+     ],
+     [
+      "GPT-4o mini",
+      4.4329
+     ],
+     [
+      "text-embedding-3-small",
+      3.9446
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.6444
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.3389
+     ],
+     [
+      "text-embedding-3-large",
+      2.2088
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.9092
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-22",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      20.4316
+     ],
+     [
+      "Gemini 3 Flash",
+      12.065
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.0448
+     ],
+     [
+      "DeepSeek V4 Pro",
+      6.9194
+     ],
+     [
+      "MiniMax M3",
+      3.021
+     ],
+     [
+      "GLM 5.2",
+      2.5976
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.3755
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.7356
+     ],
+     [
+      "Step 3.7 Flash",
+      0.9387
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-23",
+    "metric": "cost",
+    "shares": [
+     [
+      "GPT 5.5",
+      24.1456
+     ],
+     [
+      "Claude Opus 4.8",
+      19.4852
+     ],
+     [
+      "Claude Sonnet 4.6",
+      12.2636
+     ],
+     [
+      "Claude Opus 4.6",
+      9.1618
+     ],
+     [
+      "Gemini 3.5 Flash",
+      5.6474
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.344
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.9024
+     ],
+     [
+      "GLM 5.2",
+      1.3774
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-23",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      13.0108
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      9.7494
+     ],
+     [
+      "Gemini 3 Flash",
+      9.065
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.3941
+     ],
+     [
+      "GPT-4o mini",
+      4.564
+     ],
+     [
+      "text-embedding-3-small",
+      4.5416
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.0285
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.7699
+     ],
+     [
+      "text-embedding-3-large",
+      2.083
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.4997
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-23",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      20.855
+     ],
+     [
+      "Gemini 3 Flash",
+      10.4128
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.6757
+     ],
+     [
+      "DeepSeek V4 Pro",
+      6.4992
+     ],
+     [
+      "MiniMax M3",
+      3.1121
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.1018
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      1.9057
+     ],
+     [
+      "GLM 5.2",
+      1.7413
+     ],
+     [
+      "Step 3.7 Flash",
+      1.0036
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-24",
+    "metric": "cost",
+    "shares": [
+     [
+      "GPT 5.5",
+      20.3562
+     ],
+     [
+      "Claude Opus 4.8",
+      20.2147
+     ],
+     [
+      "Claude Sonnet 4.6",
+      13.2845
+     ],
+     [
+      "Claude Opus 4.6",
+      8.8411
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.5593
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.3812
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.2177
+     ],
+     [
+      "GLM 5.2",
+      1.5342
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-24",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      19.9465
+     ],
+     [
+      "DeepSeek V4 Flash",
+      9.2633
+     ],
+     [
+      "Gemini 3 Flash",
+      8.6237
+     ],
+     [
+      "text-embedding-3-small",
+      5.3014
+     ],
+     [
+      "GPT-4o mini",
+      4.581
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      3.4668
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.444
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.2552
+     ],
+     [
+      "text-embedding-3-large",
+      1.7878
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.2934
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-24",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      17.522
+     ],
+     [
+      "Gemini 3 Flash",
+      13.4203
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.0015
+     ],
+     [
+      "DeepSeek V4 Pro",
+      6.3877
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      5.8493
+     ],
+     [
+      "MiniMax M3",
+      3.5895
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.4325
+     ],
+     [
+      "GLM 5.2",
+      1.767
+     ],
+     [
+      "Step 3.7 Flash",
+      0.9278
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-25",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      25.238
+     ],
+     [
+      "Claude Sonnet 4.6",
+      15.1659
+     ],
+     [
+      "Claude Opus 4.6",
+      10.7565
+     ],
+     [
+      "GPT 5.5",
+      7.6988
+     ],
+     [
+      "Gemini 3.5 Flash",
+      4.3332
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.8003
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.4877
+     ],
+     [
+      "GLM 5.2",
+      2.226
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-25",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      13.1651
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      9.8464
+     ],
+     [
+      "Gemini 3 Flash",
+      9.1929
+     ],
+     [
+      "text-embedding-3-small",
+      7.2211
+     ],
+     [
+      "GPT-4o mini",
+      5.5655
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      4.2256
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.1395
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.952
+     ],
+     [
+      "text-embedding-3-large",
+      2.2176
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.6144
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-25",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      17.3903
+     ],
+     [
+      "Gemini 3 Flash",
+      14.8281
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.7047
+     ],
+     [
+      "DeepSeek V4 Pro",
+      6.9188
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      5.1908
+     ],
+     [
+      "Claude Haiku 4.5",
+      4.0414
+     ],
+     [
+      "MiniMax M3",
+      3.3951
+     ],
+     [
+      "GLM 5.2",
+      2.3477
+     ],
+     [
+      "Step 3.7 Flash",
+      0.9566
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-26",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      27.281
+     ],
+     [
+      "Claude Sonnet 4.6",
+      16.0174
+     ],
+     [
+      "Claude Opus 4.6",
+      9.528
+     ],
+     [
+      "GPT 5.5",
+      6.4617
+     ],
+     [
+      "Gemini 3.5 Flash",
+      4.7947
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.7466
+     ],
+     [
+      "GLM 5.2",
+      2.4897
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.4593
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-26",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      14.1403
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      9.3527
+     ],
+     [
+      "Gemini 3 Flash",
+      8.7227
+     ],
+     [
+      "GPT-4o mini",
+      5.5289
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.4741
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      4.3965
+     ],
+     [
+      "text-embedding-3-small",
+      4.0695
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.1459
+     ],
+     [
+      "text-embedding-3-large",
+      2.2769
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.921
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-26",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      18.0535
+     ],
+     [
+      "Gemini 3 Flash",
+      14.9141
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.8913
+     ],
+     [
+      "DeepSeek V4 Pro",
+      7.6353
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      4.7044
+     ],
+     [
+      "MiniMax M3",
+      3.6986
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.5476
+     ],
+     [
+      "GLM 5.2",
+      2.4727
+     ],
+     [
+      "Step 3.7 Flash",
+      0.8942
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-27",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      28.4827
+     ],
+     [
+      "Claude Sonnet 4.6",
+      14.7951
+     ],
+     [
+      "GPT 5.5",
+      7.0597
+     ],
+     [
+      "Gemini 3.5 Flash",
+      6.1548
+     ],
+     [
+      "Claude Opus 4.6",
+      5.7106
+     ],
+     [
+      "GLM 5.2",
+      3.2489
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.9781
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.2954
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-27",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      14.7063
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      9.8919
+     ],
+     [
+      "Gemini 3 Flash",
+      7.5589
+     ],
+     [
+      "GPT-4o mini",
+      5.3869
+     ],
+     [
+      "text-embedding-3-small",
+      4.8446
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.1543
+     ],
+     [
+      "text-embedding-3-large",
+      3.1748
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      3.1329
+     ],
+     [
+      "DeepSeek V4 Pro",
+      3.096
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.6247
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-27",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      20.4268
+     ],
+     [
+      "DeepSeek V4 Pro",
+      12.9221
+     ],
+     [
+      "Gemini 3 Flash",
+      11.5462
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.4222
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      5.2999
+     ],
+     [
+      "MiniMax M3",
+      4.3346
+     ],
+     [
+      "GLM 5.2",
+      3.3863
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.9844
+     ],
+     [
+      "Step 3.7 Flash",
+      1.2391
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-28",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      34.328
+     ],
+     [
+      "GPT 5.5",
+      23.2667
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.0008
+     ],
+     [
+      "Gemini 3.5 Flash",
+      4.9699
+     ],
+     [
+      "Claude Opus 4.6",
+      3.7151
+     ],
+     [
+      "GLM 5.2",
+      3.0286
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.1164
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.2475
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-28",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      16.4165
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      8.8109
+     ],
+     [
+      "Gemini 3 Flash",
+      7.4522
+     ],
+     [
+      "text-embedding-3-small",
+      4.4274
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      3.9918
+     ],
+     [
+      "GPT-4o mini",
+      3.9843
+     ],
+     [
+      "text-embedding-3-large",
+      3.5978
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.0853
+     ],
+     [
+      "DeepSeek V4 Pro",
+      3.044
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.9052
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-28",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      17.2156
+     ],
+     [
+      "DeepSeek V4 Pro",
+      12.1737
+     ],
+     [
+      "Gemini 3 Flash",
+      9.8572
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.8584
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      4.4561
+     ],
+     [
+      "MiniMax M3",
+      3.434
+     ],
+     [
+      "GLM 5.2",
+      3.3816
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.8758
+     ],
+     [
+      "Step 3.7 Flash",
+      1.1833
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-29",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      33.9027
+     ],
+     [
+      "Claude Sonnet 4.6",
+      12.4762
+     ],
+     [
+      "Claude Opus 4.6",
+      9.9197
+     ],
+     [
+      "GPT 5.5",
+      6.7158
+     ],
+     [
+      "Gemini 3.5 Flash",
+      4.1718
+     ],
+     [
+      "GLM 5.2",
+      3.4012
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.5392
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.6603
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-29",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      13.4897
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      9.5905
+     ],
+     [
+      "Gemini 3 Flash",
+      9.1451
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      6.2451
+     ],
+     [
+      "GPT-4o mini",
+      5.4688
+     ],
+     [
+      "text-embedding-3-small",
+      4.9383
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.6842
+     ],
+     [
+      "text-embedding-3-large",
+      2.6078
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.5663
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.2403
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-29",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      19.3011
+     ],
+     [
+      "Gemini 3 Flash",
+      13.298
+     ],
+     [
+      "DeepSeek V4 Pro",
+      10.6981
+     ],
+     [
+      "Claude Sonnet 4.6",
+      6.9649
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      4.2767
+     ],
+     [
+      "GLM 5.2",
+      3.3559
+     ],
+     [
+      "MiniMax M3",
+      3.3513
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.2224
+     ],
+     [
+      "Step 3.7 Flash",
+      0.9491
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-30",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      27.2526
+     ],
+     [
+      "Claude Sonnet 4.6",
+      13.7265
+     ],
+     [
+      "Claude Opus 4.6",
+      10.2466
+     ],
+     [
+      "GPT 5.5",
+      7.6318
+     ],
+     [
+      "GLM 5.2",
+      3.8219
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.5792
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.9591
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.1843
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-30",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      12.424
+     ],
+     [
+      "Gemini 3 Flash",
+      9.4296
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      8.7338
+     ],
+     [
+      "text-embedding-3-small",
+      6.9614
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      6.4232
+     ],
+     [
+      "GPT-4o mini",
+      5.3125
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.8182
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.6357
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5555
+     ],
+     [
+      "text-embedding-3-large",
+      2.4458
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-06-30",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      17.5526
+     ],
+     [
+      "Gemini 3 Flash",
+      13.4024
+     ],
+     [
+      "DeepSeek V4 Pro",
+      10.3778
+     ],
+     [
+      "Claude Sonnet 4.6",
+      7.7498
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      4.6623
+     ],
+     [
+      "GLM 5.2",
+      4.3399
+     ],
+     [
+      "MiniMax M3",
+      3.485
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.4915
+     ],
+     [
+      "Step 3.7 Flash",
+      0.8754
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-01",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      33.283
+     ],
+     [
+      "Claude Sonnet 4.6",
+      12.9943
+     ],
+     [
+      "Claude Opus 4.6",
+      9.3553
+     ],
+     [
+      "GPT 5.5",
+      4.8798
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.3455
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.9572
+     ],
+     [
+      "Claude Fable 5",
+      2.3973
+     ],
+     [
+      "GLM 5.2",
+      2.3367
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.1217
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-01",
+    "metric": "requests",
+    "shares": [
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      11.894
+     ],
+     [
+      "DeepSeek V4 Flash",
+      11.7097
+     ],
+     [
+      "Gemini 3 Flash",
+      9.1977
+     ],
+     [
+      "text-embedding-3-small",
+      5.9062
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.6148
+     ],
+     [
+      "GPT-4o mini",
+      5.3418
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.7989
+     ],
+     [
+      "text-embedding-3-large",
+      2.8056
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.6425
+     ],
+     [
+      "DeepSeek V4 Pro",
+      1.8215
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-01",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Gemini 3 Flash",
+      15.3321
+     ],
+     [
+      "DeepSeek V4 Flash",
+      13.0615
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.6901
+     ],
+     [
+      "DeepSeek V4 Pro",
+      7.494
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      7.1243
+     ],
+     [
+      "GLM 5.2",
+      3.9633
+     ],
+     [
+      "MiniMax M3",
+      3.3716
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.8149
+     ],
+     [
+      "Step 3.7 Flash",
+      0.9453
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-02",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Fable 5",
+      20.9803
+     ],
+     [
+      "Claude Opus 4.8",
+      20.8486
+     ],
+     [
+      "Claude Opus 4.6",
+      8.6646
+     ],
+     [
+      "Claude Sonnet 4.6",
+      8.4291
+     ],
+     [
+      "GPT 5.5",
+      6.3057
+     ],
+     [
+      "Gemini 3.5 Flash",
+      2.8277
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.3662
+     ],
+     [
+      "GLM 5.2",
+      2.1595
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.5399
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-02",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      11.5323
+     ],
+     [
+      "Gemini 3 Flash",
+      8.3941
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      7.6511
+     ],
+     [
+      "GPT-4o mini",
+      6.3434
+     ],
+     [
+      "text-embedding-3-small",
+      5.5683
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      4.6067
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.803
+     ],
+     [
+      "text-embedding-3-large",
+      2.9113
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.6327
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.3746
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-02",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      13.9976
+     ],
+     [
+      "Gemini 3 Flash",
+      13.1716
+     ],
+     [
+      "DeepSeek V4 Pro",
+      8.6381
+     ],
+     [
+      "Claude Sonnet 4.6",
+      6.0683
+     ],
+     [
+      "GLM 5.2",
+      4.4569
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      4.0585
+     ],
+     [
+      "MiniMax M3",
+      3.2865
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.3243
+     ],
+     [
+      "Step 3.7 Flash",
+      0.9877
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-03",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      15.1902
+     ],
+     [
+      "Claude Fable 5",
+      11.9789
+     ],
+     [
+      "Claude Sonnet 4.6",
+      10.1848
+     ],
+     [
+      "Claude Opus 4.6",
+      7.4211
+     ],
+     [
+      "GPT 5.5",
+      5.3821
+     ],
+     [
+      "GLM 5.2",
+      5.2479
+     ],
+     [
+      "Gemini 3.5 Flash",
+      4.5711
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.8576
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.2493
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-03",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      14.177
+     ],
+     [
+      "Gemini 3 Flash",
+      8.4634
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      7.4129
+     ],
+     [
+      "GPT-4o mini",
+      5.6456
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      4.9692
+     ],
+     [
+      "text-embedding-3-small",
+      4.443
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.4076
+     ],
+     [
+      "text-embedding-3-large",
+      3.1353
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.7521
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.6871
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-03",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      17.6568
+     ],
+     [
+      "Gemini 3 Flash",
+      14.2867
+     ],
+     [
+      "DeepSeek V4 Pro",
+      11.2711
+     ],
+     [
+      "GLM 5.2",
+      6.6589
+     ],
+     [
+      "Claude Sonnet 4.6",
+      5.0917
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      4.1579
+     ],
+     [
+      "MiniMax M3",
+      3.9118
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.3193
+     ],
+     [
+      "Step 3.7 Flash",
+      1.1557
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-04",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Fable 5",
+      11.9267
+     ],
+     [
+      "Claude Sonnet 4.6",
+      9.1097
+     ],
+     [
+      "Claude Opus 4.8",
+      8.548
+     ],
+     [
+      "Claude Opus 4.6",
+      5.5644
+     ],
+     [
+      "GLM 5.2",
+      4.7613
+     ],
+     [
+      "GPT 5.5",
+      4.3225
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.964
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.5274
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.8112
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-04",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      14.8619
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.5628
+     ],
+     [
+      "Gemini 3 Flash",
+      6.1163
+     ],
+     [
+      "text-embedding-3-small",
+      5.0451
+     ],
+     [
+      "GPT-4o mini",
+      4.5739
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      4.1648
+     ],
+     [
+      "text-embedding-3-large",
+      3.8102
+     ],
+     [
+      "DeepSeek V4 Pro",
+      3.0234
+     ],
+     [
+      "Claude Sonnet 4.6",
+      2.7677
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.2841
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-04",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      18.255
+     ],
+     [
+      "DeepSeek V4 Pro",
+      12.3721
+     ],
+     [
+      "Gemini 3 Flash",
+      10.1398
+     ],
+     [
+      "GLM 5.2",
+      6.6777
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.9584
+     ],
+     [
+      "MiniMax M3",
+      3.8159
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      3.7703
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.5219
+     ],
+     [
+      "Step 3.7 Flash",
+      1.3024
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-05",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Fable 5",
+      13.1942
+     ],
+     [
+      "Claude Sonnet 4.6",
+      9.7218
+     ],
+     [
+      "Claude Opus 4.8",
+      9.0422
+     ],
+     [
+      "Gemini 3.5 Flash",
+      7.8351
+     ],
+     [
+      "Claude Opus 4.6",
+      6.4592
+     ],
+     [
+      "GLM 5.2",
+      6.4591
+     ],
+     [
+      "GPT 5.5",
+      4.3817
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      4.2043
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.9844
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-05",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      15.1585
+     ],
+     [
+      "Gemini 3 Flash",
+      6.8135
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.3131
+     ],
+     [
+      "GPT-4o mini",
+      5.6722
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.4288
+     ],
+     [
+      "text-embedding-3-small",
+      4.6287
+     ],
+     [
+      "text-embedding-3-large",
+      4.5544
+     ],
+     [
+      "DeepSeek V4 Pro",
+      3.0517
+     ],
+     [
+      "Claude Sonnet 4.6",
+      2.6569
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.2614
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-05",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      19.64
+     ],
+     [
+      "DeepSeek V4 Pro",
+      13.4429
+     ],
+     [
+      "Gemini 3 Flash",
+      11.9985
+     ],
+     [
+      "GLM 5.2",
+      7.2223
+     ],
+     [
+      "MiniMax M3",
+      4.4358
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.9542
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      2.9145
+     ],
+     [
+      "Claude Haiku 4.5",
+      1.4489
+     ],
+     [
+      "Step 3.7 Flash",
+      1.3907
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-06",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Fable 5",
+      15.062
+     ],
+     [
+      "Claude Opus 4.8",
+      13.5625
+     ],
+     [
+      "Claude Sonnet 4.6",
+      10.2282
+     ],
+     [
+      "Claude Opus 4.6",
+      9.2506
+     ],
+     [
+      "GPT 5.5",
+      6.4927
+     ],
+     [
+      "GLM 5.2",
+      4.7955
+     ],
+     [
+      "Gemini 3.5 Flash",
+      4.4007
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.6842
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5525
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-06",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      14.3248
+     ],
+     [
+      "Gemini 3 Flash",
+      7.8588
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      7.7731
+     ],
+     [
+      "GPT-4o mini",
+      5.923
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.064
+     ],
+     [
+      "text-embedding-3-small",
+      3.7328
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.338
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.2566
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.745
+     ],
+     [
+      "text-embedding-3-large",
+      2.5958
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-06",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      21.9284
+     ],
+     [
+      "DeepSeek V4 Pro",
+      11.4898
+     ],
+     [
+      "Gemini 3 Flash",
+      11.4719
+     ],
+     [
+      "GLM 5.2",
+      5.9821
+     ],
+     [
+      "Claude Sonnet 4.6",
+      5.1756
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      3.7725
+     ],
+     [
+      "MiniMax M3",
+      3.2209
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.5329
+     ],
+     [
+      "Step 3.7 Flash",
+      1.1844
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-07",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      13.9409
+     ],
+     [
+      "Claude Sonnet 4.6",
+      11.8662
+     ],
+     [
+      "Claude Opus 4.6",
+      10.3478
+     ],
+     [
+      "Claude Fable 5",
+      9.5324
+     ],
+     [
+      "GPT 5.5",
+      7.8052
+     ],
+     [
+      "GLM 5.2",
+      7.0929
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.7448
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.1324
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.4508
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-07",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      14.4135
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      6.9813
+     ],
+     [
+      "Gemini 3 Flash",
+      6.6741
+     ],
+     [
+      "GPT-4o mini",
+      6.537
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.7571
+     ],
+     [
+      "text-embedding-3-small",
+      4.4401
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.9441
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.4334
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.4834
+     ],
+     [
+      "text-embedding-3-large",
+      2.4522
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-07",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      22.3338
+     ],
+     [
+      "DeepSeek V4 Pro",
+      10.4153
+     ],
+     [
+      "Gemini 3 Flash",
+      8.5795
+     ],
+     [
+      "GLM 5.2",
+      6.8726
+     ],
+     [
+      "Claude Sonnet 4.6",
+      6.646
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      5.1925
+     ],
+     [
+      "Step 3.7 Flash",
+      4.0348
+     ],
+     [
+      "MiniMax M3",
+      3.0641
+     ],
+     [
+      "Claude Haiku 4.5",
+      2.8064
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-08",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      15.7912
+     ],
+     [
+      "Claude Sonnet 4.6",
+      11.2647
+     ],
+     [
+      "Claude Opus 4.6",
+      11.092
+     ],
+     [
+      "Claude Fable 5",
+      8.9721
+     ],
+     [
+      "GPT 5.5",
+      7.5881
+     ],
+     [
+      "GLM 5.2",
+      5.6313
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.7768
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.648
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.045
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-08",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      13.8802
+     ],
+     [
+      "Gemini 3 Flash",
+      7.665
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      7.4403
+     ],
+     [
+      "GPT-4o mini",
+      6.2378
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      4.7066
+     ],
+     [
+      "text-embedding-3-small",
+      4.6469
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.5756
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.4519
+     ],
+     [
+      "text-embedding-3-large",
+      2.8911
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.5887
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-08",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      23.1348
+     ],
+     [
+      "DeepSeek V4 Pro",
+      10.906
+     ],
+     [
+      "Gemini 3 Flash",
+      9.1266
+     ],
+     [
+      "GLM 5.2",
+      6.2391
+     ],
+     [
+      "Claude Sonnet 4.6",
+      5.6993
+     ],
+     [
+      "Step 3.7 Flash",
+      5.032
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.4659
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      3.1226
+     ],
+     [
+      "MiniMax M3",
+      3.0852
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-09",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      12.9588
+     ],
+     [
+      "Claude Sonnet 4.6",
+      12.1187
+     ],
+     [
+      "Claude Opus 4.6",
+      10.9648
+     ],
+     [
+      "Claude Fable 5",
+      8.4412
+     ],
+     [
+      "GPT 5.5",
+      7.9506
+     ],
+     [
+      "GLM 5.2",
+      6.7082
+     ],
+     [
+      "Claude Haiku 4.5",
+      4.5526
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.8569
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.1854
+     ],
+     [
+      "GPT 5.6 Sol",
+      0.7428
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-09",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      15.4372
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      7.3215
+     ],
+     [
+      "GPT-4o mini",
+      6.5025
+     ],
+     [
+      "Gemini 3 Flash",
+      5.5733
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      5.1715
+     ],
+     [
+      "Claude Haiku 4.5",
+      4.0407
+     ],
+     [
+      "text-embedding-3-small",
+      3.9188
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.7999
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.9189
+     ],
+     [
+      "text-embedding-3-large",
+      2.5053
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-09",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      23.72
+     ],
+     [
+      "DeepSeek V4 Pro",
+      12.344
+     ],
+     [
+      "Gemini 3 Flash",
+      7.2109
+     ],
+     [
+      "GLM 5.2",
+      6.1417
+     ],
+     [
+      "Claude Sonnet 4.6",
+      5.7439
+     ],
+     [
+      "Step 3.7 Flash",
+      4.9766
+     ],
+     [
+      "Claude Haiku 4.5",
+      4.0662
+     ],
+     [
+      "MiniMax M3",
+      3.3741
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      3.1272
+     ],
+     [
+      "GPT 5.6 Sol",
+      0.2283
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-10",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 4.8",
+      12.5398
+     ],
+     [
+      "Claude Sonnet 4.6",
+      11.6627
+     ],
+     [
+      "Claude Opus 4.6",
+      9.5035
+     ],
+     [
+      "Claude Fable 5",
+      8.0983
+     ],
+     [
+      "GLM 5.2",
+      8.03
+     ],
+     [
+      "GPT 5.5",
+      6.6379
+     ],
+     [
+      "Claude Haiku 4.5",
+      4.289
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.6737
+     ],
+     [
+      "GPT 5.6 Sol",
+      3.2879
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.1069
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-10",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      14.6193
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      9.0811
+     ],
+     [
+      "GPT-4o mini",
+      6.0299
+     ],
+     [
+      "Gemini 3 Flash",
+      5.1476
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      4.3674
+     ],
+     [
+      "text-embedding-3-small",
+      3.9829
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.8315
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.8239
+     ],
+     [
+      "text-embedding-3-large",
+      2.7442
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.7287
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-10",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      22.8856
+     ],
+     [
+      "DeepSeek V4 Pro",
+      11.5688
+     ],
+     [
+      "Gemini 3 Flash",
+      6.8017
+     ],
+     [
+      "GLM 5.2",
+      6.4795
+     ],
+     [
+      "Step 3.7 Flash",
+      5.8842
+     ],
+     [
+      "Claude Sonnet 4.6",
+      5.6312
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.9036
+     ],
+     [
+      "MiniMax M3",
+      3.707
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      3.1983
+     ],
+     [
+      "GPT 5.6 Sol",
+      1.0887
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-11",
+    "metric": "cost",
+    "shares": [
+     [
+      "GPT 5.6 Sol",
+      12.1629
+     ],
+     [
+      "Claude Opus 4.8",
+      11.7054
+     ],
+     [
+      "Claude Sonnet 4.6",
+      11.6494
+     ],
+     [
+      "Claude Fable 5",
+      8.4164
+     ],
+     [
+      "GLM 5.2",
+      8.3665
+     ],
+     [
+      "Claude Opus 4.6",
+      4.7586
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.6169
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.5745
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.0672
+     ],
+     [
+      "GPT 5.5",
+      3.0363
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-11",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      16.1986
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      8.7271
+     ],
+     [
+      "GPT-4o mini",
+      4.5748
+     ],
+     [
+      "text-embedding-3-small",
+      4.2965
+     ],
+     [
+      "Gemini 3 Flash",
+      4.1627
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.0599
+     ],
+     [
+      "Claude Haiku 4.5",
+      4.0149
+     ],
+     [
+      "text-embedding-3-large",
+      3.5629
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      3.2911
+     ],
+     [
+      "DeepSeek V4 Pro",
+      3.0461
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-11",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      24.2035
+     ],
+     [
+      "DeepSeek V4 Pro",
+      12.8929
+     ],
+     [
+      "Step 3.7 Flash",
+      7.6661
+     ],
+     [
+      "GLM 5.2",
+      7.274
+     ],
+     [
+      "Claude Sonnet 4.6",
+      5.3935
+     ],
+     [
+      "Gemini 3 Flash",
+      4.6541
+     ],
+     [
+      "MiniMax M3",
+      4.2663
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      3.7063
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.0317
+     ],
+     [
+      "GPT 5.6 Sol",
+      2.0203
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-12",
+    "metric": "cost",
+    "shares": [
+     [
+      "GPT 5.6 Sol",
+      13.2005
+     ],
+     [
+      "Claude Sonnet 4.6",
+      11.6739
+     ],
+     [
+      "Claude Fable 5",
+      10.7155
+     ],
+     [
+      "Claude Opus 4.8",
+      9.2733
+     ],
+     [
+      "GLM 5.2",
+      6.0561
+     ],
+     [
+      "GPT 5.5",
+      4.9257
+     ],
+     [
+      "Claude Opus 4.6",
+      4.7241
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.7239
+     ],
+     [
+      "Gemini 3.5 Flash",
+      3.2812
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      3.1528
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-12",
+    "metric": "requests",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      21.6849
+     ],
+     [
+      "Gemini 2.5 Flash Lite",
+      7.8947
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      7.3537
+     ],
+     [
+      "text-embedding-3-large",
+      4.7961
+     ],
+     [
+      "text-embedding-3-small",
+      3.7719
+     ],
+     [
+      "Gemini 3 Flash",
+      3.5696
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.5453
+     ],
+     [
+      "GPT-4o mini",
+      3.498
+     ],
+     [
+      "Claude Sonnet 4.6",
+      3.2893
+     ],
+     [
+      "DeepSeek V4 Pro",
+      2.8178
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-07-12",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4 Flash",
+      25.6846
+     ],
+     [
+      "DeepSeek V4 Pro",
+      12.2504
+     ],
+     [
+      "Step 3.7 Flash",
+      6.5502
+     ],
+     [
+      "GLM 5.2",
+      5.6083
+     ],
+     [
+      "Claude Sonnet 4.6",
+      4.8072
+     ],
+     [
+      "MiniMax M3",
+      4.061
+     ],
+     [
+      "Gemini 3 Flash",
+      3.7727
+     ],
+     [
+      "Gemini 3.1 Flash Lite Preview",
+      3.6569
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.0098
+     ],
+     [
+      "GPT 5.6 Sol",
+      2.666
+     ]
+    ],
+    "others_share": 0
+   }
+  ],
+  "note": "share_percent（份额%），非绝对量"
+ }
+}

@@ -1,0 +1,20 @@
+{% from '_macros.j2' import badge with context %}
+<div class="cards-row gpu-cards">
+{% for g in gpu_cards %}
+  <section class="panel mini-card">
+    <header class="panel-head tone-yellow">
+      <h3>{{ g.label }}</h3>
+      {{ badge('gpu_prices') }}
+    </header>
+    <div class="panel-body">
+      {% if g.offers %}
+      <p class="big-number">${{ '%.2f' | format(g.median) }}<span class="unit">/hr</span></p>
+      <p class="mini-sub">p25–p75 ${{ '%.2f' | format(g.p25) }}–{{ '%.2f' | format(g.p75) }} · {{ g.offers }} 报价</p>
+      {% else %}
+      <p class="big-number">—</p>
+      <p class="mini-sub">暂无报价</p>
+      {% endif %}
+    </div>
+  </section>
+{% endfor %}
+</div>

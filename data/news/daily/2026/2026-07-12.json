@@ -1,0 +1,269 @@
+{
+ "schema_version": 1,
+ "source": "news",
+ "snapshot_date": "2026-07-12",
+ "fetched_at": "2026-07-12T08:37:53+00:00",
+ "source_meta": {
+  "kind": "unofficial-api"
+ },
+ "payload": {
+  "items": [
+   {
+    "title": "A New Foe Has Emerged for Data Centers: Farmers - WSJ",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObnNCWVkwaFFSeTk3LUFZNXNBV1RPSVN4dTQ3Slk4N3NyZkw3aGx6V2FZRzdxOTY5cXNibzBaUkowX2NmMUhfek5pdy1CamZpNXczNHVxdXVuLWlHdWh5a2RHTmcwYjdJdXY3bDQwdHhsLW83TWZNX3JXWnd6RnJzWERseUJfaG0tQzZrWnRiMW5saEEtNTZveGdybw?oc=5",
+    "source_name": "WSJ",
+    "source_url": "https://www.wsj.com",
+    "published": "2026-07-11T17:00:00+00:00"
+   },
+   {
+    "title": "Dark smoke rose above a Virginia data center as a heat wave pushed the power grid close to its limits - Business Insider",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbUZwNEdTOWVzWlkybG12VG1RNDFzd0QzZ0hHSmVBWHE0Rjk1TUExR05DMjNiSDNUYzY5QlptTGlWSHI2STQtakdsYTdCR0lUNjk3Sm5Ma00xTUZOWGgtdTh4VHF2RV8xQ1NSUU1RZVJIUFQ4UlN5X0paUWpxX1BmRUl2WDRWZVdta1E0MHBGamZnNWlQZUN1UWhUWnJsZw?oc=5",
+    "source_name": "Business Insider",
+    "source_url": "https://www.businessinsider.com",
+    "published": "2026-07-11T04:02:00+00:00"
+   },
+   {
+    "title": "The AI data center boom isn't facing a bottleneck - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSXdhLU9pVjhkd1JYTnoyZjZweENBZFlSeWJaa1d4blZ5QzlJVkp6Wk1oLXNFTkpVMTJ4Qi1SQnViU2VXc2tmNklrSEdBN0pINEdYYWhIZ0JEcXQxa0t5ZnRpVFNpNDZxd21Rb1pxTlJGVzhGWU5vSHk5dVNOQzB4LW0zckFpY0ZaRnZjSWNTN2l3a2lpZkpJUVRuRjg?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-07-10T15:03:05+00:00"
+   },
+   {
+    "title": "Modular by necessity: Why the AI boom is making prefabricated data centers the new default - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTUU0NlFnTzFubFJ4NHMwcEtrWUxwck9zekNCb2VZZGRRQlNuQzdwM29oY0lJWnZ5dmh0dS02RGRGaHJ0b3NOM1FpQzhsZ2tLMVFrNXVIU01mQlc1aS1wOVJMN2FWUkZhM0xnWWo3X1BCUmxMeUszQlhZN0pDTm4wb0NXY2xkWmhhQlc0MVVSN1BEZDNYcDltLWNhQk50d2dVenNlU21QZ1R0d3lwUXhCcG1rRnZ3UmlBbE5QTVZBUW1EMkNiWUNRcGRxWENVaEYtWlVB?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-07-10T14:33:04+00:00"
+   },
+   {
+    "title": "Siemens and FuelCell Energy partner on fuel cell power for data centers and other industrial offtakers - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOa3FfZU1EVTdDWHZoZ0JJaWFkaWxLQnB0MnhjVkl5TWRVa015a1llMWZQOHplV3BEanVLOXVmbU9pTnVmNmJkOGliWldyQ1psZ2UxM19kRnRtQ0Qxb3p4QTJiNnhoX01jamRjQlM3MTljc3ZsZndFNV9PTU1yeXhNaWktUEUxQ1A2TGRHV0ZRSk5JZjFheVJMZWl6TVh5YloxekJFMm1Mb1R5Uk9uMVUtNHFWem5JZjBmV3U0N0U2UE0xcXhGalNMVkNhM1ZwVjZCLWhxek5QMkxNdmpka3Yw?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-07-10T14:03:03+00:00"
+   },
+   {
+    "title": "All the latest updates on AI data centers - The Verge",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOb0UxRGMyQ3VLZ1hCY2U3dVVzZnYyX1FZSGJ6OElGOFZ3amc1NnY2Z3Fhb2NIcUp4UFNQNTBQZ3RPa2RiaGEtYWROcHpadFpCV244Nng2VDZuOTBMZDNwdHR3ajl4RXhSSEFjSUZQMVlFd25GSXNZWHZxaVpJYXN0VFJSYUtwcWpOc1huZENJSTRjTlJtTUN3RXh4WFgxRkhOZnBLNVFwSHc?oc=5",
+    "source_name": "The Verge",
+    "source_url": "https://www.theverge.com",
+    "published": "2026-07-10T13:20:25+00:00"
+   },
+   {
+    "title": "Would you host part of an AI data center in your home? - The Verge",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZUcza1MwakRDVFhmc3RhQ1UyTEw5eUVDclB0NHFHMGdab0Q4dW9KWEZLRGtuNHNoZUVlT0wyVngxSzlyMWJwVWlsSVRRcTR4WEktUmtJUFZ6QUNiMkN4U1VEdk1vcTJ0TngzTG9fRDJpbW1DTUFlRVdvX1N3YlJnWkVPaGx2c3hIdGk2V3hUaW1HeDlWNGUw?oc=5",
+    "source_name": "The Verge",
+    "source_url": "https://www.theverge.com",
+    "published": "2026-07-10T13:20:25+00:00"
+   },
+   {
+    "title": "AI, data center fears could be key in closely watched Michigan Democratic Senate primary - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTHJDejQ1Y251dGh2Rm5XMDNzUWlaQ2ZfeE9MdlVmTVY3NTM3UGNCdWNWWUdtWS1fTm5NQjlDVE9Sb1dJZDhYVFJGX1hhb2JZdkpCY0xLNm1hTGZfUEVHRm5lbjRIcmxqQjBvRTFqVWhVa3BSaC1HZHk2N2Rub3RaanV5X29jTzY5Rno5cTlRWnZFSjBYTWNn0gGcAUFVX3lxTE90SkxVV3p4VGhLd00tQVhfNmRMVTBRXzU5cU5QU3hNa3BaemVIVldXWTdvUFFDSUVCTW1ucVVuOTZqVWlTZGlkTUIyX2F3NjVoOWxVY3lCenc3VnplLU1FVWFfR1BwYnl4NVo2eUFPWlUxdTZTbzhCN0dsUVNUUUltd0Q1XzZEZGktLUFIWi1HWWpYQXFTUzZBQTJVbg?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-07-10T11:00:01+00:00"
+   },
+   {
+    "title": "Meta could start production of Iris AI chip in September – report - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZ0RYNVFlVUJXM2Flc1pqSnRfVHEwRkd3M0hrel9LOEY0VnVyVVR2LWxteVhzVkZybWlQV0UxcnMxRXQ5dk5CMHctVzRUTFNEd1htZjZ5OExhd2h3cmN4UXprWkpWTzZIV0xKWGhfRDd2d3FRaXZaRHFvT0lZdFZNemU5WlFYTEdvU3JjMkk1ZjFnVzdFUWppLTRkTm04emlKdEhNdERrLW42cDA?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-07-10T10:32:46+00:00"
+   },
+   {
+    "title": "I landed an Nvidia data center internship after sending out 200 applications. I learned Big Tech wasn't for me. - Business Insider",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZy1vaU9KYlpISWVrQTdoX0I0eElIb3NqM1hZRF9QZUlobFdpaHNFeml3RU53cTFDNlRTWlJVblRNMUIzckNJLW1CY2Z4NkZ5bG1IbEVaX0YwbU85bHNGaE5OWXR5UTFkOHl3WnFCZGdxbHpMdDQ5ak5aOWZydTBUbERjQQ?oc=5",
+    "source_name": "Business Insider",
+    "source_url": "https://www.businessinsider.com",
+    "published": "2026-07-10T09:00:00+00:00"
+   },
+   {
+    "title": "EXCLUSIVE: Meta to put AI chip into production in September as it looks to double computing capacity, memo shows - Reuters",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQmJUcmlIQzJ4M0Vmd1QxQno5ajZPWnFqRHMtQkNMSzVRMHlnOXBqZDN4cjVuRU1XR3IyajdHekZJRkNpeXA2UjRBaXdiaDlnbkxVa1VXb1hwY3BDMUE1am9uX0o3OUxYTWVkeUMyemFUQ0JkMlVpX1RWSTBLVzI3bC1uaTVGelVXd1pSdEY4RHpreUQySmhOUjZMemVGQ3k4YTREY3VxN3k5alhELVdJa1hGeGYxbUltMV9mVUtHZWM4SmQ1eGNqRkk0RUk?oc=5",
+    "source_name": "Reuters",
+    "source_url": "https://www.reuters.com",
+    "published": "2026-07-09T23:48:25+00:00"
+   },
+   {
+    "title": "Power Developer Behind OpenAI’s Stargate Data Center Is In Talks to Sell Stake - The Information",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQLWMwTnZaRzZyN2JMdHEwdjlnNDVlb3ZXUkcweWUyMGpiOVhPSUNyUFppM3lzZ184ajlkTEV0Q1A2WlRCanR6by1UQ0Z0ek5VbjdGcDdXZ3dpTW5xS3J6VkZYd2M5S2dFdVBNWC15bk5OSVN3bUJJZ0ZYM0REYTBmM0xCME9vR21wSzkxOENkbGc4Nm8tRTBiVDBLdG41ajBWbmdDMGY1U0V2VWhP?oc=5",
+    "source_name": "The Information",
+    "source_url": "https://www.theinformation.com",
+    "published": "2026-07-09T22:00:00+00:00"
+   },
+   {
+    "title": "These 10 states are best positioned to land AI data center deals despite rising public opposition - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9ELXZSMkVlMzBZOUU4ajFNbWVoUVJKQjVnQmd3bXJJR25LTGdWQ3JNY2t3N1NVbGFBdUZrZ0tOV1NTQnpkNkN3UWNJYUxiUi1VbVNKbHhYVC1mNjFVU0RhTW1aLW9Yb0tzTUFhM1RZeENfX1M3VVo40gF8QVVfeXFMT0h3WEstSHFEZXFMZlBkSWpRVGw0NlBTSGs5dENzd1NFZjN1dEx3NmF4RUZlNGRkaHh5RjNqY1p1Yk1GaVNIMmk4b3dkZHVvenZic28xSGtZMGZld2hoWVJHdEZYQkN3dGJ5SnFOZGEwQVdlamdHa0QzRnkyRg?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-07-09T15:58:14+00:00"
+   },
+   {
+    "title": "TeraWulf Eyes $3.5 Billion for Anthropic-Leased Data Center - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNkpabm5IVE1reXgxRzluQk5QLW9kd3h2Vjg5VWZmZ3NPN3NrbmU1V0ZVUTI3LURUcTdhWHc3UHlnT3p4N3ZHSTFRY09pc3ltTXBQUkJOaTl0dWNGYnJXbGtFYXBERlVkZklVaTJzX194Vkt4OXFaWElGcGRqc0o4VnczX0dQemxqVElQZ01QU21iRlE3amZ0RlpHVmtVQzFpZnNTemdfSWU4TFhZc1E?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-07-09T14:42:57+00:00"
+   },
+   {
+    "title": "Meta plans $9.17bn gigawatt-scale data center in Alberta, Canada - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPT1FmSG13RDlRa0FpVDF1UjB3ZXBOLXczZmlWMGQySUlYbGhtVlVRclRISUVyOERCc1ZnZmRSUWVuZzZXdWZtNzBNdFd0amswbjJNempQX18zM1dCX2UtcGxjM3J4YUlITVBObGVKT3pOWkF0dW5FeGR6NGpjOHRBSEtGVFA1WFA3ZEpiaFUtdDFMVGlyUzhSM2xVWjZmNlhIa3BPSTZEUUM?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-07-09T10:46:20+00:00"
+   },
+   {
+    "title": "AI servers will consume more power than all conventional data center hardware combined by 2027 — global data center electricity consumption set to grow by 26% this year, Gartner forecasts - Tom's Hardware",
+    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPdDFQXzZBNGk4V0FKVHgyalUtUmd5MDh4X2R2VmpVY1gxbThjd3phSUhPczh1bUNSVzNEQVpLQ0ZGVDNiOWIwRWZobWJKZkdLQ1dlZEtGellFY3l3cEEtV1hBYTZFa1FPTHZnV25aUXFNYTh1UHowZS1iMFZwZ2t3Ym02dGN6RVRLU2wxVjMwbm5RRGFpQUlDdjgyZWdaXzRzSkZBbUlaX0xHa3dvQkJSbTVzNWRXcElYdXdtLU05ZERLTzVHMnA0MGZ4TVpuWWNyOTU2d2RoYml1TWdFbTdBS293RnBfaFVDc1g3S3hvaWVZbk81VzNPNC1n?oc=5",
+    "source_name": "Tom's Hardware",
+    "source_url": "https://www.tomshardware.com",
+    "published": "2026-07-09T10:25:00+00:00"
+   },
+   {
+    "title": "Meta Is Building a $9B Data Center in Canada - Business Insider",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPS2pPQ1RELUdqNGNEdmMyRUVUV0NKNmNpeVZOeFBhTWYzMjR6SENwRnRBSmpJWTVMdnlCR3UzWEJZaDMtLUU1TzFpQ0YyNEdMdmpzRW1yRzFnNnBucUdtYlU3Wjl0b3NHTFRKQXg0YVlabmk4X3JITXNkdUYxMVd5YWxqaHRSdnlyU1F3Tkt4dzhUZw?oc=5",
+    "source_name": "Business Insider",
+    "source_url": "https://www.businessinsider.com",
+    "published": "2026-07-09T04:02:00+00:00"
+   },
+   {
+    "title": "Meta to build C$13 billion Alberta data center, its first in Canada - Reuters",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRU1kYi03WEJLMjUzY0lVVHVwekxGWTUzVVdZTDFGTFFKVlZERWZCOFVyak1KZ3VUYzlBZzdxZS11SW1Ldzc1amZqeG41TFJ4V0FQSW9pWFEycWhjeHByMG95SFp5VTk0SFQxYnI4Q3NLR0lZYTRSVXdGbFp6VlM4M1NqdlhZT3QzdC1mSU9ScFQwVU1mSFgxVzJvcDRnU3BIVGF4Nkotblhydno4SUZR?oc=5",
+    "source_name": "Reuters",
+    "source_url": "https://www.reuters.com",
+    "published": "2026-07-08T22:33:44+00:00"
+   },
+   {
+    "title": "Meta to Build First Data Center in Canada, Expanding Global Fleet - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQ3AxYmZnVDVUWUQ3U1VPX2pVdGU4Z0ZKNWpIdUF4eVJULWFDYzZXa21Ia0YzcTEzTW5maktsUXdtWjV6WklsenNaU0MzdTRSWXhSNjI2bjJEQXFJUWpEV1oxSVJGTDQxSWgwb0tCVFBvOFBCWGxxWmVBX1hPdHY1N2ZNS3RNRmRyeEVnbWdObzQ2MXRacGhoS0FBZzZreWVyaVhnOWNJUGM3NFBjYWUxcThkSGlTUQ?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-07-08T22:08:44+00:00"
+   },
+   {
+    "title": "Meta is building its first big Canadian data center as AI expansion crosses the border - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQndUcHlKZDM0c3Rma19aWGhsbWZQT0NGUDQzc3hfV1pwcEhGcDJJUzVEeUt4R2FnR2JEUzdXVl9QZnVtLU5zU3BOMnFvN243Zm5zNndtX3RkMl9WMGV0ODd5UHc2STBGN3pVMzZaNmtfQ19VMWpFYjg3WlNTa2hNWG1QVmNjVjNla2oxNkUtX0RfMENScHEzVXFSZW5oSXFVbS1SWNIBqgFBVV95cUxNTlNKbW5ZdVlnZnMtSHVFMEVxMlhVWkZQWm1sMm13VDl1MVI0bXdmOVRzeTNLV2xNUnRwSTdFeGc0aEJTYTdXQmNxMjlFRVRwaEMybkZodk5vYjNxQ2ItMTlkUlBTYmxaSWpGbm5sQWJHZFVadGtYZXVDMWZvaE1PRmpFXzNuTjlUc3liSnBaOVNOMU15Y3JQcjFEOTNCSm9RUDhTS1NHNG9Wdw?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-07-08T19:31:36+00:00"
+   },
+   {
+    "title": "Anthropic signs $19bn, 20-year lease for Kentucky data center with TeraWulf - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbThPcC15RmZ6aDZFUFNxbmdGalEtMUdlRlhhbmxYeXJuRFZWaEhvZklYNFNBYVJSS0V6eHkybWhIWUV0dklXaFYweDBGeDlhUFFZaDZUQnlWanlWWE1NcVI5NTRIMWxsMTlxTTNiNnlxYVU4b1FRSUJvMmJ6aGZ0cHVhMjJ6bG8tbDB2aFJ1MVR5Mnp2VnBGZVRReU9DUmNmYzRkaDduUU1WWXAzTVA4bHJlSkRrWHlm?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-07-06T14:36:12+00:00"
+   },
+   {
+    "title": "TeraWulf shares soar after Anthropic leases data center in Kentucky - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1uWmt6bW41bEk0UFlabS1SWFBTenhraVNLLXdpUng3RWNXY2lPbEg4LUUwLWdRa0NFZXAtd1Y4R2RrVHhPWlJGSlRvODZObXR4NGx1aDlRcHRHRjdWemFUWUZzU2VxVFN0a0NwS0dmQXVWdGFwQW4yRmln0gF_QVVfeXFMUFdwTV9WVlhZbjJma3d2LUR2TUJ6RGg0WGM0ZmZKS1FuMXZuZXZ0dC1sN2I3TlZKVTExenhqQ2hlNjk3dk9hQVk3VHZVN2dScm0ydUlFWkRVUnhJTXRheF9TVGVSa1luUUhZUHhIY0hmOU5JdjJOUXNqX05MUDMtRQ?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-07-06T12:03:10+00:00"
+   },
+   {
+    "title": "AI Data Centers Have Been Great for the Steel Industry. Now, a Power Crisis Looms. - WSJ",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObFJsb3JLYlpQQUhoQlVvMzhXVkhVZGhycHhVekNoQy03dG5FbEVDeW5BcWZKMjdMRURFYldHRnUtaE15OXhqNGluOFB4dnpiNmtLYzRYbHBsRkE3Q0dTcUVkNmFOeDZob3AxNnRSeEU3Rm1HRUVZa0tLeVVmUkFNelF4OFByNnAwejFkbnBBRkxTdw?oc=5",
+    "source_name": "WSJ",
+    "source_url": "https://www.wsj.com",
+    "published": "2026-06-29T07:00:00+00:00"
+   },
+   {
+    "title": "Anthropic's latest hiring spree reveals where it's building AI data centers next - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5weGpDM2s0dWlUUXNpTUJteVFBeFJ2UzAza3FLTTE0dHR3SjlBMmFHSURDVzljbGFqNTIzQlZLUXhUMmNhNGNmMFhqV2tuT0FhcXF2VE9jN3oxMWFVbVgtVjBvS3Nxb29EU2dCbFR3OGtMTm1kNzN6c1J1UndrUdIBgwFBVV95cUxQQ2RjQzRQc19xMlRpRHdzbzRDX3E4Zk95VHFQQ0tfTmx1TEQyRV9ZYWtVcEFOeDhuQl80SkZFOXVmVVk1MGJmSHBUcENfLWwydndYV3RQTGxhUzBRWU9IOEt1ZmlETnFOV21HbTB4dHVScU1HQW9PNlFwR2dfWXdwelNLdw?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-06-25T07:00:00+00:00"
+   },
+   {
+    "title": "Tech companies would have to pay AI data center energy costs under bill moving in Congress - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVzMyRTJVbTVlQ3E3ZkdUNFdTQkw5TENuLXExUjhIZDlhWWpCVlFxUWpQZktUWk1HaTljbF8xYUVxTjR1SWRrUllpV1hVb09qUm9oUkdsUmZmNWdaU3RuQ090ZkhHTHRJTWRnaHI5Zm10bjZfSVZVblVJR2s3WElZQTJieDNVd2hZZ2RKTlRWcXV3YknSAZgBQVVfeXFMT1habnBpSTUxVGVKWTB3UEt4SEhNVk1yaTd0M3ZrSDVpWWdfZ1VyV2ZTZTlFMnVqNWZEaTBPY0FVY0NyOHJJQktmSjFNS3VtZmkzWVpJWGw0RUtFYU5Lc2dMVVZkZUVCbG5jRUJtUy1jV2U3djVwY1Y0NDdZc0U3cWlUeGNNUlFEbFo4T2tlaDZHWmZEa3FMUmo?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-06-24T07:00:00+00:00"
+   },
+   {
+    "title": "The AI Data-Center Boom Is Sparking a Third Wave of Inflation - WSJ",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOFBvWWhuUXlqLThqT0hMYWhQemh2YnZ1d05OSDl0NVE4S1pOa1IzdjBBUzBMb25Gakg2V0ZXWENyU3NiUlVzQkRtOVk3NUEyV0MtVU1lSEp1QWJnTjJkbERzZ3pZN2wtc1pCSjE4b282a0hIZ1ZuaE1vMGVONlZfdDBGOGtfVjFjcmpJNjVyS3VpZldPSkR2SF9JSQ?oc=5",
+    "source_name": "WSJ",
+    "source_url": "https://www.wsj.com",
+    "published": "2026-06-24T07:00:00+00:00"
+   },
+   {
+    "title": "Qualcomm stock pops 15% after chipmaker almost doubles projection for 2029 non-handset revenue - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5sNEdnQXFnVjJBMnlEeWJsVzZPM1BjMHdzVWtGMV9UeVhHWTVnWl9HSWFVQ2FsVHdPZlkxcmNrQl9yZW82eF9xdGtXQnlhVC1wbW1BLTNwRzF0Q3FtZE5XaF9xRUthRmtnSHBtWVhxT09SdWhL0gF6QVVfeXFMTVZjamtUbE11Qk9KVVhWZGhlRXlRcjNBeEpWZ3MtQUFvWldYX3FRZGtsUVV2LTVDcC1JbnRQM1ZDck5JYVV3czdTUW44RkNUQ2JhQjZIb19Gb1N6ekl6YW41RTJYUGtUSWJENzVEX05rd0ZaQTNOa05Ha0E?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-06-24T07:00:00+00:00"
+   },
+   {
+    "title": "Meta, Microsoft Lead $850 Billion Boom in Data Center Leases - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYVVrOTNJTUltOVpfa3NPZlJnYjNNcHhLZVpfWVdtbVVVdXFyc3dteTlXYllHR0VMYzdLdE1QbC1sUERMcUpzMHZmU0NWWmUxZzJsNjFfRHloX0FGV0NoZ2x3RU5najBSV19FaDl3WVBNM3VuZjVTSC12UEY0LWtBZEhIenN0V3ptV2VjRERBdWlvVFQ4REQ5aGRpUVM3ZUNMTFF2LTFSdURvY1RVbmc?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-06-24T07:00:00+00:00"
+   },
+   {
+    "title": "Chevron Strikes Power Deal With Microsoft for West Texas AI Data Center - WSJ",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNb2xfM0htcnRLV3lDZC1LQk93WTlqaGhzTUdEYm41QlNZR0ZFVEV4TUprYzdlTVh2bjF4a1c3WUIzZWlPSGg3c3FYTGtzbUtDVkV6Vng2Y1dIZTBtWUgwbXVOQlVWSUpGRExEcGVTeTlJRTRCUHFvVmN0ZGhhNVplMzZaNzdDY0FaR3dTeHVpREVCSEhCNVFSMHJqbDlTeko4UU4zUnNRQ0Zjb19pdkVKcU9KZ2JmVUFlWGVVYQ?oc=5",
+    "source_name": "WSJ",
+    "source_url": "https://www.wsj.com",
+    "published": "2026-06-22T07:00:00+00:00"
+   },
+   {
+    "title": "Chevron to fuel massive Microsoft data center in Texas using natural gas - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNXV3WDNkY0tpSjlfQnUtbGN4SHRZTVZZTndPMVY5NmJ0NGZCYmotak1XREN1Qmc5SkhXZjJmcU5uWGg1dVlZZlc0Q3VzZFc5N3FlUDhfQ2hMbHhTZ2Zfb2RLdkEwOHhicmt4cWg2RHpfMGhreFU3eVJXX21ETGN2VDJuWHBIY2d5bklwM3hWRTbSAZYBQVVfeXFMTjdJcE9TVk8zcW9nMzdTLTJYTlpCSW9Hcmo0eV9WaDRlX0thLVJHMmR4Y0xWOGZFdTZ0Ri1qaWs0emtUWFNpWS1zT0xkNlRlOFpjbkJkczBtdTE2aW9oUzVtM1pYOHlQd2gtQzVwTlUxaHF6VzV3bWxTdnljVE1ZaWRpTC1JMGNpME5oeUVzOFRlYTAxTXFB?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-06-22T07:00:00+00:00"
+   },
+   {
+    "title": "Microsoft and Chevron plan one of the largest gas-powered data center projects in US - TechCrunch",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSFNGSC0tTFFOU3p1RzZBdUl1TURrWUJnUWVKYmxLYnpnS3htTDIxZjU5cDBIcUV0NUZ6ZkJNd2VPeWsyYnN5OVJOSHp0XzI1Zk5aQVVHTmtoWFh4OWw2UFp6TG1NT1g2OXZIcE14RUdjUzM2LXA1eWNRaXNQcTNTck40X3VwbHd4R2h2UF9kRGZNdWJDY2cxNHcwdHVJWVhnM0pXcVhLR0FFQ29FWV93ZkdfSFRPRTFjVTVV?oc=5",
+    "source_name": "TechCrunch",
+    "source_url": "https://techcrunch.com",
+    "published": "2026-06-22T07:00:00+00:00"
+   },
+   {
+    "title": "Nvidia wants to cut data center water use, but that's not the same as fixing AI's water problem - TechCrunch",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOWJLVm9HMk9NdTVrZXFnUk1naWxrV3hENmExc1F5N1ZlOVphUjlRTFl5bldQVEZsaFhWTU04cjRMbkNRbVB0NnYxMzAwQ1FZOWF6ZFdlRUdIQ2tMeXNVcFRwOExCV2NwSnVoVzBLcFhGMVhTM0dSTVpXMThFT3U4b09vOVZucm1aOGFmNXZiWW9kYkZkaTZYOEVwQzRzNlc5M1plaVJtTEcta1YySl9WLTFYa2tkV1B1WTJwV0I2ZVNoUllFOXc?oc=5",
+    "source_name": "TechCrunch",
+    "source_url": "https://techcrunch.com",
+    "published": "2026-06-22T07:00:00+00:00"
+   },
+   {
+    "title": "Meta Strikes New AI Computing Deals With Data Center Firm Crusoe - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMkVNUTk2aWYyQk1wLWlUengxWHg4M1g1ZmdBZTcwSkN6cHlxQmpmNkhwTjhFYXZwZldrOXlYMDU0YkFXYVdTNzdsUUR1VnRQbEdjSC1PSjZPbV9DTGVfOG5CdWF5ZnNDSmlWSTRBZk5zZ0tjVzFrNHVlQkdxTjBGRldQb1BNdkRNVUloR0dZLWlmMnJJSDJ1VUpiaEVPQTlJNnE1R1RycjViNFZ2QzlTdmpDbjVWZw?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-06-18T07:00:00+00:00"
+   },
+   {
+    "title": "D.O.J. Seeks to Halt Air Pollution Lawsuit Against xAI Data Center - The New York Times",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRzNyZ1NEVHM5TWlQZmZ4ZGJxdW5QczN1THMzc2tKZl9DTWdNM19JSnFjNzB0QVJyc0RLTDJ6dWlFTS1GN25tTHZYVVF6VjZzWmV4aGtfaTVXMDEwUjM0X3BBWDV5b2lrQnFyS05MRUhTLVEwMnhVbmc2ZFlVVEYzNXB0QzBadGM0ZnZ0R2JZZnJ2LW5Lcjh3eXRidw?oc=5",
+    "source_name": "The New York Times",
+    "source_url": "https://www.nytimes.com",
+    "published": "2026-06-16T07:00:00+00:00"
+   },
+   {
+    "title": "OpenAI weighs leasing Ohio data center with Nvidia backing, The Information reports - Reuters",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPX0cwZnpJbGdWR0xBeU1KYXdYLW1WX2d6VzJUNnVmWEZScTRXWHNYTS1ka1lWWFo2bVNlaklWV2dhMXlVU01mblJRM2o3RlN6d3pwUjdhR0twRmRsaktIM3hpd3FGRGJXbFA2S0VDNE5lbjRrdzhVN0lZLTYyRVUtcHBlNTFNN0lMaFFRbmFpVEpra1NVUFpUMWxvaWcteERoblF6OHN4eldFZDdMUXV6cjJzTUFRZGs4dmx6YWp4SWg1SXM?oc=5",
+    "source_name": "Reuters",
+    "source_url": "https://www.reuters.com",
+    "published": "2026-06-15T07:00:00+00:00"
+   },
+   {
+    "title": "Meta Is Transforming Rural Louisiana With a $200 Billion Data Center - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPRFBfZktZYmFuZWJkNV9pcTM5b004dllfaUNTel9aakZ5NVhUYkRIZnF0eXJKVEpEcFNvNmM0WTVvNll5c2o1elZURmdHdXkwaTVSUEh1Wm9peGVyRkdUbi03T3cxY3NKXzFEeEFWNWtORnAtOGhjRnlwV1ZreFUxVjczQ2FZQQ?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-05-18T07:00:00+00:00"
+   }
+  ],
+  "queries": [
+   "\"AI data center\" (gigawatt OR megawatt OR construction OR power)",
+   "\"data center\" (OpenAI OR Anthropic OR xAI OR Nvidia OR Microsoft OR Meta)"
+  ]
+ }
+}

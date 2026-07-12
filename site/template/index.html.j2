@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI MONETIZATION TRACKER</title>
+<style>
+{{ style }}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <h1>AI MONETIZATION TRACKER<span class="cursor-block"></span></h1>
+  <p class="tagline">AI 变现追踪仪表盘：Frontier Lab ARR · Token 用量 · GPU 租赁价格 · AI 数据中心建设</p>
+  <p class="build-ts">BUILD {{ build_ts }} ·
+    {%- for name, st in source_status.items() %} {{ name }}·{{ st.snapshot_date or '—' }} {%- if not loop.last %} |{% endif %}{% endfor %}</p>
+</header>
+
+<main>
+  <h2 class="section-title tone-orange">① Frontier Lab ARR — 实时估算</h2>
+  {% include 'panels/arr_cards.j2' %}
+  {% include 'panels/arr_chart.j2' %}
+
+  <h2 class="section-title tone-teal">② Token 需求与采用度</h2>
+  <div class="grid2">
+    {% include 'panels/or_tracked.j2' %}
+    {% include 'panels/or_top_models.j2' %}
+    {% include 'panels/or_weekly_total.j2' %}
+    {% include 'panels/sdk.j2' %}
+    {% include 'panels/vercel_tokens.j2' %}
+    {% include 'panels/vercel_cost.j2' %}
+    {% include 'panels/vercel_trend.j2' %}
+    {% include 'panels/quotes.j2' %}
+  </div>
+  {% include 'panels/epoch_sites.j2' %}
+
+  <h2 class="section-title tone-yellow">③ GPU 租赁价格 — Vast.ai 市场</h2>
+  {% include 'panels/gpu_cards.j2' %}
+  {% include 'panels/gpu_trend.j2' %}
+
+  <h2 class="section-title tone-pink">④ AI 数据中心建设 — Epoch AI + News</h2>
+  {% include 'panels/dc_cards.j2' %}
+  {% include 'panels/dc_growth.j2' %}
+  {% include 'panels/news.j2' %}
+
+  {% include 'panels/methodology.j2' %}
+</main>
+
+<footer class="footer">
+  <p>纯静态单文件 · 离线可开 · 数据管道 &amp; 页面由 Token-Tracker 每日自动构建 ·
+     Source: Epoch AI (CC-BY) / OpenRouter / Vercel AI Gateway / Vast.ai / npm / PyPI / Google News</p>
+</footer>
+
+<script id="dashboard-data" type="application/json">{{ dashboard_json }}</script>
+<script>
+{{ chart_js }}
+</script>
+<script>
+{{ app_js }}
+</script>
+</body>
+</html>

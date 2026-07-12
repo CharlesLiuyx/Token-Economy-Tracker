@@ -1,0 +1,101 @@
+# ★ 源注册表（单一事实来源）：fetcher、文档、状态页都从这里读元数据。
+# 新增源必须齐三件套：本文件条目 + docs/sources/<source>.md + docs/sources/samples/。
+# kind: official-api | official-download | unofficial-api | scrape | manual
+
+epoch_datacenters:
+  fetcher: scripts/fetch/epoch_datacenters.py
+  doc: docs/sources/epoch_datacenters.md
+  schedule: daily          # 源头约每周更新，每日拉取无害
+  kind: official-download
+  refetch_window_days: 3
+  license: CC-BY (Epoch AI, Frontier Data Centers dataset)
+  endpoints:
+    data_centers_csv: https://epoch.ai/data/data_centers/data_centers.csv
+    timelines_csv: https://epoch.ai/data/data_centers/data_center_timelines.csv
+
+sdk_downloads:
+  fetcher: scripts/fetch/sdk_downloads.py
+  doc: docs/sources/sdk_downloads.md
+  schedule: daily
+  kind: official-api
+  refetch_window_days: 3
+  npm_packages: ["openai", "@anthropic-ai/sdk", "@google/genai"]
+  pypi_packages: ["openai", "anthropic", "google-genai"]
+
+news:
+  fetcher: scripts/fetch/news.py
+  doc: docs/sources/news.md
+  schedule: daily
+  kind: unofficial-api      # Google News RSS，无承诺但多年稳定
+  refetch_window_days: 3
+  queries:
+    - '"AI data center" (gigawatt OR megawatt OR construction OR power)'
+    - '"data center" (OpenAI OR Anthropic OR xAI OR Nvidia OR Microsoft OR Meta)'
+  domain_whitelist:
+    - reuters.com
+    - bloomberg.com
+    - wsj.com
+    - ft.com
+    - cnbc.com
+    - theinformation.com
+    - semianalysis.com
+    - datacenterdynamics.com
+    - datacenterfrontier.com
+    - techcrunch.com
+    - theverge.com
+    - theregister.com
+    - tomshardware.com
+    - businessinsider.com
+    - washingtonpost.com
+    - nytimes.com
+
+manual:
+  fetcher: null              # git 即编辑界面，人工维护
+  doc: docs/arr-methodology.md
+  schedule: ad-hoc
+  kind: manual
+  files:
+    - data/manual/arr_anchors.yml
+    - data/manual/quotes.yml
+
+openrouter:
+  fetcher: scripts/fetch/openrouter.py
+  doc: docs/sources/openrouter.md
+  schedule: daily
+  kind: unofficial-api      # frontend API 无公开承诺，见 ADR-002
+  refetch_window_days: 3
+  endpoints:
+    base: https://openrouter.ai/api/frontend/v1/rankings
+    datasets: [model-rankings-chart, models, apps]
+  # 面板 2b 重点模型对比（permaslug，slug 变更时同步更新面板配置）
+  models_tracked:
+    - anthropic/claude-4.8-opus-20260528
+    - anthropic/claude-4.7-opus-20260416
+    - openai/gpt-5.5-20260423
+    - google/gemini-3-flash-preview-20251217
+    - deepseek/deepseek-v4-flash-20260423
+    - x-ai/grok-4.5-20260708
+    - moonshotai/kimi-k2.6-20260420
+
+vercel_gateway:
+  fetcher: scripts/fetch/vercel_gateway.py
+  doc: docs/sources/vercel_gateway.md
+  schedule: daily
+  kind: scrape              # 解析页面 RSC flight 载荷，见 ADR-003
+  refetch_window_days: 3
+  page: https://vercel.com/ai-gateway/leaderboards
+  note: 数据是份额百分比（非绝对量）；页面内嵌 ~61 天历史
+
+gpu_prices:
+  fetcher: scripts/fetch/gpu_prices.py
+  doc: docs/sources/gpu_prices.md
+  schedule: daily
+  kind: official-api        # Vast.ai 公开市场 API，免鉴权，见 ADR-004
+  refetch_window_days: 3
+  api: https://console.vast.ai/api/v0/bundles/
+  gpus:                     # 面板标签 -> Vast.ai gpu_name
+    H100: H100 SXM
+    H200: H200
+    B200: B200
+    A100: A100 SXM4
+    RTX 5090: RTX 5090

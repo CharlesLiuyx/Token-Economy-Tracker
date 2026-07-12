@@ -1,0 +1,2896 @@
+{
+ "generated_at": "2026-07-12T09:08:19+00:00",
+ "build_date": "2026-07-12",
+ "half_life_days": 120,
+ "companies": {
+  "anthropic": {
+   "fit": {
+    "k_per_day": 0.007550143475922946,
+    "mom_implied": 0.2584,
+    "sigma_log": 0.2198,
+    "n_anchors": 14,
+    "epoch": "2023-10-01",
+    "last_anchor_date": "2026-05-15",
+    "last_anchor_value": 47000000000
+   },
+   "realtime": {
+    "arr_at_build": 56983915462,
+    "usd_per_hour": 17929351,
+    "mom_implied": 0.2584
+   },
+   "anchors": [
+    {
+     "date": "2023-10-01",
+     "value_usd": 100000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.theinformation.com/articles/openai-rival-anthropic-in-talks-to-raise-2-billion-from-google-others-as-ai-arms-race-accelerates?rc=4ylmkj",
+     "note": "October 2023 100M"
+    },
+    {
+     "date": "2024-01-01",
+     "value_usd": 87000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.anthropic.com/news/anthropic-expands-global-leadership-in-enterprise-ai-naming-chris-ciauri-as-managing-director-of",
+     "note": "2024 87M"
+    },
+    {
+     "date": "2024-12-31",
+     "value_usd": 1000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.cnbc.com/2025/01/22/google-agrees-to-new-1-billion-investment-in-anthropic.html",
+     "note": "December 2024 1B"
+    },
+    {
+     "date": "2024-12-31",
+     "value_usd": 381000000,
+     "metric": "reported_rev",
+     "source_url": "https://www.theinformation.com/articles/anthropic-lowers-profit-margin-projection-revenue-skyrockets?rc=9mzoog",
+     "note": "2024 full year"
+    },
+    {
+     "date": "2025-03-01",
+     "value_usd": 1400000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.theinformation.com/articles/anthropics-claude-drives-strong-revenue-growth-while-powering-manus-sensation?rc=9mzoog ",
+     "note": "March 2025 1.4B"
+    },
+    {
+     "date": "2025-03-31",
+     "value_usd": 2000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.cnbc.com/2025/05/16/anthropic-ai-credit-facility.html",
+     "note": "March 2025 2B"
+    },
+    {
+     "date": "2025-05-30",
+     "value_usd": 3000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.cnbc.com/2025/05/30/anthropic-hits-3-billion-in-annualized-revenue-on-business-demand-for-ai.html",
+     "note": "May 2025 3B"
+    },
+    {
+     "date": "2025-07-01",
+     "value_usd": 4000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.theinformation.com/articles/anthropic-revenue-hits-4-billion-annual-pace-competition-cursor-intensifies?rc=9mzoog",
+     "note": "July 2025 4B"
+    },
+    {
+     "date": "2025-07-29",
+     "value_usd": 5000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.bloomberg.com/news/articles/2025-07-29/anthropic-nears-deal-to-raise-funding-at-170-billion-valuation",
+     "note": "July 2025 5B | ARR 口径"
+    },
+    {
+     "date": "2025-10-21",
+     "value_usd": 7000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.anthropic.com/news/statement-dario-amodei-american-ai-leadership",
+     "note": "Oct 2025 7B"
+    },
+    {
+     "date": "2025-12-31",
+     "value_usd": 9000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.bloomberg.com/news/articles/2026-01-21/anthropic-s-revenue-run-rate-tops-9-billion-as-vcs-pile-in",
+     "note": "end-2025 9B"
+    },
+    {
+     "date": "2025-12-31",
+     "value_usd": 4500000000,
+     "metric": "reported_rev",
+     "source_url": "https://www.theinformation.com/articles/anthropic-hikes-2026-revenue-forecast-20-delays-will-go-cash-flow-positive",
+     "note": "2025 full year"
+    },
+    {
+     "date": "2026-02-12",
+     "value_usd": 14000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+     "note": "Feb 2026 14B"
+    },
+    {
+     "date": "2026-03-03",
+     "value_usd": 19000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://x.com/apoorv03/status/2029018856342290550?s=20",
+     "note": "March 2026 19B"
+    },
+    {
+     "date": "2026-04-06",
+     "value_usd": 30000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+     "note": "Anthropic 30B April"
+    },
+    {
+     "date": "2026-05-15",
+     "value_usd": 47000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.anthropic.com/news/series-h",
+     "note": "May 2026 47B"
+    }
+   ],
+   "series": [
+    {
+     "date": "2023-10-01",
+     "fitted": 26765900,
+     "lo": 17396693,
+     "hi": 41181011,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-10-08",
+     "fitted": 28218554,
+     "lo": 18340856,
+     "hi": 43416010,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-10-15",
+     "fitted": 29750047,
+     "lo": 19336261,
+     "hi": 45772308,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-10-22",
+     "fitted": 31364658,
+     "lo": 20385689,
+     "hi": 48256488,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-10-29",
+     "fitted": 33066898,
+     "lo": 21492072,
+     "hi": 50875490,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-11-05",
+     "fitted": 34861523,
+     "lo": 22658502,
+     "hi": 53636633,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-11-12",
+     "fitted": 36753546,
+     "lo": 23888237,
+     "hi": 56547630,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-11-19",
+     "fitted": 38748255,
+     "lo": 25184712,
+     "hi": 59616614,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-11-26",
+     "fitted": 40851222,
+     "lo": 26551551,
+     "hi": 62852160,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-12-03",
+     "fitted": 43068322,
+     "lo": 27992571,
+     "hi": 66263307,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-12-10",
+     "fitted": 45405749,
+     "lo": 29511800,
+     "hi": 69859586,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-12-17",
+     "fitted": 47870035,
+     "lo": 31113480,
+     "hi": 73651043,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-12-24",
+     "fitted": 50468064,
+     "lo": 32802088,
+     "hi": 77648274,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-12-31",
+     "fitted": 53207095,
+     "lo": 34582341,
+     "hi": 81862443,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-01-07",
+     "fitted": 56094780,
+     "lo": 36459213,
+     "hi": 86305327,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-01-14",
+     "fitted": 59139187,
+     "lo": 38437948,
+     "hi": 90989337,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-01-21",
+     "fitted": 62348821,
+     "lo": 40524073,
+     "hi": 95927561,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-01-28",
+     "fitted": 65732651,
+     "lo": 42723418,
+     "hi": 101133794,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-02-04",
+     "fitted": 69300129,
+     "lo": 45042127,
+     "hi": 106622583,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-02-11",
+     "fitted": 73061224,
+     "lo": 47486678,
+     "hi": 112409263,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-02-18",
+     "fitted": 77026443,
+     "lo": 50063901,
+     "hi": 118510001,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-02-25",
+     "fitted": 81206865,
+     "lo": 52780997,
+     "hi": 124941841,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-03-03",
+     "fitted": 85614169,
+     "lo": 55645556,
+     "hi": 131722753,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-03-10",
+     "fitted": 90260668,
+     "lo": 58665582,
+     "hi": 138871683,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-03-17",
+     "fitted": 95159345,
+     "lo": 61849513,
+     "hi": 146408604,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-03-24",
+     "fitted": 100323885,
+     "lo": 65206244,
+     "hi": 154354572,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-03-31",
+     "fitted": 105768718,
+     "lo": 68745153,
+     "hi": 162731788,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-04-07",
+     "fitted": 111509056,
+     "lo": 72476128,
+     "hi": 171563658,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-04-14",
+     "fitted": 117560937,
+     "lo": 76409593,
+     "hi": 180874855,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-04-21",
+     "fitted": 123941269,
+     "lo": 80556536,
+     "hi": 190691395,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-04-28",
+     "fitted": 130667878,
+     "lo": 84928545,
+     "hi": 201040704,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-05-05",
+     "fitted": 137759557,
+     "lo": 89537834,
+     "hi": 211951696,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-05-12",
+     "fitted": 145236120,
+     "lo": 94397280,
+     "hi": 223454855,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-05-19",
+     "fitted": 153118455,
+     "lo": 99520462,
+     "hi": 235582320,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-05-26",
+     "fitted": 161428584,
+     "lo": 104921691,
+     "hi": 248367973,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-06-02",
+     "fitted": 170189725,
+     "lo": 110616059,
+     "hi": 261847537,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-06-09",
+     "fitted": 179426356,
+     "lo": 116619475,
+     "hi": 276058671,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-06-16",
+     "fitted": 189164282,
+     "lo": 122948711,
+     "hi": 291041079,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-06-23",
+     "fitted": 199430710,
+     "lo": 129621451,
+     "hi": 306836621,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-06-30",
+     "fitted": 210254324,
+     "lo": 136656338,
+     "hi": 323489428,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-07-07",
+     "fitted": 221665362,
+     "lo": 144073026,
+     "hi": 341046024,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-07-14",
+     "fitted": 233695707,
+     "lo": 151892237,
+     "hi": 359555462,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-07-21",
+     "fitted": 246378969,
+     "lo": 160135816,
+     "hi": 379069454,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-07-28",
+     "fitted": 259750585,
+     "lo": 168826796,
+     "hi": 399642521,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-08-04",
+     "fitted": 273847911,
+     "lo": 177989457,
+     "hi": 421332140,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-08-11",
+     "fitted": 288710336,
+     "lo": 187649398,
+     "hi": 444198910,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-08-18",
+     "fitted": 304379383,
+     "lo": 197833610,
+     "hi": 468306718,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-08-25",
+     "fitted": 320898829,
+     "lo": 208570545,
+     "hi": 493722919,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-09-01",
+     "fitted": 338314827,
+     "lo": 219890200,
+     "hi": 520518521,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-09-08",
+     "fitted": 356676036,
+     "lo": 231824203,
+     "hi": 548768390,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-09-15",
+     "fitted": 376033754,
+     "lo": 244405894,
+     "hi": 578551450,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-09-22",
+     "fitted": 396442065,
+     "lo": 257670425,
+     "hi": 609950913,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-09-29",
+     "fitted": 417957988,
+     "lo": 271654856,
+     "hi": 643054506,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-10-06",
+     "fitted": 440641634,
+     "lo": 286398258,
+     "hi": 677954714,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-10-13",
+     "fitted": 464556380,
+     "lo": 301941823,
+     "hi": 714749046,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-10-20",
+     "fitted": 489769040,
+     "lo": 318328976,
+     "hi": 753540301,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-10-27",
+     "fitted": 516350055,
+     "lo": 335605501,
+     "hi": 794436856,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-11-03",
+     "fitted": 544373690,
+     "lo": 353819668,
+     "hi": 837552971,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-11-10",
+     "fitted": 573918239,
+     "lo": 373022364,
+     "hi": 883009107,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-11-17",
+     "fitted": 605066246,
+     "lo": 393267240,
+     "hi": 930932264,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-11-24",
+     "fitted": 637904735,
+     "lo": 414610856,
+     "hi": 981456333,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-12-01",
+     "fitted": 672525452,
+     "lo": 437112845,
+     "hi": 1034722473,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-12-08",
+     "fitted": 709025125,
+     "lo": 460836075,
+     "hi": 1090879501,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-12-15",
+     "fitted": 747505727,
+     "lo": 485846824,
+     "hi": 1150084315,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-12-22",
+     "fitted": 788074770,
+     "lo": 512214971,
+     "hi": 1212502325,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-12-29",
+     "fitted": 830845599,
+     "lo": 540014184,
+     "hi": 1278307920,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-01-05",
+     "fitted": 875937709,
+     "lo": 569322132,
+     "hi": 1347684952,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-01-12",
+     "fitted": 923477083,
+     "lo": 600220696,
+     "hi": 1420827253,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-01-19",
+     "fitted": 973596541,
+     "lo": 632796205,
+     "hi": 1497939173,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-01-26",
+     "fitted": 1026436109,
+     "lo": 667139670,
+     "hi": 1579236154,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-02-02",
+     "fitted": 1082143415,
+     "lo": 703347042,
+     "hi": 1664945329,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-02-09",
+     "fitted": 1140874100,
+     "lo": 741519480,
+     "hi": 1755306160,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-02-16",
+     "fitted": 1202792248,
+     "lo": 781763634,
+     "hi": 1850571104,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-02-23",
+     "fitted": 1268070852,
+     "lo": 824191941,
+     "hi": 1951006319,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-03-02",
+     "fitted": 1336892292,
+     "lo": 868922941,
+     "hi": 2056892410,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-03-09",
+     "fitted": 1409448848,
+     "lo": 916081606,
+     "hi": 2168525209,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-03-16",
+     "fitted": 1485943233,
+     "lo": 965799692,
+     "hi": 2286216604,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-03-23",
+     "fitted": 1566589163,
+     "lo": 1018216105,
+     "hi": 2410295413,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-03-30",
+     "fitted": 1651611954,
+     "lo": 1073477291,
+     "hi": 2541108294,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-04-06",
+     "fitted": 1741249149,
+     "lo": 1131737642,
+     "hi": 2679020725,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-04-13",
+     "fitted": 1835751183,
+     "lo": 1193159931,
+     "hi": 2824418014,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-04-20",
+     "fitted": 1935382083,
+     "lo": 1257915765,
+     "hi": 2977706386,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-04-27",
+     "fitted": 2040420207,
+     "lo": 1326186063,
+     "hi": 3139314109,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-05-04",
+     "fitted": 2151159017,
+     "lo": 1398161564,
+     "hi": 3309692695,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-05-11",
+     "fitted": 2267907905,
+     "lo": 1474043360,
+     "hi": 3489318162,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-05-18",
+     "fitted": 2390993054,
+     "lo": 1554043454,
+     "hi": 3678692361,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-05-25",
+     "fitted": 2520758347,
+     "lo": 1638385357,
+     "hi": 3878344382,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-06-01",
+     "fitted": 2657566334,
+     "lo": 1727304710,
+     "hi": 4088832026,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-06-08",
+     "fitted": 2801799239,
+     "lo": 1821049944,
+     "hi": 4310743372,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-06-15",
+     "fitted": 2953860032,
+     "lo": 1919882971,
+     "hi": 4544698414,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-06-22",
+     "fitted": 3114173553,
+     "lo": 2024079918,
+     "hi": 4791350792,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-06-29",
+     "fitted": 3283187697,
+     "lo": 2133931899,
+     "hi": 5051389624,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-07-06",
+     "fitted": 3461374670,
+     "lo": 2249745828,
+     "hi": 5325541427,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-07-13",
+     "fitted": 3649232304,
+     "lo": 2371845274,
+     "hi": 5614572147,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-07-20",
+     "fitted": 3847285452,
+     "lo": 2500571368,
+     "hi": 5919289303,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-07-27",
+     "fitted": 4056087449,
+     "lo": 2636283756,
+     "hi": 6240544235,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-08-03",
+     "fitted": 4276221664,
+     "lo": 2779361602,
+     "hi": 6579234493,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-08-10",
+     "fitted": 4508303124,
+     "lo": 2930204647,
+     "hi": 6936306335,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-08-17",
+     "fitted": 4752980237,
+     "lo": 3089234329,
+     "hi": 7312757377,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-08-24",
+     "fitted": 5010936601,
+     "lo": 3256894958,
+     "hi": 7709639377,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-08-31",
+     "fitted": 5282892915,
+     "lo": 3433654957,
+     "hi": 8128061176,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-09-07",
+     "fitted": 5569608992,
+     "lo": 3620008172,
+     "hi": 8569191794,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-09-14",
+     "fitted": 5871885882,
+     "lo": 3816475252,
+     "hi": 9034263696,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-09-21",
+     "fitted": 6190568110,
+     "lo": 4023605101,
+     "hi": 9524576237,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-09-28",
+     "fitted": 6526546036,
+     "lo": 4241976415,
+     "hi": 10041499290,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-10-05",
+     "fitted": 6880758341,
+     "lo": 4472199298,
+     "hi": 10586477076,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-10-12",
+     "fitted": 7254194652,
+     "lo": 4714916964,
+     "hi": 11161032197,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-10-19",
+     "fitted": 7647898304,
+     "lo": 4970807538,
+     "hi": 11766769890,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-10-26",
+     "fitted": 8062969257,
+     "lo": 5240585945,
+     "hi": 12405382513,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-11-02",
+     "fitted": 8500567170,
+     "lo": 5525005915,
+     "hi": 13078654273,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-11-09",
+     "fitted": 8961914639,
+     "lo": 5824862082,
+     "hi": 13788466209,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-11-16",
+     "fitted": 9448300611,
+     "lo": 6140992209,
+     "hi": 14536801450,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-11-23",
+     "fitted": 9961083992,
+     "lo": 6474279524,
+     "hi": 15325750753,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-11-30",
+     "fitted": 10501697434,
+     "lo": 6825655192,
+     "hi": 16157518348,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-12-07",
+     "fitted": 11071651348,
+     "lo": 7196100914,
+     "hi": 17034428093,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-12-14",
+     "fitted": 11672538115,
+     "lo": 7586651671,
+     "hi": 17958929967,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-12-21",
+     "fitted": 12306036539,
+     "lo": 7998398613,
+     "hi": 18933606916,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-12-28",
+     "fitted": 12973916539,
+     "lo": 8432492113,
+     "hi": 19961182070,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-01-04",
+     "fitted": 13678044091,
+     "lo": 8890144974,
+     "hi": 21044526349,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-01-11",
+     "fitted": 14420386442,
+     "lo": 9372635824,
+     "hi": 22186666486,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-01-18",
+     "fitted": 15203017606,
+     "lo": 9881312683,
+     "hi": 23390793483,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-01-25",
+     "fitted": 16028124160,
+     "lo": 10417596734,
+     "hi": 24660271524,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-02-01",
+     "fitted": 16898011352,
+     "lo": 10982986288,
+     "hi": 25998647377,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-02-08",
+     "fitted": 17815109541,
+     "lo": 11579060975,
+     "hi": 27409660303,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-02-15",
+     "fitted": 18781980989,
+     "lo": 12207486157,
+     "hi": 28897252500,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-02-22",
+     "fitted": 19801327017,
+     "lo": 12870017576,
+     "hi": 30465580120,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-03-01",
+     "fitted": 20875995554,
+     "lo": 13568506266,
+     "hi": 32119024883,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-03-08",
+     "fitted": 22008989096,
+     "lo": 14304903720,
+     "hi": 33862206311,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-03-15",
+     "fitted": 23203473087,
+     "lo": 15081267342,
+     "hi": 35699994642,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-03-22",
+     "fitted": 24462784772,
+     "lo": 15899766198,
+     "hi": 37637524435,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-03-29",
+     "fitted": 25790442515,
+     "lo": 16762687076,
+     "hi": 39680208914,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-04-05",
+     "fitted": 27190155632,
+     "lo": 17672440872,
+     "hi": 41833755091,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-04-12",
+     "fitted": 28665834750,
+     "lo": 18631569327,
+     "hi": 44104179713,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-04-19",
+     "fitted": 30221602739,
+     "lo": 19642752130,
+     "hi": 46497826072,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-04-26",
+     "fitted": 31861806226,
+     "lo": 20708814404,
+     "hi": 49021381726,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-05-03",
+     "fitted": 33591027742,
+     "lo": 21832734598,
+     "hi": 51681897184,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-05-10",
+     "fitted": 35414098520,
+     "lo": 23017652808,
+     "hi": 54486805604,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-05-17",
+     "fitted": 37336112002,
+     "lo": 24266879552,
+     "hi": 57443943561,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-05-24",
+     "fitted": 39362438058,
+     "lo": 25583905020,
+     "hi": 60561572939,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-05-31",
+     "fitted": 41498738000,
+     "lo": 26972408819,
+     "hi": 63848404017,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-06-07",
+     "fitted": 43750980390,
+     "lo": 28436270262,
+     "hi": 67313619804,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-06-14",
+     "fitted": 46125457721,
+     "lo": 29979579201,
+     "hi": 70966901693,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-06-21",
+     "fitted": 48628803995,
+     "lo": 31606647453,
+     "hi": 74818456511,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-06-28",
+     "fitted": 51268013258,
+     "lo": 33322020851,
+     "hi": 78879045036,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-07-05",
+     "fitted": 54050459141,
+     "lo": 35130491940,
+     "hi": 83160012060,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-07-12",
+     "fitted": 56983915462,
+     "lo": 37037113368,
+     "hi": 87673318087,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-07-19",
+     "fitted": 60076577941,
+     "lo": 39047212006,
+     "hi": 92431572746,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-07-26",
+     "fitted": 63337087103,
+     "lo": 41166403826,
+     "hi": 97448070027,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-08-02",
+     "fitted": 66774552417,
+     "lo": 43400609592,
+     "hi": 102736825414,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-08-09",
+     "fitted": 70398577744,
+     "lo": 45756071406,
+     "hi": 108312615049,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-08-16",
+     "fitted": 74219288171,
+     "lo": 48239370142,
+     "hi": 114191017013,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-08-23",
+     "fitted": 78247358301,
+     "lo": 50857443836,
+     "hi": 120388454850,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-08-30",
+     "fitted": 82494042074,
+     "lo": 53617607069,
+     "hi": 126922243451,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-09-06",
+     "fitted": 86971204210,
+     "lo": 56527571403,
+     "hi": 133810637429,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-09-13",
+     "fitted": 91691353359,
+     "lo": 59595466926,
+     "hi": 141072882123,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-09-20",
+     "fitted": 96667677044,
+     "lo": 62829864967,
+     "hi": 148729267365,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-09-27",
+     "fitted": 101914078513,
+     "lo": 66239802041,
+     "hi": 156801184169,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-10-04",
+     "fitted": 107445215575,
+     "lo": 69834805100,
+     "hi": 165311184492,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-10-11",
+     "fitted": 113276541557,
+     "lo": 73624918148,
+     "hi": 174283044245,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-10-18",
+     "fitted": 119424348478,
+     "lo": 77620730300,
+     "hi": 183741829717,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-10-25",
+     "fitted": 125905812566,
+     "lo": 81833405373,
+     "hi": 193713967610,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-11-01",
+     "fitted": 132739042246,
+     "lo": 86274713070,
+     "hi": 204227318869,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-11-08",
+     "fitted": 139943128736,
+     "lo": 90957061867,
+     "hi": 215311256524,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-11-15",
+     "fitted": 147538199379,
+     "lo": 95893533680,
+     "hi": 226996747755,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-11-22",
+     "fitted": 155545473885,
+     "lo": 101097920413,
+     "hi": 239316440409,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-11-29",
+     "fitted": 163987323607,
+     "lo": 106584762492,
+     "hi": 252304754215,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-12-06",
+     "fitted": 172887334052,
+     "lo": 112369389490,
+     "hi": 265997976950,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-12-13",
+     "fitted": 182270370771,
+     "lo": 118467962954,
+     "hi": 280434365819,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-12-20",
+     "fitted": 192162648832,
+     "lo": 124897521560,
+     "hi": 295654254345,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-12-27",
+     "fitted": 202591806063,
+     "lo": 131676028715,
+     "hi": 311700165052,
+     "extrapolated": true
+    },
+    {
+     "date": "2027-01-03",
+     "fitted": 213586980265,
+     "lo": 138822422748,
+     "hi": 328616928273,
+     "extrapolated": true
+    }
+   ]
+  },
+  "openai": {
+   "fit": {
+    "k_per_day": 0.003434434601929314,
+    "mom_implied": 0.1102,
+    "sigma_log": 0.0442,
+    "n_anchors": 15,
+    "epoch": "2023-03-01",
+    "last_anchor_date": "2026-02-28",
+    "last_anchor_value": 25000000000
+   },
+   "realtime": {
+    "arr_at_build": 39986260234,
+    "usd_per_hour": 5722501,
+    "mom_implied": 0.1102
+   },
+   "anchors": [
+    {
+     "date": "2022-12-31",
+     "value_usd": 28000000,
+     "metric": "reported_rev",
+     "source_url": "https://www.theinformation.com/articles/openai-passes-1-billion-revenue-pace-as-big-companies-boost-ai-spending?rc=9mzoog",
+     "note": "2022 28M"
+    },
+    {
+     "date": "2023-03-01",
+     "value_usd": 200000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.theinformation.com/articles/openais-losses-doubled-to-540-million-as-it-developed-chatgpt?rc=9mzoog",
+     "note": "March 2023 100Ms"
+    },
+    {
+     "date": "2023-08-29",
+     "value_usd": 1000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.theinformation.com/articles/openai-passes-1-billion-revenue-pace-as-big-companies-boost-ai-spending?rc=4ylmkj",
+     "note": "Aug 2023 1B"
+    },
+    {
+     "date": "2023-10-10",
+     "value_usd": 1300000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.theinformation.com/articles/openais-revenue-crossed-1-3-billion-annualized-rate-ceo-tells-staff?rc=9mzoog",
+     "note": "1.3B Oct 2023"
+    },
+    {
+     "date": "2023-12-30",
+     "value_usd": 1600000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.theinformation.com/articles/openais-annualized-revenue-tops-1-6-billion-as-customers-shrug-off-ceo-drama?rc=9mzoog",
+     "note": "1.6B Dec 2023"
+    },
+    {
+     "date": "2023-12-31",
+     "value_usd": 2000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.ft.com/content/81ac0e78-5b9b-43c2-b135-d11c47480119",
+     "note": "Dec 2023 2B"
+    },
+    {
+     "date": "2024-06-12",
+     "value_usd": 3400000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.theinformation.com/articles/openais-annualized-revenue-doubles-to-3-4-billion-since-late-2023?rc=9mzoog",
+     "note": "June 2024 3.4B"
+    },
+    {
+     "date": "2024-08-15",
+     "value_usd": 3600000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.nytimes.com/2024/09/27/technology/openai-chatgpt-investors-funding.html",
+     "note": "August 2024 3.6B"
+    },
+    {
+     "date": "2024-09-12",
+     "value_usd": 4000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.wsj.com/tech/ai/united-arab-emirates-fund-in-talks-to-invest-in-openai-fd4e4977?",
+     "note": "Sep 2024 4B | ARR 口径"
+    },
+    {
+     "date": "2024-12-31",
+     "value_usd": 5500000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.cnbc.com/2025/06/09/openai-hits-10-billion-in-annualized-revenue-fueled-by-chatgpt-growth.html",
+     "note": "Dec 2024 5.5B | ARR 口径"
+    },
+    {
+     "date": "2024-12-31",
+     "value_usd": 3700000000,
+     "metric": "reported_rev",
+     "source_url": "https://www.bloomberg.com/news/articles/2025-03-26/openai-expects-revenue-will-triple-to-12-7-billion-this-year",
+     "note": "2024 3.7B"
+    },
+    {
+     "date": "2025-06-09",
+     "value_usd": 10000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.cnbc.com/2025/06/09/openai-hits-10-billion-in-annualized-revenue-fueled-by-chatgpt-growth.html",
+     "note": "June 2025 10B | ARR 口径"
+    },
+    {
+     "date": "2025-07-30",
+     "value_usd": 12000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.cnbc.com/2025/08/20/openai-compute-ai.html ",
+     "note": "July 2025 12B"
+    },
+    {
+     "date": "2025-08-01",
+     "value_usd": 13000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.nytimes.com/2025/08/01/business/dealbook/openai-ai-mega-funding-deal.html",
+     "note": "August 2025 13B | ARR 口径"
+    },
+    {
+     "date": "2025-12-18",
+     "value_usd": 19000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.theinformation.com/articles/openais-organizational-problems-hurt-chatgpt?rc=9mzoog",
+     "note": "Dec 2025 19B"
+    },
+    {
+     "date": "2025-12-31",
+     "value_usd": 21400000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.theinformation.com/articles/openai-tops-25-billion-annualized-revenue-anthropic-narrows-gap?rc=9mzoog",
+     "note": "21B end-2025"
+    },
+    {
+     "date": "2025-12-31",
+     "value_usd": 13000000000,
+     "metric": "reported_rev",
+     "source_url": "https://www.nytimes.com/2026/02/11/technology/openai-revenue-challenge.html",
+     "note": "2025 13B"
+    },
+    {
+     "date": "2026-02-28",
+     "value_usd": 25000000000,
+     "metric": "run_rate_arr",
+     "source_url": "https://www.theinformation.com/articles/openai-tops-25-billion-annualized-revenue-anthropic-narrows-gap?rc=9mzoog",
+     "note": "March 2026 25B"
+    }
+   ],
+   "series": [
+    {
+     "date": "2023-03-01",
+     "fitted": 587203275,
+     "lo": 538462939,
+     "hi": 640355465,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-03-08",
+     "fitted": 601491315,
+     "lo": 551565012,
+     "hi": 655936823,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-03-15",
+     "fitted": 616127017,
+     "lo": 564985890,
+     "hi": 671897313,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-03-22",
+     "fitted": 631118840,
+     "lo": 578733329,
+     "hi": 688246159,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-03-29",
+     "fitted": 646475450,
+     "lo": 592815275,
+     "hi": 704992810,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-04-05",
+     "fitted": 662205722,
+     "lo": 607239868,
+     "hi": 722146948,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-04-12",
+     "fitted": 678318748,
+     "lo": 622015446,
+     "hi": 739718486,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-04-19",
+     "fitted": 694823843,
+     "lo": 637150549,
+     "hi": 757717581,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-04-26",
+     "fitted": 711730545,
+     "lo": 652653924,
+     "hi": 776154636,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-05-03",
+     "fitted": 729048627,
+     "lo": 668534533,
+     "hi": 795040309,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-05-10",
+     "fitted": 746788100,
+     "lo": 684801554,
+     "hi": 814385514,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-05-17",
+     "fitted": 764959215,
+     "lo": 701464391,
+     "hi": 834201434,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-05-24",
+     "fitted": 783572476,
+     "lo": 718532673,
+     "hi": 854499521,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-05-31",
+     "fitted": 802638642,
+     "lo": 736016268,
+     "hi": 875291510,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-06-07",
+     "fitted": 822168733,
+     "lo": 753925279,
+     "hi": 896589416,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-06-14",
+     "fitted": 842174037,
+     "lo": 772270058,
+     "hi": 918405550,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-06-21",
+     "fitted": 862666117,
+     "lo": 791061210,
+     "hi": 940752523,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-06-28",
+     "fitted": 883656818,
+     "lo": 810309594,
+     "hi": 963643250,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-07-05",
+     "fitted": 905158271,
+     "lo": 830026337,
+     "hi": 987090963,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-07-12",
+     "fitted": 927182906,
+     "lo": 850222835,
+     "hi": 1011109213,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-07-19",
+     "fitted": 949743453,
+     "lo": 870910762,
+     "hi": 1035711884,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-07-26",
+     "fitted": 972852950,
+     "lo": 892102074,
+     "hi": 1060913197,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-08-02",
+     "fitted": 996524757,
+     "lo": 913809021,
+     "hi": 1086727716,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-08-09",
+     "fitted": 1020772554,
+     "lo": 936044149,
+     "hi": 1113170364,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-08-16",
+     "fitted": 1045610357,
+     "lo": 958820310,
+     "hi": 1140256424,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-08-23",
+     "fitted": 1071052522,
+     "lo": 982150669,
+     "hi": 1168001551,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-08-30",
+     "fitted": 1097113755,
+     "lo": 1006048711,
+     "hi": 1196421783,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-09-06",
+     "fitted": 1123809120,
+     "lo": 1030528248,
+     "hi": 1225533546,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-09-13",
+     "fitted": 1151154046,
+     "lo": 1055603430,
+     "hi": 1255353667,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-09-20",
+     "fitted": 1179164338,
+     "lo": 1081288751,
+     "hi": 1285899381,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-09-27",
+     "fitted": 1207856187,
+     "lo": 1107599056,
+     "hi": 1317188345,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-10-04",
+     "fitted": 1237246176,
+     "lo": 1134549552,
+     "hi": 1349238644,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-10-11",
+     "fitted": 1267351292,
+     "lo": 1162155818,
+     "hi": 1382068801,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-10-18",
+     "fitted": 1298188938,
+     "lo": 1190433809,
+     "hi": 1415697794,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-10-25",
+     "fitted": 1329776935,
+     "lo": 1219399871,
+     "hi": 1450145059,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-11-01",
+     "fitted": 1362133544,
+     "lo": 1249070745,
+     "hi": 1485430508,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-11-08",
+     "fitted": 1395277465,
+     "lo": 1279463581,
+     "hi": 1521574535,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-11-15",
+     "fitted": 1429227855,
+     "lo": 1310595947,
+     "hi": 1558598031,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-11-22",
+     "fitted": 1464004339,
+     "lo": 1342485837,
+     "hi": 1596522396,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-11-29",
+     "fitted": 1499627016,
+     "lo": 1375151683,
+     "hi": 1635369550,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-12-06",
+     "fitted": 1536116478,
+     "lo": 1408612366,
+     "hi": 1675161947,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-12-13",
+     "fitted": 1573493814,
+     "lo": 1442887226,
+     "hi": 1715922587,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-12-20",
+     "fitted": 1611780628,
+     "lo": 1477996074,
+     "hi": 1757675030,
+     "extrapolated": false
+    },
+    {
+     "date": "2023-12-27",
+     "fitted": 1650999051,
+     "lo": 1513959204,
+     "hi": 1800443408,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-01-03",
+     "fitted": 1691171751,
+     "lo": 1550797401,
+     "hi": 1844252441,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-01-10",
+     "fitted": 1732321948,
+     "lo": 1588531958,
+     "hi": 1889127452,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-01-17",
+     "fitted": 1774473425,
+     "lo": 1627184686,
+     "hi": 1935094377,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-01-24",
+     "fitted": 1817650548,
+     "lo": 1666777926,
+     "hi": 1982179786,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-01-31",
+     "fitted": 1861878271,
+     "lo": 1707334563,
+     "hi": 2030410894,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-02-07",
+     "fitted": 1907182160,
+     "lo": 1748878039,
+     "hi": 2079815578,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-02-14",
+     "fitted": 1953588399,
+     "lo": 1791432365,
+     "hi": 2130422395,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-02-21",
+     "fitted": 2001123811,
+     "lo": 1835022139,
+     "hi": 2182260595,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-02-28",
+     "fitted": 2049815871,
+     "lo": 1879672554,
+     "hi": 2235360141,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-03-06",
+     "fitted": 2099692725,
+     "lo": 1925409420,
+     "hi": 2289751724,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-03-13",
+     "fitted": 2150783200,
+     "lo": 1972259171,
+     "hi": 2345466783,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-03-20",
+     "fitted": 2203116826,
+     "lo": 2020248887,
+     "hi": 2402537520,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-03-27",
+     "fitted": 2256723853,
+     "lo": 2069406306,
+     "hi": 2460996923,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-04-03",
+     "fitted": 2311635266,
+     "lo": 2119759841,
+     "hi": 2520878781,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-04-10",
+     "fitted": 2367882802,
+     "lo": 2171338596,
+     "hi": 2582217705,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-04-17",
+     "fitted": 2425498974,
+     "lo": 2224172384,
+     "hi": 2645049151,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-04-24",
+     "fitted": 2484517083,
+     "lo": 2278291742,
+     "hi": 2709409433,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-05-01",
+     "fitted": 2544971242,
+     "lo": 2333727952,
+     "hi": 2775335753,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-05-08",
+     "fitted": 2606896393,
+     "lo": 2390513056,
+     "hi": 2842866216,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-05-15",
+     "fitted": 2670328329,
+     "lo": 2448679875,
+     "hi": 2912039854,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-05-22",
+     "fitted": 2735303714,
+     "lo": 2508262030,
+     "hi": 2982896650,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-05-29",
+     "fitted": 2801860103,
+     "lo": 2569293960,
+     "hi": 3055477559,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-06-05",
+     "fitted": 2870035966,
+     "lo": 2631810940,
+     "hi": 3129824533,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-06-12",
+     "fitted": 2939870708,
+     "lo": 2695849105,
+     "hi": 3205980543,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-06-19",
+     "fitted": 3011404694,
+     "lo": 2761445471,
+     "hi": 3283989609,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-06-26",
+     "fitted": 3084679271,
+     "lo": 2828637950,
+     "hi": 3363896820,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-07-03",
+     "fitted": 3159736791,
+     "lo": 2897465381,
+     "hi": 3445748361,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-07-10",
+     "fitted": 3236620637,
+     "lo": 2967967546,
+     "hi": 3529591543,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-07-17",
+     "fitted": 3315375249,
+     "lo": 3040185194,
+     "hi": 3615474828,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-07-24",
+     "fitted": 3396046146,
+     "lo": 3114160069,
+     "hi": 3703447856,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-07-31",
+     "fitted": 3478679957,
+     "lo": 3189934926,
+     "hi": 3793561474,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-08-07",
+     "fitted": 3563324442,
+     "lo": 3267553564,
+     "hi": 3885867770,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-08-14",
+     "fitted": 3650028528,
+     "lo": 3347060847,
+     "hi": 3980420095,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-08-21",
+     "fitted": 3738842328,
+     "lo": 3428502729,
+     "hi": 4077273101,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-08-28",
+     "fitted": 3829817178,
+     "lo": 3511926285,
+     "hi": 4176482770,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-09-04",
+     "fitted": 3923005660,
+     "lo": 3597379732,
+     "hi": 4278106443,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-09-11",
+     "fitted": 4018461638,
+     "lo": 3684912463,
+     "hi": 4382202860,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-09-18",
+     "fitted": 4116240285,
+     "lo": 3774575072,
+     "hi": 4488832189,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-09-25",
+     "fitted": 4216398117,
+     "lo": 3866419384,
+     "hi": 4598056060,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-10-02",
+     "fitted": 4318993025,
+     "lo": 3960498484,
+     "hi": 4709937606,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-10-09",
+     "fitted": 4424084309,
+     "lo": 4056866750,
+     "hi": 4824541493,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-10-16",
+     "fitted": 4531732711,
+     "lo": 4155579884,
+     "hi": 4941933963,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-10-23",
+     "fitted": 4642000454,
+     "lo": 4256694941,
+     "hi": 5062182869,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-10-30",
+     "fitted": 4754951270,
+     "lo": 4360270366,
+     "hi": 5185357715,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-11-06",
+     "fitted": 4870650446,
+     "lo": 4466366025,
+     "hi": 5311529694,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-11-13",
+     "fitted": 4989164856,
+     "lo": 4575043241,
+     "hi": 5440771736,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-11-20",
+     "fitted": 5110563001,
+     "lo": 4686364831,
+     "hi": 5573158541,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-11-27",
+     "fitted": 5234915049,
+     "lo": 4800395137,
+     "hi": 5708766629,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-12-04",
+     "fitted": 5362292875,
+     "lo": 4917200070,
+     "hi": 5847674382,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-12-11",
+     "fitted": 5492770105,
+     "lo": 5036847142,
+     "hi": 5989962088,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-12-18",
+     "fitted": 5626422153,
+     "lo": 5159405509,
+     "hi": 6135711989,
+     "extrapolated": false
+    },
+    {
+     "date": "2024-12-25",
+     "fitted": 5763326270,
+     "lo": 5284946010,
+     "hi": 6285008329,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-01-01",
+     "fitted": 5903561588,
+     "lo": 5413541208,
+     "hi": 6437937401,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-01-08",
+     "fitted": 6047209161,
+     "lo": 5545265430,
+     "hi": 6594587598,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-01-15",
+     "fitted": 6194352019,
+     "lo": 5680194813,
+     "hi": 6755049464,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-01-22",
+     "fitted": 6345075209,
+     "lo": 5818407347,
+     "hi": 6919415745,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-01-29",
+     "fitted": 6499465850,
+     "lo": 5959982917,
+     "hi": 7087781445,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-02-05",
+     "fitted": 6657613179,
+     "lo": 6105003354,
+     "hi": 7260243880,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-02-12",
+     "fitted": 6819608605,
+     "lo": 6253552480,
+     "hi": 7436902733,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-02-19",
+     "fitted": 6985545763,
+     "lo": 6405716158,
+     "hi": 7617860112,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-02-26",
+     "fitted": 7155520562,
+     "lo": 6561582336,
+     "hi": 7803220610,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-03-05",
+     "fitted": 7329631250,
+     "lo": 6721241105,
+     "hi": 7993091367,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-03-12",
+     "fitted": 7507978460,
+     "lo": 6884784749,
+     "hi": 8187582127,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-03-19",
+     "fitted": 7690665279,
+     "lo": 7052307796,
+     "hi": 8386805305,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-03-26",
+     "fitted": 7877797299,
+     "lo": 7223907073,
+     "hi": 8590876054,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-04-02",
+     "fitted": 8069482683,
+     "lo": 7399681766,
+     "hi": 8799912324,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-04-09",
+     "fitted": 8265832223,
+     "lo": 7579733471,
+     "hi": 9014034940,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-04-16",
+     "fitted": 8466959411,
+     "lo": 7764166258,
+     "hi": 9233367665,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-04-23",
+     "fitted": 8672980498,
+     "lo": 7953086730,
+     "hi": 9458037271,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-04-30",
+     "fitted": 8884014563,
+     "lo": 8146604083,
+     "hi": 9688173619,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-05-07",
+     "fitted": 9100183585,
+     "lo": 8344830169,
+     "hi": 9923909727,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-05-14",
+     "fitted": 9321612509,
+     "lo": 8547879563,
+     "hi": 10165381850,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-05-21",
+     "fitted": 9548429321,
+     "lo": 8755869628,
+     "hi": 10412729560,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-05-28",
+     "fitted": 9780765121,
+     "lo": 8968920582,
+     "hi": 10666095822,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-06-04",
+     "fitted": 10018754198,
+     "lo": 9187155567,
+     "hi": 10925627083,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-06-11",
+     "fitted": 10262534111,
+     "lo": 9410700725,
+     "hi": 11191473351,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-06-18",
+     "fitted": 10512245764,
+     "lo": 9639685263,
+     "hi": 11463788286,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-06-25",
+     "fitted": 10768033490,
+     "lo": 9874241534,
+     "hi": 11742729286,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-07-02",
+     "fitted": 11030045135,
+     "lo": 10114505113,
+     "hi": 12028457577,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-07-09",
+     "fitted": 11298432140,
+     "lo": 10360614872,
+     "hi": 12321138312,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-07-16",
+     "fitted": 11573349635,
+     "lo": 10612713061,
+     "hi": 12620940659,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-07-23",
+     "fitted": 11854956520,
+     "lo": 10870945393,
+     "hi": 12928037904,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-07-30",
+     "fitted": 12143415565,
+     "lo": 11135461127,
+     "hi": 13242607549,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-08-06",
+     "fitted": 12438893499,
+     "lo": 11406413153,
+     "hi": 13564831416,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-08-13",
+     "fitted": 12741561107,
+     "lo": 11683958080,
+     "hi": 13894895748,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-08-20",
+     "fitted": 13051593332,
+     "lo": 11968256330,
+     "hi": 14232991325,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-08-27",
+     "fitted": 13369169372,
+     "lo": 12259472226,
+     "hi": 14579313563,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-09-03",
+     "fitted": 13694472786,
+     "lo": 12557774092,
+     "hi": 14934062639,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-09-10",
+     "fitted": 14027691599,
+     "lo": 12863334345,
+     "hi": 15297443596,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-09-17",
+     "fitted": 14369018412,
+     "lo": 13176329600,
+     "hi": 15669666468,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-09-24",
+     "fitted": 14718650510,
+     "lo": 13496940768,
+     "hi": 16050946401,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-10-01",
+     "fitted": 15076789982,
+     "lo": 13825353161,
+     "hi": 16441503773,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-10-08",
+     "fitted": 15443643832,
+     "lo": 14161756602,
+     "hi": 16841564328,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-10-15",
+     "fitted": 15819424101,
+     "lo": 14506345532,
+     "hi": 17251359298,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-10-22",
+     "fitted": 16204347990,
+     "lo": 14859319124,
+     "hi": 17671125547,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-10-29",
+     "fitted": 16598637985,
+     "lo": 15220881395,
+     "hi": 18101105698,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-11-05",
+     "fitted": 17002521985,
+     "lo": 15591241328,
+     "hi": 18541548280,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-11-12",
+     "fitted": 17416233435,
+     "lo": 15970612992,
+     "hi": 18992707869,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-11-19",
+     "fitted": 17840011460,
+     "lo": 16359215663,
+     "hi": 19454845234,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-11-26",
+     "fitted": 18274101003,
+     "lo": 16757273954,
+     "hi": 19928227491,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-12-03",
+     "fitted": 18718752969,
+     "lo": 17165017941,
+     "hi": 20413128255,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-12-10",
+     "fitted": 19174224366,
+     "lo": 17582683301,
+     "hi": 20909827797,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-12-17",
+     "fitted": 19640778455,
+     "lo": 18010511444,
+     "hi": 21418613211,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-12-24",
+     "fitted": 20118684906,
+     "lo": 18448749654,
+     "hi": 21939778573,
+     "extrapolated": false
+    },
+    {
+     "date": "2025-12-31",
+     "fitted": 20608219948,
+     "lo": 18897651233,
+     "hi": 22473625117,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-01-07",
+     "fitted": 21109666531,
+     "lo": 19357475646,
+     "hi": 23020461407,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-01-14",
+     "fitted": 21623314492,
+     "lo": 19828488672,
+     "hi": 23580603513,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-01-21",
+     "fitted": 22149460719,
+     "lo": 20310962555,
+     "hi": 24154375197,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-01-28",
+     "fitted": 22688409325,
+     "lo": 20805176165,
+     "hi": 24742108099,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-02-04",
+     "fitted": 23240471820,
+     "lo": 21311415157,
+     "hi": 25344141928,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-02-11",
+     "fitted": 23805967298,
+     "lo": 21829972138,
+     "hi": 25960824660,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-02-18",
+     "fitted": 24385222615,
+     "lo": 22361146833,
+     "hi": 26592512737,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-02-25",
+     "fitted": 24978572579,
+     "lo": 22905246261,
+     "hi": 27239571274,
+     "extrapolated": false
+    },
+    {
+     "date": "2026-03-04",
+     "fitted": 25586360146,
+     "lo": 23462584910,
+     "hi": 27902374271,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-03-11",
+     "fitted": 26208936619,
+     "lo": 24033484924,
+     "hi": 28581304828,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-03-18",
+     "fitted": 26846661845,
+     "lo": 24618276280,
+     "hi": 29276755367,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-03-25",
+     "fitted": 27499904429,
+     "lo": 25217296989,
+     "hi": 29989127856,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-04-01",
+     "fitted": 28169041946,
+     "lo": 25830893285,
+     "hi": 30718834048,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-04-08",
+     "fitted": 28854461156,
+     "lo": 26459419825,
+     "hi": 31466295712,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-04-15",
+     "fitted": 29556558231,
+     "lo": 27103239898,
+     "hi": 32231944881,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-04-22",
+     "fitted": 30275738985,
+     "lo": 27762725631,
+     "hi": 33016224100,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-04-29",
+     "fitted": 31012419101,
+     "lo": 28438258207,
+     "hi": 33819586681,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-05-06",
+     "fitted": 31767024382,
+     "lo": 29130228084,
+     "hi": 34642496968,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-05-13",
+     "fitted": 32539990988,
+     "lo": 29839035219,
+     "hi": 35485430602,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-05-20",
+     "fitted": 33331765695,
+     "lo": 30565089304,
+     "hi": 36348874800,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-05-27",
+     "fitted": 34142806147,
+     "lo": 31308809996,
+     "hi": 37233328631,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-06-03",
+     "fitted": 34973581126,
+     "lo": 32070627166,
+     "hi": 38139303309,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-06-10",
+     "fitted": 35824570819,
+     "lo": 32850981144,
+     "hi": 39067322486,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-06-17",
+     "fitted": 36696267097,
+     "lo": 33650322974,
+     "hi": 40017922559,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-06-24",
+     "fitted": 37589173802,
+     "lo": 34469114676,
+     "hi": 40991652973,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-07-01",
+     "fitted": 38503807032,
+     "lo": 35307829511,
+     "hi": 41989076544,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-07-08",
+     "fitted": 39440695445,
+     "lo": 36166952255,
+     "hi": 43010769782,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-07-15",
+     "fitted": 40400380562,
+     "lo": 37046979481,
+     "hi": 44057323226,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-07-22",
+     "fitted": 41383417081,
+     "lo": 37948419845,
+     "hi": 45129341783,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-07-29",
+     "fitted": 42390373196,
+     "lo": 38871794378,
+     "hi": 46227445078,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-08-05",
+     "fitted": 43421830928,
+     "lo": 39817636791,
+     "hi": 47352267817,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-08-12",
+     "fitted": 44478386459,
+     "lo": 40786493780,
+     "hi": 48504460144,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-08-19",
+     "fitted": 45560650477,
+     "lo": 41778925344,
+     "hi": 49684688028,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-08-26",
+     "fitted": 46669248530,
+     "lo": 42795505108,
+     "hi": 50893633639,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-09-02",
+     "fitted": 47804821388,
+     "lo": 43836820654,
+     "hi": 52131995747,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-09-09",
+     "fitted": 48968025411,
+     "lo": 44903473864,
+     "hi": 53400490126,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-09-16",
+     "fitted": 50159532931,
+     "lo": 45996081260,
+     "hi": 54699849963,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-09-23",
+     "fitted": 51380032638,
+     "lo": 47115274371,
+     "hi": 56030826289,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-09-30",
+     "fitted": 52630229981,
+     "lo": 48261700090,
+     "hi": 57394188408,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-10-07",
+     "fitted": 53910847573,
+     "lo": 49436021049,
+     "hi": 58790724341,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-10-14",
+     "fitted": 55222625610,
+     "lo": 50638916006,
+     "hi": 60221241287,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-10-21",
+     "fitted": 56566322301,
+     "lo": 51871080234,
+     "hi": 61686566083,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-10-28",
+     "fitted": 57942714300,
+     "lo": 53133225922,
+     "hi": 63187545686,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-11-04",
+     "fitted": 59352597161,
+     "lo": 54426082592,
+     "hi": 64725047662,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-11-11",
+     "fitted": 60796785797,
+     "lo": 55750397512,
+     "hi": 66299960686,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-11-18",
+     "fitted": 62276114948,
+     "lo": 57106936137,
+     "hi": 67913195058,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-11-25",
+     "fitted": 63791439666,
+     "lo": 58496482545,
+     "hi": 69565683226,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-12-02",
+     "fitted": 65343635806,
+     "lo": 59919839894,
+     "hi": 71258380328,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-12-09",
+     "fitted": 66933600539,
+     "lo": 61377830884,
+     "hi": 72992264741,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-12-16",
+     "fitted": 68562252862,
+     "lo": 62871298232,
+     "hi": 74768338650,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-12-23",
+     "fitted": 70230534137,
+     "lo": 64401105161,
+     "hi": 76587628626,
+     "extrapolated": true
+    },
+    {
+     "date": "2026-12-30",
+     "fitted": 71939408629,
+     "lo": 65968135901,
+     "hi": 78451186216,
+     "extrapolated": true
+    },
+    {
+     "date": "2027-01-06",
+     "fitted": 73689864066,
+     "lo": 67573296194,
+     "hi": 80360088556,
+     "extrapolated": true
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "items": [
+  {
+   "title": "A New Foe Has Emerged for Data Centers: Farmers - WSJ",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObnNCWVkwaFFSeTk3LUFZNXNBV1RPSVN4dTQ3Slk4N3NyZkw3aGx6V2FZRzdxOTY5cXNibzBaUkowX2NmMUhfek5pdy1CamZpNXczNHVxdXVuLWlHdWh5a2RHTmcwYjdJdXY3bDQwdHhsLW83TWZNX3JXWnd6RnJzWERseUJfaG0tQzZrWnRiMW5saEEtNTZveGdybw?oc=5",
+   "source_name": "WSJ",
+   "source_url": "https://www.wsj.com",
+   "published": "2026-07-11T17:00:00+00:00"
+  },
+  {
+   "title": "Dark smoke rose above a Virginia data center as a heat wave pushed the power grid close to its limits - Business Insider",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbUZwNEdTOWVzWlkybG12VG1RNDFzd0QzZ0hHSmVBWHE0Rjk1TUExR05DMjNiSDNUYzY5QlptTGlWSHI2STQtakdsYTdCR0lUNjk3Sm5Ma00xTUZOWGgtdTh4VHF2RV8xQ1NSUU1RZVJIUFQ4UlN5X0paUWpxX1BmRUl2WDRWZVdta1E0MHBGamZnNWlQZUN1UWhUWnJsZw?oc=5",
+   "source_name": "Business Insider",
+   "source_url": "https://www.businessinsider.com",
+   "published": "2026-07-11T04:02:00+00:00"
+  },
+  {
+   "title": "The AI data center boom isn't facing a bottleneck - Data Center Dynamics",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSXdhLU9pVjhkd1JYTnoyZjZweENBZFlSeWJaa1d4blZ5QzlJVkp6Wk1oLXNFTkpVMTJ4Qi1SQnViU2VXc2tmNklrSEdBN0pINEdYYWhIZ0JEcXQxa0t5ZnRpVFNpNDZxd21Rb1pxTlJGVzhGWU5vSHk5dVNOQzB4LW0zckFpY0ZaRnZjSWNTN2l3a2lpZkpJUVRuRjg?oc=5",
+   "source_name": "Data Center Dynamics",
+   "source_url": "https://www.datacenterdynamics.com",
+   "published": "2026-07-10T15:03:05+00:00"
+  },
+  "… 滚动窗口最多 300 条"
+ ],
+ "queries": [
+  "\"AI data center\" (gigawatt OR megawatt OR construction OR power)",
+  "\"data center\" (OpenAI OR Anthropic OR xAI OR Nvidia OR Microsoft OR Meta)"
+ ]
+}

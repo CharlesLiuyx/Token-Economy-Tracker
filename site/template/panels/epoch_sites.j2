@@ -1,0 +1,22 @@
+{% from '_macros.j2' import panel_head with context %}
+<section class="panel">
+  {{ panel_head('Top Sites by Power — Epoch AI Frontier Data Centers', 'blue', 'epoch_datacenters') }}
+  <div class="panel-body">
+    <div class="table-wrap">
+    <table class="data-table">
+      <thead><tr><th>Site</th><th>Owner</th><th>Users</th><th>Country</th>
+                 <th class="num">MW</th><th class="num">k H100-eq</th></tr></thead>
+      <tbody>
+      {% for s in epoch_sites %}
+        <tr>
+          <td>{{ s.name | e }}</td><td>{{ s.owner | e }}</td><td>{{ s.users | e }}</td>
+          <td>{{ s.country | e }}</td>
+          <td class="num">{{ '{:,}'.format(s.power_mw) }}</td>
+          <td class="num">{{ '{:,}'.format(s.h100_k) }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>

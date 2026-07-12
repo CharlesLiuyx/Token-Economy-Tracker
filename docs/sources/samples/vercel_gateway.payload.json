@@ -1,0 +1,100 @@
+{
+ "series": [
+  {
+   "day": "2026-07-12",
+   "metric": "requests",
+   "shares": [
+    [
+     "DeepSeek V4 Flash",
+     21.6849
+    ],
+    [
+     "Gemini 2.5 Flash Lite",
+     7.8947
+    ],
+    [
+     "Gemini 3.1 Flash Lite Preview",
+     7.3537
+    ],
+    [
+     "text-embedding-3-large",
+     4.7961
+    ],
+    [
+     "text-embedding-3-small",
+     3.7719
+    ],
+    [
+     "Gemini 3 Flash",
+     3.5696
+    ],
+    [
+     "Claude Haiku 4.5",
+     3.5453
+    ],
+    [
+     "GPT-4o mini",
+     3.498
+    ],
+    [
+     "Claude Sonnet 4.6",
+     3.2893
+    ],
+    [
+     "DeepSeek V4 Pro",
+     2.8178
+    ]
+   ],
+   "others_share": 0
+  },
+  {
+   "day": "2026-07-12",
+   "metric": "tokens",
+   "shares": [
+    [
+     "DeepSeek V4 Flash",
+     25.6846
+    ],
+    [
+     "DeepSeek V4 Pro",
+     12.2504
+    ],
+    [
+     "Step 3.7 Flash",
+     6.5502
+    ],
+    [
+     "GLM 5.2",
+     5.6083
+    ],
+    [
+     "Claude Sonnet 4.6",
+     4.8072
+    ],
+    [
+     "MiniMax M3",
+     4.061
+    ],
+    [
+     "Gemini 3 Flash",
+     3.7727
+    ],
+    [
+     "Gemini 3.1 Flash Lite Preview",
+     3.6569
+    ],
+    [
+     "Claude Haiku 4.5",
+     3.0098
+    ],
+    [
+     "GPT 5.6 Sol",
+     2.666
+    ]
+   ],
+   "others_share": 0
+  },
+  "… 共 183 行（天×指标）"
+ ],
+ "note": "share_percent（份额%），非绝对量"
+}
