@@ -2,7 +2,7 @@
  "schema_version": 1,
  "source": "openrouter",
  "snapshot_date": "2026-07-12",
- "fetched_at": "2026-07-12T09:04:27+00:00",
+ "fetched_at": "2026-07-12T09:35:18+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
@@ -776,16 +776,16 @@
    {
     "x": "2026-07-06",
     "ys": {
-     "tencent/hy3-20260706:free": 5392207190169,
-     "xiaomi/mimo-v2.5-20260422": 5176656763195,
-     "deepseek/deepseek-v4-flash-20260423": 4802134986852,
-     "minimax/minimax-m3-20260531": 3932258224444,
-     "z-ai/glm-5.2-20260616": 2962753045016,
-     "deepseek/deepseek-v4-pro-20260423": 2644610224434,
-     "anthropic/claude-4.7-opus-20260416": 2136581791789,
-     "anthropic/claude-4.8-opus-20260528": 1890793617322,
-     "nvidia/nemotron-3-ultra-550b-a55b-20260604:free": 1716028638746,
-     "Others": 17355590639181
+     "tencent/hy3-20260706:free": 5423033740717,
+     "xiaomi/mimo-v2.5-20260422": 5205936333478,
+     "deepseek/deepseek-v4-flash-20260423": 4815760071638,
+     "minimax/minimax-m3-20260531": 3943141006541,
+     "z-ai/glm-5.2-20260616": 2969410660183,
+     "deepseek/deepseek-v4-pro-20260423": 2649889945814,
+     "anthropic/claude-4.7-opus-20260416": 2142822862878,
+     "anthropic/claude-4.8-opus-20260528": 1896619469866,
+     "nvidia/nemotron-3-ultra-550b-a55b-20260604:free": 1727819904091,
+     "Others": 17402096084094
     }
    }
   ],
@@ -932,126 +932,6 @@
    },
    {
     "date": "2026-07-11",
-    "permaslug": "kwaivgi/kling-v3.0-std-20260429",
-    "variant": "standard",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 2567,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
-    "permaslug": "bytedance/seedance-2.0-fast-20260414",
-    "variant": "standard",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 6586,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
-    "permaslug": "cohere/rerank-4-pro",
-    "variant": "standard",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 273031,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
-    "permaslug": "google/veo-3.1-20260320",
-    "variant": "standard",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 18410,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
-    "permaslug": "microsoft/mai-transcribe-1.5",
-    "variant": "standard",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 57079,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
-    "permaslug": "openai/whisper-1",
-    "variant": "standard",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 86254,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
-    "permaslug": "x-ai/grok-imagine-video-20260512",
-    "variant": "standard",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 7826,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
-    "permaslug": "alibaba/happyhorse-1.1-20260624",
-    "variant": "standard",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 2239,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
-    "permaslug": "google/chirp-3",
-    "variant": "standard",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 45624,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
-    "permaslug": "bytedance/seedance-2.0-20260414",
-    "variant": "standard",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 20859,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
-    "permaslug": "bytedance/seedance-1-5-pro-20260320",
-    "variant": "standard",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 5135,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
-    "permaslug": "kwaivgi/kling-v3.0-pro-20260429",
-    "variant": "standard",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 3252,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
     "permaslug": "openai/whisper-large-v3-turbo",
     "variant": "standard",
     "prompt_tokens": 0,
@@ -1062,42 +942,12 @@
    },
    {
     "date": "2026-07-11",
-    "permaslug": "google/veo-3.1-lite-20260331",
+    "permaslug": "google/veo-3.1-20260320",
     "variant": "standard",
     "prompt_tokens": 0,
     "completion_tokens": 0,
     "reasoning_tokens": 0,
-    "requests": 17791,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
-    "permaslug": "qwen/qwen3-asr-flash-2026-02-10",
-    "variant": "standard",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 253855,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
-    "permaslug": "alibaba/happyhorse-1.0-20260624",
-    "variant": "standard",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 132,
-    "change": null
-   },
-   {
-    "date": "2026-07-11",
-    "permaslug": "qwen/qwen3-coder-480b-a35b-07-25",
-    "variant": "free",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "reasoning_tokens": 0,
-    "requests": 69,
+    "requests": 18410,
     "change": null
    },
    {
@@ -1122,22 +972,22 @@
    },
    {
     "date": "2026-07-11",
-    "permaslug": "cohere/rerank-4-fast",
+    "permaslug": "cohere/rerank-4-pro",
     "variant": "standard",
     "prompt_tokens": 0,
     "completion_tokens": 0,
     "reasoning_tokens": 0,
-    "requests": 222554,
+    "requests": 273031,
     "change": null
    },
    {
     "date": "2026-07-11",
-    "permaslug": "alibaba/wan-2.6-20260327",
+    "permaslug": "google/veo-3.1-lite-20260331",
     "variant": "standard",
     "prompt_tokens": 0,
     "completion_tokens": 0,
     "reasoning_tokens": 0,
-    "requests": 396,
+    "requests": 17791,
     "change": null
    },
    {
@@ -1162,22 +1012,112 @@
    },
    {
     "date": "2026-07-11",
-    "permaslug": "kwaivgi/kling-video-o1-20260420",
-    "variant": "standard",
+    "permaslug": "qwen/qwen3-coder-480b-a35b-07-25",
+    "variant": "free",
     "prompt_tokens": 0,
     "completion_tokens": 0,
     "reasoning_tokens": 0,
-    "requests": 332,
+    "requests": 69,
     "change": null
    },
    {
     "date": "2026-07-11",
-    "permaslug": "nvidia/parakeet-tdt-0.6b-v3",
+    "permaslug": "cohere/rerank-4-fast",
     "variant": "standard",
     "prompt_tokens": 0,
     "completion_tokens": 0,
     "reasoning_tokens": 0,
-    "requests": 349023,
+    "requests": 222554,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
+    "permaslug": "alibaba/wan-2.6-20260327",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 396,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
+    "permaslug": "bytedance/seedance-2.0-20260414",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 20859,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
+    "permaslug": "x-ai/grok-imagine-video-20260512",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 7826,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
+    "permaslug": "alibaba/happyhorse-1.0-20260624",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 132,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
+    "permaslug": "bytedance/seedance-1-5-pro-20260320",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 5135,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
+    "permaslug": "kwaivgi/kling-v3.0-pro-20260429",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 3252,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
+    "permaslug": "google/chirp-3",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 45624,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
+    "permaslug": "bytedance/seedance-2.0-fast-20260414",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 6586,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
+    "permaslug": "alibaba/happyhorse-1.1-20260624",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 2239,
     "change": null
    },
    {
@@ -1192,12 +1132,72 @@
    },
    {
     "date": "2026-07-11",
+    "permaslug": "kwaivgi/kling-video-o1-20260420",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 332,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
     "permaslug": "openai/sora-2-pro-20260320",
     "variant": "standard",
     "prompt_tokens": 0,
     "completion_tokens": 0,
     "reasoning_tokens": 0,
     "requests": 221,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
+    "permaslug": "kwaivgi/kling-v3.0-std-20260429",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 2567,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
+    "permaslug": "nvidia/parakeet-tdt-0.6b-v3",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 349023,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
+    "permaslug": "qwen/qwen3-asr-flash-2026-02-10",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 253855,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
+    "permaslug": "microsoft/mai-transcribe-1.5",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 57079,
+    "change": null
+   },
+   {
+    "date": "2026-07-11",
+    "permaslug": "openai/whisper-1",
+    "variant": "standard",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "requests": 86254,
     "change": null
    },
    {
@@ -5217,52 +5217,52 @@
    "week": [
     {
      "title": "Hermes Agent",
-     "total_tokens": 6539449070555,
+     "total_tokens": 6541218783917,
      "rank": 1
     },
     {
      "title": "Kilo Code",
-     "total_tokens": 1784752750356,
+     "total_tokens": 1785224898915,
      "rank": 4
     },
     {
      "title": "Claude Code",
-     "total_tokens": 1643254491853,
+     "total_tokens": 1643485156511,
      "rank": 5
     },
     {
      "title": "OpenClaw",
-     "total_tokens": 1173295164263,
+     "total_tokens": 1173565088594,
      "rank": 7
     },
     {
      "title": "Cline",
-     "total_tokens": 672150343153,
+     "total_tokens": 672277120762,
      "rank": 8
     },
     {
      "title": "Descript",
-     "total_tokens": 467771222622,
+     "total_tokens": 467826959394,
      "rank": 9
     },
     {
      "title": "pi",
-     "total_tokens": 434236540379,
+     "total_tokens": 434331124830,
      "rank": 10
     },
     {
      "title": "Janitor AI",
-     "total_tokens": 226575800339,
+     "total_tokens": 226640086283,
      "rank": 12
     },
     {
      "title": "ISEKAI ZERO",
-     "total_tokens": 203804745414,
+     "total_tokens": 203855120940,
      "rank": 13
     },
     {
      "title": "Lemonade",
-     "total_tokens": 197512410840,
+     "total_tokens": 197548709566,
      "rank": 14
     },
     {
@@ -5272,47 +5272,47 @@
     },
     {
      "title": "Peezy Gateway",
-     "total_tokens": 163492694513,
+     "total_tokens": 163492779892,
      "rank": 17
     },
     {
      "title": "MavenBio",
-     "total_tokens": 157063441642,
+     "total_tokens": 157149006585,
      "rank": 18
     },
     {
      "title": "Pieces.app: Ambient Artificial Memory",
-     "total_tokens": 127598062050,
+     "total_tokens": 127620860387,
      "rank": 20
     },
     {
-     "title": "Mira is the leading AI agent inside Telegram",
-     "total_tokens": 105909048624,
+     "title": "Mira",
+     "total_tokens": 105946708488,
      "rank": 21
     },
     {
      "title": "Cursor",
-     "total_tokens": 91915794355,
+     "total_tokens": 91959350050,
      "rank": 22
     },
     {
      "title": "LangChain",
-     "total_tokens": 90100284550,
+     "total_tokens": 90113114387,
      "rank": 23
     },
     {
      "title": "GDevelop",
-     "total_tokens": 89085542300,
+     "total_tokens": 89104973801,
      "rank": 24
     },
     {
      "title": "Oh-My-Pi",
-     "total_tokens": 89061824997,
+     "total_tokens": 89091002336,
      "rank": 25
     },
     {
      "title": "Endpoint Proxy",
-     "total_tokens": 85702913284,
+     "total_tokens": 85735426531,
      "rank": 26
     }
    ]

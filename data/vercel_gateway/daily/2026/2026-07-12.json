@@ -2,7 +2,7 @@
  "schema_version": 1,
  "source": "vercel_gateway",
  "snapshot_date": "2026-07-12",
- "fetched_at": "2026-07-12T09:04:29+00:00",
+ "fetched_at": "2026-07-12T09:35:19+00:00",
  "source_meta": {
   "kind": "scrape"
  },
@@ -7342,43 +7342,43 @@
     "shares": [
      [
       "GPT 5.6 Sol",
-      13.2005
+      13.3221
      ],
      [
       "Claude Sonnet 4.6",
-      11.6739
+      11.8633
      ],
      [
       "Claude Fable 5",
-      10.7155
+      10.6049
      ],
      [
       "Claude Opus 4.8",
-      9.2733
+      9.1755
      ],
      [
       "GLM 5.2",
-      6.0561
+      6.0315
      ],
      [
       "GPT 5.5",
-      4.9257
+      4.8433
      ],
      [
       "Claude Opus 4.6",
-      4.7241
+      4.7027
      ],
      [
       "Claude Haiku 4.5",
-      3.7239
+      3.7577
      ],
      [
       "Gemini 3.5 Flash",
-      3.2812
+      3.262
      ],
      [
       "Gemini 3.1 Pro Preview",
-      3.1528
+      3.1622
      ]
     ],
     "others_share": 0
@@ -7389,43 +7389,43 @@
     "shares": [
      [
       "DeepSeek V4 Flash",
-      21.6849
+      21.4851
      ],
      [
       "Gemini 2.5 Flash Lite",
-      7.8947
+      7.7852
      ],
      [
       "Gemini 3.1 Flash Lite Preview",
-      7.3537
+      7.3749
      ],
      [
       "text-embedding-3-large",
-      4.7961
+      4.7513
      ],
      [
       "text-embedding-3-small",
-      3.7719
-     ],
-     [
-      "Gemini 3 Flash",
-      3.5696
-     ],
-     [
-      "Claude Haiku 4.5",
-      3.5453
+      3.7624
      ],
      [
       "GPT-4o mini",
-      3.498
+      3.6189
+     ],
+     [
+      "Claude Haiku 4.5",
+      3.6006
+     ],
+     [
+      "Gemini 3 Flash",
+      3.5966
      ],
      [
       "Claude Sonnet 4.6",
-      3.2893
+      3.3251
      ],
      [
       "DeepSeek V4 Pro",
-      2.8178
+      2.8481
      ]
     ],
     "others_share": 0
@@ -7436,43 +7436,43 @@
     "shares": [
      [
       "DeepSeek V4 Flash",
-      25.6846
+      25.6186
      ],
      [
       "DeepSeek V4 Pro",
-      12.2504
+      12.3502
      ],
      [
       "Step 3.7 Flash",
-      6.5502
+      6.6323
      ],
      [
       "GLM 5.2",
-      5.6083
+      5.6118
      ],
      [
       "Claude Sonnet 4.6",
-      4.8072
+      4.796
      ],
      [
       "MiniMax M3",
-      4.061
+      4.0544
      ],
      [
       "Gemini 3 Flash",
-      3.7727
+      3.7737
      ],
      [
       "Gemini 3.1 Flash Lite Preview",
-      3.6569
+      3.6623
      ],
      [
       "Claude Haiku 4.5",
-      3.0098
+      3.0213
      ],
      [
       "GPT 5.6 Sol",
-      2.666
+      2.6612
      ]
     ],
     "others_share": 0

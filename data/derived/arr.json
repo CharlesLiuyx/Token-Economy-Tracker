@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-12T09:08:19+00:00",
+ "generated_at": "2026-07-12T09:35:20+00:00",
  "build_date": "2026-07-12",
  "half_life_days": 120,
  "companies": {
   "anthropic": {
    "fit": {
-    "k_per_day": 0.007550143475922946,
+    "k_per_day": 0.0075501434759229465,
     "mom_implied": 0.2584,
     "sigma_log": 0.2198,
     "n_anchors": 14,
