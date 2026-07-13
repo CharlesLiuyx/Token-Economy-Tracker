@@ -118,6 +118,13 @@ anchors:
   source_url: https://www.anthropic.com/news/series-h
   note: May 2026 47B
   confidence: likely
+- company: anthropic
+  date: '2026-06-30'
+  value_usd: 70000000000
+  metric: run_rate_arr
+  source_url: https://www.yipitdata.com/
+  note: YipitData estimate as of 2026-06-30 70B
+  confidence: likely
 - company: openai
   date: '2022-12-31'
   value_usd: 28000000
@@ -243,4 +250,11 @@ anchors:
   metric: run_rate_arr
   source_url: https://www.theinformation.com/articles/openai-tops-25-billion-annualized-revenue-anthropic-narrows-gap?rc=9mzoog
   note: March 2026 25B
+  confidence: likely
+- company: openai
+  date: '2026-06-30'
+  value_usd: 43000000000
+  metric: run_rate_arr
+  source_url: https://www.yipitdata.com/
+  note: YipitData estimate as of 2026-06-30 43B
   confidence: likely
