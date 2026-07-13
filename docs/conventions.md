@@ -2,7 +2,7 @@
 
 > TL;DR：append-only 数据、单文件产物、禁 CDN、docs 与行为同 PR 更新、新源三件套。
 > 何时读我：动手写代码前；Review 别人（或 AI）的 PR 时。
-> 最后核对日期：2026-07-12
+> 最后核对日期：2026-07-13
 
 ## 硬约束（违反即打回）
 
@@ -23,6 +23,13 @@
 - validate 宁严勿松：关键字段缺失、数量异常（如行数骤减）都应抛 SchemaError——
   坏数据不入库比面板缺数更重要。
 - 依赖保持最小：requests / pyyaml / numpy / jinja2 / pytest，加新依赖先写 ADR。
+
+## Commit message 规范
+
+- 格式 `<type>: <summary>`，英文祈使句，≤72 字符，句尾不加句号；type 枚举
+  （feat/fix/data/docs/build/ci/refactor/test/chore）与示例以根目录 README
+  的 "Commit message convention" 一节为唯一口径。
+- CI 每日自动提交固定为 `data: YYYY-MM-DD`。
 
 ## 文档约定（渐进式披露）
 
