@@ -69,6 +69,10 @@ jobs:
     needs: update
     if: success()
     runs-on: ubuntu-latest
+    # 与 deploy-on-push 共用 Pages 部署锁，避免两个 workflow 同时 deploy 冲突
+    concurrency:
+      group: pages-deploy
+      cancel-in-progress: false
     environment:
       name: github-pages
     steps:

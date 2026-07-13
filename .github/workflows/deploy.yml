@@ -1,0 +1,50 @@
+# push 到 main 时立即重建并部署 Pages（不抓数、不提交，避免与 daily.yml 的 bot push 打成循环）
+name: deploy-on-push
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "scripts/**"
+      - "data/**"
+      - "requirements.txt"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 与 daily.yml 的 Pages 部署共用一把锁，避免两个 workflow 同时 deploy 冲突
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install -q -r requirements.txt
+
+      - name: Build site (rebuild from committed data, no fetch)
+        run: make build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - uses: actions/deploy-pages@v4

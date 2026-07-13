@@ -188,6 +188,10 @@ openrouter:
 - **GitHub Actions**（`daily.yml`）：cron 每日 00:30 UTC（北京 08:30 前出数）。
   步骤：checkout → `make update`（逐源 fetch，单源失败不中断）→ `make build` →
   commit `data: YYYY-MM-DD` → push → Pages 部署。
+- **push 即部署**（`deploy.yml`）：push 到 main 且改动了 `site/**` / `scripts/**` /
+  `data/**` / `requirements.txt` 时，单独跑 `make build` → Pages 部署。**只构建不提交、
+  不抓数**，因此不会被 daily.yml 的 bot push 触发成循环。两个 workflow 共用
+  `pages-deploy` concurrency 锁，避免同时部署冲突。
 - **失败可见**：任一源连续失败 ≥2 天时，workflow 自动开/更新一个 GitHub Issue（带错误摘要）。
 - **本地等价**：`make update && make build && make serve`，与 CI 完全同路径；
   `make fetch-openrouter` 可单跑一源调试。
