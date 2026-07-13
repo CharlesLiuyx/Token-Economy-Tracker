@@ -1,23 +1,23 @@
 {% from '_macros.j2' import badge with context %}
 <div class="cards-row dc-cards">
   <section class="panel mini-card">
-    <header class="panel-head tone-pink"><h3>站点 Sites</h3>{{ badge('epoch_datacenters') }}</header>
+    <header class="panel-head"><h3 data-i18n="panel.dc.sites_title">{{ t('panel.dc.sites_title') | e }}</h3>{{ badge('epoch_datacenters') }}</header>
     <div class="panel-body"><p class="big-number">{{ epoch_cards.sites }}</p>
-      <p class="mini-sub">Epoch 追踪的 frontier 数据中心</p></div>
+      <p class="mini-sub" data-i18n="panel.dc.sites_sub">{{ t('panel.dc.sites_sub') | e }}</p></div>
   </section>
   <section class="panel mini-card">
-    <header class="panel-head tone-pink"><h3>Power</h3>{{ badge('epoch_datacenters') }}</header>
+    <header class="panel-head"><h3>Power</h3>{{ badge('epoch_datacenters') }}</header>
     <div class="panel-body"><p class="big-number">{{ epoch_cards.power_gw }} <span class="unit">GW</span></p>
-      <p class="mini-sub">当前投运功率合计</p></div>
+      <p class="mini-sub" data-i18n="panel.dc.power_sub">{{ t('panel.dc.power_sub') | e }}</p></div>
   </section>
   <section class="panel mini-card">
-    <header class="panel-head tone-pink"><h3>算力存量</h3>{{ badge('epoch_datacenters') }}</header>
+    <header class="panel-head"><h3 data-i18n="panel.dc.compute_title">{{ t('panel.dc.compute_title') | e }}</h3>{{ badge('epoch_datacenters') }}</header>
     <div class="panel-body"><p class="big-number">{{ epoch_cards.h100_m }}M <span class="unit">H100-eq</span></p>
-      <p class="mini-sub">H100 等效算力</p></div>
+      <p class="mini-sub" data-i18n="panel.dc.compute_sub">{{ t('panel.dc.compute_sub') | e }}</p></div>
   </section>
   <section class="panel mini-card">
-    <header class="panel-head tone-pink"><h3>资本开支</h3>{{ badge('epoch_datacenters') }}</header>
+    <header class="panel-head"><h3 data-i18n="panel.dc.capex_title">{{ t('panel.dc.capex_title') | e }}</h3>{{ badge('epoch_datacenters') }}</header>
     <div class="panel-body"><p class="big-number">${{ '%.0f' | format(epoch_cards.capex_busd) }}B</p>
-      <p class="mini-sub">累计资本投入（2025 USD）</p></div>
+      <p class="mini-sub" data-i18n="panel.dc.capex_sub">{{ t('panel.dc.capex_sub') | e }}</p></div>
   </section>
 </div>

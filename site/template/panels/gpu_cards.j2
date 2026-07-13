@@ -2,17 +2,17 @@
 <div class="cards-row gpu-cards">
 {% for g in gpu_cards %}
   <section class="panel mini-card">
-    <header class="panel-head tone-yellow">
+    <header class="panel-head">
       <h3>{{ g.label }}</h3>
       {{ badge('gpu_prices') }}
     </header>
     <div class="panel-body">
       {% if g.offers %}
       <p class="big-number">${{ '%.2f' | format(g.median) }}<span class="unit">/hr</span></p>
-      <p class="mini-sub">p25–p75 ${{ '%.2f' | format(g.p25) }}–{{ '%.2f' | format(g.p75) }} · {{ g.offers }} 报价</p>
+      <p class="mini-sub">p25–p75 ${{ '%.2f' | format(g.p25) }}–{{ '%.2f' | format(g.p75) }} · {{ g.offers }} <span data-i18n="panel.gpu.offers_word">{{ t('panel.gpu.offers_word') | e }}</span></p>
       {% else %}
       <p class="big-number">—</p>
-      <p class="mini-sub">暂无报价</p>
+      <p class="mini-sub" data-i18n="panel.gpu.no_offers">{{ t('panel.gpu.no_offers') | e }}</p>
       {% endif %}
     </div>
   </section>

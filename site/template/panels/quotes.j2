@@ -1,6 +1,6 @@
 {% from '_macros.j2' import panel_head with context %}
 <section class="panel">
-  {{ panel_head('KOL / Podcast — 专家观点摘录', 'yellow', 'manual') }}
+  {{ panel_head('panel.quotes.title', 'manual') }}
   <div class="panel-body">
     {% if quotes %}
     <ul class="quote-list">
@@ -13,8 +13,7 @@
       {% endfor %}
     </ul>
     {% else %}
-    <p class="empty-note">暂无收录。人工维护 <code>data/manual/quotes.yml</code>，
-       收录标准：少量高质量原文摘录（见 PLAN §11 开放问题）。</p>
+    <p class="empty-note" data-i18n-html="panel.quotes.empty">{{ t('panel.quotes.empty') }}</p>
     {% endif %}
   </div>
 </section>

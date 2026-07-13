@@ -1,0 +1,244 @@
+# 全部 UI 文案的唯一出处（key -> {zh, en}）。模板与图表 spec 只引用 key，不写文案。
+# 约定（详见 docs/frontend.md「i18n」）：
+#   - key 扁平、点分命名空间：ui.* / sec.* / panel.* / chart.* / meth.*
+#   - 模板：{{ t(key) }} 渲染构建期默认语言（zh），同一元素标注
+#     data-i18n / data-i18n-html / data-i18n-title / data-i18n-aria-label
+#     （参数化文案配 data-i18n-args，值里用 {name} 占位），app.js 运行期按当前语言重渲染
+#   - 图表 spec：build.py 的 L(key) 生成 "__i18n:<key>" 占位符，app.js 渲染时解析（同 __surface）
+#   - data-i18n-html 的值是受信 HTML（innerHTML 注入），只允许 <b>/<code> 级内联标签
+#   - 每个 key 必须 zh/en 齐全；tests/test_i18n.py 校验完整性、{args} 双语一致、无死 key
+
+# ---- 全局 UI ----
+ui.tagline:
+  zh: AI 变现追踪仪表盘：Frontier Lab ARR · Token 用量 · GPU 租赁价格 · AI 数据中心建设
+  en: "AI monetization dashboard: frontier lab ARR · token usage · GPU rental prices · AI datacenter buildout"
+ui.data_asof:
+  zh: "数据截至 {date}"
+  en: "Data as of {date}"
+ui.theme_toggle:
+  zh: 切换深色 / 浅色模式
+  en: Toggle dark / light theme
+ui.lang_toggle:
+  zh: 切换语言（中文 / English）
+  en: Switch language (中文 / English)
+ui.github:
+  zh: 在 GitHub 上查看源码
+  en: View source on GitHub
+ui.footer:
+  zh: "纯静态单文件 · 离线可开 · 数据管道 & 页面由 Token-Tracker 每日自动构建 · Source: Epoch AI (CC-BY) / OpenRouter / Vercel AI Gateway / Vast.ai / npm / PyPI / Google News"
+  en: "Static single-file page · works offline · data pipeline & page rebuilt daily by Token-Tracker · Source: Epoch AI (CC-BY) / OpenRouter / Vercel AI Gateway / Vast.ai / npm / PyPI / Google News"
+
+# ---- 区块标题 ----
+sec.arr.sub:
+  zh: 实时估算
+  en: live estimate
+sec.tokens.title:
+  zh: Token 需求与采用度
+  en: Token Demand & Adoption
+sec.gpu.title:
+  zh: GPU 租赁价格
+  en: GPU Rental Prices
+sec.gpu.sub:
+  zh: Vast.ai 市场
+  en: Vast.ai marketplace
+sec.dc.title:
+  zh: AI 数据中心建设
+  en: AI Datacenter Buildout
+
+# ---- ① ARR ----
+panel.arr.est_badge:
+  zh: 估算
+  en: EST
+panel.arr.est_title:
+  zh: 拟合外推估算值，非披露数字，方法见 Methodology
+  en: Fitted & extrapolated estimate, not a disclosed figure — see Methodology
+panel.arr.last_disclosed:
+  zh: 最近披露
+  en: last disclosed
+panel.arr_chart.title:
+  zh: ARR 轨迹：披露锚点（实心圆）· 拟合（实线）· 外推（虚线）· 置信带 · 实际年收入（空心菱形）
+  en: "ARR trajectory: disclosed anchors (solid dots) · fit (solid) · extrapolation (dashed) · confidence band · reported annual revenue (hollow diamonds)"
+panel.arr_chart.note:
+  zh: 对数轴。拟合只用 run-rate 口径锚点（加权最小二乘，近期权重高）；虚线为外推区，仅供参考。
+  en: Log scale. Fit uses run-rate anchors only (weighted least squares, recency-weighted); the dashed segment is extrapolation, indicative only.
+
+# ---- ② Token 需求与采用度 ----
+panel.or_tracked.title:
+  zh: 重点模型 Token · 滚动 7 天 (B) — OpenRouter
+  en: Tracked models · rolling-7d tokens (B) — OpenRouter
+panel.or_tracked.note:
+  zh: 口径：OpenRouter 平台切片（不含各 lab 直连流量）；序列由每日快照累积，自 2026-07-12 起。
+  en: "Scope: OpenRouter platform slice (excludes labs' direct API traffic); series accumulated from daily snapshots, since 2026-07-12."
+panel.or_top_models.title:
+  zh: Top Models — 最近一周合计 (T tokens) — OpenRouter
+  en: Top models — last-week total (T tokens) — OpenRouter
+panel.or_weekly_total.title:
+  zh: OpenRouter 周 Token 总量 (T · 全网含长尾)
+  en: OpenRouter weekly token total (T · site-wide incl. long tail)
+panel.sdk.title:
+  zh: SDK 周下载量 (M) — developer adoption proxy
+  en: SDK weekly downloads (M) — developer adoption proxy
+panel.sdk.note:
+  zh: npm + PyPI 官方口径；下载量≈开发者关注度 proxy，不等于 API 用量。
+  en: Official npm + PyPI counts; downloads ≈ developer-attention proxy, not API usage.
+panel.vercel_tokens.title:
+  zh: Vercel Gateway — Token 份额 Top 10 (%)
+  en: Vercel Gateway — token share top 10 (%)
+panel.vercel_cost.title:
+  zh: Vercel Gateway — $ Spend 份额 Top 10 (%)
+  en: Vercel Gateway — $ spend share top 10 (%)
+panel.vercel_trend.title:
+  zh: Vercel Gateway — Token 份额走势 Top 5 (61 天)
+  en: Vercel Gateway — token share trend top 5 (61 days)
+panel.vercel_trend.note:
+  zh: 份额百分比（Vercel 不公开绝对量）；仅 Gateway 客户切片。
+  en: Share percentages (Vercel publishes no absolute volumes); Gateway-customer slice only.
+panel.quotes.title:
+  zh: KOL / Podcast — 专家观点摘录
+  en: KOL / Podcast — expert quote excerpts
+panel.quotes.empty:
+  zh: 暂无收录。人工维护 <code>data/manual/quotes.yml</code>，收录标准：少量高质量原文摘录（见 PLAN §11 开放问题）。
+  en: "Nothing collected yet. Hand-curated in <code>data/manual/quotes.yml</code>; the bar: a few high-quality verbatim excerpts (see PLAN §11 open questions)."
+panel.epoch_sites.title:
+  zh: Top Sites by Power — Epoch AI Frontier Data Centers
+  en: Top sites by power — Epoch AI Frontier Data Centers
+
+# ---- ③ GPU ----
+panel.gpu.offers_word:
+  zh: 条报价
+  en: offers
+panel.gpu.no_offers:
+  zh: 暂无报价
+  en: No offers
+panel.gpu_trend.title:
+  zh: 价格走势 ($/GPU-hr · 每日中位数)
+  en: Price trend ($/GPU-hr · daily median)
+panel.gpu_trend.note:
+  zh: 口径：Vast.ai 市场 on-demand 报价中位数（低价市场切片，≠OCPI/超算云牌价）；序列自 2026-07-12 起每日累积。
+  en: "Scope: median on-demand asks on the Vast.ai marketplace (budget-market slice, ≠ OCPI / hyperscaler list prices); accumulated daily since 2026-07-12."
+
+# ---- ④ 数据中心 ----
+panel.dc.sites_title:
+  zh: 站点 Sites
+  en: Sites
+panel.dc.sites_sub:
+  zh: Epoch 追踪的 frontier 数据中心
+  en: Frontier datacenters tracked by Epoch
+panel.dc.power_sub:
+  zh: 当前投运功率合计
+  en: Total power currently operational
+panel.dc.compute_title:
+  zh: 算力存量
+  en: Compute Stock
+panel.dc.compute_sub:
+  zh: H100 等效算力
+  en: H100-equivalent compute
+panel.dc.capex_title:
+  zh: 资本开支
+  en: Capex
+panel.dc.capex_sub:
+  zh: 累计资本投入（2025 USD）
+  en: Cumulative capital cost (2025 USD)
+panel.dc_growth.title:
+  zh: 行业累计增长（样本内站点 · 按建设进度）
+  en: Industry cumulative growth (in-sample sites · by build progress)
+panel.dc_growth.note:
+  zh: "Source: Epoch AI Frontier Data Centers (CC-BY)。柱=累计功率 GW，线=累计 H100-eq（右轴）；截至构建日。与「当前投运」卡片的差异来自源头两张表（timelines vs sites）口径独立。"
+  en: "Source: Epoch AI Frontier Data Centers (CC-BY). Bars = cumulative power (GW), line = cumulative H100-eq (right axis); up to build date. Gap vs the 'currently operational' cards comes from the two upstream tables (timelines vs sites) being scoped independently."
+panel.news.title:
+  zh: 建设动态 — 相关新闻流
+  en: Buildout news — related headlines
+
+# ---- Methodology（受信 HTML）----
+meth.title:
+  zh: Methodology — 每个面板测的是什么、不是什么
+  en: Methodology — what each panel measures, and what it doesn't
+meth.arr:
+  zh: <b>01 ARR</b>：披露锚点（run-rate 口径）对数空间加权最小二乘拟合 + 外推。大数字是
+    <b>估算的演出效果</b>（每秒按拟合小时增量累加），非实时财务数据；置信带与锚点散点展示估算地基。
+    锚点混入全年预测/实际收入会被拒绝（口径字段强制）。
+  en: "<b>01 ARR</b>: weighted least-squares fit in log space over disclosed run-rate
+    anchors, plus extrapolation. The big number is a <b>dramatized estimate</b>
+    (incremented every second at the fitted hourly rate), not live financials; the
+    confidence band and anchor dots show the estimate's foundation. Anchors mixing in
+    full-year forecast/actual revenue are rejected (metric field enforced)."
+meth.openrouter:
+  zh: <b>02 OpenRouter</b>：聚合路由平台切片，<b>不含</b> Anthropic/OpenAI 直连 API 主力流量。
+    「滚动 7 天」为端点原生口径；日频序列由本站每日快照累积。
+  en: "<b>02 OpenRouter</b>: an aggregator-platform slice that <b>excludes</b> the bulk
+    of Anthropic/OpenAI direct API traffic. 'Rolling 7 days' is the endpoint's native
+    window; daily series are accumulated from this site's own snapshots."
+meth.vercel:
+  zh: <b>02 Vercel Gateway</b>：仅 Gateway 客户流量的<b>份额百分比</b>，无绝对量；模型名为显示名。
+  en: "<b>02 Vercel Gateway</b>: <b>share percentages</b> of Gateway-customer traffic
+    only, no absolute volumes; model names are display names."
+meth.sdk:
+  zh: <b>02 SDK 下载</b>：npm/PyPI 官方 API；下载量是开发者采用度 proxy（CI 重复安装会灌水），
+    不等于 API 调用量。
+  en: "<b>02 SDK downloads</b>: official npm/PyPI APIs; downloads are a developer-adoption
+    proxy (inflated by repeated CI installs), not API call volume."
+meth.gpu:
+  zh: <b>03 GPU 价格</b>：Vast.ai 市场 on-demand 报价分位数（含个人/小机房供给的低价切片），
+    系统性低于超算云牌价，不可与 OCPI 等跨供应商指数直接比较。
+  en: "<b>03 GPU prices</b>: quantiles of on-demand asks on the Vast.ai marketplace (a
+    budget slice incl. hobbyist/small-DC supply), systematically below hyperscaler list
+    prices; not directly comparable to cross-vendor indices like OCPI."
+meth.dc:
+  zh: <b>04 数据中心</b>：Epoch AI Frontier Data Centers 数据集（CC-BY，约每周更新），
+    为样本内站点，非全行业普查。新闻流为 Google News RSS 白名单媒体，仅标题/链接。
+  en: "<b>04 Datacenters</b>: Epoch AI Frontier Data Centers dataset (CC-BY, updated
+    ~weekly) — in-sample sites, not an industry census. News feed is Google News RSS
+    from whitelisted outlets, titles/links only."
+
+# ---- 图表 spec（经 __i18n: 占位符进入 Chart.js label / 轴标题）----
+chart.arr.fit:
+  zh: 拟合
+  en: fit
+chart.arr.anchors:
+  zh: 披露锚点
+  en: disclosed anchors
+chart.arr.extrapolated:
+  zh: 外推
+  en: extrapolation
+chart.arr.reported:
+  zh: 实际年收入
+  en: reported annual revenue
+chart.arr.y:
+  zh: ARR（$B，对数轴）
+  en: ARR ($B, log scale)
+chart.or_weekly.label:
+  zh: 周 Token 总量 (T)
+  en: Weekly total tokens (T)
+chart.or_weekly.y:
+  zh: T tokens/周
+  en: T tokens/week
+chart.or_top.label:
+  zh: 近 7 天 Token (T)
+  en: Tokens, last 7 days (T)
+chart.or_tracked.y:
+  zh: B tokens / 滚动7天
+  en: B tokens / rolling 7d
+chart.share_pct:
+  zh: 份额 %
+  en: share %
+chart.vercel_trend.y:
+  zh: Token 份额 %
+  en: Token share %
+chart.sdk.npm:
+  zh: npm 周下载 (M)
+  en: npm weekly downloads (M)
+chart.sdk.pypi:
+  zh: PyPI 周下载 (M)
+  en: PyPI weekly downloads (M)
+chart.sdk.y:
+  zh: 百万次 / 周
+  en: millions / week
+chart.gpu.y:
+  zh: $/GPU-hr（中位数）
+  en: $/GPU-hr (median)
+chart.dc.power:
+  zh: 累计功率 (GW)
+  en: Cumulative power (GW)
+chart.dc.h100:
+  zh: 累计算力 (M H100-eq)
+  en: Cumulative compute (M H100-eq)

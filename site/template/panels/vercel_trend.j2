@@ -1,3 +1,3 @@
 {% from '_macros.j2' import chart_panel with context %}
-{{ chart_panel('vercel_trend', 'Vercel Gateway — Token 份额走势 Top 5 (61 天)', 'orange', 'vercel_gateway',
-               note='份额百分比（Vercel 不公开绝对量）；仅 Gateway 客户切片。') }}
+{{ chart_panel('vercel_trend', 'panel.vercel_trend.title', 'vercel_gateway',
+               note_key='panel.vercel_trend.note') }}

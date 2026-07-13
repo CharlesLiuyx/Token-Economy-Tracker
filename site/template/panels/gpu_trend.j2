@@ -1,3 +1,3 @@
 {% from '_macros.j2' import chart_panel with context %}
-{{ chart_panel('gpu_trend', '价格走势 ($/GPU-hr · 每日中位数)', 'yellow', 'gpu_prices',
-               note='口径：Vast.ai 市场 on-demand 报价中位数（低价市场切片，≠OCPI/超算云牌价）；序列自 2026-07-12 起每日累积。') }}
+{{ chart_panel('gpu_trend', 'panel.gpu_trend.title', 'gpu_prices',
+               note_key='panel.gpu_trend.note') }}

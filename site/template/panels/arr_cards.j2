@@ -2,19 +2,19 @@
 <div class="grid2 arr-grid">
 {% for c in arr_cards %}
   <section class="panel arr-card company-{{ loop.index0 }}">
-    <header class="panel-head {{ 'tone-orange' if c.company == 'anthropic' else 'tone-teal' }}">
-      <span class="dots"><i></i><i></i><i></i></span>
+    <header class="panel-head">
       <h3>{{ c.display }} — estimated ARR</h3>
-      <span class="est-badge" title="拟合外推估算值，非披露数字，方法见 Methodology">估算</span>
+      <span class="est-badge" title="{{ t('panel.arr.est_title') | e }}"
+            data-i18n-title="panel.arr.est_title"
+            data-i18n="panel.arr.est_badge">{{ t('panel.arr.est_badge') | e }}</span>
       {{ badge('arr') }}
-      <span class="fake-x">×</span>
     </header>
     <div class="panel-body">
       <p class="arr-number" data-arr="{{ c.arr_at_build }}" data-rate="{{ c.usd_per_hour }}">${{ '{:,}'.format(c.arr_at_build) }}</p>
       <p class="arr-sub">
         <span class="chip">+${{ '{:,}'.format(c.usd_per_hour) }}/hr</span>
         <span class="chip">implied MoM {{ '%+.1f' | format(c.mom * 100) }}%</span>
-        <span class="chip">最近披露 {{ c.last_anchor_date }} · ${{ '%.0f' | format(c.last_anchor_value / 1e9) }}B</span>
+        <span class="chip"><span data-i18n="panel.arr.last_disclosed">{{ t('panel.arr.last_disclosed') | e }}</span> {{ c.last_anchor_date }} · ${{ '%.0f' | format(c.last_anchor_value / 1e9) }}B</span>
       </p>
     </div>
   </section>

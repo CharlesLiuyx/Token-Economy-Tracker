@@ -1,6 +1,6 @@
 {% from '_macros.j2' import panel_head with context %}
 <section class="panel">
-  {{ panel_head('建设动态 — 相关新闻流', 'green', 'news') }}
+  {{ panel_head('panel.news.title', 'news') }}
   <div class="panel-body">
     <ul class="news-list">
       {% for n in news %}

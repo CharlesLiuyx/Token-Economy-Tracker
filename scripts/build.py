@@ -3,6 +3,9 @@
 每个面板 = 一个 spec_* 函数（产出图表 spec 或卡片/表格数据）+ 一个
 site/template/panels/*.j2 片段。图表 spec 是 Chart.js 原生配置的子集
 （line / bar / horizontalBar / scatter），由 app.js 的 renderPanel 统一渲染。
+
+i18n：全部 UI 文案在 site/template/i18n.yml（key -> {zh, en}）。模板用 t(key)
+渲染默认语言，spec 用 L(key) 生成 "__i18n:<key>" 占位符，app.js 运行期解析。
 约定见 docs/frontend.md。
 """
 
@@ -27,11 +30,49 @@ TEMPLATE_DIR = SITE / "template"
 FRESH_WARN_HOURS = 48
 FRESH_RED_DAYS = 7
 
-# 与 style.css 一致的系列色（neo-brutalist 高饱和）
-PALETTE = ["#FF6B35", "#17A398", "#7C6FF0", "#E63946", "#FFB703",
-           "#3A86FF", "#8338EC", "#FB5607", "#43AA8B", "#F15BB5",
-           "#6A994E", "#BC4749"]
-INK = "#1A1A1A"
+# 与 style.css 一致的系列色（Linear 风格中饱和，light/dark 双主题均可读；
+# 0=Anthropic clay、1=OpenAI teal，与 CSS --c-clay/--c-teal 对应）
+PALETTE = ["#D97757", "#10A37F", "#5E6AD2", "#EB5757", "#F2C94C",
+           "#4EA7FC", "#9E8CFC", "#E56EB3", "#26B5CE", "#4CB782",
+           "#95A2B3", "#B08968"]
+# 占位符：渲染时由 app.js 按当前主题替换为面板底色（锚点描边/空心点填充）
+SURFACE = "__surface"
+
+
+# ---------- i18n ----------
+
+I18N_PATH = TEMPLATE_DIR / "i18n.yml"
+LANGS = ("zh", "en")
+DEFAULT_LANG = "zh"
+
+
+def load_i18n() -> dict:
+    """site/template/i18n.yml：全部 UI 文案的唯一出处；缺语言/空文案直接失败。"""
+    catalog = yaml.safe_load(I18N_PATH.read_text(encoding="utf-8")) or {}
+    bad = [k for k, v in catalog.items()
+           if not isinstance(v, dict) or set(v) != set(LANGS)
+           or not all(isinstance(s, str) and s.strip() for s in v.values())]
+    if bad:
+        raise ValueError(f"i18n.yml 条目缺语言或为空: {bad}")
+    return catalog
+
+
+I18N = load_i18n()
+
+
+def t(key: str, **args) -> str:
+    """构建期渲染默认语言（zh）文案；{name} 占位参数与 app.js 同语义。"""
+    s = I18N[key][DEFAULT_LANG]
+    for k, v in args.items():
+        s = s.replace("{" + k + "}", str(v))
+    return s
+
+
+def L(key: str) -> str:
+    """图表 spec 占位符 '__i18n:<key>'，app.js 渲染时按当前语言解析（同 __surface）。"""
+    if key not in I18N:
+        raise KeyError(f"i18n.yml 缺 key: {key}")
+    return "__i18n:" + key
 
 
 # ---------- 基础 ----------
@@ -104,14 +145,17 @@ def spec_arr(arr: dict) -> dict:
              "backgroundColor": c + "26", "pointRadius": 0, "fill": "+1"},
             {"label": f"_{company} band lo", "data": band_lo, "borderWidth": 0,
              "backgroundColor": c + "26", "pointRadius": 0},
-            _line_ds(f"{company} 拟合", solid, i, pointRadius=0, borderWidth=2.5),
-            _line_ds(f"_{company} 外推", dashed, i, pointRadius=0, borderWidth=2.5,
-                     borderDash=[6, 5]),
-            {"label": f"{company} 披露锚点", "data": anchors, "type": "scatter",
-             "backgroundColor": c, "borderColor": INK, "borderWidth": 1.5,
-             "pointRadius": 4, "pointStyle": "circle"},
-            {"label": f"_{company} 实际年收入", "data": reported, "type": "scatter",
-             "backgroundColor": "#FFF", "borderColor": c, "borderWidth": 2,
+            _line_ds(f"{company} {L('chart.arr.fit')}", solid, i,
+                     pointRadius=0, borderWidth=2.5),
+            _line_ds(f"_{company} {L('chart.arr.extrapolated')}", dashed, i,
+                     pointRadius=0, borderWidth=2.5, borderDash=[6, 5]),
+            {"label": f"{company} {L('chart.arr.anchors')}", "data": anchors,
+             "type": "scatter",
+             "backgroundColor": c, "borderColor": SURFACE, "borderWidth": 2,
+             "pointRadius": 4.5, "pointStyle": "circle"},
+            {"label": f"_{company} {L('chart.arr.reported')}", "data": reported,
+             "type": "scatter",
+             "backgroundColor": SURFACE, "borderColor": c, "borderWidth": 2,
              "pointRadius": 4, "pointStyle": "rectRot"},
         ]
         rt = d["realtime"]
@@ -134,7 +178,7 @@ def spec_arr(arr: dict) -> dict:
             "scales": {
                 "x": {"type": "linear", "ticks": {"__epochDays": epoch0.isoformat()}},
                 "y": {"type": "logarithmic",
-                      "title": {"display": True, "text": "ARR（$B，对数轴）"}},
+                      "title": {"display": True, "text": L("chart.arr.y")}},
             },
             "plugins": {"legend": {"labels": {"__filterUnderscore": True}}},
         },
@@ -151,10 +195,11 @@ def spec_or_weekly_total(p: dict) -> dict:
     return {
         "type": "line",
         "data": {"labels": labels, "datasets": [
-            _line_ds("周 Token 总量 (T)", totals, 0, fill=True,
+            _line_ds(L("chart.or_weekly.label"), totals, 0, fill=True,
                      backgroundColor=color(0) + "33", pointRadius=0),
         ]},
-        "options": {"scales": {"y": {"title": {"display": True, "text": "T tokens/周"}}}},
+        "options": {"scales": {"y": {"title": {"display": True,
+                                               "text": L("chart.or_weekly.y")}}}},
     }
 
 
@@ -167,10 +212,10 @@ def spec_or_top_models(p: dict, top_n: int = 12) -> dict:
         "type": "bar",
         "data": {
             "labels": [short_model_name(s) for s, _ in top],
-            "datasets": [{"label": "近 7 天 Token (T)",
+            "datasets": [{"label": L("chart.or_top.label"),
                           "data": [round(v / 1e12, 3) for _, v in top],
                           "backgroundColor": [color(i) for i in range(len(top))],
-                          "borderColor": INK, "borderWidth": 1.5}],
+                          "borderWidth": 0, "borderRadius": 3}],
         },
         "options": {"indexAxis": "y", "plugins": {"legend": {"display": False}},
                     "scales": {"x": {"title": {"display": True, "text": "T tokens / 7d"}}}},
@@ -198,7 +243,8 @@ def spec_or_tracked(cfg: dict) -> dict:
     return {
         "type": "line",
         "data": {"labels": labels, "datasets": datasets},
-        "options": {"scales": {"y": {"title": {"display": True, "text": "B tokens / 滚动7天"}}}},
+        "options": {"scales": {"y": {"title": {"display": True,
+                                               "text": L("chart.or_tracked.y")}}}},
     }
 
 
@@ -216,13 +262,14 @@ def spec_vercel_share_bar(p: dict, metric: str, top_n: int = 10) -> dict:
         "type": "bar",
         "data": {
             "labels": [name for name, _ in pairs],
-            "datasets": [{"label": f"{metric} 份额 % ({row['day']})",
+            "datasets": [{"label": f"{metric} {L('chart.share_pct')} ({row['day']})",
                           "data": [round(v, 1) for _, v in pairs],
                           "backgroundColor": [color(i) for i in range(len(pairs))],
-                          "borderColor": INK, "borderWidth": 1.5}],
+                          "borderWidth": 0, "borderRadius": 3}],
         },
         "options": {"indexAxis": "y", "plugins": {"legend": {"display": False}},
-                    "scales": {"x": {"title": {"display": True, "text": "份额 %"}}}},
+                    "scales": {"x": {"title": {"display": True,
+                                               "text": L("chart.share_pct")}}}},
     }
 
 
@@ -242,7 +289,8 @@ def spec_vercel_trend(p: dict, metric: str = "tokens", top_n: int = 5) -> dict:
     return {
         "type": "line",
         "data": {"labels": labels, "datasets": datasets},
-        "options": {"scales": {"y": {"title": {"display": True, "text": "Token 份额 %"}}}},
+        "options": {"scales": {"y": {"title": {"display": True,
+                                               "text": L("chart.vercel_trend.y")}}}},
     }
 
 
@@ -259,12 +307,13 @@ def spec_sdk(p: dict) -> dict:
     return {
         "type": "bar",
         "data": {"labels": labels, "datasets": [
-            {"label": "npm 周下载 (M)", "data": npm_vals,
-             "backgroundColor": color(0), "borderColor": INK, "borderWidth": 1.5},
-            {"label": "PyPI 周下载 (M)", "data": pypi_vals,
-             "backgroundColor": color(1), "borderColor": INK, "borderWidth": 1.5},
+            {"label": L("chart.sdk.npm"), "data": npm_vals,
+             "backgroundColor": color(0), "borderWidth": 0, "borderRadius": 3},
+            {"label": L("chart.sdk.pypi"), "data": pypi_vals,
+             "backgroundColor": color(1), "borderWidth": 0, "borderRadius": 3},
         ]},
-        "options": {"scales": {"y": {"title": {"display": True, "text": "百万次 / 周"}}}},
+        "options": {"scales": {"y": {"title": {"display": True,
+                                               "text": L("chart.sdk.y")}}}},
     }
 
 
@@ -303,7 +352,8 @@ def spec_gpu_trend() -> dict:
     return {
         "type": "line",
         "data": {"labels": labels, "datasets": datasets},
-        "options": {"scales": {"y": {"title": {"display": True, "text": "$/GPU-hr（中位数）"}}}},
+        "options": {"scales": {"y": {"title": {"display": True,
+                                               "text": L("chart.gpu.y")}}}},
     }
 
 
@@ -342,9 +392,10 @@ def spec_dc_growth(p: dict) -> dict:
     return {
         "type": "bar",
         "data": {"labels": s["labels"], "datasets": [
-            {"label": "累计功率 (GW)", "data": s["power_gw"], "backgroundColor": color(9) + "AA",
-             "borderColor": INK, "borderWidth": 1, "yAxisID": "y"},
-            {"label": "累计算力 (M H100-eq)", "data": s["h100_m"], "type": "line",
+            {"label": L("chart.dc.power"), "data": s["power_gw"],
+             "backgroundColor": color(9) + "B3",
+             "borderWidth": 0, "borderRadius": 2, "yAxisID": "y"},
+            {"label": L("chart.dc.h100"), "data": s["h100_m"], "type": "line",
              "borderColor": color(2), "backgroundColor": color(2), "pointRadius": 0,
              "borderWidth": 2.5, "yAxisID": "y2"},
         ]},
@@ -434,6 +485,7 @@ def collect() -> dict:
 
 def main() -> int:
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR), autoescape=False)
+    env.globals["t"] = t
     ctx = collect()
     dashboard = {
         "build_ts": ctx["build_ts"],
@@ -444,6 +496,7 @@ def main() -> int:
     html = env.get_template("index.html.j2").render(
         **ctx,
         dashboard_json=json.dumps(dashboard, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/"),
+        i18n_json=json.dumps(I18N, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/"),
         style=(TEMPLATE_DIR / "style.css").read_text(encoding="utf-8"),
         app_js=(TEMPLATE_DIR / "app.js").read_text(encoding="utf-8"),
         chart_js=(SITE / "vendor" / "chart.umd.min.js").read_text(encoding="utf-8"),

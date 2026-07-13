@@ -1,19 +1,13 @@
-<section class="panel methodology">
-  <header class="panel-head tone-gray"><h3>Methodology — 每个面板测的是什么、不是什么</h3></header>
+<section class="panel methodology" id="sec-methodology">
+  <header class="panel-head"><h3 data-i18n="meth.title">{{ t('meth.title') | e }}</h3></header>
   <div class="panel-body">
     <ul>
-      <li><b>① ARR</b>：披露锚点（run-rate 口径）对数空间加权最小二乘拟合 + 外推。大数字是
-        <b>估算的演出效果</b>（每秒按拟合小时增量累加），非实时财务数据；置信带与锚点散点展示估算地基。
-        锚点混入全年预测/实际收入会被拒绝（口径字段强制）。</li>
-      <li><b>② OpenRouter</b>：聚合路由平台切片，<b>不含</b> Anthropic/OpenAI 直连 API 主力流量。
-        「滚动 7 天」为端点原生口径；日频序列由本站每日快照累积。</li>
-      <li><b>② Vercel Gateway</b>：仅 Gateway 客户流量的<b>份额百分比</b>，无绝对量；模型名为显示名。</li>
-      <li><b>② SDK 下载</b>：npm/PyPI 官方 API；下载量是开发者采用度 proxy（CI 重复安装会灌水），
-        不等于 API 调用量。</li>
-      <li><b>③ GPU 价格</b>：Vast.ai 市场 on-demand 报价分位数（含个人/小机房供给的低价切片），
-        系统性低于超算云牌价，不可与 OCPI 等跨供应商指数直接比较。</li>
-      <li><b>④ 数据中心</b>：Epoch AI Frontier Data Centers 数据集（CC-BY，约每周更新），
-        为样本内站点，非全行业普查。新闻流为 Google News RSS 白名单媒体，仅标题/链接。</li>
+      <li data-i18n-html="meth.arr">{{ t('meth.arr') }}</li>
+      <li data-i18n-html="meth.openrouter">{{ t('meth.openrouter') }}</li>
+      <li data-i18n-html="meth.vercel">{{ t('meth.vercel') }}</li>
+      <li data-i18n-html="meth.sdk">{{ t('meth.sdk') }}</li>
+      <li data-i18n-html="meth.gpu">{{ t('meth.gpu') }}</li>
+      <li data-i18n-html="meth.dc">{{ t('meth.dc') }}</li>
     </ul>
   </div>
 </section>

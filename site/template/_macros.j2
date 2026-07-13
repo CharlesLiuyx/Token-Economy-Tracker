@@ -1,26 +1,28 @@
-{# 面板外壳宏：彩色标题条（假窗口控件）+ 新鲜度徽章 + 奶油底身体 #}
+{# 面板外壳宏：标题 + 新鲜度徽章（Linear 风格，无装饰件）。
+   title/note 一律传 i18n key，文案唯一出处 site/template/i18n.yml。 #}
 
 {% macro badge(source) -%}
 {%- set st = source_status.get(source, {}) -%}
+{%- set date = st.snapshot_date or '—' -%}
 <span class="badge badge-{{ st.freshness or 'missing' }}"
-      title="{{ (st.error or ('数据截至 ' ~ (st.snapshot_date or '?'))) | e }}">{{ st.snapshot_date or '—' }}</span>
+      {%- if st.error %} title="{{ st.error | e }}"
+      {%- else %} title="{{ t('ui.data_asof', date=date) | e }}" data-i18n-title="ui.data_asof"
+      data-i18n-args='{{ {"date": date} | tojson }}'{% endif %}>{{ date }}</span>
 {%- endmacro %}
 
-{% macro panel_head(title, tone, source) -%}
-<header class="panel-head tone-{{ tone }}">
-  <span class="dots"><i></i><i></i><i></i></span>
-  <h3>{{ title }}</h3>
+{% macro panel_head(title_key, source) -%}
+<header class="panel-head">
+  <h3 data-i18n="{{ title_key }}">{{ t(title_key) | e }}</h3>
   {{ badge(source) }}
-  <span class="fake-x">×</span>
 </header>
 {%- endmacro %}
 
-{% macro chart_panel(id, title, tone, source, note='', tall=False) -%}
+{% macro chart_panel(id, title_key, source, note_key='', tall=False) -%}
 <section class="panel">
-  {{ panel_head(title, tone, source) }}
+  {{ panel_head(title_key, source) }}
   <div class="panel-body">
     <div class="chart-box{{ ' tall' if tall else '' }}"><canvas id="chart-{{ id }}"></canvas></div>
-    {% if note %}<p class="note">{{ note }}</p>{% endif %}
+    {% if note_key %}<p class="note" data-i18n="{{ note_key }}">{{ t(note_key) | e }}</p>{% endif %}
   </div>
 </section>
 {%- endmacro %}

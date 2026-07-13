@@ -89,7 +89,7 @@ Token-Tracker/
 │   ├── template/
 │   │   ├── index.html.j2      # 页面骨架
 │   │   ├── panels/*.j2        # 每个面板一个模板片段
-│   │   ├── style.css          # neo-brutalist 主题（奶油底/粗描边/硬阴影）
+│   │   ├── style.css          # Linear 风格主题（dark/light 双主题 token）
 │   │   └── app.js             # 图表渲染 wrapper + ARR 跳动计数器
 │   └── vendor/chart.umd.min.js
 └── docs/
@@ -178,8 +178,8 @@ openrouter:
 - **体积控制**：页面只内联展示所需数据——日频序列保留近 90 天，更早自动降采样为周频；
   全量历史留在 `data/`，不进 HTML。目标 gzip 后 < 600KB。
 - **图表**：统一走 `renderPanel(id, spec)` 薄封装（约束 Chart.js 用法的子集：line / bar /
-  horizontalBar / area + tooltip），方便日后整体换库。样式统一注入 neo-brutalist 主题
-  （奶油底 #FDF6E3 系、2px 黑描边、硬阴影、mono 数字字体），对齐参考图气质。
+  horizontalBar / area + tooltip），方便日后整体换库。样式统一注入 Linear 风格主题
+  （中性色 / 1px 细边框 / mono 数字，dark/light 双主题切换，详见 docs/frontend.md）。
 - **面板模板化**：每个面板一个 `panels/*.j2` 片段 + 一个 spec 生成函数，加减面板不动骨架。
 - **交互**：Chart.js 自带 hover tooltip 与 legend 开关即可满足参考图的交互；不做缩放/刷选。
 

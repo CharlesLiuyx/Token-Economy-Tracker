@@ -1,3 +1,2 @@
 {% from '_macros.j2' import chart_panel with context %}
-{{ chart_panel('sdk', 'SDK 周下载量 (M) — developer adoption proxy', 'green', 'sdk_downloads',
-               note='npm + PyPI 官方口径；下载量≈开发者关注度 proxy，不等于 API 用量。') }}
+{{ chart_panel('sdk', 'panel.sdk.title', 'sdk_downloads', note_key='panel.sdk.note') }}
