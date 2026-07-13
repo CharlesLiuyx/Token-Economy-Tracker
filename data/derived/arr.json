@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-07-12T09:35:20+00:00",
- "build_date": "2026-07-12",
+ "generated_at": "2026-07-13T04:09:08+00:00",
+ "build_date": "2026-07-13",
  "half_life_days": 120,
  "companies": {
   "anthropic": {
@@ -14,8 +14,8 @@
     "last_anchor_value": 47000000000
    },
    "realtime": {
-    "arr_at_build": 56983915462,
-    "usd_per_hour": 17929351,
+    "arr_at_build": 57415780469,
+    "usd_per_hour": 18065232,
     "mom_implied": 0.2584
    },
    "anchors": [
@@ -1343,8 +1343,8 @@
     "last_anchor_value": 25000000000
    },
    "realtime": {
-    "arr_at_build": 39986260234,
-    "usd_per_hour": 5722501,
+    "arr_at_build": 40123826526,
+    "usd_per_hour": 5742188,
     "mom_implied": 0.1102
    },
    "anchors": [
