@@ -2,7 +2,7 @@
  "schema_version": 1,
  "source": "vercel_gateway",
  "snapshot_date": "2026-07-13",
- "fetched_at": "2026-07-13T04:09:07+00:00",
+ "fetched_at": "2026-07-13T04:42:49+00:00",
  "source_meta": {
   "kind": "scrape"
  },
@@ -19,10 +19,6 @@
      [
       "Claude Opus 4.6",
       14.4974
-     ],
-     [
-      "Gemini 3 Flash",
-      9.2765
      ],
      [
       "GPT 5.5",
@@ -130,10 +126,6 @@
       15.2045
      ],
      [
-      "Gemini 3 Flash",
-      9.8987
-     ],
-     [
       "GPT 5.5",
       4.4866
      ],
@@ -237,10 +229,6 @@
      [
       "Claude Opus 4.6",
       12.1344
-     ],
-     [
-      "Gemini 3 Flash",
-      8.8011
      ],
      [
       "GPT 5.5",
@@ -348,10 +336,6 @@
       10.4092
      ],
      [
-      "Gemini 3 Flash",
-      7.7764
-     ],
-     [
       "GPT 5.5",
       6.1311
      ],
@@ -455,10 +439,6 @@
      [
       "Claude Sonnet 4.6",
       14.4791
-     ],
-     [
-      "Gemini 3 Flash",
-      8.4614
      ],
      [
       "GPT 5.5",
@@ -566,10 +546,6 @@
       14.2594
      ],
      [
-      "Gemini 3 Flash",
-      8.1041
-     ],
-     [
       "GPT 5.5",
       6.0722
      ],
@@ -673,10 +649,6 @@
      [
       "Claude Sonnet 4.6",
       14.5378
-     ],
-     [
-      "Gemini 3 Flash",
-      7.5497
      ],
      [
       "GPT 5.5",
@@ -784,10 +756,6 @@
       14.4225
      ],
      [
-      "Gemini 3 Flash",
-      7.413
-     ],
-     [
       "GPT 5.5",
       6.1263
      ],
@@ -891,10 +859,6 @@
      [
       "Claude Sonnet 4.6",
       13.9655
-     ],
-     [
-      "Gemini 3 Flash",
-      7.1399
      ],
      [
       "GPT 5.5",
@@ -1002,10 +966,6 @@
       12.7552
      ],
      [
-      "Gemini 3 Flash",
-      7.008
-     ],
-     [
       "GPT 5.5",
       3.3496
      ],
@@ -1109,10 +1069,6 @@
      [
       "Claude Opus 4.6",
       11.7049
-     ],
-     [
-      "Gemini 3 Flash",
-      7.3978
      ],
      [
       "GPT 5.5",
@@ -1220,10 +1176,6 @@
       13.3373
      ],
      [
-      "Gemini 3 Flash",
-      7.0316
-     ],
-     [
       "GPT 5.5",
       3.3358
      ],
@@ -1327,10 +1279,6 @@
      [
       "Claude Sonnet 4.6",
       13.0666
-     ],
-     [
-      "Gemini 3 Flash",
-      7.7895
      ],
      [
       "GPT 5.5",
@@ -1438,10 +1386,6 @@
       12.6553
      ],
      [
-      "Gemini 3 Flash",
-      7.1339
-     ],
-     [
       "GPT 5.5",
       5.0258
      ],
@@ -1545,10 +1489,6 @@
      [
       "Claude Sonnet 4.6",
       12.3996
-     ],
-     [
-      "Gemini 3 Flash",
-      7.8448
      ],
      [
       "GPT 5.5",
@@ -1668,10 +1608,6 @@
       13.0838
      ],
      [
-      "Gemini 3 Flash",
-      8.9954
-     ],
-     [
       "GPT 5.5",
       6.7733
      ],
@@ -1779,10 +1715,6 @@
      [
       "Claude Sonnet 4.6",
       12.5203
-     ],
-     [
-      "Gemini 3 Flash",
-      9.2363
      ],
      [
       "Claude Opus 4.6",
@@ -1902,10 +1834,6 @@
       14.3317
      ],
      [
-      "Gemini 3 Flash",
-      12.2906
-     ],
-     [
       "Claude Opus 4.6",
       7.972
      ],
@@ -2021,10 +1949,6 @@
      [
       "Claude Sonnet 4.6",
       13.1561
-     ],
-     [
-      "Gemini 3 Flash",
-      11.639
      ],
      [
       "Claude Opus 4.6",
@@ -2152,10 +2076,6 @@
       11.6346
      ],
      [
-      "Gemini 3 Flash",
-      10.794
-     ],
-     [
       "GPT 5.5",
       5.8218
      ],
@@ -2275,10 +2195,6 @@
      [
       "Claude Opus 4.6",
       12.5067
-     ],
-     [
-      "Gemini 3 Flash",
-      10.6233
      ],
      [
       "GPT 5.5",
@@ -2406,10 +2322,6 @@
       10.3241
      ],
      [
-      "Gemini 3 Flash",
-      10.1938
-     ],
-     [
       "Gemini 3.1 Pro Preview",
       2.7774
      ],
@@ -2525,10 +2437,6 @@
      [
       "Claude Opus 4.6",
       11.8737
-     ],
-     [
-      "Gemini 3 Flash",
-      10.6338
      ],
      [
       "GPT 5.5",
@@ -2648,10 +2556,6 @@
       18.0035
      ],
      [
-      "Gemini 3 Flash",
-      10.2272
-     ],
-     [
       "Claude Opus 4.6",
       6.8672
      ],
@@ -2767,10 +2671,6 @@
      [
       "Claude Opus 4.8",
       18.7308
-     ],
-     [
-      "Gemini 3 Flash",
-      15.0157
      ],
      [
       "Claude Sonnet 4.6",
@@ -2898,10 +2798,6 @@
       12.8236
      ],
      [
-      "Gemini 3 Flash",
-      12.5298
-     ],
-     [
       "Claude Opus 4.6",
       11.0229
      ],
@@ -3025,10 +2921,6 @@
      [
       "Claude Opus 4.6",
       9.9095
-     ],
-     [
-      "Gemini 3 Flash",
-      9.4245
      ],
      [
       "GPT 5.5",
@@ -3160,10 +3052,6 @@
       8.8492
      ],
      [
-      "Gemini 3 Flash",
-      8.4635
-     ],
-     [
       "GPT 5.5",
       4.1926
      ],
@@ -3287,10 +3175,6 @@
      [
       "Claude Opus 4.6",
       11.6637
-     ],
-     [
-      "Gemini 3 Flash",
-      9.278
      ],
      [
       "GPT 5.5",
@@ -3418,10 +3302,6 @@
       12.001
      ],
      [
-      "Gemini 3 Flash",
-      9.0982
-     ],
-     [
       "GPT 5.5",
       7.58
      ],
@@ -3537,10 +3417,6 @@
      [
       "Claude Sonnet 4.6",
       16.6665
-     ],
-     [
-      "Gemini 3 Flash",
-      9.5682
      ],
      [
       "GPT 5.5",
@@ -3672,10 +3548,6 @@
       11.0271
      ],
      [
-      "Gemini 3 Flash",
-      8.2276
-     ],
-     [
       "Gemini 3.1 Pro Preview",
       4.7746
      ],
@@ -3801,10 +3673,6 @@
       10.565
      ],
      [
-      "Gemini 3 Flash",
-      9.1281
-     ],
-     [
       "Gemini 3.1 Pro Preview",
       4.1321
      ],
@@ -3924,10 +3792,6 @@
      [
       "Claude Opus 4.6",
       10.1421
-     ],
-     [
-      "Gemini 3 Flash",
-      7.4614
      ],
      [
       "Gemini 3.1 Pro Preview",
@@ -4059,10 +3923,6 @@
       10.2379
      ],
      [
-      "Gemini 3 Flash",
-      6.9846
-     ],
-     [
       "Gemini 3.1 Pro Preview",
       3.7222
      ],
@@ -4190,10 +4050,6 @@
      [
       "Claude Opus 4.6",
       10.0021
-     ],
-     [
-      "Gemini 3 Flash",
-      6.1909
      ],
      [
       "Gemini 3.1 Pro Preview",
@@ -4325,10 +4181,6 @@
       7.3167
      ],
      [
-      "Gemini 3 Flash",
-      4.9915
-     ],
-     [
       "Gemini 3.1 Pro Preview",
       3.2892
      ],
@@ -4452,10 +4304,6 @@
      [
       "Claude Sonnet 4.6",
       9.1034
-     ],
-     [
-      "Gemini 3 Flash",
-      3.8734
      ],
      [
       "Claude Opus 4.6",
@@ -4585,10 +4433,6 @@
      [
       "Claude Sonnet 4.6",
       10.1936
-     ],
-     [
-      "Gemini 3 Flash",
-      4.9432
      ],
      [
       "Gemini 3.1 Pro Preview",
@@ -4724,10 +4568,6 @@
       9.5723
      ],
      [
-      "Gemini 3 Flash",
-      5.85
-     ],
-     [
       "Gemini 3.1 Pro Preview",
       2.7868
      ],
@@ -4855,10 +4695,6 @@
      [
       "Claude Opus 4.6",
       9.1618
-     ],
-     [
-      "Gemini 3 Flash",
-      5.1109
      ],
      [
       "Gemini 3.1 Pro Preview",
@@ -4990,10 +4826,6 @@
       8.8411
      ],
      [
-      "Gemini 3 Flash",
-      5.951
-     ],
-     [
       "Claude Haiku 4.5",
       2.3812
      ],
@@ -5123,10 +4955,6 @@
       7.6988
      ],
      [
-      "Gemini 3 Flash",
-      6.8154
-     ],
-     [
       "Claude Haiku 4.5",
       2.8003
      ],
@@ -5250,10 +5078,6 @@
      [
       "Claude Opus 4.6",
       9.528
-     ],
-     [
-      "Gemini 3 Flash",
-      6.8318
      ],
      [
       "GPT 5.5",
@@ -5385,10 +5209,6 @@
       7.0597
      ],
      [
-      "Gemini 3 Flash",
-      6.6927
-     ],
-     [
       "Claude Opus 4.6",
       5.7106
      ],
@@ -5518,10 +5338,6 @@
       8.0008
      ],
      [
-      "Gemini 3 Flash",
-      4.445
-     ],
-     [
       "Claude Opus 4.6",
       3.7151
      ],
@@ -5649,10 +5465,6 @@
      [
       "Claude Opus 4.6",
       9.9197
-     ],
-     [
-      "Gemini 3 Flash",
-      7.0276
      ],
      [
       "GPT 5.5",
@@ -5788,10 +5600,6 @@
       7.6318
      ],
      [
-      "Gemini 3 Flash",
-      7.0705
-     ],
-     [
       "GLM 5.2",
       3.8219
      ],
@@ -5802,6 +5610,10 @@
      [
       "Claude Haiku 4.5",
       2.1843
+     ],
+     [
+      "Claude Sonnet 5",
+      1.8508
      ]
     ],
     "others_share": 0
@@ -5917,10 +5729,6 @@
       9.3553
      ],
      [
-      "Gemini 3 Flash",
-      6.3044
-     ],
-     [
       "GPT 5.5",
       4.8798
      ],
@@ -5939,6 +5747,10 @@
      [
       "Claude Haiku 4.5",
       2.1217
+     ],
+     [
+      "Claude Sonnet 5",
+      1.3593
      ]
     ],
     "others_share": 0
@@ -6062,8 +5874,8 @@
       6.3057
      ],
      [
-      "Gemini 3 Flash",
-      4.8095
+      "Claude Sonnet 5",
+      2.7329
      ],
      [
       "Gemini 3.1 Pro Preview",
@@ -6191,10 +6003,6 @@
       10.1848
      ],
      [
-      "Gemini 3 Flash",
-      9.6291
-     ],
-     [
       "Claude Opus 4.6",
       7.4211
      ],
@@ -6205,6 +6013,10 @@
      [
       "GLM 5.2",
       5.2479
+     ],
+     [
+      "Claude Sonnet 5",
+      4.8734
      ],
      [
       "Gemini 3.1 Pro Preview",
@@ -6320,16 +6132,16 @@
       11.9267
      ],
      [
+      "Claude Sonnet 5",
+      9.495
+     ],
+     [
       "Claude Sonnet 4.6",
       9.1097
      ],
      [
       "Claude Opus 4.8",
       8.548
-     ],
-     [
-      "Gemini 3 Flash",
-      7.3932
      ],
      [
       "Claude Opus 4.6",
@@ -6461,10 +6273,6 @@
       9.7218
      ],
      [
-      "Gemini 3 Flash",
-      9.2514
-     ],
-     [
       "Claude Opus 4.8",
       9.0422
      ],
@@ -6483,6 +6291,10 @@
      [
       "Gemini 3.1 Pro Preview",
       4.2043
+     ],
+     [
+      "Claude Sonnet 5",
+      4.0588
      ],
      [
       "Claude Haiku 4.5",
@@ -6606,16 +6418,16 @@
       9.2506
      ],
      [
-      "Gemini 3 Flash",
-      7.4845
-     ],
-     [
       "GPT 5.5",
       6.4927
      ],
      [
       "GLM 5.2",
       4.7955
+     ],
+     [
+      "Claude Sonnet 5",
+      3.1873
      ],
      [
       "Gemini 3.1 Pro Preview",
@@ -6751,12 +6563,12 @@
       7.0929
      ],
      [
-      "Gemini 3 Flash",
-      5.8315
-     ],
-     [
       "Claude Haiku 4.5",
       3.1324
+     ],
+     [
+      "Claude Sonnet 5",
+      2.8046
      ],
      [
       "Gemini 3.1 Pro Preview",
@@ -6884,16 +6696,16 @@
       7.5881
      ],
      [
-      "Gemini 3 Flash",
-      5.9205
-     ],
-     [
       "GLM 5.2",
       5.6313
      ],
      [
       "Claude Haiku 4.5",
       3.7768
+     ],
+     [
+      "Claude Sonnet 5",
+      2.8528
      ],
      [
       "Gemini 3.1 Pro Preview",
@@ -7025,12 +6837,12 @@
       6.7082
      ],
      [
-      "Gemini 3 Flash",
-      4.5866
-     ],
-     [
       "Claude Haiku 4.5",
       4.5526
+     ],
+     [
+      "Claude Sonnet 5",
+      2.941
      ],
      [
       "Gemini 3.1 Pro Preview",
@@ -7170,16 +6982,16 @@
       4.289
      ],
      [
-      "Gemini 3 Flash",
-      4.0541
-     ],
-     [
       "GPT 5.6 Sol",
       3.2879
      ],
      [
       "Gemini 3.1 Pro Preview",
       3.1069
+     ],
+     [
+      "Claude Sonnet 5",
+      2.9148
      ]
     ],
     "others_share": 0
@@ -7315,12 +7127,12 @@
       3.5745
      ],
      [
-      "Gemini 3 Flash",
-      3.22
-     ],
-     [
       "GPT 5.5",
       3.0363
+     ],
+     [
+      "Claude Sonnet 5",
+      2.3368
      ]
     ],
     "others_share": 0
@@ -7460,8 +7272,8 @@
       3.6341
      ],
      [
-      "Gemini 3 Flash",
-      3.3578
+      "Claude Sonnet 5",
+      2.6508
      ]
     ],
     "others_share": 0
@@ -7566,43 +7378,43 @@
     "shares": [
      [
       "GPT 5.6 Sol",
-      13.0115
+      14.128
      ],
      [
       "Claude Sonnet 4.6",
-      11.0111
+      10.9639
      ],
      [
       "Claude Opus 4.8",
-      9.9001
+      10.0039
      ],
      [
       "Claude Fable 5",
-      6.8473
-     ],
-     [
-      "GLM 5.2",
-      6.5246
+      7.0053
      ],
      [
       "Claude Opus 4.6",
-      6.2346
+      6.3553
+     ],
+     [
+      "GLM 5.2",
+      6.2378
      ],
      [
       "Claude Haiku 4.5",
-      4.542
+      4.3948
      ],
      [
       "GPT 5.5",
-      3.9232
+      3.938
+     ],
+     [
+      "Claude Sonnet 5",
+      3.3216
      ],
      [
       "Gemini 3.1 Pro Preview",
-      3.4018
-     ],
-     [
-      "Gemini 3 Flash",
-      3.2625
+      3.3175
      ]
     ],
     "others_share": 0
@@ -7613,43 +7425,43 @@
     "shares": [
      [
       "DeepSeek V4 Flash",
-      30.3051
+      27.7543
      ],
      [
       "Gemini 3.1 Flash Lite Preview",
-      7.0257
+      7.0386
      ],
      [
       "text-embedding-3-large",
-      4.6391
+      4.8612
      ],
      [
       "Gemini 2.5 Flash Lite",
-      4.4219
+      4.519
      ],
      [
       "GPT-4o mini",
-      3.4638
+      3.7211
      ],
      [
       "Gemini 3 Flash",
-      3.3634
-     ],
-     [
-      "text-embedding-3-small",
-      3.291
+      3.4922
      ],
      [
       "Claude Haiku 4.5",
-      3.2536
+      3.4271
      ],
      [
-      "GPT-4.1 mini",
-      2.9916
+      "text-embedding-3-small",
+      3.3733
      ],
      [
       "Claude Sonnet 4.6",
-      2.853
+      2.9692
+     ],
+     [
+      "GPT-4.1 mini",
+      2.6943
      ]
     ],
     "others_share": 0
@@ -7660,43 +7472,43 @@
     "shares": [
      [
       "DeepSeek V4 Flash",
-      30.6579
+      29.0786
      ],
      [
       "DeepSeek V4 Pro",
-      8.5409
+      9.3242
      ],
      [
       "GLM 5.2",
-      6.4597
+      6.4424
      ],
      [
       "Step 3.7 Flash",
-      5.7883
+      5.8657
      ],
      [
       "Gemini 3 Flash",
-      4.6043
+      4.5124
      ],
      [
       "Claude Sonnet 4.6",
-      4.2668
+      4.3114
      ],
      [
       "MiniMax M3",
-      4.1354
+      4.0431
      ],
      [
       "Claude Haiku 4.5",
-      3.7572
+      3.7553
      ],
      [
       "Gemini 3.1 Flash Lite Preview",
-      3.6684
+      3.6095
      ],
      [
       "Claude Opus 4.8",
-      2.7872
+      2.8748
      ]
     ],
     "others_share": 0
