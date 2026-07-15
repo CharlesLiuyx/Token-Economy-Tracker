@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-14T03:44:26+00:00",
- "build_date": "2026-07-14",
+ "generated_at": "2026-07-15T03:44:46+00:00",
+ "build_date": "2026-07-15",
  "half_life_days": 120,
  "companies": {
   "anthropic": {
    "fit": {
-    "k_per_day": 0.008036826868912156,
+    "k_per_day": 0.008036826868912083,
     "mom_implied": 0.2772,
     "sigma_log": 0.2207,
     "n_anchors": 15,
@@ -14,8 +14,8 @@
     "last_anchor_value": 70000000000
    },
    "realtime": {
-    "arr_at_build": 66140653730,
-    "usd_per_hour": 22152083,
+    "arr_at_build": 66674356479,
+    "usd_per_hour": 22330833,
     "mom_implied": 0.2772
    },
    "anchors": [
@@ -1348,7 +1348,7 @@
   },
   "openai": {
    "fit": {
-    "k_per_day": 0.003666662846889907,
+    "k_per_day": 0.0036666628468899195,
     "mom_implied": 0.1181,
     "sigma_log": 0.0527,
     "n_anchors": 16,
@@ -1357,8 +1357,8 @@
     "last_anchor_value": 43000000000
    },
    "realtime": {
-    "arr_at_build": 43639129219,
-    "usd_per_hour": 6667592,
+    "arr_at_build": 43799432903,
+    "usd_per_hour": 6692084,
     "mom_implied": 0.1181
    },
    "anchors": [
