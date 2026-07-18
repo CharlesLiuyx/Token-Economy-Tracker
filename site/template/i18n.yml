@@ -9,9 +9,6 @@
 #   - 每个 key 必须 zh/en 齐全；tests/test_i18n.py 校验完整性、{args} 双语一致、无死 key
 
 # ---- 全局 UI ----
-ui.tagline:
-  zh: AI 变现追踪仪表盘：Frontier Lab ARR · Token 用量 · GPU 租赁价格 · AI 数据中心建设
-  en: "AI monetization dashboard: frontier lab ARR · token usage · GPU rental prices · AI datacenter buildout"
 ui.data_asof:
   zh: "数据截至 {date}"
   en: "Data as of {date}"

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>AI MONETIZATION TRACKER</title>
+<title>TOKEN ECONOMY TRACKER</title>
 <script>
 /* 首帧前设定主题与语言，防白闪：localStorage 覆盖 > 系统偏好（语言默认 zh，浏览器非中文则 en） */
 (function () {
@@ -28,7 +28,7 @@
 
 <header class="topbar">
   <div class="topbar-inner">
-    <a class="brand" href="#top">AI Monetization Tracker</a>
+    <a class="brand" href="#top">Token Economy Tracker</a>
     <nav class="topnav">
       <a href="#sec-arr">ARR</a>
       <a href="#sec-tokens">Tokens</a>
@@ -66,8 +66,6 @@
 
 <main id="top">
   <div class="page-head">
-    <h1>AI Monetization Tracker</h1>
-    <p class="tagline" data-i18n="ui.tagline">{{ t('ui.tagline') | e }}</p>
     <p class="source-line">
       {%- for name, st in source_status.items() %}
       {%- set date = st.snapshot_date or '—' %}
