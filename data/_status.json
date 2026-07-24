@@ -1,37 +1,37 @@
 {
  "epoch_datacenters": {
-  "last_attempt": "2026-07-23T03:54:16+00:00",
-  "last_success": "2026-07-23T03:54:16+00:00",
+  "last_attempt": "2026-07-24T03:53:06+00:00",
+  "last_success": "2026-07-24T03:53:06+00:00",
   "error": null
  },
  "sdk_downloads": {
-  "last_attempt": "2026-07-23T03:54:19+00:00",
+  "last_attempt": "2026-07-24T03:53:14+00:00",
   "last_success": "2026-07-23T03:54:19+00:00",
-  "error": null
+  "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://pypistats.org/api/packages/google-genai/recent"
  },
  "news": {
-  "last_attempt": "2026-07-23T03:54:20+00:00",
-  "last_success": "2026-07-23T03:54:20+00:00",
+  "last_attempt": "2026-07-24T03:53:15+00:00",
+  "last_success": "2026-07-24T03:53:15+00:00",
   "error": null
  },
  "openrouter": {
-  "last_attempt": "2026-07-23T03:54:21+00:00",
-  "last_success": "2026-07-23T03:54:21+00:00",
+  "last_attempt": "2026-07-24T03:53:16+00:00",
+  "last_success": "2026-07-24T03:53:16+00:00",
   "error": null
  },
  "vercel_gateway": {
-  "last_attempt": "2026-07-23T03:54:21+00:00",
-  "last_success": "2026-07-23T03:54:21+00:00",
+  "last_attempt": "2026-07-24T03:53:16+00:00",
+  "last_success": "2026-07-24T03:53:16+00:00",
   "error": null
  },
  "gpu_prices": {
-  "last_attempt": "2026-07-23T03:54:24+00:00",
-  "last_success": "2026-07-23T03:54:24+00:00",
+  "last_attempt": "2026-07-24T03:53:17+00:00",
+  "last_success": "2026-07-24T03:53:17+00:00",
   "error": null
  },
  "arr": {
-  "last_attempt": "2026-07-23T03:54:24+00:00",
-  "last_success": "2026-07-23T03:54:24+00:00",
+  "last_attempt": "2026-07-24T03:53:17+00:00",
+  "last_success": "2026-07-24T03:53:17+00:00",
   "error": null
  }
 }
