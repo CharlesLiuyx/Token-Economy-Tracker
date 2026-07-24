@@ -125,6 +125,13 @@ anchors:
   source_url: https://www.yipitdata.com/
   note: YipitData estimate as of 2026-06-30 70B
   confidence: likely
+- company: anthropic
+  date: '2026-07-12'
+  value_usd: 79000000000
+  metric: run_rate_arr
+  source_url: https://www.yipitdata.com/
+  note: YipitData estimate as of 2026-07-12 79B（私有订阅口径，无公开链接）
+  confidence: likely
 - company: openai
   date: '2022-12-31'
   value_usd: 28000000
@@ -257,4 +264,11 @@ anchors:
   metric: run_rate_arr
   source_url: https://www.yipitdata.com/
   note: YipitData estimate as of 2026-06-30 43B
+  confidence: likely
+- company: openai
+  date: '2026-07-12'
+  value_usd: 50000000000
+  metric: run_rate_arr
+  source_url: https://www.yipitdata.com/
+  note: YipitData estimate as of 2026-07-12 50B（私有订阅口径，无公开链接）
   confidence: likely

@@ -165,11 +165,13 @@ openrouter:
    (run_rate_arr | projected_rev | reported_rev) / source_url / note`。
    口径字段**必填**——媒体报道混用 run-rate 与年度预测，混拟合会出鬼图。
 2. **拟合**：对每家公司，取 run_rate_arr 锚点在对数空间做加权最小二乘
-   （近期锚点权重高），得到分段指数曲线；残差给出置信带。
-3. **外推**：拟合曲线延伸至今日 + 未来 N 月（虚线区）。
+   （近期锚点权重高）。曲线形态不预设：`linear` / `exponential` / `log_quadratic`
+   三种候选各拟合一次，用滚动起点回测（前 i 个点预测第 i+1 个）挑预测最准的。
+3. **外推**：延伸至今日 + 未来 N 月（虚线区），沿用最后锚点处的瞬时增速做直线延伸，
+   曲率不外推；置信带为预测区间，随外推距离张开，早期无支撑段不画。
 4. **实时跳动**：build 输出 `{arr_at_build, build_ts, usd_per_hour, mom_implied}`；
    前端 `setInterval` 每秒累加 `usd_per_hour/3600`。纯展示效果，刷新页面即回到 build 基准。
-5. 卡片角标：implied MoM %、每小时增量、最近披露日期。
+5. 卡片角标：implied MoM %、每小时增量、**选中形态**、最近披露日期。
 
 ## 7. 前端设计
 

@@ -1,4 +1,10 @@
 {% from '_macros.j2' import badge with context %}
+{# 曲线形态 -> i18n key；新增候选形态时这里必须同步补一项（否则 build 直接报错） #}
+{% set model_keys = {
+     'linear': 'panel.arr.model.linear',
+     'exponential': 'panel.arr.model.exponential',
+     'log_quadratic': 'panel.arr.model.log_quadratic',
+   } %}
 <div class="grid2 arr-grid">
 {% for c in arr_cards %}
   <section class="panel arr-card company-{{ loop.index0 }}">
@@ -14,6 +20,10 @@
       <p class="arr-sub">
         <span class="chip">+${{ '{:,}'.format(c.usd_per_hour) }}/hr</span>
         <span class="chip">implied MoM {{ '%+.1f' | format(c.mom * 100) }}%</span>
+        {% set mk = model_keys[c.model] %}
+        <span class="chip" title="{{ t('panel.arr.model_title') | e }}"
+              data-i18n-title="panel.arr.model_title"
+              data-i18n="{{ mk }}">{{ t(mk) | e }}</span>
         <span class="chip"><span data-i18n="panel.arr.last_disclosed">{{ t('panel.arr.last_disclosed') | e }}</span> {{ c.last_anchor_date }} · ${{ '%.0f' | format(c.last_anchor_value / 1e9) }}B</span>
       </p>
     </div>

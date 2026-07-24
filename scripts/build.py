@@ -166,6 +166,7 @@ def spec_arr(arr: dict) -> dict:
             "arr_at_build": rt["arr_at_build"],
             "usd_per_hour": rt["usd_per_hour"],
             "mom": rt["mom_implied"],
+            "model": fit.get("model", "exponential"),
             "last_anchor_date": fit["last_anchor_date"],
             "last_anchor_value": fit["last_anchor_value"],
             "color_idx": i,
