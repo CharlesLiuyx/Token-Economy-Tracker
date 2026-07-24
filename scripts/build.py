@@ -140,7 +140,7 @@ def spec_arr(arr: dict) -> dict:
                    for a in d["anchors"] if a["metric"] == "run_rate_arr"]
         reported = [{"x": day_num(str(a["date"])), "y": a["value_usd"] / 1e9}
                     for a in d["anchors"] if a["metric"] == "reported_rev"]
-        datasets += [
+        company_sets = [
             {"label": f"_{company} band hi", "data": band_hi, "borderWidth": 0,
              "backgroundColor": c + "26", "pointRadius": 0, "fill": "+1"},
             {"label": f"_{company} band lo", "data": band_lo, "borderWidth": 0,
@@ -158,6 +158,10 @@ def spec_arr(arr: dict) -> dict:
              "backgroundColor": SURFACE, "borderColor": c, "borderWidth": 2,
              "pointRadius": 4, "pointStyle": "rectRot"},
         ]
+        # __group：hover 图例时同公司的置信带/外推段/锚点随拟合线一起高亮（app.js）
+        for ds in company_sets:
+            ds["__group"] = company
+        datasets += company_sets
         rt = d["realtime"]
         fit = d["fit"]
         cards.append({

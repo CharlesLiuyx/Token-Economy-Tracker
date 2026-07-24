@@ -3,7 +3,8 @@
 > TL;DR：单文件 HTML，CSS/JS/Chart.js/数据全内联；面板 = panels/*.j2 + spec 函数 + renderPanel；
 > 文案走 i18n.yml（zh/en 运行时切换）。
 > 何时读我：加/改面板、调样式、改文案、动 build.py 渲染逻辑前。
-> 最后核对日期：2026-07-13（Linear 风格重构 + dark/light 双主题 + zh/en i18n）
+> 最后核对日期：2026-07-24（新增 legend hover 高亮；此前：Linear 风格重构 +
+> dark/light 双主题 + zh/en i18n）
 
 ## 单文件产物
 
@@ -20,7 +21,11 @@
   加减面板不动骨架。
 - 图表统一走 `renderPanel(id, spec)` 薄封装，只允许 Chart.js 子集：
   line / bar / horizontalBar / area + tooltip。方便日后整体换库。
-- 交互只用 Chart.js 自带 hover tooltip 与 legend 开关；不做缩放/刷选。
+- 交互只用 Chart.js 自带 hover tooltip、legend 开关与 legend hover 高亮；不做缩放/刷选。
+- legend hover 高亮（app.js `setEmphasis`）：hover 图例项时其余系列颜色淡出到 15%
+  （只改 spec 里的十六进制色，原色缓存在 chart 实例上，onLeave 还原）。同一
+  `dataset.__group` 的系列一起高亮——ARR 图的置信带/外推段/锚点靠它跟拟合线同组；
+  不写 `__group` 则每系列自成一组。
 - 每个面板带新鲜度徽章（数据来自 _status.json，ok/warn/stale 样式见 style.css）。
 - 口径警示：OpenRouter / Vercel 面板标题必须保留来源后缀，Methodology 区写清
   「测的是什么、不是什么」。

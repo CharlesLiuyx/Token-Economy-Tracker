@@ -6,6 +6,7 @@
 //   "__i18n:<key>"（可嵌在长串中）    -> 当前语言文案（目录 key，见 site/template/i18n.yml）
 //   ticks.__epochDays                -> x 轴天数 → 日期字符串
 //   legend.labels.__filterUnderscore -> 隐藏下划线开头的图例项（置信带/外推段等）
+//   dataset.__group                  -> 图例 hover 高亮的分组名（省略则每系列自成一组）
 // 主题/语言切换时全部图表销毁重建（spec 每次从 D.charts 深拷贝，原件不可变）。
 // 静态 DOM 文案切换：data-i18n（textContent）/ data-i18n-html（受信 innerHTML）/
 // data-i18n-title / data-i18n-aria-label；参数化文案用 data-i18n-args（JSON，{name} 占位）。
@@ -81,6 +82,58 @@
     tt.bodyFont = { family: MONO };
   }
 
+  // ---- 图例 hover 高亮：淡出非当前组的系列 ----
+  var DIM = 0.15; // 淡出后保留的不透明度
+  var COLOR_KEYS = ["backgroundColor", "borderColor", "pointBackgroundColor",
+                    "pointBorderColor", "hoverBackgroundColor", "hoverBorderColor"];
+
+  // 只认 #RGB / #RGBA / #RRGGBB / #RRGGBBAA（spec 里的颜色都是十六进制）；数组逐项处理
+  function fade(c, alpha) {
+    if (Array.isArray(c)) return c.map(function (x) { return fade(x, alpha); });
+    if (typeof c !== "string" || c.charAt(0) !== "#") return c;
+    var hex = c.slice(1);
+    if (hex.length === 3 || hex.length === 4) {
+      hex = hex.replace(/./g, function (ch) { return ch + ch; });
+    }
+    if (hex.length !== 6 && hex.length !== 8) return c;
+    var a = hex.length === 8 ? parseInt(hex.slice(6), 16) : 255;
+    var out = Math.round(a * alpha).toString(16);
+    return "#" + hex.slice(0, 6) + (out.length < 2 ? "0" + out : out);
+  }
+
+  // 每图缓存原色与分组（销毁重建时随实例一起丢弃）
+  function emphasisState(chart) {
+    if (!chart.$emphasis) {
+      var sets = chart.data.datasets;
+      chart.$emphasis = {
+        group: null,
+        groups: sets.map(function (ds, i) { return ds.__group || "#" + i; }),
+        base: sets.map(function (ds) {
+          var snap = {};
+          COLOR_KEYS.forEach(function (k) { if (k in ds) snap[k] = ds[k]; });
+          return snap;
+        }),
+      };
+    }
+    return chart.$emphasis;
+  }
+
+  // datasetIndex 为 null 时恢复全部；同 __group 的系列（如 ARR 的置信带/外推段/
+  // 锚点与拟合线）一起高亮。Chart.js 只在图例项变化时回调，这里再挡一次重复 update。
+  function setEmphasis(chart, datasetIndex) {
+    var st = emphasisState(chart);
+    var group = datasetIndex == null ? null : st.groups[datasetIndex];
+    if (st.group === group) return;
+    st.group = group;
+    chart.data.datasets.forEach(function (ds, i) {
+      var dim = group !== null && st.groups[i] !== group;
+      Object.keys(st.base[i]).forEach(function (k) {
+        ds[k] = dim ? fade(st.base[i][k], DIM) : st.base[i][k];
+      });
+    });
+    chart.update("none");
+  }
+
   function dayToDate(epochISO, days) {
     var d = new Date(epochISO + "T00:00:00Z");
     d.setUTCDate(d.getUTCDate() + Math.round(days));
@@ -132,6 +185,15 @@
       delete labels.__filterUnderscore;
       labels.filter = function (item) { return item.text.charAt(0) !== "_"; };
     }
+    // hover 图例 -> 高亮对应系列（图例项可点，顺带给 pointer 光标）
+    legend.onHover = function (e, item, leg) {
+      setEmphasis(leg.chart, item.datasetIndex);
+      if (e.native) e.native.target.style.cursor = "pointer";
+    };
+    legend.onLeave = function (e, item, leg) {
+      setEmphasis(leg.chart, null);
+      if (e.native) e.native.target.style.cursor = "";
+    };
     return new Chart(canvas, { type: spec.type, data: spec.data, options: opts });
   }
 
