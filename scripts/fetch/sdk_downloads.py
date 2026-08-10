@@ -6,6 +6,7 @@
 from __future__ import annotations
 
 import sys
+import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
@@ -16,6 +17,10 @@ SOURCE = "sdk_downloads"
 
 NPM_POINT = "https://api.npmjs.org/downloads/point/{period}/{package}"
 PYPISTATS_RECENT = "https://pypistats.org/api/packages/{package}/recent"
+
+# pypistats.org 是按 IP 的突发限流（约每几秒 1 次，无 Retry-After 头），
+# 连续拉多个包会撞 429。请求间留间隔，配合 net 层的 429 退避重试兜底。
+PYPI_REQUEST_SPACING_S = 6.0
 
 
 def fetch(cfg: dict) -> dict:
@@ -30,7 +35,9 @@ def fetch(cfg: dict) -> dict:
                 "end": data.get("end"),
             }
         out["npm"][pkg] = entry
-    for pkg in cfg["pypi_packages"]:
+    for i, pkg in enumerate(cfg["pypi_packages"]):
+        if i:
+            time.sleep(PYPI_REQUEST_SPACING_S)  # 避免撞 pypistats 突发限流
         data = net.get_json(PYPISTATS_RECENT.format(package=pkg))
         out["pypi"][pkg] = data.get("data", {})  # {last_day, last_week, last_month}
     return out
