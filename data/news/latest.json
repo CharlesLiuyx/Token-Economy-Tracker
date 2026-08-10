@@ -2,12 +2,54 @@
  "schema_version": 1,
  "source": "news",
  "snapshot_date": "2026-08-10",
- "fetched_at": "2026-08-10T02:41:01+00:00",
+ "fetched_at": "2026-08-10T14:25:48+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "AI data center bans surge past 500 nationwide as local US politicians begin blocking new developments — growing public outrage and bipartisan pushback threaten big tech expansion plans - Tom's Hardware",
+    "link": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxOSW51UnU3ZUlxZVdPcF9xSW5vNV95R0pMNVNaRDVkcDZoSV9jYnMwWVZuZmZUSVA2b1U5cVZVaGg3UzU5RXc4d21ERmZkRkg4azFnaERCN3ZLZjdEcHdMd2RRQ3FteFZZYkRlVUFVdGZ1eVMzeUdBUk9KbDg5NW5OMWE2MjV1UlM2N1g1d0VQYU5abHBleDhINWg2X2JnTVZGaUw3TWcwcHk3dTdPSkFoZzNHWEN5VE5maHJucHlRN0NPU1k5SV9qZFROTDk2akhIYXNsak1fYVR5dUdpeTBRYkF3MzdkcnpDcy1yQnF5SDhuc2ZXclRzVWd4aGgxTHppSnBWRW9KV3pHODJYQ2FRMmtjXzNFVWRMckg3cy1Dc0dHS2lxZ0UzdHVkRVhsUlNLQjZLNFBfVVItVTZTc3J1UVIxbXVxUlI4dEpheW81Tk82TzRKcmRHSlR3?oc=5",
+    "source_name": "Tom's Hardware",
+    "source_url": "https://www.tomshardware.com",
+    "published": "2026-08-10T12:25:51+00:00"
+   },
+   {
+    "title": "Taiwanese cloud provider Konst signs data center lease with LG Sinar Mas in Indonesia - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPemxKWUZ5WGJXOHZlZUhkekh6Wjh2QXVfTXViY3gwQnBTQVJKZlZrZ3ZCaXpBWjVyT3hDbl91ejBPckstZk5PZmVramxnamRNNDQzMkhURVlvUDlFcmVjUWJRRm1QUGtMX3FfekN4YWx3MVhpdzNINVp1S0kwWFV6ekdHNW1wZFFMLWc5dW1wX3hWOUhoVWxCY3dacTFzekNCdW40QnA2M25NRWhkYTZZbGo1ZkZ4V09VOGFyTmhvWkp4QnVSOThRYw?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-08-10T12:00:51+00:00"
+   },
+   {
+    "title": "Over 70% of Americans oppose AI data centers; US protests intensify as more arrests are being made — almost 40 arrested this year in backlash to AI factory buildout - Tom's Hardware",
+    "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxPYzNtTlJIR0JGbjZGN3RwR2QwRV9xbUJvMlB0YTFTWUV2eWdJV0FYZHlybS1fSE9nSDVwZ3o3b090WV82blVMUEkyRXU0c3hXSXdkczNsY3gtSEJWeDN0QXhIOUhpdzJKc1UwWm5xcFE1bURMQ1lOT1lKM0hqOFJVdlJlczlPMnVEX2RUSkk4Q19rdG9kTDk2YW50VWNDNGxGX2lyWHN2WEE1cm9sakpKZlgwd3F3S2MxTFBmamVrc2ZvVTVGUjhLTmxBRWQ5dnpjR0JqdjVJdlA5emp1dUZpcmJ0SUxwd0ZRcnpkSlo1b0pqUmplVXJQX1U5d18zUVZpbXlFS3NYcUp6OE9DZm15SlJjQUZzRmM0Q3lJcy1zeFNyZTlCYXpXZm9ISk1iRGJuZ1Y5Wi1mai1YaVh5bnRLZEJPX3huTnc?oc=5",
+    "source_name": "Tom's Hardware",
+    "source_url": "https://www.tomshardware.com",
+    "published": "2026-08-10T11:40:00+00:00"
+   },
+   {
+    "title": "Amazon acquires 8,000-acre site in Pecos, Texas for natural gas powered behind-the-meter data center - report - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPMllhZEdzcnhGNVVFRkhLcmhxRUdqZ21PU3M5NTVrOHhSVG1OZ1pWS2dPQ3AtUVUtWlJPTWNBVk0wTUZmaEVaZWI4Rm1lemZmdmZMaVpDUHRyRU9tVU82cGZyd3lxSHlUREZ4WnFORUJHYjAwWmlOUkRBdW55eHg3WUFBUGZPcW5xeFRjNVhKWmcxS1hFdF80X1N5Smd6V2Y0c1lCX0dhWnItdW9HV1pyY0RnSURZQXV4WjduV21PQ0U5UkRoY2lkN3d6RklxODUzMjNxZS13bnIwZnFIY1N1Q0xVUQ?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-08-10T10:55:37+00:00"
+   },
+   {
+    "title": "Mark Zuckerberg Lays Out New AI Vision in 6,500-Word Essay - WSJ",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQd0sxd0piWHUyX1lKbHhxTGVsUmNJckRFNXNjeGRfZzNJRUNYbUplVk52MEF1aFZ1dmxBVHJlbXdGOW5hNFFrWVdJaDA1dUUwRVNuYXRYWG1ETk80N3hKWkJoYXlVS0M1UlJJMjFyeVA5Y2FBaFR4UXluRXRUNFlFQXViTl95N3pDWTladnJuUjM0dlBZUmhEMVVYdw?oc=5",
+    "source_name": "WSJ",
+    "source_url": "https://www.wsj.com",
+    "published": "2026-08-10T10:00:00+00:00"
+   },
+   {
+    "title": "The bipartisan backlash to Big Tech's AI data centers is getting harder for politicians to ignore - Business Insider",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVEdxMjJ5VnpqaDNQTERoQ25PU1hEU01SX19OcFkxN0tjNU5FeXJmbEF6dWlEb2lxYTBrS3Rsa2xGMG16cVgwbDBONDN5ZGdVeGlCLWpqZTNrVmdpT2xmWlRRYXRTMXAzaTJWU3MtM1VDWWhzQm5qQkNZTVRPbl9aMUFRTHkydlcxOFNBYmJnc2E?oc=5",
+    "source_name": "Business Insider",
+    "source_url": "https://www.businessinsider.com",
+    "published": "2026-08-10T09:01:22+00:00"
+   },
    {
     "title": "Amazon’s new 7.65GW Texas AI data center power plant could become the largest source of CO₂ pollution in the US — custom 35-turbine gas plant authorized to emit 33 million tons of annual greenhouse gases - Tom's Hardware",
     "link": "https://news.google.com/rss/articles/CBMi8gJBVV95cUxOSld2RGJqLUpaN2FleGV1SnBTSll2elZoczJCdjVDekpsRjY0WmZuQk9TN2pqQjJRYTh1OTdJdVRKSnVsM2t2VGtWc2ZjS0VjUGgzVldZc0R3VWhlUzBXTHUzbi1VMk9mT2NWMV9PZVUwaXhRU3dZZWUxT1BpWnotUmZJSXJ2NE9nel9zNy1LeE1vc2IwUldaNm84Rmx5Sm1DVno3RS0wcVhOcTYxMU5PQk5UTnJDMzFMdVRNcEZpV2V5b3VuTW1sUGgxOFZlbjlmb25RZC1mN3EwSVM3WnJ6RTZ0MXR1Z2d0MDV6czFhUzg0eklqcW5Gd1Y5RHk2N1dhdi1fREpRSUNhZENJYzlDSDZLZTZzdFExR1ZISDUwMTl4NXpuQ3RRY01pYXpFXzhEcEhzbEY3THBhU3R4RTdOQjU1U3hRNUMzNERUM2ZqQTZBUHo2WklWTlE0VE9jWE9WUWJqY3BLWXhJanB3eVpYVG9n?oc=5",
@@ -889,6 +931,13 @@
     "source_name": "The Information",
     "source_url": "https://www.theinformation.com",
     "published": "2026-07-27T08:51:00+00:00"
+   },
+   {
+    "title": "Nvidia and OpenAI in talks for up to $250 billion backstop to fund AI infrastructure plans - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTXFNTG1IS2JkSThkaWkxX2N2UVIyM2RqTEhkQjAybnVVUmRXSER4SkxSRi1PZWtueEpSQldBd0xpbzdqZzUwSkpuUU9YTVJFUnBkUTJUbG9KeXlEajNkd2NxV1pzSTVRbV9PVEVxdTIzeFJkdFEwNDlDQjJNbzBpckp5Sk5nMEdZdHplbXNFalFDbE1pMGxSbG50N3F2aGtndWx1TEN5WQ?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-07-27T07:00:00+00:00"
    },
    {
     "title": "Nvidia Mulls $250 Billion Backing for OpenAI Hub, WSJ Says - Bloomberg.com",
@@ -2058,55 +2107,6 @@
     "source_name": "CNBC",
     "source_url": "https://www.cnbc.com",
     "published": "2026-07-08T19:31:36+00:00"
-   },
-   {
-    "title": "A Wyoming city found a rare bacterium in wastewater tied to a Meta data center - Business Insider",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSUNfTnBUc0tXQnRGQWlfM0RQSE53NG1HV3JFNWpkUE5YbFl4bFItUTRYTGpnRDZqYTFERE1YQlVDYWRjbWc4MjdyNFJramNad2pLYkM1dEN5VE5meEIzUnRfdHBsVm1rQ1VYNUg5c2FlMnpGRXR0S3QyNTR2TVZfS2lOaG9CSDRqUGpaME8zcExyUDRoVWd5Q2VR?oc=5",
-    "source_name": "Business Insider",
-    "source_url": "https://www.businessinsider.com",
-    "published": "2026-07-07T21:15:00+00:00"
-   },
-   {
-    "title": "Nvidia-Backed Startup Nscale Locks in $900 Million for Data-Center Buildout - WSJ",
-    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcDZkQkcwOVdIbFBuT1BQME9pRkNXTVlTakpWMVZUZnR6SUgzTmdBeGVOVWNKTHMwWkUwblhmNWFkV0pnczVNejJpVTZCUGZ3bjlKbmppWjRZWDhQV1Jia1JzSExxRWdlM19PbHkyc0Z2YVpZZkhCOGRyVEI5Nm5PRXdhZzdrMF8yMlhkMExFMURfbmlsYzNNUFRyYl8tYkxyRzdxWFhmN1hDb1V5MVdadw?oc=5",
-    "source_name": "WSJ",
-    "source_url": "https://www.wsj.com",
-    "published": "2026-07-07T07:00:00+00:00"
-   },
-   {
-    "title": "Anthropic signs $19bn, 20-year lease for Kentucky data center with TeraWulf - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbThPcC15RmZ6aDZFUFNxbmdGalEtMUdlRlhhbmxYeXJuRFZWaEhvZklYNFNBYVJSS0V6eHkybWhIWUV0dklXaFYweDBGeDlhUFFZaDZUQnlWanlWWE1NcVI5NTRIMWxsMTlxTTNiNnlxYVU4b1FRSUJvMmJ6aGZ0cHVhMjJ6bG8tbDB2aFJ1MVR5Mnp2VnBGZVRReU9DUmNmYzRkaDduUU1WWXAzTVA4bHJlSkRrWHlm?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-07-06T14:36:12+00:00"
-   },
-   {
-    "title": "TeraWulf jumps on $19 billion data center lease deal with Anthropic - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVDl4N3FZenJYeGFlSUY2QkVFMlV3eHNxTWlHdzVJTlFoN0FMejNyVjZXMHZ2ek1Tai1rMHF5LU9ZdFgtVHd3ZnU4N2FFY3hlazNnUUxGTE9tRnNxSnhIVmlVYjJUZ2w1N2gxcVhtcVozamxkX2JqYTJvVzliNGtOejlURDZXZTBBQTRoa05PZzB5MmNHX25UTV9KNF9KYVRKbFFTSjRhUlBUcm5u?oc=5",
-    "source_name": "Reuters",
-    "source_url": "https://www.reuters.com",
-    "published": "2026-07-06T14:03:43+00:00"
-   },
-   {
-    "title": "TeraWulf shares soar after Anthropic leases data center in Kentucky - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1uWmt6bW41bEk0UFlabS1SWFBTenhraVNLLXdpUng3RWNXY2lPbEg4LUUwLWdRa0NFZXAtd1Y4R2RrVHhPWlJGSlRvODZObXR4NGx1aDlRcHRHRjdWemFUWUZzU2VxVFN0a0NwS0dmQXVWdGFwQW4yRmln0gF_QVVfeXFMUFdwTV9WVlhZbjJma3d2LUR2TUJ6RGg0WGM0ZmZKS1FuMXZuZXZ0dC1sN2I3TlZKVTExenhqQ2hlNjk3dk9hQVk3VHZVN2dScm0ydUlFWkRVUnhJTXRheF9TVGVSa1luUUhZUHhIY0hmOU5JdjJOUXNqX05MUDMtRQ?oc=5",
-    "source_name": "CNBC",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-07-06T12:03:10+00:00"
-   },
-   {
-    "title": "Meta data center water discharges suspended after contaminating the city's reclamation water supply with bacterium — system offline for months for cleaning, closed-loop cooling system purge spread rare metal-resistant bacteria in Cheyenne’s water system - Tom's Hardware",
-    "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOMHIxYkZWOEttNDNkaDYyRm9oUENGZDd1R2JDWlRpOXpucHlHNnJvMTR0MmVfYmxDd3dZd2NMRkI1VFp6aHdWYXVvQXBNUlZWem5zeDVSUUxWMzV1SURsa2dpZkZOZzBFZzNDNF9QZDRyV2VWQWxLRTlWTUpBeFYwQXp2NWdlT1JSWDdkTnltRVVWdWFkQjFDajlnUmRpVmpIR1dGQlB0ZE1TYlhrNEpZUVJKTklvODM1UlQxUzFVcHg1NHNUbjdsS0djd0VITzBBMkhGNnpfZ185M2UwYlZRSFhkZ3UtOGtxSmprektpQmVaQ2pTNUhRT0h0ZkNZajNjX1MxN2lvSTBGX3YtNnlpLXZLTQ?oc=5",
-    "source_name": "Tom's Hardware",
-    "source_url": "https://www.tomshardware.com",
-    "published": "2026-07-04T07:00:00+00:00"
-   },
-   {
-    "title": "AI Data Centers Have Been Great for the Steel Industry. Now, a Power Crisis Looms. - WSJ",
-    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObFJsb3JLYlpQQUhoQlVvMzhXVkhVZGhycHhVekNoQy03dG5FbEVDeW5BcWZKMjdMRURFYldHRnUtaE15OXhqNGluOFB4dnpiNmtLYzRYbHBsRkE3Q0dTcUVkNmFOeDZob3AxNnRSeEU3Rm1HRUVZa0tLeVVmUkFNelF4OFByNnAwejFkbnBBRkxTdw?oc=5",
-    "source_name": "WSJ",
-    "source_url": "https://www.wsj.com",
-    "published": "2026-06-29T07:00:00+00:00"
    }
   ],
   "queries": [

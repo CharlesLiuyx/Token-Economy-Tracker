@@ -2,7 +2,7 @@
  "schema_version": 1,
  "source": "epoch_datacenters",
  "snapshot_date": "2026-08-10",
- "fetched_at": "2026-08-10T02:40:52+00:00",
+ "fetched_at": "2026-08-10T14:25:24+00:00",
  "source_meta": {
   "kind": "official-download"
  },
