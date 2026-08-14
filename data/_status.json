@@ -1,37 +1,37 @@
 {
  "epoch_datacenters": {
-  "last_attempt": "2026-08-13T03:07:45+00:00",
-  "last_success": "2026-08-13T03:07:45+00:00",
+  "last_attempt": "2026-08-14T03:06:09+00:00",
+  "last_success": "2026-08-14T03:06:09+00:00",
   "error": null
  },
  "sdk_downloads": {
-  "last_attempt": "2026-08-13T03:09:35+00:00",
-  "last_success": "2026-08-12T03:05:29+00:00",
-  "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://pypistats.org/api/packages/google-genai/recent"
+  "last_attempt": "2026-08-14T03:06:41+00:00",
+  "last_success": "2026-08-14T03:06:41+00:00",
+  "error": null
  },
  "news": {
-  "last_attempt": "2026-08-13T03:09:36+00:00",
-  "last_success": "2026-08-13T03:09:36+00:00",
+  "last_attempt": "2026-08-14T03:06:42+00:00",
+  "last_success": "2026-08-14T03:06:42+00:00",
   "error": null
  },
  "openrouter": {
-  "last_attempt": "2026-08-13T03:09:37+00:00",
-  "last_success": "2026-08-13T03:09:37+00:00",
+  "last_attempt": "2026-08-14T03:06:43+00:00",
+  "last_success": "2026-08-14T03:06:43+00:00",
   "error": null
  },
  "vercel_gateway": {
-  "last_attempt": "2026-08-13T03:09:37+00:00",
-  "last_success": "2026-08-13T03:09:37+00:00",
+  "last_attempt": "2026-08-14T03:06:43+00:00",
+  "last_success": "2026-08-14T03:06:43+00:00",
   "error": null
  },
  "gpu_prices": {
-  "last_attempt": "2026-08-13T03:09:38+00:00",
-  "last_success": "2026-08-13T03:09:38+00:00",
+  "last_attempt": "2026-08-14T03:06:46+00:00",
+  "last_success": "2026-08-14T03:06:46+00:00",
   "error": null
  },
  "arr": {
-  "last_attempt": "2026-08-13T03:09:39+00:00",
-  "last_success": "2026-08-13T03:09:39+00:00",
+  "last_attempt": "2026-08-14T03:06:46+00:00",
+  "last_success": "2026-08-14T03:06:46+00:00",
   "error": null
  }
 }
