@@ -9,6 +9,8 @@ import sys
 import time
 from pathlib import Path
 
+import requests
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from scripts.lib import net, runner, schema
@@ -21,6 +23,28 @@ PYPISTATS_RECENT = "https://pypistats.org/api/packages/{package}/recent"
 # pypistats.org 是按 IP 的突发限流（约每几秒 1 次，无 Retry-After 头），
 # 连续拉多个包会撞 429。请求间留间隔，配合 net 层的 429 退避重试兜底。
 PYPI_REQUEST_SPACING_S = 6.0
+
+
+def _pypi_recent(pkg: str) -> dict:
+    """取单个 pypi 包的 recent 下载量。
+
+    pypistats 在 IP 突发限流下常返回 **429，但响应体仍带有效数据**（限流走
+    CDN 缓存，数据照发）。net 层退避重试后若仍 429，只要 body 能解析出 `data`
+    就采用它——否则整源会因为一个包的限流丢掉一整天（历史复发点见
+    docs/sources/sdk_downloads.md）。真正拿不到 data 时才向上抛。"""
+    url = PYPISTATS_RECENT.format(package=pkg)
+    try:
+        return net.get_json(url)
+    except requests.HTTPError as exc:
+        resp = getattr(exc, "response", None)
+        if resp is not None and resp.status_code == 429:
+            try:
+                body = resp.json()
+            except ValueError:
+                body = None
+            if isinstance(body, dict) and body.get("data"):
+                return body
+        raise
 
 
 def fetch(cfg: dict) -> dict:
@@ -38,7 +62,7 @@ def fetch(cfg: dict) -> dict:
     for i, pkg in enumerate(cfg["pypi_packages"]):
         if i:
             time.sleep(PYPI_REQUEST_SPACING_S)  # 避免撞 pypistats 突发限流
-        data = net.get_json(PYPISTATS_RECENT.format(package=pkg))
+        data = _pypi_recent(pkg)  # 429-with-body 容忍见 _pypi_recent
         out["pypi"][pkg] = data.get("data", {})  # {last_day, last_week, last_month}
     return out
 

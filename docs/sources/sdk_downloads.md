@@ -2,7 +2,7 @@
 
 > TL;DR：npm 官方下载量 API + pypistats.org，低风险；注意这只是采用度 proxy，不是用量。
 > 何时读我：改 scripts/fetch/sdk_downloads.py 或加跟踪包之前。
-> 最后核对日期：2026-08-10
+> 最后核对日期：2026-08-16
 
 ## Endpoint
 
@@ -22,9 +22,13 @@
 ## 坑
 
 - pypistats 是**按 IP 的突发限流**（约每几秒 1 次，无 `Retry-After` 头）；连续拉 3 个包
-  就会撞 429（2026-08-05、08-09 各丢过一天）。现已在 `sdk_downloads.py` 里对 pypi 请求间
-  留 6s 间隔（`PYPI_REQUEST_SPACING_S`），并靠 `net.get` 的 429 退避重试（8s→16s→24s）兜底。
-  加包越多，本源整体耗时越长，注意别让单源跑太久。
+  就会撞 429（2026-08-05、08-09、08-13、08-15 各丢过一天）。现已在 `sdk_downloads.py` 里对
+  pypi 请求间留 6s 间隔（`PYPI_REQUEST_SPACING_S`），并靠 `net.get` 的 429 退避重试
+  （8s→16s→24s）兜底。加包越多，本源整体耗时越长，注意别让单源跑太久。
+- **关键**：pypistats 的 429 响应体**仍带有效数据**（限流走 CDN 缓存、数据照发）。因此
+  `_pypi_recent()` 在退避重试后仍 429 时，只要 body 能解析出 `data` 就采用它——这是 08-16
+  的 durable fix，专治「间隔+退避都躲不掉」的持续限流（尤其 CI 共享出口 IP 被邻居 job 耗尽
+  突发桶那种，见 08-13/08-15 复发）。只有 429 且 body 无 `data` 时才真正判失败。
 - npm API 对不存在的包返回 404 → net.get 直接抛错 → 该源本轮失败（合意行为）。
 - validate 用 last-week > 0 兜底（last-day 在 UTC 清晨可能为 0 或未出数）。
 
