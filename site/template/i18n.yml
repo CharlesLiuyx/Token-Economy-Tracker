@@ -65,11 +65,11 @@ panel.arr.model_title:
   zh: "曲线形态不是预设的：linear / exponential / log_quadratic 三种候选各自拟合，用滚动起点回测（用前 i 个锚点预测第 i+1 个）挑预测最准的那个"
   en: "The curve shape is not assumed: linear / exponential / log_quadratic are each fitted, then picked by walk-forward backtest (fit on the first i anchors, predict the next one)"
 panel.arr_chart.title:
-  zh: ARR 轨迹：披露锚点（实心圆）· 拟合（实线）· 外推（虚线）· 置信带 · 实际年收入（空心菱形）
-  en: "ARR trajectory: disclosed anchors (solid dots) · fit (solid) · extrapolation (dashed) · confidence band · reported annual revenue (hollow diamonds)"
+  zh: ARR 轨迹：披露锚点（实心圆）· 拟合（实线）· 外推（虚线）· 置信带 · 实际年收入（空心菱形）· 第三方估算（空心三角，不入拟合）
+  en: "ARR trajectory: disclosed anchors (solid dots) · fit (solid) · extrapolation (dashed) · confidence band · reported annual revenue (hollow diamonds) · third-party estimates (hollow triangles, not fitted)"
 panel.arr_chart.note:
-  zh: 对数轴。拟合只用 run-rate 口径锚点（log 空间加权最小二乘，近期权重高）；曲线形态在 linear / exponential / log_quadratic 中由滚动起点回测选出。虚线为外推区，沿用最后锚点处的瞬时增速直线延伸（曲率不外推），置信带随外推距离张开，仅供参考。
-  en: "Log scale. Fit uses run-rate anchors only (weighted least squares in log space, recency-weighted); the curve shape is chosen among linear / exponential / log_quadratic by walk-forward backtest. The dashed segment extrapolates at the growth rate observed at the last anchor (curvature is not extrapolated), with the band widening by horizon — indicative only."
+  zh: 对数轴。拟合只用公司披露的 run-rate 口径锚点（log 空间加权最小二乘，近期权重高），第三方面板估算只画不拟合；曲线形态在 linear / exponential / log_quadratic 中由滚动起点回测选出。虚线为外推区，沿用最后锚点处的瞬时增速直线延伸（曲率不外推），置信带随外推距离张开，仅供参考。
+  en: "Log scale. Fit uses company-disclosed run-rate anchors only (weighted least squares in log space, recency-weighted); third-party panel estimates are plotted but never fitted; the curve shape is chosen among linear / exponential / log_quadratic by walk-forward backtest. The dashed segment extrapolates at the growth rate observed at the last anchor (curvature is not extrapolated), with the band widening by horizon — indicative only."
 
 # ---- ② Token 需求与采用度 ----
 panel.or_tracked.title:
@@ -167,7 +167,7 @@ meth.arr:
     linear（恒定绝对增量）/ exponential（恒定月增速）/ log_quadratic（月增速在漂移）三种候选各自拟合，
     用滚动起点回测挑预测下一个锚点最准的那个，卡片上标出选中形态。外推区沿用最后锚点处的瞬时增速直线延伸，
     不把曲率外推出去。大数字是<b>估算的演出效果</b>（每秒按拟合小时增量累加），非实时财务数据；
-    置信带（随外推距离张开）与锚点散点展示估算地基。锚点混入全年预测/实际收入会被拒绝（口径字段强制）。
+    置信带（随外推距离张开）与锚点散点展示估算地基。锚点混入全年预测/实际收入/第三方面板估算的，只画散点不入拟合（口径字段强制）。
   en: "<b>01 ARR</b>: weighted least-squares fit in log space over disclosed run-rate
     anchors, plus extrapolation. <b>The curve shape is chosen by the data</b>: linear
     (constant absolute growth) / exponential (constant monthly rate) / log_quadratic
@@ -176,8 +176,9 @@ meth.arr:
     anchor the curve continues at the growth rate observed there; curvature is not
     extrapolated. The big number is a <b>dramatized estimate</b> (incremented every second
     at the fitted hourly rate), not live financials; the band (widening with horizon) and
-    anchor dots show the estimate's foundation. Anchors mixing in full-year forecast/actual
-    revenue are rejected (metric field enforced)."
+    anchor dots show the estimate's foundation. Anchors carrying full-year forecasts, reported
+    revenue or third-party panel estimates are plotted but never fitted (metric field
+    enforced)."
 meth.openrouter:
   zh: <b>02 OpenRouter</b>：聚合路由平台切片，<b>不含</b> Anthropic/OpenAI 直连 API 主力流量。
     「滚动 7 天」为端点原生口径；日频序列由本站每日快照累积。
@@ -219,6 +220,9 @@ chart.arr.extrapolated:
 chart.arr.reported:
   zh: 实际年收入
   en: reported annual revenue
+chart.arr.third_party:
+  zh: 第三方估算（不入拟合）
+  en: third-party estimate (not fitted)
 chart.arr.y:
   zh: ARR（$B，对数轴）
   en: ARR ($B, log scale)

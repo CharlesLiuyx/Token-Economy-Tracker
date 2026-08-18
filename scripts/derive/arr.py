@@ -5,7 +5,8 @@
 半衰期 HALF_LIFE_DAYS），再用**滚动起点回测**（用前 i 个锚点拟合、预测第 i+1 个）
 挑出预测最准的那个——形态由数据决定，不预设。最后锚点之后用该处的瞬时增速直线
 延伸（不外推曲率）；置信带取预测区间，随外推距离自然张开。
-projected_rev / reported_rev 仅作展示散点，不入拟合。
+third_party_est / projected_rev / reported_rev 仅作展示散点，不入拟合——第三方面板估算
+（YipitData 之类）与公司披露的运行率不是同一个口径，混进拟合会出鬼图。
 """
 
 from __future__ import annotations
@@ -28,7 +29,7 @@ SOURCE = "arr"
 ANCHORS_PATH = store.DATA / "manual" / "arr_anchors.yml"
 OUT_PATH = store.DATA / "derived" / "arr.json"
 
-VALID_METRICS = {"run_rate_arr", "projected_rev", "reported_rev"}
+VALID_METRICS = {"run_rate_arr", "third_party_est", "projected_rev", "reported_rev"}
 HALF_LIFE_DAYS = 120.0      # 锚点权重半衰期
 MIN_FIT_ANCHORS = 3
 EXTRAPOLATE_DAYS = 180      # 外推窗口（页面虚线区）

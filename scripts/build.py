@@ -140,6 +140,9 @@ def spec_arr(arr: dict) -> dict:
                    for a in d["anchors"] if a["metric"] == "run_rate_arr"]
         reported = [{"x": day_num(str(a["date"])), "y": a["value_usd"] / 1e9}
                     for a in d["anchors"] if a["metric"] == "reported_rev"]
+        # 第三方面板估算：只画散点、不入拟合（口径与公司披露不同，见 arr-methodology.md）
+        third_party = [{"x": day_num(str(a["date"])), "y": a["value_usd"] / 1e9}
+                       for a in d["anchors"] if a["metric"] == "third_party_est"]
         company_sets = [
             {"label": f"_{company} band hi", "data": band_hi, "borderWidth": 0,
              "backgroundColor": c + "26", "pointRadius": 0, "fill": "+1"},
@@ -157,6 +160,10 @@ def spec_arr(arr: dict) -> dict:
              "type": "scatter",
              "backgroundColor": SURFACE, "borderColor": c, "borderWidth": 2,
              "pointRadius": 4, "pointStyle": "rectRot"},
+            {"label": f"_{company} {L('chart.arr.third_party')}", "data": third_party,
+             "type": "scatter",
+             "backgroundColor": SURFACE, "borderColor": c, "borderWidth": 2,
+             "pointRadius": 5, "pointStyle": "triangle"},
         ]
         # __group：hover 图例时同公司的置信带/外推段/锚点随拟合线一起高亮（app.js）
         for ds in company_sets:

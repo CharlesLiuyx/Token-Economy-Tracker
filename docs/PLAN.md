@@ -162,8 +162,9 @@ openrouter:
 ## 6. ARR 估算模型（docs/arr-methodology.md 的骨架）
 
 1. **锚点**（`arr_anchors.yml`）：每条记录 `company / date / value_usd / metric
-   (run_rate_arr | projected_rev | reported_rev) / source_url / note`。
-   口径字段**必填**——媒体报道混用 run-rate 与年度预测，混拟合会出鬼图。
+   (run_rate_arr | third_party_est | projected_rev | reported_rev) / source_url / note`。
+   口径字段**必填**——媒体报道混用 run-rate 与年度预测、第三方面板估算与公司披露，
+   混拟合会出鬼图（2026-08 实例见 arr-methodology.md「口径冲突」）。
 2. **拟合**：对每家公司，取 run_rate_arr 锚点在对数空间做加权最小二乘
    （近期锚点权重高）。曲线形态不预设：`linear` / `exponential` / `log_quadratic`
    三种候选各拟合一次，用滚动起点回测（前 i 个点预测第 i+1 个）挑预测最准的。

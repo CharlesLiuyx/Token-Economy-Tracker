@@ -1,7 +1,8 @@
 # ARR 披露锚点（人工维护；有新披露时加一条）。口径字段 metric 必填：
-#   run_rate_arr   —— 年化运行率收入 / ARR（拟合只用这一种）
-#   projected_rev  —— 全年预测（仅展示，不入拟合）
-#   reported_rev   —— 事后披露的实际收入（仅展示，不入拟合）
+#   run_rate_arr     —— 公司披露 / 媒体证实的年化运行率收入 / ARR（拟合只用这一种）
+#   third_party_est  —— 第三方面板估算的运行率（仅展示，不入拟合；口径与公司披露不同）
+#   projected_rev    —— 全年预测（仅展示，不入拟合）
+#   reported_rev     —— 事后披露的实际收入（仅展示，不入拟合）
 # 每条必填：company / date / value_usd / metric / source_url；note/confidence 选填。
 # 初始数据 bootstrap 自 Epoch AI ai_companies_revenue_reports.csv（2026-07-12，CC-BY），
 # 仅收 Full company 口径；后续新披露直接手工追加。
@@ -121,17 +122,24 @@ anchors:
 - company: anthropic
   date: '2026-06-30'
   value_usd: 70000000000
-  metric: run_rate_arr
+  metric: third_party_est
   source_url: https://www.yipitdata.com/
   note: YipitData estimate as of 2026-06-30 70B
   confidence: likely
 - company: anthropic
   date: '2026-07-12'
   value_usd: 79000000000
-  metric: run_rate_arr
+  metric: third_party_est
   source_url: https://www.yipitdata.com/
   note: YipitData estimate as of 2026-07-12 79B（私有订阅口径，无公开链接）
   confidence: likely
+- company: anthropic
+  date: '2026-07-31'
+  value_usd: 65000000000
+  metric: run_rate_arr
+  source_url: https://www.bloomberg.com/news/articles/2026-08-17/anthropic-revenue-run-rate-surpasses-65-billion-ahead-of-ipo
+  note: end-July 2026 65B｜公司向投资者定期更新口径；同文披露 Q2 初步收入 11.5B（去年同期 787M）
+  confidence: confident
 - company: openai
   date: '2022-12-31'
   value_usd: 28000000
@@ -261,14 +269,14 @@ anchors:
 - company: openai
   date: '2026-06-30'
   value_usd: 43000000000
-  metric: run_rate_arr
+  metric: third_party_est
   source_url: https://www.yipitdata.com/
   note: YipitData estimate as of 2026-06-30 43B
   confidence: likely
 - company: openai
   date: '2026-07-12'
   value_usd: 50000000000
-  metric: run_rate_arr
+  metric: third_party_est
   source_url: https://www.yipitdata.com/
   note: YipitData estimate as of 2026-07-12 50B（私有订阅口径，无公开链接）
   confidence: likely

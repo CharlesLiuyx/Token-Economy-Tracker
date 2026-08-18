@@ -53,14 +53,16 @@ def test_extrapolation_marked():
     assert flags[0] is False and flags[-1] is True
 
 
-def test_non_run_rate_metrics_excluded_from_fit():
+@pytest.mark.parametrize("metric", ["projected_rev", "reported_rev", "third_party_est"])
+def test_non_run_rate_metrics_excluded_from_fit(metric):
     anchors = synth_exponential()
-    # 加一个离谱的 projected_rev，不应影响拟合
-    polluted = anchors + [_mk("2025-06-01", 10**13, metric="projected_rev")]
+    # 加一个离谱的非 run-rate 口径锚点，不应影响拟合，但要留在 anchors 里供散点展示
+    polluted = anchors + [_mk("2025-06-01", 10**13, metric=metric)]
     a = arr.fit_company(anchors, today=dt.date(2026, 7, 1))
     b = arr.fit_company(polluted, today=dt.date(2026, 7, 1))
     assert a["fit"]["k_per_day"] == pytest.approx(b["fit"]["k_per_day"])
     assert b["fit"]["n_anchors"] == len(anchors)
+    assert sum(x["metric"] == metric for x in b["anchors"]) == 1
 
 
 def test_insufficient_anchors_rejected():
