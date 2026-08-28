@@ -2,12 +2,40 @@
  "schema_version": 1,
  "source": "news",
  "snapshot_date": "2026-08-28",
- "fetched_at": "2026-08-28T03:51:52+00:00",
+ "fetched_at": "2026-08-28T11:38:14+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "X busts 200,000-strong Chinese bot farm, including accounts making claims about AI data centers and electricity — suspect accounts posted claims about pricing and grid strain to 'manipulate' debate - Tom's Hardware",
+    "link": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxQQU1HYnZuYVVyX2VtY1FhdDdmbEljTENDZDRlV2NmNEJERmRLaTZkNXN5YzFockJKQjlKWkVRMUwta2hqTW5RRmR0NnlsdG84Tm1XOHEybmFxS1hXSjVGdldmNWlITnJaWmluTE8wOUxuR0dhV3d5c3F2cUplU3RxM2hxaU9yZWY0bGdyaXBmYW1hSU9VNFVfbnBXdWRudGdMZldPQS0xMHNMZ1RvS1g2N1NER2dYdDFJUlE0aXZhRExGVllFMDFTaTJfSUlSRjg0bTM4allQektxQ1JtV0M1Q01hX3NUV1RGMlpuWk1Md3VWSFFwLUNidHhremZrRTVkV2JJVm1nSFlPRUdTclRONDdVSzktb21EdDMwR29tN25GQjgtd1E0Rm9qNmt0eGtwMGZGT3RXV1V2aWZFdG05dEQwUFNlNDRIbVlDTHk2VE1pYnNHOTcyUjBieGFvVzg?oc=5",
+    "source_name": "Tom's Hardware",
+    "source_url": "https://www.tomshardware.com",
+    "published": "2026-08-28T11:07:22+00:00"
+   },
+   {
+    "title": "Meta Shifts the Blame + Do Data Center Bans Work? + The Final HatGPT - The New York Times",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9uVzBDUEcwVFpxdXpVOE8tSVI4VHpCbk5zT24xRmo2VFpBR3NXVXd5MmhvNjk4TzNHRkRoS1JTMGRoUmdnaUNObE53YmF1RFgzVGQycTdvQk5pa2pBSXBnMk90ajdIVkpDdHNwdWJOcndJTjUzWTFoNU9OUmQtdw?oc=5",
+    "source_name": "The New York Times",
+    "source_url": "https://www.nytimes.com",
+    "published": "2026-08-28T11:00:03+00:00"
+   },
+   {
+    "title": "Where to Invest Now as Data Centers Turn Copper Into a Hot Commodity - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPRDFvdDEtNG15dXBkRXlzVldtdjR6cjlSNGRPNHBvR0k1aTJRdzlOWjBzZ0VCbUUtNVpMb25ETE96WVFXbGhKU0R1NThQWTg5THNUU3lpb2xRNEtDODI0aHliQTlVNW85Q3dJM000emF4YzlqNmtjTXljN0ZwV2FGWUtKU0J5T293bjdHNGpaZnVYdF9mOUxMMTJOQlRoTzNDaVF1Slllc3d0RjJBUnVlUG5uNjFoWUxQV2FseHQzUE9wT2lpV1VMX0xaVHRGVllm?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-08-28T11:00:02+00:00"
+   },
+   {
+    "title": "Pimco Says ‘Too Much, Too Fast’ AI Debt Is Stoking Bond Yields - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNd3ZIMGF0RUppLTZSMkZ2c1dpbjZBR09LNmxRTEpmXzBmNWZpNkRZc3NkVlUzcUx0SlVSeGlOUDdNMEE0SmJkaGdzbDFlMnQ4d2gtZlRYNjR1azBxOGszcURyaENtYU5NLTZRLUYwTXNhSi15bEs4ZXo2WkVMQnVvYUxWaTJydFl5alhXWXVCaVhoN2o4YTEyTGVmV1RCal8zTzdVdE9SWXdNWmkwUWVR?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-08-28T06:37:00+00:00"
+   },
    {
     "title": "AI Circular financing is not a red flag: Aptus Capital Advisors - CNBC",
     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUlkweHBWa3FDTnduWVNuYl84QTR2STBVdE9MZG9BTzFXQTJhb3VWSTlfeUVOc1hfQ0YzMEVLNDI3dHU3WEU5bXdnOHZRXzlqazNHYVhKeGNHQW1GR1lxbW1jcW9oVUZXVng0LWNwQ0d3Yk5wZ25BSnJwMnJUT0Q4ZmhvcnpKeXg5VHI1ckMtX1B4WXVHdHhESmxyYmhWNGFCYllMSnFR?oc=5",
@@ -2079,34 +2107,6 @@
     "source_name": "Bloomberg",
     "source_url": "https://www.bloomberg.com",
     "published": "2026-07-27T21:47:14+00:00"
-   },
-   {
-    "title": "Biggest US Grid to Launch Emergency Power Auction for AI Boom - Bloomberg",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQc2t3NWp4dUpFdl9UNWZRY1hQc2lZZGZoU0REeXpBbUVTOTVQZ0VSVm5ZYVF0cVhNZzBLU3ZKS0dtdHVrMnBCdlhLSWd4NG1ZZUVjQjhHNkotUG4wZ1pCclVMa1dqVG9fMGtDMnRpQzRfRHNuSXJLdjJMVV9OUV9jQ2ZSOHNjbDdNZHpvb0pmOHkwa0xNT0hGcDFnRHgxTFlpRDd5WEJtSWoyQndrOC1xb2VB?oc=5",
-    "source_name": "Bloomberg",
-    "source_url": "https://www.bloomberg.com",
-    "published": "2026-07-27T20:13:15+00:00"
-   },
-   {
-    "title": "How Meta Got Everything It Wanted in a Secret Louisiana Data Center Deal - The New York Times",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcUlaenRqekZMbnpqR25zZmJoZ2xHRVZlOUc1WDdiZWRPc2JuT0FkZEs2VHpybElkSkVka3R4MVlzUVBjSWR4cnNsNGxRLTJHRHFlamROTnhZVzN2NU1NUVozcENDVjlCR09BWldKc3k4ZndSVzU3Qlh2SnFiZ2ZaRnJvVQ?oc=5",
-    "source_name": "The New York Times",
-    "source_url": "https://www.nytimes.com",
-    "published": "2026-07-27T19:54:45+00:00"
-   },
-   {
-    "title": "Nvidia and OpenAI in talks for up to $250 billion backstop to fund AI infrastructure plans - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTXFNTG1IS2JkSThkaWkxX2N2UVIyM2RqTEhkQjAybnVVUmRXSER4SkxSRi1PZWtueEpSQldBd0xpbzdqZzUwSkpuUU9YTVJFUnBkUTJUbG9KeXlEajNkd2NxV1pzSTVRbV9PVEVxdTIzeFJkdFEwNDlDQjJNbzBpckp5Sk5nMEdZdHplbXNFalFDbE1pMGxSbG50N3F2aGtndWx1TEN5WdIBrAFBVV95cUxNeGlpWjRLQndUSmJ4VjdQTGFtSVFCOVZKMzUxTVBWSGhtdXQzeGR6Z2RTSWtpcVJDQ0V6QkVDUElzT2sxYkQzYzkwUmpaZDBLckhvYWdJZW1PWHgtLUhCN1hVWWE2MnNHVzNFNlBvZWFUQ2tuMDl2dzVSekVRTmtTREVnY0hvbW5XbWVaVDM2Rm11WU1LRnZrN2Q2bEdvQ204TVF2Q3ZlQjk0VXBo?oc=5",
-    "source_name": "CNBC",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-07-27T17:32:53+00:00"
-   },
-   {
-    "title": "Nvidia to back OpenAI data center buildout: Source - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNb0JJVG1fWEZCckNfNEVRM3RjRkxlQUZQWC1WSW9taHFLaHRkTWZKMFJITDZNbl9xTS1DUDhzZkFHVWFYUTNyNktHbzNHQzBxVnpTTkNiUE9wVV95SW1YVGNuUHdLLVRPbmsxYUZyZEl3UExyTk5hX2gzNWJaM1BXdmcxNEgySlFIS3VnNEZ3?oc=5",
-    "source_name": "CNBC",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-07-27T16:33:00+00:00"
    }
   ],
   "queries": [
