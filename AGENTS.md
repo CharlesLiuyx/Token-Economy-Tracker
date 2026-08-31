@@ -4,7 +4,7 @@
 Gateway / SDK 下载）、GPU 租赁价格、AI 数据中心建设。产物为纯静态单文件 HTML。
 
 **当前状态：M0–M5 全部完成。线上：<https://charlesliuyx.github.io/Token-Economy-Tracker/>
-（GitHub Actions 每日 00:30 UTC 自动更新；M5 验收=连续 3 天成功，观察至 2026-07-15）。
+（GitHub Actions 每日 22:23 UTC 自动更新；M5 验收=连续 3 天成功，观察至 2026-07-15）。
 动手前先读 [docs/PLAN.md](docs/PLAN.md)，进度看 [docs/worklog.md](docs/worklog.md)。**
 
 ## 架构一句话

@@ -188,7 +188,9 @@ openrouter:
 
 ## 8. 调度与运维
 
-- **GitHub Actions**（`daily.yml`）：cron 每日 00:30 UTC（北京 08:30 前出数）。
+- **GitHub Actions**（`daily.yml`）：cron 每日 22:23 UTC（北京次日 06:23，仍赶早晨出数窗口）。
+  原为 00:30 UTC，因撞 GitHub 调度整点/午夜拥堵连续多日漏跑/延迟（见 worklog 08-27~08-31），
+  于 2026-08-31 错峰挪至非整点分钟 + 非午夜时段。
   步骤：checkout → `make update`（逐源 fetch，单源失败不中断）→ `make build` →
   commit `data: YYYY-MM-DD` → push → Pages 部署。
 - **push 即部署**（`deploy.yml`）：push 到 main 且改动了 `site/**` / `scripts/**` /
