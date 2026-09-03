@@ -2,7 +2,7 @@
  "schema_version": 1,
  "source": "news",
  "snapshot_date": "2026-09-03",
- "fetched_at": "2026-09-03T00:20:59+00:00",
+ "fetched_at": "2026-09-03T03:58:35+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
@@ -16,11 +16,25 @@
     "published": "2026-09-02T22:49:01+00:00"
    },
    {
+    "title": "Vertiv to buy Utility Innovation Group for up to $2.6 billion in data center push - Reuters",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQzJLNm1lTUp4Z004cGlyeTNXcmJMcVc5RzRPYjVSQ2ZPWFBaS2U3WWo1cUFRQ3JPT0ZORVVYTGEzNmhSQmZWZzdMZ2RxaDZiVUJaVUxMYXNHS051V3YxTWJqbURmYjU5a2NGeHpYdlZldmV5V3NFQlpmcnV3QzcxNGZ5eF94c3M1d0FTanpQNnBzaVpXRGFReGczb3lDTGdzLUxib1I0MUFZdWRXZUxpWmkwOU8yQWJVTGdLVUxnWnNoekMxZmc?oc=5",
+    "source_name": "Reuters",
+    "source_url": "https://www.reuters.com",
+    "published": "2026-09-02T16:45:46+00:00"
+   },
+   {
     "title": "Former OpenAI Stargate exec Shamez Hemani joins Anthropic after brief Meta Compute stint - Data Center Dynamics",
     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTTJ1V2ptS0xlNWV3c1hlU1d3Z3B1aW11NGVRUWJoLXlfV2JrNXRFZ1hPOXZHTXlubXIwa2V4Vlh0VGNKTi0wQUlCamZiLXdCVGVuNjNLYmZ5MnJ2RnlIcTV5T2I3eGNEcWIyNnhyd1NzNFItSEY0NWxXOUI1MFgtUXZhSVBjU28zUC1YVEt0WFpJOUIwSmJKaVpaRnV4VDNEWFByRThHTG5YdHp4Ukc2S0JnTnZTQThmSjNfX09PVy1yNGY4N2NzZVRMMkM?oc=5",
     "source_name": "Data Center Dynamics",
     "source_url": "https://www.datacenterdynamics.com",
     "published": "2026-09-02T16:21:44+00:00"
+   },
+   {
+    "title": "Anthropic Leader Praises President Trump’s Data Center Stance at G20 Meeting - The Information",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNExXSGRnbXhlZm95TUdLVDE0ZmRPUzJiNVpFRlRGUmNrZG50T280bUFlWFZxd3BHOUNZaWtPaU1NZXlCUm1xQ3JhTVdWdFBmZFBhZnp5bGdDejMtUmRXeXJYVm0waXRqNVdjaFNVNkVUdkF1RThCMF9Sd1ZlUG1tZ1dWVFBLM0RmSEdCRVRMeUx1aW5vaDdYaFJROEJNbWY4WXUxVVlfSFlOSHFRTWFjN29fZw?oc=5",
+    "source_name": "The Information",
+    "source_url": "https://www.theinformation.com",
+    "published": "2026-09-02T14:42:00+00:00"
    },
    {
     "title": "ChronoScale and Microsoft partner on 50MW deployment in North America - Data Center Dynamics",
@@ -51,6 +65,13 @@
     "published": "2026-09-01T20:38:01+00:00"
    },
    {
+    "title": "Pa. Gov. Shapiro says too many data center developers 'don't care about our communities' - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUzFuclFFY1FCM3FWZDhmX3VlZldUX1dOdVRuZFM4Z3p6ek1QOVVva281UmNyY0xyOHVwNVB6UGNnVkNwdzVNSUZ5bk9WZEVfdjl6RTdUcjAxYVM2RVB4WlVWTm4zWGE5UDFfOFl1Z2h2WkpJbmR2ZXVfSXFnRm9XZtIBhgFBVV95cUxQeEpnU3RvNUZ0UkZ5RFBwNnNSQk1rUGxkMlFlZmJRUjBPMDB6cEc0VEVKWExpbzBQSDJ5MkgxR0NodHUxVWdCNEpJQk1TbWtSNC1HZlZuQ3NnZHVtcDBtWmZzQkw3WW1lX0ZJYWROa01BYW54UlJTNmNBcEota2ZqcVBZTHlCdw?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-09-01T18:43:05+00:00"
+   },
+   {
     "title": "A Data Center Backlash - The New York Times",
     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUU52aHVUUk9SZDJYZE8yZWJQcDA3NFNtNllQQ0hPTjExNnVLWUVEdzZ6d2VoeWMtM3FWRDRXbHVlYk40enZObTlQbjZ4RVU2RkpiZ3lvam1sZW1fTDRVc19kQWVPeTZCejVRZzdkOEFYYTJxZG8xQ0xFeWJzQWhxMkE0N2VXUDVXbV9qRw?oc=5",
     "source_name": "The New York Times",
@@ -79,6 +100,13 @@
     "published": "2026-09-01T15:32:36+00:00"
    },
    {
+    "title": "AI data center firm SB Energy, which is backed by Softbank, Nvidia and OpenAI, files for IPO - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOa1N5R0VYakFlalladVhhZVNmRl92cmt5MGpBbVNBVzRmVmR0OG1TbTBZZTlXMVNsVkk0OGwwUzBwSG56ZjJSb0lGbEY2dmJFUXV6RktMS1NYTGNDdzZFNjVBUE1Ib2Jld0VKcWtUSjh1OUpvOXpVelNhUnBZUTF1LWw0T1TSAYQBQVVfeXFMTmtTeUdFWGpBZWpZWnVYYWVTZkZfdnJreTBqQW1TQVc0ZlZkdDhtU20wWWU5VzFTbFZJNDhsMFMwcEhuemYyUm9JRmxGNnZiRVF1ekZLTEtTWExjQ3c2RTY1QVBNSG9iZXdFSnFrVEo4dTlKbzl6VXpTYVJwWVExdS1sNE9U?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-09-01T15:32:36+00:00"
+   },
+   {
     "title": "SpaceX Shakes Up Data Center Leadership After Aggressive Build-Out - The Information",
     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPb1REbXkwSnRFV3FDcGxncEZuN1dfM0hNWWhrOEV6Vk96N3lfb183VEhXMzBIWm9VQlpIMTdiTjhJbS1UbkhiRG5RbkhKZDZBY28wZTJLc0d1QURrSmVEWDFDNzdSdDNadkgzTGlnalVCdmd3MjMzdGN4czdVaHV0anZuZ09EenV3TjhUTENpME5hRks4VHpIWA?oc=5",
     "source_name": "The Information",
@@ -91,6 +119,13 @@
     "source_name": "Data Center Dynamics",
     "source_url": "https://www.datacenterdynamics.com",
     "published": "2026-09-01T13:16:07+00:00"
+   },
+   {
+    "title": "Anthropic signs $35bn cloud agreement with Lambda - report - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQNHFaY3lMV0VJT0pzeGg1Y3AxZlhYT3hkcF9ad2ZDRHRGaWcwN2VMVndBZ09xRUJOYlhpbmxVR0V2S2duNEdKTHF5OXBWbXR5dGVDTXJYNlRWM2x0QkxaVzNHUW0wUDJpcUwxcGtIZnZFVDVUQ3FvazdYcXBoeGdhR1NETExqcUhESVFSam0wdllHajdDcVYxMDUydTI4cndX?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-09-01T12:31:05+00:00"
    },
    {
     "title": "Qualcomm rival MediaTek jumps 10% after $3.5 billion Nvidia AI chip deal - cnbc.com",
@@ -2072,41 +2107,6 @@
     "source_name": "Data Center Frontier",
     "source_url": "https://www.datacenterfrontier.com",
     "published": "2026-07-31T04:05:33+00:00"
-   },
-   {
-    "title": "Big Tech’s A.I. Spending Keeps Rising. So Do the Jitters. - The New York Times",
-    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUEUyN2JaVHBMYlNIM2Nralk0ckxOdmtKZURqVlZudzNnVjltd0FqUUFheWo5QkNfaDM5T3ZqV204MlY3NVZtdUlpLVRXMUp6Qzk2YV9GWVVDeUZyaDFGZ1NCYmwxNkFnWElQSS1PUDFZcmhLclk5WDVSZUdVV0sxY1Z0ZVNwQ0xrSm1mVkx4M2QwZw?oc=5",
-    "source_name": "The New York Times",
-    "source_url": "https://www.nytimes.com",
-    "published": "2026-07-31T02:20:58+00:00"
-   },
-   {
-    "title": "Exclusive | Banks in Talks to Lend $15 Billion for Anthropic Data Center Backed by Google - wsj.com",
-    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZ3FNemp1LUh3eVZ1Q1FRVTZsLTZ4cE56eXJDX3E1UUZxTVF3UEtZLVhteFgwbkJVTGtJQTZIcTROUGYwellVQnpQVGtWVmNrb0p4NFVPeGxWYy0ySHVHbG9LTUJMc2FRbkRmOWt0NW1RRmp0MzlobXFJeHVyQkRaMjJNN3VWYkFJT09RT2V1bTl1Sy1pb09ORXFkMDNocDNCdzRua3Vld0pHZzgxMHRJ?oc=5",
-    "source_name": "wsj.com",
-    "source_url": "https://www.wsj.com",
-    "published": "2026-07-30T23:47:00+00:00"
-   },
-   {
-    "title": "Microsoft’s One-Day Market-Cap Gain Makes History - wsj.com",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPYnRDZ2xwREdtUWVpZGxYeFd6SHNnbWVRSHI2YlNPaWs1LXoyOFdVTEZacmt1V09HSGFNUTM0TWluejZ4YkVvbnA4Z3pQMnJZTkdMTWxuaGZYYXZfUm5BMnUzaS1JWE53XzhySUdPdEVqbVNISjlwdFVqaFdLeXVwM3NZUWxwdzdldmc?oc=5",
-    "source_name": "wsj.com",
-    "source_url": "https://www.wsj.com",
-    "published": "2026-07-30T21:56:00+00:00"
-   },
-   {
-    "title": "Nexus Data Centers in advanced talks to secure $15B for Google-backed Anthropic data center - cnbc.com",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNb21fVU1LVGtQYVVXcXBORUpHbmFpVHlRU3ZERm5XUTgtNXdxQVJDR05sQWVtMzNLS1RDSXY0U3F3N3ExWDVOYVFlampSbWYtSFkxelgyV1BXM0JQTW9JX21IWVB6b1pGVDk5Tk4wNzdoakQxZFk0bWVMZWhHMjB4czlwQThMSU9ZMWgyT0dpdzZWS1lmQ2NwR0Y4R0lONi1jeFExTnZTOXJLMkdCbmt3X2tSYWl5WmhNaVljWEpjOWZ1bG1fMlHSAcsBQVVfeXFMT3dPek5jSmNya2F6Qll3NTVKSDBvaUdGSWdtM2pTVXpwbWJmT215b0N4MGp5cm1QTk5tYk1QUEMzdGIzakJ3cG5VdENCa05NSkp2aHZGY2JSWnZtdWRZTmp6S2VSNnI4bnJXVmVvY2xtWHVlVmhfSFdYSkpna3JBOTgxMWtsMUhXWnFnTTZiRmZSeHBHajR2NW00X1hLUGZCOEh6emhrb1EySk1hTG5xT3VkR2dWYlZ1R2tUR21XakNhZklrMTNGb2twcTA?oc=5",
-    "source_name": "cnbc.com",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-07-30T21:50:17+00:00"
-   },
-   {
-    "title": "Meta Reports $279 Billion in Future Data Center Leases for AI - bloomberg.com",
-    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMHRYM3p1VjVqUzZZOG92clpYeDdfdDUyMFhtZFdYQUowZ2pSVGxDcXZ3clZ3dXNnV1pCSkNFVWpvME1VLXFrUnpYTXdDZGJxbE9kY0tOUm5rS1lBZ1RqWktWZjNaXzhXNjNIbDhWNFhsMEJVTkluQlVJZXpaQUdMX3NrMHdQOF9LMDdKN0VhZ3g5SHRKdkVqYlN2Nl9lZjdHYnc3TmI1QW01X29nUDNwWg?oc=5",
-    "source_name": "bloomberg.com",
-    "source_url": "https://www.bloomberg.com",
-    "published": "2026-07-30T18:47:15+00:00"
    }
   ],
   "queries": [

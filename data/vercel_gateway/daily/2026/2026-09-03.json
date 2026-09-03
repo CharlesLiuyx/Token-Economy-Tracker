@@ -2,7 +2,7 @@
  "schema_version": 1,
  "source": "vercel_gateway",
  "snapshot_date": "2026-09-03",
- "fetched_at": "2026-09-03T00:21:01+00:00",
+ "fetched_at": "2026-09-03T03:58:36+00:00",
  "source_meta": {
   "kind": "scrape"
  },
@@ -20859,43 +20859,43 @@
     "shares": [
      [
       "Claude Opus 4.8",
-      15.6551
+      15.6547
      ],
      [
       "GPT 5.6 Sol",
-      13.1793
+      13.1786
      ],
      [
       "Claude Opus 5",
-      12.7483
+      12.7479
      ],
      [
       "Kimi K3",
-      10.9588
+      10.9608
      ],
      [
       "Claude Sonnet 5",
-      5.5468
+      5.5466
      ],
      [
       "Claude Opus 4.6",
-      5.0839
+      5.0838
      ],
      [
       "Claude Fable 5.1",
-      4.6227
+      4.6226
      ],
      [
       "Claude Sonnet 4.6",
-      4.17
+      4.1698
      ],
      [
       "Claude Haiku 4.5",
-      2.1889
+      2.1888
      ],
      [
       "Claude Fable 5",
-      1.6877
+      1.6876
      ]
     ],
     "others_share": 0
@@ -20906,7 +20906,7 @@
     "shares": [
      [
       "DeepSeek V4 Flash 0731",
-      10.3184
+      10.3183
      ],
      [
       "DeepSeek V4 Flash",
@@ -20934,7 +20934,7 @@
      ],
      [
       "Claude Sonnet 5",
-      3.3059
+      3.3058
      ],
      [
       "Gemini 2.5 Flash Lite",
@@ -20942,7 +20942,7 @@
      ],
      [
       "Claude Haiku 4.5",
-      3.0724
+      3.0723
      ]
     ],
     "others_share": 0
@@ -20953,43 +20953,43 @@
     "shares": [
      [
       "DeepSeek V4 Flash",
-      27.3198
+      27.3196
      ],
      [
       "DeepSeek V4 Flash 0731",
-      7.8922
+      7.8923
      ],
      [
       "GPT 5.6 Luna",
-      6.8702
+      6.8701
      ],
      [
       "Step 3.7 Flash",
-      5.9069
+      5.9072
      ],
      [
       "GLM 5.3 Flash",
-      5.8992
+      5.8991
      ],
      [
       "Claude Opus 4.8",
-      4.1619
+      4.1618
      ],
      [
       "Claude Sonnet 5",
-      4.1536
+      4.1535
      ],
      [
       "Claude Opus 5",
-      4.0651
+      4.065
      ],
      [
       "Kimi K3",
-      4.0571
+      4.0575
      ],
      [
       "GPT 5.6 Sol",
-      3.9742
+      3.9741
      ]
     ],
     "others_share": 0
