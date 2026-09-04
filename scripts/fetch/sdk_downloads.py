@@ -25,10 +25,18 @@ PYPISTATS_RECENT = "https://pypistats.org/api/packages/{package}/recent"
 PYPI_REQUEST_SPACING_S = 10.0
 
 # 无数据 429 的包级耐心重试：net 层退避（8→16→24→放弃，约 48s）在 CI 共享出口
-# IP 被邻居 job 耗尽突发桶时不够（见 09-02/09-03 复发）。经验上端点约 30–60s/包
-# 就会恢复，故对「429 且 body 无 data」再补几轮长间隔重试，把整源丢一天的概率压到最低。
-PYPI_NODATA_429_RETRIES = 4
-PYPI_NODATA_429_SLEEP_S = 18.0
+# IP 被邻居 job 耗尽突发桶时不够（见 09-02/09-03/09-04 连续三日复发）。经验上端点约
+# 30–60s/包就会恢复，故对「429 且 body 无 data」再补几轮长间隔重试，把整源丢一天的概率压到最低。
+#
+# 09-04 复盘：4×18s（约 5.5min，含 net 层退避）仍被 CI 共享 IP 的持续限流击穿——当日
+# anthropic 包连续 ~5 次尝试跨越 5m28s 都没等到限流窗口清空（同一时刻本地异 IP 首拉即成）。
+# 每次耐心尝试真正贡献的是「多一个 net.get_json 周期（约 48s 退避）＝多给 CI IP 一个恢复窗口」，
+# 故加大**尝试次数**（拓宽总等待窗口）比单纯拉长单次 sleep 更有效。7×20s 把总耐心窗口从
+# ~5.5min 拓到 ~9min，提高在 CI 内自愈的概率、减少对巡检回补的依赖。
+# 注：真正与「CI 共享出口 IP」解耦的通路（BigQuery pypi 公共数据集）需人类提供 GCP 凭据，
+# 非无人值守巡检可自助，故先做此可自助的加固；若本预算仍被击穿，再评估引入凭据走 BigQuery。
+PYPI_NODATA_429_RETRIES = 7
+PYPI_NODATA_429_SLEEP_S = 20.0
 
 
 def _pypi_recent(pkg: str) -> dict:
