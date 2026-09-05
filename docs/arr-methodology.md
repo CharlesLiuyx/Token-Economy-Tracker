@@ -3,8 +3,8 @@
 > TL;DR：手工锚点（口径必填）→ 三种候选形态各自做对数空间加权最小二乘 → 滚动起点
 > 回测选形态 → 冻结增速外推 + 随距离张开的置信带；页面常驻「估算」徽章 + 形态标签。
 > 何时读我：改 scripts/derive/arr.py、加锚点、加候选形态、质疑大数字之前。
-> 最后核对日期：2026-08-18（Bloomberg 披露 Anthropic 7 月底 65B，与 Yipit 口径冲突，
-> 后者降级为 `third_party_est`；Anthropic 形态回落到 `exponential`）
+> 最后核对日期：2026-09-05（补 OpenAI 7 月底 40B 公司自报锚点，OpenAI 拟合重新贴地；
+> 此前 2026-08-18：Bloomberg 披露 Anthropic 7 月底 65B，Yipit 降级为 `third_party_est`）
 
 ## 数据
 
@@ -68,6 +68,14 @@ Anthropic 这次从 `log_quadratic` 换回了 `exponential`：加上 65B 锚点�
 5→7 月的实际月增速是 ~13.7%（47B→65B），比 2→5 月的 40%+ 明显回落，
 「增速还在加速」的假设不再能预测下一个锚点——**这正是回测该干的活，不用手工干预**。
 `linear` 在两家仍旧输一个数量级——ARR 曲线不是直线。
+
+2026-09-05 追加 OpenAI 锚点（Bloomberg 08-13：7 月底运行率「超过 40B」，Brockman 内部通告
+7 月环比 +20%+；取 40B 下限，date 记 07-31，与 Anthropic 65B 同口径对齐）。此前 OpenAI 最近
+run-rate 锚点停在 02-28 的 25B，外推半年后今日值被抬到 48.3B；加锚后 `exponential`
+仍胜出（回测 RMSE 0.0732 / log_quadratic 0.0878 / linear 0.4832），`fitted_at_last_anchor`
+40.65B 对锚点 40B（+1.6%），implied MoM 11.0%→10.5%，今日 ARR 回落到 45.8B。Anthropic 无新
+公司口径披露，拟合不变。教训：**一家的锚点半年不更新，外推就在悄悄漂移**——每次巡检
+顺手搜一次两家最新 run-rate 披露，比调模型参数更有用。
 
 ### 3. 外推：冻结增速
 

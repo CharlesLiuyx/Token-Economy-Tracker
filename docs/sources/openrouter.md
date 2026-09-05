@@ -2,7 +2,7 @@
 
 > TL;DR：非官方 frontend API，三个 rankings 端点；「日频」靠我们每日快照滚动 7 天数据累积。
 > 何时读我：改 scripts/fetch/openrouter.py、面板 2a–2d 口径、或端点疑似改版时。
-> 最后核对日期：2026-07-12
+> 最后核对日期：2026-09-05（端点结构未变；重点模型名单换代，见「重点模型名单」）
 
 ## Endpoint（无公开承诺，UA 需带浏览器标识）
 
@@ -26,6 +26,16 @@ performance / programming-language / task-spend`（未入库，需要时再加�
   的滚动 7 天值连成的序列（本质是 7 日滚动和，天然平滑）；历史从首次快照日累积。
 - `models` 的 date 字段是「该模型最近活跃日」，同一响应里日期不齐——按 permaslug 用，
   别按 date 聚合全网总量（会漏）。全网总量用 weekly_chart 的 ys 求和。
+
+## 重点模型名单（面板 2b，`sources.yml` → `openrouter.models_tracked`）
+
+- 名单是 permaslug 白名单；每日快照本就含全部模型，换 slug 后曲线自动从该模型上线日
+  回溯，不需要回补。顺序即配色序（0=Anthropic clay / 1=OpenAI teal）。
+- 换代判据：同厂商出了新旗舰且旧款滚动 7 天用量已被反超并持续下滑；平台用量第一的
+  模型即使非「frontier lab」也收（读者看图第一反应是「榜一在哪」）。
+- 维护记录：2026-07-12 初版 7 个；2026-09-05 换代为 9 个（fable-5.1 / opus-5 / sonnet-5 /
+  gpt-5.6-luna / gemini-3.7-flash / deepseek-v4-flash-0731 / grok-4.6 / kimi-k3 /
+  glm-5.3-flash），旧名单见 git 历史。
 
 ## 坑
 

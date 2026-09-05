@@ -280,3 +280,10 @@ anchors:
   source_url: https://www.yipitdata.com/
   note: YipitData estimate as of 2026-07-12 50B（私有订阅口径，无公开链接）
   confidence: likely
+- company: openai
+  date: '2026-07-31'
+  value_usd: 40000000000
+  metric: run_rate_arr
+  source_url: https://www.bloomberg.com/news/articles/2026-08-13/openai-s-revenue-run-rate-tops-40-billion-ahead-of-ipo
+  note: end-July 2026 >40B｜Brockman 内部通告称 7 月 ARR 环比 +20%+，动力为 GPT-5.6 系列 / ChatGPT Work / Codex；同文 Friar 称 2025 年末 >20B；Bloomberg 提示与 Anthropic 的计算口径可能不同
+  confidence: likely

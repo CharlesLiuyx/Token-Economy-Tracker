@@ -67,15 +67,22 @@ openrouter:
   endpoints:
     base: https://openrouter.ai/api/frontend/v1/rankings
     datasets: [model-rankings-chart, models, apps]
-  # 面板 2b 重点模型对比（permaslug，slug 变更时同步更新面板配置）
+  # 面板 2b 重点模型对比（permaslug，slug 变更时同步更新面板配置）。
+  # 顺序即配色序（0=Anthropic clay / 1=OpenAI teal）。历史快照含全部模型，换 slug 后
+  # 序列自动从该模型上线日起回溯，无需回补。名单维护记录见 docs/sources/openrouter.md。
+  # 2026-09-05 换代：claude-4.8/4.7-opus→fable-5.1/opus-5/sonnet-5，gpt-5.5→gpt-5.6-luna，
+  # gemini-3-flash-preview→3.7-flash，deepseek-v4-flash-0423→0731，grok-4.5→4.6，
+  # kimi-k2.6→k3；新增 glm-5.3-flash（当周 OpenRouter 用量第一）。
   models_tracked:
-    - anthropic/claude-4.8-opus-20260528
-    - anthropic/claude-4.7-opus-20260416
-    - openai/gpt-5.5-20260423
-    - google/gemini-3-flash-preview-20251217
-    - deepseek/deepseek-v4-flash-20260423
-    - x-ai/grok-4.5-20260708
-    - moonshotai/kimi-k2.6-20260420
+    - anthropic/claude-fable-5.1-20260831
+    - openai/gpt-5.6-luna-20260709
+    - anthropic/claude-opus-5-20260723
+    - anthropic/claude-sonnet-5-20260630
+    - google/gemini-3.7-flash-20260813
+    - deepseek/deepseek-v4-flash-20260731
+    - x-ai/grok-4.6-20260810
+    - moonshotai/kimi-k3-20260715
+    - z-ai/glm-5.3-flash-20260826
 
 vercel_gateway:
   fetcher: scripts/fetch/vercel_gateway.py

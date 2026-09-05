@@ -1,12 +1,32 @@
 # 专家观点 / Podcast 摘录（面板 2h，人工维护，AI 辅助整理）。
 # 收录标准：先手工少量高质量，形成手感后再定标准（PLAN §11 开放问题）。
 # 每条：speaker / role / date / quote / source_url；quote 保持原文，不转述。
-#
-# quotes:
-#   - speaker: Example Person
-#     role: CEO, Example Lab
-#     date: 2026-01-01
-#     quote: "Original quote text."
-#     source_url: https://example.com/podcast
+# 只收一手来源可逐字核对的原话（财报电话会 / 官方稿 / 有完整文字稿的访谈）；
+# 无完整文字稿的播客片段不收（2026-09-05 首批 5 条，核对方式见 worklog）。
 
-quotes: []
+quotes:
+  - speaker: Jensen Huang
+    role: CEO, NVIDIA（Q2 FY2027 财报电话会，答 UBS 提问）
+    date: 2026-08-26
+    quote: "The frontier labs, their scale -- their sales are skyrocketing, their margins are fantastic. They're generating profitable tokens."
+    source_url: https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/
+  - speaker: Sundar Pichai
+    role: CEO, Alphabet（2026 Q2 财报电话会开场陈述）
+    date: 2026-07-22
+    quote: "Our model APIs are now processing approximately 22 billion tokens per minute. That's up from 16 billion just a quarter ago."
+    source_url: https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/
+  - speaker: Satya Nadella
+    role: CEO, Microsoft（FY26 Q4 财报新闻稿）
+    date: 2026-07-29
+    quote: "We are advancing the frontier on the cost-to-outcome curve, ensuring every customer can turn tokens into business results."
+    source_url: https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast
+  - speaker: Dario Amodei
+    role: CEO, Anthropic（Code with Claude 炉边谈话）
+    date: 2026-05-07
+    quote: "We tried to plan very well for a world of 10x growth per year. And yet we saw 80x. And so that is the reason we have had difficulties with compute."
+    source_url: https://venturebeat.com/technology/anthropic-says-it-hit-a-30-billion-revenue-run-rate-after-crazy-80x-growth
+  - speaker: Dario Amodei
+    role: CEO, Anthropic（Dwarkesh Podcast）
+    date: 2026-02-13
+    quote: "Not every token that's output by the model is worth the same amount."
+    source_url: https://www.dwarkesh.com/p/dario-amodei-2
