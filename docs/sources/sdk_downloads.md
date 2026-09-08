@@ -2,7 +2,7 @@
 
 > TL;DR：npm 官方下载量 API + pypistats.org，低风险；注意这只是采用度 proxy，不是用量。
 > 何时读我：改 scripts/fetch/sdk_downloads.py 或加跟踪包之前。
-> 最后核对日期：2026-09-04
+> 最后核对日期：2026-09-08
 
 ## Endpoint
 
@@ -44,6 +44,13 @@
   只有两种形态都失败（多轮无数据 429）才真正判失败。
 - npm API 对不存在的包返回 404 → net.get 直接抛错 → 该源本轮失败（合意行为）。
 - validate 用 last-week > 0 兜底（last-day 在 UTC 清晨可能为 0 或未出数）。
+- **npm 上游「冻结」**：api.npmjs.org 偶发连续多日 200 返回同一 `last-day.end` 的陈旧数据
+  而非报错（2026-08-29→09-07 连续 9 日冻结，Issue #2；09-08 自愈）。旧 validate 只查
+  `last-week>0`，冻结期陈旧值每天静默落盘、污染 series。现加**新鲜度守卫**
+  （`validate()` + `NPM_STALE_MAX_DAYS=4`）：npm 最新 `last-day.end` 落后当日 UTC 超过 4 天
+  即判本源失败，让冻结显性化到 `data/_status.json`（宁可当天留缺口，不写重复陈旧值），供每日巡检
+  发现。阈值取 4 天以容忍正常 1–2 日滞后 + 周末规律性延迟。pypistats `/recent` 无日期字段，
+  无法据此守卫，pypi 侧仍靠 429 兜底逻辑。
 
 ## 样本
 

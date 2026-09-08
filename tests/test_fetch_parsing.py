@@ -1,8 +1,10 @@
 """fetcher 的离线解析单测（不打网络）。真实响应样本见 docs/sources/samples/。"""
 
+from datetime import date, timedelta
+
 import pytest
 
-from scripts.fetch import epoch_datacenters, news
+from scripts.fetch import epoch_datacenters, news, sdk_downloads
 from scripts.lib.schema import SchemaError
 
 RSS_FIXTURE = """<?xml version="1.0"?>
@@ -44,3 +46,33 @@ def test_epoch_validate_rejects_truncated():
     }
     with pytest.raises(SchemaError, match="疑似源头截断"):
         epoch_datacenters.validate(payload)
+
+
+def _sdk_payload(npm_end: str):
+    """构造最小 sdk_downloads payload；npm last-day.end 可控以测新鲜度守卫。"""
+    return {
+        "npm": {
+            "openai": {
+                "last-day": {"downloads": 1, "start": npm_end, "end": npm_end},
+                "last-week": {"downloads": 7},
+            }
+        },
+        "pypi": {"openai": {"last_week": 7}},
+    }
+
+
+def test_sdk_validate_accepts_fresh_npm():
+    fresh = (date.today() - timedelta(days=2)).isoformat()
+    sdk_downloads.validate(_sdk_payload(fresh))  # 正常 1–2 日滞后应通过
+
+
+def test_sdk_validate_rejects_frozen_npm():
+    stale = (date.today() - timedelta(days=sdk_downloads.NPM_STALE_MAX_DAYS + 3)).isoformat()
+    with pytest.raises(SchemaError, match="疑似上游冻结"):
+        sdk_downloads.validate(_sdk_payload(stale))
+
+
+def test_sdk_validate_skips_guard_when_end_missing():
+    payload = _sdk_payload("2020-01-01")
+    del payload["npm"]["openai"]["last-day"]["end"]
+    sdk_downloads.validate(payload)  # 无 end 字段时跳过守卫、不新增失败面

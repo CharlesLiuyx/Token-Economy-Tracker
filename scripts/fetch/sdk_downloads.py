@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import sys
 import time
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import requests
@@ -37,6 +38,24 @@ PYPI_REQUEST_SPACING_S = 10.0
 # 非无人值守巡检可自助，故先做此可自助的加固；若本预算仍被击穿，再评估引入凭据走 BigQuery。
 PYPI_NODATA_429_RETRIES = 7
 PYPI_NODATA_429_SLEEP_S = 20.0
+
+# npm 官方下载量 API 偶发「冻结」：连续多日 200 返回同一 last-day.end 的陈旧数据而非报错
+# （见 2026-08-29→09-07 连续 9 日冻结，Issue #2）。validate 原本只查 last-week>0，会让陈旧
+# 数据每天静默落盘、series 被假新鲜的重复值污染。故加新鲜度守卫：npm 最新 last-day.end 落后
+# 当日 UTC 超过阈值即判失败，让冻结显性化到 _status.json（宁可当天留缺口，也不写重复陈旧值），
+# 供每日巡检发现。阈值 4 天以容忍正常 1–2 日滞后 + 周末规律性延迟，同时在冻结数日内即触发。
+# 注：pypistats /recent 只返回滚动汇总数（last_day/week/month）、无日期字段，无法据此守卫。
+NPM_STALE_MAX_DAYS = 4
+
+
+def _parse_iso_date(value) -> date | None:
+    """把 npm 响应里的 YYYY-MM-DD 解析成 date；非法/缺失返回 None（跳过、不新增失败面）。"""
+    if not isinstance(value, str):
+        return None
+    try:
+        return date.fromisoformat(value)
+    except ValueError:
+        return None
 
 
 def _pypi_recent(pkg: str) -> dict:
@@ -97,11 +116,24 @@ def validate(payload: dict) -> None:
     for eco in ("npm", "pypi"):
         if not payload[eco]:
             raise schema.SchemaError(f"{eco}: 没有任何包数据")
+    ends: list[date] = []
     for pkg, entry in payload["npm"].items():
         schema.require_keys(entry, ["last-day", "last-week"], where=f"npm.{pkg}")
         schema.require_positive_number(
             entry["last-week"]["downloads"], where=f"npm.{pkg}.last-week.downloads"
         )
+        end = _parse_iso_date(entry["last-day"].get("end"))
+        if end is not None:
+            ends.append(end)
+    # 新鲜度守卫：npm 上游冻结检测（见 NPM_STALE_MAX_DAYS 说明）。
+    if ends:
+        freshest = max(ends)
+        lag = (datetime.now(timezone.utc).date() - freshest).days
+        if lag > NPM_STALE_MAX_DAYS:
+            raise schema.SchemaError(
+                f"npm 疑似上游冻结：最新 last-day.end={freshest.isoformat()}，"
+                f"落后当日 {lag} 天（>{NPM_STALE_MAX_DAYS}），拒绝写入陈旧数据"
+            )
     for pkg, entry in payload["pypi"].items():
         schema.require_keys(entry, ["last_week"], where=f"pypi.{pkg}")
         schema.require_positive_number(entry["last_week"], where=f"pypi.{pkg}.last_week")
