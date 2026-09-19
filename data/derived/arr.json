@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-18T00:28:08+00:00",
- "build_date": "2026-09-18",
+ "generated_at": "2026-09-19T00:27:39+00:00",
+ "build_date": "2026-09-19",
  "half_life_days": 120.0,
  "models": [
   "linear",
@@ -48,8 +48,8 @@
     ]
    },
    "realtime": {
-    "arr_at_build": 94516925839,
-    "usd_per_hour": 29648983,
+    "arr_at_build": 95231074307,
+    "usd_per_hour": 29873004,
     "mom_implied": 0.2575
    },
    "anchors": [
@@ -1173,7 +1173,7 @@
   "openai": {
    "fit": {
     "model": "exponential",
-    "k_per_day": 0.0032962454974909783,
+    "k_per_day": 0.003296245497490985,
     "mom_implied": 0.1055,
     "sigma_log": 0.0547,
     "n_anchors": 16,
@@ -1210,8 +1210,8 @@
     ]
    },
    "realtime": {
-    "arr_at_build": 47775213115,
-    "usd_per_hour": 6562069,
+    "arr_at_build": 47932951776,
+    "usd_per_hour": 6583734,
     "mom_implied": 0.1055
    },
    "anchors": [
