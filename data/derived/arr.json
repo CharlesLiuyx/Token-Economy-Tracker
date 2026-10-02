@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-01T01:20:31+00:00",
- "build_date": "2026-10-01",
+ "generated_at": "2026-10-02T01:43:19+00:00",
+ "build_date": "2026-10-02",
  "half_life_days": 120.0,
  "models": [
   "linear",
@@ -48,8 +48,8 @@
     ]
    },
    "realtime": {
-    "arr_at_build": 104233623214,
-    "usd_per_hour": 32697011,
+    "arr_at_build": 105021188846,
+    "usd_per_hour": 32944062,
     "mom_implied": 0.2575
    },
    "anchors": [
@@ -1224,8 +1224,8 @@
     ]
    },
    "realtime": {
-    "arr_at_build": 49866934228,
-    "usd_per_hour": 6849373,
+    "arr_at_build": 50031579091,
+    "usd_per_hour": 6871987,
     "mom_implied": 0.1055
    },
    "anchors": [
@@ -2867,6 +2867,13 @@
      "fitted": 88491354586,
      "lo": 72397040676,
      "hi": 108163534909,
+     "extrapolated": true
+    },
+    {
+     "date": "2027-03-31",
+     "fitted": 90556917660,
+     "lo": 73928992895,
+     "hi": 110924753806,
      "extrapolated": true
     }
    ]
