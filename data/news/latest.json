@@ -1,13 +1,34 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-10-11",
- "fetched_at": "2026-10-11T01:03:06+00:00",
+ "snapshot_date": "2026-10-12",
+ "fetched_at": "2026-10-12T01:23:55+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "How to Get Your Data Center Approved? Behave Like An Oil Company - The Information",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQa2tHRk01UmY4UEY0bmFkTEh1dGdETmZXRmhzemM0UktxM2lmbGowT1JLS1JCR3dvai00d2lHdWJoelV0dWhUbk53cXJpT0JKenkyUUpReG5vbnlaUXB2eGx5R3dLSXlBRDJrbDFHZkUwWmlEV0kxWWloTnZOdWJveklFc0h0YnJ3UW5tUURpYzFpM2hvY2F2WlZGM3NIMXY2bkVkWXUwMA?oc=5",
+    "source_name": "The Information",
+    "source_url": "https://www.theinformation.com",
+    "published": "2026-10-11T21:01:00+00:00"
+   },
+   {
+    "title": "'SNL' takes aim at Kevin O’Leary and his Utah data center: 'I'm going to make the future go away’ - Business Insider",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPalZZR19uUG5fNjNCWFFpc0tKNmp3YURLcDJUV3NldC1CRkN4VldTRk5tN19Rbi05WG1fdzFOU2tWUkx4ZkpHUmJXQ01BWHNWdDgyRzJrcm1RLXkzVWVMOGZmczByVGgyZGVfTWhHM0dBV1dId0FkM0lVallHajNrelllNUlSZ25WeWZ3ZFNmRUtZTXNMa0RR?oc=5",
+    "source_name": "Business Insider",
+    "source_url": "https://www.businessinsider.com",
+    "published": "2026-10-11T18:45:00+00:00"
+   },
+   {
+    "title": "The Attractive Economics Behind Anthropic Data Center Sprint - The Information",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORFVGNUhWOWkwOWdjbkwycUxUUFQ4NU5tSTBVU2Y2ZW9tYnFzWkJ5b1U1cmpnSDhSdDlYUHBNZlZmMHNCeS1aZzNBZkYzUXJyeHB0TmFXeUt0X0E5dnNmUl8wZjZzdG5hMjdYM0VkZ016OUNrMUxzTjc5T1VuRDYxUUUxWkN1V0d0eDNmcGdfUDcySE45ZDRnR1k3bzduTHM3cEVKUWJFcERzdXRmLWI3ejhvbEVWNVow?oc=5",
+    "source_name": "The Information",
+    "source_url": "https://www.theinformation.com",
+    "published": "2026-10-11T15:01:00+00:00"
+   },
    {
     "title": "Why do liquid-cooled AI data centers require different backup power strategy? - Data Center Dynamics",
     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPU09CdVBscmFyMnN3WUxwbEszOFFhbVRtSHVzYWkzVGhCY2k2YldyeUlZMHJJRmJVUjhjQ1QzUFpyUXlycWlSS0RUbUtWTkNkVW90Q0VXUy1XT2I3a3lPRmFLcklkTS04UlVObG1LakgwRnA1MFlROGM1Vnp0N0hQQWdRSTM2UlRoQ0pPWUVqMWRKVXdzUGNWV3ZaUTQtRGtWQzV2dkQyYmhMdVRMMUR0TnFKVWZidl90OUQxTnJHOGdsZw?oc=5",
@@ -156,11 +177,25 @@
     "published": "2026-10-08T10:58:58+00:00"
    },
    {
+    "title": "Vitol Among Investors Backing Flexible Power For Data Centers - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdmFPVHpHeVRjMkw5LXNxNFJVTUZIM1ZETnFSeWxoMjdrUjNWU0tvdDY2VUtyQ2tqMzRKNWlPazdRSU5TTWJpcmFhQjZTNk51eXhNNV9KNHJzOEFHSFpocmFGaUxHNVdyV0UycFFPMzIwSW1vVy1HckdXZXZzX3BqSXVNcnhxNXVXOHE4YjF4QkR4eE1YRmdONFR6cDhrNC0xQWs0YkhXSEt6dk96NnVBRTNn?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-10-08T09:00:00+00:00"
+   },
+   {
     "title": "Shell achieves NVIDIA DSX Ready Coolant qualification for direct liquid cooling, advancing high-performance AI computing - Data Center Dynamics",
     "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPMVlDZkNlSlhUdVhHd3hMSlNPUjRpZEJVUkJYa2tlbFVnSUNFeDBsUWt2Qk5OVXEteW1WbmZDNzhINTBURlZrd1lLZXB4NlNKRjF2bl9VZXJNOGx2MGdmanp4Nk5GN2JuX0VCMGJ4OGdvcFhRaUhBODNrODlyVzk2UnZLZ2lla0xnUG5kbWU3ZXFPWmc3Vy05amliTXY0Q1FVdUZJUmxCS3BzWnVSNWM2eXRkNFI2R1NIWE9uRE9hUFlFUElPaXlzRXF6U2tUMTVZcS1iOFRsZkJnSEhJaGp3aWtIVVhGdXh1M1I0ZnI4V1AzTGpZV3I3NHpOVmszeG44?oc=5",
     "source_name": "Data Center Dynamics",
     "source_url": "https://www.datacenterdynamics.com",
     "published": "2026-10-08T08:42:16+00:00"
+   },
+   {
+    "title": "Finland’s Data Center Tally Tops €67 Billion on AI Boom - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPa1FCNTBJNVFGY1ZjaS13R28ycjFrU2lLZy1DUXhiRG54TkE1c3dwbzY3c2g0R2xYdVVHT1p3dklqUXFGSExhemEzaGNmT1htWGZDSlFEY200QVI1TXNLd3FTYmx6MHFMUWRfWVlfekpXajcwS1ZSUFFjTHdiMkk3OEh6Z19lZFhBaWdzWlh4WjhwOG1rYWZNVkxnaG95NXl2cUhoaGRLMko?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-10-08T07:30:31+00:00"
    },
    {
     "title": "Nvidia-Backed Firmus Said to Close Books as IPO Struggles - Bloomberg.com",
@@ -2072,41 +2107,6 @@
     "source_name": "CNBC",
     "source_url": "https://www.cnbc.com",
     "published": "2026-09-03T09:29:04+00:00"
-   },
-   {
-    "title": "Hidden China risks are emerging in America’s multibillion-dollar AI data center boom - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE90aUdnWGFYbGV4dEV0SlZYbWExY1p5Ym5BWDk5dzBZZk5ERUZ4aGhNNGJMNjBVY0tXS3VyblkyaEN0cFVSTHpwTjk5Q19vMHpjdVZPU0pkUGp5cWpVYzRPREU0LXpnWmRyY1JMNGNCaGY2TzFIMDlKclhKLVdNM0E?oc=5",
-    "source_name": "CNBC",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-09-03T09:29:04+00:00"
-   },
-   {
-    "title": "Vertiv acquires microgrid company UtilityInnovation - datacenterdynamics.com",
-    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWEl3YlRjU1FuV2hoaUVZRTJSMUYySUw3RW9OU2VKRzZRbWl1YU43dURHRDhsYWwxVGlfWFZQeEFpdXRkZW1oeVdzT21mbXlaTWF2RlJhTGpDRE1DcENyRk9XOHpmcGRURVJBQTJIZWh6WkxFdGtDU2Z0a3FCWFhBVWNoQ1lXcEdYR3ZlZ0pldUNkWjcwYWlYSGxGWQ?oc=5",
-    "source_name": "datacenterdynamics.com",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-03T08:58:07+00:00"
-   },
-   {
-    "title": "How Equinix has found a niche in the multitrillion-dollar AI data center boom - cnbc.com",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMFJEczUtYm8zMzZSOVJnLU5tYWRYNG9pSWlOUjBfUm0zRElHbkZ4SmVTR2MyQmw4bHhuQzZESVVqemJMSFUyaGlERlJBQW5ndFZ4bmljZVZ4TldpVFdqanVUbzJxZjNwa3B1emdjclV5aEtHbFpmbUM2bDEzNnhjQ0lwMjBKaVFkX01BS2hYc2xYX2tXNV9JZ0lHb01tNS1ETzFJ0gGoAUFVX3lxTE15bmpzdUttS09NQ2NYQ0lJRXo0TEpLd2VLVjVRdjdrZHRtbjlqalFBNFNTMXNjS2hHMzRGODVfZjZCQW1OWFFZd0V1dm1xVk91UFdmN1g4TTBKem1EWGNrS2dmdUgxOWJFTmdETV9FS0xhNEVhLWdtSENRYkJzeEFDc1VjMTE5R0sxSzNtZWlSR21QNThwekdOeFZDa1Z5anNQdGt6VzRLZQ?oc=5",
-    "source_name": "cnbc.com",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-09-02T22:49:01+00:00"
-   },
-   {
-    "title": "Not just Nvidia: these power and cooling firms are riding the trillion-dollar data centre boom - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQamJMNVI1ZThlMnNnbFl2Tl81SXd2ckc1eGF1aS1uOU11RHFSTjh1a29pOUV6cV9VR2QtS0liSlU4YlBBbWxVQ0ZTMDlLRnlad0p0cGtXY0ozWkl2MURsM0lOdktDSFRMN1pDLUh6TEplLWtJSFY1T3hmRVVMeG1jNGc1bFVhZ2V3YTdLZ0VKRlZQWks4SXVyb09uRmJ5YllpNTdKVVFfZXk5VEg4Mmw1UTFja0hFYjZDZjFfXzhFd3pBWmxvcnljT055Zl8?oc=5",
-    "source_name": "Reuters",
-    "source_url": "https://www.reuters.com",
-    "published": "2026-09-02T19:27:05+00:00"
-   },
-   {
-    "title": "Infineon, Skeleton Technologies partner on AI data center power systems - datacenterdynamics.com",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTG0xc2VVZUs4bDRXUTFMUDR4QW1ZcnlEcGZFdzJOSmFFM3RxTjZzX2VJRm9PTmJ6QkhQa3ppanNNYnJTNVpYckpWLXk4dlVxRUo0V0Qzd0ZwTFVzbnhLVXVMaEg4Y09jWDVNNWJGWWE0SDAwUUphRHViM3lxUUhVUGZPcnZYYklqa2pOM2lfT0pLeU9LR18xd3Ezalc3RzZHRjFZcGxteFNTV3Y0djNhcGpCaTU?oc=5",
-    "source_name": "datacenterdynamics.com",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-02T17:01:46+00:00"
    }
   ],
   "queries": [
