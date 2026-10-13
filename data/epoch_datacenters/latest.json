@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-10-12",
- "fetched_at": "2026-10-12T01:23:32+00:00",
+ "snapshot_date": "2026-10-13",
+ "fetched_at": "2026-10-13T03:04:14+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -240,6 +240,22 @@
     "users": [],
     "chip_types": [],
     "country": "United States"
+   },
+   {
+    "name": "Bridge Data Centres MY06",
+    "h100_equivalents": 221051.54118241536,
+    "power_mw": 243.0,
+    "capital_cost_busd": 9.205326,
+    "owner": "ByteDance",
+    "users": [
+     "ByteDance"
+    ],
+    "chip_types": [
+     "A100",
+     "H100",
+     "B200"
+    ],
+    "country": "Malaysia"
    },
    {
     "name": "Meta Rosemount",
@@ -2157,6 +2173,76 @@
     "h100_equivalents": 242546.7407781708
    },
    {
+    "site": "Bridge Data Centres MY06",
+    "date": "2021-10-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2022-12-31",
+    "it_power_mw": 19.0,
+    "power_mw": 25.0,
+    "h100_equivalents": 6467.913087417888
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2023-03-01",
+    "it_power_mw": 19.0,
+    "power_mw": 25.0,
+    "h100_equivalents": 6467.913087417888
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2023-05-30",
+    "it_power_mw": 61.0,
+    "power_mw": 79.0,
+    "h100_equivalents": 20765.386558868115
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2024-11-05",
+    "it_power_mw": 114.0,
+    "power_mw": 148.0,
+    "h100_equivalents": 65485.093481556345
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2025-02-09",
+    "it_power_mw": 114.0,
+    "power_mw": 148.0,
+    "h100_equivalents": 65485.093481556345
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2025-05-25",
+    "it_power_mw": 243.0,
+    "power_mw": 315.0,
+    "h100_equivalents": 221051.54118241536
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2025-09-23",
+    "it_power_mw": 243.0,
+    "power_mw": 315.0,
+    "h100_equivalents": 221051.54118241536
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2026-03-03",
+    "it_power_mw": 243.0,
+    "power_mw": 315.0,
+    "h100_equivalents": 221051.54118241536
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2026-09-13",
+    "it_power_mw": 243.0,
+    "power_mw": 315.0,
+    "h100_equivalents": 221051.54118241536
+   },
+   {
     "site": "Meta Rosemount",
     "date": "2024-05-01",
     "it_power_mw": 0.0,
@@ -3998,6 +4084,13 @@
     "h100_equivalents": 50773.11773623042
    },
    {
+    "site": "CoreWeave Norway",
+    "date": "2026-08-15",
+    "it_power_mw": 42.0,
+    "power_mw": 50.0,
+    "h100_equivalents": 50773.11773623042
+   },
+   {
     "site": "Nebius Mantsala",
     "date": "2024-10-08",
     "it_power_mw": 40.0,
@@ -5105,10 +5198,10 @@
    }
   ],
   "aggregates": {
-   "site_count": 93,
-   "total_power_mw": 13833.4,
-   "total_h100_equivalents": 14398584,
-   "total_capital_cost_busd": 524.04
+   "site_count": 94,
+   "total_power_mw": 14076.4,
+   "total_h100_equivalents": 14619636,
+   "total_capital_cost_busd": 533.24
   }
  }
 }
