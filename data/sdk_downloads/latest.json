@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "sdk_downloads",
- "snapshot_date": "2026-10-13",
- "fetched_at": "2026-10-13T03:04:46+00:00",
+ "snapshot_date": "2026-10-14",
+ "fetched_at": "2026-10-14T01:16:36+00:00",
  "source_meta": {
   "kind": "official-api"
  },
@@ -10,56 +10,56 @@
   "npm": {
    "openai": {
     "last-day": {
-     "downloads": 4991295,
-     "start": "2026-10-11",
-     "end": "2026-10-11"
+     "downloads": 7825673,
+     "start": "2026-10-12",
+     "end": "2026-10-12"
     },
     "last-week": {
-     "downloads": 43294719,
-     "start": "2026-10-05",
-     "end": "2026-10-11"
+     "downloads": 43409938,
+     "start": "2026-10-06",
+     "end": "2026-10-12"
     }
    },
    "@anthropic-ai/sdk": {
     "last-day": {
-     "downloads": 5452909,
-     "start": "2026-10-11",
-     "end": "2026-10-11"
+     "downloads": 8355414,
+     "start": "2026-10-12",
+     "end": "2026-10-12"
     },
     "last-week": {
-     "downloads": 46406759,
-     "start": "2026-10-05",
-     "end": "2026-10-11"
+     "downloads": 46461312,
+     "start": "2026-10-06",
+     "end": "2026-10-12"
     }
    },
    "@google/genai": {
     "last-day": {
-     "downloads": 3061457,
-     "start": "2026-10-11",
-     "end": "2026-10-11"
+     "downloads": 4409433,
+     "start": "2026-10-12",
+     "end": "2026-10-12"
     },
     "last-week": {
-     "downloads": 24707752,
-     "start": "2026-10-05",
-     "end": "2026-10-11"
+     "downloads": 24718975,
+     "start": "2026-10-06",
+     "end": "2026-10-12"
     }
    }
   },
   "pypi": {
    "openai": {
-    "last_day": 11405269,
+    "last_day": 12444668,
     "last_month": 295856631,
-    "last_week": 76327365
+    "last_week": 76546014
    },
    "anthropic": {
-    "last_day": 6117983,
+    "last_day": 6810853,
     "last_month": 150199657,
-    "last_week": 41773980
+    "last_week": 41782042
    },
    "google-genai": {
-    "last_day": 5178014,
+    "last_day": 5956865,
     "last_month": 137607856,
-    "last_week": 34513111
+    "last_week": 34759652
    }
   }
  }

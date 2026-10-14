@@ -1,13 +1,90 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-10-13",
- "fetched_at": "2026-10-13T03:04:48+00:00",
+ "snapshot_date": "2026-10-14",
+ "fetched_at": "2026-10-14T01:16:37+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "Blackstone’s AI Data Center Deals Are Looking Shaky - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdU0tbVg1VndKZE0zM0dmSHY3eGhDdVd3S3M0YmFsX25Rb2dHNFY3WEFEcGVsNVVkLVhLZ0hNeF9rVU5VZDBvZlJZeTBSMXd1S0ZaeEJndllaNDZJTEdoSm5mdkk2Ny1LRXcyZUstX3JTeWZFMHFBejBIczhtb0I5NW15eDJPTHNTQlp6QS1IOGY4VnVUTEhNUWtGRDUyRHFJeTBJVHRiWEw?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-10-13T18:00:33+00:00"
+   },
+   {
+    "title": "OCP 2026: Agentic AI Drives the Data Center's Chip-to-Grid Transformation - Data Center Frontier",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZTdhUXp4RW8taWFlNUJzZjZfRU1xUlJFVWNJejZXSjVMaXplOXNCNThaTWhzdC1UZ3pMZ0c4bjZ6TWFEdFlUeTE1Yk9JNm5fS1QzaS1mQ2JZajdPTE9RTjVxMDhTUWp4NEdnZ0w1U2dFTnpaMF8xaUhJWE92OU1kVWJaRU5MUjBwRFJyQUNpSW1YTnZiRkFsQ0o0VlBBOU9ueS1VRThiVkVnSWFlZ0N4QWE4WVpyQ0JPd3VCZFpyYXU?oc=5",
+    "source_name": "Data Center Frontier",
+    "source_url": "https://www.datacenterfrontier.com",
+    "published": "2026-10-13T17:45:19+00:00"
+   },
+   {
+    "title": "Google data center strategic sourcing exec heads to OpenAI - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQ3hVSmRDNHJxRGlpdEx5VHdycGFDdUdaYVlEdlJmN2hDRDlRVjUwNzVqNVBkZXYwMmZOQmVsbkQ0YUlnQThHVFBvWEhhcExNUnh1ZjhBbGVIYWlyUFBPVVdfT252SmJ6eGlBYzZTWW1pTkJ5dWFpdjAyYmVXbDJaYWQ1TjJPSXNsNHNJeUdpMXYtUWhuOThmckQxQ0ZwN2Fya2IxUA?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-13T16:34:16+00:00"
+   },
+   {
+    "title": "Power and Talent Biggest AI Bottlenecks, Say Data Center Firms - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTWNUeURhM3NjYlhuNFFQN0FpV21vUmJ1ZnlhM0NMV1lDTzk0RXZFelpkclJSRHIxTTBILTc4TUlMOGEwYzA0cV9IaUJENWM3bHBMLXIxc3UxZ0hranFSZUlabjJxVHhkX1JsakllUGpIOS1sc3NtaTI4ZVlWVXMzOTdXNWpRWEdIZmZCLVc0NWNENkhvbmZfdDJsdlZadmJUNldGUEpFZm9xdWFjcFF6R0xR?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-10-13T13:12:18+00:00"
+   },
+   {
+    "title": "NTT to build $6.3bn data center for Anthropic in Japan - report - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWTNXa2NIcUlBVmhHRFVEOHFtYWdiUFdVa3RkbG5scmJQVnVYRTc1VGZJbHlhZHNwbUJxdXBGNzRJYVBraFh0cGZoV3pvNHZvMVE0ekNCUjZaMThfWGVOemRGQklDU1JQemtNOWV0bGtsVUJqUFdyazBXMlI4RFJHVUhyUnJud3dzWHJ6dzdzUjlQWko0c1g5dTQzci03Yk44WFo3N0Vn?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-13T12:48:37+00:00"
+   },
+   {
+    "title": "VivoPower starts construction at 42MW Mo i Rana data center in Norway - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOS3RFQVdVZW1vTzV6VjlpY3BiZkxwazhoV0JJVkhQby1ibTVRWGw5RXFYNTdFLXBqOW1FNzlXTWxTb2JyRmFfbXdOaGNjd29DbU5QSlVBcnVMN0pRU2h6V3VVV0xfWWNxRTh3OTkxZExlSmREaUlHM2RRMjZ1akQ2MFdjcW9EYVQ1Rnd4aXRNcXZZVVl6QkxoS1Vxb3duYml2emlEOWtFUFBoVDVpMXcwZnFSYw?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-13T10:49:01+00:00"
+   },
+   {
+    "title": "Microsoft unveils Azure Maia 300, says chip will be its “primary inference system” - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPXzhwVHVKeXJqdmZ0Q2tSVHhzejZ4SVh0U3drWGgtWWdXWWtTZ2I3YUZxOC1jdkxRazZjcEdMbVRfcm5ZSEs5cG5GS1p5elhXalFBdVhRVXA2SjdTTTZqWkVqZm1RdU1BM1I2YndodnZqUHh3SllMUFR4Rk1peW9yUnUwLVVVcWFMSWR2azloSUx2Mi04Q1RmN1BKWEoyM3hjdE0xN2N6TVhrSFFCWDd3VVNqQVZtendOQmQ1TU1vSjY?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-13T10:49:01+00:00"
+   },
+   {
+    "title": "VEIR raises $110 million Series C to accelerate commercialization of superconducting power delivery technology for AI data centers - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxONExlTWl0VEdVVC1rbUN6Rkl5dzFaY1RuOXlkZnpyM3hleC1xcEE5T0hqQ2JjMTVFUzRSb2ZSX0luSG94TWxPTm1UUTNDcGItdUxhc1NGRnVPM3YxdEZ6QkdQdkExbGFvV3BoX1h4bEtPdERwR0o5UkZhVHR4dUVyT0poQnhjRmIxQ1hQeV9iVFo0dGJLMjBuWkVqcE9HRG1VU3VRV3BmaGdIS3RYRkx6ampsa1lCTGtDVzl4Q1JPQ1RYU0QxVGFWUVZyRHN6TElzVnFtQlJtRWJRZl9ib2RXLS0tTFlyYTZ3c1EzZlFjcm5JaHVNUFlrTzAwaVVaNVlweGRPQk5BWnFFRG13aEE?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-13T10:08:59+00:00"
+   },
+   {
+    "title": "Anthropic to Build First Data Center in Japan - The Information",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOV25uQWh5MzFoVy1kTjVxR0JNc1NLQ0hZUHdxMUpRUGVqaThONldueTZtbWxPZ09IYXBlSFBZM2d2WEloNVBueV9iREFUajNfdldadTByVk14akNVNjBKUFlMSU96ZEFTOUNwN0ZheHNqaGZWS0k1d1R1NUROR29valVmcllBWGs?oc=5",
+    "source_name": "The Information",
+    "source_url": "https://www.theinformation.com",
+    "published": "2026-10-13T09:50:24+00:00"
+   },
+   {
+    "title": "DCD Talk: Critical power architectures for AI data centers with Mehdi Rajehi, ABB - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPYWR1YUxnZTN0SzJPOFdXblkzOWJ0M0NPQldfUUxwZ3ZldmdvS2FyU2xsbTdMVXNjX0xMNWdlS1ZuUjJQclBuRFRiTy1IWkZBeDhJWDBLR3BOaHhnaDBGQThVVDNFU05JUFg1VVhzYmk5eEJXalJfeWtPX1dNR1ZHLUY3VFRuWVVlV1AyZXJ4R0xidzdmSk9iSjlqc1gyUTAyaE53b3NldnV5UnJjSGRZdGttZzVRS2Y3RnhyeU11TG9yODQ?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-13T09:45:01+00:00"
+   },
+   {
+    "title": "Anthropic warns AI models may soon self-replicate and could wreak havoc on the web - Reuters",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVFZnZHFlY0QxWV9XbURPeDVpQnlMcWFqaTlDMHRjcWhhLXRhR1hfbTdNeVl3c3dyR3V6V211Wmp5aXNZT1VpN1kwdUs3ZFdBTXB5Z2tEN1JfV2FnUk5FRHpVa2lfRWxENndHaDdNWmRZVUJfQkFody00VG1BNk8wb29Sel9Wd011ampEWXlOQk9xM2x0bkVwTXBib0hEMndtOWNuZXdDWFlEcTRuZzVLRDYxUDFfek9XRTNna3dhZw?oc=5",
+    "source_name": "Reuters",
+    "source_url": "https://www.reuters.com",
+    "published": "2026-10-13T05:14:00+00:00"
+   },
    {
     "title": "Land & Expand: North America's Data Center Pipeline Expands Under Pressure - Data Center Frontier",
     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNTVM1eFJaSy1aM3M1aXcyczRvY0daMlRncWg5U3pwOWRHTWFDMW1NQk9tMUF6MC1RNjF0YkVMR2FiNWU0c2t4QTY5bS1od1BqZ1Bvb3BaOEFrWVBvU3VJWFpsNk9WRjRYOHZkQWNhMzY1cFRGVWoyakM5NkotUnRGMkpvYUlpaVBsNFBrRGs4SnZMMC1vLXVVNndIYVJMcFA1cUZNRVlZQmVfelF4MDhkRFNmS0s1V3FmWldZZ0RVX2k0Z3pPQXd5Vjd5cXFFUQ?oc=5",
@@ -21,6 +98,13 @@
     "source_name": "Bloomberg.com",
     "source_url": "https://www.bloomberg.com",
     "published": "2026-10-12T18:25:31+00:00"
+   },
+   {
+    "title": "How Big Tech’s AI Race Fueled a Borrowing Boom - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSlhQMDE4RlF5WHZNNHVFTDFoZkhfZnJxTHUwVXliSDg3cGFMVjZuNEtzNkdLeEVpX29Sa3NTcmd4WV9lWXZjanc5b0xXdGZNeHVRSmRCaGpOUV9uQTdKSHYteFFLZGt0MlFVTG12X1lOOFJsUmVLWHV4MWxHSzJwT3F6T0RZQXRGS0M2elJoQUVqLTdiRlJtREhjVjFBc1NMdURkZFJTVm4?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-10-12T18:01:52+00:00"
    },
    {
     "title": "FiveNines Group and Nexus Core Systems partner on 20MW data center in Morocco - Data Center Dynamics",
@@ -46,6 +130,13 @@
    {
     "title": "Microsoft's senior director of AI systems hardware architecture joins OpenAI - Data Center Dynamics",
     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWnM3RUJYZXA5LUVxRjUySmdQOUJqQW1NdkFreFVhZlRCamptVmw5aXA2Z2RBYktzZmtHQ1llSW8zSFVRYTVPeThPbTZrT1VoX1J1aHJ6bG5POHRkdDhtTFJfeFZlRk1sTW9sVGtPNzF1Y05MZzRocW5nRXIzaEhoYmh1MHM1ZmhJOFV4NmpQMTlYbVhwYUpoUklvUURMMlREN01kX1BobS1jWUZPZUp0eWRBblVPSjhDdEM0?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-12T14:23:56+00:00"
+   },
+   {
+    "title": "Nebius signs LOI with Volt for data center capacity in Rotterdam, the Netherlands - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOYThwcGxQUmpDcHpyMjNtZ2hzb0htZXo4YnJsM1VWVU8xM0d1NDRhSHpkclJCVzA5TmRjUmZhZ2tEU3cyNTZSekJQcXRFTXZRa1V3M2ZXa3J4TkRBNzBicGVjNmZsUkZiQzJHbDBBeDJBdGw5b2pBV0VfcTF3VlRvNEJUSTZNWjREa1NrQnNYY2hLTm00U09LSENrcURyZlRkaW9hNDZveGJrVTh4dTAyRTB1ekFTQlo3M3NoS3psaVF6UQ?oc=5",
     "source_name": "Data Center Dynamics",
     "source_url": "https://www.datacenterdynamics.com",
     "published": "2026-10-12T14:23:56+00:00"
@@ -2016,97 +2107,6 @@
     "source_name": "Data Center Dynamics",
     "source_url": "https://www.datacenterdynamics.com",
     "published": "2026-09-07T11:40:24+00:00"
-   },
-   {
-    "title": "Five intensifying forces, one system-level strategy - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQ0JadGZyVlRTUEc0azhBWEFyYXFVYkk3RGFvWkRvVjc2ZnotN3NKTWJhMm5OUGN1WWNKMkJVQzR2czJUcXViR3hpRC1vUXNrSlZNRk1YbDVoZVVhR3BtVTRnZEhmc0lsSlNUUkVqbEZDTU4zSzVhSkd1OEZZZ3EtZ2FxNGVGRkE3RzRfdW1zek9vTXgtVkU1VmdlZEpZUVY3QXNR?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-07T07:20:19+00:00"
-   },
-   {
-    "title": "Nvidia-backed Firmus signs deal with OpenAI for Malaysia data centre capacity - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTEl5UFVvaWZBUmFEZkVObFBBRVk3MHRBV29pSnoxSDJXSFVxUTl0SGR6NjdlamEyWUF5WF9LQW5nWVFRUTZhTnRjalplVWVEc3NPTEk4NllZR1B6VWVJbE1UaDlPLUFycVpRenZNRWRnUGlvREIyNy1kLUYyVTl0WU9IaG91MlV2dFpfYnpUNk1idFVMbmI0T2pmWHRWalY3UHRvMU1aazJhejh2eGJnS1pqUXpnNWdXY2k4THEzdV82OURFWjFz?oc=5",
-    "source_name": "Reuters",
-    "source_url": "https://www.reuters.com",
-    "published": "2026-09-07T07:00:00+00:00"
-   },
-   {
-    "title": "We opened a taco shop because Meta is building an AI data center nearby. Now 40% of our business is tied to it. - Business Insider",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPTEZVbnVzdk55alZvTm5jTmhrRDBqbnhibVNOR3ZfM2xKYURaUnZfRXZGVEk3RzZVdTMteG15MnRwNnZqeWtBb2FlcmNtZS1xaURnRjRLUFBFSjlmTEl3UzB2eVUzam9RZDdYMjlNS2R0NEt5b3lBdk5YYlhMSVpZcjVaclljUUJYUzhoaFgzLUFxeVY1ZEM4?oc=5",
-    "source_name": "Business Insider",
-    "source_url": "https://www.businessinsider.com",
-    "published": "2026-09-06T09:31:00+00:00"
-   },
-   {
-    "title": "Morgan Stanley breaks down the midterm races it's watching with implications for AI and the data center boom - Business Insider",
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOejhRZHo5Y191ZnFxbGg3bWc0bHBlbWRHLWpscEhOR1pZUjBveEF4WlZteDV5ZXNnTFlKem1kUEp2V2xua0M3Q2wxeFM5M3JKRmU4Zm5hVzVTVGE4S0VIbjB5aGNyTUVMdUYtUU9mQ3FiVTNVdy1jelVBOUpFTmdaNU04MFBqM1g1bWJLZ05IakpUdmk2eE9fVmdNMktpTU1QM3FCYg?oc=5",
-    "source_name": "Business Insider",
-    "source_url": "https://www.businessinsider.com",
-    "published": "2026-09-06T09:20:00+00:00"
-   },
-   {
-    "title": "Many truckers don't feel like the rest of America about AI data centers as business booms - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBwLVVsX3VUZ3lBT1R4REFEY3RQTHF5SEQtVWxNSDhtalFvZGp2WHl3UEZPb1c4UDY3U3VaZWFGRmdQNW9LYTJGRHBLUW56SFJhZ2hNNFIxRC04WElZV0VtYkdnWk5TTXNaTXp6ZnRselJMOUXSAXhBVV95cUxPWW5SaEZRRjBWNnRuamh1SEhWQnY3UnVOS0FuXzl2dVFINW9xbVYxSWJQTFAzcmR4RkZDb2xkbGw1NElVbVVjU3prLTMtc3dPNFpuNTRxZDBrZ3M1NFNLdEppNXdjM3kxV0N1ZkZrVmNWOHRuTnVWOTc?oc=5",
-    "source_name": "CNBC",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-09-05T13:33:08+00:00"
-   },
-   {
-    "title": "India's TCS unit to invest up to $7.4 billion in AI data center campus - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMUtHcGEzeDRCRGZiVEZVT0M4cUM4SktyLWxnY3ZsY3ZHVEFoelhtU1IzUlo5Qm9DRzAweWQxQmZCU01kQXVBMkFsb0JqWkNKS2w2ZFpRSnAxMnFKU2NNeFpfMmpOYVd3ejJZeWZNbW8tWC11RlRGSXEyY29KTUpnbkc4UTV1emlla0VLWm5vRGRLY0Vka3I0QlpJZkZjLVI0YXZBdnp4ZVRHQQ?oc=5",
-    "source_name": "Reuters",
-    "source_url": "https://www.reuters.com",
-    "published": "2026-09-05T12:27:43+00:00"
-   },
-   {
-    "title": "Exclusive | U.S. Used Promise of Nvidia Chips to Broker Armenia-Azerbaijan Peace Deal - WSJ",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbEJmOWRwaGQxLXdMVzlaUk16VUZfVE9FTkN4MVdOXzBYZEY5VlpWMWZFbHBjaTNCTmxnQVdsamU4YUd3YmUtZDV6OUFNZDdvOGFfY0pLSndyc0JVci03c2NrcUtveEhnTU8tOEZMY3FoUUlETnlrM0pZUGlsSFdjOW5xU2VpQ3pOeWhoOHZ2TTNqb3RyQzdFSnR0YktRWjZHeDcxNzBuQmZvOUk?oc=5",
-    "source_name": "WSJ",
-    "source_url": "https://www.wsj.com",
-    "published": "2026-09-04T23:00:00+00:00"
-   },
-   {
-    "title": "PwC Maps $31.6 Trillion AI Data Center Buildout Through 2050 - datacenterfrontier.com",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZVBvOC1ZcFlFckcwdERCNjFlajNjdHZCdFMxd1QxQVZ1YjJQa2hSZlRDUGFOd1VHajJ5eWIydFl0M1BHUkZaTmlpcnlIZ2ZCdDVJQnJValZrbXpuY0M1S1loOEFUZGdNZWdVTm53STlXM2ZfUDNYbzdUbnJxWnRlNHAxcVRzNHFJY2lteDJxNS15cENoRGdrQXRqOG85QXhZaXJVTXJyam9VcUt6SXJ3c2hBeHNocGk3QXBpaGs5T1JxZFpnV1E?oc=5",
-    "source_name": "datacenterfrontier.com",
-    "source_url": "https://www.datacenterfrontier.com",
-    "published": "2026-09-04T19:18:45+00:00"
-   },
-   {
-    "title": "Meta's $1.2bn data center in Kuna, Idaho, goes live - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQLWY0Y3EwNnB4b0hUQ2tvQTh2bHVXZzl3NUx6ZUppbEhyb2JGX2Fqb0t3NkNFZkNzeUtDVmZ3YWVOTHJQV1daRWIteHJaRHdDMC10X1h0am5zSmxEb2hHLVpsak4tdE1EVGdfSGZQalVaQnl6cnZPcEhzWmVtTjhSMkRlZzhGMDRRckJVcHV0cFpoc1p0?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-04T15:58:30+00:00"
-   },
-   {
-    "title": "Microsoft reveals Azure earnings for the first time, adjusts financial reporting practices - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPY0dqeVI0OHNTWHVINHlNNUJKNzVCZHFqZERERHMtTXY2SkVFX2pMOHZ5WThtclppdFhESjRNbEtNeDFHYmZLc3RUNzRSblJSVnBWU1YyT212cTdpMnMyOXhrSGdmSEdvbUhyUDluOHlBN1EweTNOdm1kdjh1LUdzUFZKNW1BVXRic3lsMzBHSFpHYjY1a3JZZk5ENlRTR19WZENTT2RlSTlQa1dHdkJoWnNMdzVVRXludzFIVzNweFM0MUxwOENFenpKWF9RQQ?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-04T15:58:30+00:00"
-   },
-   {
-    "title": "SpaceXAI offers 50% Starlink discount to placate data center's residential neighbors; 2,000 have signed up — goodwill gesture comes amid vociferous community backlash - Tom's Hardware",
-    "link": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxPaG9WbjVac2ZCUVktNVRvS0d6VEFEaVE0OVlHRFd1d2RQbm1qNWxKaXlPZjE3dFpqVk13QldNcTByZC1wbFFXT2Vwa0k5cVVEemhLUWxvT1lhS1VIaWJzQnhWX3NnMFVIWWJOZHB3RTdxUFNwcFhWb1NSZEo5M1VYZF9GblJnRWIyT1B1cWtOUVJBcE1HVTZ2VGV4VjFJV3N0YldXdFlPeXJJb09YY0gyS014QjZNTHlMcmtVX013SzZ6QWZYQkxEOVJ1RUZ5aERyakVTbDc5Vmk2dUNMR3Y3WjZJY2N1eVdQSXdqTEQ2SG5fYUZPRkNkTTNmdXZVaUFPVDFYZHdxaGs0UmVTYjc5eUQxQjNUa0FVeVMzSEc1NUozRE52N2ZjekpmaFc2WlEycUY2SWhHckJRQnROYndQWllkOHZiejZpejN3Wk0tZkNPd2ZuZGFpRWE2eXJLZw?oc=5",
-    "source_name": "Tom's Hardware",
-    "source_url": "https://www.tomshardware.com",
-    "published": "2026-09-04T15:44:29+00:00"
-   },
-   {
-    "title": "Nscale signs $3.5bn compute agreement with robotics company Figure - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLWVHME12bk5UY3E0c05tZDdCN2ZiTnh4Y1B6UjN4aDlUalJTYUFIWE9wSFh1djNxT3dfcU1NeUs3VlBFY3lGRzF6V3MyU0N2S0RPU0JzWmVXR2VkUHpKVDRLeWFFU0dFWkwtRHRmZ0VOeFNGY1hkanhkcG83S2M2WE9TNGYwczc0N25sQWk1cE5KS0wxQWdNeHVvYTU3b1dWc2pwc29qT016dURx?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-04T14:53:29+00:00"
-   },
-   {
-    "title": "How AI data center outrage is becoming a bipartisan rallying cry in the midterm elections - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbDdJWnpQNDhTcHZ0TTJPWldfSUVGVkRfMXJ0UzhQNHRoZ3YtalJ4enZxd3lFUklfcWJYbHNZU0pNMGtGbnVsWlFPbkowTG9DTWxLRVVCTFhSRlJ3TjhYT1JZRHJDbU9Cc0xqWkx2QXVRYjZLY3U1Ylc1ZFFTdEhSdFUyUVU3VHUzZUhQRVRiUkhZVUJURE5IYTkyTVM0RGdNMEY0Y2VxTTZadmM?oc=5",
-    "source_name": "CNBC",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-09-04T13:47:42+00:00"
    }
   ],
   "queries": [
