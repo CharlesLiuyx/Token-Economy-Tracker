@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-10-14",
- "fetched_at": "2026-10-14T01:16:13+00:00",
+ "snapshot_date": "2026-10-15",
+ "fetched_at": "2026-10-15T00:34:12+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -4073,21 +4073,21 @@
     "site": "CoreWeave Norway",
     "date": "2025-07-27",
     "it_power_mw": 42.0,
-    "power_mw": 50.0,
+    "power_mw": 55.0,
     "h100_equivalents": 50773.11773623042
    },
    {
     "site": "CoreWeave Norway",
     "date": "2026-04-25",
     "it_power_mw": 42.0,
-    "power_mw": 50.0,
+    "power_mw": 55.0,
     "h100_equivalents": 50773.11773623042
    },
    {
     "site": "CoreWeave Norway",
     "date": "2026-08-15",
     "it_power_mw": 42.0,
-    "power_mw": 50.0,
+    "power_mw": 55.0,
     "h100_equivalents": 50773.11773623042
    },
    {
