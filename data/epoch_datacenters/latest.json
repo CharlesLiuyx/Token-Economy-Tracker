@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-10-15",
- "fetched_at": "2026-10-15T00:34:12+00:00",
+ "snapshot_date": "2026-10-16",
+ "fetched_at": "2026-10-16T00:27:42+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -3428,6 +3428,13 @@
    {
     "site": "Meta Los Lunas",
     "date": "2026-03-01",
+    "it_power_mw": 87.0,
+    "power_mw": 114.0,
+    "h100_equivalents": 99545.22486104093
+   },
+   {
+    "site": "Meta Los Lunas",
+    "date": "2026-07-28",
     "it_power_mw": 87.0,
     "power_mw": 114.0,
     "h100_equivalents": 99545.22486104093
