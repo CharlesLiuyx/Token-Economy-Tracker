@@ -1,0 +1,5214 @@
+{
+ "schema_version": 1,
+ "source": "epoch_datacenters",
+ "snapshot_date": "2026-10-18",
+ "fetched_at": "2026-10-18T00:05:31+00:00",
+ "source_meta": {
+  "kind": "official-download"
+ },
+ "payload": {
+  "sites": [
+   {
+    "name": "Colossus 2",
+    "h100_equivalents": 1111672.5618999496,
+    "power_mw": 946.0,
+    "capital_cost_busd": 35.836372,
+    "owner": "SpaceXAI",
+    "users": [
+     "Anthropic",
+     " Cursor",
+     " SpaceXAI"
+    ],
+    "chip_types": [
+     "B200",
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Microsoft Fairwater Atlanta",
+    "h100_equivalents": 768768.7220818596,
+    "power_mw": 636.0,
+    "capital_cost_busd": 24.092952,
+    "owner": "Microsoft",
+    "users": [
+     "OpenAI",
+     " Microsoft"
+    ],
+    "chip_types": [
+     "B200"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Anthropic-Amazon New Carlisle",
+    "h100_equivalents": 685912.076806468,
+    "power_mw": 910.0,
+    "capital_cost_busd": 34.47262,
+    "owner": "Amazon",
+    "users": [
+     "Anthropic"
+    ],
+    "chip_types": [
+     "Trainium2"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google Pryor (North)",
+    "h100_equivalents": 636685.1945426983,
+    "power_mw": 368.0,
+    "capital_cost_busd": 13.940576,
+    "owner": "Google",
+    "users": [
+     "Google DeepMind"
+    ],
+    "chip_types": [
+     "TPU v5p",
+     "TPU v5e"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "DayOne Nusajaya",
+    "h100_equivalents": 583836.7862556847,
+    "power_mw": 473.0,
+    "capital_cost_busd": 17.918186,
+    "owner": "",
+    "users": [],
+    "chip_types": [
+     "H100",
+     "B300"
+    ],
+    "country": "Malaysia"
+   },
+   {
+    "name": "Meta Prometheus",
+    "h100_equivalents": 536343.0015159171,
+    "power_mw": 471.0,
+    "capital_cost_busd": 17.842422,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "OpenAI Stargate Abilene",
+    "h100_equivalents": 509348.15563415864,
+    "power_mw": 421.0,
+    "capital_cost_busd": 15.948322,
+    "owner": "Oracle",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [
+     "B200",
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "DayOne Kempas",
+    "h100_equivalents": 480638.7064173825,
+    "power_mw": 421.691664,
+    "capital_cost_busd": 15.974523615648,
+    "owner": "",
+    "users": [],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "Malaysia"
+   },
+   {
+    "name": "Microsoft Fairwater Wisconsin",
+    "h100_equivalents": 445679.63617988885,
+    "power_mw": 369.0,
+    "capital_cost_busd": 13.978458,
+    "owner": "Microsoft",
+    "users": [
+     "OpenAI",
+     " Microsoft"
+    ],
+    "chip_types": [
+     "B200"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google Columbus",
+    "h100_equivalents": 331985.85144012125,
+    "power_mw": 303.0,
+    "capital_cost_busd": 11.478245999999999,
+    "owner": "Google",
+    "users": [
+     "Google DeepMind"
+    ],
+    "chip_types": [
+     "TPU v5e",
+     "TPU v5p",
+     "TPU v6e",
+     "TPU v7"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google New Albany",
+    "h100_equivalents": 323900.9600808489,
+    "power_mw": 333.0,
+    "capital_cost_busd": 12.614706,
+    "owner": "Google",
+    "users": [
+     "Google DeepMind"
+    ],
+    "chip_types": [
+     "TPU v5e",
+     "TPU v5p",
+     "TPU v6e"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google Mesa",
+    "h100_equivalents": 289540.17180394137,
+    "power_mw": 183.0,
+    "capital_cost_busd": 6.932405999999999,
+    "owner": "Google",
+    "users": [],
+    "chip_types": [
+     "TPU v6e",
+     "TPU v5p"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Colossus 1",
+    "h100_equivalents": 275795.85649317835,
+    "power_mw": 340.0,
+    "capital_cost_busd": 12.87988,
+    "owner": "SpaceXAI",
+    "users": [
+     "Anthropic"
+    ],
+    "chip_types": [
+     "H100",
+     "H200",
+     "B200"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google Council Bluffs (East)",
+    "h100_equivalents": 255684.68923698837,
+    "power_mw": 237.0,
+    "capital_cost_busd": 8.978034,
+    "owner": "Google",
+    "users": [
+     "Google DeepMind"
+    ],
+    "chip_types": [
+     "TPU v5e",
+     "TPU v6e",
+     "TPU v5p",
+     "TPU v7"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "CoreWeave Denton TX",
+    "h100_equivalents": 252652.85497726125,
+    "power_mw": 262.0,
+    "capital_cost_busd": 9.925084,
+    "owner": "CoreWeave",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [
+     "B200"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "QTS Richmond 1",
+    "h100_equivalents": 242546.7407781708,
+    "power_mw": 238.0,
+    "capital_cost_busd": 9.015915999999999,
+    "owner": "",
+    "users": [],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "Bridge Data Centres MY06",
+    "h100_equivalents": 221051.54118241536,
+    "power_mw": 243.0,
+    "capital_cost_busd": 9.205326,
+    "owner": "ByteDance",
+    "users": [
+     "ByteDance"
+    ],
+    "chip_types": [
+     "A100",
+     "H100",
+     "B200"
+    ],
+    "country": "Malaysia"
+   },
+   {
+    "name": "Meta Rosemount",
+    "h100_equivalents": 215675.11520970188,
+    "power_mw": 178.0,
+    "capital_cost_busd": 6.742996,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B200"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Amazon Madison Mega Site",
+    "h100_equivalents": 214348.14354550533,
+    "power_mw": 284.0,
+    "capital_cost_busd": 10.758488,
+    "owner": "Amazon",
+    "users": [
+     "Anthropic"
+    ],
+    "chip_types": [
+     "Trainium2"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google Bristow",
+    "h100_equivalents": 209860.53562405254,
+    "power_mw": 238.0,
+    "capital_cost_busd": 9.015915999999999,
+    "owner": "Google",
+    "users": [
+     "Google DeepMind"
+    ],
+    "chip_types": [
+     "TPU v5e",
+     "TPU v5p",
+     "TPU v6e",
+     "TPU v7"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Microsoft Goodyear",
+    "h100_equivalents": 205154.11824153614,
+    "power_mw": 202.0,
+    "capital_cost_busd": 7.652164000000001,
+    "owner": "Microsoft",
+    "users": [
+     "OpenAI",
+     " Microsoft"
+    ],
+    "chip_types": [
+     "H100",
+     "B200"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Meta Jeffersonville",
+    "h100_equivalents": 203132.89540171804,
+    "power_mw": 178.0,
+    "capital_cost_busd": 6.742996,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google Kansas City East",
+    "h100_equivalents": 202627.5896917635,
+    "power_mw": 105.0,
+    "capital_cost_busd": 3.9776099999999994,
+    "owner": "Google",
+    "users": [],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "Meta Temple",
+    "h100_equivalents": 202472.98777125112,
+    "power_mw": 178.0,
+    "capital_cost_busd": 6.742996,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "AWS New Albany",
+    "h100_equivalents": 201111.67256189996,
+    "power_mw": 213.0,
+    "capital_cost_busd": 8.068866,
+    "owner": "Amazon",
+    "users": [],
+    "chip_types": [
+     "Trainium2",
+     "H100",
+     "H200",
+     "B200"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google Omaha",
+    "h100_equivalents": 198585.14401212733,
+    "power_mw": 237.0,
+    "capital_cost_busd": 8.978034,
+    "owner": "Google",
+    "users": [
+     "Google DeepMind"
+    ],
+    "chip_types": [
+     "TPU v5e",
+     "TPU v5p",
+     "TPU v6e",
+     "TPU v7"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google Lincoln",
+    "h100_equivalents": 197574.53259221828,
+    "power_mw": 141.0,
+    "capital_cost_busd": 5.341361999999999,
+    "owner": "Google",
+    "users": [],
+    "chip_types": [
+     "TPU v6e",
+     "TPU v7"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "QTS Richmond 2",
+    "h100_equivalents": 182920.66700353715,
+    "power_mw": 180.0,
+    "capital_cost_busd": 6.818759999999999,
+    "owner": "",
+    "users": [],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "Google The Dalles",
+    "h100_equivalents": 175341.0813542193,
+    "power_mw": 154.0,
+    "capital_cost_busd": 5.8338280000000005,
+    "owner": "Google",
+    "users": [],
+    "chip_types": [
+     "TPU v6e",
+     "TPU v5p",
+     "TPU v5e",
+     "TPU v7"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "QTS Richmond 3",
+    "h100_equivalents": 174835.77564426477,
+    "power_mw": 144.0,
+    "capital_cost_busd": 5.455007999999999,
+    "owner": "",
+    "users": [],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "Meta Montgomery",
+    "h100_equivalents": 174517.43304699342,
+    "power_mw": 153.0,
+    "capital_cost_busd": 5.795946,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Meta Kuna",
+    "h100_equivalents": 173247.67205659422,
+    "power_mw": 152.0,
+    "capital_cost_busd": 5.758064,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Meta Cheyenne",
+    "h100_equivalents": 172814.5528044467,
+    "power_mw": 152.0,
+    "capital_cost_busd": 5.758064,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Amazon Ridgeland",
+    "h100_equivalents": 171298.6356745831,
+    "power_mw": 228.0,
+    "capital_cost_busd": 8.637096,
+    "owner": "Amazon",
+    "users": [
+     "Anthropic"
+    ],
+    "chip_types": [
+     "Trainium2"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Meta Huntsville",
+    "h100_equivalents": 166760.9903991915,
+    "power_mw": 146.0,
+    "capital_cost_busd": 5.530772,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Coreweave Helios",
+    "h100_equivalents": 159551.768236855,
+    "power_mw": 132.0,
+    "capital_cost_busd": 5.000424000000001,
+    "owner": "CoreWeave",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [
+     "B200"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Microsoft Project Osmium",
+    "h100_equivalents": 155634.15866599293,
+    "power_mw": 190.0,
+    "capital_cost_busd": 7.19758,
+    "owner": "Microsoft",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [
+     "A100",
+     "H100",
+     "B200"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Meta Eagle Mountain",
+    "h100_equivalents": 151354.21930267813,
+    "power_mw": 133.0,
+    "capital_cost_busd": 5.038306,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google Midlothian",
+    "h100_equivalents": 143580.85118746842,
+    "power_mw": 103.0,
+    "capital_cost_busd": 3.901846,
+    "owner": "Google",
+    "users": [],
+    "chip_types": [
+     "TPU v7",
+     "TPU v6e"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google Storey County",
+    "h100_equivalents": 133906.01313794847,
+    "power_mw": 161.0,
+    "capital_cost_busd": 6.0990020000000005,
+    "owner": "Google",
+    "users": [
+     "Google DeepMind"
+    ],
+    "chip_types": [
+     "TPU v5e",
+     "TPU v4",
+     "TPU v6e",
+     "TPU v5p"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google Lancaster",
+    "h100_equivalents": 130368.8731682668,
+    "power_mw": 137.0,
+    "capital_cost_busd": 5.189834,
+    "owner": "Google",
+    "users": [],
+    "chip_types": [
+     "TPU v5e",
+     "TPU v6e"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Meta-QTS Hillsboro 2",
+    "h100_equivalents": 123839.0,
+    "power_mw": 180.0,
+    "capital_cost_busd": 6.818759999999999,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "H100"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google Waltham Cross",
+    "h100_equivalents": 123799.89893885801,
+    "power_mw": 88.0,
+    "capital_cost_busd": 3.3336159999999997,
+    "owner": "Google",
+    "users": [
+     "Google DeepMind"
+    ],
+    "chip_types": [
+     "TPU v6e"
+    ],
+    "country": "United Kingdom"
+   },
+   {
+    "name": "VNET Bayin Ulanqab",
+    "h100_equivalents": 122789.28751894896,
+    "power_mw": 221.0,
+    "capital_cost_busd": 8.371922,
+    "owner": "VNET",
+    "users": [
+     "ByteDance"
+    ],
+    "chip_types": [
+     "Ascend 910C"
+    ],
+    "country": "China"
+   },
+   {
+    "name": "Google Arcola",
+    "h100_equivalents": 108135.42193026781,
+    "power_mw": 77.0,
+    "capital_cost_busd": 2.9169140000000002,
+    "owner": "Google",
+    "users": [],
+    "chip_types": [
+     "TPU v6e",
+     "TPU v7"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google Red Oak",
+    "h100_equivalents": 108135.42193026781,
+    "power_mw": 77.0,
+    "capital_cost_busd": 2.9169140000000002,
+    "owner": "Google",
+    "users": [],
+    "chip_types": [
+     "TPU v6e"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Google Papillion",
+    "h100_equivalents": 100555.83628094998,
+    "power_mw": 237.0,
+    "capital_cost_busd": 8.978034,
+    "owner": "Google",
+    "users": [
+     "Google DeepMind"
+    ],
+    "chip_types": [
+     "TPU v4",
+     "TPU v5e",
+     "TPU v5p"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Meta Gallatin",
+    "h100_equivalents": 99545.22486104093,
+    "power_mw": 87.0,
+    "capital_cost_busd": 3.2957339999999995,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Meta Los Lunas",
+    "h100_equivalents": 99545.22486104093,
+    "power_mw": 87.0,
+    "capital_cost_busd": 3.2957339999999995,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "CoreWeave Ellendale ND",
+    "h100_equivalents": 93481.55634158666,
+    "power_mw": 68.0,
+    "capital_cost_busd": 2.5759760000000003,
+    "owner": "CoreWeave",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [
+     "B200"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Meta Sarpy",
+    "h100_equivalents": 91965.63921172309,
+    "power_mw": 80.0,
+    "capital_cost_busd": 3.03056,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Huawei Horinger",
+    "h100_equivalents": 89439.11066195049,
+    "power_mw": 184.3,
+    "capital_cost_busd": 6.9816526,
+    "owner": "Huawei",
+    "users": [],
+    "chip_types": [
+     "Ascend 910C"
+    ],
+    "country": "China"
+   },
+   {
+    "name": "CoreWeave Chester VA",
+    "h100_equivalents": 88428.49924204143,
+    "power_mw": 82.0,
+    "capital_cost_busd": 3.106324,
+    "owner": "CoreWeave",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [
+     "H100",
+     "B200"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Oracle Batam",
+    "h100_equivalents": 84386.05356240526,
+    "power_mw": 72.0,
+    "capital_cost_busd": 2.7275039999999997,
+    "owner": "Oracle",
+    "users": [
+     "Tencent"
+    ],
+    "chip_types": [
+     "B200",
+     "B300"
+    ],
+    "country": "Indonesia"
+   },
+   {
+    "name": "AWS Berwick",
+    "h100_equivalents": 81354.21930267812,
+    "power_mw": 108.0,
+    "capital_cost_busd": 4.091256,
+    "owner": "Amazon",
+    "users": [
+     "Anthropic"
+    ],
+    "chip_types": [
+     "Trainium2"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "CoreWeave Marble NC",
+    "h100_equivalents": 78827.6907529055,
+    "power_mw": 65.0,
+    "capital_cost_busd": 2.46233,
+    "owner": "CoreWeave",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [
+     "B200"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Meta Aiken",
+    "h100_equivalents": 78322.38504295099,
+    "power_mw": 69.0,
+    "capital_cost_busd": 2.613858,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Huawei Wuhu",
+    "h100_equivalents": 76326.42748863062,
+    "power_mw": 157.0,
+    "capital_cost_busd": 5.947474,
+    "owner": "Huawei",
+    "users": [],
+    "chip_types": [
+     "Ascend 910C"
+    ],
+    "country": "China"
+   },
+   {
+    "name": "Core42 Lake Mariner",
+    "h100_equivalents": 71753.4108135422,
+    "power_mw": 58.0,
+    "capital_cost_busd": 2.197156,
+    "owner": "Core42",
+    "users": [
+     "G42"
+    ],
+    "chip_types": [
+     "B200"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Microsoft SAT40",
+    "h100_equivalents": 64679.13087417888,
+    "power_mw": 75.0,
+    "capital_cost_busd": 2.84115,
+    "owner": "Microsoft",
+    "users": [],
+    "chip_types": [
+     "H100",
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "STACK Infrastructure NVA02",
+    "h100_equivalents": 61141.99090449722,
+    "power_mw": 85.0,
+    "capital_cost_busd": 3.21997,
+    "owner": "",
+    "users": [],
+    "chip_types": [
+     "H100"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Anthropic Lake Mariner",
+    "h100_equivalents": 58564.93178372915,
+    "power_mw": 42.0,
+    "capital_cost_busd": 1.5910440000000001,
+    "owner": "AI XPV Platform",
+    "users": [
+     "Anthropic"
+    ],
+    "chip_types": [
+     "TPU v7"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Microsoft-Nebius New Jersey",
+    "h100_equivalents": 56846.89236988378,
+    "power_mw": 50.0,
+    "capital_cost_busd": 1.8941,
+    "owner": "Nebius",
+    "users": [
+     "Microsoft"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "CoreWeave Norway",
+    "h100_equivalents": 50773.11773623042,
+    "power_mw": 42.0,
+    "capital_cost_busd": 1.5910440000000001,
+    "owner": "CoreWeave",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [
+     "B200"
+    ],
+    "country": "Norway"
+   },
+   {
+    "name": "Nebius Mantsala",
+    "h100_equivalents": 48527.92066700354,
+    "power_mw": 75.0,
+    "capital_cost_busd": 2.84115,
+    "owner": "Nebius",
+    "users": [
+     "Microsoft"
+    ],
+    "chip_types": [
+     "H100",
+     "B300",
+     "H200"
+    ],
+    "country": "Finland"
+   },
+   {
+    "name": "Southgate Melbourne",
+    "h100_equivalents": 46488.12531581607,
+    "power_mw": 41.0,
+    "capital_cost_busd": 1.553162,
+    "owner": "Firmus",
+    "users": [],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "Australia"
+   },
+   {
+    "name": "Stream Phoenix",
+    "h100_equivalents": 46134.4113188479,
+    "power_mw": 64.0,
+    "capital_cost_busd": 2.424448,
+    "owner": "",
+    "users": [],
+    "chip_types": [
+     "H100"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Microsoft SAT14",
+    "h100_equivalents": 45174.33046993431,
+    "power_mw": 47.0,
+    "capital_cost_busd": 1.7804540000000002,
+    "owner": "Microsoft",
+    "users": [],
+    "chip_types": [
+     "H100",
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Vantage TX1",
+    "h100_equivalents": 38706.417382516425,
+    "power_mw": 32.0,
+    "capital_cost_busd": 1.212224,
+    "owner": "",
+    "users": [],
+    "chip_types": [
+     "B200"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "CoreWeave Dalton 1 & 2",
+    "h100_equivalents": 32238.504295098533,
+    "power_mw": 28.0,
+    "capital_cost_busd": 1.060696,
+    "owner": "CoreWeave",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Alibaba Zhangbei",
+    "h100_equivalents": 31884.79029813037,
+    "power_mw": 169.0,
+    "capital_cost_busd": 6.402058,
+    "owner": "Alibaba",
+    "users": [
+     "Alibaba"
+    ],
+    "chip_types": [
+     "H20"
+    ],
+    "country": "China"
+   },
+   {
+    "name": "Start Campus Sines Data Campus",
+    "h100_equivalents": 31834.259727134915,
+    "power_mw": 33.0,
+    "capital_cost_busd": 1.2501060000000002,
+    "owner": "Nscale",
+    "users": [
+     "Microsoft"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "Portugal"
+   },
+   {
+    "name": "xAI QTS Atlanta",
+    "h100_equivalents": 11470.43961596766,
+    "power_mw": 17.32971,
+    "capital_cost_busd": 0.6564840742199999,
+    "owner": "SpaceXAI",
+    "users": [
+     "SpaceXAI"
+    ],
+    "chip_types": [
+     "H100",
+     "A100"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Nscale Keflavik",
+    "h100_equivalents": 5821.121778676099,
+    "power_mw": 5.11,
+    "capital_cost_busd": 0.19357702,
+    "owner": "Nscale",
+    "users": [],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "Iceland"
+   },
+   {
+    "name": "Anthropic Barber Lake",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Cipher Mining",
+    "users": [
+     "Anthropic"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "CoreWeave Lancaster Greenfield site",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "CoreWeave",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "CoreWeave Muskogee OK",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "CoreWeave",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "Crusoe Abilene Expansion",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Microsoft",
+    "users": [
+     "Microsoft"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "EcoDataCenter 2",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Mistral AI",
+    "users": [
+     "Mistral AI"
+    ],
+    "chip_types": [],
+    "country": "Sweden"
+   },
+   {
+    "name": "Goodnight",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Google",
+    "users": [
+     "Google DeepMind"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "Google Cedar Rapids",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Google",
+    "users": [
+     "Google DeepMind"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "Google Fort Wayne",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Google",
+    "users": [
+     "Google DeepMind"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "Meta Bowling Green",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "Meta Hyperion",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "Microsoft Narvik Norway",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Nscale",
+    "users": [
+     "Microsoft"
+    ],
+    "chip_types": [],
+    "country": "Norway"
+   },
+   {
+    "name": "OpenAI Stargate Lordstown",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Softbank",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "OpenAI Stargate Michigan",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Oracle",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "OpenAI Stargate Milam",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Softbank",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "OpenAI Stargate New Mexico",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Oracle",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "OpenAI Stargate Shackelford",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Oracle",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "OpenAI Stargate UAE",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "G42",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [],
+    "country": "United Arab Emirates"
+   },
+   {
+    "name": "OpenAI Stargate Wisconsin",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Oracle",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "QTS Cedar Rapids",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "",
+    "users": [],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "QTS Eagle Mountain",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   }
+  ],
+  "timelines": [
+   {
+    "site": "Colossus 2",
+    "date": "2025-02-28",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Colossus 2",
+    "date": "2025-09-08",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Colossus 2",
+    "date": "2025-10-19",
+    "it_power_mw": 239.0,
+    "power_mw": 323.0,
+    "h100_equivalents": 277918.1404749874
+   },
+   {
+    "site": "Colossus 2",
+    "date": "2026-01-13",
+    "it_power_mw": 239.0,
+    "power_mw": 323.0,
+    "h100_equivalents": 277918.1404749874
+   },
+   {
+    "site": "Colossus 2",
+    "date": "2026-04-06",
+    "it_power_mw": 490.0,
+    "power_mw": 661.0,
+    "h100_equivalents": 555836.2809499748
+   },
+   {
+    "site": "Colossus 2",
+    "date": "2026-06-15",
+    "it_power_mw": 946.0,
+    "power_mw": 1276.0,
+    "h100_equivalents": 1111672.5618999496
+   },
+   {
+    "site": "Colossus 2",
+    "date": "2027-02-25",
+    "it_power_mw": 1531.0,
+    "power_mw": 2065.0,
+    "h100_equivalents": 1824153.6129358262
+   },
+   {
+    "site": "Microsoft Fairwater Atlanta",
+    "date": "2023-04-09",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft Fairwater Atlanta",
+    "date": "2025-10-14",
+    "it_power_mw": 321.0,
+    "power_mw": 433.0,
+    "h100_equivalents": 387981.94436584134
+   },
+   {
+    "site": "Microsoft Fairwater Atlanta",
+    "date": "2026-02-13",
+    "it_power_mw": 321.0,
+    "power_mw": 433.0,
+    "h100_equivalents": 387981.94436584134
+   },
+   {
+    "site": "Microsoft Fairwater Atlanta",
+    "date": "2026-05-15",
+    "it_power_mw": 321.0,
+    "power_mw": 433.0,
+    "h100_equivalents": 387981.94436584134
+   },
+   {
+    "site": "Microsoft Fairwater Atlanta",
+    "date": "2026-06-14",
+    "it_power_mw": 636.0,
+    "power_mw": 859.0,
+    "h100_equivalents": 768768.7220818596
+   },
+   {
+    "site": "Anthropic-Amazon New Carlisle",
+    "date": "2024-02-09",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic-Amazon New Carlisle",
+    "date": "2024-06-10",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic-Amazon New Carlisle",
+    "date": "2025-05-10",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic-Amazon New Carlisle",
+    "date": "2025-06-23",
+    "it_power_mw": 398.0,
+    "power_mw": 478.0,
+    "h100_equivalents": 300151.59171298635
+   },
+   {
+    "site": "Anthropic-Amazon New Carlisle",
+    "date": "2025-09-26",
+    "it_power_mw": 398.0,
+    "power_mw": 478.0,
+    "h100_equivalents": 300151.59171298635
+   },
+   {
+    "site": "Anthropic-Amazon New Carlisle",
+    "date": "2025-10-17",
+    "it_power_mw": 398.0,
+    "power_mw": 478.0,
+    "h100_equivalents": 300151.59171298635
+   },
+   {
+    "site": "Anthropic-Amazon New Carlisle",
+    "date": "2025-12-23",
+    "it_power_mw": 626.0,
+    "power_mw": 751.0,
+    "h100_equivalents": 471450.2273875695
+   },
+   {
+    "site": "Anthropic-Amazon New Carlisle",
+    "date": "2026-02-09",
+    "it_power_mw": 626.0,
+    "power_mw": 751.0,
+    "h100_equivalents": 471450.2273875695
+   },
+   {
+    "site": "Anthropic-Amazon New Carlisle",
+    "date": "2026-03-23",
+    "it_power_mw": 910.0,
+    "power_mw": 1092.0,
+    "h100_equivalents": 685912.076806468
+   },
+   {
+    "site": "Anthropic-Amazon New Carlisle",
+    "date": "2026-06-03",
+    "it_power_mw": 910.0,
+    "power_mw": 1092.0,
+    "h100_equivalents": 685912.076806468
+   },
+   {
+    "site": "Anthropic-Amazon New Carlisle",
+    "date": "2026-10-19",
+    "it_power_mw": 1037.0,
+    "power_mw": 1244.0,
+    "h100_equivalents": 818428.4992420415
+   },
+   {
+    "site": "Anthropic-Amazon New Carlisle",
+    "date": "2028-03-17",
+    "it_power_mw": 1925.0,
+    "power_mw": 2310.0,
+    "h100_equivalents": 1746038.4032339565
+   },
+   {
+    "site": "Google Pryor (North)",
+    "date": "2024-07-19",
+    "it_power_mw": 53.0,
+    "power_mw": 63.0,
+    "h100_equivalents": 26376.958059626075
+   },
+   {
+    "site": "Google Pryor (North)",
+    "date": "2025-01-28",
+    "it_power_mw": 53.0,
+    "power_mw": 63.0,
+    "h100_equivalents": 26376.958059626075
+   },
+   {
+    "site": "Google Pryor (North)",
+    "date": "2025-10-19",
+    "it_power_mw": 53.0,
+    "power_mw": 63.0,
+    "h100_equivalents": 26376.958059626075
+   },
+   {
+    "site": "Google Pryor (North)",
+    "date": "2026-05-26",
+    "it_power_mw": 53.0,
+    "power_mw": 63.0,
+    "h100_equivalents": 26376.958059626075
+   },
+   {
+    "site": "Google Pryor (North)",
+    "date": "2026-09-06",
+    "it_power_mw": 368.0,
+    "power_mw": 442.0,
+    "h100_equivalents": 636685.1945426983
+   },
+   {
+    "site": "DayOne Nusajaya",
+    "date": "2023-10-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "DayOne Nusajaya",
+    "date": "2024-12-31",
+    "it_power_mw": 50.0,
+    "power_mw": 70.0,
+    "h100_equivalents": 34399.727134916626
+   },
+   {
+    "site": "DayOne Nusajaya",
+    "date": "2026-01-22",
+    "it_power_mw": 240.0,
+    "power_mw": 336.0,
+    "h100_equivalents": 281670.4396159676
+   },
+   {
+    "site": "DayOne Nusajaya",
+    "date": "2026-04-05",
+    "it_power_mw": 240.0,
+    "power_mw": 336.0,
+    "h100_equivalents": 281670.4396159676
+   },
+   {
+    "site": "DayOne Nusajaya",
+    "date": "2026-10-02",
+    "it_power_mw": 473.0,
+    "power_mw": 662.0,
+    "h100_equivalents": 583836.7862556847
+   },
+   {
+    "site": "Meta Prometheus",
+    "date": "2022-04-14",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Prometheus",
+    "date": "2025-06-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Prometheus",
+    "date": "2025-09-20",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Prometheus",
+    "date": "2025-10-14",
+    "it_power_mw": 76.0,
+    "power_mw": 99.0,
+    "h100_equivalents": 86623.83527033855
+   },
+   {
+    "site": "Meta Prometheus",
+    "date": "2026-01-18",
+    "it_power_mw": 368.0,
+    "power_mw": 478.0,
+    "h100_equivalents": 419441.73319858516
+   },
+   {
+    "site": "Meta Prometheus",
+    "date": "2026-03-12",
+    "it_power_mw": 368.0,
+    "power_mw": 478.0,
+    "h100_equivalents": 419441.73319858516
+   },
+   {
+    "site": "Meta Prometheus",
+    "date": "2026-05-18",
+    "it_power_mw": 368.0,
+    "power_mw": 478.0,
+    "h100_equivalents": 419441.73319858516
+   },
+   {
+    "site": "Meta Prometheus",
+    "date": "2026-08-31",
+    "it_power_mw": 471.0,
+    "power_mw": 612.0,
+    "h100_equivalents": 536343.0015159171
+   },
+   {
+    "site": "Meta Prometheus",
+    "date": "2026-11-30",
+    "it_power_mw": 676.0,
+    "power_mw": 878.0,
+    "h100_equivalents": 770145.528044467
+   },
+   {
+    "site": "Meta Prometheus",
+    "date": "2027-01-15",
+    "it_power_mw": 740.0,
+    "power_mw": 962.0,
+    "h100_equivalents": 843091.9151086408
+   },
+   {
+    "site": "Meta Prometheus",
+    "date": "2027-04-15",
+    "it_power_mw": 804.0,
+    "power_mw": 1045.0,
+    "h100_equivalents": 916038.3021728146
+   },
+   {
+    "site": "Meta Prometheus",
+    "date": "2027-07-14",
+    "it_power_mw": 868.0,
+    "power_mw": 1128.0,
+    "h100_equivalents": 988984.6892369884
+   },
+   {
+    "site": "Meta Prometheus",
+    "date": "2028-07-01",
+    "it_power_mw": 1022.0,
+    "power_mw": 1328.0,
+    "h100_equivalents": 1164336.5841334006
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2024-05-31",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2025-06-28",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2025-09-26",
+    "it_power_mw": 105.0,
+    "power_mw": 147.0,
+    "h100_equivalents": 127337.03890853966
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2025-12-24",
+    "it_power_mw": 211.0,
+    "power_mw": 295.0,
+    "h100_equivalents": 254674.07781707932
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-01-15",
+    "it_power_mw": 211.0,
+    "power_mw": 295.0,
+    "h100_equivalents": 254674.07781707932
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-03-24",
+    "it_power_mw": 211.0,
+    "power_mw": 295.0,
+    "h100_equivalents": 254674.07781707932
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-05-23",
+    "it_power_mw": 421.0,
+    "power_mw": 590.0,
+    "h100_equivalents": 509348.15563415864
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-07-28",
+    "it_power_mw": 421.0,
+    "power_mw": 590.0,
+    "h100_equivalents": 509348.15563415864
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-11-01",
+    "it_power_mw": 843.0,
+    "power_mw": 1180.0,
+    "h100_equivalents": 1018696.3112683173
+   },
+   {
+    "site": "DayOne Kempas",
+    "date": "2023-11-11",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "DayOne Kempas",
+    "date": "2025-09-15",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "DayOne Kempas",
+    "date": "2026-01-22",
+    "it_power_mw": 80.197707,
+    "power_mw": 112.2767898,
+    "h100_equivalents": 91408.28701364326
+   },
+   {
+    "site": "DayOne Kempas",
+    "date": "2026-06-01",
+    "it_power_mw": 223.248528,
+    "power_mw": 312.5479392,
+    "h100_equivalents": 254455.78575037897
+   },
+   {
+    "site": "DayOne Kempas",
+    "date": "2026-08-10",
+    "it_power_mw": 223.248528,
+    "power_mw": 312.5479392,
+    "h100_equivalents": 254455.78575037897
+   },
+   {
+    "site": "DayOne Kempas",
+    "date": "2026-09-01",
+    "it_power_mw": 322.470096,
+    "power_mw": 451.4581344,
+    "h100_equivalents": 367547.2460838808
+   },
+   {
+    "site": "DayOne Kempas",
+    "date": "2026-10-01",
+    "it_power_mw": 421.691664,
+    "power_mw": 590.3683296,
+    "h100_equivalents": 480638.7064173825
+   },
+   {
+    "site": "Microsoft Fairwater Wisconsin",
+    "date": "2023-07-14",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft Fairwater Wisconsin",
+    "date": "2025-09-26",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft Fairwater Wisconsin",
+    "date": "2026-01-28",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft Fairwater Wisconsin",
+    "date": "2026-04-16",
+    "it_power_mw": 369.0,
+    "power_mw": 442.0,
+    "h100_equivalents": 445679.63617988885
+   },
+   {
+    "site": "Microsoft Fairwater Wisconsin",
+    "date": "2026-05-15",
+    "it_power_mw": 369.0,
+    "power_mw": 442.0,
+    "h100_equivalents": 445679.63617988885
+   },
+   {
+    "site": "Microsoft Fairwater Wisconsin",
+    "date": "2027-02-20",
+    "it_power_mw": 737.0,
+    "power_mw": 885.0,
+    "h100_equivalents": 889338.0495199596
+   },
+   {
+    "site": "Microsoft Fairwater Wisconsin",
+    "date": "2028-05-13",
+    "it_power_mw": 2263.0,
+    "power_mw": 2715.0,
+    "h100_equivalents": 4527539.161192521
+   },
+   {
+    "site": "Google Columbus",
+    "date": "2021-10-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Columbus",
+    "date": "2023-07-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Columbus",
+    "date": "2024-04-01",
+    "it_power_mw": 65.0,
+    "power_mw": 78.0,
+    "h100_equivalents": 32794.34057604851
+   },
+   {
+    "site": "Google Columbus",
+    "date": "2025-03-01",
+    "it_power_mw": 130.0,
+    "power_mw": 156.0,
+    "h100_equivalents": 89944.416371905
+   },
+   {
+    "site": "Google Columbus",
+    "date": "2025-10-01",
+    "it_power_mw": 216.0,
+    "power_mw": 260.0,
+    "h100_equivalents": 211217.7867609904
+   },
+   {
+    "site": "Google Columbus",
+    "date": "2026-02-21",
+    "it_power_mw": 216.0,
+    "power_mw": 260.0,
+    "h100_equivalents": 211217.7867609904
+   },
+   {
+    "site": "Google Columbus",
+    "date": "2026-05-01",
+    "it_power_mw": 303.0,
+    "power_mw": 364.0,
+    "h100_equivalents": 331985.85144012125
+   },
+   {
+    "site": "Google Columbus",
+    "date": "2026-08-05",
+    "it_power_mw": 303.0,
+    "power_mw": 364.0,
+    "h100_equivalents": 331985.85144012125
+   },
+   {
+    "site": "Google Columbus",
+    "date": "2027-07-01",
+    "it_power_mw": 386.0,
+    "power_mw": 464.0,
+    "h100_equivalents": 576048.5093481556
+   },
+   {
+    "site": "Google New Albany",
+    "date": "2024-04-20",
+    "it_power_mw": 67.0,
+    "power_mw": 80.0,
+    "h100_equivalents": 33703.89085396665
+   },
+   {
+    "site": "Google New Albany",
+    "date": "2024-09-13",
+    "it_power_mw": 144.0,
+    "power_mw": 173.0,
+    "h100_equivalents": 72764.02223345124
+   },
+   {
+    "site": "Google New Albany",
+    "date": "2025-06-01",
+    "it_power_mw": 222.0,
+    "power_mw": 267.0,
+    "h100_equivalents": 167761.49570490146
+   },
+   {
+    "site": "Google New Albany",
+    "date": "2025-10-14",
+    "it_power_mw": 333.0,
+    "power_mw": 400.0,
+    "h100_equivalents": 323900.9600808489
+   },
+   {
+    "site": "Google New Albany",
+    "date": "2026-01-18",
+    "it_power_mw": 333.0,
+    "power_mw": 400.0,
+    "h100_equivalents": 323900.9600808489
+   },
+   {
+    "site": "Google New Albany",
+    "date": "2026-03-12",
+    "it_power_mw": 333.0,
+    "power_mw": 400.0,
+    "h100_equivalents": 323900.9600808489
+   },
+   {
+    "site": "Google New Albany",
+    "date": "2026-05-18",
+    "it_power_mw": 333.0,
+    "power_mw": 400.0,
+    "h100_equivalents": 323900.9600808489
+   },
+   {
+    "site": "Google Mesa",
+    "date": "2023-07-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Mesa",
+    "date": "2025-07-01",
+    "it_power_mw": 90.0,
+    "power_mw": 126.0,
+    "h100_equivalents": 110156.6447700859
+   },
+   {
+    "site": "Google Mesa",
+    "date": "2025-09-07",
+    "it_power_mw": 90.0,
+    "power_mw": 126.0,
+    "h100_equivalents": 110156.6447700859
+   },
+   {
+    "site": "Google Mesa",
+    "date": "2026-05-15",
+    "it_power_mw": 90.0,
+    "power_mw": 126.0,
+    "h100_equivalents": 110156.6447700859
+   },
+   {
+    "site": "Google Mesa",
+    "date": "2026-08-15",
+    "it_power_mw": 183.0,
+    "power_mw": 237.0,
+    "h100_equivalents": 289540.17180394137
+   },
+   {
+    "site": "Colossus 1",
+    "date": "2024-04-24",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Colossus 1",
+    "date": "2024-08-11",
+    "it_power_mw": 35.0,
+    "power_mw": 45.0,
+    "h100_equivalents": 25000.0
+   },
+   {
+    "site": "Colossus 1",
+    "date": "2024-09-02",
+    "it_power_mw": 139.0,
+    "power_mw": 181.0,
+    "h100_equivalents": 100000.0
+   },
+   {
+    "site": "Colossus 1",
+    "date": "2025-02-17",
+    "it_power_mw": 278.0,
+    "power_mw": 361.0,
+    "h100_equivalents": 200000.0
+   },
+   {
+    "site": "Colossus 1",
+    "date": "2025-03-06",
+    "it_power_mw": 278.0,
+    "power_mw": 361.0,
+    "h100_equivalents": null
+   },
+   {
+    "site": "Colossus 1",
+    "date": "2025-07-22",
+    "it_power_mw": 340.0,
+    "power_mw": 442.0,
+    "h100_equivalents": 275795.85649317835
+   },
+   {
+    "site": "Colossus 1",
+    "date": "2025-09-17",
+    "it_power_mw": 268.0,
+    "power_mw": 348.0,
+    "h100_equivalents": 209125.31581606873
+   },
+   {
+    "site": "Colossus 1",
+    "date": "2025-10-19",
+    "it_power_mw": 268.0,
+    "power_mw": 348.0,
+    "h100_equivalents": 209125.31581606873
+   },
+   {
+    "site": "Colossus 1",
+    "date": "2025-11-07",
+    "it_power_mw": 340.0,
+    "power_mw": 442.0,
+    "h100_equivalents": 275795.85649317835
+   },
+   {
+    "site": "Colossus 1",
+    "date": "2026-02-11",
+    "it_power_mw": 340.0,
+    "power_mw": 425.0,
+    "h100_equivalents": 275795.85649317835
+   },
+   {
+    "site": "Colossus 1",
+    "date": "2026-05-06",
+    "it_power_mw": 340.0,
+    "power_mw": 425.0,
+    "h100_equivalents": 275795.85649317835
+   },
+   {
+    "site": "Colossus 1",
+    "date": "2026-06-01",
+    "it_power_mw": 340.0,
+    "power_mw": 425.0,
+    "h100_equivalents": 275795.85649317835
+   },
+   {
+    "site": "Colossus 1",
+    "date": "2026-06-15",
+    "it_power_mw": 340.0,
+    "power_mw": 425.0,
+    "h100_equivalents": 275795.85649317835
+   },
+   {
+    "site": "Google Council Bluffs (East)",
+    "date": "2022-09-06",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Council Bluffs (East)",
+    "date": "2024-11-19",
+    "it_power_mw": 79.0,
+    "power_mw": 95.0,
+    "h100_equivalents": 48660.93986862052
+   },
+   {
+    "site": "Google Council Bluffs (East)",
+    "date": "2025-06-15",
+    "it_power_mw": 158.0,
+    "power_mw": 190.0,
+    "h100_equivalents": 145528.04446690247
+   },
+   {
+    "site": "Google Council Bluffs (East)",
+    "date": "2025-07-19",
+    "it_power_mw": 158.0,
+    "power_mw": 190.0,
+    "h100_equivalents": 145528.04446690247
+   },
+   {
+    "site": "Google Council Bluffs (East)",
+    "date": "2026-01-11",
+    "it_power_mw": 158.0,
+    "power_mw": 190.0,
+    "h100_equivalents": 145528.04446690247
+   },
+   {
+    "site": "Google Council Bluffs (East)",
+    "date": "2026-07-07",
+    "it_power_mw": 237.0,
+    "power_mw": 284.0,
+    "h100_equivalents": 255684.68923698837
+   },
+   {
+    "site": "CoreWeave Denton TX",
+    "date": "2024-11-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Denton TX",
+    "date": "2025-05-31",
+    "it_power_mw": 8.0,
+    "power_mw": 11.0,
+    "h100_equivalents": 7781.707933299646
+   },
+   {
+    "site": "CoreWeave Denton TX",
+    "date": "2025-12-31",
+    "it_power_mw": 67.0,
+    "power_mw": 94.0,
+    "h100_equivalents": 64679.13087417888
+   },
+   {
+    "site": "CoreWeave Denton TX",
+    "date": "2026-02-23",
+    "it_power_mw": 131.0,
+    "power_mw": 183.0,
+    "h100_equivalents": 126326.42748863062
+   },
+   {
+    "site": "CoreWeave Denton TX",
+    "date": "2026-03-02",
+    "it_power_mw": 131.0,
+    "power_mw": 183.0,
+    "h100_equivalents": 126326.42748863062
+   },
+   {
+    "site": "CoreWeave Denton TX",
+    "date": "2026-07-03",
+    "it_power_mw": 262.0,
+    "power_mw": 367.0,
+    "h100_equivalents": 252652.85497726125
+   },
+   {
+    "site": "CoreWeave Denton TX",
+    "date": "2026-09-01",
+    "it_power_mw": 262.0,
+    "power_mw": 367.0,
+    "h100_equivalents": 252652.85497726125
+   },
+   {
+    "site": "CoreWeave Denton TX",
+    "date": "2027-05-31",
+    "it_power_mw": 282.0,
+    "power_mw": 395.0,
+    "h100_equivalents": 271854.4719555331
+   },
+   {
+    "site": "QTS Richmond 1",
+    "date": "2023-10-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Richmond 1",
+    "date": "2023-11-02",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Richmond 1",
+    "date": "2024-01-29",
+    "it_power_mw": 47.0,
+    "power_mw": 66.0,
+    "h100_equivalents": 33855.482566953004
+   },
+   {
+    "site": "QTS Richmond 1",
+    "date": "2024-06-23",
+    "it_power_mw": 94.0,
+    "power_mw": 132.0,
+    "h100_equivalents": 67710.96513390601
+   },
+   {
+    "site": "QTS Richmond 1",
+    "date": "2025-02-04",
+    "it_power_mw": 142.0,
+    "power_mw": 199.0,
+    "h100_equivalents": 125821.1217786761
+   },
+   {
+    "site": "QTS Richmond 1",
+    "date": "2025-06-03",
+    "it_power_mw": 190.0,
+    "power_mw": 266.0,
+    "h100_equivalents": 183931.27842344617
+   },
+   {
+    "site": "QTS Richmond 1",
+    "date": "2025-11-19",
+    "it_power_mw": 238.0,
+    "power_mw": 333.0,
+    "h100_equivalents": 242546.7407781708
+   },
+   {
+    "site": "QTS Richmond 1",
+    "date": "2025-12-31",
+    "it_power_mw": 238.0,
+    "power_mw": 333.0,
+    "h100_equivalents": 242546.7407781708
+   },
+   {
+    "site": "QTS Richmond 1",
+    "date": "2026-02-13",
+    "it_power_mw": 238.0,
+    "power_mw": 333.0,
+    "h100_equivalents": 242546.7407781708
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2021-10-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2022-12-31",
+    "it_power_mw": 19.0,
+    "power_mw": 25.0,
+    "h100_equivalents": 6467.913087417888
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2023-03-01",
+    "it_power_mw": 19.0,
+    "power_mw": 25.0,
+    "h100_equivalents": 6467.913087417888
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2023-05-30",
+    "it_power_mw": 61.0,
+    "power_mw": 79.0,
+    "h100_equivalents": 20765.386558868115
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2024-11-05",
+    "it_power_mw": 114.0,
+    "power_mw": 148.0,
+    "h100_equivalents": 65485.093481556345
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2025-02-09",
+    "it_power_mw": 114.0,
+    "power_mw": 148.0,
+    "h100_equivalents": 65485.093481556345
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2025-05-25",
+    "it_power_mw": 243.0,
+    "power_mw": 315.0,
+    "h100_equivalents": 221051.54118241536
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2025-09-23",
+    "it_power_mw": 243.0,
+    "power_mw": 315.0,
+    "h100_equivalents": 221051.54118241536
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2026-03-03",
+    "it_power_mw": 243.0,
+    "power_mw": 315.0,
+    "h100_equivalents": 221051.54118241536
+   },
+   {
+    "site": "Bridge Data Centres MY06",
+    "date": "2026-09-13",
+    "it_power_mw": 243.0,
+    "power_mw": 315.0,
+    "h100_equivalents": 221051.54118241536
+   },
+   {
+    "site": "Meta Rosemount",
+    "date": "2024-05-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Rosemount",
+    "date": "2026-03-21",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Rosemount",
+    "date": "2026-06-19",
+    "it_power_mw": 178.0,
+    "power_mw": 241.0,
+    "h100_equivalents": 215675.11520970188
+   },
+   {
+    "site": "Amazon Madison Mega Site",
+    "date": "2023-10-02",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Amazon Madison Mega Site",
+    "date": "2025-03-11",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Amazon Madison Mega Site",
+    "date": "2025-06-23",
+    "it_power_mw": 284.0,
+    "power_mw": 341.0,
+    "h100_equivalents": 214348.14354550533
+   },
+   {
+    "site": "Amazon Madison Mega Site",
+    "date": "2025-10-04",
+    "it_power_mw": 284.0,
+    "power_mw": 341.0,
+    "h100_equivalents": 214348.14354550533
+   },
+   {
+    "site": "Amazon Madison Mega Site",
+    "date": "2026-06-04",
+    "it_power_mw": 284.0,
+    "power_mw": 341.0,
+    "h100_equivalents": 214348.14354550533
+   },
+   {
+    "site": "Amazon Madison Mega Site",
+    "date": "2027-03-01",
+    "it_power_mw": 284.0,
+    "power_mw": 478.0,
+    "h100_equivalents": 300087.4009637075
+   },
+   {
+    "site": "Amazon Madison Mega Site",
+    "date": "2028-03-15",
+    "it_power_mw": 683.0,
+    "power_mw": 819.0,
+    "h100_equivalents": 514435.54450921173
+   },
+   {
+    "site": "Google Bristow",
+    "date": "2021-07-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Bristow",
+    "date": "2024-04-29",
+    "it_power_mw": 87.0,
+    "power_mw": 104.0,
+    "h100_equivalents": 43895.6038403234
+   },
+   {
+    "site": "Google Bristow",
+    "date": "2025-04-29",
+    "it_power_mw": 174.0,
+    "power_mw": 208.0,
+    "h100_equivalents": 120248.61040929763
+   },
+   {
+    "site": "Google Bristow",
+    "date": "2026-05-20",
+    "it_power_mw": 238.0,
+    "power_mw": 286.0,
+    "h100_equivalents": 209860.53562405254
+   },
+   {
+    "site": "Microsoft Goodyear",
+    "date": "2021-06-21",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft Goodyear",
+    "date": "2023-04-24",
+    "it_power_mw": 40.0,
+    "power_mw": 53.0,
+    "h100_equivalents": 29156.13946437595
+   },
+   {
+    "site": "Microsoft Goodyear",
+    "date": "2025-01-16",
+    "it_power_mw": 81.0,
+    "power_mw": 105.0,
+    "h100_equivalents": 58110.15664477008
+   },
+   {
+    "site": "Microsoft Goodyear",
+    "date": "2025-09-01",
+    "it_power_mw": 202.0,
+    "power_mw": 263.0,
+    "h100_equivalents": 205154.11824153614
+   },
+   {
+    "site": "Microsoft Goodyear",
+    "date": "2025-11-12",
+    "it_power_mw": 202.0,
+    "power_mw": 263.0,
+    "h100_equivalents": 205154.11824153614
+   },
+   {
+    "site": "Microsoft Goodyear",
+    "date": "2026-04-27",
+    "it_power_mw": 202.0,
+    "power_mw": 263.0,
+    "h100_equivalents": 205154.11824153614
+   },
+   {
+    "site": "Meta Jeffersonville",
+    "date": "2024-02-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Jeffersonville",
+    "date": "2026-03-06",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Jeffersonville",
+    "date": "2026-06-04",
+    "it_power_mw": 178.0,
+    "power_mw": 241.0,
+    "h100_equivalents": 203132.89540171804
+   },
+   {
+    "site": "Google Kansas City East",
+    "date": "2024-01-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Kansas City East",
+    "date": "2024-03-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Kansas City East",
+    "date": "2024-10-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Kansas City East",
+    "date": "2025-07-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Kansas City East",
+    "date": "2025-11-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Kansas City East",
+    "date": "2026-04-16",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Kansas City East",
+    "date": "2026-08-01",
+    "it_power_mw": 105.0,
+    "power_mw": 126.0,
+    "h100_equivalents": 202627.5896917635
+   },
+   {
+    "site": "Meta Temple",
+    "date": "2022-04-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Temple",
+    "date": "2023-02-05",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Temple",
+    "date": "2023-04-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Temple",
+    "date": "2025-11-15",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Temple",
+    "date": "2025-12-09",
+    "it_power_mw": 152.0,
+    "power_mw": 198.0,
+    "h100_equivalents": 173247.6719844078
+   },
+   {
+    "site": "Meta Temple",
+    "date": "2026-02-24",
+    "it_power_mw": 152.0,
+    "power_mw": 198.0,
+    "h100_equivalents": 173247.6719844078
+   },
+   {
+    "site": "Meta Temple",
+    "date": "2026-09-30",
+    "it_power_mw": 178.0,
+    "power_mw": 231.0,
+    "h100_equivalents": 202472.98777125112
+   },
+   {
+    "site": "AWS New Albany",
+    "date": "2022-07-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "AWS New Albany",
+    "date": "2024-12-01",
+    "it_power_mw": 113.0,
+    "power_mw": 136.0,
+    "h100_equivalents": 92470.94492167761
+   },
+   {
+    "site": "AWS New Albany",
+    "date": "2026-03-12",
+    "it_power_mw": 213.0,
+    "power_mw": 255.0,
+    "h100_equivalents": 201111.67256189996
+   },
+   {
+    "site": "AWS New Albany",
+    "date": "2026-05-18",
+    "it_power_mw": 213.0,
+    "power_mw": 255.0,
+    "h100_equivalents": 201111.67256189996
+   },
+   {
+    "site": "AWS New Albany",
+    "date": "2027-07-01",
+    "it_power_mw": 338.0,
+    "power_mw": 405.0,
+    "h100_equivalents": 351692.77412834764
+   },
+   {
+    "site": "Google Omaha",
+    "date": "2021-11-25",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Omaha",
+    "date": "2024-04-08",
+    "it_power_mw": 79.0,
+    "power_mw": 95.0,
+    "h100_equivalents": 39868.62051541182
+   },
+   {
+    "site": "Google Omaha",
+    "date": "2024-07-29",
+    "it_power_mw": 79.0,
+    "power_mw": 95.0,
+    "h100_equivalents": 39868.62051541182
+   },
+   {
+    "site": "Google Omaha",
+    "date": "2024-11-19",
+    "it_power_mw": 158.0,
+    "power_mw": 189.0,
+    "h100_equivalents": 88428.49924204143
+   },
+   {
+    "site": "Google Omaha",
+    "date": "2025-03-16",
+    "it_power_mw": 158.0,
+    "power_mw": 189.0,
+    "h100_equivalents": 88428.49924204143
+   },
+   {
+    "site": "Google Omaha",
+    "date": "2025-04-21",
+    "it_power_mw": 158.0,
+    "power_mw": 189.0,
+    "h100_equivalents": 88428.49924204143
+   },
+   {
+    "site": "Google Omaha",
+    "date": "2025-10-21",
+    "it_power_mw": 158.0,
+    "power_mw": 189.0,
+    "h100_equivalents": 88428.49924204143
+   },
+   {
+    "site": "Google Omaha",
+    "date": "2026-05-15",
+    "it_power_mw": 158.0,
+    "power_mw": 189.0,
+    "h100_equivalents": 88428.49924204143
+   },
+   {
+    "site": "Google Omaha",
+    "date": "2026-06-30",
+    "it_power_mw": 237.0,
+    "power_mw": 284.0,
+    "h100_equivalents": 198585.14401212733
+   },
+   {
+    "site": "Google Omaha",
+    "date": "2028-01-23",
+    "it_power_mw": 316.0,
+    "power_mw": 379.0,
+    "h100_equivalents": 502779.18140474986
+   },
+   {
+    "site": "Google Omaha",
+    "date": "2028-07-23",
+    "it_power_mw": 395.0,
+    "power_mw": 474.0,
+    "h100_equivalents": 904497.2208185953
+   },
+   {
+    "site": "Google Lincoln",
+    "date": "2023-07-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Lincoln",
+    "date": "2025-10-23",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Lincoln",
+    "date": "2026-05-12",
+    "it_power_mw": 141.0,
+    "power_mw": 170.0,
+    "h100_equivalents": 197574.53259221828
+   },
+   {
+    "site": "Google Lincoln",
+    "date": "2027-10-01",
+    "it_power_mw": 283.0,
+    "power_mw": 339.0,
+    "h100_equivalents": 672056.5942395149
+   },
+   {
+    "site": "QTS Richmond 2",
+    "date": "2022-04-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Richmond 2",
+    "date": "2024-01-29",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Richmond 2",
+    "date": "2024-06-23",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Richmond 2",
+    "date": "2025-02-04",
+    "it_power_mw": 72.0,
+    "power_mw": 101.0,
+    "h100_equivalents": 52046.48812531582
+   },
+   {
+    "site": "QTS Richmond 2",
+    "date": "2025-11-19",
+    "it_power_mw": 72.0,
+    "power_mw": 101.0,
+    "h100_equivalents": 52046.48812531582
+   },
+   {
+    "site": "QTS Richmond 2",
+    "date": "2025-12-31",
+    "it_power_mw": 144.0,
+    "power_mw": 202.0,
+    "h100_equivalents": 138959.0702374937
+   },
+   {
+    "site": "QTS Richmond 2",
+    "date": "2026-02-13",
+    "it_power_mw": 144.0,
+    "power_mw": 202.0,
+    "h100_equivalents": 138959.0702374937
+   },
+   {
+    "site": "QTS Richmond 2",
+    "date": "2026-05-14",
+    "it_power_mw": 180.0,
+    "power_mw": 252.0,
+    "h100_equivalents": 182920.66700353715
+   },
+   {
+    "site": "Google The Dalles",
+    "date": "2023-05-21",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google The Dalles",
+    "date": "2025-03-07",
+    "it_power_mw": 77.0,
+    "power_mw": 93.0,
+    "h100_equivalents": 67710.96513390601
+   },
+   {
+    "site": "Google The Dalles",
+    "date": "2026-04-29",
+    "it_power_mw": 154.0,
+    "power_mw": 185.0,
+    "h100_equivalents": 175341.0813542193
+   },
+   {
+    "site": "QTS Richmond 3",
+    "date": "2024-04-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Richmond 3",
+    "date": "2025-02-04",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Richmond 3",
+    "date": "2025-11-19",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Richmond 3",
+    "date": "2025-12-31",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Richmond 3",
+    "date": "2026-02-13",
+    "it_power_mw": 48.0,
+    "power_mw": 67.0,
+    "h100_equivalents": 58110.15664477008
+   },
+   {
+    "site": "QTS Richmond 3",
+    "date": "2026-05-14",
+    "it_power_mw": 144.0,
+    "power_mw": 202.0,
+    "h100_equivalents": 174835.77564426477
+   },
+   {
+    "site": "QTS Richmond 3",
+    "date": "2027-02-13",
+    "it_power_mw": 240.0,
+    "power_mw": 336.0,
+    "h100_equivalents": 291056.08893380495
+   },
+   {
+    "site": "Meta Montgomery",
+    "date": "2024-03-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Montgomery",
+    "date": "2025-07-04",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Montgomery",
+    "date": "2026-03-20",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Montgomery",
+    "date": "2026-06-18",
+    "it_power_mw": 153.0,
+    "power_mw": 199.0,
+    "h100_equivalents": 174517.43304699342
+   },
+   {
+    "site": "Meta Montgomery",
+    "date": "2027-02-02",
+    "it_power_mw": 204.0,
+    "power_mw": 266.0,
+    "h100_equivalents": 232968.6710459828
+   },
+   {
+    "site": "Meta Montgomery",
+    "date": "2027-02-23",
+    "it_power_mw": 358.0,
+    "power_mw": 465.0,
+    "h100_equivalents": 407486.10409297625
+   },
+   {
+    "site": "Meta Kuna",
+    "date": "2022-07-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Kuna",
+    "date": "2026-03-15",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Kuna",
+    "date": "2026-06-01",
+    "it_power_mw": 152.0,
+    "power_mw": 198.0,
+    "h100_equivalents": 173247.67205659422
+   },
+   {
+    "site": "Meta Cheyenne",
+    "date": "2024-04-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Cheyenne",
+    "date": "2025-01-30",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Cheyenne",
+    "date": "2026-03-22",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Cheyenne",
+    "date": "2026-07-25",
+    "it_power_mw": 152.0,
+    "power_mw": 182.0,
+    "h100_equivalents": 172814.5528044467
+   },
+   {
+    "site": "Meta Cheyenne",
+    "date": "2027-02-15",
+    "it_power_mw": 207.0,
+    "power_mw": 249.0,
+    "h100_equivalents": 235977.766548762
+   },
+   {
+    "site": "Amazon Ridgeland",
+    "date": "2024-02-24",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Amazon Ridgeland",
+    "date": "2025-10-04",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Amazon Ridgeland",
+    "date": "2026-05-15",
+    "it_power_mw": 228.0,
+    "power_mw": 273.0,
+    "h100_equivalents": 171298.6356745831
+   },
+   {
+    "site": "Amazon Ridgeland",
+    "date": "2027-02-09",
+    "it_power_mw": 284.0,
+    "power_mw": 341.0,
+    "h100_equivalents": 214249.62102071755
+   },
+   {
+    "site": "Amazon Ridgeland",
+    "date": "2028-09-29",
+    "it_power_mw": 840.0,
+    "power_mw": 1008.0,
+    "h100_equivalents": 788276.907529055
+   },
+   {
+    "site": "Meta Huntsville",
+    "date": "2021-12-13",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Huntsville",
+    "date": "2025-03-03",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Huntsville",
+    "date": "2025-11-04",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Huntsville",
+    "date": "2026-02-02",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Huntsville",
+    "date": "2026-03-04",
+    "it_power_mw": 78.0,
+    "power_mw": 105.0,
+    "h100_equivalents": 88433.55229914098
+   },
+   {
+    "site": "Meta Huntsville",
+    "date": "2026-06-02",
+    "it_power_mw": 146.0,
+    "power_mw": 198.0,
+    "h100_equivalents": 166760.9903991915
+   },
+   {
+    "site": "Coreweave Helios",
+    "date": "2025-05-31",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Coreweave Helios",
+    "date": "2025-08-27",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Coreweave Helios",
+    "date": "2026-04-04",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Coreweave Helios",
+    "date": "2026-06-17",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Coreweave Helios",
+    "date": "2026-08-30",
+    "it_power_mw": 132.0,
+    "power_mw": 200.0,
+    "h100_equivalents": 159551.768236855
+   },
+   {
+    "site": "Coreweave Helios",
+    "date": "2028-01-01",
+    "it_power_mw": 396.0,
+    "power_mw": 600.0,
+    "h100_equivalents": 478655.30471056444
+   },
+   {
+    "site": "Coreweave Helios",
+    "date": "2029-01-01",
+    "it_power_mw": 528.0,
+    "power_mw": 800.0,
+    "h100_equivalents": 638207.072947418
+   },
+   {
+    "site": "Microsoft Project Osmium",
+    "date": "2018-12-18",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft Project Osmium",
+    "date": "2021-01-01",
+    "it_power_mw": 48.0,
+    "power_mw": 57.0,
+    "h100_equivalents": 7882.769075290551
+   },
+   {
+    "site": "Microsoft Project Osmium",
+    "date": "2023-06-30",
+    "it_power_mw": 95.0,
+    "power_mw": 114.0,
+    "h100_equivalents": 40576.048509348155
+   },
+   {
+    "site": "Microsoft Project Osmium",
+    "date": "2025-03-01",
+    "it_power_mw": 190.0,
+    "power_mw": 228.0,
+    "h100_equivalents": 155634.15866599293
+   },
+   {
+    "site": "Microsoft Project Osmium",
+    "date": "2025-10-08",
+    "it_power_mw": 190.0,
+    "power_mw": 228.0,
+    "h100_equivalents": 155634.15866599293
+   },
+   {
+    "site": "Microsoft Project Osmium",
+    "date": "2026-06-16",
+    "it_power_mw": 190.0,
+    "power_mw": 228.0,
+    "h100_equivalents": 155634.15866599293
+   },
+   {
+    "site": "Meta Eagle Mountain",
+    "date": "2023-10-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Eagle Mountain",
+    "date": "2025-09-08",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Eagle Mountain",
+    "date": "2025-12-07",
+    "it_power_mw": 133.0,
+    "power_mw": 179.0,
+    "h100_equivalents": 151354.21930267813
+   },
+   {
+    "site": "Meta Eagle Mountain",
+    "date": "2026-05-02",
+    "it_power_mw": 133.0,
+    "power_mw": 179.0,
+    "h100_equivalents": 151354.21930267813
+   },
+   {
+    "site": "Google Midlothian",
+    "date": "2023-11-28",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Midlothian",
+    "date": "2024-10-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Midlothian",
+    "date": "2026-04-19",
+    "it_power_mw": 69.0,
+    "power_mw": 82.0,
+    "h100_equivalents": 95743.48069732188
+   },
+   {
+    "site": "Google Midlothian",
+    "date": "2026-07-01",
+    "it_power_mw": 103.0,
+    "power_mw": 123.0,
+    "h100_equivalents": 143580.85118746842
+   },
+   {
+    "site": "Google Storey County",
+    "date": "2023-08-30",
+    "it_power_mw": 81.0,
+    "power_mw": 107.0,
+    "h100_equivalents": 35219.807983830215
+   },
+   {
+    "site": "Google Storey County",
+    "date": "2025-03-11",
+    "it_power_mw": 81.0,
+    "power_mw": 107.0,
+    "h100_equivalents": 35219.807983830215
+   },
+   {
+    "site": "Google Storey County",
+    "date": "2025-06-30",
+    "it_power_mw": 161.0,
+    "power_mw": 214.0,
+    "h100_equivalents": 133906.01313794847
+   },
+   {
+    "site": "Google Storey County",
+    "date": "2025-09-28",
+    "it_power_mw": 161.0,
+    "power_mw": 214.0,
+    "h100_equivalents": 133906.01313794847
+   },
+   {
+    "site": "Google Storey County",
+    "date": "2026-04-13",
+    "it_power_mw": 161.0,
+    "power_mw": 214.0,
+    "h100_equivalents": 133906.01313794847
+   },
+   {
+    "site": "Google Storey County",
+    "date": "2027-06-30",
+    "it_power_mw": 300.0,
+    "power_mw": 389.0,
+    "h100_equivalents": 540677.109651339
+   },
+   {
+    "site": "Google Lancaster",
+    "date": "2021-10-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Lancaster",
+    "date": "2024-01-01",
+    "it_power_mw": 68.0,
+    "power_mw": 82.0,
+    "h100_equivalents": 34663.97170288024
+   },
+   {
+    "site": "Google Lancaster",
+    "date": "2025-09-11",
+    "it_power_mw": 68.0,
+    "power_mw": 82.0,
+    "h100_equivalents": 34663.97170288024
+   },
+   {
+    "site": "Google Lancaster",
+    "date": "2025-10-31",
+    "it_power_mw": 137.0,
+    "power_mw": 164.0,
+    "h100_equivalents": 130368.8731682668
+   },
+   {
+    "site": "Google Lancaster",
+    "date": "2026-03-12",
+    "it_power_mw": 137.0,
+    "power_mw": 164.0,
+    "h100_equivalents": 130368.8731682668
+   },
+   {
+    "site": "Meta-QTS Hillsboro 2",
+    "date": "2021-04-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta-QTS Hillsboro 2",
+    "date": "2023-04-29",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta-QTS Hillsboro 2",
+    "date": "2023-08-02",
+    "it_power_mw": 45.0,
+    "power_mw": 61.0,
+    "h100_equivalents": 30959.750025265286
+   },
+   {
+    "site": "Meta-QTS Hillsboro 2",
+    "date": "2024-11-08",
+    "it_power_mw": 180.0,
+    "power_mw": 243.0,
+    "h100_equivalents": 123839.0
+   },
+   {
+    "site": "Meta-QTS Hillsboro 2",
+    "date": "2025-04-14",
+    "it_power_mw": 180.0,
+    "power_mw": 243.0,
+    "h100_equivalents": 123839.0
+   },
+   {
+    "site": "Meta-QTS Hillsboro 2",
+    "date": "2026-04-17",
+    "it_power_mw": 180.0,
+    "power_mw": 243.0,
+    "h100_equivalents": 123839.0
+   },
+   {
+    "site": "Google Waltham Cross",
+    "date": "2024-01-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Waltham Cross",
+    "date": "2025-09-01",
+    "it_power_mw": 88.0,
+    "power_mw": 124.0,
+    "h100_equivalents": 123799.89893885801
+   },
+   {
+    "site": "Google Waltham Cross",
+    "date": "2026-04-23",
+    "it_power_mw": 88.0,
+    "power_mw": 124.0,
+    "h100_equivalents": 123799.89893885801
+   },
+   {
+    "site": "VNET Bayin Ulanqab",
+    "date": "2024-03-15",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "VNET Bayin Ulanqab",
+    "date": "2025-02-05",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "VNET Bayin Ulanqab",
+    "date": "2025-07-01",
+    "it_power_mw": 38.0,
+    "power_mw": 43.0,
+    "h100_equivalents": 20970.186963112683
+   },
+   {
+    "site": "VNET Bayin Ulanqab",
+    "date": "2025-08-01",
+    "it_power_mw": 38.0,
+    "power_mw": 43.0,
+    "h100_equivalents": 20970.186963112683
+   },
+   {
+    "site": "VNET Bayin Ulanqab",
+    "date": "2025-11-01",
+    "it_power_mw": 171.0,
+    "power_mw": 194.0,
+    "h100_equivalents": 94492.1677614957
+   },
+   {
+    "site": "VNET Bayin Ulanqab",
+    "date": "2025-12-01",
+    "it_power_mw": 221.0,
+    "power_mw": 252.0,
+    "h100_equivalents": 122789.28751894896
+   },
+   {
+    "site": "VNET Bayin Ulanqab",
+    "date": "2026-03-05",
+    "it_power_mw": 221.0,
+    "power_mw": 252.0,
+    "h100_equivalents": 122789.28751894896
+   },
+   {
+    "site": "VNET Bayin Ulanqab",
+    "date": "2026-05-06",
+    "it_power_mw": 221.0,
+    "power_mw": 252.0,
+    "h100_equivalents": 122789.28751894896
+   },
+   {
+    "site": "VNET Bayin Ulanqab",
+    "date": "2027-09-01",
+    "it_power_mw": 700.0,
+    "power_mw": 798.0,
+    "h100_equivalents": 388074.78524507326
+   },
+   {
+    "site": "Google Arcola",
+    "date": "2024-10-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Arcola",
+    "date": "2025-09-08",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Arcola",
+    "date": "2026-04-09",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Arcola",
+    "date": "2026-06-16",
+    "it_power_mw": 77.0,
+    "power_mw": 93.0,
+    "h100_equivalents": 108135.42193026781
+   },
+   {
+    "site": "Google Red Oak",
+    "date": "2023-04-30",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Red Oak",
+    "date": "2025-08-25",
+    "it_power_mw": 77.0,
+    "power_mw": 93.0,
+    "h100_equivalents": 108135.42193026781
+   },
+   {
+    "site": "Google Red Oak",
+    "date": "2026-02-06",
+    "it_power_mw": 77.0,
+    "power_mw": 93.0,
+    "h100_equivalents": 108135.42193026781
+   },
+   {
+    "site": "Google Red Oak",
+    "date": "2026-12-01",
+    "it_power_mw": 154.0,
+    "power_mw": 185.0,
+    "h100_equivalents": 279434.0576048509
+   },
+   {
+    "site": "Google Papillion",
+    "date": "2020-03-04",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Papillion",
+    "date": "2022-10-16",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Papillion",
+    "date": "2023-01-23",
+    "it_power_mw": 79.0,
+    "power_mw": 95.0,
+    "h100_equivalents": 21424.962102071753
+   },
+   {
+    "site": "Google Papillion",
+    "date": "2024-02-15",
+    "it_power_mw": 79.0,
+    "power_mw": 95.0,
+    "h100_equivalents": 21424.962102071753
+   },
+   {
+    "site": "Google Papillion",
+    "date": "2024-08-03",
+    "it_power_mw": 237.0,
+    "power_mw": 284.0,
+    "h100_equivalents": 100555.83628094998
+   },
+   {
+    "site": "Google Papillion",
+    "date": "2025-11-03",
+    "it_power_mw": 237.0,
+    "power_mw": 284.0,
+    "h100_equivalents": 100555.83628094998
+   },
+   {
+    "site": "Google Papillion",
+    "date": "2026-05-04",
+    "it_power_mw": 237.0,
+    "power_mw": 284.0,
+    "h100_equivalents": 100555.83628094998
+   },
+   {
+    "site": "Meta Gallatin",
+    "date": "2023-09-11",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Gallatin",
+    "date": "2026-02-09",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Gallatin",
+    "date": "2026-08-24",
+    "it_power_mw": 87.0,
+    "power_mw": 114.0,
+    "h100_equivalents": 99545.22486104093
+   },
+   {
+    "site": "Meta Los Lunas",
+    "date": "2024-07-24",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Los Lunas",
+    "date": "2026-03-01",
+    "it_power_mw": 87.0,
+    "power_mw": 114.0,
+    "h100_equivalents": 99545.22486104093
+   },
+   {
+    "site": "Meta Los Lunas",
+    "date": "2026-07-28",
+    "it_power_mw": 87.0,
+    "power_mw": 114.0,
+    "h100_equivalents": 99545.22486104093
+   },
+   {
+    "site": "Meta Los Lunas",
+    "date": "2026-10-26",
+    "it_power_mw": 118.0,
+    "power_mw": 147.0,
+    "h100_equivalents": 133906.01313794847
+   },
+   {
+    "site": "Meta Los Lunas",
+    "date": "2028-01-01",
+    "it_power_mw": 218.0,
+    "power_mw": 273.0,
+    "h100_equivalents": 869125.8211217787
+   },
+   {
+    "site": "CoreWeave Ellendale ND",
+    "date": "2023-10-31",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Ellendale ND",
+    "date": "2025-05-28",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Ellendale ND",
+    "date": "2025-08-29",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Ellendale ND",
+    "date": "2025-10-27",
+    "it_power_mw": 50.0,
+    "power_mw": 65.0,
+    "h100_equivalents": 68721.57655381506
+   },
+   {
+    "site": "CoreWeave Ellendale ND",
+    "date": "2025-11-24",
+    "it_power_mw": 68.0,
+    "power_mw": 88.0,
+    "h100_equivalents": 93481.55634158666
+   },
+   {
+    "site": "CoreWeave Ellendale ND",
+    "date": "2026-03-27",
+    "it_power_mw": 68.0,
+    "power_mw": 88.0,
+    "h100_equivalents": 93481.55634158666
+   },
+   {
+    "site": "CoreWeave Ellendale ND",
+    "date": "2026-06-30",
+    "it_power_mw": 68.0,
+    "power_mw": 88.0,
+    "h100_equivalents": 93481.55634158666
+   },
+   {
+    "site": "CoreWeave Ellendale ND",
+    "date": "2026-12-31",
+    "it_power_mw": 88.0,
+    "power_mw": 114.0,
+    "h100_equivalents": 300151.59171298635
+   },
+   {
+    "site": "CoreWeave Ellendale ND",
+    "date": "2027-06-01",
+    "it_power_mw": 400.0,
+    "power_mw": 520.0,
+    "h100_equivalents": 505305.7099545225
+   },
+   {
+    "site": "Meta Sarpy",
+    "date": "2024-08-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Sarpy",
+    "date": "2026-05-04",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Sarpy",
+    "date": "2026-08-02",
+    "it_power_mw": 80.0,
+    "power_mw": 105.0,
+    "h100_equivalents": 91965.63921172309
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2023-10-08",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2025-02-24",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2025-04-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2025-06-01",
+    "it_power_mw": 36.1,
+    "power_mw": 41.5,
+    "h100_equivalents": 17532.64274886306
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2025-07-01",
+    "it_power_mw": 74.0,
+    "power_mw": 85.1,
+    "h100_equivalents": 35901.061141990904
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2026-02-01",
+    "it_power_mw": 113.6,
+    "power_mw": 130.6,
+    "h100_equivalents": 55096.513390601314
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2026-03-05",
+    "it_power_mw": 113.6,
+    "power_mw": 130.6,
+    "h100_equivalents": 55096.513390601314
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2026-05-12",
+    "it_power_mw": 113.6,
+    "power_mw": 130.6,
+    "h100_equivalents": 55096.513390601314
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2026-06-07",
+    "it_power_mw": 113.6,
+    "power_mw": 130.6,
+    "h100_equivalents": 55096.513390601314
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2026-07-01",
+    "it_power_mw": 184.3,
+    "power_mw": 212.0,
+    "h100_equivalents": 89439.11066195049
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2026-08-18",
+    "it_power_mw": 184.3,
+    "power_mw": 212.0,
+    "h100_equivalents": 89439.11066195049
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2028-02-14",
+    "it_power_mw": 346.4,
+    "power_mw": 414.6,
+    "h100_equivalents": 168107.6301162203
+   },
+   {
+    "site": "CoreWeave Chester VA",
+    "date": "2023-09-18",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Chester VA",
+    "date": "2024-01-31",
+    "it_power_mw": 18.0,
+    "power_mw": 25.0,
+    "h100_equivalents": 14805.45730166751
+   },
+   {
+    "site": "CoreWeave Chester VA",
+    "date": "2024-04-30",
+    "it_power_mw": 27.0,
+    "power_mw": 38.0,
+    "h100_equivalents": 22081.85952501263
+   },
+   {
+    "site": "CoreWeave Chester VA",
+    "date": "2025-01-22",
+    "it_power_mw": 27.0,
+    "power_mw": 38.0,
+    "h100_equivalents": 22081.85952501263
+   },
+   {
+    "site": "CoreWeave Chester VA",
+    "date": "2026-05-20",
+    "it_power_mw": 82.0,
+    "power_mw": 114.0,
+    "h100_equivalents": 88428.49924204143
+   },
+   {
+    "site": "CoreWeave Chester VA",
+    "date": "2027-06-30",
+    "it_power_mw": 113.0,
+    "power_mw": 197.0,
+    "h100_equivalents": 125821.1217786761
+   },
+   {
+    "site": "Oracle Batam",
+    "date": "2022-07-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Oracle Batam",
+    "date": "2025-05-15",
+    "it_power_mw": 33.0,
+    "power_mw": 43.0,
+    "h100_equivalents": 40424.456796361796
+   },
+   {
+    "site": "Oracle Batam",
+    "date": "2025-06-13",
+    "it_power_mw": 33.0,
+    "power_mw": 43.0,
+    "h100_equivalents": 40424.456796361796
+   },
+   {
+    "site": "Oracle Batam",
+    "date": "2025-10-01",
+    "it_power_mw": 33.0,
+    "power_mw": 43.0,
+    "h100_equivalents": 40424.456796361796
+   },
+   {
+    "site": "Oracle Batam",
+    "date": "2026-03-19",
+    "it_power_mw": 33.0,
+    "power_mw": 43.0,
+    "h100_equivalents": 40424.456796361796
+   },
+   {
+    "site": "Oracle Batam",
+    "date": "2026-04-17",
+    "it_power_mw": 72.0,
+    "power_mw": 94.0,
+    "h100_equivalents": 84386.05356240526
+   },
+   {
+    "site": "Oracle Batam",
+    "date": "2026-05-06",
+    "it_power_mw": 72.0,
+    "power_mw": 94.0,
+    "h100_equivalents": 84386.05356240526
+   },
+   {
+    "site": "AWS Berwick",
+    "date": "2021-07-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "AWS Berwick",
+    "date": "2023-01-17",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "AWS Berwick",
+    "date": "2024-03-04",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "AWS Berwick",
+    "date": "2024-06-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "AWS Berwick",
+    "date": "2025-09-09",
+    "it_power_mw": 47.0,
+    "power_mw": 66.0,
+    "h100_equivalents": 35320.86912582112
+   },
+   {
+    "site": "AWS Berwick",
+    "date": "2026-01-07",
+    "it_power_mw": 77.0,
+    "power_mw": 102.0,
+    "h100_equivalents": 58110.15664477008
+   },
+   {
+    "site": "AWS Berwick",
+    "date": "2026-03-12",
+    "it_power_mw": 77.0,
+    "power_mw": 102.0,
+    "h100_equivalents": 58110.15664477008
+   },
+   {
+    "site": "AWS Berwick",
+    "date": "2026-05-05",
+    "it_power_mw": 77.0,
+    "power_mw": 102.0,
+    "h100_equivalents": 58110.15664477008
+   },
+   {
+    "site": "AWS Berwick",
+    "date": "2026-08-01",
+    "it_power_mw": 108.0,
+    "power_mw": 139.0,
+    "h100_equivalents": 81354.21930267812
+   },
+   {
+    "site": "AWS Berwick",
+    "date": "2027-08-01",
+    "it_power_mw": 169.0,
+    "power_mw": 212.0,
+    "h100_equivalents": 145022.73875694795
+   },
+   {
+    "site": "CoreWeave Marble NC",
+    "date": "2024-06-25",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Marble NC",
+    "date": "2026-03-13",
+    "it_power_mw": 36.0,
+    "power_mw": 50.4,
+    "h100_equivalents": 43456.291056088936
+   },
+   {
+    "site": "CoreWeave Marble NC",
+    "date": "2026-04-17",
+    "it_power_mw": 36.0,
+    "power_mw": 50.4,
+    "h100_equivalents": 43456.291056088936
+   },
+   {
+    "site": "CoreWeave Marble NC",
+    "date": "2026-05-06",
+    "it_power_mw": 65.0,
+    "power_mw": 91.0,
+    "h100_equivalents": 78827.6907529055
+   },
+   {
+    "site": "Meta Aiken",
+    "date": "2024-05-30",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Aiken",
+    "date": "2026-04-08",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Aiken",
+    "date": "2026-08-07",
+    "it_power_mw": 69.0,
+    "power_mw": 90.0,
+    "h100_equivalents": 78322.38504295099
+   },
+   {
+    "site": "Meta Aiken",
+    "date": "2026-11-05",
+    "it_power_mw": 129.0,
+    "power_mw": 168.0,
+    "h100_equivalents": 147043.96159676605
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2023-01-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2025-01-01",
+    "it_power_mw": 45.0,
+    "power_mw": 51.0,
+    "h100_equivalents": 21628.954017180393
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2025-03-01",
+    "it_power_mw": 119.0,
+    "power_mw": 137.0,
+    "h100_equivalents": 57767.55937342092
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2025-11-01",
+    "it_power_mw": 157.0,
+    "power_mw": 181.0,
+    "h100_equivalents": 76326.42748863062
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-01-24",
+    "it_power_mw": 157.0,
+    "power_mw": 181.0,
+    "h100_equivalents": 76326.42748863062
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-06-01",
+    "it_power_mw": 157.0,
+    "power_mw": 181.0,
+    "h100_equivalents": 76326.42748863062
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-08-06",
+    "it_power_mw": 157.0,
+    "power_mw": 181.0,
+    "h100_equivalents": 76326.42748863062
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-11-01",
+    "it_power_mw": 199.0,
+    "power_mw": 229.0,
+    "h100_equivalents": 96537.64527539161
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-12-31",
+    "it_power_mw": 364.0,
+    "power_mw": 419.0,
+    "h100_equivalents": 176595.25012632643
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2027-12-01",
+    "it_power_mw": 457.0,
+    "power_mw": 526.0,
+    "h100_equivalents": 221923.6988377969
+   },
+   {
+    "site": "Core42 Lake Mariner",
+    "date": "2024-10-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Core42 Lake Mariner",
+    "date": "2025-10-01",
+    "it_power_mw": 16.0,
+    "power_mw": 19.0,
+    "h100_equivalents": 19858.514401212735
+   },
+   {
+    "site": "Core42 Lake Mariner",
+    "date": "2026-03-02",
+    "it_power_mw": 16.0,
+    "power_mw": 19.0,
+    "h100_equivalents": 19858.514401212735
+   },
+   {
+    "site": "Core42 Lake Mariner",
+    "date": "2026-03-31",
+    "it_power_mw": 58.0,
+    "power_mw": 58.0,
+    "h100_equivalents": 71753.4108135422
+   },
+   {
+    "site": "Core42 Lake Mariner",
+    "date": "2026-07-23",
+    "it_power_mw": 58.0,
+    "power_mw": 58.0,
+    "h100_equivalents": 71753.4108135422
+   },
+   {
+    "site": "Microsoft SAT40",
+    "date": "2018-12-28",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft SAT40",
+    "date": "2024-05-24",
+    "it_power_mw": 47.0,
+    "power_mw": 66.0,
+    "h100_equivalents": 32390.096008084893
+   },
+   {
+    "site": "Microsoft SAT40",
+    "date": "2025-12-01",
+    "it_power_mw": 75.0,
+    "power_mw": 106.0,
+    "h100_equivalents": 64679.13087417888
+   },
+   {
+    "site": "Microsoft SAT40",
+    "date": "2026-02-04",
+    "it_power_mw": 75.0,
+    "power_mw": 106.0,
+    "h100_equivalents": 64679.13087417888
+   },
+   {
+    "site": "STACK Infrastructure NVA02",
+    "date": "2019-10-19",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "STACK Infrastructure NVA02",
+    "date": "2024-10-01",
+    "it_power_mw": 85.0,
+    "power_mw": 118.0,
+    "h100_equivalents": 61141.99090449722
+   },
+   {
+    "site": "STACK Infrastructure NVA02",
+    "date": "2026-02-14",
+    "it_power_mw": 85.0,
+    "power_mw": 118.0,
+    "h100_equivalents": 61141.99090449722
+   },
+   {
+    "site": "STACK Infrastructure NVA02",
+    "date": "2028-01-01",
+    "it_power_mw": 348.0,
+    "power_mw": 487.0,
+    "h100_equivalents": 250631.63213744314
+   },
+   {
+    "site": "Anthropic Lake Mariner",
+    "date": "2025-06-11",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic Lake Mariner",
+    "date": "2026-03-02",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic Lake Mariner",
+    "date": "2026-05-31",
+    "it_power_mw": 42.0,
+    "power_mw": 49.0,
+    "h100_equivalents": 58564.93178372915
+   },
+   {
+    "site": "Anthropic Lake Mariner",
+    "date": "2026-07-23",
+    "it_power_mw": 42.0,
+    "power_mw": 49.0,
+    "h100_equivalents": 58564.93178372915
+   },
+   {
+    "site": "Anthropic Lake Mariner",
+    "date": "2026-10-31",
+    "it_power_mw": 210.0,
+    "power_mw": 245.0,
+    "h100_equivalents": 292829.71197574533
+   },
+   {
+    "site": "Anthropic Lake Mariner",
+    "date": "2027-03-31",
+    "it_power_mw": 378.0,
+    "power_mw": 441.0,
+    "h100_equivalents": 527084.3860535624
+   },
+   {
+    "site": "Microsoft-Nebius New Jersey",
+    "date": "2024-05-31",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": null
+   },
+   {
+    "site": "Microsoft-Nebius New Jersey",
+    "date": "2025-12-15",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft-Nebius New Jersey",
+    "date": "2026-04-15",
+    "it_power_mw": 50.0,
+    "power_mw": 70.0,
+    "h100_equivalents": 56846.89236988378
+   },
+   {
+    "site": "Microsoft-Nebius New Jersey",
+    "date": "2026-07-12",
+    "it_power_mw": 50.0,
+    "power_mw": 70.0,
+    "h100_equivalents": 56846.89236988378
+   },
+   {
+    "site": "CoreWeave Norway",
+    "date": "2024-01-23",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Norway",
+    "date": "2025-07-27",
+    "it_power_mw": 42.0,
+    "power_mw": 55.0,
+    "h100_equivalents": 50773.11773623042
+   },
+   {
+    "site": "CoreWeave Norway",
+    "date": "2026-04-25",
+    "it_power_mw": 42.0,
+    "power_mw": 55.0,
+    "h100_equivalents": 50773.11773623042
+   },
+   {
+    "site": "CoreWeave Norway",
+    "date": "2026-08-15",
+    "it_power_mw": 42.0,
+    "power_mw": 55.0,
+    "h100_equivalents": 50773.11773623042
+   },
+   {
+    "site": "Nebius Mantsala",
+    "date": "2024-10-08",
+    "it_power_mw": 40.0,
+    "power_mw": 48.0,
+    "h100_equivalents": 25284.0
+   },
+   {
+    "site": "Nebius Mantsala",
+    "date": "2025-11-14",
+    "it_power_mw": 40.0,
+    "power_mw": 48.0,
+    "h100_equivalents": 25284.0
+   },
+   {
+    "site": "Nebius Mantsala",
+    "date": "2026-03-31",
+    "it_power_mw": 75.0,
+    "power_mw": 90.0,
+    "h100_equivalents": 48527.92066700354
+   },
+   {
+    "site": "Nebius Mantsala",
+    "date": "2026-06-29",
+    "it_power_mw": 75.0,
+    "power_mw": 90.0,
+    "h100_equivalents": 48527.92066700354
+   },
+   {
+    "site": "Nebius Mantsala",
+    "date": "2027-12-31",
+    "it_power_mw": 145.0,
+    "power_mw": 196.0,
+    "h100_equivalents": 226233.83274381
+   },
+   {
+    "site": "Southgate Melbourne",
+    "date": "2022-12-26",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Southgate Melbourne",
+    "date": "2025-10-28",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Southgate Melbourne",
+    "date": "2026-05-11",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Southgate Melbourne",
+    "date": "2026-08-09",
+    "it_power_mw": 41.0,
+    "power_mw": 57.0,
+    "h100_equivalents": 46488.12531581607
+   },
+   {
+    "site": "Stream Phoenix",
+    "date": "2022-10-30",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Stream Phoenix",
+    "date": "2026-01-31",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Stream Phoenix",
+    "date": "2026-05-01",
+    "it_power_mw": 64.0,
+    "power_mw": 77.0,
+    "h100_equivalents": 46134.4113188479
+   },
+   {
+    "site": "Stream Phoenix",
+    "date": "2030-01-01",
+    "it_power_mw": 220.0,
+    "power_mw": 267.0,
+    "h100_equivalents": 160181.91005558363
+   },
+   {
+    "site": "Microsoft SAT14",
+    "date": "2022-02-18",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft SAT14",
+    "date": "2024-07-01",
+    "it_power_mw": 19.0,
+    "power_mw": 26.0,
+    "h100_equivalents": 12986.356745831228
+   },
+   {
+    "site": "Microsoft SAT14",
+    "date": "2025-08-03",
+    "it_power_mw": 19.0,
+    "power_mw": 26.0,
+    "h100_equivalents": 12986.356745831228
+   },
+   {
+    "site": "Microsoft SAT14",
+    "date": "2026-02-28",
+    "it_power_mw": 19.0,
+    "power_mw": 26.0,
+    "h100_equivalents": 12986.356745831228
+   },
+   {
+    "site": "Microsoft SAT14",
+    "date": "2026-03-31",
+    "it_power_mw": 47.0,
+    "power_mw": 66.0,
+    "h100_equivalents": 45174.33046993431
+   },
+   {
+    "site": "Vantage TX1",
+    "date": "2023-12-15",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Vantage TX1",
+    "date": "2026-02-15",
+    "it_power_mw": 32.0,
+    "power_mw": 44.8,
+    "h100_equivalents": 38706.417382516425
+   },
+   {
+    "site": "Vantage TX1",
+    "date": "2027-08-31",
+    "it_power_mw": 128.0,
+    "power_mw": 179.2,
+    "h100_equivalents": 154623.54724608388
+   },
+   {
+    "site": "CoreWeave Dalton 1 & 2",
+    "date": "2024-06-03",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Dalton 1 & 2",
+    "date": "2025-05-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Dalton 1 & 2",
+    "date": "2025-08-29",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Dalton 1 & 2",
+    "date": "2026-02-20",
+    "it_power_mw": 28.0,
+    "power_mw": 40.0,
+    "h100_equivalents": 32238.504295098533
+   },
+   {
+    "site": "Alibaba Zhangbei",
+    "date": "2024-07-23",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Alibaba Zhangbei",
+    "date": "2025-09-17",
+    "it_power_mw": 85.0,
+    "power_mw": 102.0,
+    "h100_equivalents": 15967.660434562911
+   },
+   {
+    "site": "Alibaba Zhangbei",
+    "date": "2025-12-23",
+    "it_power_mw": 85.0,
+    "power_mw": 102.0,
+    "h100_equivalents": 15967.660434562911
+   },
+   {
+    "site": "Alibaba Zhangbei",
+    "date": "2026-01-03",
+    "it_power_mw": 169.0,
+    "power_mw": 203.0,
+    "h100_equivalents": 31884.79029813037
+   },
+   {
+    "site": "Start Campus Sines Data Campus",
+    "date": "2022-01-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Start Campus Sines Data Campus",
+    "date": "2024-10-31",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Start Campus Sines Data Campus",
+    "date": "2026-04-03",
+    "it_power_mw": 33.0,
+    "power_mw": 40.0,
+    "h100_equivalents": 31834.259727134915
+   },
+   {
+    "site": "Start Campus Sines Data Campus",
+    "date": "2026-08-16",
+    "it_power_mw": 33.0,
+    "power_mw": 40.0,
+    "h100_equivalents": 31834.259727134915
+   },
+   {
+    "site": "Start Campus Sines Data Campus",
+    "date": "2027-09-30",
+    "it_power_mw": 233.0,
+    "power_mw": 280.0,
+    "h100_equivalents": 540677.109651339
+   },
+   {
+    "site": "xAI QTS Atlanta",
+    "date": "2024-01-23",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "xAI QTS Atlanta",
+    "date": "2025-02-20",
+    "it_power_mw": 17.32971,
+    "power_mw": 24.0,
+    "h100_equivalents": 11470.43961596766
+   },
+   {
+    "site": "xAI QTS Atlanta",
+    "date": "2025-08-21",
+    "it_power_mw": 17.32971,
+    "power_mw": 24.0,
+    "h100_equivalents": 11470.43961596766
+   },
+   {
+    "site": "xAI QTS Atlanta",
+    "date": "2026-07-10",
+    "it_power_mw": 17.32971,
+    "power_mw": 24.0,
+    "h100_equivalents": 11470.43961596766
+   },
+   {
+    "site": "Nscale Keflavik",
+    "date": "2022-07-08",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Nscale Keflavik",
+    "date": "2023-05-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Nscale Keflavik",
+    "date": "2026-01-23",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Nscale Keflavik",
+    "date": "2026-04-23",
+    "it_power_mw": 5.11,
+    "power_mw": 6.64,
+    "h100_equivalents": 5821.121778676099
+   },
+   {
+    "site": "Nscale Keflavik",
+    "date": "2026-06-30",
+    "it_power_mw": 5.11,
+    "power_mw": 6.64,
+    "h100_equivalents": 5821.121778676099
+   },
+   {
+    "site": "Nscale Keflavik",
+    "date": "2026-07-27",
+    "it_power_mw": 5.11,
+    "power_mw": 6.64,
+    "h100_equivalents": 5821.121778676099
+   },
+   {
+    "site": "Nscale Keflavik",
+    "date": "2026-12-31",
+    "it_power_mw": 10.21,
+    "power_mw": 13.28,
+    "h100_equivalents": 11642.243557352198
+   },
+   {
+    "site": "Anthropic Barber Lake",
+    "date": "2025-09-18",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic Barber Lake",
+    "date": "2025-11-29",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic Barber Lake",
+    "date": "2026-07-30",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic Barber Lake",
+    "date": "2026-12-30",
+    "it_power_mw": 168.0,
+    "power_mw": 244.0,
+    "h100_equivalents": 234461.84941889843
+   },
+   {
+    "site": "Anthropic Barber Lake",
+    "date": "2027-04-30",
+    "it_power_mw": 207.0,
+    "power_mw": 300.0,
+    "h100_equivalents": 288529.5603840323
+   },
+   {
+    "site": "CoreWeave Lancaster Greenfield site",
+    "date": "2025-07-15",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Lancaster Greenfield site",
+    "date": "2026-07-13",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Lancaster Greenfield site",
+    "date": "2027-06-30",
+    "it_power_mw": 92.0,
+    "power_mw": 124.0,
+    "h100_equivalents": 232945.93228903486
+   },
+   {
+    "site": "CoreWeave Muskogee OK",
+    "date": "2024-11-18",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Muskogee OK",
+    "date": "2026-04-09",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Muskogee OK",
+    "date": "2026-06-13",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "CoreWeave Muskogee OK",
+    "date": "2026-12-31",
+    "it_power_mw": 70.0,
+    "power_mw": 98.0,
+    "h100_equivalents": 90955.02779181405
+   },
+   {
+    "site": "CoreWeave Muskogee OK",
+    "date": "2027-12-31",
+    "it_power_mw": 153.0,
+    "power_mw": 181.0,
+    "h100_equivalents": 198079.8383021728
+   },
+   {
+    "site": "Crusoe Abilene Expansion",
+    "date": "2025-11-02",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Crusoe Abilene Expansion",
+    "date": "2026-01-15",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Crusoe Abilene Expansion",
+    "date": "2027-09-17",
+    "it_power_mw": 336.0,
+    "power_mw": 470.0,
+    "h100_equivalents": 853966.649823143
+   },
+   {
+    "site": "Crusoe Abilene Expansion",
+    "date": "2027-11-11",
+    "it_power_mw": 672.0,
+    "power_mw": 941.0,
+    "h100_equivalents": 1707933.299646286
+   },
+   {
+    "site": "EcoDataCenter 2",
+    "date": "2025-09-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "EcoDataCenter 2",
+    "date": "2026-05-09",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "EcoDataCenter 2",
+    "date": "2026-08-17",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "EcoDataCenter 2",
+    "date": "2027-06-30",
+    "it_power_mw": 24.0,
+    "power_mw": 34.0,
+    "h100_equivalents": 69460.58615462355
+   },
+   {
+    "site": "EcoDataCenter 2",
+    "date": "2028-06-30",
+    "it_power_mw": 48.0,
+    "power_mw": 67.0,
+    "h100_equivalents": 138912.3294593229
+   },
+   {
+    "site": "Goodnight",
+    "date": "2025-05-19",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Goodnight",
+    "date": "2025-10-16",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Goodnight",
+    "date": "2025-12-23",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Goodnight",
+    "date": "2026-04-16",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Goodnight",
+    "date": "2027-03-15",
+    "it_power_mw": 103.0,
+    "power_mw": 132.5,
+    "h100_equivalents": 124305.20464881253
+   },
+   {
+    "site": "Goodnight",
+    "date": "2027-05-15",
+    "it_power_mw": 206.0,
+    "power_mw": 265.0,
+    "h100_equivalents": 249115.7150075796
+   },
+   {
+    "site": "Goodnight",
+    "date": "2027-10-01",
+    "it_power_mw": 1006.0,
+    "power_mw": 1294.1,
+    "h100_equivalents": 2278928.7518948964
+   },
+   {
+    "site": "Google Cedar Rapids",
+    "date": "2024-06-14",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Cedar Rapids",
+    "date": "2025-10-27",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Cedar Rapids",
+    "date": "2025-12-29",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Cedar Rapids",
+    "date": "2026-04-16",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Cedar Rapids",
+    "date": "2026-12-31",
+    "it_power_mw": 87.0,
+    "power_mw": 105.0,
+    "h100_equivalents": 193466.39717028802
+   },
+   {
+    "site": "Google Cedar Rapids",
+    "date": "2027-02-22",
+    "it_power_mw": 174.0,
+    "power_mw": 209.0,
+    "h100_equivalents": 415447.1955533097
+   },
+   {
+    "site": "Google Cedar Rapids",
+    "date": "2027-05-23",
+    "it_power_mw": 261.0,
+    "power_mw": 314.0,
+    "h100_equivalents": 670136.4325416877
+   },
+   {
+    "site": "Google Fort Wayne",
+    "date": "2024-04-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Fort Wayne",
+    "date": "2024-09-13",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Fort Wayne",
+    "date": "2025-06-10",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Fort Wayne",
+    "date": "2025-10-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Fort Wayne",
+    "date": "2026-03-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Fort Wayne",
+    "date": "2026-08-19",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Google Fort Wayne",
+    "date": "2026-12-01",
+    "it_power_mw": 173.0,
+    "power_mw": 207.0,
+    "h100_equivalents": 383021.72814552806
+   },
+   {
+    "site": "Google Fort Wayne",
+    "date": "2027-03-31",
+    "it_power_mw": 345.0,
+    "power_mw": 414.0,
+    "h100_equivalents": 823648.3072258716
+   },
+   {
+    "site": "Google Fort Wayne",
+    "date": "2027-08-28",
+    "it_power_mw": 518.0,
+    "power_mw": 621.0,
+    "h100_equivalents": 1399696.8165740273
+   },
+   {
+    "site": "Google Fort Wayne",
+    "date": "2028-01-25",
+    "it_power_mw": 690.0,
+    "power_mw": 828.0,
+    "h100_equivalents": 2066700.353713997
+   },
+   {
+    "site": "Google Fort Wayne",
+    "date": "2028-06-23",
+    "it_power_mw": 863.0,
+    "power_mw": 1035.0,
+    "h100_equivalents": 2940879.231935321
+   },
+   {
+    "site": "Meta Bowling Green",
+    "date": "2024-11-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Bowling Green",
+    "date": "2026-02-14",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Bowling Green",
+    "date": "2026-07-30",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Bowling Green",
+    "date": "2027-02-01",
+    "it_power_mw": 86.0,
+    "power_mw": 117.0,
+    "h100_equivalents": 104469.42900454775
+   },
+   {
+    "site": "Meta Bowling Green",
+    "date": "2027-04-01",
+    "it_power_mw": 163.0,
+    "power_mw": 220.0,
+    "h100_equivalents": 197001.0106114199
+   },
+   {
+    "site": "Meta Bowling Green",
+    "date": "2028-01-01",
+    "it_power_mw": 422.0,
+    "power_mw": 570.0,
+    "h100_equivalents": 855159.1712986357
+   },
+   {
+    "site": "Meta Hyperion",
+    "date": "2024-12-20",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Hyperion",
+    "date": "2025-10-19",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Hyperion",
+    "date": "2026-04-19",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Hyperion",
+    "date": "2026-12-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Hyperion",
+    "date": "2028-01-01",
+    "it_power_mw": 1632.0,
+    "power_mw": 2203.0,
+    "h100_equivalents": 4142944.4163719052
+   },
+   {
+    "site": "Microsoft Narvik Norway",
+    "date": "2023-07-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft Narvik Norway",
+    "date": "2025-06-27",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft Narvik Norway",
+    "date": "2025-08-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft Narvik Norway",
+    "date": "2026-05-31",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft Narvik Norway",
+    "date": "2026-07-05",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft Narvik Norway",
+    "date": "2026-12-31",
+    "it_power_mw": 92.0,
+    "power_mw": 124.0,
+    "h100_equivalents": 265285.4977261243
+   },
+   {
+    "site": "OpenAI Stargate Lordstown",
+    "date": "2025-10-12",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Lordstown",
+    "date": "2026-02-27",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Lordstown",
+    "date": "2026-07-30",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Lordstown",
+    "date": "2027-03-01",
+    "it_power_mw": 214.0,
+    "power_mw": 300.0,
+    "h100_equivalents": 545730.1667508843
+   },
+   {
+    "site": "OpenAI Stargate Michigan",
+    "date": "2025-12-04",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Michigan",
+    "date": "2026-01-20",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Michigan",
+    "date": "2026-03-12",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Michigan",
+    "date": "2028-12-31",
+    "it_power_mw": 988.0,
+    "power_mw": 1383.0,
+    "h100_equivalents": 2880242.5467407783
+   },
+   {
+    "site": "OpenAI Stargate Milam",
+    "date": "2025-09-27",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Milam",
+    "date": "2026-01-04",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Milam",
+    "date": "2026-03-23",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Milam",
+    "date": "2028-12-31",
+    "it_power_mw": 857.0,
+    "power_mw": 1200.0,
+    "h100_equivalents": 2496210.207175341
+   },
+   {
+    "site": "OpenAI Stargate New Mexico",
+    "date": "2025-10-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate New Mexico",
+    "date": "2026-02-06",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate New Mexico",
+    "date": "2026-06-22",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate New Mexico",
+    "date": "2028-12-31",
+    "it_power_mw": 1750.0,
+    "power_mw": 2450.0,
+    "h100_equivalents": 5103587.670540676
+   },
+   {
+    "site": "OpenAI Stargate Shackelford",
+    "date": "2025-08-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Shackelford",
+    "date": "2026-01-18",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Shackelford",
+    "date": "2026-04-14",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Shackelford",
+    "date": "2026-09-04",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Shackelford",
+    "date": "2027-08-15",
+    "it_power_mw": 140.0,
+    "power_mw": 196.0,
+    "h100_equivalents": 355229.9140980293
+   },
+   {
+    "site": "OpenAI Stargate Shackelford",
+    "date": "2027-10-19",
+    "it_power_mw": 280.0,
+    "power_mw": 392.0,
+    "h100_equivalents": 712481.0510358767
+   },
+   {
+    "site": "OpenAI Stargate Shackelford",
+    "date": "2027-11-18",
+    "it_power_mw": 420.0,
+    "power_mw": 588.0,
+    "h100_equivalents": 1066195.0480040424
+   },
+   {
+    "site": "OpenAI Stargate Shackelford",
+    "date": "2028-02-11",
+    "it_power_mw": 560.0,
+    "power_mw": 784.0,
+    "h100_equivalents": 1419909.044972208
+   },
+   {
+    "site": "OpenAI Stargate Shackelford",
+    "date": "2028-03-08",
+    "it_power_mw": 700.0,
+    "power_mw": 980.0,
+    "h100_equivalents": 1778676.0990399192
+   },
+   {
+    "site": "OpenAI Stargate Shackelford",
+    "date": "2028-04-04",
+    "it_power_mw": 840.0,
+    "power_mw": 1176.0,
+    "h100_equivalents": 2334512.379989894
+   },
+   {
+    "site": "OpenAI Stargate Shackelford",
+    "date": "2028-05-12",
+    "it_power_mw": 980.0,
+    "power_mw": 1372.0,
+    "h100_equivalents": 2890348.6609398685
+   },
+   {
+    "site": "OpenAI Stargate Shackelford",
+    "date": "2028-10-17",
+    "it_power_mw": 1120.0,
+    "power_mw": 1568.0,
+    "h100_equivalents": 3451237.998989389
+   },
+   {
+    "site": "OpenAI Stargate Shackelford",
+    "date": "2028-10-18",
+    "it_power_mw": 1260.0,
+    "power_mw": 1764.0,
+    "h100_equivalents": 4007074.2799393632
+   },
+   {
+    "site": "OpenAI Stargate Shackelford",
+    "date": "2028-11-11",
+    "it_power_mw": 1400.0,
+    "power_mw": 1960.0,
+    "h100_equivalents": 4562910.560889338
+   },
+   {
+    "site": "OpenAI Stargate UAE",
+    "date": "2025-06-09",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate UAE",
+    "date": "2025-11-16",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate UAE",
+    "date": "2026-12-01",
+    "it_power_mw": 200.0,
+    "power_mw": 280.0,
+    "h100_equivalents": 252652.85497726125
+   },
+   {
+    "site": "OpenAI Stargate UAE",
+    "date": "2028-01-01",
+    "it_power_mw": 1000.0,
+    "power_mw": 1400.0,
+    "h100_equivalents": 2021222.83981809
+   },
+   {
+    "site": "OpenAI Stargate Wisconsin",
+    "date": "2026-01-02",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Wisconsin",
+    "date": "2026-02-14",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Wisconsin",
+    "date": "2026-07-24",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Wisconsin",
+    "date": "2028-12-31",
+    "it_power_mw": 902.0,
+    "power_mw": 1300.0,
+    "h100_equivalents": 2627589.691763517
+   },
+   {
+    "site": "QTS Cedar Rapids",
+    "date": "2025-01-17",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Cedar Rapids",
+    "date": "2025-10-27",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Cedar Rapids",
+    "date": "2026-04-16",
+    "it_power_mw": null,
+    "power_mw": null,
+    "h100_equivalents": null
+   },
+   {
+    "site": "QTS Cedar Rapids",
+    "date": "2026-05-07",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Cedar Rapids",
+    "date": "2026-11-15",
+    "it_power_mw": 448.0,
+    "power_mw": 627.0,
+    "h100_equivalents": 1136975.5639961243
+   },
+   {
+    "site": "QTS Cedar Rapids",
+    "date": "2027-11-15",
+    "it_power_mw": 1133.0,
+    "power_mw": 1587.0,
+    "h100_equivalents": 3668823.12124194
+   },
+   {
+    "site": "QTS Eagle Mountain",
+    "date": "2023-10-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Eagle Mountain",
+    "date": "2025-09-08",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Eagle Mountain",
+    "date": "2026-05-02",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Eagle Mountain",
+    "date": "2026-12-31",
+    "it_power_mw": 203.0,
+    "power_mw": 274.0,
+    "h100_equivalents": 231311.26831733197
+   },
+   {
+    "site": "QTS Eagle Mountain",
+    "date": "2027-07-01",
+    "it_power_mw": 304.0,
+    "power_mw": 411.0,
+    "h100_equivalents": 346968.16574027285
+   }
+  ],
+  "aggregates": {
+   "site_count": 94,
+   "total_power_mw": 14076.4,
+   "total_h100_equivalents": 14619636,
+   "total_capital_cost_busd": 533.24
+  }
+ }
+}

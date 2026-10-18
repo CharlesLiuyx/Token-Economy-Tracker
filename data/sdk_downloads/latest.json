@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "sdk_downloads",
- "snapshot_date": "2026-10-16",
- "fetched_at": "2026-10-16T00:28:05+00:00",
+ "snapshot_date": "2026-10-18",
+ "fetched_at": "2026-10-18T00:05:53+00:00",
  "source_meta": {
   "kind": "official-api"
  },
@@ -10,56 +10,56 @@
   "npm": {
    "openai": {
     "last-day": {
-     "downloads": 7825673,
-     "start": "2026-10-12",
-     "end": "2026-10-12"
+     "downloads": 8062636,
+     "start": "2026-10-16",
+     "end": "2026-10-16"
     },
     "last-week": {
-     "downloads": 43409938,
-     "start": "2026-10-06",
-     "end": "2026-10-12"
+     "downloads": 25902017,
+     "start": "2026-10-10",
+     "end": "2026-10-16"
     }
    },
    "@anthropic-ai/sdk": {
     "last-day": {
-     "downloads": 8355414,
-     "start": "2026-10-12",
-     "end": "2026-10-12"
+     "downloads": 8943196,
+     "start": "2026-10-16",
+     "end": "2026-10-16"
     },
     "last-week": {
-     "downloads": 46461312,
-     "start": "2026-10-06",
-     "end": "2026-10-12"
+     "downloads": 28277830,
+     "start": "2026-10-10",
+     "end": "2026-10-16"
     }
    },
    "@google/genai": {
     "last-day": {
-     "downloads": 4409433,
-     "start": "2026-10-12",
-     "end": "2026-10-12"
+     "downloads": 4429141,
+     "start": "2026-10-16",
+     "end": "2026-10-16"
     },
     "last-week": {
-     "downloads": 24718975,
-     "start": "2026-10-06",
-     "end": "2026-10-12"
+     "downloads": 15023860,
+     "start": "2026-10-10",
+     "end": "2026-10-16"
     }
    }
   },
   "pypi": {
    "openai": {
-    "last_day": 13913518,
+    "last_day": 12651315,
     "last_month": 295856631,
-    "last_week": 78452459
+    "last_week": 80976871
    },
    "anthropic": {
-    "last_day": 7227319,
+    "last_day": 6679994,
     "last_month": 150199657,
-    "last_week": 42385373
+    "last_week": 43076842
    },
    "google-genai": {
-    "last_day": 6065525,
+    "last_day": 5614247,
     "last_month": 137607856,
-    "last_week": 35291206
+    "last_week": 35980863
    }
   }
  }

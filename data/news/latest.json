@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-10-17",
- "fetched_at": "2026-10-17T00:33:13+00:00",
+ "snapshot_date": "2026-10-18",
+ "fetched_at": "2026-10-18T00:05:55+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
