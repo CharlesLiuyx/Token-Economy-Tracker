@@ -1,13 +1,55 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-10-18",
- "fetched_at": "2026-10-18T00:05:55+00:00",
+ "snapshot_date": "2026-10-19",
+ "fetched_at": "2026-10-19T00:14:04+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "AI Cloud Firm Nscale Faces Investor Pushback Over IPO Valuation - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOczR6MkNKMHd6X3VfQlgzNFlNTnQ2MDZhRWNBbXd6OE1GZlBaYlJ2RTk1YlNsNjZkVF9uUjNvNjlPd3J4WDVwNFlSYl8xNUp4eHJlMUYyOVRKaklyd0JCemRVbk8xNjdYOGx5U0JrMWU2VVU5Xy01bkF1bjY2SG8zQXJIQUNHS25hUUMxUWE3TmE4ek5Id2M2emZaTWdGYUplc2hLWjNVZDI0VjF3Q3gzbGpwSkg?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-10-18T21:13:44+00:00"
+   },
+   {
+    "title": "Microsoft Pulls Out of Nscale U.K. Data Center Following Delays - The Information",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSGt5dnNxY2lxRzJpbFhwYUxxb0ZMTzF2bjN2cnhhQ0ZQaVN1cFNwdEdISWRpdk5zU2RqOEF5T1BkX2pVVWIyai1YVTJ6cmhkbHJOLVdqSDd5bjMzM05FOUl5S3dVVXVNTk05T2RtcW0yM2UtRno5OXBmS25wajdnRkNNNlNqdjZhbG5oY0NyaGk1M29ja2ppaHkwVUI?oc=5",
+    "source_name": "The Information",
+    "source_url": "https://www.theinformation.com",
+    "published": "2026-10-18T20:08:00+00:00"
+   },
+   {
+    "title": "Microsoft pulls out of UK data center deal with Nscale, Telegraph reports - Reuters",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMmVDUVQyZjhnbFN2MHQ1MHVPMHVpLVVsUFE1aU44Y2QzMUx2a25MRXR5OWtkTGd5RkViaG9fM3lZcnFHblYyT2xMeGZ3MHI3NkFjQ0FhdWFVRWlmdHlPRDRFRVRsclFpbUExakpiN3Z4aGMtODdDb09Mb0xXbnIxdU04ZmQ3UTEyTkhQd2EyMFhDNzQzYVgzZG9FeDlNYTJTanNOOThVSGRTb2RnRWdCajBVXzFMcDB4MWZpbXR1STMzZ1JaOXRr?oc=5",
+    "source_name": "Reuters",
+    "source_url": "https://www.reuters.com",
+    "published": "2026-10-18T17:19:48+00:00"
+   },
+   {
+    "title": "Microsoft Scraps UK Data Center Deal With Nscale, Telegraph Says - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYXhlWkpqYnAwNVVYQjBLWTdQdi1HYm50VjhBQ3UwTkNhc0gtTGhoMnluWGxuMVdmZWM3eFRjVFA5dWZ0STlFRVJ6S090WVFveFF1RVNjcHFpd2ZNTFJfamxDNGl6YTNrSmkta2pteXpnMElHVXVjcUI5WDNlemltdVRSZURQUXBmcTFrV0NyY2R0a3J1clFlOGU2RjRTbVRnbzRnU3NvRktJR3g3RUw4Zm9vTnE?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-10-18T15:00:14+00:00"
+   },
+   {
+    "title": "The end of independent infrastructure roadmaps: how AI is forcing data center co-design - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNVnB6RmtCUF80cWwwaGZRZ3JwZG5PakxJdi1oc3ZQeEZIc3dJZE5RcFRSdmtQX0VZb1FPVDF5SGMxek9vTDNMTDlyNWJpdG1JX0Y2TTZEaUdhSjlEQzFNeGxla0N4dURFWlA0QlNvR3BHVU1wbExWekVwc0Y1U0tWM01EbUhJcHRyekJvOGtpZFM2Y0NsbHhQb0tvd2pyYlRfcUFnOFJENG1WMzJrSmtPdnNtMHdDekk1RUdMbHh6emRBV01FbV9zcFBUX1ZyRUU?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-18T14:04:31+00:00"
+   },
+   {
+    "title": "Louisiana residents are training for jobs at Meta's largest-ever AI data center: 'Why not get in now?' - Business Insider",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzYnBqSG9lak51dURYcDlwdnFqSmZkMXJwOXRVNllneDI0aC1QU1E2UUFjMWtzajdHbXJIMzAyWFBWZTRjYXdKLVZOQm5vdGVvOXotNldNamdGSmM1SkVpWDAzOXdyNFFYMkgxWWdsYVpXRlBFZHk0c2x3QQ?oc=5",
+    "source_name": "Business Insider",
+    "source_url": "https://www.businessinsider.com",
+    "published": "2026-10-18T09:04:00+00:00"
+   },
    {
     "title": "Anthropic signs lease for first Canadian data center - Reuters",
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNmcyRDdMUmlLNHlsNWhYbVRfTFE1WkJIODRiQmxfOHpzM09lYS1Na0JGNG5YdXlIV09fUVZDWkpRRDFIcUlXb2VYaHhZTjM5Q1AwMnRZZjFkSjRKTTM3RHdUaDhEaEdUWnZTZmVrTUtNaHdTWnM3NVJ3WnFma1VTb09hcURCME10UmFMWXdabmxwNXk1ZUZ6emFoYmRCanEzM3FR?oc=5",
@@ -2065,48 +2107,6 @@
     "source_name": "Bloomberg.com",
     "source_url": "https://www.bloomberg.com",
     "published": "2026-09-11T00:00:00+00:00"
-   },
-   {
-    "title": "Watch Microsoft's Data Center Plans Face Big Costs - Bloomberg.com",
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYThldmZCcGVQZ1IySWw5WjFLLXBwSTdYYmdScnZnUFdJbk53bDIyY2hBTC1JaUN5Q2Y0QWRtQW9iY0xJYmhJblRqYUthbnloNmhiSzVEb3hjNkNtVGZjTzFHenRRTzVzTGlYMDNBNG05OHluM04wMDJDZUUybHhIWkZZMzRpdFBUVHhCaDB5X1E2UTdYcWgwXzlmb3VlOEtF?oc=5",
-    "source_name": "Bloomberg.com",
-    "source_url": "https://www.bloomberg.com",
-    "published": "2026-09-11T00:00:00+00:00"
-   },
-   {
-    "title": "The IPO That Asks You to Buy AI Hype Today and Get Paid Years Later - WSJ",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTnlXZ3paUlVZSGRCZlVldVYwYXV2S1MyV3lUeXNJZ21TQ0lybDJSaWYzb3Y3VnBFN0dVOHB5U1RMT0Q1eXpXbmFrODNqaG9mU0Z0d2FtWERHRi05aDUtZGpqbnJLUnE3YkRlSklUd0d6Z3d2R0FyZEJsakF1d2NpNHEybkR2Z1BmS3pUNVRpMFkyQi00YkY5Ti11eWlMekZiOHVGWTFmSDV0ck0wRklIaHNuRkczMFk?oc=5",
-    "source_name": "WSJ",
-    "source_url": "https://www.wsj.com",
-    "published": "2026-09-10T23:10:13+00:00"
-   },
-   {
-    "title": "US House to take up bill aimed at curbing data center-driven electricity costs - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPU2pmTWtENDhoRUV3bHdUVUdBZ3BHczN3QnlaQjN6T19WU0RycXRUUDVFU1Q1NFpVcWdIaG9kTnA1RU92aHNlb0x6cm5kbnVXd200RG5kQ2J1WVVQZm03d04xY1h3Q2ViQldyMEY2Q0ttN0lsZVNoNzg1c2ZsYTkyN09la1dLakpxOVBiY3dKYmRwZklzRk13aXJDU2NaQ3ZqWkU1V2NxM0hhX3ZVc1JLd2ZIVXkxYy1S?oc=5",
-    "source_name": "Reuters",
-    "source_url": "https://www.reuters.com",
-    "published": "2026-09-10T22:59:54+00:00"
-   },
-   {
-    "title": "Microsoft plans 38 gigawatts of data center capacity by 2032, Bloomberg News reports - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTHBHOWMxWUFLYUt0NHZRR1c4V1RvckEzcFBfZHlhUG5POTFyeklqXzB3SW5CMVlMaUhCTGZjLXZOeno0RFduTXlkbUgwT1V2WmU0T2FPU25MM0YxRmdCdEl6V2w4SDI1a0xLOEFDTmdieWxrOTAtWlM5YWdVek9qcjdleGhFNGNCYUd4LU10YTJyY1g4Mm42Z0EtdjN6VkFiVFRDRklsU29WbG8tdTFWc3M4VnZCM2hjVzFnRUxBNjVtNWM?oc=5",
-    "source_name": "Reuters",
-    "source_url": "https://www.reuters.com",
-    "published": "2026-09-10T22:24:34+00:00"
-   },
-   {
-    "title": "Microsoft Plans Data Center Push to Triple Its Computing Power - Bloomberg.com",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPRXJMZWdoQWFkTHJITkVsNjYwWkFGZWk4OVlpdS1tTDNyMnNQd0Zicmx0UktIZDFxS0xwOFBlSkxOakxPZ2RjRy13UzduVWdhcUN3WVNXWWpjVEJXRFNpOFlVLUFHMEtxV0I3cWMwZWY1REVYTkhFNGZJZDJmTzRDSU9hQ3hmbGtNNzc3dFlPSzRwVjFlYnh3RDFLbW9UNUxMYWMwb2RTbldvZ3dWZHladi1TYkpnY0hZN1lN?oc=5",
-    "source_name": "Bloomberg.com",
-    "source_url": "https://www.bloomberg.com",
-    "published": "2026-09-10T21:00:16+00:00"
-   },
-   {
-    "title": "NVIDIA Pushes DSX Deeper Into Data Center Infrastructure - Data Center Frontier",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZVVOaHpWU183d0tiWmZ3YVdrc18yM2YzcDlBSW92TElUcVBjU3Z1X2p1Ml93dzNYR0hNSHZhWXFIdUIzekMxREtvTjNFTnduTHA5NHd4LVFYYjdvZTZZVWFKUjRveWtabVVhYVpqNDZ0U3VBX1RVcUtNWnI5aTNzQTQ5Q3R4R3pCeERFNTRRYVMxZGZQMDU1U1l0MU5KYmEzV0t6V1JJR05kdmxYbmFTeFExZUphVlkwNmNr?oc=5",
-    "source_name": "Data Center Frontier",
-    "source_url": "https://www.datacenterfrontier.com",
-    "published": "2026-09-10T18:02:46+00:00"
    }
   ],
   "queries": [
