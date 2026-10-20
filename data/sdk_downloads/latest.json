@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "sdk_downloads",
- "snapshot_date": "2026-10-19",
- "fetched_at": "2026-10-19T00:14:03+00:00",
+ "snapshot_date": "2026-10-20",
+ "fetched_at": "2026-10-20T01:07:01+00:00",
  "source_meta": {
   "kind": "official-api"
  },
@@ -10,56 +10,56 @@
   "npm": {
    "openai": {
     "last-day": {
-     "downloads": 8062636,
-     "start": "2026-10-16",
-     "end": "2026-10-16"
+     "downloads": 4742700,
+     "start": "2026-10-18",
+     "end": "2026-10-18"
     },
     "last-week": {
-     "downloads": 25902017,
-     "start": "2026-10-10",
-     "end": "2026-10-16"
+     "downloads": 25338213,
+     "start": "2026-10-12",
+     "end": "2026-10-18"
     }
    },
    "@anthropic-ai/sdk": {
     "last-day": {
-     "downloads": 8943196,
-     "start": "2026-10-16",
-     "end": "2026-10-16"
+     "downloads": 5476113,
+     "start": "2026-10-18",
+     "end": "2026-10-18"
     },
     "last-week": {
-     "downloads": 28277830,
-     "start": "2026-10-10",
-     "end": "2026-10-16"
+     "downloads": 28258993,
+     "start": "2026-10-12",
+     "end": "2026-10-18"
     }
    },
    "@google/genai": {
     "last-day": {
-     "downloads": 4429141,
-     "start": "2026-10-16",
-     "end": "2026-10-16"
+     "downloads": 2908889,
+     "start": "2026-10-18",
+     "end": "2026-10-18"
     },
     "last-week": {
-     "downloads": 15023860,
-     "start": "2026-10-10",
-     "end": "2026-10-16"
+     "downloads": 14706880,
+     "start": "2026-10-12",
+     "end": "2026-10-18"
     }
    }
   },
   "pypi": {
    "openai": {
-    "last_day": 8571551,
+    "last_day": 8441468,
     "last_month": 295856631,
-    "last_week": 81387465
+    "last_week": 81286857
    },
    "anthropic": {
-    "last_day": 4092842,
+    "last_day": 3894593,
     "last_month": 150199657,
-    "last_week": 42719238
+    "last_week": 42327300
    },
    "google-genai": {
-    "last_day": 3649586,
+    "last_day": 3474414,
     "last_month": 137607856,
-    "last_week": 36147166
+    "last_week": 36094225
    }
   }
  }

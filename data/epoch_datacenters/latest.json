@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-10-19",
- "fetched_at": "2026-10-19T00:13:41+00:00",
+ "snapshot_date": "2026-10-20",
+ "fetched_at": "2026-10-20T01:06:38+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -26,6 +26,20 @@
     "country": "United States"
    },
    {
+    "name": "Anthropic-Amazon New Carlisle",
+    "h100_equivalents": 818428.4992420415,
+    "power_mw": 1037.0,
+    "capital_cost_busd": 39.283634,
+    "owner": "Amazon",
+    "users": [
+     "Anthropic"
+    ],
+    "chip_types": [
+     "Trainium2"
+    ],
+    "country": "United States"
+   },
+   {
     "name": "Microsoft Fairwater Atlanta",
     "h100_equivalents": 768768.7220818596,
     "power_mw": 636.0,
@@ -37,20 +51,6 @@
     ],
     "chip_types": [
      "B200"
-    ],
-    "country": "United States"
-   },
-   {
-    "name": "Anthropic-Amazon New Carlisle",
-    "h100_equivalents": 685912.076806468,
-    "power_mw": 910.0,
-    "capital_cost_busd": 34.47262,
-    "owner": "Amazon",
-    "users": [
-     "Anthropic"
-    ],
-    "chip_types": [
-     "Trainium2"
     ],
     "country": "United States"
    },
@@ -1333,41 +1333,6 @@
     "h100_equivalents": 1824153.6129358262
    },
    {
-    "site": "Microsoft Fairwater Atlanta",
-    "date": "2023-04-09",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Microsoft Fairwater Atlanta",
-    "date": "2025-10-14",
-    "it_power_mw": 321.0,
-    "power_mw": 433.0,
-    "h100_equivalents": 387981.94436584134
-   },
-   {
-    "site": "Microsoft Fairwater Atlanta",
-    "date": "2026-02-13",
-    "it_power_mw": 321.0,
-    "power_mw": 433.0,
-    "h100_equivalents": 387981.94436584134
-   },
-   {
-    "site": "Microsoft Fairwater Atlanta",
-    "date": "2026-05-15",
-    "it_power_mw": 321.0,
-    "power_mw": 433.0,
-    "h100_equivalents": 387981.94436584134
-   },
-   {
-    "site": "Microsoft Fairwater Atlanta",
-    "date": "2026-06-14",
-    "it_power_mw": 636.0,
-    "power_mw": 859.0,
-    "h100_equivalents": 768768.7220818596
-   },
-   {
     "site": "Anthropic-Amazon New Carlisle",
     "date": "2024-02-09",
     "it_power_mw": 0.0,
@@ -1450,6 +1415,41 @@
     "it_power_mw": 1925.0,
     "power_mw": 2310.0,
     "h100_equivalents": 1746038.4032339565
+   },
+   {
+    "site": "Microsoft Fairwater Atlanta",
+    "date": "2023-04-09",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Microsoft Fairwater Atlanta",
+    "date": "2025-10-14",
+    "it_power_mw": 321.0,
+    "power_mw": 433.0,
+    "h100_equivalents": 387981.94436584134
+   },
+   {
+    "site": "Microsoft Fairwater Atlanta",
+    "date": "2026-02-13",
+    "it_power_mw": 321.0,
+    "power_mw": 433.0,
+    "h100_equivalents": 387981.94436584134
+   },
+   {
+    "site": "Microsoft Fairwater Atlanta",
+    "date": "2026-05-15",
+    "it_power_mw": 321.0,
+    "power_mw": 433.0,
+    "h100_equivalents": 387981.94436584134
+   },
+   {
+    "site": "Microsoft Fairwater Atlanta",
+    "date": "2026-06-14",
+    "it_power_mw": 636.0,
+    "power_mw": 859.0,
+    "h100_equivalents": 768768.7220818596
    },
    {
     "site": "Google Pryor (North)",
@@ -5206,9 +5206,9 @@
   ],
   "aggregates": {
    "site_count": 94,
-   "total_power_mw": 14076.4,
-   "total_h100_equivalents": 14619636,
-   "total_capital_cost_busd": 533.24
+   "total_power_mw": 14203.4,
+   "total_h100_equivalents": 14752152,
+   "total_capital_cost_busd": 538.05
   }
  }
 }
