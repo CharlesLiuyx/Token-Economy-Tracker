@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-10-20",
- "fetched_at": "2026-10-20T01:06:38+00:00",
+ "snapshot_date": "2026-10-21",
+ "fetched_at": "2026-10-21T00:39:56+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -1102,6 +1102,16 @@
     ],
     "chip_types": [],
     "country": "Sweden"
+   },
+   {
+    "name": "Envision Galaxy Ulanqab",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "",
+    "users": [],
+    "chip_types": [],
+    "country": "China"
    },
    {
     "name": "Goodnight",
@@ -4567,6 +4577,55 @@
     "h100_equivalents": 138912.3294593229
    },
    {
+    "site": "Envision Galaxy Ulanqab",
+    "date": "2025-08-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Envision Galaxy Ulanqab",
+    "date": "2026-05-11",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Envision Galaxy Ulanqab",
+    "date": "2026-08-06",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Envision Galaxy Ulanqab",
+    "date": "2026-09-05",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Envision Galaxy Ulanqab",
+    "date": "2026-11-01",
+    "it_power_mw": 118.0,
+    "power_mw": 153.0,
+    "h100_equivalents": 47931.27842344619
+   },
+   {
+    "site": "Envision Galaxy Ulanqab",
+    "date": "2027-07-01",
+    "it_power_mw": 235.0,
+    "power_mw": 306.0,
+    "h100_equivalents": 88575.03789792824
+   },
+   {
+    "site": "Envision Galaxy Ulanqab",
+    "date": "2027-12-01",
+    "it_power_mw": 470.0,
+    "power_mw": 612.0,
+    "h100_equivalents": 169868.62051541184
+   },
+   {
     "site": "Goodnight",
     "date": "2025-05-19",
     "it_power_mw": 0.0,
@@ -5205,7 +5264,7 @@
    }
   ],
   "aggregates": {
-   "site_count": 94,
+   "site_count": 95,
    "total_power_mw": 14203.4,
    "total_h100_equivalents": 14752152,
    "total_capital_cost_busd": 538.05
