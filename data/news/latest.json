@@ -1,13 +1,97 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-10-21",
- "fetched_at": "2026-10-21T00:40:19+00:00",
+ "snapshot_date": "2026-10-22",
+ "fetched_at": "2026-10-22T00:43:25+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "Trump Says Data Centers Must Provide Their Own Electricity - WSJ",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPN0J4NWZrSG9CM0FwNktTR0tTTGhHc1RMOGgxc2dTUGJfVDBpRVQ2a2V6Nmtxd2ZmM09FUDA2QzhjeTc4VWtjRmVlRFM5NTFnZUZNR2VYNmlPSENDdnN6V19DeWluN1dKSmhTazYzbDcycml6SUg3eXNNcXpXQ3E5THhNdmg3UjJzUlBVNzJYdjk0ZWVRT3dTMTJQQXlZcWI5SGZ1ZjlR?oc=5",
+    "source_name": "WSJ",
+    "source_url": "https://www.wsj.com",
+    "published": "2026-10-21T21:11:00+00:00"
+   },
+   {
+    "title": "AI's Fragmented Regulatory Landscape Becomes a Data Center Design Challenge - Data Center Frontier",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPaDdzMGxVNmxHS2tsUVBlSklVU2ladW90eHk4TnFqb3V0TVkwU2dQd1VJYlpyS3JaWHY5Xy1Yc0NUTkI3b3BYTlBfNjBvV2cza2FlOVRvdEkwX001b0tjUDZnWlFyeDJkeXdZVE1HSkExcDB1b0stMzBhWjZMTkRSdGE1WUhOZHNVQk1IMWhxV0ljYVNfUm1WV2kwa2ZLNVJ3enpmTFRkMTZUdVpQcDN3NlFDREpFV29Lc3VQWmcwblczMXRtTGVDUjZldEdSVlo4TlZaRF9YSl9adHc?oc=5",
+    "source_name": "Data Center Frontier",
+    "source_url": "https://www.datacenterfrontier.com",
+    "published": "2026-10-21T17:49:22+00:00"
+   },
+   {
+    "title": "Memphis councilors reject 18-month data center moratorium - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNa0xxdnNULWVPLTJtX2w4VDNCLW93Z1NfejEzYnRuQUExb0xadjl3cVc2b3VEWFdqbVZWbUxfSGtjeEZXdllnUjh5ZGs4OVdZM3RpNjhERHJOR3puTkI5ZDR2bXk0LXdjekh0SWVlcnpyWlc2UnZoY3lZNnZFMHFfWmttSzJ4WjB4ZUM1TjkxX2lCdw?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-21T16:28:21+00:00"
+   },
+   {
+    "title": "BT bolsters 5G Standalone footprint, confirms AI-RAN trials with Nokia, Nvidia - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQ3ZUdjRjNWIzOERacnhUME1OSWF5VWVjeHY4NDJTOEFEcTNWcnk1NExwNnU0a29IY3RRUHZIQnc3T3FHWDZ1a3hzM0t2Q3VfUXhxMTY3QTJjVWJBQVJhd3Y1cXg5QVczclZtay1Qd1NMZzNOY3hPVkI4aFhyZnhLaDlzNlREdmV0ZUFfTnBMcHR4UlRSczdPMmhwVXZ2cnpXZUd4ZTgyZ1dwQ0pBcDdiTHlNZ2tVWVY3eXl3cQ?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-21T16:28:21+00:00"
+   },
+   {
+    "title": "Nvidia launches DSX POD, claims the Vera-Rubin reference architecture will make AI data centers more water and energy efficient - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOXzdEQjg3MDRGc053TUxheklHb1JQTzloUGNiOGdKb0dVZVk4cVdZZXY3V05HNFdOTmlCaF96cTRyTnBJSGhsQmFfcUxkaFBiVnJ5QzBmODJndXFPcFVlaWNsYWJUSGZsenZ1VkpQOEVMZzRiamNPd2NKVm5hM0ZicUxfb0hON0h2RU51Y1Q2ajFIblNTa3dOOFJzUDNiWk5tbmJmWG5CX3NiM1NpQWNxOE5HUkJiVDlncFNFbzY5WVpnN2hmSkZBVDlmZFdGQ2kwanpPNjl6UVFDX2lOVlViWDRtMXhBNkE3aTRQT0RybXNVenowVEgyRkJrT3ZSNDA?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-21T15:40:38+00:00"
+   },
+   {
+    "title": "From power to AI readiness: The architecture decisions behind TeraWulf’s AI and high-performance computing campus - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOS3M4SGhWVWc5VXRmdWZaOHBaNVVsMmVPWGloS1dJMmZtR092LTNrWWU3aEIyVmI3WVdiZUFWZ0FpdzhuVXpQVTRpYzlqdVlYbHZqM1h0WHp4allPbV9jSEFNdl9lZHZUUUdrZGhFN1N4VzZxd3FFVXktY2Q3aXJ3eG9UeVExWDlGZXdBZEY5clZPZzctRlUwV2JDcEJGbXRFeVF4Xy05OWViQkJqU2dqNzFwSXFRSmVtazFaX1RtYUxZc3ZjWl9walIwclpmMjRXQUkyeExWcWFJSndXVldLODYxNGh1cS1DQkdmN3F0ZE0?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-21T15:04:28+00:00"
+   },
+   {
+    "title": "Crusoe plans Spark Liquid modular data center to support latest Nvidia GPUs - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYnRPdVhGbVA2MHBNU1duWHZNNE5peFVXdFdpbmszTWtENm1DQWpxMktXejR2LTlLYjVNTE10TjRDdmp0Rm42N25sMGdyUEpPSTRWOFlTMVhWUk5VcC1fb25IMkJPSEJ6V3VMT0hSNmNBSXBQQ2JWUlBYbWlldm5BX0R4UEYyVFIyM1lSUHlid3FWT0NNNkxoVlNDVHF1ckloQWt6RXBVN09VZlQ2MGdZOUxtNFM5R2Q4N29v?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-21T12:00:25+00:00"
+   },
+   {
+    "title": "Nvidia CEO Huang Pushes Europe on All Industries Adopting AI - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdFJFc2sxWnVYY250czdUd3hqaXlZWWlsVldMU3pwZDh5UENMRk1XdF96cG5XNmE5UTBRSlNnVFlsUnp1ZkF4WUpNMmFyNTdHdmwxVnJGU2Q1Y2d6VGZvejV5d0xHZ3hwSmNaZWs3OXVkSVVUWXRhR3czSWFIOGpDT0g4U2Qwbi00ajdsYzhPbVNFN3RXeTFkSnNWZWt0V1dNNDVpZWZSQ0VfT1dSVU5OQXh3?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-10-21T11:41:44+00:00"
+   },
+   {
+    "title": "Why AI Data Center Compressors Need to Work Efficiently at Both Ends of the Operating Range - Data Center Frontier",
+    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOQW9maFpUeDhxRGhaTXFwdVdMU3lLc21SUGthMTlETFVaMVNPakhzNnE2eFZGV1ZWb21LOThxVTNtTGVMZUZJZS1SeFNIejNralpSY2xKZG1aMVE0Y3VxWXotZ1V4TGVma2c1RlpvemFWdWczY09reTc4QzYxYWx0RlZrU2I5Mk81SkxuT1VFZFlEWldJVDNLN3N1S1dhOHNGdERaQVBYRzdUdlluNWVKeTVjdkJSVnozb0RxbFl0MXlWVXdyUTJfeXRsSGZUWWRWMENQaTdWMFRpc2FKa0RmQUNZdldrZmoz?oc=5",
+    "source_name": "Data Center Frontier",
+    "source_url": "https://www.datacenterfrontier.com",
+    "published": "2026-10-21T10:27:29+00:00"
+   },
+   {
+    "title": "Trump suggests a community 'dividend' to defuse data center backlash - Business Insider",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONTY4WlA4bGFnZHVxTTB5cmVsNmVEQ1BKTm90Q2lXVXgxc1FUb2Y2SzFwSDVPNUlJYXZjTjBPTDN5YTlreDRnQ1Qta3FsODI1a0tySEx1OTMwSzhvUDJ2NmlzSXNsbzV0WnBNRU91TVAxNHpNUDhvbnhZME1kOVV5VklyZWZGaUwzYjJKV2J6aEFCZS1JWHlSd0JnWU1LUXQ1VUd1MldCbHBWU1k?oc=5",
+    "source_name": "Business Insider",
+    "source_url": "https://www.businessinsider.com",
+    "published": "2026-10-21T09:11:44+00:00"
+   },
+   {
+    "title": "The metric that matters: Why AI data centers should be measured in value, not volume - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPYlpuLVlER2E5aXI1dlpZNDFzaElZZG43c0JIQUt0QVMxRHpUdHhVSGVNS3JXZ2NIVGdidmh1cmlWM2FDeUVFNGZGMnVONWhoWFpDTWhRZXU5cTFjRktaN29UeXNPVUhPWXcySU92TTBYbFQwQlgxSEZmZ3p4WDdWS0FNdEc3OEZkTnpETEJjTHpfNkxvbGd6QVB4X0JQLUtGWDFDVm1QRVhYdk02WHA2amQ1QXVXanRMR1hCMnpEQVpBRzVDb0M3eVRKTkU1UQ?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-21T07:07:45+00:00"
+   },
+   {
+    "title": "'MAKE DEALS': Trump says data centers should pay communities a 'dividend' to win support - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4wZXVRbVZHVzhXZUZQN1lxOS1aYVZWWDlCSkd2SUZBemVaYl8wUmdtMlZXUVZtNlF0ZFR0UGJ0ZGdTRXVkeHNPaXJkV1BvQ19wTFFzanYzYlA5a2E5RUkyel9QMW4zaVkyQXBwcUhNbjZZOFFJaVYxZ3FqbzZ2NW_SAYQBQVVfeXFMTlB6MHYtaHdDc1FQR0dzQ1dPX2txalc1SDBuck9JMkNOaTQyZG0tLVFkNGJNUm1Dc3BSSmU1bDBfbzFpamRkaF92X1NXc3gzblZFQkVsdF9LcjJUakt3SUdQMXRZYkYycV9FbjJHckVTcV9BT3hHQ1puNVFtdUZ6eXQzVjdu?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-10-21T06:52:28+00:00"
+   },
    {
     "title": "AI data center projects boost US warehouse demand and rents, real estate company JLL says - Reuters",
     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNWU5WMjhadm4wRHVRWV9HcTFWbWFhVHJkalVBeF8tTDJCRWliVWxfZGl2OG1FbDFCeE1sZ0NSNEFPSjJPc0hzNE11SWVlMmwxOUw0WUhCQ2l1TEVKTU5SRFNDdG9KUUE2THVjUXUxU3lHTjhyd21vUlowSXpxb0VpUHQzYllZUlRqM2pKOGlON090YS1ESEpfYmJfdTd1anJNbzZud1c1QlhQbVBYeHA3M0JjX3o1aW1IWGVPbjNUU1ZYaHpIaERnZXh2c0xGVzZvdWl1TVRmbw?oc=5",
@@ -2023,90 +2107,6 @@
     "source_name": "CNBC",
     "source_url": "https://www.cnbc.com",
     "published": "2026-09-16T00:13:00+00:00"
-   },
-   {
-    "title": "The AI gold rush has a dress code: steel-toe boots - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVjlfZkRua2pFLWNPYWRUUE1NU01NLVBIeEFpYWYwTVhBcmtGZ2xtdGpOblNIV2hhdU56cHFKOEJJWV8tSEljbXBpZ2N6SXdKWXE0akEySGNFeUVISmRoTHZQd3FyVXkyUzdETTdSVkM2NEswYVd3MklPYWJtaWdadjVMZ1lJTDFQUWlTaEtobEtjcFJxV1FybnVBclRPSTFpV2lEdkVtOA?oc=5",
-    "source_name": "Reuters",
-    "source_url": "https://www.reuters.com",
-    "published": "2026-09-15T23:41:02+00:00"
-   },
-   {
-    "title": "Voters mostly don’t like AI and data centers, but neither party seems to have an edge - The Verge",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPYTdkOFdFd0FtZ2FPU0cxUTZCZmstdjhYMlM0TlBOdjFRNE5XRUdaNEpPbmpVYWxCZEU0WXZMQnlvaXJuWEh0eks1N2I1bTcxWXlFVE43Sl9ISkZCYmk1X0xPcEJuRWZmY04xMU9zTE91UnlST2xXb0lEaXB3Q280cjBYMFdMNlQzU2RFaU5iV3VsTkU1YmUxYjdrOGFvdw?oc=5",
-    "source_name": "The Verge",
-    "source_url": "https://www.theverge.com",
-    "published": "2026-09-15T23:34:25+00:00"
-   },
-   {
-    "title": "The AI data center boom is colliding with cities scarred by big industry - TechCrunch",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSUhjREhxYkhIVTU2WXZVNHplQ09DM2Vlbzg4VXF0OHpjcFFSY2lPSHRqNDRxd0pwUkZHYTZyakNMem9QdThDdkNET0RsU2JobmVPWFN2cHM3QmlJdk56UE9iMF81bXE1aTJVbG95UUg3MDhDalBXZUh2RU9GSi05dUN1X295YU9zSDB2SzlhS2hVYzJDWmFzNHpKLTFIbW9Wa0dmS3M0Q0FvR28?oc=5",
-    "source_name": "TechCrunch",
-    "source_url": "https://techcrunch.com",
-    "published": "2026-09-15T21:47:38+00:00"
-   },
-   {
-    "title": "Scott Bergs, CEO of Kirkwood IG: Fiber and the AI Data Center Buildout - Data Center Frontier",
-    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPaWFBMDBKLVZvQTdRVk52VWtHRUtWd05kbW5OWHdQektEWHFLV1Z5ek1BQy1GcTNtRFR6WnlDNEtRVjRsTF9oTTNtZzZzVGl0YlZIX1cwZWlhV0hRNWdoZUpqalotLW8xQi1LSEFfSnlRSDNWc3dqVUxjZjlNa0NEcHRhb1IwTUVsS25OOVl0M0VCczZzd3NZdWZ5LWpIdVVmTjk5MEpxMmtfWU1zRW52TTB3MGZDUDBqem5VODUyTTM3UExpdGZCbnJtNHp0YUlq?oc=5",
-    "source_name": "Data Center Frontier",
-    "source_url": "https://www.datacenterfrontier.com",
-    "published": "2026-09-15T19:38:31+00:00"
-   },
-   {
-    "title": "CargoSense Adds Wireless 3D Tracking With Adapt-IP Acquisition, Targeting Data Center Supply Chain Bottlenecks - Data Center Frontier",
-    "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQc3ZRTjVsS2dFajlHV19hZ2pTSVlINVZPanlSMWR0S1RLYmNiTnJPanh2bUVlQkEzVXNQSmFrbllWdHg4MXljcTI5NXJ2X2FlNDFMcmFGTFh2ekJMc3ZVb0l5X21JQTRjTmlLdzFqbDd3OHlqYlBnWWw4OERjcGxFcTY3TEtBN1J4b1BJbUlXU1R1Nm1iN0RfVW05Qkt1MGp3WjVJUk95STBoM3k4RVFxdGduUXlMQTV2ellSVnk0bHJRekhDSTFWbWJidnNIN3dPbDdEZlRmbTgtTHktU2VZME9ub1N1UFUxbmRmWndRUlltaTRLaW9EWE9rYWdDanVDWktSejBUOA?oc=5",
-    "source_name": "Data Center Frontier",
-    "source_url": "https://www.datacenterfrontier.com",
-    "published": "2026-09-15T18:48:55+00:00"
-   },
-   {
-    "title": "US data centers could consume more natural gas than Germany and Japan combined by 2035 - techcrunch.com",
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRXUxUnJBcWc4NzZjMUtwZFNseXJhQ3hFM24xRDhqZXQ5NmZvRlFFRTBITGdYU0w0a3FLNUs5ZFo2dGxESEI3N00xYzZNR0s3elI4NGFQakhmVjljZ1gzVTYzVmlxNE9fcEJrYVY5cnU0UVVPcFI3SmdmNzVvM1VnQnZ4d3dOZ3BRa21uOG9XY0VLcDZZSjMtWlN2bTdkZ2VuTHFTRk5ndHlQbXRUamFFdWItamlHYlNJcmgyMExB?oc=5",
-    "source_name": "techcrunch.com",
-    "source_url": "https://techcrunch.com",
-    "published": "2026-09-15T18:29:20+00:00"
-   },
-   {
-    "title": "OpenAI Eyes Canada for Data Centers, Praises Carney’s Plan - Bloomberg.com",
-    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOM0gwNHZJLUJhUzYyYmFRbWZxNmQyZ3pSXzRidzdneHFOdF9GUDZzYjItQ3R2YW9YTlFodkZhVTJxTlhQSkZ6bUlTX21BRGVPQlVLT0pmV3N1VmhTQlVUVjJlc0lfbldSN1FFSkh3ZXR5c2dxVW0tdmthaHhHU2RZc1dJR1F3MFdzUnlENXotNEEzOV9MTWphUTI1azVqeEJwTU1DTlZlNktxQVJTWm9YV2FFdGpRMU9ybnR6VWxrUQ?oc=5",
-    "source_name": "Bloomberg.com",
-    "source_url": "https://www.bloomberg.com",
-    "published": "2026-09-15T16:58:24+00:00"
-   },
-   {
-    "title": "Are diamonds a data center's best friend? - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOU1hENkFjeDNENVlYelNGVEhab2JQWnB4ZXdadXJsVklGemdlUlJicXNQNmFKZVU4azJPS1hSb1p1VmtpWTI2ZnhFekoxNzNDUjExdzdXTU1kcENNWUJPUUxjUDFtVzFMUW0wWFh5Q0pqaDJWN2g3WmFOSldLcnVRT3hjbDZEWVpiNEVBaV92ZjE?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-15T16:08:44+00:00"
-   },
-   {
-    "title": "US AI data centers projected to become the fifth-largest natural gas consumer in the world by 2035 — consumption to grow by 15 billion cubic feet per day as demand for compute increases - Tom's Hardware",
-    "link": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxQVVdKeGp5bWpnb0Y5QXJRd2F0U1NIbXdOTmw2NTZaeFo1bW4xM2VYQ25EUEJNTDVBVkV5ZFlNaUJKVWVnQkRpLWcxVE1BakdLSWZkNnJrdC10LURyckxpaDE4ZThrYkgxamQ2X0dlZWJHLXY0ZlBudkJEYnhUOTA0NlB6UWVNRnRqcHBoYjNWSkUxSlhvalJrb1VHcTJoRV9VeXA5dXl1ZnUteHBmRmlhMXdONENCUGZfTlNoOEowTkU3bzFDNDRvYnRfWW5pXzZIeWk4cmV3RjNwcTBNSGV2YjBoWGt4c1ljcXk1dmtXaG9fem1CMTlUSnZJUVlMVmRTaWZKZEdDV09UMy1kUHdlRVVHSzdGa1BwbEM2ZU9xR1l6dmQyVUJxQl9fNFZXbWFyRmxkWmQ0R1JWejBUcW16U0o2SExZQmIxczhCNDA4ME1sbG5qaWF6QmZOWQ?oc=5",
-    "source_name": "Tom's Hardware",
-    "source_url": "https://www.tomshardware.com",
-    "published": "2026-09-15T13:57:36+00:00"
-   },
-   {
-    "title": "Canada's Bell to quadruple capacity at planned Saskatchewan data center campus - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNV3hQLXcwTXptYnhiZl9zWDJVazVxbHQtblpIaWRsT3Jra3Jad1htUzFwa1VxbUdhOGFZUHNNYm9peXp5bjdhSm9lRzNBOTBzeVZZZkFVcldlSWc3VnhQaHEtb2c2VDhFZjUtMFFmNVZUREdvVWxZUjB5aHJTRjRaM3ZsTjJqSVB3a2NXeS1vUHlnREVoeFVYNk1TUFB4V3QySmhVTmJFQTRQenoxV3ZyZTE1RU1wcGdfQVE?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-15T12:06:06+00:00"
-   },
-   {
-    "title": "Potential AI slowdown is not ‘end of the world’ for data center real estate, says Digital Realty CEO - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9OUV9xUkVlRkNWc1lCR1NFZzl4clQ3bVBVUXhRb0IwWHhqYzM0bndSbGozd1VyOHhFTXcyOGRuUTgxWDB4b3lJVVQ3LXdQNjg0eVNpMnY4bHFqN2dsSjJram1ZQUtlWGJCVFBhVmx4QnFxNmhCekpKZNIBfkFVX3lxTE8talgzVG0xRVdXdzE2UGdSRGk1X1FOcFFlZlBCZ2tWdWlGYnBiYzBfb1hISERsTUltUUVlR25oTGFyV1lkcXJCenJ4Y0otMVlhWEZpUHlWeDVZU1ZidDlkb3AyVmdNb0FfbkpiS25fcWZXdWhrOUJzSjdZSFBtQQ?oc=5",
-    "source_name": "CNBC",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-09-15T12:00:01+00:00"
-   },
-   {
-    "title": "Meta to expand Eagle Mountain data center campus in Utah - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxON2h5bVI5WDlaXzFpWnk4VzFnamM3T3NRcGVRV1VYMTE5N0szNW9EZTc3Tlc0MXBFZThrb3RjNVZDRUpDelhlOF9CVjl0OENNLTZPdk1RbGZQa2dSajZ2LVZwT2pkZ3ZKelVRbE9RRUN5cGZJUDVpVkxWQkFUb0IwZXBBYUZIcmF4NDRpWFIydTFaUDJrZDhaUHhCZjN6TF9hWlE?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-15T10:01:38+00:00"
    }
   ],
   "queries": [
