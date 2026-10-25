@@ -1,13 +1,55 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-10-24",
- "fetched_at": "2026-10-24T00:46:55+00:00",
+ "snapshot_date": "2026-10-25",
+ "fetched_at": "2026-10-25T00:22:31+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "The AI data center boom has a ghost problem - Business Insider",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcnRMNFJlM3M5czJrbmZfdXZJeFdxb2N2aFFINktzZjk0ZzBKdFFnNUcxRDZXTnptU1RVc3BDSV9LYkpzdWdiUXRtTWFSb015aXhjdW1fWXZSNW1iaU9oZmZHQi1NQ2RuQm1pQ01HOXdkNDd5VWduME5WYzQ2b1ROUnpsOA?oc=5",
+    "source_name": "Business Insider",
+    "source_url": "https://www.businessinsider.com",
+    "published": "2026-10-24T14:00:00+00:00"
+   },
+   {
+    "title": "Georgia's Silk Cloud deploys Nvidia Blackwell Ultra GPUs - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNREdBbUlzTjJwaVZxY2oyTF9BM05GbTZ3U0dUOFZOMkxoME00ZTRoMmZzdTZYODdLWnk3MU0tb0hoWTZGdmZiR3RKNkVuZnNFXzBPT0xVcTNFSEhTcDlXeUJzRFQ1Vkd4YkxJQzE1VVg3WUlRc2JzOFJoZ0VOdWZNaFE5c2Zpa05BbDB4WGZYVTk2Z0JaYXlySWQ3aUFzM1FQ?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-24T13:04:23+00:00"
+   },
+   {
+    "title": "Texas has suspended 17 data center construction permits and shut down automated portal that rubber-stamped projects — site was left running for a month after Greg Abbott called for a pause on approvals - Tom's Hardware",
+    "link": "https://news.google.com/rss/articles/CBMi5gJBVV95cUxOYnpkN0VrZkpVVG8xLTlibHpEdXB3eTgwZk05SnNwOHRmY2dfbEs3dU11UEV5YTg0Q09hclRuZVJmODZTVGhCVi0tbll0em9OV1FQTkJqMDJZSktnZ1dLb2NraUpoWmZBeTI0S3VZTk82b0E3VUxGVDlDNVdUeU42U2J0WXZCSnJxSHp5V0lOR3YzNEhKcXJ0MjlPVWY0d0VlQkFmV3NhalZ2elZoYnR6T1FxSjhXMHpEUjVjeEhqSWZVQVZNcmRuQy1RRmlxRE1JNzR6NGlZaFViaVU4NElERV9wSjNFc2ZKc3I3cGtDLXBGLUVYX2xabk9VRmRjX01lSC1qT1hXRjkxcnVLcU5sWlNNMUtDam9WOVVLM3kxWGpOTW95OV9EY3V3aEFoRS1DSU1MdFBmRWh0UDRkb0VwWWhkQ3pFZ2xLMEFrMFN1NTJhbnNGMncwY0FnWjBIZmI1WHJfY0x3?oc=5",
+    "source_name": "Tom's Hardware",
+    "source_url": "https://www.tomshardware.com",
+    "published": "2026-10-24T11:35:00+00:00"
+   },
+   {
+    "title": "Nvidia's role as AI financier faces first big test as neoclouds take market hit - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1kwNGVDOVM2RzM1UHRXSGxMb2t0bVR5U3F2ektqUGFGSDFwcEx4MzVsUVJWNjZobzhHSWoydXFZSVc0Y2ZuVmtGaWZ4UlpIelVnWlRGeF9fSllBSXlDNDd2U0NLenF4aVlGRy1MQWZ2bHVlTWVROUh6cVdrT2ZZU1E4N1ZaS2MxZEIyaG5QeXBEVUx0X1dLZmd5bk01RXVtc0stTG5oT1RJNk1tQ2lndi1jYV85QQ?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-10-24T11:00:01+00:00"
+   },
+   {
+    "title": "SpaceXAI facing $6.1m fine in Mississippi for building data centers without securing correct permits - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUHVQUVlaMjhDeU5uZ2Q1QXVWbjNvTlhmWE54enFfR0pYRDR4TElydFZLRUFDb3FZWEwyNDRoSTVIazZSbVBmVVBtMUpjRUtiTk1KbGF3M0l6aXRBdjhYWXMzenpHNENzVVRHNGpSR1JiV3dvenZ2WW1nU2gtOE1WWU0zVTMyUTVGLTU1VXhrcDhuQ1VuQzQtZ0Z3?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-24T10:04:17+00:00"
+   },
+   {
+    "title": "Trump is pushing a massive AI buildout. His own voters are wary of what comes with it - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcHpyd0dWM0xXTi1Yenc5LWRtYlhZXzUydG5yc1BDaWRiWlZjZk0tYU5hVGRqYl9fNjhXNW5PRHN4T3F3azZmdU1EaWIzdG1BaWFwNzI5S0dDYUdyeFN0cWRMeUw3N2F5dkd5YjUzWFN6NWJOSENUQXNXVi1KY1oxNy1FVDJQbDRCdWfSAY8BQVVfeXFMTlIxSHBHSDdaQXpRdnBiQzdveFFyRWdFSXVnUkhGOFVHdGstSFNaSmhjVnNDNi1OcklJYktNSlNXOVRxbkt0VlNvRjRGeUUxbFNpX1V6VUhrLUVpS1lBRUJtNFducmRWbU5yQ3ptMFByX2xiOUd3SW56cDdCRW84VzVZeDE3dnF0QlFhVmc3MnM?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-10-24T10:00:01+00:00"
+   },
    {
     "title": "The states with the fewest and most data centers, ranked - Business Insider",
     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBQSjFzU214dnJMR0puLUJBcWw0VWhqNUpjLVo5OEZwTGN6UFl5LTBHcWFmQklKQU5uVmFwdGhOM1plWjZ4cXp3Q1FMeW9Gb2t3OHhOMjBhdU1YM1dGaDJnSkw2bUdXelkxWmVxQm9WUS1IbjdpbTc2SE1jZUJRdw?oc=5",
@@ -2065,48 +2107,6 @@
     "source_name": "Reuters",
     "source_url": "https://www.reuters.com",
     "published": "2026-09-22T13:01:00+00:00"
-   },
-   {
-    "title": "Everyone can find a reason to dislike data center construction - TechCrunch",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQazBRMEM5WFcwS0RKZHM0R3RfeEsxTzZaT2hjZEVmNENTc3VWZ0trazNyVXFLXzJybEdxMDdFeHQxWUJLU0lkTkdVNTBaVlBpWWVTd1NPYUgtWC1sM0FnVTdiVW93bXJ0TkdOdXR0ZE42bUtwVzNsdFlZbVZBZVpuV3NXbVllMnBUaVpXczlTVFNFbGJyRUdZU21xM2x4dw?oc=5",
-    "source_name": "TechCrunch",
-    "source_url": "https://techcrunch.com",
-    "published": "2026-09-22T13:00:00+00:00"
-   },
-   {
-    "title": "Microsoft hires new director of global energy and sustainability policy - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRVFmTVRuYk1wVkhlMU9Rbkx5dTM3c0hwbmRvXzh6c3UxR3VQQ3NEQUVlZEJZWUFrSHpKbUs0ZFdfLVY1Ty0wUUdfeFNfRXE2eEp2NVFncEF3WktGbG9jSUVnbHlZOWRXNWllaFdWN1pVUzcxWFF4QWNEZ1Z3UmNtMTQtSGs4a3AxYTRzYkNrdWJnR1YtYjV4V1h0SnpIMndRV0dfS3dBbW1rN1ZJcHBfZXEydXFkQQ?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-22T11:33:20+00:00"
-   },
-   {
-    "title": "OpenAI and Anthropic scramble for smaller data centers as massive gigawatt projects lag — 20-30 MW facilities to provide capacity as mega structures undergo construction - Tom's Hardware",
-    "link": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxOQVVHZWh5SnlEaFlldzBBMnBoOWlhYmR0TVdmeF80cEthelhvamhuVEZtX1NUQXAzZlByWnJMRktGaDNFZGJHajRaR05kVzZ1NlM3Zk1JZXloS1NyUEc4amxOeS1OV1l5VzN6cnNPbTRQZndrYVJpZFIxWUpUanl2Tjk1TEZhZG5OQktncEgxMWE1NGhoWEFiY1kyR3Y1MWp1NWlXaDRqbjU2Zlo1a216TTRUWERBN1d4ejNiZEZXQ3M0allhazRod01VZVhCaEhJSXBtVjdaQU4yU1dkdVlfbU5pRl9JZVBRd1dHY1hkcllUYlVYRFZGX2NFVmN6UXVXZy1fSHFudHo2XzBqTW43Y1prZ3htc1dnMXlfcDlQd2h3bWdseVZfZW15NzVOeEloZTBVaGhqUTBPY1VEX29taC1iVDduUFgtalNWVVF6Z2t6UQ?oc=5",
-    "source_name": "Tom's Hardware",
-    "source_url": "https://www.tomshardware.com",
-    "published": "2026-09-22T09:30:00+00:00"
-   },
-   {
-    "title": "Alibaba shares jump as new AI chip, data center buildout plans unveiled - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBCcFVPdHlLbWVwQUxhZkFraXoza1JJNjhKTnBfb29EM0xCVUZzVU9WWVc5RGVKZGl4clhCYTR3TVZWVGExWUdDWDJYUEs4V21Pb1lUTmRiTllRLUNub1ZIcFEyVm13OFVjV1cyMndSV05ZcUlvRG5EUFR4MFVDQdIBgwFBVV95cUxPYlBPYTZDRm4tR2xtNlNmajZjQXNTWnh1R1pNMVhSNWZySmNkZldVRzc1N2lwNU40UlJKZHRTWlBPQWZqTU1JdVFIWDQzSm1XREhnQnBZUkltR1dGaVVsUDBUNnhSNjZzSWRGamdvSDJ1emhQUHpUVlIxazRJQi1GTU5NQQ?oc=5",
-    "source_name": "CNBC",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-09-22T05:15:21+00:00"
-   },
-   {
-    "title": "Texas Gov. Abbott orders data center permit halt weeks after issuing moratorium - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSVJvaHJuMzNxRXo2WE9SVHk3RXFMZ0t5QnRzV20zQi1CeEhoYXUxQVRqcGtrdjlHX3dhcDhpRUdSOGpia1QzbUlDSzdXdmszaGVreklianEyX0JVU0xONnI3OHRXakNPd3FGVFJhQ3RHeVc5QWZTRUpxcWNEa0daekxHcTlzbHVF0gGOAUFVX3lxTE5vVTQ4Wml3TmtzMUJ2M1FoVXFFVGw1Y05UbVB5LTl4bE40RElnSHlzRlRyS21ON0FrM0NCVVZfZklhSXBVRXR6MnBiaXdkRVVOaEl3c1lua0c1RkNPMHo1ZExXYklmaUh2TjZUMGdncF9faG5uTU00U2t0M21VTXAyVzBHRHZYbUVYRjVpQVE?oc=5",
-    "source_name": "CNBC",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-09-21T21:56:51+00:00"
-   },
-   {
-    "title": "Wall Street Is Growing Skeptical of the Data Center Boom - The New York Times",
-    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9vVjhPS25fUHJuTXZPSWJ1d09tMDlRZEI1SXppRkFjeHRrV3JXWWREUEx3cXZSSVliVG9qVmRDaUNiSlFfemVVd21zcmJ0ZHo4STNYNFVIRmtsR1RQcjNMVlpCbl9UV2dzcUFpMmR5ejc0SjhGQWlF?oc=5",
-    "source_name": "The New York Times",
-    "source_url": "https://www.nytimes.com",
-    "published": "2026-09-21T20:04:39+00:00"
    }
   ],
   "queries": [
