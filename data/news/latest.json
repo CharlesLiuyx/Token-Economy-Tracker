@@ -1,13 +1,27 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-10-25",
- "fetched_at": "2026-10-25T00:22:31+00:00",
+ "snapshot_date": "2026-10-26",
+ "fetched_at": "2026-10-26T00:27:16+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "Data Center Late Fees Hit $5 Million or More Per Day, Spawning New Insurance - The Information",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPRjhDWE91eThsT2RjM2djVkE4UlhrbkMzajQ2aVlHN3Q5cy1Ud0FNOW4xT1B6NzV2akxwUGxNcGtxRFFOcG9laGM5QV9GcV9KbGw4M0hZbFgzZ3hoWVptU19aalAwRXluWDJmblptOHYxLVgwSHRWWWFhQUpVNGhBSTlPTmJLMGpURHV2TE9hZzBiQVlqaktWdTNjSlRac3lleGl6cnJ5TVJCd3A4QlBNa1dGS2F3LVE2QjVRLVIyYXZNTHFpS0E?oc=5",
+    "source_name": "The Information",
+    "source_url": "https://www.theinformation.com",
+    "published": "2026-10-25T15:31:00+00:00"
+   },
+   {
+    "title": "This sold-out plushie emits the grating hum of a real-life data center when you squeeze it - Business Insider",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeWxjR3V2YlpXUHFvckNxdGd2S1Q2SFlaNElVdFJCdG1kazJlNXZwbjl4Qkc1dU1fR09ka0RNZlNUZlkySkpuU2h6bkN4MFJOalVqdjJEX3ZOVUpjdkpqRDRFVFZ4RXhDRGE4UlFMWmFiOE12aHY0WFhHYU5BOGIxWUFyeUZLd29zTXF5Tg?oc=5",
+    "source_name": "Business Insider",
+    "source_url": "https://www.businessinsider.com",
+    "published": "2026-10-25T10:17:00+00:00"
+   },
    {
     "title": "The AI data center boom has a ghost problem - Business Insider",
     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcnRMNFJlM3M5czJrbmZfdXZJeFdxb2N2aFFINktzZjk0ZzBKdFFnNUcxRDZXTnptU1RVc3BDSV9LYkpzdWdiUXRtTWFSb015aXhjdW1fWXZSNW1iaU9oZmZHQi1NQ2RuQm1pQ01HOXdkNDd5VWduME5WYzQ2b1ROUnpsOA?oc=5",
@@ -32,6 +46,13 @@
    {
     "title": "Nvidia's role as AI financier faces first big test as neoclouds take market hit - CNBC",
     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1kwNGVDOVM2RzM1UHRXSGxMb2t0bVR5U3F2ektqUGFGSDFwcEx4MzVsUVJWNjZobzhHSWoydXFZSVc0Y2ZuVmtGaWZ4UlpIelVnWlRGeF9fSllBSXlDNDd2U0NLenF4aVlGRy1MQWZ2bHVlTWVROUh6cVdrT2ZZU1E4N1ZaS2MxZEIyaG5QeXBEVUx0X1dLZmd5bk01RXVtc0stTG5oT1RJNk1tQ2lndi1jYV85QQ?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-10-24T11:00:01+00:00"
+   },
+   {
+    "title": "Nvidia's role as AI financier faces first big test as neoclouds take market hit - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1kwNGVDOVM2RzM1UHRXSGxMb2t0bVR5U3F2ektqUGFGSDFwcEx4MzVsUVJWNjZobzhHSWoydXFZSVc0Y2ZuVmtGaWZ4UlpIelVnWlRGeF9fSllBSXlDNDd2U0NLenF4aVlGRy1MQWZ2bHVlTWVROUh6cVdrT2ZZU1E4N1ZaS2MxZEIyaG5QeXBEVUx0X1dLZmd5bk01RXVtc0stTG5oT1RJNk1tQ2lndi1jYV85QdIBuwFBVV95cUxQWkFsODZMbW1ZMjhwOXdUcHFSZ01La3kteUFsVXBPVWV1RnRqVzRmLXZZOXZpWklDTk52T3k4ZGkwbHduZHJkdW9rYjhEbXBPLWFiZURiNmt1UUdyaUpqdS1kS1lXTjRJWnA2N0Z4UlR3NnJhUkNyZ3RYMGF4VTRfWDg3emVCWEZ5R1dYcFk3RXc3RjRqQXNhMG82MlR4d2RaNFU2OUNxQmVJcU9OOTNyaXluSjI0N1d6WFg4?oc=5",
     "source_name": "CNBC",
     "source_url": "https://www.cnbc.com",
     "published": "2026-10-24T11:00:01+00:00"
@@ -917,6 +938,13 @@
     "source_name": "Data Center Dynamics",
     "source_url": "https://www.datacenterdynamics.com",
     "published": "2026-10-13T09:45:01+00:00"
+   },
+   {
+    "title": "Legrand to integrate Karman AI platform into data center PDUs and power shelves - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMG01VloxUGNVQ0Z1a2ptRnJFWHNrc2swNHNKSFJIWm1OMG1FZUVDYWRzbUdBTndWSUZwbUNSaGxscWtaTDFLcUdHV1gtbEllQ3FGdU5oUkExZ29FOGVwN2J1Ykx4LU5EYmhoc0cyZzFzWjU1UW5hVHJCZ3M1bWRrX0Ntelp4SXZwMXIySG0tUVlaNXNfZGpjQklaM2MwVGZVdVFvYUNoNFhqdEhzdDA0UEtpb2Q5TlRWRmpLQmktdVI?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-13T07:00:00+00:00"
    },
    {
     "title": "Anthropic warns AI models may soon self-replicate and could wreak havoc on the web - Reuters",
@@ -2079,34 +2107,6 @@
     "source_name": "datacenterfrontier.com",
     "source_url": "https://www.datacenterfrontier.com",
     "published": "2026-09-22T19:46:30+00:00"
-   },
-   {
-    "title": "BDx breaks ground on AI Campus 2 in Jatiluhur, Indonesia - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOU09yQVFOS3pqM2NKNkc4Rk44eVpxM3p0bWtlNHhIYnhaQjBCNVVCdVZnTF9LTnFqVldEdUF1dE0weWljaTV5dEswc0lLMHlyeFhteUxXUHZDUDl5U29RTXVtem1EN281YWF3Mm12LUR4VXlBMmJBOWkycnBybGJyYTNHaWVPS2pRM2ZmR3VSMDBMaUxXOW56NUQ3akM0RmVt?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-22T16:58:20+00:00"
-   },
-   {
-    "title": "The Big Threat Has Been Climate Change. Now Comes A.I. - The New York Times",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcVIwd0dvR0hHT2JpZXQ4UEdEYkYwZnowaHptOVliQlRCb2dyaGo3SEsyX1hNVXZNV056aGpnNGlWRG8yeTMwU0FGY19WMFRlSThTcnJWU0ZmM2xmSDFDZGwyMUl6dGJLeUFCTWVBcUZfaUtxOHRWc3Q4c3hfTWhKejEwblZVM19PXzhTaWt3Z3pZd2hJN1RlOTlOcHdHZjloTVE?oc=5",
-    "source_name": "The New York Times",
-    "source_url": "https://www.nytimes.com",
-    "published": "2026-09-22T16:33:29+00:00"
-   },
-   {
-    "title": "Kairos Power selects Samsung C&T to help build 50MW SMR for Google in Tennessee - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaTNwTkZybDFrOEFfOVdBMFdmRXhXcDNHelRieVd6YklCb1lMVHFnY2hDbVcyS1NEVklReUJLQjBHR0M5MThnSUYtVkJPSGZsblplcDBlSU1jajU0WHpTWUdCQjJQRWk5VDhZdGt5Yml3cmh2ZDN6b29rVGdMQzJBU2lyM04wWFRKZ1Z0aks0QWdkSDBXeGhlNnRwNUZOMmZWeDY0aTJ0WWZBZWpxR3pIYkhnanIwWEtpUm9xYV9Ecw?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-22T13:53:20+00:00"
-   },
-   {
-    "title": "With new Macs, Apple aims to take on Microsoft, Nvidia in a rush to lower AI costs - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPdW5hd1BKazlnZmctdWM5ZjA5QXFOZnVPYjE0dExZNXc0cDJiUWhjb0VzWUZ0QkdYb3dKaThfR20wMzlOVWRGaTc3SlZUYVdWOXB5bWV5NFE0ZGhsSC1xeG1NN2szdVpISklVdW1FcExXZ1Eya3JoekEwa0VJSHJzc2l5dW9PRWdLVzJ5MVYyNG15ZWFVRHMxNmdDRHpZd0xWY2ZaUGhLTWptZVJlSHBueWloeUFIcHhYTGhISC00c0pHQ2lBdVE?oc=5",
-    "source_name": "Reuters",
-    "source_url": "https://www.reuters.com",
-    "published": "2026-09-22T13:01:00+00:00"
    }
   ],
   "queries": [
