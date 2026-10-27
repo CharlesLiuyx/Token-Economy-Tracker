@@ -2,12 +2,16 @@
 
 > TL;DR：npm 官方下载量 API + pypistats.org，低风险；注意这只是采用度 proxy，不是用量。
 > 何时读我：改 scripts/fetch/sdk_downloads.py 或加跟踪包之前。
-> 最后核对日期：2026-09-08
+> 最后核对日期：2026-10-27
 
 ## Endpoint
 
-- npm：`https://api.npmjs.org/downloads/point/{last-day|last-week}/{package}`
-  （scoped 包如 `@anthropic-ai/sdk` 直接放路径里即可）。
+- npm：`https://api.npmjs.org/downloads/range/{今天-14}:{今天}/{package}`
+  （scoped 包如 `@anthropic-ai/sdk` 直接放路径里即可），每包一次请求；由 `_npm_entry()`
+  取**最后一个非零日**作 `last-day`、对其前 7 日求和作 `last-week`，落盘结构与旧版
+  `point/{last-day|last-week}` 完全一致（`downloads/start/end`）。
+  **不要用命名周期 `point/last-day|last-week`**：2026-10-27 起它解析到错误的「最新日」指针
+  （返回 end=2026-07-01），而显式日期查询（`point/<date>`、`range/<a:b>`）正确，见下方「坑」。
 - pypi：`https://pypistats.org/api/packages/{package}/recent`
   → `{data: {last_day, last_week, last_month}}`。
 - 包列表配置在 `data/sources.yml`（npm_packages / pypi_packages），加包只改注册表。
@@ -50,8 +54,14 @@
   （`validate()` + `NPM_STALE_MAX_DAYS=4`）：npm 最新 `last-day.end` 落后当日 UTC 超过 4 天
   即判本源失败，让冻结显性化到 `data/_status.json`（宁可当天留缺口，不写重复陈旧值），供每日巡检
   发现。阈值取 4 天以容忍正常 1–2 日滞后 + 周末规律性延迟。pypistats `/recent` 无日期字段，
-  无法据此守卫，pypi 侧仍靠 429 兜底逻辑。
+  无法据此守卫，pypi 侧仍靠 429 兜底逻辑。改走 range 后守卫依旧有效：冻结时 range 尾部为 0，
+  「最后非零日」停滞即触发。
+- **命名周期指针错乱（2026-10-27，Issue #5）**：`point/last-day` / `point/last-week` 对所有包
+  返回 end=2026-07-01 的旧数，同刻 `range/2026-10-18:2026-10-27` 已有 10-22～25 新数、
+  `point/2026-10-19:2026-10-25` 也正确。故抓取改走 range 通路（见 Endpoint）。另注意
+  range 里有上游空洞（如 10-19～21 为 0），会如实压低 last-week，与旧命名周期口径一致。
 
 ## 样本
 
-`docs/sources/samples/sdk_downloads.payload.json`。
+`docs/sources/samples/sdk_downloads.payload.json`（落盘 payload）；
+`docs/sources/samples/sdk_downloads.npm_range.response.json`（npm range 原始响应，2026-10-27）。

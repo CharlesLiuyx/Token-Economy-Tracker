@@ -76,3 +76,25 @@ def test_sdk_validate_skips_guard_when_end_missing():
     payload = _sdk_payload("2020-01-01")
     del payload["npm"]["openai"]["last-day"]["end"]
     sdk_downloads.validate(payload)  # 无 end 字段时跳过守卫、不新增失败面
+
+
+def test_sdk_npm_entry_from_range(monkeypatch):
+    """range 通路：取最后非零日作 last-day，前 7 日求和作 last-week（尾部未出数的 0 跳过）。"""
+    rows = [{"day": f"2026-10-{d:02d}", "downloads": 0 if d in (19, 26, 27) else d} for d in range(13, 28)]
+    monkeypatch.setattr(sdk_downloads.net, "get_json", lambda url: {"downloads": rows})
+    entry = sdk_downloads._npm_entry("openai", date(2026, 10, 27))
+    assert entry["last-day"] == {"downloads": 25, "start": "2026-10-25", "end": "2026-10-25"}
+    assert entry["last-week"] == {
+        "downloads": 20 + 21 + 22 + 23 + 24 + 25,
+        "start": "2026-10-19",
+        "end": "2026-10-25",
+    }
+
+
+def test_sdk_npm_entry_all_zero_fails_validate(monkeypatch):
+    rows = [{"day": "2026-10-26", "downloads": 0}]
+    monkeypatch.setattr(sdk_downloads.net, "get_json", lambda url: {"downloads": rows})
+    payload = {"npm": {"openai": sdk_downloads._npm_entry("openai", date(2026, 10, 27))},
+               "pypi": {"openai": {"last_week": 7}}}
+    with pytest.raises(SchemaError):
+        sdk_downloads.validate(payload)

@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import sys
 import time
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -18,7 +18,7 @@ from scripts.lib import net, runner, schema
 
 SOURCE = "sdk_downloads"
 
-NPM_POINT = "https://api.npmjs.org/downloads/point/{period}/{package}"
+NPM_RANGE = "https://api.npmjs.org/downloads/range/{start}:{end}/{package}"
 PYPISTATS_RECENT = "https://pypistats.org/api/packages/{package}/recent"
 
 # pypistats.org 是按 IP 的突发限流（约每几秒 1 次，无 Retry-After 头），
@@ -46,6 +46,41 @@ PYPI_NODATA_429_SLEEP_S = 20.0
 # 供每日巡检发现。阈值 4 天以容忍正常 1–2 日滞后 + 周末规律性延迟，同时在冻结数日内即触发。
 # 注：pypistats /recent 只返回滚动汇总数（last_day/week/month）、无日期字段，无法据此守卫。
 NPM_STALE_MAX_DAYS = 4
+
+# 2026-10-27 起 npm 的命名周期 `point/last-day|last-week` 解析到错误的「最新日」指针
+# （返回 end=2026-07-01），而显式日期查询（point/<date>、range/<a:b>）数据正确。故改为
+# 每包拉一次 range 回看窗口，自己定位「最后一个非零日」作 last-day，并对其前 7 日求和作
+# last-week，输出结构与旧版完全一致。range 里尚未出数的日子为 0，故取最后非零日；冻结时
+# 最后非零日停滞，仍由上面的新鲜度守卫判失败。回看 14 天足够覆盖守卫阈值 + 7 日窗口。
+NPM_LOOKBACK_DAYS = 14
+
+
+def _npm_entry(pkg: str, today: date) -> dict:
+    """由 range 接口推出与旧 point/last-day、last-week 同构的 entry。"""
+    start = today - timedelta(days=NPM_LOOKBACK_DAYS)
+    data = net.get_json(NPM_RANGE.format(start=start.isoformat(), end=today.isoformat(), package=pkg))
+    days = [
+        (d, int(row.get("downloads") or 0))
+        for row in data.get("downloads") or []
+        if (d := _parse_iso_date(row.get("day"))) is not None
+    ]
+    nonzero = [d for d, n in days if n > 0]
+    if not nonzero:
+        return {
+            "last-day": {"downloads": 0, "start": None, "end": None},
+            "last-week": {"downloads": 0, "start": None, "end": None},
+        }
+    end = max(nonzero)
+    week_start = end - timedelta(days=6)
+    by_day = dict(days)
+    return {
+        "last-day": {"downloads": by_day[end], "start": end.isoformat(), "end": end.isoformat()},
+        "last-week": {
+            "downloads": sum(n for d, n in days if week_start <= d <= end),
+            "start": week_start.isoformat(),
+            "end": end.isoformat(),
+        },
+    }
 
 
 def _parse_iso_date(value) -> date | None:
@@ -93,16 +128,9 @@ def _pypi_recent(pkg: str) -> dict:
 
 def fetch(cfg: dict) -> dict:
     out: dict = {"npm": {}, "pypi": {}}
+    today = datetime.now(timezone.utc).date()
     for pkg in cfg["npm_packages"]:
-        entry = {}
-        for period in ("last-day", "last-week"):
-            data = net.get_json(NPM_POINT.format(period=period, package=pkg))
-            entry[period] = {
-                "downloads": data.get("downloads"),
-                "start": data.get("start"),
-                "end": data.get("end"),
-            }
-        out["npm"][pkg] = entry
+        out["npm"][pkg] = _npm_entry(pkg, today)
     for i, pkg in enumerate(cfg["pypi_packages"]):
         if i:
             time.sleep(PYPI_REQUEST_SPACING_S)  # 避免撞 pypistats 突发限流
