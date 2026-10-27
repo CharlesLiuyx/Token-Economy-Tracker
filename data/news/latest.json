@@ -1,13 +1,146 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-10-26",
- "fetched_at": "2026-10-26T00:27:16+00:00",
+ "snapshot_date": "2026-10-27",
+ "fetched_at": "2026-10-27T01:31:11+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "Anthropic is burning gas to feed the AI boom - The Verge",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaHJjRElTTVd1TFppMk1PZnBuZjdYaFNuLVZUU0ZDTUdlYmszVkM2RUNQNmk4elRxclp2VDE3RE9XSVY4YjVrUGlGZDRzUFg2THg5R1Q3cnNkMF9WTXBJTVRvU01pUlVOZlU4QUVNZE1MN3lpNHFOMWYxVl9nQURNU0RaT2lBLW5hYnc3NENDX2R2V0xEMjBEQlFpYzZJVzg0Qi1tSmNhR3J1YzhO?oc=5",
+    "source_name": "The Verge",
+    "source_url": "https://www.theverge.com",
+    "published": "2026-10-26T21:45:31+00:00"
+   },
+   {
+    "title": "AirTrunk Secures $3 Billion Green Loan for Sydney Data Center - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbEhwd1VUMmpCZ0pXN1ZiZ05BX21lS0xiLTRhRzlTQzFwOU4waE9fMmxpSlBNcXpyODM3bWNjY2tKM3VhWmczeEtrTXpQWlF0RmF0VkpsLVB5bk5NLVJLTm1IXy1Ma19oRTdKNVVNdHlrSEVHYVNRVXV5WEs2RGVucV9IVnliWXk0M05kWVVLQzMyZk42Z051N01fNDhEWFdzQUtMbHdHaVRzUFNfcjFzeA?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-10-26T21:43:25+00:00"
+   },
+   {
+    "title": "The next evolution of data center backup power - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPX1ZXUTFqRU16YnpCM0RzNFlMbkI4bE9Gdk50eXFTbDN4LTBucV92NnhWRnQ2Nk5raW16Yi1qS3ZjeGtLQ0VXd1hST1ZVYVVERE9jQjBwcVhzNmYxSXJKN2R3ZEhXa2lqSGlTbFp2RndPcC14b1pVSzBzM1N6RXRmc25VeDNKWTcxbDl1YVo0Sm5Dc0YyZDJUaDhn?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-26T18:33:57+00:00"
+   },
+   {
+    "title": "Ecoblox partners with Rimac on modular data center solution - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNVRPdk5NOVkyb1NibzZINTRCdk5mMnNVN3piY2pGUTJnUHpZVXo4N3hMdjh2dXAtTHlvUUpFOTRKX0h6clRfMjlmemtEc2VlUkR4ZnlaOHoyd2h1TGg5cUJiOGxhVlFiaEFjN2hDSlJwRVFFWVRncWNYSnNITHBzYnl2TXZWLS02UnVqX0U0Q19qZ0hqT29oTHd1RE9fTXg0cTd1Znh3?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-26T17:53:51+00:00"
+   },
+   {
+    "title": "Cadence unveils Nvidia-powered AI data center in Munich, Germany - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPalZIclZtZzhOdnlLbVdQRHlldkFKcU04SWV5V3F2ZHlYN0dYSVlmaTFkcHhuWEx5MDlObFpRTzVuN29lRjdnVmtqN3NhclgtTkpGNEFWLXVjeHBmWS1HaE1QUFBwQXpBZ2dGZXk2cDFoT3NZbll0ZHpNbEJ4T1VkZlhwcWRubEpKODlZdS1JcUZWSTl2eHdUdXREemoxWkROY09iWFh2bXlWWGs?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-26T17:53:51+00:00"
+   },
+   {
+    "title": "Anthropic files S-1 for IPO, with $417bn in compute commitments - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMlljZVlDZ1R2WTJDbHRMT0xQaTNQSENuRzM1cV9yZnphZC1ueTR3M0g5Skp0OTFqSlNMS3RwQkxWV1JPUzI5VkVnUnVPY2VjMEFjU0xWRGlhVmhfZHdTUzdIdEJBcUlHak1kcEdkaEJ5d2kwX2RtakdpamV5V041M0FDbFdxSGhQQ05LN1VFUFFkdVlVQ1VlYjJGcGFvazU0eFNpNC1hci0?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-26T16:59:58+00:00"
+   },
+   {
+    "title": "Anthropic Cites Climate Change as Risk to Business in S-1 - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOR1BlQkJ0dXQtRzRsdzBaSm14MTAtZmhSSmN5TkFySE92X2ZlUWVUVEFFSmNMQnVSUFZ4NHhQRVhhZ2swdXZUM1FzRTlHNXBma0w4d1lpRGJlVUlmamgxcEJLNVpYdGZ4WmJibUYtUHBaTk5ZZXZXQjRDZy1aTW03SVVFSmU1RjBvZk1xdXdHZ01Cd2JpREV3ajlYZGJQN055S1JHTEh4YVBHQVpz?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-10-26T16:55:06+00:00"
+   },
+   {
+    "title": "Fireworks to lease data center capacity in Dallas, Texas - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMWdRZ29jclRLNU1vdUlYejg0MS1SYjVFdS12MXBBWmlMT0o5QUFldUIxRWlQMndXaGh4czBXMDlTMnZibWY0NU15SHZhU0cyekQ2S1A3cUVuVXJEall2VDRtbU9tcXFjQlhHQ2k1TWxYVFdsOVA5bHdRUDdVTkFkQko1LXFtUDZJdkJ1VWpGakJ0RzhHN2ItSkhYS2J6UGZS?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-26T16:18:47+00:00"
+   },
+   {
+    "title": "Karman completes power orchestration pilot at NextGen data center in Montreal, Canada - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUDVMUzFuUjRyeWg3ckp3cm5rb1ZGSHNGRENyck90Ync1OTI1RjRoRmJrZHViTU43c1ZCZGtuWEV0bVhLbWRLT2ZKQUx6YjR1ZmFGajVJZGFDbHpvbnFsVGVDMVNaQ3FJSVE4V0hfNjlETTdha0xEZEhXYUVqdHRvSU1lOGNCRi1nV1BuZzVlTzRnd0NSenBSQnZudkdoTEhFNGNLclpPZU5SZDhIaXVINERuYWlzU3BRWERUZFhpcFJjTHFzcjVJ?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-26T16:16:48+00:00"
+   },
+   {
+    "title": "Generative Bionics plans AI data center and humanoid robotics factory in Italy - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMmV1VlNLZXpGSU1lZTJyU0pDOFF5MVdlU3JJQW1SRm5BdkRsQTRhbFA1T2tRWl9MWC1OeTY4MTJkaXRVb0JYQTd2U3M2ZDluUG5FNmxWY2dPRzlnRW9rV3dOUHpxckZ5Z2JkVzFTX0t4V2FRbEtZT3g4alRkcFAzQmc1WU4yRTc4QVNlQk1YY19QVnRDODZ2ZEtHNWN1Q1BGRVVqOGMyMkpJdw?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-26T16:07:21+00:00"
+   },
+   {
+    "title": "AI scaling race accelerates investments in microgrid technology - Reuters",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZDQyblpKbHQxQ25YR2J4UDBvMFBPV1pkNlJoRV9BR0hDSHh2WEtMNWhDQnBpakNfLWtNNUVnZkE0UXlCa0p5VmhKdndKQ09ub3ZDOFdiSmF1RW5STUpUeWxQdGE1VmlVZUhKUlc4NTJpSUdNd0UzMk8zZ0xLM1lPRC1jNkZweVphQjgyVGtrTC1UYWRrWTdwcWNCWkc4Q3Jycnh2SHpMUm9mOGlaZC1oX0xkTnFUZEhidlBr?oc=5",
+    "source_name": "Reuters",
+    "source_url": "https://www.reuters.com",
+    "published": "2026-10-26T15:29:15+00:00"
+   },
+   {
+    "title": "SWI launches AI cloud unit SWI Compute - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTFlsUGZyVEZNTGlnai1sZ2ExT3RfZUNnMXRpR01ySi1RaEZWaWFZQlRTbXVHb19zYVA3Wk9jY2E2TWhOWWFrUlBmSzBlRGdjX2RPclpqaE5ONlBjcnFMVmozQjF3NTV2LUJzdUtZd0ZFS0pBbVVPMTcwbFhSaGJDVzBzdl9DR3FCWUE?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-26T15:13:32+00:00"
+   },
+   {
+    "title": "NVIDIA's DSX POD Pushes AI Factory Construction Toward the Assembly Line - Data Center Frontier",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUFhFdzVMdUZnZ2Z2WThSZmU4alJqLTFFQmJ0TEJENW5vX1BJdS1qMl9wMWczWHBLbGs1UEYyT3pfbzlYdzNQT2RzQkZTV1hRMkFBU1VPQjdzQ01ZaTJOZ2h6S1BQUXlVMTluV1dscU5VSjhFOGI3dF9tTTlIVHdHWXlkYl9xYkYxdDVsMk0zeC02MkVzTURTVmhvN0xHeXl3c09Td2d4MnNuemxjMk0wVWE1MmJBTF9tSXJRN1ZMUi1KbHl4anlxVjdhamlicUtmTklCekFldw?oc=5",
+    "source_name": "Data Center Frontier",
+    "source_url": "https://www.datacenterfrontier.com",
+    "published": "2026-10-26T14:35:14+00:00"
+   },
+   {
+    "title": "DCD Studio: Equipping an AI future with Adrian Guggisberg, ABB - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORVRCYkhvZ1NDTVB4VHJVbWNkc1pBNzVvQzhJMlVTTFhUeXZKWENQUS1ZdEFtMTNmNExRdURBSnBtYjRqWFZybzNsangtRHR5eF9wc01ZOC11X0FpV2EtdnlCQ1FlOUhOOTZ0d3FMbjhUSUdYVnh4eDEyUS1Xcm85OHBleDA5RXg0eGllVjk3WEh1eWtxYlNqUklramdMY0l0VlgyazJLc2toUQ?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-26T14:16:35+00:00"
+   },
+   {
+    "title": "DCD Studio: AI’s power problem with Varun Sivaram, Emerald AI - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQN2JndTFRemZrbDdIMUVRUjVkNlVYaWhsX0xLUC1vSlB2OEtkdXl0QjBnTk5IUVIxTHJzMEtUR1l1SmJHNlNWeDlNcHhvN0FuS1R0WHRNOWdJYk9sbFU5STZSMHh6dEJ5Tm1lR3dnZUhaSWlWLUM2WGhiTWFEcUNrbnVuOElId1ZKUjBPSmFmcWhCb2hFM2EyeW5QNEpkajE5anlkYlNqWQ?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-26T13:46:30+00:00"
+   },
+   {
+    "title": "G42 signs MoU for AI infrastructure in Greece - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNkpxWWotdVVmV0hjZ3NQOUg5MHA5N1pzUGZaUkZ4UkpCUV9sM3hqYkRjbnRKZEtRLTFMVHA2QzVMUHpYS29PaG9FVGdWLUs2RlllbFNfeXhfWHRDdjdjQzBzaWdSSlhhdVpNd20yeGZKMVNXN2o4cFNGT1ZqS2JVeEpxM2gtMU1ESTI3cnI1c3hGOXM?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-26T12:33:28+00:00"
+   },
+   {
+    "title": "Accelerating AI data center deployment with software-defined medium-voltage switchgear - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVnpLMG1tbFp4S3JLMzhWSmdlVlRyNjF0R28wWGhxak9pcUxkd3g1Sk1NODJCVUxoLUctaThvVktPOTZOMTF0TWZ4V1JsaTVIVl80Nk5VUzEyRmZRQzBIckNwU0hRdjZjRFd2STJyV2N6M255YXpRMzZ0VnlQOS1udGExM3dsa0ZuMVB0dUlSTWxnSW5vUlNGS2lycFlTV3ZIRGdRUkd6bVdTNTBsUGk4MFI4R0FvRFZibTBjSGVTTndJbVR1aUZfNHZSaUdiSGI0REk4?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-10-26T11:08:13+00:00"
+   },
+   {
+    "title": "Elon Musk Says Neoclouds Are Cooked, and SpaceX Won't Be Buying Them - Business Insider",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdEpWNklXOC11OFYyYk5Pbzd3aDAtMExoQ2NQVW9WMWdIa3VWRDBES0x4TWx0WTJyUFJiNTFOMXZWTm9vSDVRS2VxeGo2QmR2dWJLMlVORWJ3Q2diUFkyZG9lZzg4WnZjbkd3dXZwVi16X2RIb1pVcldBWjJLbFlCNUtsU0YzLUpXYUpHUQ?oc=5",
+    "source_name": "Business Insider",
+    "source_url": "https://www.businessinsider.com",
+    "published": "2026-10-26T06:37:00+00:00"
+   },
+   {
+    "title": "800 VDC for AI Data Centers: Rethinking Power Delivery in the White Space - Data Center Frontier",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPckJjZU1nc3A3anUyVjRiNFF2bng2NDVjSFBqdGZLbHRNVHBHNGJwaE5MQjB1U2dTWDZhVVE1YlpfWi1rY0k5Z3RGazhwcERjZTVIYWR5bkdhZDI5dXVScEFXMFpUeUdVQl82aGRMRXdZeHBHS2dzOVpVVkY3Zmx0aEowem1mNFR4RDl4czVPMThSR1Q3OTVBbmdtcWVJa0c2SlVBUlhLNVFjeVhBa2p6SUVaazBFSGk4RHpmd3BJbWhSWlFUSm9Jdk1iUGlVQXc?oc=5",
+    "source_name": "Data Center Frontier",
+    "source_url": "https://www.datacenterfrontier.com",
+    "published": "2026-10-26T05:06:39+00:00"
+   },
    {
     "title": "Data Center Late Fees Hit $5 Million or More Per Day, Spawning New Insurance - The Information",
     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPRjhDWE91eThsT2RjM2djVkE4UlhrbkMzajQ2aVlHN3Q5cy1Ud0FNOW4xT1B6NzV2akxwUGxNcGtxRFFOcG9laGM5QV9GcV9KbGw4M0hZbFgzZ3hoWVptU19aalAwRXluWDJmblptOHYxLVgwSHRWWWFhQUpVNGhBSTlPTmJLMGpURHV2TE9hZzBiQVlqaktWdTNjSlRac3lleGl6cnJ5TVJCd3A4QlBNa1dGS2F3LVE2QjVRLVIyYXZNTHFpS0E?oc=5",
@@ -1974,139 +2107,6 @@
     "source_name": "Data Center Dynamics",
     "source_url": "https://www.datacenterdynamics.com",
     "published": "2026-09-24T13:03:21+00:00"
-   },
-   {
-    "title": "Oracle sends 'force majeure' notice about data center project — stock drops 3% - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE83OGFNcURydFoxR0o2WFYyX2ZTRkVUdno1UnNET2lrM0ZDVUdnZE11NWtMWFl1NnV1aU4tbXlLeFgtUEJVT2ZRY0tVcWxZWnpZR0g0a2owZDNYUHQ5Z05NZDY0aDAwUGhQMHZtUFZVd2lXX3Nnbkp5b9IBfkFVX3lxTE9xalhSV0NpQlJoUnQ4VDZGYUQtR1hnY1ZKMlVPVlRTelNaQk9qMTF5NzROY2xRcmFVNFJBQnY4QnlsVVRuOE53T1BtaDVxTXJlZlB2UzZhWmE2b0hPZmFlYlhZSDdDbU5lbEpGSnFvUGJtWVd5S1RZMGFvdG1Qdw?oc=5",
-    "source_name": "CNBC",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-09-24T12:48:08+00:00"
-   },
-   {
-    "title": "Exclusive | Is 3-D Printing the Answer to AI’s Gas Turbine Crunch? - WSJ",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQ1JyeV8tLS1WQkNVLXo1OUtneDNiZEhsUlJyN2J0bGFRVm9LVUV2Q0lNNkZfQzA0b0hnSVdncTVuYUxxemVneEdPd2NLZWxWLUNZcDhaQjJSLXZaczF0WFBMM3Q2NDhwMHZ0TFdjZXRXWjNxXzNCMHBENHdNV1JNQTlCYnBTWGQxeEhUSmRLbHFlTldaSGRNSi11YjFGeWx4OUY4?oc=5",
-    "source_name": "WSJ",
-    "source_url": "https://www.wsj.com",
-    "published": "2026-09-24T11:00:00+00:00"
-   },
-   {
-    "title": "The AI Build-Out Is Becoming the Biggest Economic Bet in U.S. History - WSJ",
-    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRnMwcmstaEVJUmswYTZMOWc2MmpyWmEyM2FxeHZua3FCWUVBazU1cnJsc3huYUNub1hYWUZ3UE5OQVJ4S3ZaNTJNOTVlbGJKdmE5ODZDeF9KempCRXZ5TGVQcVJVRGd1VWVGOTlIejlLZ1ZEMG1NOW1DYnRNSjcxM0hMU0xaRVg1OFgwaUFFWTA5Qk42RWcwTTcwRDB6dVNoZ3I5Y1V1c3U?oc=5",
-    "source_name": "WSJ",
-    "source_url": "https://www.wsj.com",
-    "published": "2026-09-24T01:00:00+00:00"
-   },
-   {
-    "title": "Meta signs 144MW solar PPA with Apex in Texas - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcWpkemxJZDBZYllvejM0elJxV0hFNDlEb1VDUWNlNkhaVm0zSTJKejd3Ykp2X2dMMGpFcmdqSzA4MDNmQ2FRZTZtVGdoUldxYlh0WXJpWjd6b0p2azZOWlRjem1vV2s0MUxKVWdtTmhkY0Z6c0U0dXJpX3JZcTIwRC1xZVVMQ0VMLW5aLVpJcExtWUU?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-23T22:52:26+00:00"
-   },
-   {
-    "title": "Nvidia Executive Argues A.I. Can Help Climate, Despite Current Emissions - nytimes.com",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVEVwS3VIem4tQ3hOWWZnSjd6cTFheG5BT01MSlNXX25tQ0hHN0JRbUlqeXlGc1pPT3E2Y3QtcndwcWZmR19fazBnX0Q2VmxqSzFoRzZJOFVTQWQ0cHBlQnBVem1oTGNBRG4wcl9rcFptbWVxQzQyWEthTkY2aTRLUEpWVWtPMDQxWUROYnVIMkFGZG9OUC1hWk9HTS14V2xMbUE?oc=5",
-    "source_name": "nytimes.com",
-    "source_url": "https://www.nytimes.com",
-    "published": "2026-09-23T20:43:27+00:00"
-   },
-   {
-    "title": "Floating Data Centers Move Toward Infrastructure Scale - datacenterfrontier.com",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSE0yMWxTUThkbGJ0UjU2V21mMm45WE5hZHphY2pteERUQWsxQ1M1MEtBRDVxNVhEZjJ0Z29iSFN3SVoxTjhrU05kVHlZRHlCeG5feVBtUGkxZ0ZxMlcweTctTWJCNEN0TkJyeTgxQjFkbmJRMFFsUDIwM2k3SXJieWgxWUJ1RFp6Zk90aFdZRkY5SXBlOHN3R3BJQTdocG9tVjhabkQzOWdrdlFNSDdkTmxBZFRVd0Iy?oc=5",
-    "source_name": "datacenterfrontier.com",
-    "source_url": "https://www.datacenterfrontier.com",
-    "published": "2026-09-23T19:32:35+00:00"
-   },
-   {
-    "title": "Abigail Spanberger, Virginia Governor, Calls for A.I. Data Center Rules - nytimes.com",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQLVNBdmsyRWl6bTFYRS1LeGR4VlN3ejRNWElGTmY2Qlc5bG1Fa2U1eVktbk11YXNEMkpjQi13cmFUSlhHODZZa3FRQXdCcDk2dGRETHRjMV9Ja3JPSDZOUUtXNTIyTXp4RndRdVNFR05iYnBiMFZ3eWx4SzFlaktTb3RpOFBqTXdr?oc=5",
-    "source_name": "nytimes.com",
-    "source_url": "https://www.nytimes.com",
-    "published": "2026-09-23T18:51:03+00:00"
-   },
-   {
-    "title": "Microsoft, Google Confront Rising Data Center Backlash - Bloomberg",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPNTNVTnRGODV5TFRWSmdkS1g0U2RCYXBieFpGeDd4dWF1YWFTc2IwWUlVRF9NZTBvWTN1alRIX2JLU0tBX1I4YkZkSjQ2emVwdm9EZVZKcEZRcW10RVIxa0RGRkMzbTVyMlRTQ1FFb3pkTzJoQUd4ZUtIRWRZSXMzUWhGa3VZUnZhQzhvQVI4bDQzcXhHaElBV2RyVVNyM0J3OXI5Nk9oY0kxdzlJdkdEMmdn?oc=5",
-    "source_name": "Bloomberg",
-    "source_url": "https://www.bloomberg.com",
-    "published": "2026-09-23T18:15:06+00:00"
-   },
-   {
-    "title": "Rural Americans are getting more and more fed up with data centers - Business Insider",
-    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOHJiRVVsQjNab2lZUTFOSXB0dW5OY1JweENQR3dsb2dObVhwa1lER0xZSmZsZ1BxX3VlMTFRWERqajZnWkhXVzZ5Zkdoa1dKZEZ2VHhuWGlYOEpfRHpuNzRSc0xVSGN5MnZlOHFNWFVtWVJES1lBTkhNOXZTLTZybjRWRnFVWTlEM3dzR0l0bw?oc=5",
-    "source_name": "Business Insider",
-    "source_url": "https://www.businessinsider.com",
-    "published": "2026-09-23T16:49:00+00:00"
-   },
-   {
-    "title": "IonQ to deploy first quantum computer at Nvidia’s Accelerated Quantum Research Center - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONVdhNUk3clRpMGZ3SzZRSWF5cDNrWTNYSWRuWTZwWURGUmx6RF80aGw2UXY4aUZkUmw3anRoMGhqUEhQZkkwLWFvOHZxWjdPZi1TREZQdG4xYldnTE5GdDlsWEk4RkZXVTRMdl9OczJkR0FvZDB2NUtNR3VXNUVOaTRzel9VNHJKODlNVnBTNXRPZFlIbExuNzFlUGtfRU1iTjc5UFljaFRQNmotSVI3RVBnb1JUdzhoRFhrZ0ZxeWtPOUd1bHpF?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-23T16:47:24+00:00"
-   },
-   {
-    "title": "Roundtable: Redefining Critical Infrastructure - datacenterfrontier.com",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMW5ETXFCb3FUejlVYkQyYkpjYlkwYVJpcUEtTmxqWFU4UkkzUWNJZnpaTVRPdVdCNXZXVk1IaVZzZDdHUldoR3p0T19XazdIOEZtTXdYdUxlSTNYMFlXZ0hySVlZcDdHb1I2R2JZWUxpQkpJQlh6UVRpQVhXcW1SRVpSZnJEZEhWb3ZkS1ltZVRQZ1ltbkRVdUcwRUFvZWFUNFQ4eldWX1hHRW1RWENSZzVSMnZhNlVmMmc?oc=5",
-    "source_name": "datacenterfrontier.com",
-    "source_url": "https://www.datacenterfrontier.com",
-    "published": "2026-09-23T16:16:50+00:00"
-   },
-   {
-    "title": "OpenAI and Anthropic seek 20-30MW data center deployments - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSDZnRlJNQXhobGJ2MERjbU9Ual9tVFRBcUhDRWw1b3ZEal9oSDhCbkhuTmVFTUNxTm92UjdBVElNMlBpWlBnRVFoaG84b0VXTU5lU0F6Z3pHRS1DekRTMUN4LVZ0MXVWMFJ5Rm1heDVQYjlEY3hjbUZrOVo1UjJXSVIzYkRNRThnUExrZERhVmZFUDlHTVkwM0xVWVlwTWlmanlR?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-23T12:25:04+00:00"
-   },
-   {
-    "title": "China's ByteDance gained access to over 2,000 Nvidia B200 chips through Norway data center - tomshardware.com",
-    "link": "https://news.google.com/rss/articles/CBMi5gJBVV95cUxQUElMc0ZnRzhCanRhdUpuT0pTQTdXRDZhaVF6ZEJvNDdUdGhYOGFHZ1lkeEdleEJEV1huVDdlTTdmWGk2Qjdib0hvcUt5Z3l5TElQSkxHNU9KYUpUZVJtZXBwX1NQRXA5ZWhiSlVXQ05XRXVxVWI1eGRVQnBabjNNanN4U2Vzc2tacDVPRlNSZVhPdmtTSkVfMFRmb3R1LVlKR0IzUUNzckdDMUNQbVo1M0pCRU9raGtNR3c0NE90czljbUlHOXNWWjJXRlhQYzhaaXB5N3ZtdDM5LXdxekdWYUUtQWRVakJzdldkQm9WTHUyMkMwVm1FbnZSSmozNjRYdl9rc2RMbFZ4MWNzWDRvMXkzSVdJbmo2eWxleFlMUTFYUXRIazBMOTdBcHNMQ1IyQmNTR21XWHFKTnh4Y2ZSeDlGSzVoU1pSN2huWGZBaTJlZTF5NVNFLXlHN0M3Ui1hTGIyTERR?oc=5",
-    "source_name": "tomshardware.com",
-    "source_url": "https://www.tomshardware.com",
-    "published": "2026-09-23T12:00:43+00:00"
-   },
-   {
-    "title": "Meta plans Petal, the first transoceanic subsea cable at petabit capacity - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORnhHRVJ3Ql81akJjWGJyamtoRjE1REI0eUV0ZGJCOE8weWtXS3B2dVJTNVFOTFFlNTNBNkpLSURIYjVlWlFBdm1USEVrMVVHUnVpM3JBUTM3Y2VnLVpvN3NmUjJkaVZRV2NPS3NnNWJHVy1pT29BZTBYWVlqMmhUel85NklQTGV5LXdxYlVNZ3NXTVRCZldEbjhINnJObXZaRVJmY3c1dW81YnF4TmxIcVlCUWJhTUk?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-23T10:39:59+00:00"
-   },
-   {
-    "title": "Junk Yields Mean the End of Easy Money for Data Centers - Bloomberg",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaFUwYkE5a2dIa2hVeGtUbGdrUDlXMHNkUUxkTDhDWWxyekZPYk9BckNYZDVYcjlnUTl1eDJPcDJlbGJ6MGxqM3RDdWcyb1pnanRDaEx5UDhNSjBwMUgyeUNYaWg5cDA3Znd2YmlYQXYtWE4yTzJlZldkVEZ3TDlTLVFXWHp1LW9jUWFseXBpQjlfQkxXMHJGSEpYZkhsMW5JMjhoWE5hbW15UjdGcVJiaGpOMy1uN2s?oc=5",
-    "source_name": "Bloomberg",
-    "source_url": "https://www.bloomberg.com",
-    "published": "2026-09-23T10:30:01+00:00"
-   },
-   {
-    "title": "AI Data Centers Release Heat, Posing New Problem for Cities - Bloomberg",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSjByUUJ5TUpxbWRxQUdDR0kwYkxNRXU3UlZlQkh1WmlwX1FuZ1ZpTF95SzN1MkZGQ3ZJTXdMQ2JTbG52cmprVnhWZzN2TUJRbUxzY3FVcFVONjI1Tm5LU2EwU1k2QnJUT1pzR0dpZVY2RU1GMWE3RmZORTdUYmxDUjFpVQ?oc=5",
-    "source_name": "Bloomberg",
-    "source_url": "https://www.bloomberg.com",
-    "published": "2026-09-23T10:00:00+00:00"
-   },
-   {
-    "title": "Zeo Energy and Ewyze partner on off-grid power solutions for US data center sector - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRG9wSkVsYWdueFZxWWE0YmZiWGFkVXRVVzFQUmtNUm9JV1lFb2FHdElPRkk5M1FDYV9MaU5ENjVOTTFzYjJPazVJVDZjVkxlZ3g1d0hvLVJaSkxucnkzaGN4VktxWnQya2VJNURTUFZKY08yaFBNeHl4UG5oa2lJdl9SQmFmNjBwalhCdFRRU3ExdkR4TVgwYWN2XzQyc0dNalNFYk1fMUgxMEExLW1GYktGeC1HcXZLZkVLTE1NdVhUMVB3?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-09-23T09:35:39+00:00"
-   },
-   {
-    "title": "Anthropic in Talks for 1-Gigawatt Data Center Lease With Apollo-Backed Developer - The Information",
-    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaXRsOGVIV1c0LUJuY0lJbkpick8xZV9lajkwVkNpcGtsalg2OXc3ZC1GSUxlb21ITEp4a28zbmUxZTRiVjRXcG9mZ2RTWG1BX0dPWHAyUDA3eTVwTjZ4RXdjQlk2eEZqd1duUU1pdVRxZGwyeDlNVFFkU1NOX3NySVRobUtqOG1iX3p3?oc=5",
-    "source_name": "The Information",
-    "source_url": "https://www.theinformation.com",
-    "published": "2026-09-23T02:21:00+00:00"
-   },
-   {
-    "title": "How Communities Can Plan for AI Data Centers Before the Projects Arrive - datacenterfrontier.com",
-    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPV0M5b0hZMmxpX2FQSWNaeGFkeTRRM1hNWV9NXzVGZVNwOGxac0l6VFFpbnBkdHMwVHRMTXhsU0F0VVVtVWhqRWFRU1o1Rjc3QU9hUlk0WkgtS2tQbXBWRllEd1gxZm5RSW5nUlNiUUtLNTNVZ2dZYUEtVWswY1Z5Q0pnZUFWTktTdkxiM2RYZWpWVVRyLWhFQ0VYeGtTRUNWaDV2Y0VnY0pJMmxGcXVvTXhYOFlxNTkwTlJHS3NOZ3JTeHJmZzFubG5jaG5WWm5CUlNIbGExbw?oc=5",
-    "source_name": "datacenterfrontier.com",
-    "source_url": "https://www.datacenterfrontier.com",
-    "published": "2026-09-22T19:46:30+00:00"
    }
   ],
   "queries": [

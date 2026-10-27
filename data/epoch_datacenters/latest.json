@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-10-26",
- "fetched_at": "2026-10-26T00:26:53+00:00",
+ "snapshot_date": "2026-10-27",
+ "fetched_at": "2026-10-27T01:30:47+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -581,6 +581,20 @@
     "country": "United States"
    },
    {
+    "name": "Meta Los Lunas",
+    "h100_equivalents": 133906.01313794847,
+    "power_mw": 118.0,
+    "capital_cost_busd": 4.470076,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
     "name": "Google Lancaster",
     "h100_equivalents": 130368.8731682668,
     "power_mw": 137.0,
@@ -678,20 +692,6 @@
    },
    {
     "name": "Meta Gallatin",
-    "h100_equivalents": 99545.22486104093,
-    "power_mw": 87.0,
-    "capital_cost_busd": 3.2957339999999995,
-    "owner": "Meta",
-    "users": [
-     "Meta"
-    ],
-    "chip_types": [
-     "B300"
-    ],
-    "country": "United States"
-   },
-   {
-    "name": "Meta Los Lunas",
     "h100_equivalents": 99545.22486104093,
     "power_mw": 87.0,
     "capital_cost_busd": 3.2957339999999995,
@@ -3142,6 +3142,41 @@
     "h100_equivalents": 540677.109651339
    },
    {
+    "site": "Meta Los Lunas",
+    "date": "2024-07-24",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Los Lunas",
+    "date": "2026-03-01",
+    "it_power_mw": 87.0,
+    "power_mw": 114.0,
+    "h100_equivalents": 99545.22486104093
+   },
+   {
+    "site": "Meta Los Lunas",
+    "date": "2026-07-28",
+    "it_power_mw": 87.0,
+    "power_mw": 114.0,
+    "h100_equivalents": 99545.22486104093
+   },
+   {
+    "site": "Meta Los Lunas",
+    "date": "2026-10-26",
+    "it_power_mw": 118.0,
+    "power_mw": 147.0,
+    "h100_equivalents": 133906.01313794847
+   },
+   {
+    "site": "Meta Los Lunas",
+    "date": "2028-01-01",
+    "it_power_mw": 218.0,
+    "power_mw": 273.0,
+    "h100_equivalents": 869125.8211217787
+   },
+   {
     "site": "Google Lancaster",
     "date": "2021-10-01",
     "it_power_mw": 0.0,
@@ -3427,41 +3462,6 @@
     "it_power_mw": 87.0,
     "power_mw": 114.0,
     "h100_equivalents": 99545.22486104093
-   },
-   {
-    "site": "Meta Los Lunas",
-    "date": "2024-07-24",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Meta Los Lunas",
-    "date": "2026-03-01",
-    "it_power_mw": 87.0,
-    "power_mw": 114.0,
-    "h100_equivalents": 99545.22486104093
-   },
-   {
-    "site": "Meta Los Lunas",
-    "date": "2026-07-28",
-    "it_power_mw": 87.0,
-    "power_mw": 114.0,
-    "h100_equivalents": 99545.22486104093
-   },
-   {
-    "site": "Meta Los Lunas",
-    "date": "2026-10-26",
-    "it_power_mw": 118.0,
-    "power_mw": 147.0,
-    "h100_equivalents": 133906.01313794847
-   },
-   {
-    "site": "Meta Los Lunas",
-    "date": "2028-01-01",
-    "it_power_mw": 218.0,
-    "power_mw": 273.0,
-    "h100_equivalents": 869125.8211217787
    },
    {
     "site": "CoreWeave Ellendale ND",
@@ -5265,9 +5265,9 @@
   ],
   "aggregates": {
    "site_count": 95,
-   "total_power_mw": 14203.4,
-   "total_h100_equivalents": 14752152,
-   "total_capital_cost_busd": 538.05
+   "total_power_mw": 14234.4,
+   "total_h100_equivalents": 14786513,
+   "total_capital_cost_busd": 539.23
   }
  }
 }
