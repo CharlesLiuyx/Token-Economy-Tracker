@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "vercel_gateway",
- "snapshot_date": "2026-10-27",
- "fetched_at": "2026-10-27T03:48:17+00:00",
+ "snapshot_date": "2026-10-28",
+ "fetched_at": "2026-10-28T01:27:14+00:00",
  "source_meta": {
   "kind": "scrape"
  },
@@ -3208,12 +3208,7 @@
    {
     "day": "2026-02-17",
     "metric": "cost",
-    "shares": [
-     [
-      "Claude Sonnet 4.6",
-      1.2304
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3236,12 +3231,7 @@
    {
     "day": "2026-02-18",
     "metric": "cost",
-    "shares": [
-     [
-      "Claude Sonnet 4.6",
-      26.1933
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3266,8 +3256,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.0127
+      "Gemini 3.1 Pro Preview",
+      0.2
      ]
     ],
     "others_share": 0
@@ -3294,8 +3284,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      25.2479
+      "Gemini 3.1 Pro Preview",
+      1.4424
      ]
     ],
     "others_share": 0
@@ -3322,8 +3312,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      19.79
+      "Gemini 3.1 Pro Preview",
+      1.7806
      ]
     ],
     "others_share": 0
@@ -3350,8 +3340,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      20.9214
+      "Gemini 3.1 Pro Preview",
+      1.8593
      ]
     ],
     "others_share": 0
@@ -3378,8 +3368,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      19.9238
+      "Gemini 3.1 Pro Preview",
+      2.1473
      ]
     ],
     "others_share": 0
@@ -3406,8 +3396,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.0861
+      "Gemini 3.1 Pro Preview",
+      2.1627
      ]
     ],
     "others_share": 0
@@ -3434,8 +3424,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.5241
+      "Gemini 3.1 Pro Preview",
+      2.1071
      ]
     ],
     "others_share": 0
@@ -3462,8 +3452,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.7158
+      "Gemini 3.1 Pro Preview",
+      2.4271
      ]
     ],
     "others_share": 0
@@ -3490,8 +3480,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      19.5416
+      "Gemini 3.1 Pro Preview",
+      2.7681
      ]
     ],
     "others_share": 0
@@ -3518,8 +3508,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      23.1268
+      "Gemini 3.1 Pro Preview",
+      2.7236
      ]
     ],
     "others_share": 0
@@ -3546,8 +3536,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      20.9983
+      "Gemini 3.1 Pro Preview",
+      2.9247
      ]
     ],
     "others_share": 0
@@ -3574,8 +3564,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.6226
+      "Gemini 3.1 Pro Preview",
+      3.1691
      ]
     ],
     "others_share": 0
@@ -3602,8 +3592,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      19.3157
+      "Gemini 3.1 Pro Preview",
+      3.2392
      ]
     ],
     "others_share": 0
@@ -3630,8 +3620,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      20.8695
+      "Gemini 3.1 Pro Preview",
+      3.2977
      ]
     ],
     "others_share": 0
@@ -3658,8 +3648,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      21.6064
+      "Gemini 3.1 Pro Preview",
+      3.0811
      ]
     ],
     "others_share": 0
@@ -3686,8 +3676,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      23.1914
+      "Gemini 3.1 Pro Preview",
+      3.2274
      ]
     ],
     "others_share": 0
@@ -3714,8 +3704,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      29.5749
+      "Gemini 3.1 Pro Preview",
+      3.2191
      ]
     ],
     "others_share": 0
@@ -3742,8 +3732,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      28.7373
+      "Gemini 3.1 Pro Preview",
+      3.3203
      ]
     ],
     "others_share": 0
@@ -3770,8 +3760,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      25.4068
+      "Gemini 3.1 Pro Preview",
+      3.6273
      ]
     ],
     "others_share": 0
@@ -3798,8 +3788,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      47.3129
+      "Gemini 3.1 Pro Preview",
+      2.7215
      ]
     ],
     "others_share": 0
@@ -3826,8 +3816,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      53.7032
+      "Gemini 3.1 Pro Preview",
+      2.6271
      ]
     ],
     "others_share": 0
@@ -3854,8 +3844,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      51.3238
+      "Gemini 3.1 Pro Preview",
+      2.1252
      ]
     ],
     "others_share": 0
@@ -3882,8 +3872,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      54.6143
+      "Gemini 3.1 Pro Preview",
+      1.9014
      ]
     ],
     "others_share": 0
@@ -3910,8 +3900,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      63.6614
+      "Gemini 3.1 Pro Preview",
+      1.5688
      ]
     ],
     "others_share": 0
@@ -3938,8 +3928,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      60.4634
+      "Gemini 3.1 Pro Preview",
+      1.7106
      ]
     ],
     "others_share": 0
@@ -3966,8 +3956,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      55.9605
+      "Gemini 3.1 Pro Preview",
+      1.8583
      ]
     ],
     "others_share": 0
@@ -3994,8 +3984,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      57.556
+      "Gemini 3.1 Pro Preview",
+      1.4194
      ]
     ],
     "others_share": 0
@@ -4022,8 +4012,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      62.6718
+      "Gemini 3.1 Pro Preview",
+      0.7821
      ]
     ],
     "others_share": 0
@@ -4050,8 +4040,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      67.8211
+      "Gemini 3.1 Pro Preview",
+      0.7013
      ]
     ],
     "others_share": 0
@@ -4078,8 +4068,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      58.0979
+      "Gemini 3.1 Pro Preview",
+      0.7495
      ]
     ],
     "others_share": 0
@@ -4106,8 +4096,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      68.726
+      "Gemini 3.1 Pro Preview",
+      0.5169
      ]
     ],
     "others_share": 0
@@ -4134,8 +4124,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      70.898
+      "Gemini 3.1 Pro Preview",
+      0.5538
      ]
     ],
     "others_share": 0
@@ -4162,8 +4152,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      63.8562
+      "Gemini 3.1 Pro Preview",
+      0.7351
      ]
     ],
     "others_share": 0
@@ -4190,8 +4180,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      68.3826
+      "Gemini 3.1 Pro Preview",
+      0.6706
      ]
     ],
     "others_share": 0
@@ -4218,8 +4208,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      69.0272
+      "Gemini 3.1 Pro Preview",
+      0.7975
      ]
     ],
     "others_share": 0
@@ -4246,8 +4236,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      68.0785
+      "Gemini 3.1 Pro Preview",
+      0.6496
      ]
     ],
     "others_share": 0
@@ -4274,8 +4264,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      72.0075
+      "Gemini 3.1 Pro Preview",
+      0.5971
      ]
     ],
     "others_share": 0
@@ -4302,8 +4292,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      77.5241
+      "Gemini 3.1 Pro Preview",
+      0.6256
      ]
     ],
     "others_share": 0
@@ -4330,8 +4320,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      76.433
+      "Gemini 3.1 Pro Preview",
+      0.5561
      ]
     ],
     "others_share": 0
@@ -4358,8 +4348,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      72.6643
+      "Gemini 3.1 Pro Preview",
+      0.5963
      ]
     ],
     "others_share": 0
@@ -4386,8 +4376,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      53.2146
+      "Gemini 3.1 Pro Preview",
+      1.1375
      ]
     ],
     "others_share": 0
@@ -4414,8 +4404,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.7104
+      "Gemini 3.1 Pro Preview",
+      3.0109
      ]
     ],
     "others_share": 0
@@ -4442,8 +4432,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.2764
+      "Gemini 3.1 Pro Preview",
+      1.7869
      ]
     ],
     "others_share": 0
@@ -4470,8 +4460,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.1776
+      "Gemini 3.1 Pro Preview",
+      1.5969
      ]
     ],
     "others_share": 0
@@ -4498,8 +4488,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.1931
+      "Gemini 3.1 Pro Preview",
+      2.2164
      ]
     ],
     "others_share": 0
@@ -4526,8 +4516,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.5128
+      "Gemini 3.1 Pro Preview",
+      2.4441
      ]
     ],
     "others_share": 0
@@ -4554,8 +4544,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.8575
+      "Gemini 3.1 Pro Preview",
+      2.9082
      ]
     ],
     "others_share": 0
@@ -4582,8 +4572,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.6459
+      "Gemini 3.1 Pro Preview",
+      2.7492
      ]
     ],
     "others_share": 0
@@ -4610,8 +4600,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.178
+      "Gemini 3.1 Pro Preview",
+      2.7378
      ]
     ],
     "others_share": 0
@@ -4638,8 +4628,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.2056
+      "Gemini 3.1 Pro Preview",
+      3.0356
      ]
     ],
     "others_share": 0
@@ -4666,8 +4656,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.3832
+      "Gemini 3.1 Pro Preview",
+      2.9641
      ]
     ],
     "others_share": 0
@@ -4694,8 +4684,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.6867
+      "Gemini 3.1 Pro Preview",
+      2.6327
      ]
     ],
     "others_share": 0
@@ -4722,8 +4712,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.408
+      "Gemini 3.1 Pro Preview",
+      2.4416
      ]
     ],
     "others_share": 0
@@ -4750,8 +4740,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.547
+      "Gemini 3.1 Pro Preview",
+      3.0482
      ]
     ],
     "others_share": 0
@@ -4778,8 +4768,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.6069
+      "Gemini 3.1 Pro Preview",
+      3.1807
      ]
     ],
     "others_share": 0
@@ -4806,8 +4796,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.9574
+      "Gemini 3.1 Pro Preview",
+      2.758
      ]
     ],
     "others_share": 0
@@ -4834,8 +4824,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.6135
+      "Gemini 3.1 Pro Preview",
+      1.9397
      ]
     ],
     "others_share": 0
@@ -4862,8 +4852,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.6685
+      "Gemini 3.1 Pro Preview",
+      1.437
      ]
     ],
     "others_share": 0
@@ -4890,8 +4880,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.8469
+      "Gemini 3.1 Pro Preview",
+      1.4695
      ]
     ],
     "others_share": 0
@@ -4918,8 +4908,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      19.2017
+      "Gemini 3.1 Pro Preview",
+      1.6912
      ]
     ],
     "others_share": 0
@@ -4946,8 +4936,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.4049
+      "Gemini 3.1 Pro Preview",
+      1.8718
      ]
     ],
     "others_share": 0
@@ -4974,8 +4964,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.9969
+      "Gemini 3.1 Pro Preview",
+      2.1372
      ]
     ],
     "others_share": 0
@@ -5002,8 +4992,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.492
+      "Gemini 3.1 Pro Preview",
+      1.8776
      ]
     ],
     "others_share": 0
@@ -5030,8 +5020,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.3063
+      "Gemini 3.1 Pro Preview",
+      2.1071
      ]
     ],
     "others_share": 0
@@ -5058,8 +5048,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.5553
+      "Gemini 3.1 Pro Preview",
+      2.4499
      ]
     ],
     "others_share": 0
@@ -5086,8 +5076,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.7397
+      "Gemini 3.1 Pro Preview",
+      2.7108
      ]
     ],
     "others_share": 0
@@ -5114,8 +5104,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.4084
+      "Gemini 3.1 Pro Preview",
+      2.9413
      ]
     ],
     "others_share": 0
@@ -5142,8 +5132,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.9468
+      "Gemini 3.1 Pro Preview",
+      2.2842
      ]
     ],
     "others_share": 0
@@ -5170,8 +5160,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.0002
+      "Gemini 3.1 Pro Preview",
+      2.0817
      ]
     ],
     "others_share": 0
@@ -5198,8 +5188,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.7155
+      "Gemini 3.1 Pro Preview",
+      2.0621
      ]
     ],
     "others_share": 0
@@ -5226,8 +5216,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.7342
+      "Gemini 3.1 Pro Preview",
+      2.1459
      ]
     ],
     "others_share": 0
@@ -5254,8 +5244,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.6306
+      "Gemini 3.1 Pro Preview",
+      2.0112
      ]
     ],
     "others_share": 0
@@ -5282,8 +5272,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.8886
+      "Gemini 3.1 Pro Preview",
+      2.4223
      ]
     ],
     "others_share": 0
@@ -5310,8 +5300,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.6518
+      "Gemini 3.1 Pro Preview",
+      2.6865
      ]
     ],
     "others_share": 0
@@ -5338,8 +5328,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.9428
+      "Gemini 3.1 Pro Preview",
+      2.2059
      ]
     ],
     "others_share": 0
@@ -5366,8 +5356,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.896
+      "Gemini 3.1 Pro Preview",
+      1.976
      ]
     ],
     "others_share": 0
@@ -5394,8 +5384,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.6519
+      "Gemini 3.1 Pro Preview",
+      2.6058
      ]
     ],
     "others_share": 0
@@ -5422,8 +5412,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.0997
+      "Gemini 3.1 Pro Preview",
+      2.1217
      ]
     ],
     "others_share": 0
@@ -5450,8 +5440,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.0588
+      "Gemini 3.1 Pro Preview",
+      1.8836
      ]
     ],
     "others_share": 0
@@ -5478,8 +5468,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.0485
+      "Gemini 3.1 Pro Preview",
+      2.053
      ]
     ],
     "others_share": 0
@@ -5506,8 +5496,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.0249
+      "Gemini 3.1 Pro Preview",
+      2.3503
      ]
     ],
     "others_share": 0
@@ -5534,8 +5524,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.1189
+      "Gemini 3.1 Pro Preview",
+      1.846
      ]
     ],
     "others_share": 0
@@ -5562,8 +5552,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.2087
+      "Gemini 3.1 Pro Preview",
+      1.9701
      ]
     ],
     "others_share": 0
@@ -5590,8 +5580,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.6891
+      "Gemini 3.1 Pro Preview",
+      2.0872
      ]
     ],
     "others_share": 0
@@ -5618,8 +5608,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.3141
+      "Gemini 3.1 Pro Preview",
+      1.9458
      ]
     ],
     "others_share": 0
@@ -5646,8 +5636,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.2046
+      "Gemini 3.1 Pro Preview",
+      1.6683
      ]
     ],
     "others_share": 0
@@ -5674,8 +5664,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.1136
+      "Gemini 3.1 Pro Preview",
+      2.795
      ]
     ],
     "others_share": 0
@@ -5702,8 +5692,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.4341
+      "Gemini 3.1 Pro Preview",
+      2.579
      ]
     ],
     "others_share": 0
@@ -5730,8 +5720,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.4647
+      "Gemini 3.1 Pro Preview",
+      2.265
      ]
     ],
     "others_share": 0
@@ -5758,8 +5748,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.6903
+      "Gemini 3.1 Pro Preview",
+      2.0517
      ]
     ],
     "others_share": 0
@@ -5786,8 +5776,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.5311
+      "Gemini 3.1 Pro Preview",
+      2.1027
      ]
     ],
     "others_share": 0
@@ -5814,8 +5804,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.3394
+      "Gemini 3.1 Pro Preview",
+      1.8732
      ]
     ],
     "others_share": 0
@@ -5842,8 +5832,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.9077
+      "Gemini 3.1 Pro Preview",
+      1.8765
      ]
     ],
     "others_share": 0
@@ -5870,8 +5860,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.1755
+      "Gemini 3.1 Pro Preview",
+      2.3116
      ]
     ],
     "others_share": 0
@@ -5898,8 +5888,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.7932
+      "Gemini 3.1 Pro Preview",
+      2.7032
      ]
     ],
     "others_share": 0
@@ -5926,8 +5916,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.3426
+      "Gemini 3.1 Pro Preview",
+      2.0071
      ]
     ],
     "others_share": 0
@@ -5954,8 +5944,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.9562
+      "Gemini 3.1 Pro Preview",
+      2.87
      ]
     ],
     "others_share": 0
@@ -5982,8 +5972,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.5322
+      "Gemini 3.1 Pro Preview",
+      3.0117
      ]
     ],
     "others_share": 0
@@ -6010,8 +6000,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.2406
+      "Gemini 3.1 Pro Preview",
+      3.6789
      ]
     ],
     "others_share": 0
@@ -6038,8 +6028,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.4235
+      "Gemini 3.1 Pro Preview",
+      3.6234
      ]
     ],
     "others_share": 0
@@ -6066,8 +6056,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.444
+      "Gemini 3.1 Pro Preview",
+      3.3656
      ]
     ],
     "others_share": 0
@@ -6094,8 +6084,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.2064
+      "Gemini 3.1 Pro Preview",
+      4.4052
      ]
     ],
     "others_share": 0
@@ -6122,8 +6112,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.9672
+      "Gemini 3.1 Pro Preview",
+      4.1241
      ]
     ],
     "others_share": 0
@@ -6150,8 +6140,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.5181
+      "Gemini 3.1 Pro Preview",
+      3.9044
      ]
     ],
     "others_share": 0
@@ -6178,8 +6168,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.8656
+      "Gemini 3.1 Pro Preview",
+      3.8139
      ]
     ],
     "others_share": 0
@@ -6206,8 +6196,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.9201
+      "Gemini 3.1 Pro Preview",
+      2.7301
      ]
     ],
     "others_share": 0
@@ -6234,8 +6224,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.2851
+      "Gemini 3.1 Pro Preview",
+      2.9384
      ]
     ],
     "others_share": 0
@@ -6262,8 +6252,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.7979
+      "Gemini 3.1 Pro Preview",
+      2.967
      ]
     ],
     "others_share": 0
@@ -6290,8 +6280,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.0339
+      "Gemini 3.1 Pro Preview",
+      3.7695
      ]
     ],
     "others_share": 0
@@ -6318,8 +6308,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.6307
+      "Gemini 3.1 Pro Preview",
+      3.5212
      ]
     ],
     "others_share": 0
@@ -6346,8 +6336,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.2373
+      "Gemini 3.1 Pro Preview",
+      3.4449
      ]
     ],
     "others_share": 0
@@ -6374,8 +6364,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      11.8652
+      "Gemini 3.1 Pro Preview",
+      3.0105
      ]
     ],
     "others_share": 0
@@ -6402,8 +6392,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.0319
+      "Gemini 3.1 Pro Preview",
+      3.5925
      ]
     ],
     "others_share": 0
@@ -6430,8 +6420,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.3562
+      "Gemini 3.1 Pro Preview",
+      3.4701
      ]
     ],
     "others_share": 0
@@ -6458,8 +6448,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.6149
+      "Gemini 3.1 Pro Preview",
+      4.3924
      ]
     ],
     "others_share": 0
@@ -6486,8 +6476,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      10.7797
+      "Gemini 3.1 Pro Preview",
+      3.6426
      ]
     ],
     "others_share": 0
@@ -6514,8 +6504,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      11.0089
+      "Gemini 3.1 Pro Preview",
+      3.2691
      ]
     ],
     "others_share": 0
@@ -6542,8 +6532,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.0658
+      "Gemini 3.1 Pro Preview",
+      3.0727
      ]
     ],
     "others_share": 0
@@ -6570,8 +6560,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.7689
+      "Gemini 3.1 Pro Preview",
+      3.5322
      ]
     ],
     "others_share": 0
@@ -6598,8 +6588,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.4895
+      "Gemini 3.1 Pro Preview",
+      2.5153
      ]
     ],
     "others_share": 0
@@ -6626,8 +6616,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      11.5804
+      "Gemini 3.1 Pro Preview",
+      2.6464
      ]
     ],
     "others_share": 0
@@ -6654,8 +6644,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      9.1547
+      "Gemini 3.1 Pro Preview",
+      2.2964
      ]
     ],
     "others_share": 0
@@ -6682,8 +6672,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      9.9047
+      "Gemini 3.1 Pro Preview",
+      2.973
      ]
     ],
     "others_share": 0
@@ -6710,8 +6700,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      11.8616
+      "Gemini 3.1 Pro Preview",
+      2.2284
      ]
     ],
     "others_share": 0
@@ -6738,8 +6728,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      11.6992
+      "Gemini 3.1 Pro Preview",
+      1.8803
      ]
     ],
     "others_share": 0
@@ -6766,8 +6756,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.7293
+      "Gemini 3.1 Pro Preview",
+      1.7707
      ]
     ],
     "others_share": 0
@@ -6794,8 +6784,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.9385
+      "Gemini 3.1 Pro Preview",
+      1.9002
      ]
     ],
     "others_share": 0
@@ -6822,8 +6812,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.8388
+      "Gemini 3.1 Pro Preview",
+      2.1751
      ]
     ],
     "others_share": 0
@@ -6850,8 +6840,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.1548
+      "Gemini 3.1 Pro Preview",
+      2.1939
      ]
     ],
     "others_share": 0
@@ -6878,8 +6868,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.4029
+      "Gemini 3.1 Pro Preview",
+      1.7534
      ]
     ],
     "others_share": 0
@@ -6906,8 +6896,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      11.9589
+      "Gemini 3.1 Pro Preview",
+      2.0165
      ]
     ],
     "others_share": 0
@@ -6934,8 +6924,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.9331
+      "Gemini 3.1 Pro Preview",
+      2.3303
      ]
     ],
     "others_share": 0
@@ -6962,8 +6952,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.8653
+      "Gemini 3.1 Pro Preview",
+      2.4303
      ]
     ],
     "others_share": 0
@@ -6990,8 +6980,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.8743
+      "Gemini 3.1 Pro Preview",
+      2.0035
      ]
     ],
     "others_share": 0
@@ -7018,8 +7008,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      11.4504
+      "Gemini 3.1 Pro Preview",
+      3.3203
      ]
     ],
     "others_share": 0
@@ -7046,8 +7036,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      9.8115
+      "Gemini 3.1 Pro Preview",
+      2.9559
      ]
     ],
     "others_share": 0
@@ -7074,8 +7064,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      10.1212
+      "Gemini 3.1 Pro Preview",
+      3.3771
      ]
     ],
     "others_share": 0
@@ -7102,8 +7092,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      10.9091
+      "Gemini 3.1 Pro Preview",
+      2.296
      ]
     ],
     "others_share": 0
@@ -7130,8 +7120,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.3103
+      "Gemini 3.1 Pro Preview",
+      2.0244
      ]
     ],
     "others_share": 0
@@ -7158,8 +7148,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      10.1663
+      "Gemini 3.1 Pro Preview",
+      1.4377
      ]
     ],
     "others_share": 0
@@ -7186,8 +7176,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      10.6421
+      "Gemini 3.1 Pro Preview",
+      1.5596
      ]
     ],
     "others_share": 0
@@ -7214,8 +7204,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      10.2723
+      "Gemini 3.1 Pro Preview",
+      2.2361
      ]
     ],
     "others_share": 0
@@ -7242,8 +7232,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      9.9181
+      "Gemini 3.1 Pro Preview",
+      2.498
      ]
     ],
     "others_share": 0
@@ -7270,8 +7260,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      9.7291
+      "Gemini 3.1 Pro Preview",
+      2.4434
      ]
     ],
     "others_share": 0
@@ -7298,8 +7288,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      10.5613
+      "Gemini 3.1 Pro Preview",
+      1.8082
      ]
     ],
     "others_share": 0
@@ -7326,8 +7316,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      9.5095
+      "Gemini 3.1 Pro Preview",
+      1.4029
      ]
     ],
     "others_share": 0
@@ -7354,8 +7344,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.6371
+      "Gemini 3.1 Pro Preview",
+      1.2887
      ],
      [
       "Kimi K3",
@@ -7386,8 +7376,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.3925
+      "Gemini 3.1 Pro Preview",
+      1.3543
      ],
      [
       "Kimi K3",
@@ -7418,8 +7408,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      7.2827
+      "Gemini 3.1 Pro Preview",
+      1.5256
      ],
      [
       "Kimi K3",
@@ -7450,12 +7440,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.5692
-     ],
-     [
       "Kimi K3",
       2.2667
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.8399
      ]
     ],
     "others_share": 0
@@ -7482,12 +7472,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.3109
-     ],
-     [
       "Kimi K3",
       2.7512
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.1326
      ]
     ],
     "others_share": 0
@@ -7514,12 +7504,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      9.606
-     ],
-     [
       "Kimi K3",
       1.7387
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.5871
      ]
     ],
     "others_share": 0
@@ -7546,12 +7536,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.3012
-     ],
-     [
       "Kimi K3",
       4.2625
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.2954
      ]
     ],
     "others_share": 0
@@ -7578,12 +7568,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      7.7072
-     ],
-     [
       "Kimi K3",
       2.7036
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.5937
      ]
     ],
     "others_share": 0
@@ -7610,12 +7600,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.4105
-     ],
-     [
       "Kimi K3",
       2.1181
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.2639
      ]
     ],
     "others_share": 0
@@ -7642,12 +7632,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      6.9292
-     ],
-     [
       "Kimi K3",
       2.3155
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.369
      ]
     ],
     "others_share": 0
@@ -7674,12 +7664,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.7672
-     ],
-     [
       "Kimi K3",
       3.237
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.716
      ]
     ],
     "others_share": 0
@@ -7706,12 +7696,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      6.3875
-     ],
-     [
       "Kimi K3",
       5.81
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.7216
      ]
     ],
     "others_share": 0
@@ -7738,12 +7728,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.7812
-     ],
-     [
       "Kimi K3",
       3.6863
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.0291
      ]
     ],
     "others_share": 0
@@ -7770,12 +7760,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.533
-     ],
-     [
       "Kimi K3",
       3.0442
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.0367
      ]
     ],
     "others_share": 0
@@ -7802,12 +7792,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.6622
-     ],
-     [
       "Kimi K3",
       2.384
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.1225
      ]
     ],
     "others_share": 0
@@ -7838,8 +7828,8 @@
       5.5089
      ],
      [
-      "Claude Sonnet 4.6",
-      5.3159
+      "Gemini 3.1 Pro Preview",
+      0.8912
      ]
     ],
     "others_share": 0
@@ -7866,12 +7856,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      6.5261
-     ],
-     [
       "Kimi K3",
       3.8436
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.0208
      ]
     ],
     "others_share": 0
@@ -7898,12 +7888,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      7.118
-     ],
-     [
       "Kimi K3",
       4.0483
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.3822
      ]
     ],
     "others_share": 0
@@ -7930,12 +7920,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      7.6018
-     ],
-     [
       "Kimi K3",
       4.7008
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.7915
      ]
     ],
     "others_share": 0
@@ -7962,12 +7952,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.3592
-     ],
-     [
       "Kimi K3",
       4.0614
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.4467
      ]
     ],
     "others_share": 0
@@ -7994,12 +7984,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      6.9682
-     ],
-     [
       "Kimi K3",
       4.6075
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.121
      ]
     ],
     "others_share": 0
@@ -8026,12 +8016,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.4174
-     ],
-     [
       "Kimi K3",
       5.0627
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.9881
      ]
     ],
     "others_share": 0
@@ -8058,12 +8048,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      6.3743
-     ],
-     [
       "Kimi K3",
       6.1042
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.0904
      ]
     ],
     "others_share": 0
@@ -8094,8 +8084,8 @@
       8.4479
      ],
      [
-      "Claude Sonnet 4.6",
-      6.0463
+      "Gemini 3.1 Pro Preview",
+      1.2595
      ]
     ],
     "others_share": 0
@@ -8126,8 +8116,8 @@
       7.1912
      ],
      [
-      "Claude Sonnet 4.6",
-      3.6709
+      "Gemini 3.1 Pro Preview",
+      2.3615
      ]
     ],
     "others_share": 0
@@ -8158,8 +8148,8 @@
       8.2639
      ],
      [
-      "Claude Sonnet 4.6",
-      3.7385
+      "Gemini 3.1 Pro Preview",
+      2.5432
      ]
     ],
     "others_share": 0
@@ -8190,8 +8180,8 @@
       6.1814
      ],
      [
-      "Claude Sonnet 4.6",
-      4.9426
+      "Gemini 3.1 Pro Preview",
+      3.1259
      ]
     ],
     "others_share": 0
@@ -8222,8 +8212,8 @@
       7.4345
      ],
      [
-      "Claude Sonnet 4.6",
-      5.0478
+      "Gemini 3.1 Pro Preview",
+      1.7311
      ]
     ],
     "others_share": 0
@@ -8250,12 +8240,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.7571
-     ],
-     [
       "Kimi K3",
       4.7098
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.342
      ]
     ],
     "others_share": 0
@@ -8286,8 +8276,8 @@
       4.6072
      ],
      [
-      "Claude Sonnet 4.6",
-      4.4014
+      "Gemini 3.1 Pro Preview",
+      2.2247
      ]
     ],
     "others_share": 0
@@ -8314,12 +8304,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      3.7397
-     ],
-     [
       "Kimi K3",
       3.0802
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.2343
      ],
      [
       "GLM 5.3",
@@ -8363,8 +8353,8 @@
       3.1784
      ],
      [
-      "Claude Sonnet 4.6",
-      3.1051
+      "Gemini 3.1 Pro Preview",
+      1.823
      ],
      [
       "GLM 5.3",
@@ -8404,8 +8394,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      3.1118
+      "Gemini 3.1 Pro Preview",
+      3.0295
      ],
      [
       "Kimi K3",
@@ -8449,12 +8439,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.5299
-     ],
-     [
       "Kimi K3",
       3.2949
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.9953
      ],
      [
       "GLM 5.3",
@@ -8494,12 +8484,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.3107
-     ],
-     [
       "Kimi K3",
       2.8816
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.4089
      ],
      [
       "GLM 5.3",
@@ -8543,8 +8533,8 @@
       4.23
      ],
      [
-      "Claude Sonnet 4.6",
-      3.7755
+      "Gemini 3.1 Pro Preview",
+      1.5295
      ],
      [
       "GLM 5.3",
@@ -8584,12 +8574,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.2824
-     ],
-     [
       "Kimi K3",
       2.0921
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.8414
      ],
      [
       "GLM 5.3",
@@ -8629,16 +8619,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.3091
-     ],
-     [
       "Kimi K3",
       2.1628
      ],
      [
       "GLM 5.3",
       0.5783
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.4542
      ]
     ],
     "others_share": 0
@@ -8674,16 +8664,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.6412
-     ],
-     [
       "Kimi K3",
       1.1383
      ],
      [
       "GLM 5.3",
       0.7275
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.696
      ]
     ],
     "others_share": 0
@@ -8719,16 +8709,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.4354
-     ],
-     [
       "Kimi K3",
       1.1749
      ],
      [
       "GLM 5.3",
       0.6793
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.4499
      ]
     ],
     "others_share": 0
@@ -8764,16 +8754,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.374
-     ],
-     [
       "Kimi K3",
       1.9515
      ],
      [
       "GLM 5.3",
       0.6107
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.4422
      ]
     ],
     "others_share": 0
@@ -8809,16 +8799,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.0162
-     ],
-     [
       "Kimi K3",
       4.4726
      ],
      [
       "GLM 5.3",
       0.5924
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.4749
      ]
     ],
     "others_share": 0
@@ -8858,12 +8848,16 @@
       8.3224
      ],
      [
-      "Claude Sonnet 4.6",
-      4.1384
-     ],
-     [
       "GLM 5.3",
       0.4858
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.4447
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.0803
      ]
     ],
     "others_share": 0
@@ -8907,16 +8901,20 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.741
-     ],
-     [
       "Kimi K3",
       1.7383
      ],
      [
       "GLM 5.3",
       0.6215
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.4394
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.3688
      ]
     ],
     "others_share": 0
@@ -8960,16 +8958,20 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.3453
-     ],
-     [
       "Kimi K3",
       1.7709
      ],
      [
       "GLM 5.3",
       0.6326
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.4612
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.338
      ]
     ],
     "others_share": 0
@@ -9013,16 +9015,20 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.9098
-     ],
-     [
       "Kimi K3",
       1.2484
      ],
      [
       "GLM 5.3",
       0.928
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.534
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.3617
      ]
     ],
     "others_share": 0
@@ -9066,16 +9072,20 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.0795
-     ],
-     [
       "Kimi K3",
       1.5038
      ],
      [
       "GLM 5.3",
       0.5427
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.5409
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.3573
      ]
     ],
     "others_share": 0
@@ -9119,16 +9129,20 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.0514
-     ],
-     [
       "Kimi K3",
       1.2716
      ],
      [
       "GLM 5.3",
       0.5377
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.472
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.4014
      ]
     ],
     "others_share": 0
@@ -9176,12 +9190,16 @@
       7.0559
      ],
      [
-      "Claude Sonnet 4.6",
-      4.8986
-     ],
-     [
       "GLM 5.3",
       0.7016
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.4912
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.484
      ]
     ],
     "others_share": 0
@@ -9229,12 +9247,16 @@
       11.003
      ],
      [
-      "Claude Sonnet 4.6",
-      4.1858
-     ],
-     [
       "GLM 5.3",
       0.7187
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.4345
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.4314
      ],
      [
       "Gemini 3.8 Flash",
@@ -9286,16 +9308,20 @@
       17.1097
      ],
      [
-      "Claude Sonnet 4.6",
-      3.5505
-     ],
-     [
       "Gemini 3.8 Flash",
       0.8125
      ],
      [
       "GLM 5.3",
       0.7476
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.4176
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.3245
      ]
     ],
     "others_share": 0
@@ -9343,10 +9369,6 @@
       11.2691
      ],
      [
-      "Claude Sonnet 4.6",
-      3.4354
-     ],
-     [
       "Gemini 3.8 Flash",
       1.3619
      ],
@@ -9357,6 +9379,14 @@
      [
       "GLM 5.3",
       0.6039
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.4113
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.33
      ]
     ],
     "others_share": 0
@@ -9408,16 +9438,20 @@
       6.9176
      ],
      [
-      "Claude Sonnet 4.6",
-      3.6035
-     ],
-     [
       "Gemini 3.8 Flash",
       1.1509
      ],
      [
       "GLM 5.3",
       0.7595
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.6206
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.3981
      ]
     ],
     "others_share": 0
@@ -9465,10 +9499,6 @@
       6.3759
      ],
      [
-      "Claude Sonnet 4.6",
-      4.2055
-     ],
-     [
       "Kimi K3",
       3.6514
      ],
@@ -9477,8 +9507,16 @@
       2.097
      ],
      [
+      "GLM 5.3 Flash",
+      0.5681
+     ],
+     [
       "GLM 5.3",
       0.5455
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.5008
      ]
     ],
     "others_share": 0
@@ -9526,10 +9564,6 @@
       6.6421
      ],
      [
-      "Claude Sonnet 4.6",
-      4.5879
-     ],
-     [
       "Kimi K3",
       3.0395
      ],
@@ -9538,8 +9572,16 @@
       2.3552
      ],
      [
+      "GLM 5.3 Flash",
+      0.6723
+     ],
+     [
       "GLM 5.3",
       0.6224
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.4529
      ]
     ],
     "others_share": 0
@@ -9587,10 +9629,6 @@
       8.7634
      ],
      [
-      "Claude Sonnet 4.6",
-      3.7868
-     ],
-     [
       "Kimi K3",
       3.4423
      ],
@@ -9599,12 +9637,16 @@
       2.1316
      ],
      [
+      "GLM 5.3 Flash",
+      0.7132
+     ],
+     [
       "GLM 5.3",
       0.6185
      ],
      [
-      "DeepSeek V4.1 Flash",
-      0.0001
+      "Gemini 3.1 Pro Preview",
+      0.3103
      ]
     ],
     "others_share": 0
@@ -9660,10 +9702,6 @@
       10.0054
      ],
      [
-      "Claude Sonnet 4.6",
-      4.0268
-     ],
-     [
       "Kimi K3",
       2.7505
      ],
@@ -9674,6 +9712,14 @@
      [
       "GLM 5.3",
       0.8931
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.581
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.3935
      ]
     ],
     "others_share": 0
@@ -9721,10 +9767,6 @@
       7.8749
      ],
      [
-      "Claude Sonnet 4.6",
-      4.261
-     ],
-     [
       "Gemini 3.8 Flash",
       2.1172
      ],
@@ -9733,12 +9775,16 @@
       2.0691
      ],
      [
-      "DeepSeek V4.1 Flash",
-      1.5131
-     ],
-     [
       "GLM 5.3",
       0.9835
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.7848
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.339
      ]
     ],
     "others_share": 0
@@ -9798,20 +9844,20 @@
       7.2219
      ],
      [
-      "Claude Sonnet 4.6",
-      3.3575
-     ],
-     [
-      "DeepSeek V4.1 Flash",
-      2.5974
-     ],
-     [
       "Gemini 3.8 Flash",
       1.5199
      ],
      [
       "GLM 5.3",
       0.7778
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.5875
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.2815
      ]
     ],
     "others_share": 0
@@ -9871,20 +9917,20 @@
       6.9501
      ],
      [
-      "Claude Sonnet 4.6",
-      3.7803
-     ],
-     [
-      "DeepSeek V4.1 Flash",
-      3.344
-     ],
-     [
       "Gemini 3.8 Flash",
       1.5797
      ],
      [
       "GLM 5.3",
       0.8462
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.6705
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.2178
      ]
     ],
     "others_share": 0
@@ -9940,24 +9986,24 @@
       6.9425
      ],
      [
-      "Claude Sonnet 4.6",
-      4.9575
-     ],
-     [
       "Kimi K3",
       4.3375
-     ],
-     [
-      "DeepSeek V4.1 Flash",
-      4.2879
      ],
      [
       "Gemini 3.8 Flash",
       2.6751
      ],
      [
+      "GLM 5.3 Flash",
+      0.868
+     ],
+     [
       "GLM 5.3",
       0.8286
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.8165
      ]
     ],
     "others_share": 0
@@ -10013,16 +10059,8 @@
       7.9649
      ],
      [
-      "Claude Sonnet 4.6",
-      4.7643
-     ],
-     [
       "Kimi K3",
       4.1948
-     ],
-     [
-      "DeepSeek V4.1 Flash",
-      3.5401
      ],
      [
       "Gemini 3.8 Flash",
@@ -10031,6 +10069,14 @@
      [
       "GLM 5.3",
       0.9408
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.8068
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.4155
      ]
     ],
     "others_share": 0
@@ -10090,20 +10136,20 @@
       7.1334
      ],
      [
-      "DeepSeek V4.1 Flash",
-      4.3205
-     ],
-     [
-      "Claude Sonnet 4.6",
-      4.0042
-     ],
-     [
       "Gemini 3.8 Flash",
       1.8537
      ],
      [
       "GLM 5.3",
       1.0788
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.7912
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.263
      ]
     ],
     "others_share": 0
@@ -10159,14 +10205,6 @@
       7.807
      ],
      [
-      "DeepSeek V4.1 Flash",
-      4.9621
-     ],
-     [
-      "Claude Sonnet 4.6",
-      4.2327
-     ],
-     [
       "Kimi K3",
       3.1741
      ],
@@ -10175,8 +10213,16 @@
       1.9474
      ],
      [
+      "GLM 5.3 Flash",
+      0.917
+     ],
+     [
       "GLM 5.3",
       0.8042
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.3446
      ]
     ],
     "others_share": 0
@@ -10244,20 +10290,20 @@
       6.0582
      ],
      [
-      "DeepSeek V4.1 Flash",
-      5.0941
-     ],
-     [
-      "Claude Sonnet 4.6",
-      4.9148
-     ],
-     [
       "Gemini 3.8 Flash",
       1.7916
      ],
      [
+      "GLM 5.3 Flash",
+      1.3697
+     ],
+     [
       "GLM 5.3",
       0.9623
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.4518
      ]
     ],
     "others_share": 0
@@ -10325,20 +10371,20 @@
       7.0129
      ],
      [
-      "DeepSeek V4.1 Flash",
-      5.1013
-     ],
-     [
-      "Claude Sonnet 4.6",
-      4.3316
-     ],
-     [
       "GLM 5.3",
       2.2087
      ],
      [
       "Gemini 3.8 Flash",
       1.9467
+     ],
+     [
+      "GLM 5.3 Flash",
+      1.6022
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.4503
      ]
     ],
     "others_share": 0
@@ -10406,20 +10452,20 @@
       12.9014
      ],
      [
-      "DeepSeek V4.1 Flash",
-      4.5467
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.9665
-     ],
-     [
       "Gemini 3.8 Flash",
       1.3639
      ],
      [
       "GLM 5.3",
       1.06
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.9616
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.5696
      ]
     ],
     "others_share": 0
@@ -10487,20 +10533,24 @@
       9.7976
      ],
      [
-      "DeepSeek V4.1 Flash",
-      3.7127
-     ],
-     [
-      "Claude Sonnet 4.6",
-      2.0321
-     ],
-     [
       "Gemini 3.8 Flash",
       1.8883
      ],
      [
+      "GLM 5.3 Flash",
+      0.9678
+     ],
+     [
       "GLM 5.3",
       0.6528
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.5621
+     ],
+     [
+      "Grok 4.7",
+      0.0184
      ]
     ],
     "others_share": 0
@@ -10551,6 +10601,10 @@
      [
       "GLM 5.3",
       0.4298
+     ],
+     [
+      "Grok 4.7",
+      0.0049
      ]
     ],
     "others_share": 0
@@ -10568,20 +10622,24 @@
       14.8257
      ],
      [
-      "DeepSeek V4.1 Flash",
-      3.435
-     ],
-     [
-      "Claude Sonnet 4.6",
-      2.8277
-     ],
-     [
       "Gemini 3.8 Flash",
       1.9476
      ],
      [
       "GLM 5.3",
       1.0711
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.9462
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.5259
+     ],
+     [
+      "Grok 4.7",
+      0.0693
      ]
     ],
     "others_share": 0
@@ -10632,6 +10690,10 @@
      [
       "GLM 5.3",
       0.7604
+     ],
+     [
+      "Grok 4.7",
+      0.0305
      ]
     ],
     "others_share": 0
@@ -10649,14 +10711,6 @@
       9.3268
      ],
      [
-      "DeepSeek V4.1 Flash",
-      3.6807
-     ],
-     [
-      "Claude Sonnet 4.6",
-      2.9107
-     ],
-     [
       "Gemini 3.8 Flash",
       2.7348
      ],
@@ -10665,8 +10719,20 @@
       1.1483
      ],
      [
+      "GLM 5.3 Flash",
+      1.0121
+     ],
+     [
       "Claude Opus 5.5",
       0.8534
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.4477
+     ],
+     [
+      "Grok 4.7",
+      0.2349
      ]
     ],
     "others_share": 0
@@ -10729,6 +10795,10 @@
      [
       "GPT-6 Luna",
       0.1866
+     ],
+     [
+      "Grok 4.7",
+      0.0921
      ]
     ],
     "others_share": 0
@@ -10750,20 +10820,24 @@
       6.0855
      ],
      [
-      "DeepSeek V4.1 Flash",
-      3.6607
-     ],
-     [
-      "Claude Sonnet 4.6",
-      3.5709
-     ],
-     [
       "Gemini 3.8 Flash",
       3.1847
      ],
      [
+      "GLM 5.3 Flash",
+      0.9881
+     ],
+     [
       "GLM 5.3",
       0.8912
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.6601
+     ],
+     [
+      "Grok 4.7",
+      0.4122
      ]
     ],
     "others_share": 0
@@ -10826,6 +10900,10 @@
      [
       "GLM 5.3",
       0.5633
+     ],
+     [
+      "Grok 4.7",
+      0.1478
      ]
     ],
     "others_share": 0
@@ -10847,20 +10925,24 @@
       5.8978
      ],
      [
-      "Claude Sonnet 4.6",
-      3.7931
-     ],
-     [
-      "DeepSeek V4.1 Flash",
-      3.6213
-     ],
-     [
       "Gemini 3.8 Flash",
       3.3722
      ],
      [
       "GLM 5.3",
       0.9885
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.8854
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.6942
+     ],
+     [
+      "Grok 4.7",
+      0.3243
      ]
     ],
     "others_share": 0
@@ -10923,6 +11005,10 @@
      [
       "GLM 5.3",
       0.6669
+     ],
+     [
+      "Grok 4.7",
+      0.1114
      ]
     ],
     "others_share": 0
@@ -10948,16 +11034,20 @@
       4.5377
      ],
      [
-      "DeepSeek V4.1 Flash",
-      3.5822
-     ],
-     [
-      "Claude Sonnet 4.6",
-      3.4157
-     ],
-     [
       "GLM 5.3",
       1.474
+     ],
+     [
+      "GLM 5.3 Flash",
+      1.4588
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.9546
+     ],
+     [
+      "Grok 4.7",
+      0.3828
      ]
     ],
     "others_share": 0
@@ -11020,6 +11110,10 @@
      [
       "GLM 5.3",
       0.9867
+     ],
+     [
+      "Grok 4.7",
+      0.1404
      ]
     ],
     "others_share": 0
@@ -11045,16 +11139,20 @@
       6.0045
      ],
      [
-      "DeepSeek V4.1 Flash",
-      5.1613
+      "Gemini 3.1 Pro Preview",
+      1.9027
      ],
      [
-      "Claude Sonnet 4.6",
-      3.728
+      "GLM 5.3 Flash",
+      1.6549
      ],
      [
       "GLM 5.3",
       1.4694
+     ],
+     [
+      "Grok 4.7",
+      0.2928
      ]
     ],
     "others_share": 0
@@ -11117,6 +11215,10 @@
      [
       "GLM 5.3",
       0.7275
+     ],
+     [
+      "Grok 4.7",
+      0.0741
      ]
     ],
     "others_share": 0
@@ -11142,16 +11244,20 @@
       6.1655
      ],
      [
-      "DeepSeek V4.1 Flash",
-      5.0505
+      "Gemini 3.1 Pro Preview",
+      1.7458
      ],
      [
-      "Claude Sonnet 4.6",
-      3.5501
+      "GLM 5.3 Flash",
+      1.5297
      ],
      [
       "GLM 5.3",
       1.3459
+     ],
+     [
+      "Grok 4.7",
+      0.3689
      ]
     ],
     "others_share": 0
@@ -11214,6 +11320,10 @@
      [
       "GLM 5.3",
       0.7437
+     ],
+     [
+      "Grok 4.7",
+      0.1083
      ]
     ],
     "others_share": 0
@@ -11235,20 +11345,24 @@
       5.1155
      ],
      [
-      "Claude Sonnet 4.6",
-      4.4189
-     ],
-     [
       "GPT-6 Astra",
       4.1581
      ],
      [
-      "DeepSeek V4.1 Flash",
-      2.2587
+      "Gemini 3.1 Pro Preview",
+      2.059
      ],
      [
       "GLM 5.3",
       1.8077
+     ],
+     [
+      "GLM 5.3 Flash",
+      1.587
+     ],
+     [
+      "Grok 4.7",
+      0.5708
      ],
      [
       "Claude Sonnet 5.5",
@@ -11317,6 +11431,10 @@
       1.5758
      ],
      [
+      "Grok 4.7",
+      0.2182
+     ],
+     [
       "Claude Sonnet 5.5",
       0.1283
      ]
@@ -11344,20 +11462,24 @@
       3.9448
      ],
      [
-      "Claude Sonnet 4.6",
-      3.6835
-     ],
-     [
-      "DeepSeek V4.1 Flash",
-      2.3239
-     ],
-     [
       "Claude Sonnet 5.5",
       1.5405
      ],
      [
+      "GLM 5.3 Flash",
+      1.2955
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.1327
+     ],
+     [
       "GLM 5.3",
       1.1248
+     ],
+     [
+      "Grok 4.7",
+      1.0667
      ],
      [
       "GPT-6.1 Sol",
@@ -11428,6 +11550,10 @@
      [
       "Claude Sonnet 5.5",
       0.7276
+     ],
+     [
+      "Grok 4.7",
+      0.3687
      ]
     ],
     "others_share": 0
@@ -11449,20 +11575,16 @@
       3.6426
      ],
      [
-      "Claude Sonnet 4.6",
-      3.6401
-     ],
-     [
       "GPT-6 Astra",
       3.5802
      ],
      [
-      "DeepSeek V4.1 Flash",
-      2.2555
-     ],
-     [
       "Claude Sonnet 5.5",
       1.8735
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.5974
      ],
      [
       "GPT-6.1 Sol",
@@ -11471,6 +11593,14 @@
      [
       "GLM 5.3",
       1.4428
+     ],
+     [
+      "GLM 5.3 Flash",
+      1.2239
+     ],
+     [
+      "Grok 4.7",
+      0.5068
      ]
     ],
     "others_share": 0
@@ -11537,6 +11667,10 @@
      [
       "Claude Sonnet 5.5",
       0.8414
+     ],
+     [
+      "Grok 4.7",
+      0.1579
      ]
     ],
     "others_share": 0
@@ -11554,20 +11688,12 @@
       4.9587
      ],
      [
-      "Claude Sonnet 4.6",
-      4.3064
-     ],
-     [
       "Gemini 3.8 Flash",
       4.2472
      ],
      [
       "GPT-6 Astra",
       4.2211
-     ],
-     [
-      "DeepSeek V4.1 Flash",
-      2.5667
      ],
      [
       "GPT-6.1 Sol",
@@ -11578,8 +11704,20 @@
       2.0336
      ],
      [
+      "Gemini 3.1 Pro Preview",
+      1.9151
+     ],
+     [
       "GLM 5.3",
       1.9106
+     ],
+     [
+      "Grok 4.7",
+      1.6486
+     ],
+     [
+      "GLM 5.3 Flash",
+      1.3286
      ]
     ],
     "others_share": 0
@@ -11646,6 +11784,10 @@
      [
       "Claude Sonnet 5.5",
       0.8989
+     ],
+     [
+      "Grok 4.7",
+      0.5957
      ]
     ],
     "others_share": 0
@@ -11654,6 +11796,10 @@
     "day": "2026-10-02",
     "metric": "cost",
     "shares": [
+     [
+      "Grok 4.7",
+      15.3913
+     ],
      [
       "Claude Opus 5.5",
       12.9158
@@ -11665,14 +11811,6 @@
      [
       "GPT-6 Astra",
       3.5197
-     ],
-     [
-      "DeepSeek V4.1 Flash",
-      3.1158
-     ],
-     [
-      "Claude Sonnet 4.6",
-      2.6834
      ],
      [
       "GLM 5.3",
@@ -11687,8 +11825,16 @@
       2.1145
      ],
      [
+      "Gemini 3.1 Pro Preview",
+      2.0558
+     ],
+     [
       "GPT-6.1 Sol",
       1.9682
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.8769
      ]
     ],
     "others_share": 0
@@ -11733,6 +11879,10 @@
       21.8537
      ],
      [
+      "Grok 4.7",
+      7.2258
+     ],
+     [
       "GLM 5.3 Flash",
       6.4738
      ],
@@ -11772,10 +11922,6 @@
       9.4946
      ],
      [
-      "DeepSeek V4.1 Flash",
-      4.2918
-     ],
-     [
       "GPT-6.1 Sol",
       3.2339
      ],
@@ -11784,8 +11930,8 @@
       3.2247
      ],
      [
-      "Claude Sonnet 4.6",
-      3.0085
+      "Gemini 3.1 Pro Preview",
+      2.6822
      ],
      [
       "Gemini 3.8 Flash",
@@ -11798,6 +11944,14 @@
      [
       "Claude Sonnet 5.5",
       2.4744
+     ],
+     [
+      "GLM 5.3 Flash",
+      1.1473
+     ],
+     [
+      "Grok 4.7",
+      0.3494
      ]
     ],
     "others_share": 0
@@ -11864,6 +12018,10 @@
      [
       "Claude Sonnet 5.5",
       1.3099
+     ],
+     [
+      "Grok 4.7",
+      0.0942
      ]
     ],
     "others_share": 0
@@ -11885,16 +12043,16 @@
       4.4823
      ],
      [
+      "Gemini 3.1 Pro Preview",
+      3.8294
+     ],
+     [
       "GLM 5.3",
       3.7108
      ],
      [
       "Gemini 3.8 Flash",
       3.3839
-     ],
-     [
-      "Claude Sonnet 4.6",
-      3.2434
      ],
      [
       "GPT-6.1 Sol",
@@ -11905,8 +12063,12 @@
       2.6988
      ],
      [
-      "DeepSeek V4.1 Flash",
-      2.5862
+      "GLM 5.3 Flash",
+      1.613
+     ],
+     [
+      "Grok 4.7",
+      0.3144
      ]
     ],
     "others_share": 0
@@ -11973,6 +12135,10 @@
      [
       "Claude Sonnet 5.5",
       1.0308
+     ],
+     [
+      "Grok 4.7",
+      0.0807
      ]
     ],
     "others_share": 0
@@ -12002,8 +12168,8 @@
       3.7307
      ],
      [
-      "Claude Sonnet 4.6",
-      3.5921
+      "Gemini 3.1 Pro Preview",
+      3.6182
      ],
      [
       "Gemini 3.8 Flash",
@@ -12014,8 +12180,12 @@
       2.0943
      ],
      [
-      "DeepSeek V4.1 Flash",
-      1.511
+      "GLM 5.3 Flash",
+      1.5504
+     ],
+     [
+      "Grok 4.7",
+      0.794
      ]
     ],
     "others_share": 0
@@ -12082,6 +12252,10 @@
      [
       "Claude Sonnet 5.5",
       1.8635
+     ],
+     [
+      "Grok 4.7",
+      0.2506
      ]
     ],
     "others_share": 0
@@ -12111,20 +12285,24 @@
       3.8222
      ],
      [
-      "Gemini 3.8 Flash",
-      2.9068
+      "Gemini 3.1 Pro Preview",
+      2.9537
      ],
      [
-      "Claude Sonnet 4.6",
-      2.8674
+      "Gemini 3.8 Flash",
+      2.9068
      ],
      [
       "GLM 5.3",
       1.6764
      ],
      [
-      "DeepSeek V4.1 Flash",
-      1.3346
+      "GLM 5.3 Flash",
+      1.2527
+     ],
+     [
+      "Grok 4.7",
+      1.0142
      ]
     ],
     "others_share": 0
@@ -12191,6 +12369,10 @@
      [
       "GLM 5.3",
       1.8782
+     ],
+     [
+      "Grok 4.7",
+      0.3129
      ]
     ],
     "others_share": 0
@@ -12220,8 +12402,8 @@
       4.2366
      ],
      [
-      "Claude Sonnet 4.6",
-      3.104
+      "Gemini 3.1 Pro Preview",
+      3.6785
      ],
      [
       "Gemini 3.8 Flash",
@@ -12232,8 +12414,12 @@
       3.0804
      ],
      [
-      "DeepSeek V4.1 Flash",
-      1.5471
+      "GLM 5.3 Flash",
+      1.6359
+     ],
+     [
+      "Grok 4.7",
+      0.8031
      ]
     ],
     "others_share": 0
@@ -12306,8 +12492,8 @@
       2.0598
      ],
      [
-      "Claude Haiku 5.5",
-      0.3395
+      "Grok 4.7",
+      0.2414
      ]
     ],
     "others_share": 0
@@ -12341,16 +12527,20 @@
       3.2991
      ],
      [
-      "Claude Sonnet 4.6",
-      2.735
-     ],
-     [
       "Gemini 3.8 Flash",
       2.6889
      ],
      [
-      "DeepSeek V4.1 Flash",
-      2.0641
+      "Gemini 3.1 Pro Preview",
+      2.557
+     ],
+     [
+      "Grok 4.7",
+      1.8428
+     ],
+     [
+      "GLM 5.3 Flash",
+      1.5629
      ]
     ],
     "others_share": 0
@@ -12423,8 +12613,8 @@
       2.1175
      ],
      [
-      "Claude Haiku 5.5",
-      0.892
+      "Grok 4.7",
+      0.7431
      ]
     ],
     "others_share": 0
@@ -12458,16 +12648,20 @@
       3.2329
      ],
      [
-      "Claude Sonnet 4.6",
-      2.5634
+      "Gemini 3.1 Pro Preview",
+      2.7108
      ],
      [
       "Gemini 3.8 Flash",
       2.5492
      ],
      [
-      "DeepSeek V4.1 Flash",
-      2.1441
+      "GLM 5.3 Flash",
+      2.1735
+     ],
+     [
+      "Grok 4.7",
+      1.349
      ]
     ],
     "others_share": 0
@@ -12540,8 +12734,8 @@
       2.113
      ],
      [
-      "Claude Haiku 5.5",
-      0.8782
+      "Grok 4.7",
+      0.4731
      ]
     ],
     "others_share": 0
@@ -12567,6 +12761,10 @@
       6.1135
      ],
      [
+      "Gemini 3.1 Pro Preview",
+      4.4455
+     ],
+     [
       "Claude Sonnet 5.5",
       4.2307
      ],
@@ -12575,16 +12773,16 @@
       3.8543
      ],
      [
-      "DeepSeek V4.1 Flash",
-      3.0051
-     ],
-     [
       "Gemini 3.8 Flash",
       2.5287
      ],
      [
-      "Claude Sonnet 4.6",
-      2.1154
+      "GLM 5.3 Flash",
+      2.4181
+     ],
+     [
+      "Grok 4.7",
+      1.6743
      ]
     ],
     "others_share": 0
@@ -12657,8 +12855,8 @@
       1.8418
      ],
      [
-      "Claude Haiku 5.5",
-      0.9207
+      "Grok 4.7",
+      0.5026
      ]
     ],
     "others_share": 0
@@ -12674,6 +12872,10 @@
      [
       "Claude Opus 5.5",
       11.6915
+     ],
+     [
+      "Grok 4.7",
+      9.8836
      ],
      [
       "Kimi K3",
@@ -12696,12 +12898,12 @@
       2.7221
      ],
      [
-      "DeepSeek V4.1 Flash",
-      2.4025
+      "GLM 5.3 Flash",
+      2.2552
      ],
      [
-      "Claude Sonnet 4.6",
-      1.9831
+      "Gemini 3.1 Pro Preview",
+      1.6592
      ]
     ],
     "others_share": 0
@@ -12766,16 +12968,16 @@
       4.2672
      ],
      [
+      "Grok 4.7",
+      3.6818
+     ],
+     [
       "Jev",
       2.9433
      ],
      [
       "Claude Sonnet 5.5",
       1.6425
-     ],
-     [
-      "Claude Haiku 5.5",
-      0.6757
      ]
     ],
     "others_share": 0
@@ -12809,16 +13011,20 @@
       4.4224
      ],
      [
-      "Claude Sonnet 4.6",
-      2.6642
-     ],
-     [
       "Gemini 3.8 Flash",
       2.6528
      ],
      [
-      "DeepSeek V4.1 Flash",
-      2.2382
+      "Grok 4.7",
+      2.5519
+     ],
+     [
+      "GLM 5.3 Flash",
+      1.9235
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      1.0308
      ]
     ],
     "others_share": 0
@@ -12891,8 +13097,8 @@
       2.4101
      ],
      [
-      "Claude Haiku 5.5",
-      1.2365
+      "Grok 4.7",
+      0.9388
      ]
     ],
     "others_share": 0
@@ -12930,12 +13136,16 @@
       2.2444
      ],
      [
-      "Claude Sonnet 4.6",
-      2.1864
+      "Grok 4.7",
+      2.2234
      ],
      [
-      "DeepSeek V4.1 Flash",
-      1.8391
+      "Gemini 3.1 Pro Preview",
+      1.5585
+     ],
+     [
+      "GLM 5.3 Flash",
+      1.3805
      ]
     ],
     "others_share": 0
@@ -13008,8 +13218,8 @@
       2.7049
      ],
      [
-      "Claude Haiku 5.5",
-      1.0232
+      "Grok 4.7",
+      0.9692
      ]
     ],
     "others_share": 0
@@ -13043,16 +13253,20 @@
       2.9932
      ],
      [
+      "Grok 4.7",
+      2.3496
+     ],
+     [
       "Gemini 3.8 Flash",
       2.1929
      ],
      [
-      "Claude Sonnet 4.6",
-      2.101
+      "GLM 5.3 Flash",
+      1.4235
      ],
      [
-      "DeepSeek V4.1 Flash",
-      1.6363
+      "Gemini 3.1 Pro Preview",
+      0.8898
      ]
     ],
     "others_share": 0
@@ -13125,8 +13339,8 @@
       3.13
      ],
      [
-      "Claude Haiku 5.5",
-      1.0984
+      "Grok 4.7",
+      1.126
      ]
     ],
     "others_share": 0
@@ -13142,6 +13356,10 @@
      [
       "Claude Opus 5.5",
       15.2629
+     ],
+     [
+      "Grok 4.7",
+      5.8974
      ],
      [
       "Kimi K3",
@@ -13164,12 +13382,12 @@
       1.9113
      ],
      [
-      "Claude Sonnet 4.6",
-      1.8145
+      "GLM 5.3 Flash",
+      1.4794
      ],
      [
-      "DeepSeek V4.1 Flash",
-      1.4027
+      "Gemini 3.1 Pro Preview",
+      0.8115
      ]
     ],
     "others_share": 0
@@ -13242,12 +13460,12 @@
       3.8693
      ],
      [
-      "Claude Sonnet 5.5",
-      3.0703
+      "Grok 4.7",
+      3.5301
      ],
      [
-      "Claude Haiku 5.5",
-      1.2392
+      "Claude Sonnet 5.5",
+      3.0703
      ]
     ],
     "others_share": 0
@@ -13263,6 +13481,10 @@
      [
       "Claude Opus 5.5",
       15.756
+     ],
+     [
+      "Grok 4.7",
+      5.7206
      ],
      [
       "Claude Sonnet 5.5",
@@ -13281,16 +13503,16 @@
       2.8692
      ],
      [
-      "DeepSeek V4.1 Flash",
-      2.0742
-     ],
-     [
       "Gemini 3.8 Flash",
       1.8632
      ],
      [
-      "Claude Sonnet 4.6",
-      1.7763
+      "GLM 5.3 Flash",
+      1.6122
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      0.9124
      ]
     ],
     "others_share": 0
@@ -13367,12 +13589,12 @@
       2.9185
      ],
      [
-      "Jev",
-      2.6063
+      "Grok 4.7",
+      2.9023
      ],
      [
-      "Claude Haiku 5.5",
-      1.1695
+      "Jev",
+      2.6063
      ],
      [
       "Beam 1.0",
@@ -13410,20 +13632,20 @@
       3.143
      ],
      [
-      "DeepSeek V4.1 Flash",
-      2.9081
+      "GLM 5.3 Flash",
+      2.474
      ],
      [
       "Gemini 3.8 Flash",
       2.4653
      ],
      [
-      "Claude Sonnet 4.6",
-      1.5121
+      "Grok 4.7",
+      1.9362
      ],
      [
-      "DeepSeek V4.1 Flash 1017",
-      0.1126
+      "Gemini 3.1 Pro Preview",
+      1.5889
      ]
     ],
     "others_share": 0
@@ -13516,8 +13738,8 @@
       1.9731
      ],
      [
-      "Claude Haiku 5.5",
-      1.6696
+      "Grok 4.7",
+      0.6121
      ]
     ],
     "others_share": 0
@@ -13547,6 +13769,10 @@
       3.6548
      ],
      [
+      "Grok 4.7",
+      3.2421
+     ],
+     [
       "GPT-6.1 Sol",
       3.1204
      ],
@@ -13555,16 +13781,12 @@
       2.4175
      ],
      [
-      "DeepSeek V4.1 Flash",
-      2.3414
+      "Gemini 3.1 Pro Preview",
+      2.0826
      ],
      [
-      "Claude Sonnet 4.6",
-      1.4316
-     ],
-     [
-      "DeepSeek V4.1 Flash 1017",
-      0.5239
+      "GLM 5.3 Flash",
+      1.8378
      ]
     ],
     "others_share": 0
@@ -13657,8 +13879,8 @@
       1.8932
      ],
      [
-      "Claude Haiku 5.5",
-      1.067
+      "Grok 4.7",
+      1.0569
      ]
     ],
     "others_share": 0
@@ -13696,16 +13918,16 @@
       2.3962
      ],
      [
-      "Claude Sonnet 4.6",
-      2.0294
+      "Grok 4.7",
+      2.0533
      ],
      [
-      "DeepSeek V4.1 Flash",
-      1.9398
+      "GLM 5.3 Flash",
+      1.5287
      ],
      [
-      "DeepSeek V4.1 Flash 1017",
-      1.2292
+      "Gemini 3.1 Pro Preview",
+      0.4809
      ]
     ],
     "others_share": 0
@@ -13798,8 +14020,8 @@
       2.6562
      ],
      [
-      "Claude Haiku 5.5",
-      1.2614
+      "Grok 4.7",
+      0.6554
      ]
     ],
     "others_share": 0
@@ -13815,6 +14037,10 @@
      [
       "Claude Opus 5.5",
       15.4862
+     ],
+     [
+      "Grok 4.7",
+      13.3984
      ],
      [
       "Kimi K3",
@@ -13837,16 +14063,12 @@
       2.1589
      ],
      [
-      "DeepSeek V4.1 Flash 1017",
-      1.8904
+      "GLM 5.3 Flash",
+      1.0558
      ],
      [
-      "DeepSeek V4.1 Flash",
-      1.6604
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.5772
+      "Gemini 3.1 Pro Preview",
+      0.361
      ]
     ],
     "others_share": 0
@@ -13923,6 +14145,10 @@
       4.9952
      ],
      [
+      "Grok 4.7",
+      4.8225
+     ],
+     [
       "GPT-6 Luna",
       4.5052
      ],
@@ -13937,10 +14163,6 @@
      [
       "Jev",
       2.082
-     ],
-     [
-      "Claude Haiku 5.5",
-      2.0131
      ]
     ],
     "others_share": 0
@@ -13956,6 +14178,10 @@
      [
       "GLM 5.3",
       13.7932
+     ],
+     [
+      "Grok 4.7",
+      12.9373
      ],
      [
       "Kimi K3",
@@ -13978,16 +14204,12 @@
       2.3098
      ],
      [
-      "Claude Sonnet 4.6",
-      1.8964
+      "GLM 5.3 Flash",
+      1.1011
      ],
      [
-      "DeepSeek V4.1 Flash 1017",
-      1.6087
-     ],
-     [
-      "DeepSeek V4.1 Flash",
-      1.5895
+      "Gemini 3.1 Pro Preview",
+      0.49
      ]
     ],
     "others_share": 0
@@ -14068,6 +14290,10 @@
       4.9568
      ],
      [
+      "Grok 4.7",
+      4.0982
+     ],
+     [
       "GLM 5.3 Flash",
       3.7734
      ],
@@ -14078,10 +14304,6 @@
      [
       "Claude Sonnet 5.5",
       2.2115
-     ],
-     [
-      "Claude Haiku 5.5",
-      1.2694
      ]
     ],
     "others_share": 0
@@ -14097,6 +14319,10 @@
      [
       "GLM 5.3",
       13.7862
+     ],
+     [
+      "Grok 4.7",
+      8.1455
      ],
      [
       "Kimi K3",
@@ -14119,16 +14345,12 @@
       2.4097
      ],
      [
-      "Claude Sonnet 4.6",
-      1.7955
+      "GLM 5.3 Flash",
+      2.2597
      ],
      [
-      "DeepSeek V4.1 Flash",
-      1.5821
-     ],
-     [
-      "DeepSeek V4.1 Flash 1017",
-      1.4563
+      "Gemini 3.1 Pro Preview",
+      0.5968
      ]
     ],
     "others_share": 0
@@ -14213,16 +14435,16 @@
       5.6468
      ],
      [
+      "Grok 4.7",
+      2.7945
+     ],
+     [
       "Jev",
       2.6044
      ],
      [
       "Claude Sonnet 5.5",
       2.328
-     ],
-     [
-      "Claude Haiku 5.5",
-      1.2488
      ]
     ],
     "others_share": 0
@@ -14245,11 +14467,15 @@
      ],
      [
       "Claude Sonnet 5.5",
-      5.6831
+      5.683
      ],
      [
       "GPT-6.1 Sol",
       5.0843
+     ],
+     [
+      "GLM 5.3 Flash",
+      3.6581
      ],
      [
       "GPT-6 Astra",
@@ -14260,16 +14486,12 @@
       2.3404
      ],
      [
-      "DeepSeek V4.1 Flash",
-      2.1915
+      "Grok 4.7",
+      1.8072
      ],
      [
-      "Claude Sonnet 4.6",
-      1.8833
-     ],
-     [
-      "DeepSeek V4.1 Flash 1017",
-      1.4786
+      "Gemini 3.1 Pro Preview",
+      0.8435
      ]
     ],
     "others_share": 0
@@ -14362,8 +14584,8 @@
       2.5344
      ],
      [
-      "Claude Haiku 5.5",
-      1.4853
+      "Grok 4.7",
+      0.5272
      ]
     ],
     "others_share": 0
@@ -14374,7 +14596,7 @@
     "shares": [
      [
       "GLM 5.3",
-      21.5925
+      21.5924
      ],
      [
       "Claude Opus 5.5",
@@ -14385,16 +14607,16 @@
       8.4822
      ],
      [
+      "GLM 5.3 Flash",
+      5.0847
+     ],
+     [
       "Claude Sonnet 5.5",
       4.9399
      ],
      [
       "GPT-6.1 Sol",
       3.647
-     ],
-     [
-      "DeepSeek V4.1 Flash",
-      2.6381
      ],
      [
       "Gemini 3.8 Flash",
@@ -14405,12 +14627,12 @@
       2.2244
      ],
      [
-      "Claude Sonnet 4.6",
-      1.625
+      "Grok 4.7",
+      1.872
      ],
      [
-      "DeepSeek V4.1 Flash 1017",
-      1.4041
+      "Gemini 3.1 Pro Preview",
+      1.3753
      ]
     ],
     "others_share": 0
@@ -14503,8 +14725,8 @@
       1.7187
      ],
      [
-      "Claude Haiku 5.5",
-      1.2998
+      "Grok 4.7",
+      0.439
      ]
     ],
     "others_share": 0
@@ -14520,6 +14742,10 @@
      [
       "Claude Opus 5.5",
       15.4779
+     ],
+     [
+      "Grok 4.7",
+      7.6017
      ],
      [
       "Kimi K3",
@@ -14538,20 +14764,16 @@
       3.1043
      ],
      [
-      "DeepSeek V4.1 Flash",
-      2.9472
-     ],
-     [
       "Gemini 3.8 Flash",
       2.7487
      ],
      [
-      "DeepSeek V4.1 Flash 1017",
-      2.1489
+      "GLM 5.3 Flash",
+      0.7218
      ],
      [
-      "Claude Sonnet 4.6",
-      1.6312
+      "Gemini 3.1 Pro Preview",
+      0.6107
      ]
     ],
     "others_share": 0
@@ -14640,8 +14862,8 @@
       2.4983
      ],
      [
-      "Claude Haiku 5.5",
-      1.717
+      "Grok 4.7",
+      2.2778
      ],
      [
       "Claude Sonnet 5.5",
@@ -14656,7 +14878,7 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      21.399
+      21.3989
      ],
      [
       "GLM 5.3",
@@ -14683,16 +14905,16 @@
       2.7521
      ],
      [
-      "DeepSeek V4.1 Flash",
-      2.637
+      "Grok 4.7",
+      2.1531
      ],
      [
-      "Claude Sonnet 4.6",
-      2.3182
+      "GLM 5.3 Flash",
+      1.1073
      ],
      [
-      "DeepSeek V4.1 Flash 1017",
-      2.2376
+      "Gemini 3.1 Pro Preview",
+      0.5648
      ]
     ],
     "others_share": 0
@@ -14770,7 +14992,7 @@
      ],
      [
       "GPT-6 Luna",
-      5.5724
+      5.5726
      ],
      [
       "GLM 5.3 Flash",
@@ -14785,8 +15007,149 @@
       2.5239
      ],
      [
+      "Grok 4.7",
+      0.6128
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-10-27",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 5.5",
+      20.8322
+     ],
+     [
+      "GLM 5.3",
+      10.4251
+     ],
+     [
+      "Grok 4.7",
+      9.2462
+     ],
+     [
+      "Claude Sonnet 5.5",
+      6.0082
+     ],
+     [
+      "GPT-6.1 Sol",
+      4.496
+     ],
+     [
+      "Kimi K3",
+      4.3937
+     ],
+     [
+      "GPT-6 Astra",
+      3.5042
+     ],
+     [
+      "Gemini 3.1 Pro Preview",
+      2.8346
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.4646
+     ],
+     [
+      "Gemini 3.8 Flash",
+      2.1981
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-10-27",
+    "metric": "requests",
+    "shares": [
+     [
+      "Jev",
+      20.193
+     ],
+     [
+      "GPT-6 Luna",
+      8.2648
+     ],
+     [
+      "GLM 5.3 Flash",
+      5.6697
+     ],
+     [
+      "Jev 1.14.0",
+      5.4144
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      5.2933
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      4.0775
+     ],
+     [
+      "GLM 5.3",
+      3.6205
+     ],
+     [
       "Claude Haiku 5.5",
-      2.3469
+      3.4428
+     ],
+     [
+      "Beam 1.0",
+      3.3048
+     ],
+     [
+      "text-embedding-3-small",
+      3.2399
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-10-27",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4.1 Flash 1017",
+      16.3968
+     ],
+     [
+      "Beam 1.0",
+      12.0862
+     ],
+     [
+      "GLM 5.3 Flash",
+      10.9404
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      9.4111
+     ],
+     [
+      "GLM 5.3",
+      8.2297
+     ],
+     [
+      "Claude Opus 5.5",
+      5.878
+     ],
+     [
+      "GPT-6 Luna",
+      5.2029
+     ],
+     [
+      "Grok 4.7",
+      2.9708
+     ],
+     [
+      "Jev",
+      2.9439
+     ],
+     [
+      "Claude Sonnet 5.5",
+      2.4168
      ]
     ],
     "others_share": 0
