@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-10-28",
- "fetched_at": "2026-10-28T01:26:50+00:00",
+ "snapshot_date": "2026-10-29",
+ "fetched_at": "2026-10-29T01:51:00+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -55,6 +55,21 @@
     "country": "United States"
    },
    {
+    "name": "OpenAI Stargate Abilene",
+    "h100_equivalents": 764022.233451238,
+    "power_mw": 618.0,
+    "capital_cost_busd": 23.411075999999998,
+    "owner": "Oracle",
+    "users": [
+     "OpenAI"
+    ],
+    "chip_types": [
+     "B200",
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
     "name": "Google Pryor (North)",
     "h100_equivalents": 636685.1945426983,
     "power_mw": 368.0,
@@ -92,21 +107,6 @@
      "Meta"
     ],
     "chip_types": [
-     "B300"
-    ],
-    "country": "United States"
-   },
-   {
-    "name": "OpenAI Stargate Abilene",
-    "h100_equivalents": 509348.15563415864,
-    "power_mw": 421.0,
-    "capital_cost_busd": 15.948322,
-    "owner": "Oracle",
-    "users": [
-     "OpenAI"
-    ],
-    "chip_types": [
-     "B200",
      "B300"
     ],
     "country": "United States"
@@ -535,6 +535,19 @@
      "B200"
     ],
     "country": "United States"
+   },
+   {
+    "name": "YTL Johor",
+    "h100_equivalents": 153532.0869125821,
+    "power_mw": 113.0,
+    "capital_cost_busd": 4.280666,
+    "owner": "",
+    "users": [],
+    "chip_types": [
+     "B200",
+     "B300"
+    ],
+    "country": "Malaysia"
    },
    {
     "name": "Meta Eagle Mountain",
@@ -1462,6 +1475,76 @@
     "h100_equivalents": 768768.7220818596
    },
    {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2024-05-31",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2025-06-28",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2025-09-26",
+    "it_power_mw": 103.0,
+    "power_mw": 144.0,
+    "h100_equivalents": 127337.03890853966
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2025-12-24",
+    "it_power_mw": 206.0,
+    "power_mw": 288.0,
+    "h100_equivalents": 254674.07781707932
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-01-15",
+    "it_power_mw": 206.0,
+    "power_mw": 288.0,
+    "h100_equivalents": 254674.07781707932
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-03-24",
+    "it_power_mw": 206.0,
+    "power_mw": 288.0,
+    "h100_equivalents": 254674.07781707932
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-05-23",
+    "it_power_mw": 412.0,
+    "power_mw": 577.0,
+    "h100_equivalents": 509348.15563415864
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-07-28",
+    "it_power_mw": 412.0,
+    "power_mw": 577.0,
+    "h100_equivalents": 509348.15563415864
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-09-10",
+    "it_power_mw": 618.0,
+    "power_mw": 865.0,
+    "h100_equivalents": 764022.233451238
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-11-01",
+    "it_power_mw": 824.0,
+    "power_mw": 1154.0,
+    "h100_equivalents": 1018696.3112683173
+   },
+   {
     "site": "Google Pryor (North)",
     "date": "2024-07-19",
     "it_power_mw": 53.0,
@@ -1621,69 +1704,6 @@
     "it_power_mw": 1022.0,
     "power_mw": 1328.0,
     "h100_equivalents": 1164336.5841334006
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2024-05-31",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2025-06-28",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2025-09-26",
-    "it_power_mw": 105.0,
-    "power_mw": 147.0,
-    "h100_equivalents": 127337.03890853966
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2025-12-24",
-    "it_power_mw": 211.0,
-    "power_mw": 295.0,
-    "h100_equivalents": 254674.07781707932
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2026-01-15",
-    "it_power_mw": 211.0,
-    "power_mw": 295.0,
-    "h100_equivalents": 254674.07781707932
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2026-03-24",
-    "it_power_mw": 211.0,
-    "power_mw": 295.0,
-    "h100_equivalents": 254674.07781707932
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2026-05-23",
-    "it_power_mw": 421.0,
-    "power_mw": 590.0,
-    "h100_equivalents": 509348.15563415864
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2026-07-28",
-    "it_power_mw": 421.0,
-    "power_mw": 590.0,
-    "h100_equivalents": 509348.15563415864
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2026-11-01",
-    "it_power_mw": 843.0,
-    "power_mw": 1180.0,
-    "h100_equivalents": 1018696.3112683173
    },
    {
     "site": "DayOne Kempas",
@@ -3042,6 +3062,48 @@
     "it_power_mw": 190.0,
     "power_mw": 228.0,
     "h100_equivalents": 155634.15866599293
+   },
+   {
+    "site": "YTL Johor",
+    "date": "2023-11-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "YTL Johor",
+    "date": "2025-11-03",
+    "it_power_mw": 20.0,
+    "power_mw": 26.0,
+    "h100_equivalents": 24194.037392622537
+   },
+   {
+    "site": "YTL Johor",
+    "date": "2026-03-14",
+    "it_power_mw": 100.0,
+    "power_mw": 138.0,
+    "h100_equivalents": 138251.64224355735
+   },
+   {
+    "site": "YTL Johor",
+    "date": "2026-05-15",
+    "it_power_mw": 113.0,
+    "power_mw": 155.0,
+    "h100_equivalents": 153532.0869125821
+   },
+   {
+    "site": "YTL Johor",
+    "date": "2026-07-13",
+    "it_power_mw": 113.0,
+    "power_mw": 155.0,
+    "h100_equivalents": 153532.0869125821
+   },
+   {
+    "site": "YTL Johor",
+    "date": "2028-08-01",
+    "it_power_mw": 284.0,
+    "power_mw": 389.0,
+    "h100_equivalents": 585421.9302678121
    },
    {
     "site": "Meta Eagle Mountain",
@@ -5264,10 +5326,10 @@
    }
   ],
   "aggregates": {
-   "site_count": 95,
-   "total_power_mw": 14234.4,
-   "total_h100_equivalents": 14786513,
-   "total_capital_cost_busd": 539.23
+   "site_count": 96,
+   "total_power_mw": 14544.4,
+   "total_h100_equivalents": 15194719,
+   "total_capital_cost_busd": 550.97
   }
  }
 }
