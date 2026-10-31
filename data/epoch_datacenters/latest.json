@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-10-30",
- "fetched_at": "2026-10-30T01:59:56+00:00",
+ "snapshot_date": "2026-10-31",
+ "fetched_at": "2026-10-31T01:38:09+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -653,7 +653,7 @@
     "h100_equivalents": 122789.28751894896,
     "power_mw": 221.0,
     "capital_cost_busd": 8.371922,
-    "owner": "VNET",
+    "owner": "ByteDance",
     "users": [
      "ByteDance"
     ],
@@ -1287,8 +1287,10 @@
     "h100_equivalents": 0.0,
     "power_mw": 0.0,
     "capital_cost_busd": 0.0,
-    "owner": "",
-    "users": [],
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
     "chip_types": [],
     "country": "United States"
    },
@@ -5264,9 +5266,9 @@
    {
     "site": "QTS Cedar Rapids",
     "date": "2026-04-16",
-    "it_power_mw": null,
-    "power_mw": null,
-    "h100_equivalents": null
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
    },
    {
     "site": "QTS Cedar Rapids",
@@ -5277,17 +5279,24 @@
    },
    {
     "site": "QTS Cedar Rapids",
-    "date": "2026-11-15",
+    "date": "2026-10-23",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "QTS Cedar Rapids",
+    "date": "2026-12-01",
     "it_power_mw": 448.0,
     "power_mw": 627.0,
-    "h100_equivalents": 1136975.5639961243
+    "h100_equivalents": 510478.8246513189
    },
    {
     "site": "QTS Cedar Rapids",
     "date": "2027-11-15",
     "it_power_mw": 1133.0,
     "power_mw": 1587.0,
-    "h100_equivalents": 3668823.12124194
+    "h100_equivalents": 2250548.600358449
    },
    {
     "site": "QTS Eagle Mountain",

@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "sdk_downloads",
- "snapshot_date": "2026-10-30",
- "fetched_at": "2026-10-30T02:00:17+00:00",
+ "snapshot_date": "2026-10-31",
+ "fetched_at": "2026-10-31T01:38:30+00:00",
  "source_meta": {
   "kind": "official-api"
  },
@@ -10,56 +10,56 @@
   "npm": {
    "openai": {
     "last-day": {
-     "downloads": 9388715,
-     "start": "2026-10-28",
-     "end": "2026-10-28"
+     "downloads": 9441612,
+     "start": "2026-10-29",
+     "end": "2026-10-29"
     },
     "last-week": {
-     "downloads": 55347579,
-     "start": "2026-10-22",
-     "end": "2026-10-28"
+     "downloads": 55491198,
+     "start": "2026-10-23",
+     "end": "2026-10-29"
     }
    },
    "@anthropic-ai/sdk": {
     "last-day": {
-     "downloads": 10581790,
-     "start": "2026-10-28",
-     "end": "2026-10-28"
+     "downloads": 10629701,
+     "start": "2026-10-29",
+     "end": "2026-10-29"
     },
     "last-week": {
-     "downloads": 62841947,
-     "start": "2026-10-22",
-     "end": "2026-10-28"
+     "downloads": 63186464,
+     "start": "2026-10-23",
+     "end": "2026-10-29"
     }
    },
    "@google/genai": {
     "last-day": {
-     "downloads": 4666085,
-     "start": "2026-10-28",
-     "end": "2026-10-28"
+     "downloads": 4945568,
+     "start": "2026-10-29",
+     "end": "2026-10-29"
     },
     "last-week": {
-     "downloads": 29774829,
-     "start": "2026-10-22",
-     "end": "2026-10-28"
+     "downloads": 29855861,
+     "start": "2026-10-23",
+     "end": "2026-10-29"
     }
    }
   },
   "pypi": {
    "openai": {
-    "last_day": 14293913,
+    "last_day": 12968561,
     "last_month": 295856631,
-    "last_week": 84222790
+    "last_week": 84241735
    },
    "anthropic": {
-    "last_day": 7946543,
+    "last_day": 7429298,
     "last_month": 150199657,
-    "last_week": 46227541
+    "last_week": 46254817
    },
    "google-genai": {
-    "last_day": 6302092,
+    "last_day": 5751511,
     "last_month": 137607856,
-    "last_week": 38550787
+    "last_week": 38275576
    }
   }
  }
