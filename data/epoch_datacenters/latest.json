@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-10-31",
- "fetched_at": "2026-10-31T01:38:09+00:00",
+ "snapshot_date": "2026-11-01",
+ "fetched_at": "2026-11-01T01:16:10+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -168,6 +168,20 @@
      "TPU v5e",
      "TPU v5p",
      "TPU v6e"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "Anthropic Lake Mariner",
+    "h100_equivalents": 292829.71197574533,
+    "power_mw": 210.0,
+    "capital_cost_busd": 7.955219999999999,
+    "owner": "AI XPV Platform",
+    "users": [
+     "Anthropic"
+    ],
+    "chip_types": [
+     "TPU v7"
     ],
     "country": "United States"
    },
@@ -877,20 +891,6 @@
     "users": [],
     "chip_types": [
      "H100"
-    ],
-    "country": "United States"
-   },
-   {
-    "name": "Anthropic Lake Mariner",
-    "h100_equivalents": 58564.93178372915,
-    "power_mw": 42.0,
-    "capital_cost_busd": 1.5910440000000001,
-    "owner": "AI XPV Platform",
-    "users": [
-     "Anthropic"
-    ],
-    "chip_types": [
-     "TPU v7"
     ],
     "country": "United States"
    },
@@ -1916,6 +1916,48 @@
     "it_power_mw": 333.0,
     "power_mw": 400.0,
     "h100_equivalents": 323900.9600808489
+   },
+   {
+    "site": "Anthropic Lake Mariner",
+    "date": "2025-06-11",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic Lake Mariner",
+    "date": "2026-03-02",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic Lake Mariner",
+    "date": "2026-05-31",
+    "it_power_mw": 42.0,
+    "power_mw": 49.0,
+    "h100_equivalents": 58564.93178372915
+   },
+   {
+    "site": "Anthropic Lake Mariner",
+    "date": "2026-07-23",
+    "it_power_mw": 42.0,
+    "power_mw": 49.0,
+    "h100_equivalents": 58564.93178372915
+   },
+   {
+    "site": "Anthropic Lake Mariner",
+    "date": "2026-10-31",
+    "it_power_mw": 210.0,
+    "power_mw": 245.0,
+    "h100_equivalents": 292829.71197574533
+   },
+   {
+    "site": "Anthropic Lake Mariner",
+    "date": "2027-03-31",
+    "it_power_mw": 378.0,
+    "power_mw": 441.0,
+    "h100_equivalents": 527084.3860535624
    },
    {
     "site": "Google Mesa",
@@ -4074,48 +4116,6 @@
     "h100_equivalents": 250631.63213744314
    },
    {
-    "site": "Anthropic Lake Mariner",
-    "date": "2025-06-11",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Anthropic Lake Mariner",
-    "date": "2026-03-02",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Anthropic Lake Mariner",
-    "date": "2026-05-31",
-    "it_power_mw": 42.0,
-    "power_mw": 49.0,
-    "h100_equivalents": 58564.93178372915
-   },
-   {
-    "site": "Anthropic Lake Mariner",
-    "date": "2026-07-23",
-    "it_power_mw": 42.0,
-    "power_mw": 49.0,
-    "h100_equivalents": 58564.93178372915
-   },
-   {
-    "site": "Anthropic Lake Mariner",
-    "date": "2026-10-31",
-    "it_power_mw": 210.0,
-    "power_mw": 245.0,
-    "h100_equivalents": 292829.71197574533
-   },
-   {
-    "site": "Anthropic Lake Mariner",
-    "date": "2027-03-31",
-    "it_power_mw": 378.0,
-    "power_mw": 441.0,
-    "h100_equivalents": 527084.3860535624
-   },
-   {
     "site": "Microsoft-Nebius New Jersey",
     "date": "2024-05-31",
     "it_power_mw": 0.0,
@@ -5336,9 +5336,9 @@
   ],
   "aggregates": {
    "site_count": 96,
-   "total_power_mw": 14544.4,
-   "total_h100_equivalents": 15194719,
-   "total_capital_cost_busd": 550.97
+   "total_power_mw": 14712.4,
+   "total_h100_equivalents": 15428984,
+   "total_capital_cost_busd": 557.34
   }
  }
 }

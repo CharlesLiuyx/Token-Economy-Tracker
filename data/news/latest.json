@@ -1,13 +1,27 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-10-31",
- "fetched_at": "2026-10-31T01:38:31+00:00",
+ "snapshot_date": "2026-11-01",
+ "fetched_at": "2026-11-01T01:16:33+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward - TechCrunch",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUGJrcVp1WTFKSjNfekYyYmdTRExNMXNLWUZERkRLOWI2ZS1PeW5OaUczNU9yZzBPMnJ2TmVOTjZxZm9QOVRfaWx6THh5VXhCTjAtRXN4UXpqOGJ4M2NIT2EteVRuQmdwRFBXZW1maTItSkdhTWtIbS1Ed0xCOEdYSndiQkdBVFFwRUQyNWRUMHhhTE0yZmR4Ym9VdGRBamp0ZWRvT3ZyTEQtUWtl?oc=5",
+    "source_name": "TechCrunch",
+    "source_url": "https://techcrunch.com",
+    "published": "2026-10-31T21:17:03+00:00"
+   },
+   {
+    "title": "SpaceX loses bid to toss NAACP lawsuit over Memphis data center air pollution - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONWZobnlmVnlwbk9rMk1yeUVabnE1QUdtdTVEWGR6UUkwYXEzWk9weVpLMWFtRWF2Ykd6SmpNalgtelBCZ0lBdkd6Vm1xcWhNNkNVM0ZKTW43TmZyUUtMb1pYZVY2V2VuaFh5dHdBakhBYllrQjY5bUhrOHpteVNRUWNaZFrSAYoBQVVfeXFMUHFJcmV4YzZNcTZ4dk5RX2YyQm1TWDhpSS1OemxNdFRkUHhFTEFDNHpueE1QejEzMGVQYUFwQXpNV2JaVmJzdlQ2TWFJNlJOYjFkckE3TFpHVHpMSWt4YlBzMkZUX0hSa295M2tHSkx5aUFDbjMwbDkxQlNhdnp1NlhYd21VOER5ZHZn?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-10-31T18:56:21+00:00"
+   },
    {
     "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia - TechCrunch",
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZGNhWVNJR0JZTnVKVlM5RUZFeGdQZDdMMk9yODB0ZTlGSXRnYzNZU2hVbXBLdVdWbGstX3RPYkphd190d0R5N0VKN0RabTd3aW5OSUI1cHVsME9vVno4Nm1LY0lTV25qZE5EejNqNm91c1dvbVk5YnctUUowaUJoYTJwSEhCY3BIYV9kbVZ1U1RKNTk5Y3NqVDR3YTlrdXZDOWd5ekVvaDdGSzV0aVA5OUFxcw?oc=5",
@@ -1036,6 +1050,13 @@
     "source_name": "Data Center Dynamics",
     "source_url": "https://www.datacenterdynamics.com",
     "published": "2026-10-20T08:01:41+00:00"
+   },
+   {
+    "title": "The A.I. Data Center Backlash Has Reached a Quiet Corner of Rural England - The New York Times",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZUR0R1VXTFp5U29rM0VBTnlVY09MSUU3amd3a09NZVFjeDJISUpCVzBDNjExVHJFdVFYQTlqZXotek1MU3BHS3ZGcWEzTTh0RDV6aEtWUS1MSXVjSnFtYzdIb1BZWUFwaEVUczg5dFlHaWZWMDVFbUpOQkNMVTN1SVpSYVRlM1JKWEQ3Qw?oc=5",
+    "source_name": "The New York Times",
+    "source_url": "https://www.nytimes.com",
+    "published": "2026-10-20T07:00:00+00:00"
    },
    {
     "title": "Quick Chat: Data Center projects and the transitions taking place as it relates to the topic of sustainability - Data Center Frontier",
@@ -2086,27 +2107,6 @@
     "source_name": "The Verge",
     "source_url": "https://www.theverge.com",
     "published": "2026-10-01T10:00:02+00:00"
-   },
-   {
-    "title": "Japan plans $140bn AI data centre push with Dell and Jera - ft.com",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQemNTTmxOeGxwbmRmbjlnOVZHYjl2QV9qZXp4aWhhQUpDdW1IMVo1WTl0LXFWcnFHZ0VwT3U1Ml9aaHRBR2ljTjliOEljc1UzOHYxa1p6YnIxS0piUWl6d0t6aFFJdEpNQmxReURrREU4UEVBaUprQkN1eDBMNzVwdFBvTlY?oc=5",
-    "source_name": "ft.com",
-    "source_url": "https://www.ft.com",
-    "published": "2026-10-01T08:05:31+00:00"
-   },
-   {
-    "title": "Where Cramer stands on a buzzy behind-the-meter name powering the AI build-out - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUngtZGNSd29qOFZGUEZ3b19IS194YWplSEdkc2ZyZFBDRjZ5T24zSExKR2pMa3F1ZWRPSjBON1d3ZUR1OWJ3bmhPcURmTV9UX1NPaGJzSWdneTIwRnlqU2VLb3Y1cWhXdG4tZnlvem1OZkx3LUJrN3lTblkyR0I4bg?oc=5",
-    "source_name": "CNBC",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-09-30T23:01:09+00:00"
-   },
-   {
-    "title": "US Senate blocks bill to address data center costs - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZlUwWk84SVBKWWZQTmJJQk0yRG4wX2c5eGdrQVQ1U0JQOTdQYmUxQkR5RXgyNFBQNWpucEpyUDJYRG1SNFZHaDc4M0FTOUxRLW9IUmJqVFVscm1XQ0xfMUFoQ2FrSWNEMHhkVEZleE9GT2xBc21CVERGZmJuTGZ0Rjg5YTlacllwVmJTMnhiYXAzMGxBbnBJ?oc=5",
-    "source_name": "Reuters",
-    "source_url": "https://www.reuters.com",
-    "published": "2026-09-30T21:26:30+00:00"
    }
   ],
   "queries": [

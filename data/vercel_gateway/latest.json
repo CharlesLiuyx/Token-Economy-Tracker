@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "vercel_gateway",
- "snapshot_date": "2026-10-31",
- "fetched_at": "2026-10-31T01:38:33+00:00",
+ "snapshot_date": "2026-11-01",
+ "fetched_at": "2026-11-01T01:16:33+00:00",
  "source_meta": {
   "kind": "scrape"
  },
@@ -8056,10 +8056,6 @@
      [
       "GLM 5.3",
       0.4858
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.0803
      ]
     ],
     "others_share": 0
@@ -8113,10 +8109,6 @@
      [
       "GLM 5.3",
       0.6215
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.3688
      ]
     ],
     "others_share": 0
@@ -8170,10 +8162,6 @@
      [
       "GLM 5.3",
       0.6326
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.338
      ]
     ],
     "others_share": 0
@@ -8227,10 +8215,6 @@
      [
       "GLM 5.3",
       0.928
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.534
      ]
     ],
     "others_share": 0
@@ -8284,10 +8268,6 @@
      [
       "GLM 5.3",
       0.5427
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.5409
      ]
     ],
     "others_share": 0
@@ -8341,10 +8321,6 @@
      [
       "GLM 5.3",
       0.5377
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.472
      ]
     ],
     "others_share": 0
@@ -8398,10 +8374,6 @@
      [
       "GLM 5.3",
       0.7016
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.4912
      ]
     ],
     "others_share": 0
@@ -8455,10 +8427,6 @@
      [
       "GLM 5.3",
       0.7187
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.4345
      ],
      [
       "Gemini 3.8 Flash",
@@ -8520,10 +8488,6 @@
      [
       "GLM 5.3",
       0.7476
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.4176
      ]
     ],
     "others_share": 0
@@ -8585,10 +8549,6 @@
      [
       "GLM 5.3",
       0.6039
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.4113
      ]
     ],
     "others_share": 0
@@ -8650,10 +8610,6 @@
      [
       "GLM 5.3",
       0.7595
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.6206
      ]
     ],
     "others_share": 0
@@ -8711,10 +8667,6 @@
      [
       "Gemini 3.8 Flash",
       2.097
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.5681
      ],
      [
       "GLM 5.3",
@@ -8778,10 +8730,6 @@
       2.3552
      ],
      [
-      "GLM 5.3 Flash",
-      0.6723
-     ],
-     [
       "GLM 5.3",
       0.6224
      ]
@@ -8843,12 +8791,12 @@
       2.1316
      ],
      [
-      "GLM 5.3 Flash",
-      0.7132
-     ],
-     [
       "GLM 5.3",
       0.6185
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      0.0001
      ]
     ],
     "others_share": 0
@@ -8918,10 +8866,6 @@
      [
       "GLM 5.3",
       0.8931
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.581
      ]
     ],
     "others_share": 0
@@ -8981,12 +8925,12 @@
       2.0691
      ],
      [
-      "GLM 5.3",
-      0.9835
+      "DeepSeek V4.1 Flash",
+      1.5131
      ],
      [
-      "GLM 5.3 Flash",
-      0.7848
+      "GLM 5.3",
+      0.9835
      ]
     ],
     "others_share": 0
@@ -9050,16 +8994,16 @@
       7.2219
      ],
      [
+      "DeepSeek V4.1 Flash",
+      2.5974
+     ],
+     [
       "Gemini 3.8 Flash",
       1.5199
      ],
      [
       "GLM 5.3",
       0.7778
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.5875
      ]
     ],
     "others_share": 0
@@ -9123,16 +9067,16 @@
       6.9501
      ],
      [
+      "DeepSeek V4.1 Flash",
+      3.344
+     ],
+     [
       "Gemini 3.8 Flash",
       1.5797
      ],
      [
       "GLM 5.3",
       0.8462
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.6705
      ]
     ],
     "others_share": 0
@@ -9196,12 +9140,12 @@
       4.3375
      ],
      [
-      "Gemini 3.8 Flash",
-      2.6751
+      "DeepSeek V4.1 Flash",
+      4.2879
      ],
      [
-      "GLM 5.3 Flash",
-      0.868
+      "Gemini 3.8 Flash",
+      2.6751
      ],
      [
       "GLM 5.3",
@@ -9269,16 +9213,16 @@
       4.1948
      ],
      [
+      "DeepSeek V4.1 Flash",
+      3.5401
+     ],
+     [
       "Gemini 3.8 Flash",
       2.0303
      ],
      [
       "GLM 5.3",
       0.9408
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.8068
      ]
     ],
     "others_share": 0
@@ -9342,16 +9286,16 @@
       7.1334
      ],
      [
+      "DeepSeek V4.1 Flash",
+      4.3205
+     ],
+     [
       "Gemini 3.8 Flash",
       1.8537
      ],
      [
       "GLM 5.3",
       1.0788
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.7912
      ]
     ],
     "others_share": 0
@@ -9411,16 +9355,16 @@
       7.8071
      ],
      [
+      "DeepSeek V4.1 Flash",
+      4.9621
+     ],
+     [
       "Kimi K3",
       3.1741
      ],
      [
       "Gemini 3.8 Flash",
       1.9474
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.917
      ],
      [
       "GLM 5.3",
@@ -9496,12 +9440,12 @@
       6.0582
      ],
      [
-      "Gemini 3.8 Flash",
-      1.7916
+      "DeepSeek V4.1 Flash",
+      5.0941
      ],
      [
-      "GLM 5.3 Flash",
-      1.3697
+      "Gemini 3.8 Flash",
+      1.7916
      ],
      [
       "GLM 5.3",
@@ -9577,16 +9521,16 @@
       7.0129
      ],
      [
+      "DeepSeek V4.1 Flash",
+      5.1013
+     ],
+     [
       "GLM 5.3",
       2.2087
      ],
      [
       "Gemini 3.8 Flash",
       1.9467
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.6022
      ]
     ],
     "others_share": 0
@@ -9658,16 +9602,16 @@
       12.9014
      ],
      [
+      "DeepSeek V4.1 Flash",
+      4.5467
+     ],
+     [
       "Gemini 3.8 Flash",
       1.3639
      ],
      [
       "GLM 5.3",
       1.06
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.9616
      ]
     ],
     "others_share": 0
@@ -9739,12 +9683,12 @@
       9.7976
      ],
      [
-      "Gemini 3.8 Flash",
-      1.8883
+      "DeepSeek V4.1 Flash",
+      3.7127
      ],
      [
-      "GLM 5.3 Flash",
-      0.9678
+      "Gemini 3.8 Flash",
+      1.8883
      ],
      [
       "GLM 5.3",
@@ -9828,16 +9772,16 @@
       14.8258
      ],
      [
+      "DeepSeek V4.1 Flash",
+      3.435
+     ],
+     [
       "Gemini 3.8 Flash",
       1.9476
      ],
      [
       "GLM 5.3",
       1.0711
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.9462
      ],
      [
       "Grok 4.7",
@@ -9917,16 +9861,16 @@
       9.3268
      ],
      [
+      "DeepSeek V4.1 Flash",
+      3.6807
+     ],
+     [
       "Gemini 3.8 Flash",
       2.7348
      ],
      [
       "GLM 5.3",
       1.1483
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.0121
      ],
      [
       "Claude Opus 5.5",
@@ -10026,12 +9970,12 @@
       6.0855
      ],
      [
-      "Gemini 3.8 Flash",
-      3.1847
+      "DeepSeek V4.1 Flash",
+      3.6607
      ],
      [
-      "GLM 5.3 Flash",
-      0.9881
+      "Gemini 3.8 Flash",
+      3.1847
      ],
      [
       "GLM 5.3",
@@ -10131,16 +10075,16 @@
       5.8978
      ],
      [
+      "DeepSeek V4.1 Flash",
+      3.6213
+     ],
+     [
       "Gemini 3.8 Flash",
       3.3722
      ],
      [
       "GLM 5.3",
       0.9885
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.8854
      ],
      [
       "Grok 4.7",
@@ -10240,12 +10184,12 @@
       4.5377
      ],
      [
-      "GLM 5.3",
-      1.474
+      "DeepSeek V4.1 Flash",
+      3.5822
      ],
      [
-      "GLM 5.3 Flash",
-      1.4588
+      "GLM 5.3",
+      1.474
      ],
      [
       "Grok 4.7",
@@ -10345,8 +10289,8 @@
       6.0045
      ],
      [
-      "GLM 5.3 Flash",
-      1.6549
+      "DeepSeek V4.1 Flash",
+      5.1613
      ],
      [
       "GLM 5.3",
@@ -10450,8 +10394,8 @@
       6.1655
      ],
      [
-      "GLM 5.3 Flash",
-      1.5297
+      "DeepSeek V4.1 Flash",
+      5.0505
      ],
      [
       "GLM 5.3",
@@ -10555,12 +10499,12 @@
       4.1581
      ],
      [
-      "GLM 5.3",
-      1.8077
+      "DeepSeek V4.1 Flash",
+      2.2587
      ],
      [
-      "GLM 5.3 Flash",
-      1.587
+      "GLM 5.3",
+      1.8077
      ],
      [
       "Grok 4.7",
@@ -10639,10 +10583,6 @@
      [
       "Grok 4.7",
       0.2186
-     ],
-     [
-      "Claude Sonnet 5.5",
-      0.1285
      ]
     ],
     "others_share": 0
@@ -10668,12 +10608,12 @@
       3.9448
      ],
      [
-      "Claude Sonnet 5.5",
-      1.5405
+      "DeepSeek V4.1 Flash",
+      2.3239
      ],
      [
-      "GLM 5.3 Flash",
-      1.2955
+      "Claude Sonnet 5.5",
+      1.5405
      ],
      [
       "GLM 5.3",
@@ -10754,10 +10694,6 @@
       1.2911
      ],
      [
-      "Claude Sonnet 5.5",
-      0.7282
-     ],
-     [
       "Grok 4.7",
       0.369
      ]
@@ -10785,6 +10721,10 @@
       3.5802
      ],
      [
+      "DeepSeek V4.1 Flash",
+      2.2555
+     ],
+     [
       "Claude Sonnet 5.5",
       1.8735
      ],
@@ -10795,10 +10735,6 @@
      [
       "GLM 5.3",
       1.4428
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.2239
      ],
      [
       "Grok 4.7",
@@ -10871,10 +10807,6 @@
       1.4404
      ],
      [
-      "Claude Sonnet 5.5",
-      0.843
-     ],
-     [
       "Grok 4.7",
       0.1582
      ]
@@ -10902,6 +10834,10 @@
       4.2211
      ],
      [
+      "DeepSeek V4.1 Flash",
+      2.5667
+     ],
+     [
       "GPT-6.1 Sol",
       2.4385
      ],
@@ -10916,10 +10852,6 @@
      [
       "Grok 4.7",
       1.6486
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.3286
      ]
     ],
     "others_share": 0
@@ -10988,10 +10920,6 @@
       1.7193
      ],
      [
-      "Claude Sonnet 5.5",
-      0.901
-     ],
-     [
       "Grok 4.7",
       0.5971
      ]
@@ -11019,6 +10947,10 @@
       3.5198
      ],
      [
+      "DeepSeek V4.1 Flash",
+      3.1158
+     ],
+     [
       "GLM 5.3",
       2.3349
      ],
@@ -11033,10 +10965,6 @@
      [
       "GPT-6.1 Sol",
       1.9682
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.8769
      ]
     ],
     "others_share": 0
@@ -11107,10 +11035,6 @@
      [
       "GLM 5.3",
       2.2911
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.3417
      ]
     ],
     "others_share": 0
@@ -11126,6 +11050,10 @@
      [
       "Kimi K3",
       9.4946
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      4.2918
      ],
      [
       "GPT-6.1 Sol",
@@ -11146,10 +11074,6 @@
      [
       "Claude Sonnet 5.5",
       2.4744
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.1473
      ],
      [
       "Grok 4.7",
@@ -11222,10 +11146,6 @@
       2.1381
      ],
      [
-      "Claude Sonnet 5.5",
-      1.3139
-     ],
-     [
       "Grok 4.7",
       0.0945
      ]
@@ -11265,8 +11185,8 @@
       2.6989
      ],
      [
-      "GLM 5.3 Flash",
-      1.613
+      "DeepSeek V4.1 Flash",
+      2.5862
      ],
      [
       "Grok 4.7",
@@ -11339,10 +11259,6 @@
       2.7922
      ],
      [
-      "Claude Sonnet 5.5",
-      1.0335
-     ],
-     [
       "Grok 4.7",
       0.0809
      ]
@@ -11382,8 +11298,8 @@
       2.0943
      ],
      [
-      "GLM 5.3 Flash",
-      1.5504
+      "DeepSeek V4.1 Flash",
+      1.511
      ],
      [
       "Grok 4.7",
@@ -11456,10 +11372,6 @@
       2.0688
      ],
      [
-      "Claude Sonnet 5.5",
-      1.8674
-     ],
-     [
       "Grok 4.7",
       0.2511
      ]
@@ -11499,8 +11411,8 @@
       1.6764
      ],
      [
-      "GLM 5.3 Flash",
-      1.2527
+      "DeepSeek V4.1 Flash",
+      1.3346
      ],
      [
       "Grok 4.7",
@@ -11569,16 +11481,16 @@
       3.0574
      ],
      [
-      "Claude Sonnet 5.5",
-      2.0433
-     ],
-     [
       "GLM 5.3",
       1.8826
      ],
      [
       "Grok 4.7",
       0.3136
+     ],
+     [
+      "Glyph Cluster",
+      0.0
      ]
     ],
     "others_share": 0
@@ -11616,8 +11528,8 @@
       3.0804
      ],
      [
-      "GLM 5.3 Flash",
-      1.6359
+      "DeepSeek V4.1 Flash",
+      1.5471
      ],
      [
       "Grok 4.7",
@@ -11690,12 +11602,12 @@
       2.8692
      ],
      [
-      "Claude Sonnet 5.5",
-      2.0661
-     ],
-     [
       "Grok 4.7",
       0.2421
+     ],
+     [
+      "Glyph Cluster",
+      0.0093
      ]
     ],
     "others_share": 0
@@ -11733,12 +11645,12 @@
       2.6889
      ],
      [
-      "Grok 4.7",
-      1.8428
+      "DeepSeek V4.1 Flash",
+      2.0641
      ],
      [
-      "GLM 5.3 Flash",
-      1.563
+      "Grok 4.7",
+      1.8428
      ]
     ],
     "others_share": 0
@@ -11807,12 +11719,12 @@
       3.5383
      ],
      [
-      "Claude Sonnet 5.5",
-      2.123
-     ],
-     [
       "Grok 4.7",
       0.745
+     ],
+     [
+      "Glyph Cluster",
+      0.6294
      ]
     ],
     "others_share": 0
@@ -11850,8 +11762,8 @@
       2.5492
      ],
      [
-      "GLM 5.3 Flash",
-      2.1735
+      "DeepSeek V4.1 Flash",
+      2.1441
      ],
      [
       "Grok 4.7",
@@ -11924,8 +11836,8 @@
       2.8489
      ],
      [
-      "Claude Sonnet 5.5",
-      2.1181
+      "Glyph Cluster",
+      0.6624
      ],
      [
       "Grok 4.7",
@@ -11963,12 +11875,12 @@
       3.8543
      ],
      [
-      "Gemini 3.8 Flash",
-      2.5287
+      "DeepSeek V4.1 Flash",
+      3.0051
      ],
      [
-      "GLM 5.3 Flash",
-      2.4181
+      "Gemini 3.8 Flash",
+      2.5287
      ],
      [
       "Grok 4.7",
@@ -12041,8 +11953,8 @@
       3.8684
      ],
      [
-      "Claude Sonnet 5.5",
-      1.8457
+      "Glyph Cluster",
+      0.8747
      ],
      [
       "Grok 4.7",
@@ -12088,8 +12000,8 @@
       2.7221
      ],
      [
-      "GLM 5.3 Flash",
-      2.2552
+      "DeepSeek V4.1 Flash",
+      2.4025
      ]
     ],
     "others_share": 0
@@ -12162,8 +12074,8 @@
       2.949
      ],
      [
-      "Claude Sonnet 5.5",
-      1.6456
+      "Glyph Cluster",
+      1.2963
      ]
     ],
     "others_share": 0
@@ -12205,8 +12117,8 @@
       2.5519
      ],
      [
-      "GLM 5.3 Flash",
-      1.9235
+      "DeepSeek V4.1 Flash",
+      2.2382
      ]
     ],
     "others_share": 0
@@ -12275,8 +12187,8 @@
       2.9796
      ],
      [
-      "Claude Sonnet 5.5",
-      2.4131
+      "Glyph Cluster",
+      1.0468
      ],
      [
       "Grok 4.7",
@@ -12322,8 +12234,8 @@
       2.2234
      ],
      [
-      "GLM 5.3 Flash",
-      1.3805
+      "DeepSeek V4.1 Flash",
+      1.8391
      ]
     ],
     "others_share": 0
@@ -12392,8 +12304,8 @@
       3.3712
      ],
      [
-      "Claude Sonnet 5.5",
-      2.7101
+      "Glyph Cluster",
+      1.2736
      ],
      [
       "Grok 4.7",
@@ -12439,8 +12351,8 @@
       2.1929
      ],
      [
-      "GLM 5.3 Flash",
-      1.4235
+      "DeepSeek V4.1 Flash",
+      1.6363
      ]
     ],
     "others_share": 0
@@ -12509,8 +12421,8 @@
       3.4645
      ],
      [
-      "Claude Sonnet 5.5",
-      3.1358
+      "Glyph Cluster",
+      1.5622
      ],
      [
       "Grok 4.7",
@@ -12556,8 +12468,8 @@
       1.9113
      ],
      [
-      "GLM 5.3 Flash",
-      1.4794
+      "DeepSeek V4.1 Flash",
+      1.4027
      ]
     ],
     "others_share": 0
@@ -12634,8 +12546,8 @@
       3.5387
      ],
      [
-      "Claude Sonnet 5.5",
-      3.0778
+      "Glyph Cluster",
+      1.7339
      ]
     ],
     "others_share": 0
@@ -12673,12 +12585,12 @@
       2.8692
      ],
      [
-      "Gemini 3.8 Flash",
-      1.8632
+      "DeepSeek V4.1 Flash",
+      2.0742
      ],
      [
-      "GLM 5.3 Flash",
-      1.6122
+      "Gemini 3.8 Flash",
+      1.8632
      ]
     ],
     "others_share": 0
@@ -12751,16 +12663,16 @@
       6.3838
      ],
      [
-      "Claude Sonnet 5.5",
-      2.9245
-     ],
-     [
       "Grok 4.7",
       2.9082
      ],
      [
       "Jev",
       2.6116
+     ],
+     [
+      "Glyph Cluster",
+      1.6291
      ],
      [
       "Beam 1.0",
@@ -12798,8 +12710,8 @@
       3.143
      ],
      [
-      "GLM 5.3 Flash",
-      2.474
+      "DeepSeek V4.1 Flash",
+      2.9081
      ],
      [
       "Gemini 3.8 Flash",
@@ -12808,6 +12720,10 @@
      [
       "Grok 4.7",
       1.9362
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      0.1126
      ]
     ],
     "others_share": 0
@@ -12892,8 +12808,8 @@
       2.6383
      ],
      [
-      "Claude Sonnet 5.5",
-      2.1794
+      "Glyph Cluster",
+      2.1266
      ],
      [
       "DeepSeek V4.1 Flash 1017",
@@ -12943,8 +12859,12 @@
       2.4175
      ],
      [
-      "GLM 5.3 Flash",
-      1.8378
+      "DeepSeek V4.1 Flash",
+      2.3414
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      0.5239
      ]
     ],
     "others_share": 0
@@ -13033,8 +12953,8 @@
       2.6995
      ],
      [
-      "Claude Sonnet 5.5",
-      1.8984
+      "Glyph Cluster",
+      1.8361
      ],
      [
       "Grok 4.7",
@@ -13080,8 +13000,12 @@
       2.0533
      ],
      [
-      "GLM 5.3 Flash",
-      1.5288
+      "DeepSeek V4.1 Flash",
+      1.9398
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      1.2292
      ]
     ],
     "others_share": 0
@@ -13170,8 +13094,8 @@
       2.6974
      ],
      [
-      "Claude Sonnet 5.5",
-      2.661
+      "Glyph Cluster",
+      1.0008
      ],
      [
       "Grok 4.7",
@@ -13217,8 +13141,12 @@
       2.1589
      ],
      [
-      "GLM 5.3 Flash",
-      1.0558
+      "DeepSeek V4.1 Flash 1017",
+      1.8904
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      1.6604
      ]
     ],
     "others_share": 0
@@ -13307,12 +13235,12 @@
       4.2784
      ],
      [
-      "Claude Sonnet 5.5",
-      2.186
-     ],
-     [
       "Jev",
       2.0848
+     ],
+     [
+      "Glyph Cluster",
+      0.671
      ]
     ],
     "others_share": 0
@@ -13354,8 +13282,12 @@
       2.3098
      ],
      [
-      "GLM 5.3 Flash",
-      1.1011
+      "DeepSeek V4.1 Flash 1017",
+      1.6087
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      1.5895
      ]
     ],
     "others_share": 0
@@ -13448,8 +13380,8 @@
       2.3769
      ],
      [
-      "Claude Sonnet 5.5",
-      2.2141
+      "Glyph Cluster",
+      0.4147
      ]
     ],
     "others_share": 0
@@ -13491,8 +13423,12 @@
       2.4097
      ],
      [
-      "GLM 5.3 Flash",
-      2.2597
+      "DeepSeek V4.1 Flash",
+      1.5821
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      1.4563
      ]
     ],
     "others_share": 0
@@ -13585,8 +13521,8 @@
       2.6071
      ],
      [
-      "Claude Sonnet 5.5",
-      2.3304
+      "Glyph Cluster",
+      0.4921
      ]
     ],
     "others_share": 0
@@ -13616,10 +13552,6 @@
       5.0843
      ],
      [
-      "GLM 5.3 Flash",
-      3.6581
-     ],
-     [
       "GPT-6 Astra",
       2.9483
      ],
@@ -13628,12 +13560,16 @@
       2.3404
      ],
      [
+      "DeepSeek V4.1 Flash",
+      2.1915
+     ],
+     [
       "Grok 4.7",
       1.8072
      ],
      [
-      "Kimi K3.1 Pro",
-      0.1247
+      "DeepSeek V4.1 Flash 1017",
+      1.4786
      ]
     ],
     "others_share": 0
@@ -13722,8 +13658,8 @@
       2.8019
      ],
      [
-      "Claude Sonnet 5.5",
-      2.5376
+      "Glyph Cluster",
+      0.7343
      ],
      [
       "Grok 4.7",
@@ -13749,16 +13685,16 @@
       8.4822
      ],
      [
-      "GLM 5.3 Flash",
-      5.0847
-     ],
-     [
       "Claude Sonnet 5.5",
       4.9399
      ],
      [
       "GPT-6.1 Sol",
       3.647
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      2.6381
      ],
      [
       "Gemini 3.8 Flash",
@@ -13773,8 +13709,8 @@
       1.872
      ],
      [
-      "Kimi K3.1 Pro",
-      0.7422
+      "DeepSeek V4.1 Flash 1017",
+      1.4041
      ]
     ],
     "others_share": 0
@@ -13863,8 +13799,8 @@
       2.675
      ],
      [
-      "Claude Sonnet 5.5",
-      1.7217
+      "Glyph Cluster",
+      1.3242
      ],
      [
       "Grok 4.7",
@@ -13906,16 +13842,16 @@
       3.1043
      ],
      [
+      "DeepSeek V4.1 Flash",
+      2.9472
+     ],
+     [
       "Gemini 3.8 Flash",
       2.7487
      ],
      [
-      "GLM 5.3 Flash",
-      0.7218
-     ],
-     [
-      "Kimi K3.1 Pro",
-      0.5391
+      "DeepSeek V4.1 Flash 1017",
+      2.1489
      ]
     ],
     "others_share": 0
@@ -14008,8 +13944,8 @@
       2.2819
      ],
      [
-      "Claude Sonnet 5.5",
-      1.6008
+      "Glyph Cluster",
+      1.4024
      ]
     ],
     "others_share": 0
@@ -14047,16 +13983,16 @@
       2.7521
      ],
      [
+      "DeepSeek V4.1 Flash",
+      2.637
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      2.2376
+     ],
+     [
       "Grok 4.7",
       2.1531
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.1073
-     ],
-     [
-      "Kimi K3.1 Pro",
-      0.4675
      ]
     ],
     "others_share": 0
@@ -14145,8 +14081,8 @@
       3.2437
      ],
      [
-      "Claude Sonnet 5.5",
-      2.5279
+      "Glyph Cluster",
+      1.2369
      ],
      [
       "Grok 4.7",
@@ -14188,16 +14124,16 @@
       3.5042
      ],
      [
-      "GLM 5.3 Flash",
-      2.4646
-     ],
-     [
       "Gemini 3.8 Flash",
       2.1981
      ],
      [
-      "Kimi K3.1 Pro",
-      1.6723
+      "DeepSeek V4.1 Flash",
+      1.7648
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      1.541
      ]
     ],
     "others_share": 0
@@ -14290,8 +14226,8 @@
       2.9486
      ],
      [
-      "Claude Sonnet 5.5",
-      2.4207
+      "Glyph Cluster",
+      1.1791
      ]
     ],
     "others_share": 0
@@ -14321,10 +14257,6 @@
       5.0405
      ],
      [
-      "Kimi K3.1 Pro",
-      5.0206
-     ],
-     [
       "GPT-6.1 Sol",
       3.5769
      ],
@@ -14333,12 +14265,16 @@
       2.8597
      ],
      [
-      "GLM 5.3 Flash",
-      2.297
-     ],
-     [
       "Gemini 3.8 Flash",
       2.1725
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      2.0968
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      1.3326
      ]
     ],
     "others_share": 0
@@ -14431,8 +14367,8 @@
       2.5547
      ],
      [
-      "Claude Sonnet 5.5",
-      2.1444
+      "Glyph Cluster",
+      1.5494
      ]
     ],
     "others_share": 0
@@ -14470,16 +14406,16 @@
       4.2038
      ],
      [
-      "Kimi K3.1 Pro",
-      4.1894
-     ],
-     [
       "Gemini 3.8 Flash",
       2.7695
      ],
      [
-      "GLM 5.3 Flash",
-      1.8557
+      "DeepSeek V4.1 Flash",
+      1.6397
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      1.4321
      ]
     ],
     "others_share": 0
@@ -14572,8 +14508,8 @@
       3.4895
      ],
      [
-      "Claude Sonnet 5.5",
-      2.2644
+      "Glyph Cluster",
+      1.7289
      ]
     ],
     "others_share": 0
@@ -14611,16 +14547,16 @@
       4.0288
      ],
      [
-      "Kimi K3.1 Pro",
-      2.6434
-     ],
-     [
-      "GLM 5.3 Flash",
-      2.3349
-     ],
-     [
       "Gemini 3.8 Flash",
       2.0893
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      1.9348
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      1.8672
      ]
     ],
     "others_share": 0
@@ -14713,8 +14649,149 @@
       2.9849
      ],
      [
+      "Glyph Cluster",
+      1.5326
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-10-31",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 5.5",
+      19.3527
+     ],
+     [
+      "GLM 5.3",
+      14.1922
+     ],
+     [
+      "Grok 4.7",
+      12.4802
+     ],
+     [
+      "Kimi K3",
+      8.2076
+     ],
+     [
       "Claude Sonnet 5.5",
-      1.9729
+      5.6964
+     ],
+     [
+      "GPT-6.1 Sol",
+      3.8883
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      3.7631
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      2.5238
+     ],
+     [
+      "GPT-6 Astra",
+      2.298
+     ],
+     [
+      "Gemini 3.8 Flash",
+      2.0283
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-10-31",
+    "metric": "requests",
+    "shares": [
+     [
+      "Jev",
+      20.2301
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      8.6714
+     ],
+     [
+      "GPT-6 Luna",
+      6.6041
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      5.9127
+     ],
+     [
+      "GLM 5.3 Flash",
+      4.2372
+     ],
+     [
+      "Jev 1.14.0",
+      4.1998
+     ],
+     [
+      "GLM 5.3",
+      3.867
+     ],
+     [
+      "Beam 1.0",
+      3.7387
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      3.7273
+     ],
+     [
+      "text-embedding-3-small",
+      3.6062
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-10-31",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Beam 1.0",
+      21.2139
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      16.7424
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      12.8588
+     ],
+     [
+      "GLM 5.3",
+      9.342
+     ],
+     [
+      "GLM 5.3 Flash",
+      6.3454
+     ],
+     [
+      "Claude Opus 5.5",
+      4.6007
+     ],
+     [
+      "GPT-6 Luna",
+      3.2272
+     ],
+     [
+      "Jev",
+      3.1906
+     ],
+     [
+      "Grok 4.7",
+      2.9859
+     ],
+     [
+      "Glyph Cluster",
+      1.8048
      ]
     ],
     "others_share": 0
