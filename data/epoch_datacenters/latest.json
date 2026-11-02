@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-11-01",
- "fetched_at": "2026-11-01T01:16:10+00:00",
+ "snapshot_date": "2026-11-02",
+ "fetched_at": "2026-11-02T01:33:47+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -18,6 +18,21 @@
      "Anthropic",
      " Cursor",
      " SpaceXAI"
+    ],
+    "chip_types": [
+     "B200",
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
+    "name": "OpenAI Stargate Abilene",
+    "h100_equivalents": 1018696.3112683173,
+    "power_mw": 824.0,
+    "capital_cost_busd": 31.214768,
+    "owner": "Oracle",
+    "users": [
+     "OpenAI"
     ],
     "chip_types": [
      "B200",
@@ -51,21 +66,6 @@
     ],
     "chip_types": [
      "B200"
-    ],
-    "country": "United States"
-   },
-   {
-    "name": "OpenAI Stargate Abilene",
-    "h100_equivalents": 764022.233451238,
-    "power_mw": 618.0,
-    "capital_cost_busd": 23.411075999999998,
-    "owner": "Oracle",
-    "users": [
-     "OpenAI"
-    ],
-    "chip_types": [
-     "B200",
-     "B300"
     ],
     "country": "United States"
    },
@@ -732,6 +732,18 @@
     "country": "United States"
    },
    {
+    "name": "Huawei Wuhu",
+    "h100_equivalents": 96537.64527539161,
+    "power_mw": 199.0,
+    "capital_cost_busd": 7.538518,
+    "owner": "Huawei",
+    "users": [],
+    "chip_types": [
+     "Ascend 910C"
+    ],
+    "country": "China"
+   },
+   {
     "name": "CoreWeave Ellendale ND",
     "h100_equivalents": 93481.55634158666,
     "power_mw": 68.0,
@@ -844,18 +856,6 @@
     "country": "United States"
    },
    {
-    "name": "Huawei Wuhu",
-    "h100_equivalents": 76326.42748863062,
-    "power_mw": 157.0,
-    "capital_cost_busd": 5.947474,
-    "owner": "Huawei",
-    "users": [],
-    "chip_types": [
-     "Ascend 910C"
-    ],
-    "country": "China"
-   },
-   {
     "name": "Core42 Lake Mariner",
     "h100_equivalents": 71753.4108135422,
     "power_mw": 58.0,
@@ -937,6 +937,18 @@
      "H200"
     ],
     "country": "Finland"
+   },
+   {
+    "name": "Envision Galaxy Ulanqab",
+    "h100_equivalents": 47931.27842344619,
+    "power_mw": 118.0,
+    "capital_cost_busd": 4.470076,
+    "owner": "",
+    "users": [],
+    "chip_types": [
+     "Ascend 950PR"
+    ],
+    "country": "China"
    },
    {
     "name": "Southgate Melbourne",
@@ -1115,16 +1127,6 @@
     ],
     "chip_types": [],
     "country": "Sweden"
-   },
-   {
-    "name": "Envision Galaxy Ulanqab",
-    "h100_equivalents": 0.0,
-    "power_mw": 0.0,
-    "capital_cost_busd": 0.0,
-    "owner": "",
-    "users": [],
-    "chip_types": [],
-    "country": "China"
    },
    {
     "name": "Goodnight",
@@ -1358,6 +1360,76 @@
     "h100_equivalents": 1824153.6129358262
    },
    {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2024-05-31",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2025-06-28",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2025-09-26",
+    "it_power_mw": 103.0,
+    "power_mw": 144.0,
+    "h100_equivalents": 127337.03890853966
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2025-12-24",
+    "it_power_mw": 206.0,
+    "power_mw": 288.0,
+    "h100_equivalents": 254674.07781707932
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-01-15",
+    "it_power_mw": 206.0,
+    "power_mw": 288.0,
+    "h100_equivalents": 254674.07781707932
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-03-24",
+    "it_power_mw": 206.0,
+    "power_mw": 288.0,
+    "h100_equivalents": 254674.07781707932
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-05-23",
+    "it_power_mw": 412.0,
+    "power_mw": 577.0,
+    "h100_equivalents": 509348.15563415864
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-07-28",
+    "it_power_mw": 412.0,
+    "power_mw": 577.0,
+    "h100_equivalents": 509348.15563415864
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-09-10",
+    "it_power_mw": 618.0,
+    "power_mw": 865.0,
+    "h100_equivalents": 764022.233451238
+   },
+   {
+    "site": "OpenAI Stargate Abilene",
+    "date": "2026-11-01",
+    "it_power_mw": 824.0,
+    "power_mw": 1154.0,
+    "h100_equivalents": 1018696.3112683173
+   },
+   {
     "site": "Anthropic-Amazon New Carlisle",
     "date": "2024-02-09",
     "it_power_mw": 0.0,
@@ -1475,76 +1547,6 @@
     "it_power_mw": 636.0,
     "power_mw": 859.0,
     "h100_equivalents": 768768.7220818596
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2024-05-31",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2025-06-28",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2025-09-26",
-    "it_power_mw": 103.0,
-    "power_mw": 144.0,
-    "h100_equivalents": 127337.03890853966
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2025-12-24",
-    "it_power_mw": 206.0,
-    "power_mw": 288.0,
-    "h100_equivalents": 254674.07781707932
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2026-01-15",
-    "it_power_mw": 206.0,
-    "power_mw": 288.0,
-    "h100_equivalents": 254674.07781707932
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2026-03-24",
-    "it_power_mw": 206.0,
-    "power_mw": 288.0,
-    "h100_equivalents": 254674.07781707932
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2026-05-23",
-    "it_power_mw": 412.0,
-    "power_mw": 577.0,
-    "h100_equivalents": 509348.15563415864
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2026-07-28",
-    "it_power_mw": 412.0,
-    "power_mw": 577.0,
-    "h100_equivalents": 509348.15563415864
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2026-09-10",
-    "it_power_mw": 618.0,
-    "power_mw": 865.0,
-    "h100_equivalents": 764022.233451238
-   },
-   {
-    "site": "OpenAI Stargate Abilene",
-    "date": "2026-11-01",
-    "it_power_mw": 824.0,
-    "power_mw": 1154.0,
-    "h100_equivalents": 1018696.3112683173
    },
    {
     "site": "Google Pryor (North)",
@@ -3570,6 +3572,76 @@
     "h100_equivalents": 99545.22486104093
    },
    {
+    "site": "Huawei Wuhu",
+    "date": "2023-01-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2025-01-01",
+    "it_power_mw": 45.0,
+    "power_mw": 51.0,
+    "h100_equivalents": 21628.954017180393
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2025-03-01",
+    "it_power_mw": 119.0,
+    "power_mw": 137.0,
+    "h100_equivalents": 57767.55937342092
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2025-11-01",
+    "it_power_mw": 157.0,
+    "power_mw": 181.0,
+    "h100_equivalents": 76326.42748863062
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-01-24",
+    "it_power_mw": 157.0,
+    "power_mw": 181.0,
+    "h100_equivalents": 76326.42748863062
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-06-01",
+    "it_power_mw": 157.0,
+    "power_mw": 181.0,
+    "h100_equivalents": 76326.42748863062
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-08-06",
+    "it_power_mw": 157.0,
+    "power_mw": 181.0,
+    "h100_equivalents": 76326.42748863062
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-11-01",
+    "it_power_mw": 199.0,
+    "power_mw": 229.0,
+    "h100_equivalents": 96537.64527539161
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-12-31",
+    "it_power_mw": 364.0,
+    "power_mw": 419.0,
+    "h100_equivalents": 176595.25012632643
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2027-12-01",
+    "it_power_mw": 457.0,
+    "power_mw": 526.0,
+    "h100_equivalents": 221923.6988377969
+   },
+   {
     "site": "CoreWeave Ellendale ND",
     "date": "2023-10-31",
     "it_power_mw": 0.0,
@@ -3955,76 +4027,6 @@
     "h100_equivalents": 147043.96159676605
    },
    {
-    "site": "Huawei Wuhu",
-    "date": "2023-01-01",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2025-01-01",
-    "it_power_mw": 45.0,
-    "power_mw": 51.0,
-    "h100_equivalents": 21628.954017180393
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2025-03-01",
-    "it_power_mw": 119.0,
-    "power_mw": 137.0,
-    "h100_equivalents": 57767.55937342092
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2025-11-01",
-    "it_power_mw": 157.0,
-    "power_mw": 181.0,
-    "h100_equivalents": 76326.42748863062
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2026-01-24",
-    "it_power_mw": 157.0,
-    "power_mw": 181.0,
-    "h100_equivalents": 76326.42748863062
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2026-06-01",
-    "it_power_mw": 157.0,
-    "power_mw": 181.0,
-    "h100_equivalents": 76326.42748863062
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2026-08-06",
-    "it_power_mw": 157.0,
-    "power_mw": 181.0,
-    "h100_equivalents": 76326.42748863062
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2026-11-01",
-    "it_power_mw": 199.0,
-    "power_mw": 229.0,
-    "h100_equivalents": 96537.64527539161
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2026-12-31",
-    "it_power_mw": 364.0,
-    "power_mw": 419.0,
-    "h100_equivalents": 176595.25012632643
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2027-12-01",
-    "it_power_mw": 457.0,
-    "power_mw": 526.0,
-    "h100_equivalents": 221923.6988377969
-   },
-   {
     "site": "Core42 Lake Mariner",
     "date": "2024-10-01",
     "it_power_mw": 0.0,
@@ -4205,6 +4207,55 @@
     "it_power_mw": 145.0,
     "power_mw": 196.0,
     "h100_equivalents": 226233.83274381
+   },
+   {
+    "site": "Envision Galaxy Ulanqab",
+    "date": "2025-08-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Envision Galaxy Ulanqab",
+    "date": "2026-05-11",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Envision Galaxy Ulanqab",
+    "date": "2026-08-06",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Envision Galaxy Ulanqab",
+    "date": "2026-09-05",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Envision Galaxy Ulanqab",
+    "date": "2026-11-01",
+    "it_power_mw": 118.0,
+    "power_mw": 153.0,
+    "h100_equivalents": 47931.27842344619
+   },
+   {
+    "site": "Envision Galaxy Ulanqab",
+    "date": "2027-07-01",
+    "it_power_mw": 235.0,
+    "power_mw": 306.0,
+    "h100_equivalents": 88575.03789792824
+   },
+   {
+    "site": "Envision Galaxy Ulanqab",
+    "date": "2027-12-01",
+    "it_power_mw": 470.0,
+    "power_mw": 612.0,
+    "h100_equivalents": 169868.62051541184
    },
    {
     "site": "Southgate Melbourne",
@@ -4639,55 +4690,6 @@
     "it_power_mw": 48.0,
     "power_mw": 67.0,
     "h100_equivalents": 138912.3294593229
-   },
-   {
-    "site": "Envision Galaxy Ulanqab",
-    "date": "2025-08-01",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Envision Galaxy Ulanqab",
-    "date": "2026-05-11",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Envision Galaxy Ulanqab",
-    "date": "2026-08-06",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Envision Galaxy Ulanqab",
-    "date": "2026-09-05",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Envision Galaxy Ulanqab",
-    "date": "2026-11-01",
-    "it_power_mw": 118.0,
-    "power_mw": 153.0,
-    "h100_equivalents": 47931.27842344619
-   },
-   {
-    "site": "Envision Galaxy Ulanqab",
-    "date": "2027-07-01",
-    "it_power_mw": 235.0,
-    "power_mw": 306.0,
-    "h100_equivalents": 88575.03789792824
-   },
-   {
-    "site": "Envision Galaxy Ulanqab",
-    "date": "2027-12-01",
-    "it_power_mw": 470.0,
-    "power_mw": 612.0,
-    "h100_equivalents": 169868.62051541184
    },
    {
     "site": "Goodnight",
@@ -5336,9 +5338,9 @@
   ],
   "aggregates": {
    "site_count": 96,
-   "total_power_mw": 14712.4,
-   "total_h100_equivalents": 15428984,
-   "total_capital_cost_busd": 557.34
+   "total_power_mw": 15078.4,
+   "total_h100_equivalents": 15751800,
+   "total_capital_cost_busd": 571.2
   }
  }
 }

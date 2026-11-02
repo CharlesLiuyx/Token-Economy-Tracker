@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "sdk_downloads",
- "snapshot_date": "2026-11-01",
- "fetched_at": "2026-11-01T01:16:31+00:00",
+ "snapshot_date": "2026-11-02",
+ "fetched_at": "2026-11-02T01:34:09+00:00",
  "source_meta": {
   "kind": "official-api"
  },
@@ -47,19 +47,19 @@
   },
   "pypi": {
    "openai": {
-    "last_day": 12968561,
+    "last_day": 9330166,
     "last_month": 295856631,
-    "last_week": 84241735
+    "last_week": 85437895
    },
    "anthropic": {
-    "last_day": 7429298,
+    "last_day": 4856661,
     "last_month": 150199657,
-    "last_week": 46254817
+    "last_week": 46914523
    },
    "google-genai": {
-    "last_day": 5751511,
+    "last_day": 3806801,
     "last_month": 137607856,
-    "last_week": 38275576
+    "last_week": 38263995
    }
   }
  }

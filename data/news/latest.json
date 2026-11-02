@@ -1,13 +1,27 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-11-01",
- "fetched_at": "2026-11-01T01:16:33+00:00",
+ "snapshot_date": "2026-11-02",
+ "fetched_at": "2026-11-02T01:34:10+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "OpenAI Wants Everyone to Call AI Data Centers 'Compute Campuses' - Business Insider",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaDB2b0M4TF9RNnhlZWxmdFVLWFRGQU1GcTVxcDUwbTVDcThhM3UtclBXU2QyYnp3WjM3MFgxN3JIa1hwbVR4NTVua01Sa25JN1A2X3JDWi0tbGZtLVI2aXBKUHZadWRCRXIzc25BbU94RlJna0F4OXAxX3ZmeC1YS3FQclFhM1hsYTRPQmZsWVBVRUFFNUhpMDhmZ1c?oc=5",
+    "source_name": "Business Insider",
+    "source_url": "https://www.businessinsider.com",
+    "published": "2026-11-01T22:28:00+00:00"
+   },
+   {
+    "title": "Google Energy Chief: Space Data Centers Cost Up to 100 Times More Than Those on Earth - The Information",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQR0xDbXdVMEhFa0ZfT19Oc1ZKNTFwNzRVZGlySXFBOXJxTTNwR0JKYlBWV1U1Qi1NM0RTTU1lTGJBd1FyV0pvc1IycFNTUU9MM2N0QTZGalNiQ3Q2SzhQWi1DcFFqc3AtSzU4LU96MDd6RHNBTFU0WnlzV0xrVzVnNmZpMEF2cEM1amZ5ZGh1NUFCYXQ5RE9QVlh5ekVKd0FxbmhxZFVoR1dYckQ1ZVhxX3hjTm42aU1MMzZ6Rg?oc=5",
+    "source_name": "The Information",
+    "source_url": "https://www.theinformation.com",
+    "published": "2026-11-01T16:30:00+00:00"
+   },
    {
     "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward - TechCrunch",
     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUGJrcVp1WTFKSjNfekYyYmdTRExNMXNLWUZERkRLOWI2ZS1PeW5OaUczNU9yZzBPMnJ2TmVOTjZxZm9QOVRfaWx6THh5VXhCTjAtRXN4UXpqOGJ4M2NIT2EteVRuQmdwRFBXZW1maTItSkdhTWtIbS1Ed0xCOEdYSndiQkdBVFFwRUQyNWRUMHhhTE0yZmR4Ym9VdGRBamp0ZWRvT3ZyTEQtUWtl?oc=5",
@@ -70,6 +84,13 @@
     "source_name": "Data Center Dynamics",
     "source_url": "https://www.datacenterdynamics.com",
     "published": "2026-10-30T13:14:28+00:00"
+   },
+   {
+    "title": "Can AI data centers be mass-produced like cars? This startup aims to find out - TechCrunch",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOV1ltQ1NtZDlhZVBMZTRrQUpUZnB6OHFkcGJ4eEYzMlRxdDFDQlk1dGhWR21xOEtCSl9zLWpKbkl2bS10RUpNajVXX0ppVHhvZGFxZG1HSVVYR3llVVUwb1p5TnRaUFI2M1R3SE5SNTB0TEVGNmFET2U3MDFPYktrVmdTZVVzcjVHV1lPcURFaFo2TUJLc254blBFX0oybE0zdllNelZBYlJaV0s4Y3F0YWVGaldHWTFsc3Q3aEJMQ0Y0SmctWjc1YXltX3hzdVE?oc=5",
+    "source_name": "TechCrunch",
+    "source_url": "https://techcrunch.com",
+    "published": "2026-10-30T13:00:00+00:00"
    },
    {
     "title": "Maine’s data center revolt will decide who controls the Senate - The Verge",
@@ -2086,27 +2107,6 @@
     "source_name": "Data Center Dynamics",
     "source_url": "https://www.datacenterdynamics.com",
     "published": "2026-10-02T08:07:13+00:00"
-   },
-   {
-    "title": "Inside our months-long investigation into Kevin O’Leary’s Utah data center debacle - The Verge",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPU1lSdEdraThrYi1DVDNfM3BMei1NOXBkSlBkZU5GTUJIenh4Mk9JaTB5S3BkNkRpdGNHaXhLbnc0SmVFTldiWmJuamFUZU1jLUdGTTVuN3hQd1Q4TnE0T2VYQmNCaS00SzVfMFQ1RnlQUV9nVkJ2LXd2TUFWdUp3c1dSdGY0cnd3NHZldERlSFQ5Qzdmb0NGUE9MNDVaaGVtUUtlTXA3aw?oc=5",
-    "source_name": "The Verge",
-    "source_url": "https://www.theverge.com",
-    "published": "2026-10-01T14:00:00+00:00"
-   },
-   {
-    "title": "Data Center, Power Titans Push Back on Texas Development NIMBYs - Bloomberg.com",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWlh6S1JucDN4WVVZM040NHdTX2IwM0NNMEYwZmlPaDBwT29LMW5qeVRYXzJXR004MU91SGcwZl92YlhEWlJoZXp2VmNDUWlGQWw3dDc3YjdrRHQtWFRnSENzblB2ZE1fdTFld2M4U0R6dy1XVFZjOUM1QjB6T0pPREVMOFNjbWF3NktQd2RqdW9rMUpRSWcxVnY4UkQydjRvcUdpMDRXcjEtMWpnTHZ2WF9PYw?oc=5",
-    "source_name": "Bloomberg.com",
-    "source_url": "https://www.bloomberg.com",
-    "published": "2026-10-01T11:00:00+00:00"
-   },
-   {
-    "title": "The People of Utah vs. Kevin O’Leary - The Verge",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNi1Uc1NpdzByb01qZFNMcnhQU1RBTGl4anVyYXJMWmpaRlA2RXpsQlpZeUxzdWRxcUpucU9hSURReHFtNlpCdGJ6NzRUMFRKWUM0ZERiOEVwLU9YNHBweUZZMlNnZEpnWGtkRVZGSFZIdWdQX3FkZTJLQXR3bnZuWlM4TGMtemdTVGVOSVQ1Tk5GaGY1?oc=5",
-    "source_name": "The Verge",
-    "source_url": "https://www.theverge.com",
-    "published": "2026-10-01T10:00:02+00:00"
    }
   ],
   "queries": [
