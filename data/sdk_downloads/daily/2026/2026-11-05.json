@@ -1,0 +1,66 @@
+{
+ "schema_version": 1,
+ "source": "sdk_downloads",
+ "snapshot_date": "2026-11-05",
+ "fetched_at": "2026-11-05T02:33:27+00:00",
+ "source_meta": {
+  "kind": "official-api"
+ },
+ "payload": {
+  "npm": {
+   "openai": {
+    "last-day": {
+     "downloads": 9657386,
+     "start": "2026-11-03",
+     "end": "2026-11-03"
+    },
+    "last-week": {
+     "downloads": 55854658,
+     "start": "2026-10-28",
+     "end": "2026-11-03"
+    }
+   },
+   "@anthropic-ai/sdk": {
+    "last-day": {
+     "downloads": 11304740,
+     "start": "2026-11-03",
+     "end": "2026-11-03"
+    },
+    "last-week": {
+     "downloads": 65073320,
+     "start": "2026-10-28",
+     "end": "2026-11-03"
+    }
+   },
+   "@google/genai": {
+    "last-day": {
+     "downloads": 5425540,
+     "start": "2026-11-03",
+     "end": "2026-11-03"
+    },
+    "last-week": {
+     "downloads": 30787253,
+     "start": "2026-10-28",
+     "end": "2026-11-03"
+    }
+   }
+  },
+  "pypi": {
+   "openai": {
+    "last_day": 15210744,
+    "last_month": 295856631,
+    "last_week": 85437895
+   },
+   "anthropic": {
+    "last_day": 8417425,
+    "last_month": 150199657,
+    "last_week": 46914523
+   },
+   "google-genai": {
+    "last_day": 6361661,
+    "last_month": 137607856,
+    "last_week": 38263995
+   }
+  }
+ }
+}

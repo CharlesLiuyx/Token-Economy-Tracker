@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "vercel_gateway",
- "snapshot_date": "2026-11-04",
- "fetched_at": "2026-11-04T02:24:26+00:00",
+ "snapshot_date": "2026-11-05",
+ "fetched_at": "2026-11-05T02:33:30+00:00",
  "source_meta": {
   "kind": "scrape"
  },
@@ -6634,7 +6634,12 @@
    {
     "day": "2026-07-15",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      0.0
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -6662,7 +6667,12 @@
    {
     "day": "2026-07-16",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      0.1212
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -6690,7 +6700,12 @@
    {
     "day": "2026-07-17",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      0.7682
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -6718,7 +6733,12 @@
    {
     "day": "2026-07-18",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      2.2005
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -6746,7 +6766,12 @@
    {
     "day": "2026-07-19",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      2.3175
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -6774,7 +6799,12 @@
    {
     "day": "2026-07-20",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      1.6485
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -6802,7 +6832,12 @@
    {
     "day": "2026-07-21",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      4.8261
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -6830,7 +6865,12 @@
    {
     "day": "2026-07-22",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      3.3183
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -6858,7 +6898,12 @@
    {
     "day": "2026-07-23",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      2.0961
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -6886,7 +6931,12 @@
    {
     "day": "2026-07-24",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      2.2186
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -6914,7 +6964,12 @@
    {
     "day": "2026-07-25",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      2.8263
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -6942,7 +6997,12 @@
    {
     "day": "2026-07-26",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      5.3507
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -6970,7 +7030,12 @@
    {
     "day": "2026-07-27",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      5.3591
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -6998,7 +7063,12 @@
    {
     "day": "2026-07-28",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      4.3122
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7026,7 +7096,12 @@
    {
     "day": "2026-07-29",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      3.0993
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7054,7 +7129,12 @@
    {
     "day": "2026-07-30",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      7.5399
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7075,6 +7155,10 @@
      [
       "text-embedding-3-small",
       7.4554
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      0.0002
      ]
     ],
     "others_share": 0
@@ -7082,7 +7166,12 @@
    {
     "day": "2026-07-31",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      4.0815
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7103,6 +7192,10 @@
      [
       "text-embedding-3-small",
       13.633
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      0.3204
      ]
     ],
     "others_share": 0
@@ -7110,7 +7203,12 @@
    {
     "day": "2026-08-01",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      3.6224
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7130,7 +7228,11 @@
     "shares": [
      [
       "text-embedding-3-small",
-      8.7739
+      8.774
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      0.4654
      ]
     ],
     "others_share": 0
@@ -7138,7 +7240,12 @@
    {
     "day": "2026-08-02",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      3.8267
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7159,6 +7266,10 @@
      [
       "text-embedding-3-small",
       7.7574
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      0.8028
      ]
     ],
     "others_share": 0
@@ -7166,7 +7277,12 @@
    {
     "day": "2026-08-03",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      3.4967
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7187,6 +7303,10 @@
      [
       "text-embedding-3-small",
       11.6508
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      2.5967
      ]
     ],
     "others_share": 0
@@ -7194,7 +7314,12 @@
    {
     "day": "2026-08-04",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      4.611
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7215,6 +7340,10 @@
      [
       "text-embedding-3-small",
       12.1098
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      5.327
      ]
     ],
     "others_share": 0
@@ -7222,7 +7351,12 @@
    {
     "day": "2026-08-05",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      4.0397
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7243,6 +7377,10 @@
      [
       "text-embedding-3-small",
       12.6888
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      5.0354
      ]
     ],
     "others_share": 0
@@ -7250,7 +7388,12 @@
    {
     "day": "2026-08-06",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      4.3667
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7271,6 +7414,10 @@
      [
       "text-embedding-3-small",
       13.168
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      4.7808
      ]
     ],
     "others_share": 0
@@ -7278,7 +7425,12 @@
    {
     "day": "2026-08-07",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      5.0715
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7299,6 +7451,10 @@
      [
       "text-embedding-3-small",
       16.461
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      4.7908
      ]
     ],
     "others_share": 0
@@ -7306,7 +7462,12 @@
    {
     "day": "2026-08-08",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      4.7283
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7315,7 +7476,7 @@
     "shares": [
      [
       "Kimi K3",
-      8.2659
+      8.266
      ]
     ],
     "others_share": 0
@@ -7326,7 +7487,11 @@
     "shares": [
      [
       "text-embedding-3-small",
-      15.1908
+      15.1909
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      4.4186
      ]
     ],
     "others_share": 0
@@ -7334,7 +7499,12 @@
    {
     "day": "2026-08-09",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      3.0961
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7355,6 +7525,10 @@
      [
       "text-embedding-3-small",
       12.2917
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      4.4302
      ]
     ],
     "others_share": 0
@@ -7362,7 +7536,12 @@
    {
     "day": "2026-08-10",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      3.3993
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7371,7 +7550,7 @@
     "shares": [
      [
       "Kimi K3",
-      7.4359
+      7.436
      ]
     ],
     "others_share": 0
@@ -7383,6 +7562,10 @@
      [
       "text-embedding-3-small",
       14.2082
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      4.751
      ]
     ],
     "others_share": 0
@@ -7390,7 +7573,12 @@
    {
     "day": "2026-08-11",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      4.1202
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7411,6 +7599,10 @@
      [
       "text-embedding-3-small",
       8.6126
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      4.227
      ]
     ],
     "others_share": 0
@@ -7418,7 +7610,12 @@
    {
     "day": "2026-08-12",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      3.3583
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7437,6 +7634,10 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      4.7049
+     ],
+     [
       "text-embedding-3-small",
       2.4649
      ]
@@ -7446,7 +7647,12 @@
    {
     "day": "2026-08-13",
     "metric": "tokens",
-    "shares": [],
+    "shares": [
+     [
+      "Kimi K3",
+      3.4096
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -7469,12 +7675,12 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      2.4827
+      "DeepSeek V4 Flash 0731",
+      4.757
      ],
      [
-      "GLM 5.3",
-      0.0636
+      "text-embedding-3-small",
+      2.4827
      ]
     ],
     "others_share": 0
@@ -7484,8 +7690,8 @@
     "metric": "tokens",
     "shares": [
      [
-      "GLM 5.3",
-      0.1409
+      "Kimi K3",
+      2.3834
      ]
     ],
     "others_share": 0
@@ -7510,12 +7716,12 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      3.9101
+      "DeepSeek V4 Flash 0731",
+      4.6748
      ],
      [
-      "GLM 5.3",
-      0.1214
+      "text-embedding-3-small",
+      3.9101
      ]
     ],
     "others_share": 0
@@ -7525,8 +7731,8 @@
     "metric": "tokens",
     "shares": [
      [
-      "GLM 5.3",
-      0.3096
+      "Kimi K3",
+      1.7833
      ]
     ],
     "others_share": 0
@@ -7537,7 +7743,7 @@
     "shares": [
      [
       "Kimi K3",
-      2.4186
+      2.4187
      ],
      [
       "GLM 5.3",
@@ -7551,12 +7757,12 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      4.5215
+      "DeepSeek V4 Flash 0731",
+      5.6208
      ],
      [
-      "GLM 5.3",
-      0.1064
+      "text-embedding-3-small",
+      4.5215
      ]
     ],
     "others_share": 0
@@ -7566,8 +7772,8 @@
     "metric": "tokens",
     "shares": [
      [
-      "GLM 5.3",
-      0.2907
+      "Kimi K3",
+      1.5493
      ]
     ],
     "others_share": 0
@@ -7592,12 +7798,12 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      2.8204
+      "DeepSeek V4 Flash 0731",
+      4.8123
      ],
      [
-      "GLM 5.3",
-      0.0843
+      "text-embedding-3-small",
+      2.8204
      ]
     ],
     "others_share": 0
@@ -7607,8 +7813,8 @@
     "metric": "tokens",
     "shares": [
      [
-      "GLM 5.3",
-      0.2038
+      "Kimi K3",
+      1.705
      ]
     ],
     "others_share": 0
@@ -7619,7 +7825,7 @@
     "shares": [
      [
       "Kimi K3",
-      2.8827
+      2.8828
      ],
      [
       "GLM 5.3",
@@ -7633,12 +7839,12 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      3.5374
+      "DeepSeek V4 Flash 0731",
+      5.2513
      ],
      [
-      "GLM 5.3",
-      0.0883
+      "text-embedding-3-small",
+      3.5375
      ]
     ],
     "others_share": 0
@@ -7648,8 +7854,8 @@
     "metric": "tokens",
     "shares": [
      [
-      "GLM 5.3",
-      0.2194
+      "Kimi K3",
+      1.6718
      ]
     ],
     "others_share": 0
@@ -7674,12 +7880,12 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      3.5647
+      "DeepSeek V4 Flash 0731",
+      6.5354
      ],
      [
-      "GLM 5.3",
-      0.2077
+      "text-embedding-3-small",
+      3.5647
      ]
     ],
     "others_share": 0
@@ -7689,8 +7895,8 @@
     "metric": "tokens",
     "shares": [
      [
-      "GLM 5.3",
-      0.624
+      "Kimi K3",
+      2.46
      ]
     ],
     "others_share": 0
@@ -7715,12 +7921,12 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      2.7882
+      "DeepSeek V4 Flash 0731",
+      6.3131
      ],
      [
-      "GLM 5.3",
-      0.2534
+      "text-embedding-3-small",
+      2.7882
      ]
     ],
     "others_share": 0
@@ -7730,8 +7936,8 @@
     "metric": "tokens",
     "shares": [
      [
-      "GLM 5.3",
-      0.7711
+      "Kimi K3",
+      1.2316
      ]
     ],
     "others_share": 0
@@ -7756,12 +7962,12 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      2.9867
+      "DeepSeek V4 Flash 0731",
+      7.2607
      ],
      [
-      "GLM 5.3",
-      0.2563
+      "text-embedding-3-small",
+      2.9867
      ]
     ],
     "others_share": 0
@@ -7771,8 +7977,8 @@
     "metric": "tokens",
     "shares": [
      [
-      "GLM 5.3",
-      0.8206
+      "Kimi K3",
+      1.3017
      ]
     ],
     "others_share": 0
@@ -7797,12 +8003,12 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      2.5888
+      "DeepSeek V4 Flash 0731",
+      27.1246
      ],
      [
-      "GLM 5.3",
-      0.191
+      "text-embedding-3-small",
+      2.5888
      ]
     ],
     "others_share": 0
@@ -7812,8 +8018,8 @@
     "metric": "tokens",
     "shares": [
      [
-      "GLM 5.3",
-      0.8428
+      "Kimi K3",
+      0.8242
      ]
     ],
     "others_share": 0
@@ -7838,12 +8044,12 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      3.0074
+      "DeepSeek V4 Flash 0731",
+      23.7146
      ],
      [
-      "GLM 5.3",
-      0.1817
+      "text-embedding-3-small",
+      3.0074
      ]
     ],
     "others_share": 0
@@ -7853,8 +8059,8 @@
     "metric": "tokens",
     "shares": [
      [
-      "GLM 5.3",
-      0.7858
+      "Kimi K3",
+      0.9032
      ]
     ],
     "others_share": 0
@@ -7879,12 +8085,12 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      2.9308
+      "DeepSeek V4 Flash 0731",
+      8.3312
      ],
      [
-      "GLM 5.3",
-      0.2474
+      "text-embedding-3-small",
+      2.9308
      ]
     ],
     "others_share": 0
@@ -7894,8 +8100,8 @@
     "metric": "tokens",
     "shares": [
      [
-      "GLM 5.3",
-      0.9275
+      "Kimi K3",
+      1.5715
      ]
     ],
     "others_share": 0
@@ -7906,7 +8112,7 @@
     "shares": [
      [
       "Kimi K3",
-      4.4739
+      4.474
      ],
      [
       "GLM 5.3",
@@ -7920,12 +8126,12 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      2.5844
+      "DeepSeek V4 Flash 0731",
+      17.5266
      ],
      [
-      "GLM 5.3",
-      0.2015
+      "text-embedding-3-small",
+      2.5844
      ]
     ],
     "others_share": 0
@@ -7935,8 +8141,8 @@
     "metric": "tokens",
     "shares": [
      [
-      "GLM 5.3",
-      0.7944
+      "Kimi K3",
+      3.2328
      ]
     ],
     "others_share": 0
@@ -7947,15 +8153,11 @@
     "shares": [
      [
       "Kimi K3",
-      8.3252
+      8.3253
      ],
      [
       "GLM 5.3",
       0.486
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.0803
      ]
     ],
     "others_share": 0
@@ -7965,16 +8167,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      9.9313
+     ],
+     [
       "text-embedding-3-small",
-      3.7858
+      3.7859
      ],
      [
       "GLM 5.3 Flash",
       0.6535
-     ],
-     [
-      "GLM 5.3",
-      0.174
      ]
     ],
     "others_share": 0
@@ -7984,12 +8186,12 @@
     "metric": "tokens",
     "shares": [
      [
-      "GLM 5.3 Flash",
-      1.7976
+      "Kimi K3",
+      5.2133
      ],
      [
-      "GLM 5.3",
-      0.644
+      "GLM 5.3 Flash",
+      1.7976
      ]
     ],
     "others_share": 0
@@ -8000,15 +8202,11 @@
     "shares": [
      [
       "Kimi K3",
-      1.7389
+      1.739
      ],
      [
       "GLM 5.3",
       0.6217
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.369
      ]
     ],
     "others_share": 0
@@ -8018,16 +8216,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      9.2732
+     ],
+     [
       "text-embedding-3-small",
       2.9939
      ],
      [
       "GLM 5.3 Flash",
       2.316
-     ],
-     [
-      "GLM 5.3",
-      0.2149
      ]
     ],
     "others_share": 0
@@ -8041,8 +8239,8 @@
       5.7103
      ],
      [
-      "GLM 5.3",
-      0.6926
+      "Kimi K3",
+      1.088
      ]
     ],
     "others_share": 0
@@ -8058,10 +8256,6 @@
      [
       "GLM 5.3",
       0.6329
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.3381
      ]
     ],
     "others_share": 0
@@ -8071,16 +8265,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      7.553
+     ],
+     [
       "text-embedding-3-small",
       2.9122
      ],
      [
       "GLM 5.3 Flash",
       1.5862
-     ],
-     [
-      "GLM 5.3",
-      0.2557
      ]
     ],
     "others_share": 0
@@ -8094,8 +8288,8 @@
       4.8013
      ],
      [
-      "GLM 5.3",
-      0.7354
+      "Kimi K3",
+      1.0192
      ]
     ],
     "others_share": 0
@@ -8106,15 +8300,11 @@
     "shares": [
      [
       "Kimi K3",
-      1.249
+      1.2491
      ],
      [
       "GLM 5.3",
       0.9285
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.5343
      ]
     ],
     "others_share": 0
@@ -8124,16 +8314,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      6.9706
+     ],
+     [
       "text-embedding-3-small",
       4.2475
      ],
      [
       "GLM 5.3 Flash",
       1.9269
-     ],
-     [
-      "GLM 5.3",
-      0.2776
      ]
     ],
     "others_share": 0
@@ -8147,8 +8337,8 @@
       5.7768
      ],
      [
-      "GLM 5.3",
-      0.7915
+      "Kimi K3",
+      0.6006
      ]
     ],
     "others_share": 0
@@ -8164,10 +8354,6 @@
      [
       "GLM 5.3",
       0.543
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.5412
      ]
     ],
     "others_share": 0
@@ -8177,16 +8363,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      7.3553
+     ],
+     [
       "text-embedding-3-small",
       4.7156
      ],
      [
       "GLM 5.3 Flash",
       1.8195
-     ],
-     [
-      "GLM 5.3",
-      0.1903
      ]
     ],
     "others_share": 0
@@ -8200,8 +8386,8 @@
       6.0001
      ],
      [
-      "GLM 5.3",
-      0.5872
+      "Kimi K3",
+      0.7322
      ]
     ],
     "others_share": 0
@@ -8217,10 +8403,6 @@
      [
       "GLM 5.3",
       0.5379
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.4722
      ]
     ],
     "others_share": 0
@@ -8230,16 +8412,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      11.1135
+     ],
+     [
       "text-embedding-3-small",
       3.4253
      ],
      [
       "GLM 5.3 Flash",
       2.0927
-     ],
-     [
-      "GLM 5.3",
-      0.2441
      ]
     ],
     "others_share": 0
@@ -8253,8 +8435,8 @@
       6.0685
      ],
      [
-      "GLM 5.3",
-      0.7317
+      "Kimi K3",
+      0.736
      ]
     ],
     "others_share": 0
@@ -8265,15 +8447,15 @@
     "shares": [
      [
       "Kimi K3",
-      7.0594
+      7.0595
+     ],
+     [
+      "Claude Fable 5.1",
+      0.7207
      ],
      [
       "GLM 5.3",
       0.702
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.4914
      ]
     ],
     "others_share": 0
@@ -8283,16 +8465,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      16.0661
+     ],
+     [
       "text-embedding-3-small",
       3.7117
      ],
      [
       "GLM 5.3 Flash",
       2.1404
-     ],
-     [
-      "GLM 5.3",
-      0.2596
      ]
     ],
     "others_share": 0
@@ -8306,8 +8488,8 @@
       6.4276
      ],
      [
-      "GLM 5.3",
-      0.8865
+      "Kimi K3",
+      3.8678
      ]
     ],
     "others_share": 0
@@ -8321,12 +8503,12 @@
       11.0076
      ],
      [
-      "GLM 5.3",
-      0.719
+      "Claude Fable 5.1",
+      4.6423
      ],
      [
-      "GLM 5.3 Flash",
-      0.4347
+      "GLM 5.3",
+      0.719
      ],
      [
       "Gemini 3.8 Flash",
@@ -8340,16 +8522,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      10.5963
+     ],
+     [
       "text-embedding-3-small",
       4.1366
      ],
      [
       "GLM 5.3 Flash",
       2.0696
-     ],
-     [
-      "GLM 5.3",
-      0.3135
      ]
     ],
     "others_share": 0
@@ -8363,8 +8545,8 @@
       6.0734
      ],
      [
-      "GLM 5.3",
-      0.9722
+      "Kimi K3",
+      4.1774
      ]
     ],
     "others_share": 0
@@ -8375,7 +8557,11 @@
     "shares": [
      [
       "Kimi K3",
-      17.116
+      17.1161
+     ],
+     [
+      "Claude Fable 5.1",
+      4.3256
      ],
      [
       "Gemini 3.8 Flash",
@@ -8384,10 +8570,6 @@
      [
       "GLM 5.3",
       0.7479
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.4177
      ]
     ],
     "others_share": 0
@@ -8397,16 +8579,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      9.8542
+     ],
+     [
       "text-embedding-3-small",
       2.8074
      ],
      [
       "GLM 5.3 Flash",
       2.1126
-     ],
-     [
-      "GLM 5.3",
-      0.3012
      ]
     ],
     "others_share": 0
@@ -8416,12 +8598,12 @@
     "metric": "tokens",
     "shares": [
      [
-      "GLM 5.3 Flash",
-      5.5545
+      "Kimi K3",
+      6.0164
      ],
      [
-      "GLM 5.3",
-      0.9629
+      "GLM 5.3 Flash",
+      5.5545
      ]
     ],
     "others_share": 0
@@ -8432,7 +8614,11 @@
     "shares": [
      [
       "Kimi K3",
-      11.2731
+      11.2738
+     ],
+     [
+      "Claude Fable 5.1",
+      4.2373
      ],
      [
       "Gemini 3.8 Flash",
@@ -8445,10 +8631,6 @@
      [
       "GLM 5.3",
       0.6041
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.4114
      ]
     ],
     "others_share": 0
@@ -8458,16 +8640,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      9.8152
+     ],
+     [
       "text-embedding-3-small",
       3.0954
      ],
      [
       "GLM 5.3 Flash",
       2.3872
-     ],
-     [
-      "GLM 5.3",
-      0.2577
      ]
     ],
     "others_share": 0
@@ -8481,8 +8663,8 @@
       5.9072
      ],
      [
-      "GLM 5.3",
-      0.7919
+      "Kimi K3",
+      4.6509
      ]
     ],
     "others_share": 0
@@ -8493,23 +8675,23 @@
     "shares": [
      [
       "Kimi K3",
-      15.7873
+      15.7894
      ],
      [
       "GPT-6 Astra",
-      6.9203
+      6.9212
+     ],
+     [
+      "Claude Fable 5.1",
+      4.2399
      ],
      [
       "Gemini 3.8 Flash",
-      1.1513
+      1.1515
      ],
      [
       "GLM 5.3",
-      0.7598
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.6209
+      0.7599
      ]
     ],
     "others_share": 0
@@ -8519,16 +8701,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      9.9545
+     ],
+     [
       "text-embedding-3-small",
-      4.2218
+      4.222
      ],
      [
       "GLM 5.3 Flash",
-      3.8608
-     ],
-     [
-      "GLM 5.3",
-      0.2947
+      3.861
      ]
     ],
     "others_share": 0
@@ -8542,8 +8724,8 @@
       6.199
      ],
      [
-      "GLM 5.3",
-      0.7526
+      "Kimi K3",
+      5.9046
      ]
     ],
     "others_share": 0
@@ -8557,16 +8739,16 @@
       6.3795
      ],
      [
+      "Claude Fable 5.1",
+      3.9148
+     ],
+     [
       "Kimi K3",
       3.6534
      ],
      [
       "Gemini 3.8 Flash",
       2.0982
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.5685
      ],
      [
       "GLM 5.3",
@@ -8580,16 +8762,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      12.1818
+     ],
+     [
       "text-embedding-3-small",
       4.2968
      ],
      [
       "GLM 5.3 Flash",
       2.6025
-     ],
-     [
-      "GLM 5.3",
-      0.2104
      ]
     ],
     "others_share": 0
@@ -8603,8 +8785,8 @@
       5.9266
      ],
      [
-      "GLM 5.3",
-      0.5167
+      "Kimi K3",
+      1.8994
      ]
     ],
     "others_share": 0
@@ -8618,16 +8800,16 @@
       6.6457
      ],
      [
+      "Claude Fable 5.1",
+      3.6171
+     ],
+     [
       "Kimi K3",
       3.0412
      ],
      [
       "Gemini 3.8 Flash",
       2.3565
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.6727
      ],
      [
       "GLM 5.3",
@@ -8641,16 +8823,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      11.4398
+     ],
+     [
       "text-embedding-3-small",
       4.2962
      ],
      [
       "GLM 5.3 Flash",
       3.0931
-     ],
-     [
-      "GLM 5.3",
-      0.2391
      ]
     ],
     "others_share": 0
@@ -8664,8 +8846,8 @@
       6.9173
      ],
      [
-      "GLM 5.3",
-      0.6702
+      "Kimi K3",
+      1.683
      ]
     ],
     "others_share": 0
@@ -8676,19 +8858,19 @@
     "shares": [
      [
       "GPT-6 Astra",
-      8.768
+      8.7688
      ],
      [
       "Kimi K3",
-      3.4441
+      3.4445
+     ],
+     [
+      "Claude Fable 5.1",
+      2.9493
      ],
      [
       "Gemini 3.8 Flash",
-      2.1327
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.7136
+      2.133
      ],
      [
       "GLM 5.3",
@@ -8702,16 +8884,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      11.0942
+     ],
+     [
       "text-embedding-3-small",
-      3.3527
+      3.3528
      ],
      [
       "GLM 5.3 Flash",
-      2.8997
-     ],
-     [
-      "GLM 5.3",
-      0.2798
+      2.8998
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -8729,8 +8911,8 @@
       6.7532
      ],
      [
-      "GLM 5.3",
-      0.8296
+      "Kimi K3",
+      2.3335
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -8745,23 +8927,23 @@
     "shares": [
      [
       "GPT-6 Astra",
-      10.0098
+      10.0104
+     ],
+     [
+      "Claude Fable 5.1",
+      2.9269
      ],
      [
       "Kimi K3",
-      2.7517
+      2.7518
      ],
      [
       "Gemini 3.8 Flash",
-      2.5688
+      2.5689
      ],
      [
       "GLM 5.3",
-      0.8935
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.5812
+      0.8936
      ]
     ],
     "others_share": 0
@@ -8771,16 +8953,16 @@
     "metric": "requests",
     "shares": [
      [
+      "DeepSeek V4 Flash 0731",
+      9.1512
+     ],
+     [
       "text-embedding-3-small",
-      3.1019
+      3.102
      ],
      [
       "GLM 5.3 Flash",
-      2.797
-     ],
-     [
-      "GLM 5.3",
-      0.5549
+      2.7971
      ]
     ],
     "others_share": 0
@@ -8794,8 +8976,8 @@
       6.6904
      ],
      [
-      "GLM 5.3",
-      0.9322
+      "Kimi K3",
+      1.6788
      ]
     ],
     "others_share": 0
@@ -8809,6 +8991,10 @@
       7.8791
      ],
      [
+      "Claude Fable 5.1",
+      4.1276
+     ],
+     [
       "Gemini 3.8 Flash",
       2.1183
      ],
@@ -8819,10 +9005,6 @@
      [
       "GLM 5.3",
       0.9841
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.7853
      ]
     ],
     "others_share": 0
@@ -8836,16 +9018,16 @@
       9.9464
      ],
      [
+      "DeepSeek V4 Flash 0731",
+      9.5146
+     ],
+     [
       "text-embedding-3-small",
       3.071
      ],
      [
       "GLM 5.3 Flash",
       2.8475
-     ],
-     [
-      "GLM 5.3",
-      0.4913
      ]
     ],
     "others_share": 0
@@ -8863,8 +9045,8 @@
       5.7357
      ],
      [
-      "GLM 5.3",
-      0.9138
+      "Kimi K3",
+      1.0363
      ]
     ],
     "others_share": 0
@@ -8875,11 +9057,15 @@
     "shares": [
      [
       "Kimi K3",
-      8.4765
+      8.4766
      ],
      [
       "GPT-6 Astra",
       7.2245
+     ],
+     [
+      "Claude Fable 5.1",
+      2.9118
      ],
      [
       "Gemini 3.8 Flash",
@@ -8888,10 +9074,6 @@
      [
       "GLM 5.3",
       0.7781
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.5878
      ]
     ],
     "others_share": 0
@@ -8905,16 +9087,16 @@
       15.8223
      ],
      [
+      "DeepSeek V4 Flash 0731",
+      11.1621
+     ],
+     [
       "text-embedding-3-small",
       2.6493
      ],
      [
       "GLM 5.3 Flash",
       2.2835
-     ],
-     [
-      "GLM 5.3",
-      0.3705
      ]
     ],
     "others_share": 0
@@ -8932,8 +9114,8 @@
       3.8416
      ],
      [
-      "GLM 5.3",
-      0.6846
+      "Kimi K3",
+      2.8713
      ]
     ],
     "others_share": 0
@@ -8951,16 +9133,16 @@
       6.9526
      ],
      [
+      "Claude Fable 5.1",
+      4.0666
+     ],
+     [
       "Gemini 3.8 Flash",
       1.5803
      ],
      [
       "GLM 5.3",
       0.8465
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.6708
      ]
     ],
     "others_share": 0
@@ -8971,7 +9153,11 @@
     "shares": [
      [
       "DeepSeek V4.1 Flash",
-      23.1981
+      23.1982
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      5.3855
      ],
      [
       "text-embedding-3-small",
@@ -8980,10 +9166,6 @@
      [
       "GLM 5.3 Flash",
       2.2041
-     ],
-     [
-      "GLM 5.3",
-      0.4603
      ]
     ],
     "others_share": 0
@@ -9001,8 +9183,8 @@
       3.411
      ],
      [
-      "GLM 5.3",
-      0.5968
+      "Kimi K3",
+      3.3176
      ]
     ],
     "others_share": 0
@@ -9020,12 +9202,12 @@
       4.3397
      ],
      [
-      "Gemini 3.8 Flash",
-      2.6764
+      "Claude Fable 5.1",
+      3.7689
      ],
      [
-      "GLM 5.3 Flash",
-      0.8685
+      "Gemini 3.8 Flash",
+      2.6765
      ],
      [
       "GLM 5.3",
@@ -9043,16 +9225,16 @@
       23.8364
      ],
      [
+      "DeepSeek V4 Flash 0731",
+      5.1389
+     ],
+     [
       "text-embedding-3-small",
       3.2286
      ],
      [
       "GLM 5.3 Flash",
       2.1515
-     ],
-     [
-      "GLM 5.3",
-      0.5388
      ]
     ],
     "others_share": 0
@@ -9070,8 +9252,8 @@
       3.3621
      ],
      [
-      "GLM 5.3",
-      0.4291
+      "Kimi K3",
+      1.2852
      ]
     ],
     "others_share": 0
@@ -9089,16 +9271,16 @@
       4.1964
      ],
      [
+      "Claude Fable 5.1",
+      3.4251
+     ],
+     [
       "Gemini 3.8 Flash",
-      2.031
+      2.0311
      ],
      [
       "GLM 5.3",
-      0.9411
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.8071
+      0.9412
      ]
     ],
     "others_share": 0
@@ -9109,7 +9291,11 @@
     "shares": [
      [
       "DeepSeek V4.1 Flash",
-      17.6053
+      17.6054
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      8.238
      ],
      [
       "text-embedding-3-small",
@@ -9118,10 +9304,6 @@
      [
       "GLM 5.3 Flash",
       2.3558
-     ],
-     [
-      "GLM 5.3",
-      0.4972
      ]
     ],
     "others_share": 0
@@ -9139,8 +9321,8 @@
       4.4361
      ],
      [
-      "GLM 5.3",
-      0.69
+      "Kimi K3",
+      1.6263
      ]
     ],
     "others_share": 0
@@ -9155,7 +9337,11 @@
      ],
      [
       "GPT-6 Astra",
-      7.1355
+      7.1356
+     ],
+     [
+      "Claude Fable 5.1",
+      3.5383
      ],
      [
       "Gemini 3.8 Flash",
@@ -9164,10 +9350,6 @@
      [
       "GLM 5.3",
       1.0791
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.7914
      ]
     ],
     "others_share": 0
@@ -9178,19 +9360,19 @@
     "shares": [
      [
       "DeepSeek V4.1 Flash",
-      19.1611
+      19.1612
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      9.887
      ],
      [
       "GLM 5.3 Flash",
-      2.3288
+      2.3289
      ],
      [
       "text-embedding-3-small",
       2.2682
-     ],
-     [
-      "GLM 5.3",
-      0.509
      ]
     ],
     "others_share": 0
@@ -9208,8 +9390,8 @@
       4.0693
      ],
      [
-      "GLM 5.3",
-      0.7148
+      "Kimi K3",
+      3.5164
      ]
     ],
     "others_share": 0
@@ -9220,23 +9402,23 @@
     "shares": [
      [
       "GPT-6 Astra",
-      7.8098
+      7.8099
      ],
      [
       "Kimi K3",
       3.1752
      ],
      [
+      "Claude Fable 5.1",
+      3.1333
+     ],
+     [
       "Gemini 3.8 Flash",
       1.9481
      ],
      [
-      "GLM 5.3 Flash",
-      0.9173
-     ],
-     [
       "GLM 5.3",
-      0.8044
+      0.8045
      ]
     ],
     "others_share": 0
@@ -9250,16 +9432,16 @@
       20.5945
      ],
      [
+      "DeepSeek V4 Flash 0731",
+      5.0019
+     ],
+     [
       "GLM 5.3 Flash",
       3.1808
      ],
      [
       "text-embedding-3-small",
       2.1004
-     ],
-     [
-      "GLM 5.3",
-      0.3933
      ],
      [
       "Jev",
@@ -9281,8 +9463,8 @@
       4.0762
      ],
      [
-      "GLM 5.3",
-      0.5718
+      "Kimi K3",
+      1.0551
      ],
      [
       "Jev",
@@ -9304,12 +9486,12 @@
       6.0602
      ],
      [
-      "Gemini 3.8 Flash",
-      1.7922
+      "Claude Fable 5.1",
+      2.944
      ],
      [
-      "GLM 5.3 Flash",
-      1.3701
+      "Gemini 3.8 Flash",
+      1.7922
      ],
      [
       "GLM 5.3",
@@ -9335,12 +9517,12 @@
       5.0928
      ],
      [
-      "text-embedding-3-small",
-      2.2753
+      "DeepSeek V4 Flash 0731",
+      4.2679
      ],
      [
-      "GLM 5.3",
-      0.2625
+      "text-embedding-3-small",
+      2.2753
      ]
     ],
     "others_share": 0
@@ -9358,8 +9540,8 @@
       5.9517
      ],
      [
-      "GLM 5.3",
-      0.6229
+      "Kimi K3",
+      1.9601
      ],
      [
       "Jev",
@@ -9374,11 +9556,15 @@
     "shares": [
      [
       "Kimi K3",
-      9.3062
+      9.3063
      ],
      [
       "GPT-6 Astra",
       7.0152
+     ],
+     [
+      "Claude Fable 5.1",
+      2.6589
      ],
      [
       "GLM 5.3",
@@ -9387,10 +9573,6 @@
      [
       "Gemini 3.8 Flash",
       1.9473
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.6027
      ]
     ],
     "others_share": 0
@@ -9401,7 +9583,7 @@
     "shares": [
      [
       "DeepSeek V4.1 Flash",
-      19.0155
+      19.0156
      ],
      [
       "Jev",
@@ -9412,12 +9594,12 @@
       6.5745
      ],
      [
-      "text-embedding-3-small",
-      2.1045
+      "DeepSeek V4 Flash 0731",
+      3.1926
      ],
      [
-      "GLM 5.3",
-      0.771
+      "text-embedding-3-small",
+      2.1045
      ]
     ],
     "others_share": 0
@@ -9435,8 +9617,8 @@
       7.5787
      ],
      [
-      "GLM 5.3",
-      1.0998
+      "Kimi K3",
+      2.5414
      ],
      [
       "Jev",
@@ -9451,11 +9633,15 @@
     "shares": [
      [
       "GPT-6 Astra",
-      14.078
+      14.0781
      ],
      [
       "Kimi K3",
-      12.9051
+      12.9052
+     ],
+     [
+      "Claude Fable 5.1",
+      1.759
      ],
      [
       "Gemini 3.8 Flash",
@@ -9464,10 +9650,6 @@
      [
       "GLM 5.3",
       1.0603
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.9619
      ]
     ],
     "others_share": 0
@@ -9478,23 +9660,23 @@
     "shares": [
      [
       "Jev",
-      26.5231
+      26.5232
      ],
      [
       "DeepSeek V4.1 Flash",
-      17.8068
+      17.8069
      ],
      [
       "GLM 5.3 Flash",
       4.1502
      ],
      [
-      "text-embedding-3-small",
-      1.8106
+      "DeepSeek V4 Flash 0731",
+      2.5592
      ],
      [
-      "GLM 5.3",
-      0.2788
+      "text-embedding-3-small",
+      1.8107
      ]
     ],
     "others_share": 0
@@ -9512,12 +9694,12 @@
       4.0785
      ],
      [
-      "Jev",
-      1.7965
+      "Kimi K3",
+      3.4127
      ],
      [
-      "GLM 5.3",
-      0.5171
+      "Jev",
+      1.7965
      ]
     ],
     "others_share": 0
@@ -9539,16 +9721,12 @@
       1.8888
      ],
      [
-      "GLM 5.3 Flash",
-      0.9681
+      "Claude Fable 5.1",
+      1.8024
      ],
      [
       "GLM 5.3",
       0.653
-     ],
-     [
-      "Grok 4.7",
-      0.0184
      ]
     ],
     "others_share": 0
@@ -9570,12 +9748,12 @@
       4.2827
      ],
      [
-      "text-embedding-3-small",
-      1.6897
+      "DeepSeek V4 Flash 0731",
+      2.3332
      ],
      [
-      "GLM 5.3",
-      0.2027
+      "text-embedding-3-small",
+      1.6897
      ]
     ],
     "others_share": 0
@@ -9593,16 +9771,12 @@
       4.1617
      ],
      [
+      "Kimi K3",
+      3.4698
+     ],
+     [
       "Jev",
       2.0123
-     ],
-     [
-      "GLM 5.3",
-      0.432
-     ],
-     [
-      "Grok 4.7",
-      0.0049
      ]
     ],
     "others_share": 0
@@ -9620,20 +9794,16 @@
       14.8292
      ],
      [
+      "Claude Fable 5.1",
+      2.0724
+     ],
+     [
       "Gemini 3.8 Flash",
       1.9481
      ],
      [
       "GLM 5.3",
       1.0714
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.9464
-     ],
-     [
-      "Grok 4.7",
-      0.0693
      ]
     ],
     "others_share": 0
@@ -9644,7 +9814,7 @@
     "shares": [
      [
       "Jev",
-      21.4674
+      21.4675
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -9655,12 +9825,12 @@
       4.4565
      ],
      [
-      "text-embedding-3-small",
-      1.7755
+      "DeepSeek V4 Flash 0731",
+      2.8939
      ],
      [
-      "GLM 5.3",
-      0.3919
+      "text-embedding-3-small",
+      1.7755
      ]
     ],
     "others_share": 0
@@ -9678,16 +9848,12 @@
       4.4897
      ],
      [
+      "Kimi K3",
+      4.2992
+     ],
+     [
       "Jev",
       2.0477
-     ],
-     [
-      "GLM 5.3",
-      0.7643
-     ],
-     [
-      "Grok 4.7",
-      0.0307
      ]
     ],
     "others_share": 0
@@ -9698,7 +9864,7 @@
     "shares": [
      [
       "Kimi K3",
-      18.5231
+      18.5232
      ],
      [
       "GPT-6 Astra",
@@ -9709,20 +9875,16 @@
       2.7354
      ],
      [
+      "Claude Fable 5.1",
+      2.0365
+     ],
+     [
       "GLM 5.3",
       1.1486
      ],
      [
-      "GLM 5.3 Flash",
-      1.0124
-     ],
-     [
       "Claude Opus 5.5",
       0.8536
-     ],
-     [
-      "Grok 4.7",
-      0.235
      ],
      [
       "GPT-6 Luna",
@@ -9741,19 +9903,19 @@
      ],
      [
       "DeepSeek V4.1 Flash",
-      16.2371
+      16.2372
      ],
      [
       "GLM 5.3 Flash",
       4.111
      ],
      [
-      "text-embedding-3-small",
-      1.754
+      "DeepSeek V4 Flash 0731",
+      3.043
      ],
      [
-      "GLM 5.3",
-      0.4402
+      "text-embedding-3-small",
+      1.754
      ],
      [
       "GPT-6 Luna",
@@ -9775,12 +9937,12 @@
       4.5063
      ],
      [
-      "Jev",
-      1.7579
+      "Kimi K3",
+      3.5913
      ],
      [
-      "GLM 5.3",
-      0.8149
+      "Jev",
+      1.7579
      ],
      [
       "Claude Opus 5.5",
@@ -9789,10 +9951,6 @@
      [
       "GPT-6 Luna",
       0.1874
-     ],
-     [
-      "Grok 4.7",
-      0.0925
      ]
     ],
     "others_share": 0
@@ -9803,31 +9961,27 @@
     "shares": [
      [
       "Kimi K3",
-      14.8827
+      14.8828
      ],
      [
       "GPT-6 Astra",
-      8.3151
+      8.3152
      ],
      [
       "Claude Opus 5.5",
-      6.0868
+      6.0869
      ],
      [
       "Gemini 3.8 Flash",
       3.1854
      ],
      [
-      "GLM 5.3 Flash",
-      0.9883
+      "Claude Fable 5.1",
+      2.1311
      ],
      [
       "GLM 5.3",
       0.8914
-     ],
-     [
-      "Grok 4.7",
-      0.4123
      ],
      [
       "GPT-6 Luna",
@@ -9857,12 +10011,12 @@
       3.172
      ],
      [
-      "text-embedding-3-small",
-      1.7067
+      "DeepSeek V4 Flash 0731",
+      2.4781
      ],
      [
-      "GLM 5.3",
-      0.2772
+      "text-embedding-3-small",
+      1.7068
      ]
     ],
     "others_share": 0
@@ -9880,6 +10034,10 @@
       4.4208
      ],
      [
+      "Kimi K3",
+      3.4947
+     ],
+     [
       "Jev",
       1.8188
      ],
@@ -9890,14 +10048,6 @@
      [
       "Claude Opus 5.5",
       1.3374
-     ],
-     [
-      "GLM 5.3",
-      0.566
-     ],
-     [
-      "Grok 4.7",
-      0.1485
      ]
     ],
     "others_share": 0
@@ -9908,35 +10058,31 @@
     "shares": [
      [
       "Kimi K3",
-      13.0271
+      13.0276
      ],
      [
       "Claude Opus 5.5",
-      9.8288
+      9.8292
      ],
      [
       "GPT-6 Astra",
-      5.8993
+      5.8995
      ],
      [
       "Gemini 3.8 Flash",
-      3.3731
+      3.3733
+     ],
+     [
+      "Claude Fable 5.1",
+      1.8793
      ],
      [
       "GLM 5.3",
-      0.9887
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.8857
+      0.9888
      ],
      [
       "GPT-6 Luna",
-      0.6359
-     ],
-     [
-      "Grok 4.7",
-      0.3243
+      0.636
      ]
     ],
     "others_share": 0
@@ -9947,11 +10093,11 @@
     "shares": [
      [
       "Jev",
-      26.956
+      26.9562
      ],
      [
       "DeepSeek V4.1 Flash",
-      12.861
+      12.8611
      ],
      [
       "GPT-6 Luna",
@@ -9959,15 +10105,15 @@
      ],
      [
       "GLM 5.3 Flash",
-      3.6383
+      3.6384
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      2.6568
      ],
      [
       "text-embedding-3-small",
       1.8663
-     ],
-     [
-      "GLM 5.3",
-      0.3246
      ]
     ],
     "others_share": 0
@@ -9985,6 +10131,10 @@
       3.9386
      ],
      [
+      "Kimi K3",
+      3.7196
+     ],
+     [
       "GPT-6 Luna",
       2.4066
      ],
@@ -9995,14 +10145,6 @@
      [
       "Jev",
       2.0294
-     ],
-     [
-      "GLM 5.3",
-      0.67
-     ],
-     [
-      "Grok 4.7",
-      0.1119
      ]
     ],
     "others_share": 0
@@ -10013,11 +10155,11 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      11.3215
+      11.3216
      ],
      [
       "Kimi K3",
-      10.5048
+      10.5049
      ],
      [
       "GPT-6 Astra",
@@ -10025,23 +10167,19 @@
      ],
      [
       "Gemini 3.8 Flash",
-      4.5387
+      4.5388
+     ],
+     [
+      "Claude Fable 5.1",
+      1.9697
      ],
      [
       "GLM 5.3",
       1.4743
      ],
      [
-      "GLM 5.3 Flash",
-      1.4591
-     ],
-     [
       "GPT-6 Luna",
       0.7149
-     ],
-     [
-      "Grok 4.7",
-      0.3829
      ]
     ],
     "others_share": 0
@@ -10052,7 +10190,7 @@
     "shares": [
      [
       "Jev",
-      28.6102
+      28.6103
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -10067,12 +10205,12 @@
       4.279
      ],
      [
-      "text-embedding-3-small",
-      2.0018
+      "DeepSeek V4 Flash 0731",
+      2.0602
      ],
      [
-      "GLM 5.3",
-      0.5104
+      "text-embedding-3-small",
+      2.0018
      ]
     ],
     "others_share": 0
@@ -10090,6 +10228,10 @@
       5.4907
      ],
      [
+      "Kimi K3",
+      3.2748
+     ],
+     [
       "GPT-6 Luna",
       3.1432
      ],
@@ -10100,14 +10242,6 @@
      [
       "Jev",
       2.513
-     ],
-     [
-      "GLM 5.3",
-      0.9899
-     ],
-     [
-      "Grok 4.7",
-      0.1408
      ]
     ],
     "others_share": 0
@@ -10126,15 +10260,15 @@
      ],
      [
       "GPT-6 Astra",
-      10.2614
+      10.2615
      ],
      [
       "Gemini 3.8 Flash",
       6.0061
      ],
      [
-      "GLM 5.3 Flash",
-      1.6554
+      "Claude Fable 5.1",
+      1.8949
      ],
      [
       "GLM 5.3",
@@ -10143,10 +10277,6 @@
      [
       "GPT-6 Luna",
       0.9124
-     ],
-     [
-      "Grok 4.7",
-      0.2929
      ]
     ],
     "others_share": 0
@@ -10176,8 +10306,8 @@
       2.1222
      ],
      [
-      "GLM 5.3",
-      0.4679
+      "DeepSeek V4 Flash 0731",
+      1.9827
      ]
     ],
     "others_share": 0
@@ -10195,6 +10325,10 @@
       5.1697
      ],
      [
+      "Kimi K3",
+      2.8643
+     ],
+     [
       "GPT-6 Luna",
       2.6144
      ],
@@ -10205,14 +10339,6 @@
      [
       "Claude Opus 5.5",
       1.8271
-     ],
-     [
-      "GLM 5.3",
-      0.7296
-     ],
-     [
-      "Grok 4.7",
-      0.0743
      ]
     ],
     "others_share": 0
@@ -10223,23 +10349,23 @@
     "shares": [
      [
       "Kimi K3",
-      17.2465
+      17.2466
      ],
      [
       "Claude Opus 5.5",
-      13.4378
+      13.4379
      ],
      [
       "Gemini 3.8 Flash",
-      6.6441
+      6.6442
      ],
      [
       "GPT-6 Astra",
-      6.1672
+      6.1673
      ],
      [
-      "GLM 5.3 Flash",
-      1.5301
+      "Claude Fable 5.1",
+      2.0731
      ],
      [
       "GLM 5.3",
@@ -10248,10 +10374,6 @@
      [
       "GPT-6 Luna",
       0.8966
-     ],
-     [
-      "Grok 4.7",
-      0.369
      ]
     ],
     "others_share": 0
@@ -10262,7 +10384,7 @@
     "shares": [
      [
       "Jev",
-      20.6156
+      20.6157
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -10281,8 +10403,8 @@
       2.4052
      ],
      [
-      "GLM 5.3",
-      0.442
+      "DeepSeek V4 Flash 0731",
+      2.3151
      ]
     ],
     "others_share": 0
@@ -10300,6 +10422,10 @@
       4.6561
      ],
      [
+      "Kimi K3",
+      3.7806
+     ],
+     [
       "GPT-6 Luna",
       2.5035
      ],
@@ -10310,14 +10436,6 @@
      [
       "Jev",
       1.3952
-     ],
-     [
-      "GLM 5.3",
-      0.7462
-     ],
-     [
-      "Grok 4.7",
-      0.1087
      ]
     ],
     "others_share": 0
@@ -10328,11 +10446,11 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      17.5247
+      17.5249
      ],
      [
       "Kimi K3",
-      10.0777
+      10.0778
      ],
      [
       "Gemini 3.8 Flash",
@@ -10340,23 +10458,19 @@
      ],
      [
       "GPT-6 Astra",
-      4.1589
+      4.159
+     ],
+     [
+      "Claude Fable 5.1",
+      1.9493
      ],
      [
       "GLM 5.3",
       1.8081
      ],
      [
-      "GLM 5.3 Flash",
-      1.5874
-     ],
-     [
       "GPT-6 Luna",
       0.7654
-     ],
-     [
-      "Grok 4.7",
-      0.571
      ],
      [
       "Claude Sonnet 5.5",
@@ -10371,7 +10485,7 @@
     "shares": [
      [
       "Jev",
-      22.9002
+      22.9003
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -10383,15 +10497,15 @@
      ],
      [
       "GLM 5.3 Flash",
-      5.0532
+      5.0533
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      2.4796
      ],
      [
       "text-embedding-3-small",
       2.3024
-     ],
-     [
-      "GLM 5.3",
-      0.6824
      ]
     ],
     "others_share": 0
@@ -10417,16 +10531,12 @@
       4.8069
      ],
      [
+      "Kimi K3",
+      4.2858
+     ],
+     [
       "Jev",
       2.4218
-     ],
-     [
-      "GLM 5.3",
-      1.5823
-     ],
-     [
-      "Grok 4.7",
-      0.2191
      ],
      [
       "Claude Sonnet 5.5",
@@ -10441,35 +10551,31 @@
     "shares": [
      [
       "Kimi K3",
-      18.5845
+      18.5848
      ],
      [
       "Claude Opus 5.5",
-      15.5406
+      15.5409
      ],
      [
       "GPT-6 Astra",
-      4.5161
+      4.5162
      ],
      [
       "Gemini 3.8 Flash",
-      3.9455
+      3.9456
+     ],
+     [
+      "Claude Fable 5.1",
+      1.8624
      ],
      [
       "Claude Sonnet 5.5",
-      1.5408
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.2958
+      1.5409
      ],
      [
       "GLM 5.3",
       1.125
-     ],
-     [
-      "Grok 4.7",
-      1.0669
      ],
      [
       "GPT-6 Luna",
@@ -10488,11 +10594,11 @@
     "shares": [
      [
       "Jev",
-      25.4009
+      25.401
      ],
      [
       "DeepSeek V4.1 Flash",
-      9.0212
+      9.0213
      ],
      [
       "GPT-6 Luna",
@@ -10500,15 +10606,15 @@
      ],
      [
       "GLM 5.3 Flash",
-      3.6997
+      3.6998
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      2.3242
      ],
      [
       "text-embedding-3-small",
       2.0301
-     ],
-     [
-      "GLM 5.3",
-      0.5036
      ]
     ],
     "others_share": 0
@@ -10526,6 +10632,10 @@
       6.7527
      ],
      [
+      "Kimi K3",
+      6.0222
+     ],
+     [
       "Claude Opus 5.5",
       5.5795
      ],
@@ -10538,16 +10648,12 @@
       2.5512
      ],
      [
-      "GLM 5.3",
-      1.2943
-     ],
-     [
       "Claude Sonnet 5.5",
       0.73
      ],
      [
-      "Grok 4.7",
-      0.3699
+      "GPT-6.1 Sol",
+      0.1278
      ]
     ],
     "others_share": 0
@@ -10558,11 +10664,11 @@
     "shares": [
      [
       "Kimi K3",
-      19.2542
+      19.2544
      ],
      [
       "Claude Opus 5.5",
-      15.9991
+      15.9993
      ],
      [
       "Gemini 3.8 Flash",
@@ -10570,7 +10676,11 @@
      ],
      [
       "GPT-6 Astra",
-      3.5812
+      3.5813
+     ],
+     [
+      "Claude Fable 5.1",
+      1.98
      ],
      [
       "Claude Sonnet 5.5",
@@ -10585,16 +10695,8 @@
       1.4433
      ],
      [
-      "GLM 5.3 Flash",
-      1.2243
-     ],
-     [
       "GPT-6 Luna",
       0.7567
-     ],
-     [
-      "Grok 4.7",
-      0.5069
      ]
     ],
     "others_share": 0
@@ -10605,7 +10707,7 @@
     "shares": [
      [
       "Jev",
-      21.8781
+      21.8782
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -10613,19 +10715,19 @@
      ],
      [
       "GPT-6 Luna",
-      6.606
+      6.6061
      ],
      [
       "GLM 5.3 Flash",
       2.816
      ],
      [
-      "text-embedding-3-small",
-      2.0755
+      "DeepSeek V4 Flash 0731",
+      2.3819
      ],
      [
-      "GLM 5.3",
-      0.6355
+      "text-embedding-3-small",
+      2.0755
      ]
     ],
     "others_share": 0
@@ -10643,6 +10745,10 @@
       6.7421
      ],
      [
+      "Kimi K3",
+      6.258
+     ],
+     [
       "Claude Opus 5.5",
       4.9126
      ],
@@ -10655,16 +10761,12 @@
       2.2824
      ],
      [
-      "GLM 5.3",
-      1.4445
+      "GPT-6.1 Sol",
+      1.1377
      ],
      [
       "Claude Sonnet 5.5",
       0.8454
-     ],
-     [
-      "Grok 4.7",
-      0.1586
      ]
     ],
     "others_share": 0
@@ -10675,39 +10777,35 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      18.454
+      18.4543
      ],
      [
       "Kimi K3",
-      4.9601
+      4.9602
      ],
      [
       "Gemini 3.8 Flash",
-      4.2483
+      4.2484
      ],
      [
       "GPT-6 Astra",
-      4.2222
+      4.2223
      ],
      [
       "GPT-6.1 Sol",
-      2.4392
+      2.4393
+     ],
+     [
+      "Claude Fable 5.1",
+      2.3263
      ],
      [
       "Claude Sonnet 5.5",
-      2.0341
+      2.0342
      ],
      [
       "GLM 5.3",
       1.9111
-     ],
-     [
-      "Grok 4.7",
-      1.6491
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.329
      ],
      [
       "GPT-6 Luna",
@@ -10722,7 +10820,7 @@
     "shares": [
      [
       "Jev",
-      21.8025
+      21.8027
      ],
      [
       "GPT-6 Luna",
@@ -10730,19 +10828,19 @@
      ],
      [
       "DeepSeek V4.1 Flash",
-      7.6906
+      7.6907
      ],
      [
       "GLM 5.3 Flash",
-      3.1001
+      3.1002
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      2.4808
      ],
      [
       "text-embedding-3-small",
-      2.2118
-     ],
-     [
-      "GLM 5.3",
-      0.7523
+      2.2119
      ]
     ],
     "others_share": 0
@@ -10772,16 +10870,16 @@
       2.5841
      ],
      [
-      "GLM 5.3",
-      1.7256
+      "Kimi K3",
+      2.3712
+     ],
+     [
+      "GPT-6.1 Sol",
+      1.8073
      ],
      [
       "Claude Sonnet 5.5",
       0.9042
-     ],
-     [
-      "Grok 4.7",
-      0.5992
      ]
     ],
     "others_share": 0
@@ -10791,16 +10889,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Grok 4.7",
-      15.3941
-     ],
-     [
       "Claude Opus 5.5",
-      12.9181
+      12.9182
      ],
      [
       "Kimi K3",
-      4.3728
+      4.3729
      ],
      [
       "GPT-6 Astra",
@@ -10820,11 +10914,11 @@
      ],
      [
       "GPT-6.1 Sol",
-      1.9685
+      1.9686
      ],
      [
-      "GLM 5.3 Flash",
-      0.8771
+      "Claude Fable 5.1",
+      1.6188
      ],
      [
       "GPT-6 Luna",
@@ -10839,11 +10933,11 @@
     "shares": [
      [
       "Jev",
-      24.4878
+      24.4879
      ],
      [
       "GPT-6 Luna",
-      8.2472
+      8.2473
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -10854,12 +10948,12 @@
       2.9471
      ],
      [
-      "text-embedding-3-small",
-      2.1365
+      "DeepSeek V4 Flash 0731",
+      2.3214
      ],
      [
-      "GLM 5.3",
-      0.9535
+      "text-embedding-3-small",
+      2.1365
      ]
     ],
     "others_share": 0
@@ -10871,10 +10965,6 @@
      [
       "DeepSeek V4.1 Flash",
       21.9815
-     ],
-     [
-      "Grok 4.7",
-      7.2681
      ],
      [
       "GLM 5.3 Flash",
@@ -10893,8 +10983,12 @@
       2.7345
      ],
      [
-      "GLM 5.3",
-      2.2992
+      "Kimi K3",
+      2.333
+     ],
+     [
+      "GPT-6.1 Sol",
+      1.7338
      ],
      [
       "Claude Sonnet 5.5",
@@ -10909,11 +11003,11 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      12.2896
+      12.2898
      ],
      [
       "Kimi K3",
-      9.4966
+      9.4968
      ],
      [
       "GPT-6.1 Sol",
@@ -10936,16 +11030,12 @@
       2.4749
      ],
      [
-      "GLM 5.3 Flash",
-      1.1476
+      "Claude Fable 5.1",
+      2.0868
      ],
      [
       "GPT-6 Luna",
-      1.038
-     ],
-     [
-      "Grok 4.7",
-      0.3495
+      1.0381
      ]
     ],
     "others_share": 0
@@ -10956,15 +11046,19 @@
     "shares": [
      [
       "Jev",
-      27.0232
+      27.0234
      ],
      [
       "DeepSeek V4.1 Flash",
-      8.7037
+      8.7038
      ],
      [
       "GPT-6 Luna",
       8.004
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      3.2587
      ],
      [
       "GLM 5.3 Flash",
@@ -10973,10 +11067,6 @@
      [
       "text-embedding-3-small",
       2.2877
-     ],
-     [
-      "GLM 5.3",
-      0.914
      ]
     ],
     "others_share": 0
@@ -11002,20 +11092,20 @@
       3.9721
      ],
      [
+      "Kimi K3",
+      3.4234
+     ],
+     [
       "Jev",
       2.8523
      ],
      [
-      "GLM 5.3",
-      2.1441
+      "GPT-6.1 Sol",
+      1.5479
      ],
      [
       "Claude Sonnet 5.5",
       1.3176
-     ],
-     [
-      "Grok 4.7",
-      0.0948
      ]
     ],
     "others_share": 0
@@ -11026,11 +11116,11 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      13.9263
+      13.9265
      ],
      [
       "Kimi K3",
-      13.4172
+      13.4175
      ],
      [
       "GPT-6 Astra",
@@ -11038,7 +11128,7 @@
      ],
      [
       "GLM 5.3",
-      3.7119
+      3.712
      ],
      [
       "Gemini 3.8 Flash",
@@ -11050,19 +11140,15 @@
      ],
      [
       "Claude Sonnet 5.5",
-      2.6996
+      2.6997
      ],
      [
-      "GLM 5.3 Flash",
-      1.6135
+      "Claude Fable 5.1",
+      2.1823
      ],
      [
       "GPT-6 Luna",
-      1.1201
-     ],
-     [
-      "Grok 4.7",
-      0.3144
+      1.1202
      ]
     ],
     "others_share": 0
@@ -11073,11 +11159,11 @@
     "shares": [
      [
       "Jev",
-      21.8744
+      21.8745
      ],
      [
       "DeepSeek V4.1 Flash",
-      8.8703
+      8.8704
      ],
      [
       "GPT-6 Luna",
@@ -11088,12 +11174,12 @@
       4.2226
      ],
      [
-      "text-embedding-3-small",
-      2.4584
+      "DeepSeek V4 Flash 0731",
+      2.5314
      ],
      [
-      "GLM 5.3",
-      0.9948
+      "text-embedding-3-small",
+      2.4584
      ]
     ],
     "others_share": 0
@@ -11115,24 +11201,24 @@
       5.4625
      ],
      [
-      "Claude Opus 5.5",
-      4.1096
+      "Kimi K3",
+      4.3441
      ],
      [
-      "GLM 5.3",
-      2.8314
+      "Claude Opus 5.5",
+      4.1096
      ],
      [
       "Jev",
       2.8019
      ],
      [
-      "Claude Sonnet 5.5",
-      1.0371
+      "GPT-6.1 Sol",
+      1.4571
      ],
      [
-      "Grok 4.7",
-      0.0812
+      "Claude Sonnet 5.5",
+      1.0371
      ]
     ],
     "others_share": 0
@@ -11143,19 +11229,19 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      17.7836
+      17.7839
      ],
      [
       "Kimi K3",
-      6.4964
+      6.4965
      ],
      [
       "GPT-6 Astra",
-      4.4586
+      4.4587
      ],
      [
       "GPT-6.1 Sol",
-      4.374
+      4.3741
      ],
      [
       "Claude Sonnet 5.5",
@@ -11166,20 +11252,16 @@
       3.075
      ],
      [
+      "Claude Fable 5.1",
+      2.5167
+     ],
+     [
       "GLM 5.3",
       2.0948
      ],
      [
-      "GLM 5.3 Flash",
-      1.5508
-     ],
-     [
       "GPT-6 Luna",
       1.2677
-     ],
-     [
-      "Grok 4.7",
-      0.7942
      ]
     ],
     "others_share": 0
@@ -11190,7 +11272,7 @@
     "shares": [
      [
       "Jev",
-      20.0285
+      20.0286
      ],
      [
       "GPT-6 Luna",
@@ -11205,12 +11287,12 @@
       4.0401
      ],
      [
-      "text-embedding-3-small",
-      2.5856
+      "DeepSeek V4 Flash 0731",
+      2.6899
      ],
      [
-      "GLM 5.3",
-      0.5374
+      "text-embedding-3-small",
+      2.5856
      ]
     ],
     "others_share": 0
@@ -11236,20 +11318,20 @@
       6.1259
      ],
      [
+      "GPT-6.1 Sol",
+      3.0181
+     ],
+     [
       "Jev",
       2.8671
      ],
      [
-      "GLM 5.3",
-      2.0757
+      "Kimi K3",
+      2.4303
      ],
      [
       "Claude Sonnet 5.5",
       1.8736
-     ],
-     [
-      "Grok 4.7",
-      0.2519
      ]
     ],
     "others_share": 0
@@ -11283,20 +11365,16 @@
       2.9073
      ],
      [
+      "Claude Fable 5.1",
+      2.4213
+     ],
+     [
       "GLM 5.3",
       1.6767
      ],
      [
-      "GLM 5.3 Flash",
-      1.2529
-     ],
-     [
       "GPT-6 Luna",
       1.1273
-     ],
-     [
-      "Grok 4.7",
-      1.0144
      ]
     ],
     "others_share": 0
@@ -11315,7 +11393,11 @@
      ],
      [
       "DeepSeek V4.1 Flash",
-      5.5653
+      5.5654
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      3.4073
      ],
      [
       "GLM 5.3 Flash",
@@ -11324,10 +11406,6 @@
      [
       "text-embedding-3-small",
       2.4887
-     ],
-     [
-      "GLM 5.3",
-      0.5592
      ]
     ],
     "others_share": 0
@@ -11353,20 +11431,20 @@
       6.3198
      ],
      [
+      "Kimi K3",
+      4.4371
+     ],
+     [
+      "GPT-6.1 Sol",
+      3.8228
+     ],
+     [
       "Jev",
       3.0664
      ],
      [
       "Claude Sonnet 5.5",
       2.0493
-     ],
-     [
-      "GLM 5.3",
-      1.8881
-     ],
-     [
-      "Grok 4.7",
-      0.3145
      ]
     ],
     "others_share": 0
@@ -11377,7 +11455,7 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      16.4911
+      16.4912
      ],
      [
       "Kimi K3",
@@ -11393,7 +11471,7 @@
      ],
      [
       "Claude Sonnet 5.5",
-      4.2375
+      4.2376
      ],
      [
       "Gemini 3.8 Flash",
@@ -11404,16 +11482,12 @@
       3.0811
      ],
      [
-      "GLM 5.3 Flash",
-      1.6362
+      "Claude Fable 5.1",
+      1.867
      ],
      [
       "GPT-6 Luna",
       1.1532
-     ],
-     [
-      "Grok 4.7",
-      0.8032
      ]
     ],
     "others_share": 0
@@ -11424,7 +11498,7 @@
     "shares": [
      [
       "Jev",
-      26.7302
+      26.7303
      ],
      [
       "GPT-6 Luna",
@@ -11443,8 +11517,8 @@
       3.2105
      ],
      [
-      "GLM 5.3",
-      0.7926
+      "DeepSeek V4 Flash 0731",
+      2.7971
      ],
      [
       "Claude Haiku 5.5",
@@ -11478,16 +11552,16 @@
       4.2208
      ],
      [
-      "GLM 5.3",
-      2.8787
+      "GPT-6.1 Sol",
+      3.3087
+     ],
+     [
+      "Kimi K3",
+      2.9879
      ],
      [
       "Claude Sonnet 5.5",
       2.0729
-     ],
-     [
-      "Grok 4.7",
-      0.2429
      ]
     ],
     "others_share": 0
@@ -11498,15 +11572,15 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      15.5543
+      15.5544
      ],
      [
       "Kimi K3",
-      9.3322
+      9.3323
      ],
      [
       "GPT-6 Astra",
-      6.8621
+      6.8622
      ],
      [
       "Claude Sonnet 5.5",
@@ -11525,12 +11599,8 @@
       2.6894
      ],
      [
-      "Grok 4.7",
-      1.8432
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.5632
+      "Claude Fable 5.1",
+      1.5821
      ],
      [
       "GPT-6 Luna",
@@ -11545,7 +11615,7 @@
     "shares": [
      [
       "Jev",
-      26.0039
+      26.004
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -11564,12 +11634,12 @@
       3.0023
      ],
      [
-      "Claude Haiku 5.5",
-      1.2986
+      "DeepSeek V4 Flash 0731",
+      2.5956
      ],
      [
-      "GLM 5.3",
-      0.7527
+      "Claude Haiku 5.5",
+      1.2986
      ]
     ],
     "others_share": 0
@@ -11599,16 +11669,16 @@
       4.0964
      ],
      [
-      "GLM 5.3",
-      3.5478
+      "Kimi K3",
+      3.639
+     ],
+     [
+      "GPT-6.1 Sol",
+      2.6122
      ],
      [
       "Claude Sonnet 5.5",
       2.1287
-     ],
-     [
-      "Grok 4.7",
-      0.747
      ]
     ],
     "others_share": 0
@@ -11619,11 +11689,11 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      16.5726
+      16.5727
      ],
      [
       "Kimi K3",
-      11.2765
+      11.2766
      ],
      [
       "GPT-6 Astra",
@@ -11643,15 +11713,11 @@
      ],
      [
       "Gemini 3.8 Flash",
-      2.5497
+      2.5498
      ],
      [
-      "GLM 5.3 Flash",
-      2.1739
-     ],
-     [
-      "Grok 4.7",
-      1.3493
+      "Claude Fable 5.1",
+      1.8164
      ],
      [
       "GPT-6 Luna",
@@ -11682,15 +11748,15 @@
      ],
      [
       "text-embedding-3-small",
-      2.9
+      2.9001
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      2.804
      ],
      [
       "Claude Haiku 5.5",
       1.2892
-     ],
-     [
-      "GLM 5.3",
-      1.0266
      ]
     ],
     "others_share": 0
@@ -11716,20 +11782,20 @@
       6.4811
      ],
      [
+      "Kimi K3",
+      3.735
+     ],
+     [
       "Jev",
       3.4835
      ],
      [
-      "GLM 5.3",
-      2.8568
+      "GPT-6.1 Sol",
+      2.8661
      ],
      [
       "Claude Sonnet 5.5",
       2.1239
-     ],
-     [
-      "Grok 4.7",
-      0.4755
      ]
     ],
     "others_share": 0
@@ -11740,7 +11806,7 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      16.2075
+      16.2076
      ],
      [
       "Kimi K3",
@@ -11748,7 +11814,7 @@
      ],
      [
       "GLM 5.3",
-      6.142
+      6.1421
      ],
      [
       "GPT-6 Astra",
@@ -11756,7 +11822,7 @@
      ],
      [
       "Claude Sonnet 5.5",
-      4.2316
+      4.2317
      ],
      [
       "GPT-6.1 Sol",
@@ -11767,12 +11833,8 @@
       2.5292
      ],
      [
-      "GLM 5.3 Flash",
-      2.4187
-     ],
-     [
-      "Grok 4.7",
-      1.6747
+      "Claude Fable 5.1",
+      2.0035
      ],
      [
       "GPT-6 Luna",
@@ -11806,8 +11868,8 @@
       3.7785
      ],
      [
-      "GLM 5.3",
-      1.6099
+      "DeepSeek V4 Flash 0731",
+      1.8303
      ],
      [
       "Claude Haiku 5.5",
@@ -11837,20 +11899,20 @@
       5.6504
      ],
      [
-      "GLM 5.3",
-      4.2388
+      "Kimi K3",
+      4.3403
      ],
      [
       "Jev",
       3.8789
      ],
      [
-      "Claude Sonnet 5.5",
-      1.8507
+      "GPT-6.1 Sol",
+      2.1901
      ],
      [
-      "Grok 4.7",
-      0.505
+      "Claude Sonnet 5.5",
+      1.8507
      ]
     ],
     "others_share": 0
@@ -11868,12 +11930,8 @@
       11.6943
      ],
      [
-      "Grok 4.7",
-      9.886
-     ],
-     [
       "Kimi K3",
-      6.7642
+      6.7643
      ],
      [
       "GPT-6 Astra",
@@ -11892,8 +11950,8 @@
       2.7228
      ],
      [
-      "GLM 5.3 Flash",
-      2.2557
+      "Claude Fable 5.1",
+      2.1104
      ],
      [
       "GPT-6 Luna",
@@ -11923,8 +11981,8 @@
       5.0421
      ],
      [
-      "GLM 5.3",
-      4.7168
+      "DeepSeek V4 Flash 0731",
+      2.8055
      ],
      [
       "text-embedding-3-small",
@@ -11950,10 +12008,6 @@
       10.8565
      ],
      [
-      "GLM 5.3",
-      10.5844
-     ],
-     [
       "GPT-6 Luna",
       4.9825
      ],
@@ -11962,12 +12016,16 @@
       4.2865
      ],
      [
-      "Grok 4.7",
-      3.6985
+      "Kimi K3",
+      3.147
      ],
      [
       "Jev",
       2.9566
+     ],
+     [
+      "GPT-6.1 Sol",
+      1.6573
      ],
      [
       "Claude Sonnet 5.5",
@@ -11982,7 +12040,7 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      16.8558
+      16.8559
      ],
      [
       "GLM 5.3",
@@ -12002,19 +12060,15 @@
      ],
      [
       "GPT-6 Astra",
-      4.423
+      4.4231
      ],
      [
       "Gemini 3.8 Flash",
       2.6532
      ],
      [
-      "Grok 4.7",
-      2.5522
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.9237
+      "Claude Fable 5.1",
+      2.3918
      ],
      [
       "GPT-6 Luna",
@@ -12040,12 +12094,12 @@
       7.1832
      ],
      [
-      "GLM 5.3 Flash",
-      4.3987
+      "DeepSeek V4 Flash 0731",
+      5.8579
      ],
      [
-      "GLM 5.3",
-      3.4615
+      "GLM 5.3 Flash",
+      4.3987
      ],
      [
       "text-embedding-3-small",
@@ -12071,10 +12125,6 @@
       9.9615
      ],
      [
-      "GLM 5.3",
-      7.9585
-     ],
-     [
       "Claude Opus 5.5",
       7.2586
      ],
@@ -12091,8 +12141,12 @@
       2.4181
      ],
      [
-      "Grok 4.7",
-      0.9419
+      "GPT-6.1 Sol",
+      2.4003
+     ],
+     [
+      "Kimi K3",
+      1.8595
      ]
     ],
     "others_share": 0
@@ -12103,15 +12157,15 @@
     "shares": [
      [
       "GLM 5.3",
-      20.2385
+      20.2386
      ],
      [
       "Claude Opus 5.5",
-      15.7429
+      15.743
      ],
      [
       "Kimi K3",
-      8.3335
+      8.3336
      ],
      [
       "Claude Sonnet 5.5",
@@ -12130,12 +12184,8 @@
       2.2448
      ],
      [
-      "Grok 4.7",
-      2.2237
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.3807
+      "Claude Fable 5.1",
+      2.0382
      ],
      [
       "GPT-6 Luna",
@@ -12161,12 +12211,12 @@
       7.9097
      ],
      [
-      "GLM 5.3",
-      4.1105
+      "GLM 5.3 Flash",
+      3.6986
      ],
      [
-      "GLM 5.3 Flash",
-      3.6985
+      "DeepSeek V4 Flash 0731",
+      3.3869
      ],
      [
       "text-embedding-3-small",
@@ -12188,10 +12238,6 @@
       25.1311
      ],
      [
-      "GLM 5.3",
-      11.2977
-     ],
-     [
       "GPT-6 Luna",
       7.7466
      ],
@@ -12208,12 +12254,16 @@
       3.3793
      ],
      [
+      "Kimi K3",
+      3.1591
+     ],
+     [
       "Claude Sonnet 5.5",
       2.7166
      ],
      [
-      "Grok 4.7",
-      0.9734
+      "GPT-6.1 Sol",
+      2.4
      ]
     ],
     "others_share": 0
@@ -12224,15 +12274,15 @@
     "shares": [
      [
       "GLM 5.3",
-      19.9754
+      19.9757
      ],
      [
       "Claude Opus 5.5",
-      17.6165
+      17.6167
      ],
      [
       "Kimi K3",
-      4.9963
+      4.9964
      ],
      [
       "Claude Sonnet 5.5",
@@ -12244,19 +12294,15 @@
      ],
      [
       "GPT-6 Astra",
-      2.9935
+      2.9936
      ],
      [
-      "Grok 4.7",
-      2.3498
+      "Claude Fable 5.1",
+      2.3911
      ],
      [
       "Gemini 3.8 Flash",
       2.1932
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.4236
      ],
      [
       "GPT-6 Luna",
@@ -12271,7 +12317,7 @@
     "shares": [
      [
       "Jev",
-      25.9092
+      25.9093
      ],
      [
       "GPT-6 Luna",
@@ -12282,8 +12328,8 @@
       6.7015
      ],
      [
-      "GLM 5.3",
-      3.9868
+      "DeepSeek V4 Flash 0731",
+      4.0494
      ],
      [
       "GLM 5.3 Flash",
@@ -12309,10 +12355,6 @@
       21.3598
      ],
      [
-      "GLM 5.3",
-      10.8635
-     ],
-     [
       "Claude Opus 5.5",
       8.557
      ],
@@ -12333,8 +12375,12 @@
       3.1419
      ],
      [
-      "Grok 4.7",
-      1.1303
+      "GPT-6.1 Sol",
+      3.1111
+     ],
+     [
+      "Kimi K3",
+      2.2516
      ]
     ],
     "others_share": 0
@@ -12345,19 +12391,15 @@
     "shares": [
      [
       "GLM 5.3",
-      23.2226
+      23.223
      ],
      [
       "Claude Opus 5.5",
-      15.2638
-     ],
-     [
-      "Grok 4.7",
-      5.8977
+      15.264
      ],
      [
       "Kimi K3",
-      4.8796
+      4.8797
      ],
      [
       "Claude Sonnet 5.5",
@@ -12365,7 +12407,7 @@
      ],
      [
       "GPT-6.1 Sol",
-      3.7135
+      3.7136
      ],
      [
       "GPT-6 Astra",
@@ -12376,8 +12418,8 @@
       1.9114
      ],
      [
-      "GLM 5.3 Flash",
-      1.4795
+      "Claude Fable 5.1",
+      1.2393
      ],
      [
       "GPT-6 Luna",
@@ -12392,19 +12434,15 @@
     "shares": [
      [
       "Jev",
-      27.6078
+      27.608
      ],
      [
       "GPT-6 Luna",
-      7.5239
+      7.524
      ],
      [
       "DeepSeek V4.1 Flash",
       6.4659
-     ],
-     [
-      "GLM 5.3",
-      4.8187
      ],
      [
       "GLM 5.3 Flash",
@@ -12413,6 +12451,10 @@
      [
       "text-embedding-3-small",
       2.3597
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      2.2899
      ],
      [
       "Claude Haiku 5.5",
@@ -12438,10 +12480,6 @@
       18.1575
      ],
      [
-      "GLM 5.3",
-      11.0143
-     ],
-     [
       "GLM 5.3 Flash",
       9.5627
      ],
@@ -12458,12 +12496,16 @@
       3.8851
      ],
      [
-      "Grok 4.7",
-      3.5445
-     ],
-     [
       "Claude Sonnet 5.5",
       3.0828
+     ],
+     [
+      "GPT-6.1 Sol",
+      2.8016
+     ],
+     [
+      "Kimi K3",
+      2.0179
      ]
     ],
     "others_share": 0
@@ -12474,15 +12516,11 @@
     "shares": [
      [
       "GLM 5.3",
-      22.4744
+      22.4747
      ],
      [
       "Claude Opus 5.5",
-      15.7567
-     ],
-     [
-      "Grok 4.7",
-      5.7209
+      15.7569
      ],
      [
       "Claude Sonnet 5.5",
@@ -12505,8 +12543,8 @@
       1.8633
      ],
      [
-      "GLM 5.3 Flash",
-      1.6123
+      "Claude Fable 5.1",
+      1.3548
      ],
      [
       "GPT-6 Luna",
@@ -12521,7 +12559,7 @@
     "shares": [
      [
       "Jev",
-      22.0394
+      22.0395
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -12529,11 +12567,7 @@
      ],
      [
       "GPT-6 Luna",
-      7.8015
-     ],
-     [
-      "GLM 5.3",
-      5.4085
+      7.8016
      ],
      [
       "GLM 5.3 Flash",
@@ -12545,7 +12579,11 @@
      ],
      [
       "text-embedding-3-small",
-      2.6411
+      2.6412
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      2.3904
      ],
      [
       "Claude Haiku 5.5",
@@ -12567,10 +12605,6 @@
       25.5111
      ],
      [
-      "GLM 5.3",
-      13.2836
-     ],
-     [
       "GLM 5.3 Flash",
       8.4742
      ],
@@ -12587,12 +12621,16 @@
       2.9279
      ],
      [
-      "Grok 4.7",
-      2.9116
-     ],
-     [
       "Jev",
       2.6147
+     ],
+     [
+      "GPT-6.1 Sol",
+      2.5992
+     ],
+     [
+      "Kimi K3",
+      1.8799
      ],
      [
       "Beam 1.0",
@@ -12607,11 +12645,11 @@
     "shares": [
      [
       "GLM 5.3",
-      21.614
+      21.6141
      ],
      [
       "Claude Opus 5.5",
-      15.3083
+      15.3084
      ],
      [
       "Kimi K3",
@@ -12630,20 +12668,20 @@
       3.1433
      ],
      [
-      "GLM 5.3 Flash",
-      2.4742
-     ],
-     [
       "Gemini 3.8 Flash",
       2.4656
      ],
      [
-      "Grok 4.7",
-      1.9364
+      "Claude Fable 5.1",
+      2.0878
      ],
      [
       "GPT-6 Luna",
       1.1297
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      0.1126
      ]
     ],
     "others_share": 0
@@ -12654,7 +12692,7 @@
     "shares": [
      [
       "Jev",
-      22.1287
+      22.1288
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -12673,8 +12711,8 @@
       4.7533
      ],
      [
-      "GLM 5.3",
-      2.8784
+      "DeepSeek V4 Flash 0731",
+      2.7142
      ],
      [
       "text-embedding-3-small",
@@ -12708,10 +12746,6 @@
       9.7318
      ],
      [
-      "GLM 5.3",
-      9.637
-     ],
-     [
       "Claude Opus 5.5",
       5.0377
      ],
@@ -12728,6 +12762,10 @@
       2.6439
      ],
      [
+      "Kimi K3",
+      2.2282
+     ],
+     [
       "Claude Sonnet 5.5",
       2.184
      ],
@@ -12736,8 +12774,8 @@
       1.9828
      ],
      [
-      "Grok 4.7",
-      0.6151
+      "GPT-6.1 Sol",
+      1.6731
      ]
     ],
     "others_share": 0
@@ -12752,7 +12790,7 @@
      ],
      [
       "Claude Opus 5.5",
-      14.2896
+      14.2897
      ],
      [
       "Kimi K3",
@@ -12767,10 +12805,6 @@
       3.6551
      ],
      [
-      "Grok 4.7",
-      3.2424
-     ],
-     [
       "GPT-6.1 Sol",
       3.1207
      ],
@@ -12779,12 +12813,16 @@
       2.4177
      ],
      [
-      "GLM 5.3 Flash",
-      1.838
+      "Claude Fable 5.1",
+      1.3273
      ],
      [
       "GPT-6 Luna",
       1.0877
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      0.524
      ]
     ],
     "others_share": 0
@@ -12799,7 +12837,7 @@
      ],
      [
       "DeepSeek V4.1 Flash",
-      9.3175
+      9.3176
      ],
      [
       "GPT-6 Luna",
@@ -12814,16 +12852,16 @@
       4.4713
      ],
      [
-      "GLM 5.3",
-      4.2309
-     ],
-     [
       "text-embedding-3-small",
       2.9461
      ],
      [
       "DeepSeek V4.1 Flash 1017",
       2.3896
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      2.0346
      ],
      [
       "Claude Haiku 5.5",
@@ -12843,10 +12881,6 @@
      [
       "DeepSeek V4.1 Flash",
       25.9325
-     ],
-     [
-      "GLM 5.3",
-      11.8133
      ],
      [
       "DeepSeek V4.1 Flash 1017",
@@ -12873,12 +12907,16 @@
       2.7042
      ],
      [
+      "Kimi K3",
+      2.3113
+     ],
+     [
       "Claude Sonnet 5.5",
       1.9017
      ],
      [
-      "Grok 4.7",
-      1.0616
+      "GPT-6.1 Sol",
+      1.5216
      ]
     ],
     "others_share": 0
@@ -12889,43 +12927,43 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      17.291
+      17.2914
      ],
      [
       "GLM 5.3",
-      14.4088
+      14.4091
      ],
      [
       "Kimi K3",
-      13.6984
+      13.6987
      ],
      [
       "Claude Sonnet 5.5",
-      5.6152
+      5.6154
      ],
      [
       "GPT-6.1 Sol",
-      3.6405
+      3.6406
      ],
      [
       "GPT-6 Astra",
-      3.3068
+      3.3069
      ],
      [
       "Gemini 3.8 Flash",
-      2.3963
+      2.3964
      ],
      [
-      "Grok 4.7",
-      2.0534
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.5288
+      "Claude Fable 5.1",
+      1.4557
      ],
      [
       "GPT-6 Luna",
       1.2564
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      1.2293
      ]
     ],
     "others_share": 0
@@ -12936,7 +12974,7 @@
     "shares": [
      [
       "Jev",
-      20.4272
+      20.4273
      ],
      [
       "GPT-6 Luna",
@@ -12948,19 +12986,19 @@
      ],
      [
       "DeepSeek V4.1 Flash 1017",
-      4.2154
+      4.2155
      ],
      [
       "Jev 1.14.0",
       3.8083
      ],
      [
-      "GLM 5.3",
-      3.5151
+      "GLM 5.3 Flash",
+      3.3351
      ],
      [
-      "GLM 5.3 Flash",
-      3.335
+      "DeepSeek V4 Flash 0731",
+      2.7855
      ],
      [
       "text-embedding-3-small",
@@ -12990,10 +13028,6 @@
       15.2039
      ],
      [
-      "GLM 5.3",
-      9.7605
-     ],
-     [
       "GLM 5.3 Flash",
       6.2027
      ],
@@ -13010,6 +13044,10 @@
       3.7133
      ],
      [
+      "Kimi K3",
+      3.5982
+     ],
+     [
       "Jev",
       2.7
      ],
@@ -13018,8 +13056,8 @@
       2.6635
      ],
      [
-      "Grok 4.7",
-      0.6572
+      "GPT-6.1 Sol",
+      1.8517
      ]
     ],
     "others_share": 0
@@ -13030,19 +13068,15 @@
     "shares": [
      [
       "GLM 5.3",
-      17.3249
+      17.3251
      ],
      [
       "Claude Opus 5.5",
-      15.4867
-     ],
-     [
-      "Grok 4.7",
-      13.3989
+      15.4869
      ],
      [
       "Kimi K3",
-      8.0083
+      8.0084
      ],
      [
       "Claude Sonnet 5.5",
@@ -13058,15 +13092,19 @@
      ],
      [
       "Gemini 3.8 Flash",
-      2.1589
+      2.159
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      1.8905
      ],
      [
       "GPT-6 Luna",
       1.1185
      ],
      [
-      "GLM 5.3 Flash",
-      1.0558
+      "Claude Fable 5.1",
+      0.9742
      ]
     ],
     "others_share": 0
@@ -13092,10 +13130,6 @@
       5.4906
      ],
      [
-      "GLM 5.3",
-      4.5114
-     ],
-     [
       "Claude Haiku 5.5",
       4.1455
      ],
@@ -13110,6 +13144,10 @@
      [
       "text-embedding-3-small",
       2.4713
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      1.9692
      ],
      [
       "Jev 1.13.0",
@@ -13131,20 +13169,12 @@
       12.6712
      ],
      [
-      "GLM 5.3",
-      11.6504
-     ],
-     [
       "Beam 1.0",
       6.1407
      ],
      [
       "Claude Opus 5.5",
       5.0048
-     ],
-     [
-      "Grok 4.7",
-      4.8317
      ],
      [
       "GPT-6 Luna",
@@ -13155,12 +13185,20 @@
       4.2808
      ],
      [
+      "Kimi K3",
+      2.4175
+     ],
+     [
       "Claude Sonnet 5.5",
       2.1872
      ],
      [
       "Jev",
       2.086
+     ],
+     [
+      "GPT-6.1 Sol",
+      1.5569
      ]
     ],
     "others_share": 0
@@ -13171,15 +13209,11 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      17.4112
+      17.4113
      ],
      [
       "GLM 5.3",
-      13.7932
-     ],
-     [
-      "Grok 4.7",
-      12.9373
+      13.7934
      ],
      [
       "Kimi K3",
@@ -13202,12 +13236,16 @@
       2.3098
      ],
      [
+      "DeepSeek V4.1 Flash 1017",
+      1.6088
+     ],
+     [
       "GPT-6 Luna",
       1.3515
      ],
      [
-      "GLM 5.3 Flash",
-      1.1011
+      "Claude Fable 5.1",
+      1.2717
      ]
     ],
     "others_share": 0
@@ -13237,10 +13275,6 @@
       4.7926
      ],
      [
-      "GLM 5.3",
-      4.1988
-     ],
-     [
       "text-embedding-3-small",
       2.8058
      ],
@@ -13251,6 +13285,10 @@
      [
       "Claude Haiku 5.5",
       1.8091
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      1.5777
      ],
      [
       "Jev 1.13.0",
@@ -13272,10 +13310,6 @@
       12.446
      ],
      [
-      "GLM 5.3",
-      9.3819
-     ],
-     [
       "Beam 1.0",
       7.4178
      ],
@@ -13288,10 +13322,6 @@
       4.9628
      ],
      [
-      "Grok 4.7",
-      4.1032
-     ],
-     [
       "GLM 5.3 Flash",
       3.778
      ],
@@ -13302,6 +13332,14 @@
      [
       "Claude Sonnet 5.5",
       2.2142
+     ],
+     [
+      "GPT-6.1 Sol",
+      1.8956
+     ],
+     [
+      "Kimi K3",
+      1.7437
      ]
     ],
     "others_share": 0
@@ -13312,15 +13350,11 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      18.233
+      18.2332
      ],
      [
       "GLM 5.3",
-      13.7862
-     ],
-     [
-      "Grok 4.7",
-      8.1455
+      13.7863
      ],
      [
       "Kimi K3",
@@ -13328,7 +13362,7 @@
      ],
      [
       "Claude Sonnet 5.5",
-      5.569
+      5.5691
      ],
      [
       "GPT-6.1 Sol",
@@ -13340,15 +13374,19 @@
      ],
      [
       "Gemini 3.8 Flash",
-      2.4097
+      2.4098
      ],
      [
-      "GLM 5.3 Flash",
-      2.2597
+      "DeepSeek V4.1 Flash 1017",
+      1.4563
      ],
      [
       "GPT-6 Luna",
       1.3869
+     ],
+     [
+      "Claude Fable 5.1",
+      1.3121
      ]
     ],
     "others_share": 0
@@ -13382,16 +13420,16 @@
       4.3291
      ],
      [
-      "GLM 5.3",
-      4.0304
-     ],
-     [
       "text-embedding-3-small",
       2.9931
      ],
      [
       "Claude Haiku 5.5",
       1.9405
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      1.4573
      ],
      [
       "Jev 1.13.0",
@@ -13413,10 +13451,6 @@
       9.7619
      ],
      [
-      "GLM 5.3",
-      9.7537
-     ],
-     [
       "GLM 5.3 Flash",
       8.1751
      ],
@@ -13433,16 +13467,20 @@
       5.6527
      ],
      [
-      "Grok 4.7",
-      2.7975
-     ],
-     [
       "Jev",
       2.6071
      ],
      [
       "Claude Sonnet 5.5",
       2.3304
+     ],
+     [
+      "GPT-6.1 Sol",
+      2.0144
+     ],
+     [
+      "Kimi K3",
+      1.8489
      ]
     ],
     "others_share": 0
@@ -13453,11 +13491,11 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      20.3443
+      20.3445
      ],
      [
       "GLM 5.3",
-      15.3945
+      15.3946
      ],
      [
       "Kimi K3",
@@ -13472,10 +13510,6 @@
       5.0843
      ],
      [
-      "GLM 5.3 Flash",
-      3.6581
-     ],
-     [
       "GPT-6 Astra",
       2.9483
      ],
@@ -13484,8 +13518,12 @@
       2.3404
      ],
      [
-      "Grok 4.7",
-      1.8072
+      "DeepSeek V4.1 Flash 1017",
+      1.4786
+     ],
+     [
+      "Claude Fable 5.1",
+      1.4518
      ],
      [
       "GPT-6 Luna",
@@ -13523,16 +13561,16 @@
       4.4632
      ],
      [
-      "GLM 5.3",
-      3.3616
-     ],
-     [
       "text-embedding-3-small",
       2.9357
      ],
      [
       "Claude Haiku 5.5",
       1.8757
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      1.3523
      ],
      [
       "Jev 1.13.0",
@@ -13558,10 +13596,6 @@
       11.5022
      ],
      [
-      "GLM 5.3",
-      10.034
-     ],
-     [
       "Beam 1.0",
       7.949
      ],
@@ -13582,8 +13616,12 @@
       2.5376
      ],
      [
-      "Grok 4.7",
-      0.5279
+      "GPT-6.1 Sol",
+      2.2719
+     ],
+     [
+      "Kimi K3",
+      1.9846
      ]
     ],
     "others_share": 0
@@ -13594,19 +13632,15 @@
     "shares": [
      [
       "GLM 5.3",
-      21.5925
+      21.5926
      ],
      [
       "Claude Opus 5.5",
-      16.5674
+      16.5675
      ],
      [
       "Kimi K3",
-      8.4822
-     ],
-     [
-      "GLM 5.3 Flash",
-      5.0848
+      8.4823
      ],
      [
       "Claude Sonnet 5.5",
@@ -13625,12 +13659,16 @@
       2.2244
      ],
      [
-      "Grok 4.7",
-      1.872
+      "DeepSeek V4.1 Flash 1017",
+      1.4041
      ],
      [
       "GPT-6 Luna",
       1.2145
+     ],
+     [
+      "Claude Fable 5.1",
+      1.1909
      ]
     ],
     "others_share": 0
@@ -13641,7 +13679,7 @@
     "shares": [
      [
       "Jev",
-      20.9636
+      20.9637
      ],
      [
       "GLM 5.3 Flash",
@@ -13650,10 +13688,6 @@
      [
       "DeepSeek V4.1 Flash",
       7.4611
-     ],
-     [
-      "GLM 5.3",
-      6.4031
      ],
      [
       "GPT-6 Luna",
@@ -13678,6 +13712,10 @@
      [
       "Jev 1.13.0",
       1.1714
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      1.1576
      ]
     ],
     "others_share": 0
@@ -13686,10 +13724,6 @@
     "day": "2026-10-24",
     "metric": "tokens",
     "shares": [
-     [
-      "GLM 5.3",
-      15.579
-     ],
      [
       "DeepSeek V4.1 Flash 1017",
       15.1094
@@ -13719,12 +13753,16 @@
       2.675
      ],
      [
+      "Kimi K3",
+      1.9803
+     ],
+     [
       "Claude Sonnet 5.5",
       1.7217
      ],
      [
-      "Grok 4.7",
-      0.4397
+      "GPT-6.1 Sol",
+      1.424
      ]
     ],
     "others_share": 0
@@ -13735,19 +13773,15 @@
     "shares": [
      [
       "GLM 5.3",
-      24.1672
+      24.1676
      ],
      [
       "Claude Opus 5.5",
-      15.4779
-     ],
-     [
-      "Grok 4.7",
-      7.6017
+      15.4781
      ],
      [
       "Kimi K3",
-      6.1273
+      6.1274
      ],
      [
       "Claude Sonnet 5.5",
@@ -13755,23 +13789,27 @@
      ],
      [
       "GPT-6.1 Sol",
-      3.744
+      3.7441
      ],
      [
       "GPT-6 Astra",
-      3.1043
+      3.1044
      ],
      [
       "Gemini 3.8 Flash",
-      2.7487
+      2.7488
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      2.1489
+     ],
+     [
+      "Claude Fable 5.1",
+      1.5223
      ],
      [
       "GPT-6 Luna",
       1.3387
-     ],
-     [
-      "GLM 5.3 Flash",
-      0.7218
      ]
     ],
     "others_share": 0
@@ -13782,7 +13820,7 @@
     "shares": [
      [
       "Jev",
-      18.3185
+      18.3186
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -13801,10 +13839,6 @@
       5.0702
      ],
      [
-      "GLM 5.3",
-      4.9165
-     ],
-     [
       "text-embedding-3-small",
       3.4743
      ],
@@ -13819,6 +13853,10 @@
      [
       "Jev 1.13.0",
       1.6598
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      1.5101
      ]
     ],
     "others_share": 0
@@ -13830,10 +13868,6 @@
      [
       "DeepSeek V4.1 Flash 1017",
       19.5779
-     ],
-     [
-      "GLM 5.3",
-      16.3165
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -13860,12 +13894,16 @@
       2.5028
      ],
      [
-      "Grok 4.7",
-      2.2819
-     ],
-     [
       "Claude Sonnet 5.5",
       1.6008
+     ],
+     [
+      "Kimi K3",
+      1.5965
+     ],
+     [
+      "GPT-6.1 Sol",
+      1.5668
      ]
     ],
     "others_share": 0
@@ -13876,11 +13914,11 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      21.3989
+      21.3991
      ],
      [
       "GLM 5.3",
-      14.138
+      14.1381
      ],
      [
       "Claude Sonnet 5.5",
@@ -13888,7 +13926,7 @@
      ],
      [
       "GPT-6.1 Sol",
-      5.0415
+      5.0416
      ],
      [
       "Kimi K3",
@@ -13900,19 +13938,19 @@
      ],
      [
       "Gemini 3.8 Flash",
-      2.7521
+      2.7522
      ],
      [
-      "Grok 4.7",
-      2.1531
+      "DeepSeek V4.1 Flash 1017",
+      2.2376
+     ],
+     [
+      "Claude Fable 5.1",
+      1.7867
      ],
      [
       "GPT-6 Luna",
-      1.5307
-     ],
-     [
-      "GLM 5.3 Flash",
-      1.1073
+      1.5308
      ]
     ],
     "others_share": 0
@@ -13923,7 +13961,7 @@
     "shares": [
      [
       "Jev",
-      21.2396
+      21.2397
      ],
      [
       "GPT-6 Luna",
@@ -13942,10 +13980,6 @@
       4.566
      ],
      [
-      "GLM 5.3",
-      3.7336
-     ],
-     [
       "text-embedding-3-small",
       3.326
      ],
@@ -13956,6 +13990,10 @@
      [
       "GLM 5.3 Flash",
       2.2781
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      1.2686
      ],
      [
       "Jev 1.13.0",
@@ -13975,10 +14013,6 @@
      [
       "DeepSeek V4.1 Flash",
       13.8796
-     ],
-     [
-      "GLM 5.3",
-      10.2461
      ],
      [
       "Beam 1.0",
@@ -14005,8 +14039,12 @@
       2.5279
      ],
      [
-      "Grok 4.7",
-      0.6138
+      "GPT-6.1 Sol",
+      2.2309
+     ],
+     [
+      "Kimi K3",
+      1.3968
      ]
     ],
     "others_share": 0
@@ -14017,23 +14055,19 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      20.8322
+      20.8326
      ],
      [
       "GLM 5.3",
-      10.4251
-     ],
-     [
-      "Grok 4.7",
-      9.2462
+      10.4253
      ],
      [
       "Claude Sonnet 5.5",
-      6.0082
+      6.0083
      ],
      [
       "GPT-6.1 Sol",
-      4.496
+      4.4961
      ],
      [
       "Kimi K3",
@@ -14044,12 +14078,16 @@
       3.5042
      ],
      [
-      "GLM 5.3 Flash",
-      2.4646
-     ],
-     [
       "Gemini 3.8 Flash",
       2.1982
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      1.541
+     ],
+     [
+      "Claude Fable 5.1",
+      1.4931
      ],
      [
       "GPT-6 Luna",
@@ -14064,7 +14102,7 @@
     "shares": [
      [
       "Jev",
-      20.2074
+      20.2075
      ],
      [
       "GPT-6 Luna",
@@ -14087,16 +14125,16 @@
       4.0804
      ],
      [
-      "GLM 5.3",
-      3.623
-     ],
-     [
       "Claude Haiku 5.5",
       3.4453
      ],
      [
       "text-embedding-3-small",
       3.2422
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      2.1404
      ],
      [
       "Jev 1.13.0",
@@ -14126,10 +14164,6 @@
       9.4265
      ],
      [
-      "GLM 5.3",
-      8.2432
-     ],
-     [
       "Claude Opus 5.5",
       5.8876
      ],
@@ -14138,16 +14172,20 @@
       5.2114
      ],
      [
-      "Grok 4.7",
-      2.9756
-     ],
-     [
       "Jev",
       2.9486
      ],
      [
       "Claude Sonnet 5.5",
       2.4207
+     ],
+     [
+      "GPT-6.1 Sol",
+      2.0937
+     ],
+     [
+      "Kimi K3",
+      1.24
      ]
     ],
     "others_share": 0
@@ -14159,10 +14197,6 @@
      [
       "Claude Opus 5.5",
       16.8237
-     ],
-     [
-      "Grok 4.7",
-      15.6443
      ],
      [
       "Kimi K3",
@@ -14178,19 +14212,23 @@
      ],
      [
       "GPT-6.1 Sol",
-      3.5769
+      3.577
      ],
      [
       "GPT-6 Astra",
       2.8597
      ],
      [
-      "GLM 5.3 Flash",
-      2.297
-     ],
-     [
       "Gemini 3.8 Flash",
       2.1725
+     ],
+     [
+      "Claude Fable 5.1",
+      1.6582
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      1.3326
      ],
      [
       "GPT-6 Luna",
@@ -14205,7 +14243,7 @@
     "shares": [
      [
       "Jev",
-      18.794
+      18.7941
      ],
      [
       "GPT-6 Luna",
@@ -14232,16 +14270,16 @@
       3.4028
      ],
      [
-      "GLM 5.3",
-      2.5638
-     ],
-     [
       "Jev 1.13.0",
       2.5576
      ],
      [
       "Claude Haiku 5.5",
       1.9185
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      1.48
      ]
     ],
     "others_share": 0
@@ -14267,14 +14305,6 @@
       10.1514
      ],
      [
-      "GLM 5.3",
-      6.4845
-     ],
-     [
-      "Grok 4.7",
-      5.3364
-     ],
-     [
       "Claude Opus 5.5",
       5.2531
      ],
@@ -14287,8 +14317,16 @@
       2.5547
      ],
      [
+      "Kimi K3",
+      2.4225
+     ],
+     [
       "Claude Sonnet 5.5",
       2.1444
+     ],
+     [
+      "GPT-6.1 Sol",
+      1.6425
      ]
     ],
     "others_share": 0
@@ -14299,19 +14337,15 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      20.0979
+      20.098
      ],
      [
       "Kimi K3",
-      11.2535
-     ],
-     [
-      "Grok 4.7",
-      11.1383
+      11.2536
      ],
      [
       "Claude Sonnet 5.5",
-      5.533
+      5.5331
      ],
      [
       "GLM 5.3",
@@ -14319,7 +14353,7 @@
      ],
      [
       "GPT-6.1 Sol",
-      4.2348
+      4.2349
      ],
      [
       "GPT-6 Astra",
@@ -14330,8 +14364,12 @@
       2.7695
      ],
      [
-      "GLM 5.3 Flash",
-      1.8557
+      "DeepSeek V4.1 Flash 1017",
+      1.4321
+     ],
+     [
+      "Claude Fable 5.1",
+      1.2635
      ],
      [
       "GPT-6 Luna",
@@ -14350,7 +14388,7 @@
      ],
      [
       "GPT-6 Luna",
-      8.4049
+      8.405
      ],
      [
       "GLM 5.3 Flash",
@@ -14381,8 +14419,8 @@
       2.1233
      ],
      [
-      "GLM 5.3",
-      2.0431
+      "DeepSeek V4 Flash 0731",
+      2.0795
      ]
     ],
     "others_share": 0
@@ -14416,20 +14454,20 @@
       5.0339
      ],
      [
-      "GLM 5.3",
-      3.8173
-     ],
-     [
-      "Grok 4.7",
-      3.7003
-     ],
-     [
       "Jev",
       3.4895
      ],
      [
+      "Kimi K3",
+      2.9946
+     ],
+     [
       "Claude Sonnet 5.5",
       2.2644
+     ],
+     [
+      "GPT-6.1 Sol",
+      2.0497
      ]
     ],
     "others_share": 0
@@ -14443,16 +14481,12 @@
       19.2646
      ],
      [
-      "Grok 4.7",
-      17.7691
-     ],
-     [
       "GLM 5.3",
       11.2805
      ],
      [
       "Claude Sonnet 5.5",
-      5.1948
+      5.1949
      ],
      [
       "GPT-6.1 Sol",
@@ -14464,19 +14498,23 @@
      ],
      [
       "Kimi K3",
-      4.0288
-     ],
-     [
-      "GLM 5.3 Flash",
-      2.3349
+      4.0289
      ],
      [
       "Gemini 3.8 Flash",
       2.0893
      ],
      [
+      "DeepSeek V4.1 Flash 1017",
+      1.8672
+     ],
+     [
       "GPT-6 Luna",
       1.1129
+     ],
+     [
+      "Claude Fable 5.1",
+      1.086
      ]
     ],
     "others_share": 0
@@ -14502,10 +14540,6 @@
       5.5152
      ],
      [
-      "GLM 5.3",
-      4.9146
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       4.9118
      ],
@@ -14516,6 +14550,10 @@
      [
       "text-embedding-3-small",
       3.7454
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      3.4696
      ],
      [
       "Jev 1.13.0",
@@ -14545,20 +14583,12 @@
       9.4989
      ],
      [
-      "GLM 5.3",
-      9.1493
-     ],
-     [
       "DeepSeek V4.1 Flash",
       8.4518
      ],
      [
       "Claude Opus 5.5",
       5.4347
-     ],
-     [
-      "Grok 4.7",
-      5.3486
      ],
      [
       "GPT-6 Luna",
@@ -14571,6 +14601,14 @@
      [
       "Claude Sonnet 5.5",
       1.9729
+     ],
+     [
+      "GPT-6.1 Sol",
+      1.9693
+     ],
+     [
+      "Kimi K3",
+      1.2042
      ]
     ],
     "others_share": 0
@@ -14581,15 +14619,11 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      19.3527
+      19.3528
      ],
      [
       "GLM 5.3",
-      14.1922
-     ],
-     [
-      "Grok 4.7",
-      12.4802
+      14.1923
      ],
      [
       "Kimi K3",
@@ -14597,11 +14631,15 @@
      ],
      [
       "Claude Sonnet 5.5",
-      5.6964
+      5.6965
      ],
      [
       "GPT-6.1 Sol",
       3.8883
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      2.5239
      ],
      [
       "GPT-6 Astra",
@@ -14612,8 +14650,8 @@
       2.0283
      ],
      [
-      "GLM 5.3 Flash",
-      1.8762
+      "Claude Fable 5.1",
+      1.3898
      ],
      [
       "GPT-6 Luna",
@@ -14651,8 +14689,8 @@
       4.1998
      ],
      [
-      "GLM 5.3",
-      3.867
+      "DeepSeek V4 Flash 0731",
+      3.7274
      ],
      [
       "text-embedding-3-small",
@@ -14686,10 +14724,6 @@
       12.8588
      ],
      [
-      "GLM 5.3",
-      9.342
-     ],
-     [
       "GLM 5.3 Flash",
       6.3454
      ],
@@ -14706,12 +14740,16 @@
       3.1906
      ],
      [
-      "Grok 4.7",
-      2.9859
-     ],
-     [
       "Claude Sonnet 5.5",
       1.7901
+     ],
+     [
+      "Kimi K3",
+      1.7108
+     ],
+     [
+      "GPT-6.1 Sol",
+      1.3685
      ]
     ],
     "others_share": 0
@@ -14721,16 +14759,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Grok 4.7",
-      17.8045
-     ],
-     [
       "Claude Opus 5.5",
       17.2107
      ],
      [
       "GLM 5.3",
-      13.7024
+      13.7025
      ],
      [
       "Kimi K3",
@@ -14738,7 +14772,7 @@
      ],
      [
       "Claude Sonnet 5.5",
-      5.4529
+      5.453
      ],
      [
       "GPT-6.1 Sol",
@@ -14749,12 +14783,16 @@
       2.4982
      ],
      [
-      "GLM 5.3 Flash",
-      2.4661
+      "DeepSeek V4.1 Flash 1017",
+      2.204
      ],
      [
       "Gemini 3.8 Flash",
       2.0879
+     ],
+     [
+      "Claude Fable 5.1",
+      1.7488
      ],
      [
       "GPT-6 Luna",
@@ -14788,10 +14826,6 @@
       5.4685
      ],
      [
-      "GLM 5.3",
-      4.6208
-     ],
-     [
       "GLM 5.3 Flash",
       4.601
      ],
@@ -14802,6 +14836,10 @@
      [
       "Jev 1.13.0",
       2.9951
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      2.1995
      ],
      [
       "Claude Haiku 5.5",
@@ -14827,16 +14865,8 @@
       12.8331
      ],
      [
-      "GLM 5.3",
-      8.8054
-     ],
-     [
       "GLM 5.3 Flash",
       8.6591
-     ],
-     [
-      "Grok 4.7",
-      4.2979
      ],
      [
       "GPT-6 Luna",
@@ -14853,6 +14883,14 @@
      [
       "Claude Sonnet 5.5",
       1.6631
+     ],
+     [
+      "GPT-6.1 Sol",
+      1.2776
+     ],
+     [
+      "Kimi K3",
+      1.2212
      ]
     ],
     "others_share": 0
@@ -14861,10 +14899,6 @@
     "day": "2026-11-02",
     "metric": "cost",
     "shares": [
-     [
-      "Grok 4.7",
-      23.5394
-     ],
      [
       "Claude Opus 5.5",
       21.0814
@@ -14875,7 +14909,7 @@
      ],
      [
       "Claude Sonnet 5.5",
-      5.6454
+      5.6455
      ],
      [
       "GPT-6.1 Sol",
@@ -14886,10 +14920,6 @@
       4.3319
      ],
      [
-      "GLM 5.3 Flash",
-      2.4075
-     ],
-     [
       "Gemini 3.8 Flash",
       2.2419
      ],
@@ -14898,8 +14928,16 @@
       2.2241
      ],
      [
+      "DeepSeek V4.1 Flash 1017",
+      1.7813
+     ],
+     [
       "GPT-6 Luna",
       1.553
+     ],
+     [
+      "Claude Fable 5.1",
+      1.0504
      ]
     ],
     "others_share": 0
@@ -14922,7 +14960,7 @@
      ],
      [
       "Jev 1.14.0",
-      5.4563
+      5.4564
      ],
      [
       "DeepSeek V4.1 Flash 1017",
@@ -14945,8 +14983,8 @@
       2.1286
      ],
      [
-      "GLM 5.3",
-      1.8067
+      "DeepSeek V4 Flash 0731",
+      1.5531
      ]
     ],
     "others_share": 0
@@ -14972,10 +15010,6 @@
       9.615
      ],
      [
-      "Grok 4.7",
-      6.6133
-     ],
-     [
       "GPT-6 Luna",
       5.7356
      ],
@@ -14984,16 +15018,20 @@
       5.4997
      ],
      [
-      "GLM 5.3",
-      4.4637
-     ],
-     [
       "Jev",
       2.8502
      ],
      [
       "Claude Sonnet 5.5",
       2.1234
+     ],
+     [
+      "GPT-6.1 Sol",
+      1.9349
+     ],
+     [
+      "Kimi K3",
+      0.9605
      ]
     ],
     "others_share": 0
@@ -15007,12 +15045,8 @@
       23.3038
      ],
      [
-      "Grok 4.7",
-      16.3016
-     ],
-     [
       "GLM 5.3",
-      6.8746
+      6.8747
      ],
      [
       "Kimi K3",
@@ -15035,12 +15069,16 @@
       2.1096
      ],
      [
-      "GLM 5.3 Flash",
-      1.8791
-     ],
-     [
       "GPT-6 Luna",
       1.8434
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      1.5838
+     ],
+     [
+      "Claude Fable 5.1",
+      1.0917
      ]
     ],
     "others_share": 0
@@ -15078,16 +15116,16 @@
       3.2593
      ],
      [
-      "GLM 5.3",
-      2.4369
-     ],
-     [
       "Claude Haiku 5.5",
       2.15
      ],
      [
       "text-embedding-3-small",
       2.114
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      1.8337
      ]
     ],
     "others_share": 0
@@ -15121,20 +15159,161 @@
       6.9164
      ],
      [
-      "GLM 5.3",
-      6.0812
-     ],
-     [
-      "Grok 4.7",
-      5.3717
-     ],
-     [
       "Jev",
       3.5214
      ],
      [
       "Claude Sonnet 5.5",
       2.6691
+     ],
+     [
+      "GPT-6.1 Sol",
+      2.2443
+     ],
+     [
+      "Kimi K3",
+      1.4181
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-11-04",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 5.5",
+      28.046
+     ],
+     [
+      "Kimi K3",
+      10.8655
+     ],
+     [
+      "Claude Sonnet 5.5",
+      8.1442
+     ],
+     [
+      "GPT-6.1 Sol",
+      6.2842
+     ],
+     [
+      "GPT-6 Astra",
+      3.5819
+     ],
+     [
+      "Gemini 3.8 Flash",
+      2.7678
+     ],
+     [
+      "Claude Fable 5.1",
+      2.4681
+     ],
+     [
+      "GPT-6 Luna",
+      2.3957
+     ],
+     [
+      "GLM 5.3",
+      2.3765
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      1.9954
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-11-04",
+    "metric": "requests",
+    "shares": [
+     [
+      "Jev",
+      22.2764
+     ],
+     [
+      "GPT-6 Luna",
+      10.5179
+     ],
+     [
+      "Jev 1.14.0",
+      6.3391
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      4.7515
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      4.2167
+     ],
+     [
+      "Jev 1.13.0",
+      3.2768
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      2.5954
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.4647
+     ],
+     [
+      "Claude Haiku 5.5",
+      2.2391
+     ],
+     [
+      "text-embedding-3-small",
+      2.2044
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-11-04",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Beam 1.0",
+      19.583
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      15.4503
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      8.0827
+     ],
+     [
+      "GPT-6 Luna",
+      7.96
+     ],
+     [
+      "Claude Opus 5.5",
+      7.7551
+     ],
+     [
+      "GLM 5.3 Flash",
+      4.1507
+     ],
+     [
+      "Kimi K3",
+      3.9745
+     ],
+     [
+      "Jev",
+      3.711
+     ],
+     [
+      "Claude Sonnet 5.5",
+      3.2498
+     ],
+     [
+      "GPT-6.1 Sol",
+      2.8017
      ]
     ],
     "others_share": 0
