@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-11-05",
- "fetched_at": "2026-11-05T02:33:04+00:00",
+ "snapshot_date": "2026-11-06",
+ "fetched_at": "2026-11-06T02:31:32+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -578,6 +578,20 @@
     "country": "United States"
    },
    {
+    "name": "Meta Aiken",
+    "h100_equivalents": 147043.96159676605,
+    "power_mw": 129.0,
+    "capital_cost_busd": 4.8867780000000005,
+    "owner": "Meta",
+    "users": [
+     "Meta"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "United States"
+   },
+   {
     "name": "Google Midlothian",
     "h100_equivalents": 143580.85118746842,
     "power_mw": 103.0,
@@ -838,20 +852,6 @@
     ],
     "chip_types": [
      "B200"
-    ],
-    "country": "United States"
-   },
-   {
-    "name": "Meta Aiken",
-    "h100_equivalents": 78322.38504295099,
-    "power_mw": 69.0,
-    "capital_cost_busd": 2.613858,
-    "owner": "Meta",
-    "users": [
-     "Meta"
-    ],
-    "chip_types": [
-     "B300"
     ],
     "country": "United States"
    },
@@ -3180,6 +3180,34 @@
     "h100_equivalents": 151354.21930267813
    },
    {
+    "site": "Meta Aiken",
+    "date": "2024-05-30",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Aiken",
+    "date": "2026-04-08",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Meta Aiken",
+    "date": "2026-08-07",
+    "it_power_mw": 69.0,
+    "power_mw": 90.0,
+    "h100_equivalents": 78322.38504295099
+   },
+   {
+    "site": "Meta Aiken",
+    "date": "2026-11-05",
+    "it_power_mw": 129.0,
+    "power_mw": 168.0,
+    "h100_equivalents": 147043.96159676605
+   },
+   {
     "site": "Google Midlothian",
     "date": "2023-11-28",
     "it_power_mw": 0.0,
@@ -3997,34 +4025,6 @@
     "it_power_mw": 65.0,
     "power_mw": 91.0,
     "h100_equivalents": 78827.6907529055
-   },
-   {
-    "site": "Meta Aiken",
-    "date": "2024-05-30",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Meta Aiken",
-    "date": "2026-04-08",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Meta Aiken",
-    "date": "2026-08-07",
-    "it_power_mw": 69.0,
-    "power_mw": 90.0,
-    "h100_equivalents": 78322.38504295099
-   },
-   {
-    "site": "Meta Aiken",
-    "date": "2026-11-05",
-    "it_power_mw": 129.0,
-    "power_mw": 168.0,
-    "h100_equivalents": 147043.96159676605
    },
    {
     "site": "Core42 Lake Mariner",
@@ -5338,9 +5338,9 @@
   ],
   "aggregates": {
    "site_count": 96,
-   "total_power_mw": 15078.4,
-   "total_h100_equivalents": 15751800,
-   "total_capital_cost_busd": 571.2
+   "total_power_mw": 15138.4,
+   "total_h100_equivalents": 15820522,
+   "total_capital_cost_busd": 573.47
   }
  }
 }
