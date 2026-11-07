@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-11-06",
- "fetched_at": "2026-11-06T02:31:32+00:00",
+ "snapshot_date": "2026-11-07",
+ "fetched_at": "2026-11-07T01:59:31+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -746,18 +746,6 @@
     "country": "United States"
    },
    {
-    "name": "Huawei Wuhu",
-    "h100_equivalents": 96537.64527539161,
-    "power_mw": 199.0,
-    "capital_cost_busd": 7.538518,
-    "owner": "Huawei",
-    "users": [],
-    "chip_types": [
-     "Ascend 910C"
-    ],
-    "country": "China"
-   },
-   {
     "name": "CoreWeave Ellendale ND",
     "h100_equivalents": 93481.55634158666,
     "power_mw": 68.0,
@@ -784,18 +772,6 @@
      "B300"
     ],
     "country": "United States"
-   },
-   {
-    "name": "Huawei Horinger",
-    "h100_equivalents": 89439.11066195049,
-    "power_mw": 184.3,
-    "capital_cost_busd": 6.9816526,
-    "owner": "Huawei",
-    "users": [],
-    "chip_types": [
-     "Ascend 910C"
-    ],
-    "country": "China"
    },
    {
     "name": "CoreWeave Chester VA",
@@ -840,6 +816,19 @@
      "Trainium2"
     ],
     "country": "United States"
+   },
+   {
+    "name": "Huawei Horinger",
+    "h100_equivalents": 81043.96159676605,
+    "power_mw": 169.9,
+    "capital_cost_busd": 6.4361518,
+    "owner": "Huawei",
+    "users": [],
+    "chip_types": [
+     "Ascend 910C",
+     "Ascend 910B"
+    ],
+    "country": "China"
    },
    {
     "name": "CoreWeave Marble NC",
@@ -907,6 +896,21 @@
      "B300"
     ],
     "country": "United States"
+   },
+   {
+    "name": "Huawei Wuhu",
+    "h100_equivalents": 52830.72258716523,
+    "power_mw": 197.0,
+    "capital_cost_busd": 7.462754,
+    "owner": "Huawei",
+    "users": [],
+    "chip_types": [
+     "Ascend 910C",
+     "H20",
+     "Ascend 910B",
+     "Ascend 950PR"
+    ],
+    "country": "China"
    },
    {
     "name": "CoreWeave Norway",
@@ -3600,76 +3604,6 @@
     "h100_equivalents": 99545.22486104093
    },
    {
-    "site": "Huawei Wuhu",
-    "date": "2023-01-01",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2025-01-01",
-    "it_power_mw": 45.0,
-    "power_mw": 51.0,
-    "h100_equivalents": 21628.954017180393
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2025-03-01",
-    "it_power_mw": 119.0,
-    "power_mw": 137.0,
-    "h100_equivalents": 57767.55937342092
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2025-11-01",
-    "it_power_mw": 157.0,
-    "power_mw": 181.0,
-    "h100_equivalents": 76326.42748863062
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2026-01-24",
-    "it_power_mw": 157.0,
-    "power_mw": 181.0,
-    "h100_equivalents": 76326.42748863062
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2026-06-01",
-    "it_power_mw": 157.0,
-    "power_mw": 181.0,
-    "h100_equivalents": 76326.42748863062
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2026-08-06",
-    "it_power_mw": 157.0,
-    "power_mw": 181.0,
-    "h100_equivalents": 76326.42748863062
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2026-11-01",
-    "it_power_mw": 199.0,
-    "power_mw": 229.0,
-    "h100_equivalents": 96537.64527539161
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2026-12-31",
-    "it_power_mw": 364.0,
-    "power_mw": 419.0,
-    "h100_equivalents": 176595.25012632643
-   },
-   {
-    "site": "Huawei Wuhu",
-    "date": "2027-12-01",
-    "it_power_mw": 457.0,
-    "power_mw": 526.0,
-    "h100_equivalents": 221923.6988377969
-   },
-   {
     "site": "CoreWeave Ellendale ND",
     "date": "2023-10-31",
     "it_power_mw": 0.0,
@@ -3752,90 +3686,6 @@
     "it_power_mw": 80.0,
     "power_mw": 105.0,
     "h100_equivalents": 91965.63921172309
-   },
-   {
-    "site": "Huawei Horinger",
-    "date": "2023-10-08",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Huawei Horinger",
-    "date": "2025-02-24",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Huawei Horinger",
-    "date": "2025-04-01",
-    "it_power_mw": 0.0,
-    "power_mw": 0.0,
-    "h100_equivalents": 0.0
-   },
-   {
-    "site": "Huawei Horinger",
-    "date": "2025-06-01",
-    "it_power_mw": 36.1,
-    "power_mw": 41.5,
-    "h100_equivalents": 17532.64274886306
-   },
-   {
-    "site": "Huawei Horinger",
-    "date": "2025-07-01",
-    "it_power_mw": 74.0,
-    "power_mw": 85.1,
-    "h100_equivalents": 35901.061141990904
-   },
-   {
-    "site": "Huawei Horinger",
-    "date": "2026-02-01",
-    "it_power_mw": 113.6,
-    "power_mw": 130.6,
-    "h100_equivalents": 55096.513390601314
-   },
-   {
-    "site": "Huawei Horinger",
-    "date": "2026-03-05",
-    "it_power_mw": 113.6,
-    "power_mw": 130.6,
-    "h100_equivalents": 55096.513390601314
-   },
-   {
-    "site": "Huawei Horinger",
-    "date": "2026-05-12",
-    "it_power_mw": 113.6,
-    "power_mw": 130.6,
-    "h100_equivalents": 55096.513390601314
-   },
-   {
-    "site": "Huawei Horinger",
-    "date": "2026-06-07",
-    "it_power_mw": 113.6,
-    "power_mw": 130.6,
-    "h100_equivalents": 55096.513390601314
-   },
-   {
-    "site": "Huawei Horinger",
-    "date": "2026-07-01",
-    "it_power_mw": 184.3,
-    "power_mw": 212.0,
-    "h100_equivalents": 89439.11066195049
-   },
-   {
-    "site": "Huawei Horinger",
-    "date": "2026-08-18",
-    "it_power_mw": 184.3,
-    "power_mw": 212.0,
-    "h100_equivalents": 89439.11066195049
-   },
-   {
-    "site": "Huawei Horinger",
-    "date": "2028-02-14",
-    "it_power_mw": 346.4,
-    "power_mw": 414.6,
-    "h100_equivalents": 168107.6301162203
    },
    {
     "site": "CoreWeave Chester VA",
@@ -3999,6 +3849,76 @@
     "h100_equivalents": 145022.73875694795
    },
    {
+    "site": "Huawei Horinger",
+    "date": "2023-10-08",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2025-02-24",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2025-06-08",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2025-06-11",
+    "it_power_mw": 42.4,
+    "power_mw": 53.0,
+    "h100_equivalents": 19002.67812026276
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2026-03-05",
+    "it_power_mw": 42.4,
+    "power_mw": 53.0,
+    "h100_equivalents": 19002.67812026276
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2026-05-12",
+    "it_power_mw": 86.8,
+    "power_mw": 108.6,
+    "h100_equivalents": 40622.132390096005
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2026-06-07",
+    "it_power_mw": 86.8,
+    "power_mw": 108.6,
+    "h100_equivalents": 40622.132390096005
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2026-08-18",
+    "it_power_mw": 169.9,
+    "power_mw": 212.4,
+    "h100_equivalents": 81043.96159676605
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2026-12-22",
+    "it_power_mw": 216.4,
+    "power_mw": 270.5,
+    "h100_equivalents": 103644.26478019201
+   },
+   {
+    "site": "Huawei Horinger",
+    "date": "2028-02-17",
+    "it_power_mw": 351.1,
+    "power_mw": 438.8,
+    "h100_equivalents": 140820.61647296615
+   },
+   {
     "site": "CoreWeave Marble NC",
     "date": "2024-06-25",
     "it_power_mw": 0.0,
@@ -4144,6 +4064,76 @@
     "it_power_mw": 50.0,
     "power_mw": 70.0,
     "h100_equivalents": 56846.89236988378
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2023-01-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2025-01-01",
+    "it_power_mw": 44.0,
+    "power_mw": 57.0,
+    "h100_equivalents": 7544.871147043961
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2025-03-01",
+    "it_power_mw": 118.0,
+    "power_mw": 153.0,
+    "h100_equivalents": 19815.411824153613
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2025-11-01",
+    "it_power_mw": 156.0,
+    "power_mw": 202.0,
+    "h100_equivalents": 36010.30823648307
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-01-24",
+    "it_power_mw": 156.0,
+    "power_mw": 202.0,
+    "h100_equivalents": 36010.30823648307
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-06-01",
+    "it_power_mw": 156.0,
+    "power_mw": 202.0,
+    "h100_equivalents": 36010.30823648307
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-08-06",
+    "it_power_mw": 156.0,
+    "power_mw": 202.0,
+    "h100_equivalents": 36010.30823648307
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-11-01",
+    "it_power_mw": 197.0,
+    "power_mw": 256.0,
+    "h100_equivalents": 52830.72258716523
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2026-12-31",
+    "it_power_mw": 360.0,
+    "power_mw": 468.0,
+    "h100_equivalents": 119460.83880747852
+   },
+   {
+    "site": "Huawei Wuhu",
+    "date": "2027-12-01",
+    "it_power_mw": 453.0,
+    "power_mw": 589.0,
+    "h100_equivalents": 151419.40373926226
    },
    {
     "site": "CoreWeave Norway",
@@ -5338,9 +5328,9 @@
   ],
   "aggregates": {
    "site_count": 96,
-   "total_power_mw": 15138.4,
-   "total_h100_equivalents": 15820522,
-   "total_capital_cost_busd": 573.47
+   "total_power_mw": 15122.0,
+   "total_h100_equivalents": 15768420,
+   "total_capital_cost_busd": 572.85
   }
  }
 }
