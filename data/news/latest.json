@@ -1,13 +1,48 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-11-08",
- "fetched_at": "2026-11-08T01:29:18+00:00",
+ "snapshot_date": "2026-11-09",
+ "fetched_at": "2026-11-09T01:45:43+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "Data Center CFOs Prepare for Tougher Road Ahead After Democrats Sweep Congress - Bloomberg",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQjNVcTNta01WTC1STG05b3RmVlcwYS1DME1IMUc0VkluYjd6LWFodzVsa3g1NjlCTmxjWVFyTVpuRlVVYnJCWUQ2UXBHMlN3MWlLNE1aRVMwdTBJZnM4MnNwUGRXaFJMZmZYUlZBZ19XZXZJYkVhckd1LXJ3WGJEQ3prWktHWmQzWHlBVDFMbG9VR0xHOEJERjExa2lfeXhYWkdMZ0l3SmJCeGJ6T1ByNlZmbmhzcHhzekhtYkRRZUg?oc=5",
+    "source_name": "Bloomberg",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-11-09T01:31:00+00:00"
+   },
+   {
+    "title": "Nvidia CEO Jensen Huang admits affair with alleged Chinese spy, board to investigate - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTUJyS0tBdVQ1QWthQThEWUlOOUdqR3htQVZ5c0dJSmVpQU9uYTNJQ3VhWG1vZktDM1BKUWlRaFdjdXlQWHdqeHY0YmFUbnBDQnB2cXZHcmp6eVZjcG8xQTFsV0dsUW05dm9lOEloZ0Q0SV9xajg5cXNYclBYOXQ5cjI1U0lsV09xVEJtc3ptQXJRRG9lSU53bHNyVnBPeUtqZ3gweG9WX2huLUVTSFpXbzJ1UlVRX1haeGttTkhmVzQ2OU45S2c?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-11-08T23:15:22+00:00"
+   },
+   {
+    "title": "Hundreds arrested after Microsoft data center protest turns violent — Stop Dirty Data Centers coalition demands halt to AI data center expansion; Dutch police seize break-in tools, suspected stolen items from construction site - Tom's Hardware",
+    "link": "https://news.google.com/rss/articles/CBMijwNBVV95cUxQSnJkTk1iOUMxUlhJLWRxclRsN3RueFRFUHBILTdGYTJwQVJodEFHUk9yM2NrVG9SazgyMVloRkZ1VmFTRlZhWjk1NUhDaERielU5ajh2eER6WnhLSkRWN0hmSDV6NTE0cUh2eWxlS0oyOTNTRV9LYlk0cEtEZFdVNk5ETWhWeGtidkVwdWpwQjFrcXg5UmpQNUljT2JfdUtXc2hwYi1wc0theWJmSFdOdFBMbVh3N2x6N2FhTmZGdlJkLVc0SkZaT3RnaUh2OTdBYXYxQzEzYXduRjFWeWtfTFZwUENldndjN2p3dHZIcnRVZlA1V0JBT2xLMDlPUWJtcTU4aXRyZlFRdURPRTBBVHR1Ym9rcTVvMVZCZUpFMVBVN281QVRpX3pEVzVnb0RYZUdIY2luX29Wb0RjblpjOENjdEJ2d2RCX0pMOXVtd1hmT2lkR0l6Vk5aLW5uUDdHR3Bic3ZRSmpOYU5ZZzNyRl91RzRaMGVjeW5VQjgxUGt2V0lZSWh4ZzdZeUlLVk0?oc=5",
+    "source_name": "Tom's Hardware",
+    "source_url": "https://www.tomshardware.com",
+    "published": "2026-11-08T13:20:00+00:00"
+   },
+   {
+    "title": "Anthropic strikes $3.4bn deal to generate gas-fired power for data centres - Financial Times",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQaDhoaHlMZk8tNWhZWlFEczhOc1FpNnZjcnlZTF9MUDJrVG5mb2NvUkdzZlBldmx2YkhEMkQtdVRuaXpWYkhTcDd2N3VLWlFvLW81S0ttcWxKTUlkdXBOMWRNZUIzS0o4ZVM1Y1dpbUIxRG4waXdxRVlncjJiVTM2TGtTZ0g?oc=5",
+    "source_name": "Financial Times",
+    "source_url": "https://www.ft.com",
+    "published": "2026-11-08T11:00:09+00:00"
+   },
+   {
+    "title": "Which AI Chatbots Have the Highest Emissions? Here's What We Know - Bloomberg",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNT2I0SW8wX19vQTV5cm9qR2pfUFVDY2dKVXozSTRNOC1aQXRMWVJwbURVWVVkQ0FBYWM1S01Ic3VXdDVfZHgzTl9xTDZaNG9iX1VVTjdpRW5XcUhka19KeHlBTk84WkhpTllkd2dTazB3T2JoVFhkMGJ4dlZmOEl6MTBsUk1kRG9WRTVpUnkzN0dHbmFmM2plaXl2ZXBfQnVncVluVWdJMzBia3BLcnppSGwyck9ib0hJSzN5YlQwLUZrMTJIMnc?oc=5",
+    "source_name": "Bloomberg",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-11-08T10:00:00+00:00"
+   },
    {
     "title": "AI Backlash Spreads Across Europe With Data Center Protests - Bloomberg.com",
     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZHJJd3JlOWFlY0J0Q0g3OXVaMGxlcTIwR2c0cFZxc3ZDRWo0ZmZhZWtxU2NwVnlseEYwX1BDSUFwWHFYaTdYaHpKclYzRlZqZ0c3a1k4Z2V5bzFFci1HSExwR0U1bWk0dVdNbDFDc3BoTEpuRDRDUVpvZ2dkZjR0Xy12ejl3OXpwQVBPTm13WGx2MTdpZ255aDBwRFozMExLbVkyTlRDRFFCSF9nMjFB?oc=5",
@@ -49,6 +84,13 @@
     "source_name": "Reuters",
     "source_url": "https://www.reuters.com",
     "published": "2026-11-06T19:16:09+00:00"
+   },
+   {
+    "title": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTlBrMkJ1TjdYY3VXQTVQeWZ3NFBvZE10d25OU1d2UXVLTlhXQWlrUzBDX082T2UyY3dSY2VBX2tnanFYQmRkVmRMMnU1Y2pvcEZ1eHU0WXBNRmZMa1pzaWFrT1FWZkF3cE44QVVkblgwMHFKOXZEZS16UHVNV3RNQUhEbUdmTHBGd3B6NTF4YmpHNEJrUktjdVdyZlgyU1V0ZEstT2hvNWdxQQ?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-11-06T18:31:32+00:00"
    },
    {
     "title": "OpenAI, Arm and Qualcomm executives react to post-midterm AI sell-off - CNBC",
@@ -2065,48 +2107,6 @@
     "source_name": "Business Insider",
     "source_url": "https://www.businessinsider.com",
     "published": "2026-10-19T09:00:00+00:00"
-   },
-   {
-    "title": "AI Cloud Firm Nscale Faces Investor Pushback Over IPO Valuation - Bloomberg.com",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOczR6MkNKMHd6X3VfQlgzNFlNTnQ2MDZhRWNBbXd6OE1GZlBaYlJ2RTk1YlNsNjZkVF9uUjNvNjlPd3J4WDVwNFlSYl8xNUp4eHJlMUYyOVRKaklyd0JCemRVbk8xNjdYOGx5U0JrMWU2VVU5Xy01bkF1bjY2SG8zQXJIQUNHS25hUUMxUWE3TmE4ek5Id2M2emZaTWdGYUplc2hLWjNVZDI0VjF3Q3gzbGpwSkg?oc=5",
-    "source_name": "Bloomberg.com",
-    "source_url": "https://www.bloomberg.com",
-    "published": "2026-10-18T21:13:44+00:00"
-   },
-   {
-    "title": "Microsoft Pulls Out of Nscale U.K. Data Center Following Delays - The Information",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSGt5dnNxY2lxRzJpbFhwYUxxb0ZMTzF2bjN2cnhhQ0ZQaVN1cFNwdEdISWRpdk5zU2RqOEF5T1BkX2pVVWIyai1YVTJ6cmhkbHJOLVdqSDd5bjMzM05FOUl5S3dVVXVNTk05T2RtcW0yM2UtRno5OXBmS25wajdnRkNNNlNqdjZhbG5oY0NyaGk1M29ja2ppaHkwVUI?oc=5",
-    "source_name": "The Information",
-    "source_url": "https://www.theinformation.com",
-    "published": "2026-10-18T20:08:00+00:00"
-   },
-   {
-    "title": "Microsoft pulls out of UK data center deal with Nscale, Telegraph reports - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMmVDUVQyZjhnbFN2MHQ1MHVPMHVpLVVsUFE1aU44Y2QzMUx2a25MRXR5OWtkTGd5RkViaG9fM3lZcnFHblYyT2xMeGZ3MHI3NkFjQ0FhdWFVRWlmdHlPRDRFRVRsclFpbUExakpiN3Z4aGMtODdDb09Mb0xXbnIxdU04ZmQ3UTEyTkhQd2EyMFhDNzQzYVgzZG9FeDlNYTJTanNOOThVSGRTb2RnRWdCajBVXzFMcDB4MWZpbXR1STMzZ1JaOXRr?oc=5",
-    "source_name": "Reuters",
-    "source_url": "https://www.reuters.com",
-    "published": "2026-10-18T17:19:48+00:00"
-   },
-   {
-    "title": "Microsoft Scraps UK Data Center Deal With Nscale, Telegraph Says - Bloomberg.com",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYXhlWkpqYnAwNVVYQjBLWTdQdi1HYm50VjhBQ3UwTkNhc0gtTGhoMnluWGxuMVdmZWM3eFRjVFA5dWZ0STlFRVJ6S090WVFveFF1RVNjcHFpd2ZNTFJfamxDNGl6YTNrSmkta2pteXpnMElHVXVjcUI5WDNlemltdVRSZURQUXBmcTFrV0NyY2R0a3J1clFlOGU2RjRTbVRnbzRnU3NvRktJR3g3RUw4Zm9vTnE?oc=5",
-    "source_name": "Bloomberg.com",
-    "source_url": "https://www.bloomberg.com",
-    "published": "2026-10-18T15:00:14+00:00"
-   },
-   {
-    "title": "The end of independent infrastructure roadmaps: how AI is forcing data center co-design - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNVnB6RmtCUF80cWwwaGZRZ3JwZG5PakxJdi1oc3ZQeEZIc3dJZE5RcFRSdmtQX0VZb1FPVDF5SGMxek9vTDNMTDlyNWJpdG1JX0Y2TTZEaUdhSjlEQzFNeGxla0N4dURFWlA0QlNvR3BHVU1wbExWekVwc0Y1U0tWM01EbUhJcHRyekJvOGtpZFM2Y0NsbHhQb0tvd2pyYlRfcUFnOFJENG1WMzJrSmtPdnNtMHdDekk1RUdMbHh6emRBV01FbV9zcFBUX1ZyRUU?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-10-18T14:04:31+00:00"
-   },
-   {
-    "title": "Louisiana residents are training for jobs at Meta's largest-ever AI data center: 'Why not get in now?' - Business Insider",
-    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzYnBqSG9lak51dURYcDlwdnFqSmZkMXJwOXRVNllneDI0aC1QU1E2UUFjMWtzajdHbXJIMzAyWFBWZTRjYXdKLVZOQm5vdGVvOXotNldNamdGSmM1SkVpWDAzOXdyNFFYMkgxWWdsYVpXRlBFZHk0c2x3QQ?oc=5",
-    "source_name": "Business Insider",
-    "source_url": "https://www.businessinsider.com",
-    "published": "2026-10-18T09:04:00+00:00"
    }
   ],
   "queries": [
