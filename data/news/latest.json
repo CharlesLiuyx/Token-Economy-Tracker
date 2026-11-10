@@ -1,13 +1,104 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-11-09",
- "fetched_at": "2026-11-09T01:45:43+00:00",
+ "snapshot_date": "2026-11-10",
+ "fetched_at": "2026-11-10T03:46:17+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "Jim Cramer says Nvidia investors need to prepare for a future without Jensen Huang - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdG82bnM4dENmQVp2M21kbHp1OW1YemxqSUhRajRBTnJzSHMtVG0wMUVqMWlpYkJFZDBIeDM2bUtVa0dSYWVkeWgwUzFyM0wyVUVuT2gwVnF0TmtjMHFUbW41WlRSd1ItcXh0OV8wUnBpa2hQOUtGNnFWRXJ5UGdZUXZtUk1zWnJMeVE?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-11-09T23:24:05+00:00"
+   },
+   {
+    "title": "Nvidia-Backed Fireworks AI Notifies Customers of Its Second Hack in Weeks - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWWdORHIwclRfVUdrbS1JaUlRbnZDcS1ibFd4clRiTWZ4Q0V6em9EYWN0anliWWpsNWhMZERtRFFvNlJITDZVQkV5Mnd5aUV6SXVjZWM4VEt5VHNCajBJeml4VkRUTVM0RFl1bUd2SDNDcXJnall3MnN5Q09ZTG4tbmxWem03OXlWbDdoVVBXSVctZFRTWTREQUFqYUI0Q3dKTFh0MVZYN00xZlhYVE83N0dIUHBveG1mTUMtQkpWUy02Zw?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-11-09T20:46:58+00:00"
+   },
+   {
+    "title": "Nvidia Opens Investigation Into Jensen Huang’s Relationship With Suspected Chinese Spy - The New York Times",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaHdZZkpucG9aOVF5R2JPeHljWV85XzlhbUxnbUREYWlKQzBiR1UzeWxwaF9EMnpDajI1aXlmMlo0aENzeGdyRzJDSEtJR0xVanhFSkN3bXE0R1FYV2VWZHdIV1A1MmFlczN4VnRZcVZ5QV9xdUlxZXVlZVl3eHRqVWxsVmE1dktHZzdnelB0ZjUwejJj?oc=5",
+    "source_name": "The New York Times",
+    "source_url": "https://www.nytimes.com",
+    "published": "2026-11-09T18:37:00+00:00"
+   },
+   {
+    "title": "Land & Expand: Texas’ AI Boom Meets a New Political Reality - Data Center Frontier",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVWtBb3BzZXlaeWE1VU5XeW9vN3lrZnZodjZBUHVEOWJDdWNka1lEMGw4ZWdQSWNncFBZYmdTWVZPcER5WlBsdHdNaUZseXE2OHhacjRFQ01NLVY2QVBPZzNIcXZ3X3JhSVNwQTZkdDlJRU5oMjFGaGdCdmJkQkd2azRJRnhIcEQ2V3hQb3FSXzViOWNaQ05pSmFkMlhQU1FvRnI3T1YwbGRJdTJGdUdhUk85M0t5eGQ0djVJUFRMUQ?oc=5",
+    "source_name": "Data Center Frontier",
+    "source_url": "https://www.datacenterfrontier.com",
+    "published": "2026-11-09T17:38:41+00:00"
+   },
+   {
+    "title": "Jim Cramer says this is the stock to buy as data center development slows - CNBC",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQb1ByX1hZMkZaZFFBU2pidkVka29Fb2Ffd0hOM1lWSUNqZWEzQmhiWm1XMDFNMEEyZGVsWlUxVnIwLTNPZjVZeV83MnZjUlNJRDdBMHNjNzhuQUdWV1ZpSXZ4NzlDMy02NWFNNjROcGRfd29WS0ZMZzJyejRMUEpqTmFzc3c3cWl0ODVkNWF2MDNGNDhqNUxUVGhGQjYtX25HdENtbUZfVHQ3N1pQUjl5Wk1Ia05zaG9WZVZCZA?oc=5",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com",
+    "published": "2026-11-09T16:42:53+00:00"
+   },
+   {
+    "title": "Banks, investors grow wary of AI debt, spooked by market selloff - Reuters",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUktuREpUZjNlTWxZaER3aXVBUlJvazI5Q2d6STdNekNFVjk0UDYydFNlYS1zQzBlOFdzdk9waFZOeFBvLUhKUG5YOURmWE1xTkFvcFhqTmdTa3dvZ2NFTW12VW15XzA0MW9LWmlDb3BCTGc3ZllkWS1FMU9lbS1JbllDV0FhVGs3elh3azhtYWx0WkVpYnk2eDVSU1NtU2hZQXc4UUJJdkdELXNuVW1mZWJDLWFtZw?oc=5",
+    "source_name": "Reuters",
+    "source_url": "https://www.reuters.com",
+    "published": "2026-11-09T16:22:20+00:00"
+   },
+   {
+    "title": "Deutsche Telekom Adds Latest Nvidia Chips in German AI Buildout - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTGlfcXo2b1dOUURzYWNXbjRlU0xkYlU4TGtWblMtZW02a1IwM0xRd2VCOUZkdHVDNUgyckhrVzFmX0l1VzkydjdKaE95dkI2RkxyRXBoQjVVa2s5Z01CNDRESDZNNEFON3F0WEFHM1EyekkwZVg1OUJWMXY0clRHQ2U3Z3pDbENaNDBWUVprcUhtSTdKNW1paW9CcDB5UkRmZjlCYU1kOGxCbWE3am5HajVEZW0?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-11-09T15:42:19+00:00"
+   },
+   {
+    "title": "Nvidia looks to tap Brightspeed central offices for inference network - report - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVFotWS1hN3VkS2s3YzZyaUFEQmZ4ek9JYk5HaDBCd0lVeE0tRk03UnVNbFdVNHFtNVB0TGRMSTN4MTRvcTZNOGpzSlAxWkxFdkFhd25hYkpEMjVEWk8wMkp5cFVra0F0SVRtLVRTRUQ1cUhfUGxEcGIzdEpvWFJ0UXBGWGkyemYwMnE3MGw4eXdUd1RFV0wyaWJCb01VX1hNWURPeFA3aWtuOE84Um5UTXVweWtOemZKSkgtSg?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-11-09T13:48:44+00:00"
+   },
+   {
+    "title": "Anthropic skips six-year waitlist with massive $3.4 billion gas turbine generator deal — firm takes over OnePWR's orders, secures 1.7GW of capacity to power AI data centers - Tom's Hardware",
+    "link": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQRE95eDJUVGprY1ltalIxbXh0TEcxamdqaUtfZEE4VUR2bnFCM19jVld2dmYtQTFnR01CNWY4RF9NMlljb0tGSWV3NGVQelJNSkdXSHJXTDFSVWV5THBVUEpUX2kzT0lCYjVORUZHNVN6bUxOOXVQOUNTamp6azRwRnl2NFdiaFNSSjFfNUY0RmRTd3dLYWFZNktZOWE4clRvSG9EYnE0b2RwMnVHdzkxUExPSGtlZlk2dDZBR3FaLUMtakhpTTN5bXFYYVNfajNMaWp2TWxoU3RpeXJiajFmTHo1ZkU0alFObVZkc1BTM3pMb3cxNjd3VWhxZGQ3SENzR2lnN0hiMWFiblBmZjdwaE9yaEEtSEZzOGZ2RnZoZkFDUXQ5NWs5RzdkVnFrRHlCY2htVnpvMGlsSTQ2d2IyLXdvTUV3QmFrcmc?oc=5",
+    "source_name": "Tom's Hardware",
+    "source_url": "https://www.tomshardware.com",
+    "published": "2026-11-09T13:45:00+00:00"
+   },
+   {
+    "title": "China builds massive 800-megawatt AI data center campus to rival US Stargate project — Galaxy campus delivers first 120 megawatts in a year at one-fifth the cost - Tom's Hardware",
+    "link": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxNclZHa3hJYlZSZi1nM0tHY3JnbEtzS3hMbTJ3SzVkLXczbTN2bG56QlFBWGFrM2dzdm1pMVhxaU1vR0pzU1RsSGk0RkQ5bWlBY0dRLUFLWHVaZnptbnJtaFVmYmZPUm5TeE42ZEowOE9vRm1xTzdPMXBvWjhMbW5RMEItTGpibldJZnl2YjdlQ19KcDdoWHVhNHA3QXN3TUF6M21NSHJ4R2poRV9jR2IxanlfMXdxNy1ucFh0Y2JzRDAyMmdUSWdwSFd3WEs2LUxTYWVoOXdzaHpwX215d1l3aW9DQkRwY1NZTHJGbEJvV3F5MWRFc1paVnJ2eGlOeUhOeFJCX1Z1WW9jdmZHLWJOMmoxbHV6cTFfLUp1WDNCck1jaVpWakJ4OWZEYm9hSXJyQklZT2JrTW00bVk?oc=5",
+    "source_name": "Tom's Hardware",
+    "source_url": "https://www.tomshardware.com",
+    "published": "2026-11-09T13:00:00+00:00"
+   },
+   {
+    "title": "Microsoft winds down 2023 compute deal with Oracle - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTzRVNVo1RnlrTkU0QkJzNkw3VG5Tajl6U0E2dTNhRi1TY2wzR0s1YWJZRHhWT3V4UzlVTGlOTGF4c2VLcjQxWXczWllwSkdDWnR3MHJ0VVpnZElwdzFGWE8yY1NERThqQkFhVURfNGFlVU9kRTh0TG1NQkg1dU4zdEVMRks2Z2dKOG9rbE5XQlI1QUR2Ujl5aWVn?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-11-09T12:03:40+00:00"
+   },
+   {
+    "title": "Alice Huang, Suspected China Spy, Spent Years in Nvidia’s Orbit - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdGV5b2tYRTdnc1hMTXRKMnh2VWZFU2hmcmJweUpsLTV0ZTllUFlJWjlhVS1hZUdyb2F2NlZiUEpyUXhwb1FJRmpRMWh6Vmw1cXlueFFsbEJXZlZnb1VVcnUzS0hRMDRKQ1ZDVk5OZjBneHUzNjlfZnZxNGhEcFV2RjZqMTJTNm04Q3VQSFo3SkdNZTNqWV9XREpaTGdTVUhWaTIwMUhvZ3JKQS16TXk5VGpB?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-11-09T10:15:26+00:00"
+   },
+   {
+    "title": "Nvidia’s Data Center Vision Spurs Race to Reinvent Electric Transformers - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPU2MxVGFaT09uZmVnOTVrbjRFVnBfRTdHYXZHVXRobnMyVEtVQ3Z4RTNyNkc2Wm1Ic0c0VEJqVzIxMW8wSXhlM1dadm9LZC1iUVFBSkFOWmlGdGxldnk3emR3M0Y3OVFmV0FIdk4waG9OdUxiem1OeEphX1RGMWJ4Q1RhZlFZMC1feGZ3azFRYkFYYngzaGU5RFZCaGZjbWFBaTJDX0dMNGxQMDhuX0l5ZGJUdEZrMGxwNjNIUEJUckE?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-11-09T09:00:24+00:00"
+   },
    {
     "title": "Data Center CFOs Prepare for Tougher Road Ahead After Democrats Sweep Congress - Bloomberg",
     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQjNVcTNta01WTC1STG05b3RmVlcwYS1DME1IMUc0VkluYjd6LWFodzVsa3g1NjlCTmxjWVFyTVpuRlVVYnJCWUQ2UXBHMlN3MWlLNE1aRVMwdTBJZnM4MnNwUGRXaFJMZmZYUlZBZ19XZXZJYkVhckd1LXJ3WGJEQ3prWktHWmQzWHlBVDFMbG9VR0xHOEJERjExa2lfeXhYWkdMZ0l3SmJCeGJ6T1ByNlZmbmhzcHhzekhtYkRRZUg?oc=5",
@@ -2016,97 +2107,6 @@
     "source_name": "Bloomberg.com",
     "source_url": "https://www.bloomberg.com",
     "published": "2026-10-19T19:24:06+00:00"
-   },
-   {
-    "title": "Fed sees AI boom adding to inflation headache, but others may pay for the medicine - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbWZLVGpmVmN6M1o1UUJnRXhSMmVWdjY2Mm4tR0IyeXk0OHZzOVRPamx6eEdEVjhEUHVXMlkzeFhoWkg4Qnl0a3lYQ0xJdWNzVHcydDA0NFdVb0ctbEVoMExGek50RHoxWF9TRThVMXRENDhWV2RUbVRGOVhvOEtoTmlTS1NlZGk0UldmSEY4N0tRVVRBeWc5SmJqRGlaVWwzeHRPa1hHZDNHZ3UxUjhwZHBGQXo0YlIw?oc=5",
-    "source_name": "Reuters",
-    "source_url": "https://www.reuters.com",
-    "published": "2026-10-19T18:39:36+00:00"
-   },
-   {
-    "title": "Beyond Colossus: 5C Advances $575M Memphis AI Factory Expansion - Data Center Frontier",
-    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVjN4VkJCcmRjYmttOFJXckh2VXhFMDhZYWNwcVNYNi1nZ2hBRXhTN1NZYjVOdzhzTUI4c2RJS1h5OFlLUGF5X1ZQdlpadDJQcVdvaTNRY2NSVjFfdVpqSzdGa2JSQ0dEdzJiemRhQ1VqSXVJd1k0SW9SWENuVDlPYUMwMTRnc1d3NWJESDB1dmZjM1JnWDBOTjJUYkk0UmhmSHF5RjZkYUVsWk0yOGllT2RtZS1FMEN0WjhJRnVzdWM5Zw?oc=5",
-    "source_name": "Data Center Frontier",
-    "source_url": "https://www.datacenterfrontier.com",
-    "published": "2026-10-19T17:49:27+00:00"
-   },
-   {
-    "title": "Power alone won't unlock the next generation of AI data centers - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQeTRNSzd3YVM0dXplWWp4NmlSQnpkS2xqRW5TVlJUNm1lMGZfU0hkdlVidG50alJpOU9NNVNRYndFY0hLRE96LXNNRWUxeW44aWRsOTFocVRFVkNnRkMtUG82MklwdC05UXcwaVFGRjBTVVJsN3oyYlpBMXRDdTJlMzZiTHVOTFlYOVNtYTZjYUhJeEZpRzhtY0ZDUVRsWkdvRlhTeUJ4elpBSHo0VEc0?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-10-19T16:07:07+00:00"
-   },
-   {
-    "title": "Anthropic named as customer of EverWind's data center project in Nova Scotia - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOM0hXcDB0TDhJaG9QY015Wl9fMFg1bExaU1JBaU91SjFmQ0R4czlVblQ5WmdSQ1JwbGx3YUNXQS0xVGJsYW1DclVvVzJRVG9YZVJvQ1E3UHZKYXVveWpoUlpWZ2Zjc3hLeUdWT29pcXlPeVdPV2NfWFJrT0JjdVJxUEpEZWttYnVWWDZfWlZ0Wk9WcUs5ZWJGUHp1NEVXaC1xMm1zV3YtbWpiUUhKQmsyOXc1SE1PLURVaUpZ?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-10-19T15:52:06+00:00"
-   },
-   {
-    "title": "Valor Energy acquires computing site in Youngstown, Ohio - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWFNZSS02WTNmbjFfUGt2OUE1VmRnR0ZXZDdBUEJYak9xZHFCWFM0cnVEc0N2Skw0SGhjNTE1ZkhWbHNBM2JDdXotVGVyVXNlNk5DVTZwLTVxWlJscEZTTmVDbFV6ZTNScEhxeS1UOEoyUGpPZkcyMVVGTk9pMXdBZkNid1RDVTZoSThmY3Z1RzhvenFNUWRicDFnXzB6bGF6?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-10-19T13:25:49+00:00"
-   },
-   {
-    "title": "Israel to cap capacity of new data centers at 200MW - report - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcW1pSlVjcWxIRU9xQUVqZ1JIdVIwaUFfYW54ZWFhSzdqLXV1U1E3WDlXTDdCQldYdHg2dEY1V1B3Qmt3M3haNmt2dUJYZi1yZk96amlVNi1ReW9xd19CcW43NHNSTjFLYVlMdTlyWDRiWDFUblNJQWxnNnpWZFkxNDZBakNlRmFFaGllbG5KQkFLbk5vM29JNWRfODVNV0RVem1pTw?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-10-19T12:26:56+00:00"
-   },
-   {
-    "title": "Google says it can build data centers the right way. Some experts and residents are skeptical - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUEQ1QktxaXJRTmJoVVg5MnRDR20wR1RzYjZKeWVXYXYycHNqbDY0MFo0QWdTRWRuVHl0Vm1fRDhycF9iR1Q1TGRudFZ2VElUVnJOV04tNzFlVjIzZ0tYYWV2YU1YT053X1FwZEROSENEdVdPNWFKTGVxVVR2V2ZwMzRHbG1YM18tNmw0SERlZHVYYWhOVkl0S1IwUFJlbG9jWmVSMmtqTjlPa01LbFZEZDB4aXJOZHPSAbwBQVVfeXFMT0JYRVBtY3RWbnM5MlVWcEdaclJRYlZJaWhENXlfODlMTlk1OGtVSXZLNlExRjBwVjBaeVBCdUc3eG82aXVjS3RBVkUtdFdzX19ZY3ZNRjJUMjhsb3l1WE1sZ3ZQekkwV1p0UUxmU2lkb0RzWXJ1OHB4QVpyejRYblBUdUxoVUxNLTVYTV9GR3RlR3VrSG1lMlBpalpDbzJOZXFZUDF2cG05ZmhtaU9QU2xicnIwSWFEOWVQNF8?oc=5",
-    "source_name": "CNBC",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-10-19T12:00:01+00:00"
-   },
-   {
-    "title": "Microsoft pulls out of delayed Nscale data center in Loughton, Essex - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbTJnNkNNSjdNSGNsZGFDX28yTkc3WXctWGFfbEFtVVNCQVVNc2twRDJKdi1wdVA5TUNzYk5CaFpITFM4V2ZyeWZzcE40TWx3VWpBYWdDemJrcXRnVkhGMU1nYll6MFdMVFpWOHhjRk9nSGxrRnhRQnlyVUEydUN6QUVPUXpzTmVzUWxneGd5RFJiWGVmY1ZWU01BaWFXZ1VjNUk3RWRrQjhUb1B4dkd2Mw?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-10-19T11:45:45+00:00"
-   },
-   {
-    "title": "Microsoft Pulls out of Nscale U.K. Data-Center Deal Over Power-Supply Issues - WSJ",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPOFBSano2YWNRY1dzTTFvSmc4NjZ0NEtuRVZDa2ZDMGFmYzVFekJMVzR2aTd5aWZmVEFvLWFKQ052cFJYU3NfUGFpMGhla0c3VUYzR1VfUEQ4bHlfdDFCTnZuN2pvUzJNTDd2UWN0MmlqbVhYQ0V4dmdiT1VkUmUzb2preEF0ZHpnRlc2dGJwTnhTYm5zSTljbzZGMC1EdXF4OFRTUjBHa2E4Q2t5eHc?oc=5",
-    "source_name": "WSJ",
-    "source_url": "https://www.wsj.com",
-    "published": "2026-10-19T11:29:00+00:00"
-   },
-   {
-    "title": "The Converter as the Control Point for AI Data Center Power - Data Center Frontier",
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMDlsM2RMaGY2ZXFxeGFYUXkySGlDT0sxUjNSTjRIN3V5eWdlLW4yVU1BdEphcDBHUzI1VkMycG1sR1JZa08wd2k3RTdDeU4zaGtvaXpUVXFtMGlxT1lLT3hNaHV0RUlSelJUSE92UzIxN016eDBlY0U1V0VsMU9oZEFQaGdlTW9ZU0M4N0djak1rSUUxTFZsS0ExZEo1bDBXWjl5MklqTWZ6Xy1XVjc1aVFTUk1pQURrcHAwMkh3?oc=5",
-    "source_name": "Data Center Frontier",
-    "source_url": "https://www.datacenterfrontier.com",
-    "published": "2026-10-19T11:22:59+00:00"
-   },
-   {
-    "title": "Microsoft signs 20-year power deal with Indiana utility NiSource for planned data center in the state - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPQ2JTQnRHVTNPNnN3RVhSeXdERV9FZS15R3Zmb0JMeEFTN19TQl95Q00wZWxsOW1aRndEb1FWam1wZDlqM0dqMVNOZkhTR3FYVFZyeGFEd1VOeTRmM1E5V1AzZXJtXzZfZ0ZMaGM3RUg5Qi1BMjZMMlAtbFdaeVgta3A5RXdpeGVUUk5WUlAycnl2bHR1WXgzaFNKdjYzbnhNNDczcmh1Z2dFckdDSjRBdm1lV3ZNQllRUVEzTDdySUVHM0doLUJXQ1lGUjJ6WTN0ZWhBNjhuWG4xbW50OXc?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-10-19T09:51:42+00:00"
-   },
-   {
-    "title": "The Weak Points in AI Bonds Are Becoming Clearer - WSJ",
-    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWTRKUXNKLTZaS01tUmRWUWQ3RGtiTnRrbU5IQlhIbnY2dFZmaFZNQ1djXzJGYmFLNkVIZVIzV1lNSmU0ZWt1VDdZMXRpbjJBUklvVjZId2o4bG03WmJpbGY0MUc5SUV6TnFHN3FNa2FYc3dPN0dJQjQwN2hEcUgyRkIzcnRMeGUwSmRGMHRkZU8tM3hrWGhpWU9JVQ?oc=5",
-    "source_name": "WSJ",
-    "source_url": "https://www.wsj.com",
-    "published": "2026-10-19T09:30:00+00:00"
-   },
-   {
-    "title": "AWS's CFO joked about the financial toll of AI. An internal recording reveals why. - Business Insider",
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaEZnVnJtTG9xWFdXSExvcXVNQU9fS3lNQTY5RlNTMWtyR3V5MXVob3RpSXFVN3ZsMTExNnhYUUNUNHlNclhNWENaeHcwbVFEclVGX3JBWjBLU3drck4tUGcwZHRFV25lWXhidWdyNmlLQ1JRdzNtV242clJyOGZpbU9FNjdWNTE1Sl8yLThkRFM1ZWxxbEp3MFQ5SW50cFk?oc=5",
-    "source_name": "Business Insider",
-    "source_url": "https://www.businessinsider.com",
-    "published": "2026-10-19T09:00:00+00:00"
    }
   ],
   "queries": [
