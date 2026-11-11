@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "vercel_gateway",
- "snapshot_date": "2026-11-10",
- "fetched_at": "2026-11-10T04:10:22+00:00",
+ "snapshot_date": "2026-11-11",
+ "fetched_at": "2026-11-11T01:58:28+00:00",
  "source_meta": {
   "kind": "scrape"
  },
@@ -11,7 +11,12 @@
    {
     "day": "2025-10-01",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      62.4818
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -29,7 +34,12 @@
    {
     "day": "2025-10-02",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      64.6771
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -47,7 +57,12 @@
    {
     "day": "2025-10-03",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      47.5538
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -65,7 +80,12 @@
    {
     "day": "2025-10-04",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      80.1899
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -83,7 +103,12 @@
    {
     "day": "2025-10-05",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      83.6894
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -101,7 +126,12 @@
    {
     "day": "2025-10-06",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      75.3497
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -119,7 +149,12 @@
    {
     "day": "2025-10-07",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      77.4543
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -137,7 +172,12 @@
    {
     "day": "2025-10-08",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      73.2574
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -155,7 +195,12 @@
    {
     "day": "2025-10-09",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      75.743
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -173,7 +218,12 @@
    {
     "day": "2025-10-10",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      74.9596
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -191,7 +241,12 @@
    {
     "day": "2025-10-11",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      79.5823
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -209,7 +264,12 @@
    {
     "day": "2025-10-12",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      73.529
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -227,7 +287,12 @@
    {
     "day": "2025-10-13",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      63.8673
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -245,7 +310,12 @@
    {
     "day": "2025-10-14",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      60.4407
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -263,7 +333,12 @@
    {
     "day": "2025-10-15",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      59.6756
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -281,7 +356,12 @@
    {
     "day": "2025-10-16",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      57.31
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -299,7 +379,12 @@
    {
     "day": "2025-10-17",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      55.9141
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -317,7 +402,12 @@
    {
     "day": "2025-10-18",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      61.7075
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -335,7 +425,12 @@
    {
     "day": "2025-10-19",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      57.8549
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -353,7 +448,12 @@
    {
     "day": "2025-10-20",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      54.7868
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -371,7 +471,12 @@
    {
     "day": "2025-10-21",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      53.0713
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -389,7 +494,12 @@
    {
     "day": "2025-10-22",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      54.9758
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -407,7 +517,12 @@
    {
     "day": "2025-10-23",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      54.6417
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -425,7 +540,12 @@
    {
     "day": "2025-10-24",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      54.9518
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -443,7 +563,12 @@
    {
     "day": "2025-10-25",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      53.8606
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -461,7 +586,12 @@
    {
     "day": "2025-10-26",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      54.2297
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -479,7 +609,12 @@
    {
     "day": "2025-10-27",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      47.5877
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -497,7 +632,12 @@
    {
     "day": "2025-10-28",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      52.5984
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -515,7 +655,12 @@
    {
     "day": "2025-10-29",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      53.3335
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -533,7 +678,12 @@
    {
     "day": "2025-10-30",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      53.4358
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -551,7 +701,12 @@
    {
     "day": "2025-10-31",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      53.4336
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -569,7 +724,12 @@
    {
     "day": "2025-11-01",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      55.2236
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -587,7 +747,12 @@
    {
     "day": "2025-11-02",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      51.924
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -605,7 +770,12 @@
    {
     "day": "2025-11-03",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      51.5335
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -623,7 +793,12 @@
    {
     "day": "2025-11-04",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      48.4529
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -641,7 +816,12 @@
    {
     "day": "2025-11-05",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      48.4972
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -659,7 +839,12 @@
    {
     "day": "2025-11-06",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      45.1478
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -677,7 +862,12 @@
    {
     "day": "2025-11-07",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      49.0086
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -695,7 +885,12 @@
    {
     "day": "2025-11-08",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      57.6537
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -713,7 +908,12 @@
    {
     "day": "2025-11-09",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      57.8119
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -731,7 +931,12 @@
    {
     "day": "2025-11-10",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      49.8797
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -749,7 +954,12 @@
    {
     "day": "2025-11-11",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      53.0229
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -767,7 +977,12 @@
    {
     "day": "2025-11-12",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      56.8901
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -785,7 +1000,12 @@
    {
     "day": "2025-11-13",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      57.2653
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -803,7 +1023,12 @@
    {
     "day": "2025-11-14",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      53.1403
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -821,7 +1046,12 @@
    {
     "day": "2025-11-15",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      60.1158
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -839,7 +1069,12 @@
    {
     "day": "2025-11-16",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      58.8913
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -857,7 +1092,12 @@
    {
     "day": "2025-11-17",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      54.0246
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -875,7 +1115,12 @@
    {
     "day": "2025-11-18",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      58.4828
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -893,7 +1138,12 @@
    {
     "day": "2025-11-19",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      57.9685
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -911,7 +1161,12 @@
    {
     "day": "2025-11-20",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      60.6367
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -929,7 +1184,12 @@
    {
     "day": "2025-11-21",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      58.9439
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -947,7 +1207,12 @@
    {
     "day": "2025-11-22",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      67.311
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -965,7 +1230,12 @@
    {
     "day": "2025-11-23",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      68.324
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -983,7 +1253,12 @@
    {
     "day": "2025-11-24",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      59.7809
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1001,7 +1276,12 @@
    {
     "day": "2025-11-25",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      57.6103
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1019,7 +1299,12 @@
    {
     "day": "2025-11-26",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      58.7785
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1037,7 +1322,12 @@
    {
     "day": "2025-11-27",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      58.8357
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1055,7 +1345,12 @@
    {
     "day": "2025-11-28",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      59.4749
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1073,7 +1368,12 @@
    {
     "day": "2025-11-29",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      66.0847
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1091,7 +1391,12 @@
    {
     "day": "2025-11-30",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      66.4175
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1109,7 +1414,12 @@
    {
     "day": "2025-12-01",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      57.1999
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1127,7 +1437,12 @@
    {
     "day": "2025-12-02",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      53.5001
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1145,7 +1460,12 @@
    {
     "day": "2025-12-03",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      54.2197
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1163,7 +1483,12 @@
    {
     "day": "2025-12-04",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      50.5849
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1181,7 +1506,12 @@
    {
     "day": "2025-12-05",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      57.92
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1199,7 +1529,12 @@
    {
     "day": "2025-12-06",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      64.2318
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1217,7 +1552,12 @@
    {
     "day": "2025-12-07",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      63.971
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1235,7 +1575,12 @@
    {
     "day": "2025-12-08",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      49.1163
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1253,7 +1598,12 @@
    {
     "day": "2025-12-09",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      49.8295
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1271,7 +1621,12 @@
    {
     "day": "2025-12-10",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      54.5344
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1289,7 +1644,12 @@
    {
     "day": "2025-12-11",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      54.1911
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1307,7 +1667,12 @@
    {
     "day": "2025-12-12",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      53.8303
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1325,7 +1690,12 @@
    {
     "day": "2025-12-13",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      58.8693
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1343,7 +1713,12 @@
    {
     "day": "2025-12-14",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      58.4779
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1361,7 +1736,12 @@
    {
     "day": "2025-12-15",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      52.1559
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1379,7 +1759,12 @@
    {
     "day": "2025-12-16",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      56.5305
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1397,7 +1782,12 @@
    {
     "day": "2025-12-17",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      51.1023
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1415,7 +1805,12 @@
    {
     "day": "2025-12-18",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      49.7346
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1433,7 +1828,12 @@
    {
     "day": "2025-12-19",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      49.9656
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1451,7 +1851,12 @@
    {
     "day": "2025-12-20",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      51.6701
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1469,7 +1874,12 @@
    {
     "day": "2025-12-21",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      56.3722
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1487,7 +1897,12 @@
    {
     "day": "2025-12-22",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      49.9455
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1505,7 +1920,12 @@
    {
     "day": "2025-12-23",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      52.6091
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1523,7 +1943,12 @@
    {
     "day": "2025-12-24",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      53.9984
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1541,7 +1966,12 @@
    {
     "day": "2025-12-25",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      54.7385
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1559,7 +1989,12 @@
    {
     "day": "2025-12-26",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      52.5148
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1577,7 +2012,12 @@
    {
     "day": "2025-12-27",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      51.4372
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1595,7 +2035,12 @@
    {
     "day": "2025-12-28",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      50.0071
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1613,7 +2058,12 @@
    {
     "day": "2025-12-29",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      50.1709
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1631,7 +2081,12 @@
    {
     "day": "2025-12-30",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      54.7101
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1649,7 +2104,12 @@
    {
     "day": "2025-12-31",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      55.4253
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1667,7 +2127,12 @@
    {
     "day": "2026-01-01",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      56.3633
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1685,7 +2150,12 @@
    {
     "day": "2026-01-02",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      54.6781
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1703,7 +2173,12 @@
    {
     "day": "2026-01-03",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      59.4766
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1721,7 +2196,12 @@
    {
     "day": "2026-01-04",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      60.1531
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1739,7 +2219,12 @@
    {
     "day": "2026-01-05",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      51.3232
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1757,7 +2242,12 @@
    {
     "day": "2026-01-06",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      49.4807
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1775,7 +2265,12 @@
    {
     "day": "2026-01-07",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      47.2296
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1793,7 +2288,12 @@
    {
     "day": "2026-01-08",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      49.6332
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1811,7 +2311,12 @@
    {
     "day": "2026-01-09",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      48.3649
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1829,7 +2334,12 @@
    {
     "day": "2026-01-10",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      53.295
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1847,7 +2357,12 @@
    {
     "day": "2026-01-11",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      53.0973
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1865,7 +2380,12 @@
    {
     "day": "2026-01-12",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      47.4585
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1883,7 +2403,12 @@
    {
     "day": "2026-01-13",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      46.6455
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1901,7 +2426,12 @@
    {
     "day": "2026-01-14",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      47.2055
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1919,7 +2449,12 @@
    {
     "day": "2026-01-15",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      45.2294
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1937,7 +2472,12 @@
    {
     "day": "2026-01-16",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      43.7039
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1955,7 +2495,12 @@
    {
     "day": "2026-01-17",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      46.7589
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1973,7 +2518,12 @@
    {
     "day": "2026-01-18",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      44.6958
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -1991,7 +2541,12 @@
    {
     "day": "2026-01-19",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      38.5154
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2009,7 +2564,12 @@
    {
     "day": "2026-01-20",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      43.8756
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2027,7 +2587,12 @@
    {
     "day": "2026-01-21",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      43.2945
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2045,7 +2610,12 @@
    {
     "day": "2026-01-22",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      48.5967
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2063,7 +2633,12 @@
    {
     "day": "2026-01-23",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      48.2115
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2081,7 +2656,12 @@
    {
     "day": "2026-01-24",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      52.6938
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2099,7 +2679,12 @@
    {
     "day": "2026-01-25",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      54.4816
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2117,7 +2702,12 @@
    {
     "day": "2026-01-26",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      52.0293
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2135,7 +2725,12 @@
    {
     "day": "2026-01-27",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      52.4865
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2153,7 +2748,12 @@
    {
     "day": "2026-01-28",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      55.0311
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2171,7 +2771,12 @@
    {
     "day": "2026-01-29",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      55.9322
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2189,7 +2794,12 @@
    {
     "day": "2026-01-30",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      55.1647
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2207,7 +2817,12 @@
    {
     "day": "2026-01-31",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      57.022
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2225,7 +2840,12 @@
    {
     "day": "2026-02-01",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      60.9546
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2243,7 +2863,12 @@
    {
     "day": "2026-02-02",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      57.2045
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2261,7 +2886,12 @@
    {
     "day": "2026-02-03",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      55.294
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2279,7 +2909,12 @@
    {
     "day": "2026-02-04",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      57.9597
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2297,7 +2932,12 @@
    {
     "day": "2026-02-05",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      53.9148
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2315,7 +2955,12 @@
    {
     "day": "2026-02-06",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      50.147
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2333,7 +2978,12 @@
    {
     "day": "2026-02-07",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      53.825
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2351,7 +3001,12 @@
    {
     "day": "2026-02-08",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      56.0974
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2369,7 +3024,12 @@
    {
     "day": "2026-02-09",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      47.8834
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2387,7 +3047,12 @@
    {
     "day": "2026-02-10",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      42.4051
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2405,7 +3070,12 @@
    {
     "day": "2026-02-11",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      43.4525
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2423,7 +3093,12 @@
    {
     "day": "2026-02-12",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      45.4615
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2441,7 +3116,12 @@
    {
     "day": "2026-02-13",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      45.4993
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2459,7 +3139,12 @@
    {
     "day": "2026-02-14",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      51.8447
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2477,7 +3162,12 @@
    {
     "day": "2026-02-15",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      55.3743
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2495,7 +3185,12 @@
    {
     "day": "2026-02-16",
     "metric": "cost",
-    "shares": [],
+    "shares": [
+     [
+      "Claude Sonnet 4.5",
+      49.623
+     ]
+    ],
     "others_share": 0
    },
    {
@@ -2515,8 +3210,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      1.2304
+      "Claude Sonnet 4.5",
+      49.7982
      ]
     ],
     "others_share": 0
@@ -2538,8 +3233,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      26.1944
+      "Claude Sonnet 4.5",
+      36.4442
      ]
     ],
     "others_share": 0
@@ -2561,8 +3256,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.0127
+      "Claude Sonnet 4.5",
+      44.5799
      ]
     ],
     "others_share": 0
@@ -2584,8 +3279,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      25.2479
+      "Claude Sonnet 4.5",
+      8.8835
      ]
     ],
     "others_share": 0
@@ -2607,8 +3302,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      19.79
+      "Claude Sonnet 4.5",
+      5.1067
      ]
     ],
     "others_share": 0
@@ -2630,8 +3325,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      20.9215
+      "Claude Sonnet 4.5",
+      4.5064
      ]
     ],
     "others_share": 0
@@ -2653,8 +3348,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      19.9238
+      "Claude Sonnet 4.5",
+      7.4355
      ]
     ],
     "others_share": 0
@@ -2676,8 +3371,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.0863
+      "Claude Sonnet 4.5",
+      6.5391
      ]
     ],
     "others_share": 0
@@ -2699,8 +3394,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.5241
+      "Claude Sonnet 4.5",
+      6.1173
      ]
     ],
     "others_share": 0
@@ -2722,8 +3417,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.7201
+      "Claude Sonnet 4.5",
+      5.6912
      ]
     ],
     "others_share": 0
@@ -2745,8 +3440,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      19.5662
+      "Claude Sonnet 4.5",
+      5.1194
      ]
     ],
     "others_share": 0
@@ -2768,8 +3463,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      23.1518
+      "Claude Sonnet 4.5",
+      4.2038
      ]
     ],
     "others_share": 0
@@ -2791,8 +3486,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      21.0232
+      "Claude Sonnet 4.5",
+      4.1583
      ]
     ],
     "others_share": 0
@@ -2814,8 +3509,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.6492
+      "Claude Sonnet 4.5",
+      6.4997
      ]
     ],
     "others_share": 0
@@ -2837,8 +3532,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      19.3454
+      "Claude Sonnet 4.5",
+      7.0023
      ]
     ],
     "others_share": 0
@@ -2860,8 +3555,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      20.8847
+      "Claude Sonnet 4.5",
+      6.331
      ]
     ],
     "others_share": 0
@@ -2883,8 +3578,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      21.6255
+      "Claude Sonnet 4.5",
+      6.9562
      ]
     ],
     "others_share": 0
@@ -2906,8 +3601,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      23.2083
+      "Claude Sonnet 4.5",
+      5.928
      ]
     ],
     "others_share": 0
@@ -2929,8 +3624,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      29.597
+      "Claude Sonnet 4.5",
+      3.8075
      ]
     ],
     "others_share": 0
@@ -2952,8 +3647,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      28.7619
+      "Claude Sonnet 4.5",
+      4.9669
      ]
     ],
     "others_share": 0
@@ -2975,8 +3670,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      25.4299
+      "Claude Sonnet 4.5",
+      4.9042
      ]
     ],
     "others_share": 0
@@ -2998,8 +3693,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      47.3427
+      "Claude Sonnet 4.5",
+      3.6322
      ]
     ],
     "others_share": 0
@@ -3021,8 +3716,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      53.7353
+      "Claude Sonnet 4.5",
+      2.825
      ]
     ],
     "others_share": 0
@@ -3044,8 +3739,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      51.3736
+      "Claude Sonnet 4.5",
+      3.3822
      ]
     ],
     "others_share": 0
@@ -3067,8 +3762,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      54.6694
+      "Claude Sonnet 4.5",
+      3.0456
      ]
     ],
     "others_share": 0
@@ -3090,8 +3785,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      63.7205
+      "Claude Sonnet 4.5",
+      1.3876
      ]
     ],
     "others_share": 0
@@ -3113,8 +3808,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      60.5307
+      "Claude Sonnet 4.5",
+      2.1652
      ]
     ],
     "others_share": 0
@@ -3136,8 +3831,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      56.0467
+      "Claude Sonnet 4.5",
+      3.3393
      ]
     ],
     "others_share": 0
@@ -3159,8 +3854,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      57.5987
+      "Claude Sonnet 4.5",
+      2.9284
      ]
     ],
     "others_share": 0
@@ -3182,8 +3877,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      62.7034
+      "Claude Sonnet 4.5",
+      3.0738
      ]
     ],
     "others_share": 0
@@ -3205,8 +3900,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      67.8545
+      "Claude Sonnet 4.5",
+      2.1464
      ]
     ],
     "others_share": 0
@@ -3228,8 +3923,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      58.1329
+      "Claude Sonnet 4.5",
+      2.2835
      ]
     ],
     "others_share": 0
@@ -3251,8 +3946,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      68.756
+      "Claude Sonnet 4.5",
+      0.9456
      ]
     ],
     "others_share": 0
@@ -3274,8 +3969,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      70.9368
+      "Claude Sonnet 4.5",
+      0.979
      ]
     ],
     "others_share": 0
@@ -3297,8 +3992,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      63.8929
+      "Claude Sonnet 4.5",
+      2.7171
      ]
     ],
     "others_share": 0
@@ -3320,8 +4015,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      68.419
+      "Claude Sonnet 4.5",
+      2.0296
      ]
     ],
     "others_share": 0
@@ -3343,8 +4038,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      69.0598
+      "Claude Sonnet 4.5",
+      2.1331
      ]
     ],
     "others_share": 0
@@ -3366,8 +4061,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      68.1189
+      "Claude Sonnet 4.5",
+      1.8684
      ]
     ],
     "others_share": 0
@@ -3389,8 +4084,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      72.0316
+      "Claude Sonnet 4.5",
+      1.6934
      ]
     ],
     "others_share": 0
@@ -3412,8 +4107,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      77.5473
+      "Claude Sonnet 4.5",
+      0.6787
      ]
     ],
     "others_share": 0
@@ -3435,8 +4130,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      76.4754
+      "Claude Sonnet 4.5",
+      0.7686
      ]
     ],
     "others_share": 0
@@ -3458,8 +4153,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      72.6916
+      "Claude Sonnet 4.5",
+      2.0521
      ]
     ],
     "others_share": 0
@@ -3481,8 +4176,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      53.2423
+      "Claude Sonnet 4.5",
+      3.5023
      ]
     ],
     "others_share": 0
@@ -3504,8 +4199,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.7259
+      "Claude Sonnet 4.5",
+      5.5652
      ]
     ],
     "others_share": 0
@@ -3527,8 +4222,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.2913
+      "Claude Sonnet 4.5",
+      4.9357
      ]
     ],
     "others_share": 0
@@ -3550,8 +4245,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.1929
+      "Claude Sonnet 4.5",
+      6.4715
      ]
     ],
     "others_share": 0
@@ -3573,8 +4268,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.2135
+      "Claude Sonnet 4.5",
+      1.4372
      ]
     ],
     "others_share": 0
@@ -3596,8 +4291,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.537
+      "Claude Sonnet 4.5",
+      2.1567
      ]
     ],
     "others_share": 0
@@ -3619,8 +4314,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.8804
+      "Claude Sonnet 4.5",
+      2.8702
      ]
     ],
     "others_share": 0
@@ -3642,8 +4337,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.6701
+      "Claude Sonnet 4.5",
+      3.0406
      ]
     ],
     "others_share": 0
@@ -3665,8 +4360,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.2096
+      "Claude Sonnet 4.5",
+      3.2708
      ]
     ],
     "others_share": 0
@@ -3688,8 +4383,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.2346
+      "Claude Sonnet 4.5",
+      3.4286
      ]
     ],
     "others_share": 0
@@ -3711,8 +4406,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.4153
+      "Claude Sonnet 4.5",
+      3.8284
      ]
     ],
     "others_share": 0
@@ -3734,8 +4429,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.7217
+      "Claude Sonnet 4.5",
+      2.4176
      ]
     ],
     "others_share": 0
@@ -3757,8 +4452,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.4359
+      "Claude Sonnet 4.5",
+      3.1834
      ]
     ],
     "others_share": 0
@@ -3780,8 +4475,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.5805
+      "Claude Sonnet 4.5",
+      3.2075
      ]
     ],
     "others_share": 0
@@ -3803,8 +4498,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.6369
+      "Claude Sonnet 4.5",
+      3.3845
      ]
     ],
     "others_share": 0
@@ -3826,8 +4521,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.9882
+      "Claude Sonnet 4.5",
+      2.8961
      ]
     ],
     "others_share": 0
@@ -3849,8 +4544,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.6928
+      "Claude Sonnet 4.5",
+      2.8761
      ]
     ],
     "others_share": 0
@@ -3872,8 +4567,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.7766
+      "Claude Sonnet 4.5",
+      2.1517
      ]
     ],
     "others_share": 0
@@ -3895,8 +4590,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.9752
+      "Claude Sonnet 4.5",
+      2.1681
      ]
     ],
     "others_share": 0
@@ -3918,8 +4613,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      19.3311
+      "Claude Sonnet 4.5",
+      2.157
      ]
     ],
     "others_share": 0
@@ -3941,8 +4636,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.5158
+      "Claude Sonnet 4.5",
+      2.5619
      ]
     ],
     "others_share": 0
@@ -3964,8 +4659,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      19.1055
+      "Claude Sonnet 4.5",
+      2.0906
      ]
     ],
     "others_share": 0
@@ -3987,8 +4682,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.5875
+      "Claude Sonnet 4.5",
+      2.0007
      ]
     ],
     "others_share": 0
@@ -4010,8 +4705,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.3982
+      "Claude Sonnet 4.5",
+      2.1412
      ]
     ],
     "others_share": 0
@@ -4033,8 +4728,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.6424
+      "Claude Sonnet 4.5",
+      2.0973
      ]
     ],
     "others_share": 0
@@ -4056,8 +4751,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.8437
+      "Claude Sonnet 4.5",
+      2.3312
      ]
     ],
     "others_share": 0
@@ -4079,8 +4774,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.5245
+      "Claude Sonnet 4.5",
+      2.4896
      ]
     ],
     "others_share": 0
@@ -4102,8 +4797,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.03
+      "Claude Sonnet 4.5",
+      2.0078
      ]
     ],
     "others_share": 0
@@ -4125,8 +4820,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.1027
+      "Claude Sonnet 4.5",
+      1.825
      ]
     ],
     "others_share": 0
@@ -4148,8 +4843,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.8139
+      "Claude Sonnet 4.5",
+      1.8211
      ]
     ],
     "others_share": 0
@@ -4171,8 +4866,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.8553
+      "Claude Sonnet 4.5",
+      1.8
      ]
     ],
     "others_share": 0
@@ -4194,8 +4889,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.7145
+      "Claude Sonnet 4.5",
+      1.6206
      ]
     ],
     "others_share": 0
@@ -4217,8 +4912,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.0222
+      "Claude Sonnet 4.5",
+      1.8242
      ]
     ],
     "others_share": 0
@@ -4240,8 +4935,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.7795
+      "Claude Sonnet 4.5",
+      1.658
      ]
     ],
     "others_share": 0
@@ -4263,8 +4958,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.046
+      "Claude Sonnet 4.5",
+      1.569
      ]
     ],
     "others_share": 0
@@ -4286,8 +4981,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.9878
+      "Claude Sonnet 4.5",
+      1.3266
      ]
     ],
     "others_share": 0
@@ -4309,8 +5004,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.7523
+      "Claude Sonnet 4.5",
+      1.544
      ]
     ],
     "others_share": 0
@@ -4332,8 +5027,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.1906
+      "Claude Sonnet 4.5",
+      1.2963
      ]
     ],
     "others_share": 0
@@ -4355,8 +5050,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.1311
+      "Claude Sonnet 4.5",
+      1.0331
      ]
     ],
     "others_share": 0
@@ -4378,8 +5073,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.1319
+      "Claude Sonnet 4.5",
+      0.9751
      ]
     ],
     "others_share": 0
@@ -4401,8 +5096,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      18.1212
+      "Claude Sonnet 4.5",
+      0.9537
      ]
     ],
     "others_share": 0
@@ -4424,8 +5119,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.1929
+      "Claude Sonnet 4.5",
+      1.1483
      ]
     ],
     "others_share": 0
@@ -4447,8 +5142,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.2775
+      "Claude Sonnet 4.5",
+      1.3004
      ]
     ],
     "others_share": 0
@@ -4470,8 +5165,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.757
+      "Claude Sonnet 4.5",
+      1.2156
      ]
     ],
     "others_share": 0
@@ -4493,8 +5188,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.3814
+      "Claude Sonnet 4.5",
+      1.2807
      ]
     ],
     "others_share": 0
@@ -4516,8 +5211,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.2666
+      "Claude Sonnet 4.5",
+      1.1303
      ]
     ],
     "others_share": 0
@@ -4539,8 +5234,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      16.192
+      "Claude Sonnet 4.5",
+      1.352
      ]
     ],
     "others_share": 0
@@ -4562,8 +5257,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.4999
+      "Claude Sonnet 4.5",
+      1.2913
      ]
     ],
     "others_share": 0
@@ -4585,8 +5280,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.5269
+      "Claude Sonnet 4.5",
+      1.1889
      ]
     ],
     "others_share": 0
@@ -4608,8 +5303,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      15.7551
+      "Claude Sonnet 4.5",
+      1.4054
      ]
     ],
     "others_share": 0
@@ -4631,8 +5326,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.5914
+      "Claude Sonnet 4.5",
+      1.371
      ]
     ],
     "others_share": 0
@@ -4654,8 +5349,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.4002
+      "Claude Sonnet 4.5",
+      1.2956
      ]
     ],
     "others_share": 0
@@ -4677,8 +5372,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.97
+      "Claude Sonnet 4.5",
+      1.2544
      ]
     ],
     "others_share": 0
@@ -4700,8 +5395,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.2341
+      "Claude Sonnet 4.5",
+      1.21
      ]
     ],
     "others_share": 0
@@ -4723,8 +5418,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.8512
+      "Claude Sonnet 4.5",
+      1.2288
      ]
     ],
     "others_share": 0
@@ -4746,8 +5441,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.4106
+      "Claude Sonnet 4.5",
+      1.1397
      ]
     ],
     "others_share": 0
@@ -4769,8 +5464,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.0079
+      "Claude Sonnet 4.5",
+      1.1003
      ]
     ],
     "others_share": 0
@@ -4792,8 +5487,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.5709
+      "Claude Sonnet 4.5",
+      1.0944
      ]
     ],
     "others_share": 0
@@ -4815,8 +5510,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.2843
+      "Claude Sonnet 4.5",
+      1.2063
      ]
     ],
     "others_share": 0
@@ -4838,8 +5533,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.4765
+      "Claude Sonnet 4.5",
+      1.3034
      ]
     ],
     "others_share": 0
@@ -4861,8 +5556,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.4956
+      "Claude Sonnet 4.5",
+      1.1716
      ]
     ],
     "others_share": 0
@@ -4884,8 +5579,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.2748
+      "Claude Sonnet 4.5",
+      1.6149
      ]
     ],
     "others_share": 0
@@ -4907,8 +5602,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.017
+      "Claude Sonnet 4.5",
+      1.3111
      ]
     ],
     "others_share": 0
@@ -4930,8 +5625,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.5798
+      "Claude Sonnet 4.5",
+      1.3777
      ]
     ],
     "others_share": 0
@@ -4953,8 +5648,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.9258
+      "Claude Sonnet 4.5",
+      1.2945
      ]
     ],
     "others_share": 0
@@ -4976,8 +5671,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.972
+      "Claude Sonnet 4.5",
+      1.2384
      ]
     ],
     "others_share": 0
@@ -4999,8 +5694,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.3431
+      "Claude Sonnet 4.5",
+      1.1481
      ]
     ],
     "others_share": 0
@@ -5022,8 +5717,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      17.8974
+      "Claude Sonnet 4.5",
+      1.643
      ]
     ],
     "others_share": 0
@@ -5045,8 +5740,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.1256
+      "Claude Sonnet 4.5",
+      1.533
      ]
     ],
     "others_share": 0
@@ -5068,8 +5763,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.6859
+      "Claude Sonnet 4.5",
+      1.398
      ]
     ],
     "others_share": 0
@@ -5091,8 +5786,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.3018
+      "Claude Sonnet 4.5",
+      1.2058
      ]
     ],
     "others_share": 0
@@ -5114,8 +5809,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      11.9189
+      "Claude Sonnet 4.5",
+      1.0787
      ]
     ],
     "others_share": 0
@@ -5137,8 +5832,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.1143
+      "Claude Sonnet 4.5",
+      1.2693
      ]
     ],
     "others_share": 0
@@ -5160,8 +5855,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.4457
+      "Claude Sonnet 4.5",
+      1.2702
      ]
     ],
     "others_share": 0
@@ -5183,8 +5878,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.7685
+      "Claude Sonnet 4.5",
+      1.8837
      ]
     ],
     "others_share": 0
@@ -5206,8 +5901,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      10.8629
+      "Claude Sonnet 4.5",
+      1.3505
      ]
     ],
     "others_share": 0
@@ -5229,8 +5924,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      11.0834
+      "Claude Sonnet 4.5",
+      1.2096
      ]
     ],
     "others_share": 0
@@ -5252,8 +5947,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.1177
+      "Claude Sonnet 4.5",
+      1.0177
      ]
     ],
     "others_share": 0
@@ -5275,8 +5970,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.8193
+      "Claude Sonnet 4.5",
+      1.2866
      ]
     ],
     "others_share": 0
@@ -5298,8 +5993,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.5223
+      "Claude Sonnet 4.5",
+      1.1484
      ]
     ],
     "others_share": 0
@@ -5321,8 +6016,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      11.6074
+      "Claude Sonnet 4.5",
+      0.9982
      ]
     ],
     "others_share": 0
@@ -5344,8 +6039,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      9.1751
+      "Claude Sonnet 4.5",
+      0.9505
      ]
     ],
     "others_share": 0
@@ -5367,8 +6062,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      9.9341
+      "Claude Sonnet 4.5",
+      1.0841
      ]
     ],
     "others_share": 0
@@ -5390,8 +6085,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      11.8916
+      "Claude Sonnet 4.5",
+      1.0235
      ]
     ],
     "others_share": 0
@@ -5413,8 +6108,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      11.7281
+      "Claude Sonnet 4.5",
+      1.0194
      ]
     ],
     "others_share": 0
@@ -5436,8 +6131,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.7594
+      "Claude Sonnet 4.5",
+      1.0303
      ]
     ],
     "others_share": 0
@@ -5459,8 +6154,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      13.971
+      "Claude Sonnet 4.5",
+      1.3212
      ]
     ],
     "others_share": 0
@@ -5482,8 +6177,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.8841
+      "Claude Sonnet 4.5",
+      1.3451
      ]
     ],
     "others_share": 0
@@ -5505,8 +6200,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      14.2127
+      "Claude Sonnet 4.5",
+      1.6581
      ]
     ],
     "others_share": 0
@@ -5528,8 +6223,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.4251
+      "Claude Sonnet 4.5",
+      1.2067
      ]
     ],
     "others_share": 0
@@ -5551,8 +6246,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      11.9879
+      "Claude Sonnet 4.5",
+      1.1863
      ]
     ],
     "others_share": 0
@@ -5574,8 +6269,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.9669
+      "Claude Sonnet 4.5",
+      1.1379
      ]
     ],
     "others_share": 0
@@ -5597,8 +6292,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.8908
+      "Claude Sonnet 4.5",
+      1.1417
      ]
     ],
     "others_share": 0
@@ -5620,8 +6315,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.8902
+      "Claude Sonnet 4.5",
+      0.8419
      ]
     ],
     "others_share": 0
@@ -5643,8 +6338,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      11.4877
+      "Claude Sonnet 4.5",
+      1.5018
      ]
     ],
     "others_share": 0
@@ -5666,8 +6361,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      9.8394
+      "Claude Sonnet 4.5",
+      1.9198
      ]
     ],
     "others_share": 0
@@ -5689,8 +6384,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      10.1535
+      "Claude Sonnet 4.5",
+      1.7172
      ]
     ],
     "others_share": 0
@@ -5712,8 +6407,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      10.9399
+      "Claude Sonnet 4.5",
+      1.4644
      ]
     ],
     "others_share": 0
@@ -5735,8 +6430,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      12.3447
+      "Claude Sonnet 4.5",
+      1.2416
      ]
     ],
     "others_share": 0
@@ -5758,8 +6453,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      10.1936
+      "Claude Sonnet 4.5",
+      1.07
      ]
     ],
     "others_share": 0
@@ -5781,8 +6476,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      10.6733
+      "Claude Sonnet 4.5",
+      1.0895
      ]
     ],
     "others_share": 0
@@ -5804,8 +6499,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      10.2989
+      "Claude Sonnet 4.5",
+      1.0193
      ]
     ],
     "others_share": 0
@@ -5827,8 +6522,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      9.9518
+      "Claude Sonnet 4.5",
+      1.0722
      ]
     ],
     "others_share": 0
@@ -5850,8 +6545,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      9.7603
+      "Claude Sonnet 4.5",
+      1.2677
      ]
     ],
     "others_share": 0
@@ -5873,8 +6568,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      10.5913
+      "Claude Sonnet 4.5",
+      1.1169
      ]
     ],
     "others_share": 0
@@ -5896,8 +6591,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      9.5395
+      "Claude Sonnet 4.5",
+      1.0196
      ]
     ],
     "others_share": 0
@@ -5919,8 +6614,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.6595
+      "Claude Sonnet 4.5",
+      0.975
      ],
      [
       "Kimi K3",
@@ -5946,8 +6641,8 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.4121
+      "Claude Sonnet 4.5",
+      0.8429
      ],
      [
       "Kimi K3",
@@ -5973,12 +6668,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      7.2975
-     ],
-     [
       "Kimi K3",
       0.9441
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.7198
      ]
     ],
     "others_share": 0
@@ -6000,12 +6695,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.5889
-     ],
-     [
       "Kimi K3",
       2.2719
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.8801
      ]
     ],
     "others_share": 0
@@ -6027,12 +6722,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.3334
-     ],
-     [
       "Kimi K3",
       2.7587
+     ],
+     [
+      "Claude Sonnet 4.5",
+      1.058
      ]
     ],
     "others_share": 0
@@ -6054,12 +6749,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      9.631
-     ],
-     [
       "Kimi K3",
       1.7432
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.9408
      ]
     ],
     "others_share": 0
@@ -6081,12 +6776,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.3223
-     ],
-     [
       "Kimi K3",
       4.2733
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.9569
      ]
     ],
     "others_share": 0
@@ -6108,12 +6803,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      7.7271
-     ],
-     [
       "Kimi K3",
       2.7106
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.8416
      ]
     ],
     "others_share": 0
@@ -6135,12 +6830,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.4317
-     ],
-     [
       "Kimi K3",
       2.1235
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.8677
      ]
     ],
     "others_share": 0
@@ -6162,12 +6857,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      6.9419
-     ],
-     [
       "Kimi K3",
       2.3197
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.6776
      ]
     ],
     "others_share": 0
@@ -6189,12 +6884,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.7787
-     ],
-     [
       "Kimi K3",
       3.2435
+     ],
+     [
+      "Claude Sonnet 4.5",
+      1.2796
      ]
     ],
     "others_share": 0
@@ -6216,12 +6911,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      6.4026
-     ],
-     [
       "Kimi K3",
       5.8238
+     ],
+     [
+      "Claude Sonnet 4.5",
+      1.3817
      ]
     ],
     "others_share": 0
@@ -6243,12 +6938,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.7915
-     ],
-     [
       "Kimi K3",
       3.6929
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.752
      ]
     ],
     "others_share": 0
@@ -6270,12 +6965,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.5435
-     ],
-     [
       "Kimi K3",
       3.05
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.6719
      ]
     ],
     "others_share": 0
@@ -6297,12 +6992,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.6716
-     ],
-     [
       "Kimi K3",
       2.3879
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.752
      ]
     ],
     "others_share": 0
@@ -6328,8 +7023,8 @@
       5.5185
      ],
      [
-      "Claude Sonnet 4.6",
-      5.3253
+      "Claude Sonnet 4.5",
+      0.5801
      ]
     ],
     "others_share": 0
@@ -6351,12 +7046,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      6.5496
-     ],
-     [
       "Kimi K3",
       3.8574
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.7239
      ]
     ],
     "others_share": 0
@@ -6383,12 +7078,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      7.1544
-     ],
-     [
       "Kimi K3",
       4.069
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.6905
      ]
     ],
     "others_share": 0
@@ -6415,12 +7110,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      7.619
-     ],
-     [
       "Kimi K3",
       4.7115
+     ],
+     [
+      "Claude Sonnet 4.5",
+      1.6426
      ]
     ],
     "others_share": 0
@@ -6447,12 +7142,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      8.378
-     ],
-     [
       "Kimi K3",
       4.0706
+     ],
+     [
+      "Claude Sonnet 4.5",
+      1.1072
      ]
     ],
     "others_share": 0
@@ -6479,12 +7174,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      6.9839
-     ],
-     [
       "Kimi K3",
       4.6179
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.8209
      ]
     ],
     "others_share": 0
@@ -6511,12 +7206,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.424
-     ],
-     [
       "Kimi K3",
       5.0688
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.4873
      ]
     ],
     "others_share": 0
@@ -6543,12 +7238,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      6.3835
-     ],
-     [
       "Kimi K3",
       6.1131
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.6176
      ]
     ],
     "others_share": 0
@@ -6579,8 +7274,8 @@
       8.4594
      ],
      [
-      "Claude Sonnet 4.6",
-      6.0546
+      "Claude Sonnet 4.5",
+      0.5341
      ]
     ],
     "others_share": 0
@@ -6611,8 +7306,8 @@
       7.2013
      ],
      [
-      "Claude Sonnet 4.6",
-      3.6761
+      "Claude Sonnet 4.5",
+      0.6475
      ]
     ],
     "others_share": 0
@@ -6643,8 +7338,8 @@
       8.2781
      ],
      [
-      "Claude Sonnet 4.6",
-      3.7448
+      "Claude Sonnet 4.5",
+      0.869
      ]
     ],
     "others_share": 0
@@ -6675,8 +7370,8 @@
       6.192
      ],
      [
-      "Claude Sonnet 4.6",
-      4.9511
+      "Claude Sonnet 4.5",
+      0.574
      ]
     ],
     "others_share": 0
@@ -6707,8 +7402,8 @@
       7.4478
      ],
      [
-      "Claude Sonnet 4.6",
-      5.0569
+      "Claude Sonnet 4.5",
+      0.3826
      ]
     ],
     "others_share": 0
@@ -6735,12 +7430,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.7641
-     ],
-     [
       "Kimi K3",
       4.7168
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.2833
      ]
     ],
     "others_share": 0
@@ -6771,8 +7466,8 @@
       4.615
      ],
      [
-      "Claude Sonnet 4.6",
-      4.4088
+      "Claude Sonnet 4.5",
+      0.3237
      ]
     ],
     "others_share": 0
@@ -6799,12 +7494,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      3.7448
-     ],
-     [
       "Kimi K3",
       3.0844
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.4228
      ],
      [
       "GLM 5.3",
@@ -6848,8 +7543,8 @@
       3.1826
      ],
      [
-      "Claude Sonnet 4.6",
-      3.1092
+      "Claude Sonnet 4.5",
+      0.7777
      ],
      [
       "GLM 5.3",
@@ -6889,12 +7584,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      3.1173
-     ],
-     [
       "Kimi K3",
       2.4223
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.7772
      ],
      [
       "GLM 5.3",
@@ -6934,12 +7629,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.5385
-     ],
-     [
       "Kimi K3",
       3.3011
+     ],
+     [
+      "Claude Sonnet 4.5",
+      1.0366
      ],
      [
       "GLM 5.3",
@@ -6979,12 +7674,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.3267
-     ],
-     [
       "Kimi K3",
       2.8923
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.5031
      ],
      [
       "GLM 5.3",
@@ -7028,12 +7723,12 @@
       4.2362
      ],
      [
-      "Claude Sonnet 4.6",
-      3.7811
-     ],
-     [
       "GLM 5.3",
       0.4086
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3372
      ]
     ],
     "others_share": 0
@@ -7069,16 +7764,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.2901
-     ],
-     [
       "Kimi K3",
       2.0959
      ],
      [
       "GLM 5.3",
       0.5529
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3391
      ]
     ],
     "others_share": 0
@@ -7114,16 +7809,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.3169
-     ],
-     [
       "Kimi K3",
       2.1668
      ],
      [
       "GLM 5.3",
       0.5794
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3306
      ]
     ],
     "others_share": 0
@@ -7159,16 +7854,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.6556
-     ],
-     [
       "Kimi K3",
       1.1419
      ],
      [
       "GLM 5.3",
       0.7297
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3919
      ]
     ],
     "others_share": 0
@@ -7204,16 +7899,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.457
-     ],
-     [
       "Kimi K3",
       1.1796
      ],
      [
       "GLM 5.3",
       0.682
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.4091
      ]
     ],
     "others_share": 0
@@ -7249,16 +7944,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.383
-     ],
-     [
       "Kimi K3",
       1.9548
      ],
      [
       "GLM 5.3",
       0.6117
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.5881
      ]
     ],
     "others_share": 0
@@ -7294,12 +7989,12 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.0265
-     ],
-     [
       "Kimi K3",
       4.4818
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.9794
      ],
      [
       "GLM 5.3",
@@ -7343,8 +8038,8 @@
       8.3365
      ],
      [
-      "Claude Sonnet 4.6",
-      4.1454
+      "Claude Sonnet 4.5",
+      0.6291
      ],
      [
       "GLM 5.3",
@@ -7360,6 +8055,10 @@
      [
       "DeepSeek V4 Flash 0731",
       9.9349
+     ],
+     [
+      "GLM 5.3 Flash",
+      0.6538
      ],
      [
       "GLM 5.3",
@@ -7388,16 +8087,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.7499
-     ],
-     [
       "Kimi K3",
       1.7415
      ],
      [
       "GLM 5.3",
       0.6226
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.4867
      ]
     ],
     "others_share": 0
@@ -7409,6 +8108,10 @@
      [
       "DeepSeek V4 Flash 0731",
       9.2767
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.3169
      ],
      [
       "GLM 5.3",
@@ -7437,16 +8140,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.354
-     ],
-     [
       "Kimi K3",
       1.7744
      ],
      [
       "GLM 5.3",
       0.6339
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.5163
      ]
     ],
     "others_share": 0
@@ -7458,6 +8161,10 @@
      [
       "DeepSeek V4 Flash 0731",
       7.5561
+     ],
+     [
+      "GLM 5.3 Flash",
+      1.5869
      ],
      [
       "GLM 5.3",
@@ -7486,16 +8193,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      4.9394
-     ],
-     [
       "Kimi K3",
       1.2559
      ],
      [
       "GLM 5.3",
       0.9336
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.5905
      ]
     ],
     "others_share": 0
@@ -7507,6 +8214,10 @@
      [
       "DeepSeek V4 Flash 0731",
       6.9757
+     ],
+     [
+      "GLM 5.3 Flash",
+      1.9283
      ],
      [
       "GLM 5.3",
@@ -7535,16 +8246,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.1172
-     ],
-     [
       "Kimi K3",
       1.515
      ],
      [
       "GLM 5.3",
       0.5468
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.5408
      ]
     ],
     "others_share": 0
@@ -7556,6 +8267,10 @@
      [
       "DeepSeek V4 Flash 0731",
       7.3621
+     ],
+     [
+      "GLM 5.3 Flash",
+      1.8212
      ],
      [
       "GLM 5.3",
@@ -7584,16 +8299,16 @@
     "metric": "cost",
     "shares": [
      [
-      "Claude Sonnet 4.6",
-      5.0759
-     ],
-     [
       "Kimi K3",
       1.2778
      ],
      [
       "GLM 5.3",
       0.5403
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.4742
      ]
     ],
     "others_share": 0
@@ -7605,6 +8320,10 @@
      [
       "DeepSeek V4 Flash 0731",
       11.1226
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.0944
      ],
      [
       "GLM 5.3",
@@ -7637,12 +8356,12 @@
       7.0762
      ],
      [
-      "Claude Sonnet 4.6",
-      4.9127
-     ],
-     [
       "GLM 5.3",
       0.7036
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.398
      ]
     ],
     "others_share": 0
@@ -7654,6 +8373,10 @@
      [
       "DeepSeek V4 Flash 0731",
       16.074
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.1415
      ],
      [
       "GLM 5.3",
@@ -7686,16 +8409,12 @@
       11.0203
      ],
      [
-      "Claude Sonnet 4.6",
-      4.1924
-     ],
-     [
       "GLM 5.3",
       0.7198
      ],
      [
-      "Gemini 3.8 Flash",
-      0.1436
+      "Claude Sonnet 4.5",
+      0.3617
      ]
     ],
     "others_share": 0
@@ -7707,6 +8426,10 @@
      [
       "DeepSeek V4 Flash 0731",
       10.5998
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.0703
      ],
      [
       "GLM 5.3",
@@ -7739,16 +8462,12 @@
       17.1342
      ],
      [
-      "Claude Sonnet 4.6",
-      3.5556
-     ],
-     [
-      "Gemini 3.8 Flash",
-      0.8137
-     ],
-     [
       "GLM 5.3",
       0.7486
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3365
      ]
     ],
     "others_share": 0
@@ -7760,6 +8479,10 @@
      [
       "DeepSeek V4 Flash 0731",
       9.8581
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.1134
      ],
      [
       "GLM 5.3",
@@ -7792,20 +8515,16 @@
       11.2858
      ],
      [
-      "Claude Sonnet 4.6",
-      3.4405
-     ],
-     [
-      "Gemini 3.8 Flash",
-      1.3639
-     ],
-     [
       "GPT-6 Astra",
       0.6406
      ],
      [
       "GLM 5.3",
       0.6048
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.2988
      ]
     ],
     "others_share": 0
@@ -7817,6 +8536,10 @@
      [
       "DeepSeek V4 Flash 0731",
       9.8185
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.388
      ],
      [
       "GLM 5.3",
@@ -7853,16 +8576,12 @@
       6.9306
      ],
      [
-      "Claude Sonnet 4.6",
-      3.6102
-     ],
-     [
-      "Gemini 3.8 Flash",
-      1.1531
-     ],
-     [
       "GLM 5.3",
       0.7609
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.422
      ]
     ],
     "others_share": 0
@@ -7874,6 +8593,10 @@
      [
       "DeepSeek V4 Flash 0731",
       9.9583
+     ],
+     [
+      "GLM 5.3 Flash",
+      3.8624
      ],
      [
       "GLM 5.3",
@@ -7906,20 +8629,16 @@
       6.3899
      ],
      [
-      "Claude Sonnet 4.6",
-      4.2148
-     ],
-     [
       "Kimi K3",
       3.6594
      ],
      [
-      "Gemini 3.8 Flash",
-      2.1016
-     ],
-     [
       "GLM 5.3",
       0.5467
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3862
      ]
     ],
     "others_share": 0
@@ -7931,6 +8650,10 @@
      [
       "DeepSeek V4 Flash 0731",
       12.1867
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.6036
      ],
      [
       "GLM 5.3",
@@ -7963,20 +8686,16 @@
       6.658
      ],
      [
-      "Claude Sonnet 4.6",
-      4.5989
-     ],
-     [
       "Kimi K3",
       3.0468
      ],
      [
-      "Gemini 3.8 Flash",
-      2.3608
-     ],
-     [
       "GLM 5.3",
       0.6239
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.4108
      ]
     ],
     "others_share": 0
@@ -7988,6 +8707,10 @@
      [
       "DeepSeek V4 Flash 0731",
       11.4446
+     ],
+     [
+      "GLM 5.3 Flash",
+      3.0944
      ],
      [
       "GLM 5.3",
@@ -8020,20 +8743,16 @@
       8.7808
      ],
      [
-      "Claude Sonnet 4.6",
-      3.7943
-     ],
-     [
       "Kimi K3",
       3.4492
      ],
      [
-      "Gemini 3.8 Flash",
-      2.1359
-     ],
-     [
       "GLM 5.3",
       0.6197
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3574
      ]
     ],
     "others_share": 0
@@ -8045,6 +8764,10 @@
      [
       "DeepSeek V4 Flash 0731",
       11.0988
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.901
      ],
      [
       "GLM 5.3",
@@ -8085,20 +8808,16 @@
       10.0236
      ],
      [
-      "Claude Sonnet 4.6",
-      4.0341
-     ],
-     [
       "Kimi K3",
       2.7555
      ],
      [
-      "Gemini 3.8 Flash",
-      2.5723
-     ],
-     [
       "GLM 5.3",
       0.8948
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3765
      ]
     ],
     "others_share": 0
@@ -8110,6 +8829,10 @@
      [
       "DeepSeek V4 Flash 0731",
       9.1549
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.7982
      ],
      [
       "GLM 5.3",
@@ -8142,20 +8865,16 @@
       7.8884
      ],
      [
-      "Claude Sonnet 4.6",
-      4.2683
-     ],
-     [
-      "Gemini 3.8 Flash",
-      2.1208
-     ],
-     [
       "Kimi K3",
       2.0726
      ],
      [
       "GLM 5.3",
       0.9852
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3693
      ]
     ],
     "others_share": 0
@@ -8171,6 +8890,10 @@
      [
       "DeepSeek V4 Flash 0731",
       9.5182
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.8486
      ],
      [
       "GLM 5.3",
@@ -8211,16 +8934,12 @@
       7.2312
      ],
      [
-      "Claude Sonnet 4.6",
-      3.3618
-     ],
-     [
-      "Gemini 3.8 Flash",
-      1.5219
-     ],
-     [
       "GLM 5.3",
       0.7788
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3576
      ]
     ],
     "others_share": 0
@@ -8236,6 +8955,10 @@
      [
       "DeepSeek V4 Flash 0731",
       11.165
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.2841
      ],
      [
       "GLM 5.3",
@@ -8276,16 +8999,12 @@
       6.9604
      ],
      [
-      "Claude Sonnet 4.6",
-      3.7859
-     ],
-     [
-      "Gemini 3.8 Flash",
-      1.582
-     ],
-     [
       "GLM 5.3",
       0.8474
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3912
      ]
     ],
     "others_share": 0
@@ -8301,6 +9020,10 @@
      [
       "DeepSeek V4 Flash 0731",
       5.3872
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.2048
      ],
      [
       "GLM 5.3",
@@ -8337,20 +9060,16 @@
       6.9574
      ],
      [
-      "Claude Sonnet 4.6",
-      4.9681
-     ],
-     [
       "Kimi K3",
       4.3468
      ],
      [
-      "Gemini 3.8 Flash",
-      2.6808
-     ],
-     [
       "GLM 5.3",
       0.8304
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.4799
      ]
     ],
     "others_share": 0
@@ -8366,6 +9085,10 @@
      [
       "DeepSeek V4 Flash 0731",
       5.1405
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.1522
      ],
      [
       "GLM 5.3",
@@ -8402,20 +9125,16 @@
       7.975
      ],
      [
-      "Claude Sonnet 4.6",
-      4.7703
-     ],
-     [
       "Kimi K3",
       4.2001
      ],
      [
-      "Gemini 3.8 Flash",
-      2.0328
-     ],
-     [
       "GLM 5.3",
       0.942
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.4888
      ]
     ],
     "others_share": 0
@@ -8431,6 +9150,10 @@
      [
       "DeepSeek V4 Flash 0731",
       8.2397
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.3563
      ],
      [
       "GLM 5.3",
@@ -8471,16 +9194,12 @@
       7.1392
      ],
      [
-      "Claude Sonnet 4.6",
-      4.0074
-     ],
-     [
-      "Gemini 3.8 Flash",
-      1.8552
-     ],
-     [
       "GLM 5.3",
       1.0796
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.4162
      ]
     ],
     "others_share": 0
@@ -8496,6 +9215,10 @@
      [
       "DeepSeek V4 Flash 0731",
       9.8885
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.3292
      ],
      [
       "GLM 5.3",
@@ -8532,20 +9255,16 @@
       7.8142
      ],
      [
-      "Claude Sonnet 4.6",
-      4.2366
-     ],
-     [
       "Kimi K3",
       3.177
      ],
      [
-      "Gemini 3.8 Flash",
-      1.9492
-     ],
-     [
       "GLM 5.3",
       0.8049
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.4146
      ]
     ],
     "others_share": 0
@@ -8561,6 +9280,10 @@
      [
       "DeepSeek V4 Flash 0731",
       5.0027
+     ],
+     [
+      "GLM 5.3 Flash",
+      3.1814
      ],
      [
       "GLM 5.3",
@@ -8609,16 +9332,12 @@
       6.0633
      ],
      [
-      "Claude Sonnet 4.6",
-      4.9189
-     ],
-     [
-      "Gemini 3.8 Flash",
-      1.7931
-     ],
-     [
       "GLM 5.3",
       0.9631
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.4023
      ]
     ],
     "others_share": 0
@@ -8634,6 +9353,10 @@
      [
       "Jev",
       6.0269
+     ],
+     [
+      "GLM 5.3 Flash",
+      5.0935
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -8682,16 +9405,12 @@
       7.0187
      ],
      [
-      "Claude Sonnet 4.6",
-      4.3352
-     ],
-     [
       "GLM 5.3",
       2.2106
      ],
      [
-      "Gemini 3.8 Flash",
-      1.9483
+      "Claude Sonnet 4.5",
+      0.3584
      ]
     ],
     "others_share": 0
@@ -8707,6 +9426,10 @@
      [
       "Jev",
       13.7318
+     ],
+     [
+      "GLM 5.3 Flash",
+      6.5753
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -8755,16 +9478,12 @@
       12.9104
      ],
      [
-      "Claude Sonnet 4.6",
-      1.9679
-     ],
-     [
-      "Gemini 3.8 Flash",
-      1.3648
-     ],
-     [
       "GLM 5.3",
       1.0607
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.2574
      ]
     ],
     "others_share": 0
@@ -8780,6 +9499,10 @@
      [
       "DeepSeek V4.1 Flash",
       17.8087
+     ],
+     [
+      "GLM 5.3 Flash",
+      4.1507
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -8828,16 +9551,16 @@
       9.8044
      ],
      [
-      "Claude Sonnet 4.6",
-      2.0335
-     ],
-     [
-      "Gemini 3.8 Flash",
-      1.8896
-     ],
-     [
       "GLM 5.3",
       0.6532
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.2037
+     ],
+     [
+      "Grok 4.7",
+      0.0184
      ]
     ],
     "others_share": 0
@@ -8853,6 +9576,10 @@
      [
       "DeepSeek V4.1 Flash",
       18.1755
+     ],
+     [
+      "GLM 5.3 Flash",
+      4.2831
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -8901,16 +9628,16 @@
       14.8351
      ],
      [
-      "Claude Sonnet 4.6",
-      2.8295
-     ],
-     [
-      "Gemini 3.8 Flash",
-      1.9489
-     ],
-     [
       "GLM 5.3",
       1.0718
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.2737
+     ],
+     [
+      "Grok 4.7",
+      0.0693
      ]
     ],
     "others_share": 0
@@ -8926,6 +9653,10 @@
      [
       "DeepSeek V4.1 Flash",
       17.4222
+     ],
+     [
+      "GLM 5.3 Flash",
+      4.4571
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -8974,14 +9705,6 @@
       9.3334
      ],
      [
-      "Claude Sonnet 4.6",
-      2.9128
-     ],
-     [
-      "Gemini 3.8 Flash",
-      2.7367
-     ],
-     [
       "GLM 5.3",
       1.1491
      ],
@@ -8990,8 +9713,12 @@
       0.854
      ],
      [
-      "GPT-6 Luna",
-      0.0273
+      "Claude Sonnet 4.5",
+      0.3314
+     ],
+     [
+      "Grok 4.7",
+      0.2351
      ]
     ],
     "others_share": 0
@@ -9007,6 +9734,10 @@
      [
       "DeepSeek V4.1 Flash",
       16.239
+     ],
+     [
+      "GLM 5.3 Flash",
+      4.1114
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -9071,20 +9802,16 @@
       6.0901
      ],
      [
-      "Claude Sonnet 4.6",
-      3.5736
-     ],
-     [
-      "Gemini 3.8 Flash",
-      3.1871
-     ],
-     [
       "GLM 5.3",
       0.8919
      ],
      [
-      "GPT-6 Luna",
-      0.3769
+      "Grok 4.7",
+      0.4125
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3155
      ]
     ],
     "others_share": 0
@@ -9100,6 +9827,10 @@
      [
       "DeepSeek V4.1 Flash",
       14.0579
+     ],
+     [
+      "GLM 5.3 Flash",
+      3.9327
      ],
      [
       "GPT-6 Luna",
@@ -9164,20 +9895,16 @@
       5.9023
      ],
      [
-      "Claude Sonnet 4.6",
-      3.796
-     ],
-     [
-      "Gemini 3.8 Flash",
-      3.3749
-     ],
-     [
       "GLM 5.3",
       0.9893
      ],
      [
-      "GPT-6 Luna",
-      0.6363
+      "Grok 4.7",
+      0.3245
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3099
      ]
     ],
     "others_share": 0
@@ -9197,6 +9924,10 @@
      [
       "GPT-6 Luna",
       4.4881
+     ],
+     [
+      "GLM 5.3 Flash",
+      3.6387
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -9257,20 +9988,16 @@
       5.4542
      ],
      [
-      "Gemini 3.8 Flash",
-      4.5411
-     ],
-     [
-      "Claude Sonnet 4.6",
-      3.4182
-     ],
-     [
       "GLM 5.3",
       1.4751
      ],
      [
-      "GPT-6 Luna",
-      0.7152
+      "Grok 4.7",
+      0.3831
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3246
      ]
     ],
     "others_share": 0
@@ -9286,6 +10013,10 @@
      [
       "DeepSeek V4.1 Flash",
       12.5931
+     ],
+     [
+      "GLM 5.3 Flash",
+      4.2941
      ],
      [
       "GPT-6 Luna",
@@ -9350,20 +10081,16 @@
       10.271
      ],
      [
-      "Gemini 3.8 Flash",
-      6.0117
-     ],
-     [
-      "Claude Sonnet 4.6",
-      3.7325
-     ],
-     [
       "GLM 5.3",
       1.4712
      ],
      [
-      "GPT-6 Luna",
-      0.9133
+      "Claude Sonnet 4.5",
+      0.3443
+     ],
+     [
+      "Grok 4.7",
+      0.2932
      ]
     ],
     "others_share": 0
@@ -9379,6 +10106,10 @@
      [
       "DeepSeek V4.1 Flash",
       17.9303
+     ],
+     [
+      "GLM 5.3 Flash",
+      5.2911
      ],
      [
       "GPT-6 Luna",
@@ -9439,24 +10170,20 @@
       13.4504
      ],
      [
-      "Gemini 3.8 Flash",
-      6.6504
-     ],
-     [
       "GPT-6 Astra",
       6.173
-     ],
-     [
-      "Claude Sonnet 4.6",
-      3.5545
      ],
      [
       "GLM 5.3",
       1.3476
      ],
      [
-      "GPT-6 Luna",
-      0.8974
+      "Grok 4.7",
+      0.3693
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3315
      ]
     ],
     "others_share": 0
@@ -9472,6 +10199,10 @@
      [
       "DeepSeek V4.1 Flash",
       17.1928
+     ],
+     [
+      "GLM 5.3 Flash",
+      4.9367
      ],
      [
       "GPT-6 Luna",
@@ -9532,14 +10263,6 @@
       10.084
      ],
      [
-      "Gemini 3.8 Flash",
-      5.1198
-     ],
-     [
-      "Claude Sonnet 4.6",
-      4.4226
-     ],
-     [
       "GPT-6 Astra",
       4.1615
      ],
@@ -9548,8 +10271,12 @@
       1.8092
      ],
      [
-      "GPT-6 Luna",
-      0.7659
+      "Grok 4.7",
+      0.5713
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.4337
      ],
      [
       "Claude Sonnet 5.5",
@@ -9575,16 +10302,16 @@
       5.9456
      ],
      [
+      "GLM 5.3 Flash",
+      5.0539
+     ],
+     [
       "DeepSeek V4 Flash 0731",
       2.4799
      ],
      [
       "GLM 5.3",
       0.6825
-     ],
-     [
-      "Claude Sonnet 5.5",
-      0.0668
      ]
     ],
     "others_share": 0
@@ -9641,14 +10368,6 @@
       4.5182
      ],
      [
-      "Gemini 3.8 Flash",
-      3.9473
-     ],
-     [
-      "Claude Sonnet 4.6",
-      3.6859
-     ],
-     [
       "Claude Sonnet 5.5",
       1.5415
      ],
@@ -9657,8 +10376,12 @@
       1.1255
      ],
      [
-      "GPT-6 Luna",
-      0.8212
+      "Grok 4.7",
+      1.0674
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.2795
      ],
      [
       "GPT-6.1 Sol",
@@ -9684,12 +10407,12 @@
       6.1424
      ],
      [
-      "DeepSeek V4 Flash 0731",
-      2.3245
+      "GLM 5.3 Flash",
+      3.7001
      ],
      [
-      "Claude Sonnet 5.5",
-      0.6582
+      "DeepSeek V4 Flash 0731",
+      2.3245
      ],
      [
       "GLM 5.3",
@@ -9750,14 +10473,6 @@
       16.007
      ],
      [
-      "Gemini 3.8 Flash",
-      3.6455
-     ],
-     [
-      "Claude Sonnet 4.6",
-      3.643
-     ],
-     [
       "GPT-6 Astra",
       3.583
      ],
@@ -9774,8 +10489,12 @@
       1.444
      ],
      [
-      "GPT-6 Luna",
-      0.757
+      "Grok 4.7",
+      0.5072
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.2659
      ]
     ],
     "others_share": 0
@@ -9797,16 +10516,16 @@
       6.6068
      ],
      [
+      "GLM 5.3 Flash",
+      2.8163
+     ],
+     [
       "DeepSeek V4 Flash 0731",
       2.3821
      ],
      [
       "GLM 5.3",
       0.6355
-     ],
-     [
-      "Claude Sonnet 5.5",
-      0.6306
      ]
     ],
     "others_share": 0
@@ -9863,14 +10582,6 @@
       4.9634
      ],
      [
-      "Claude Sonnet 4.6",
-      4.3104
-     ],
-     [
-      "Gemini 3.8 Flash",
-      4.2511
-     ],
-     [
       "GPT-6 Astra",
       4.225
      ],
@@ -9887,8 +10598,12 @@
       1.9124
      ],
      [
-      "GPT-6 Luna",
-      0.963
+      "Grok 4.7",
+      1.6501
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3361
      ]
     ],
     "others_share": 0
@@ -9910,16 +10625,16 @@
       7.6916
      ],
      [
+      "GLM 5.3 Flash",
+      3.1005
+     ],
+     [
       "DeepSeek V4 Flash 0731",
       2.4811
      ],
      [
       "GLM 5.3",
       0.7524
-     ],
-     [
-      "Claude Sonnet 5.5",
-      0.4872
      ]
     ],
     "others_share": 0
@@ -9968,6 +10683,10 @@
     "metric": "cost",
     "shares": [
      [
+      "Grok 4.7",
+      15.4014
+     ],
+     [
       "Claude Opus 5.5",
       12.9242
      ],
@@ -9980,16 +10699,8 @@
       3.522
      ],
      [
-      "Claude Sonnet 4.6",
-      2.6852
-     ],
-     [
       "GLM 5.3",
       2.3364
-     ],
-     [
-      "Gemini 3.8 Flash",
-      2.1763
      ],
      [
       "Claude Sonnet 5.5",
@@ -10000,8 +10711,8 @@
       1.9695
      ],
      [
-      "GPT-6 Luna",
-      0.782
+      "Claude Sonnet 4.5",
+      0.3227
      ]
     ],
     "others_share": 0
@@ -10023,16 +10734,16 @@
       6.8027
      ],
      [
+      "GLM 5.3 Flash",
+      2.9475
+     ],
+     [
       "DeepSeek V4 Flash 0731",
       2.3217
      ],
      [
       "GLM 5.3",
       0.9536
-     ],
-     [
-      "Claude Sonnet 5.5",
-      0.6665
      ]
     ],
     "others_share": 0
@@ -10097,14 +10808,6 @@
       3.2271
      ],
      [
-      "Claude Sonnet 4.6",
-      3.0108
-     ],
-     [
-      "Gemini 3.8 Flash",
-      2.6272
-     ],
-     [
       "GLM 5.3",
       2.5024
      ],
@@ -10113,8 +10816,12 @@
       2.4762
      ],
      [
-      "GPT-6 Luna",
-      1.0386
+      "Claude Sonnet 4.5",
+      0.587
+     ],
+     [
+      "Grok 4.7",
+      0.3497
      ]
     ],
     "others_share": 0
@@ -10140,12 +10847,12 @@
       3.259
      ],
      [
-      "GLM 5.3",
-      0.9141
+      "GLM 5.3 Flash",
+      3.1231
      ],
      [
-      "Claude Sonnet 5.5",
-      0.5712
+      "GLM 5.3",
+      0.9141
      ]
     ],
     "others_share": 0
@@ -10210,14 +10917,6 @@
       3.7142
      ],
      [
-      "Gemini 3.8 Flash",
-      3.3869
-     ],
-     [
-      "Claude Sonnet 4.6",
-      3.2463
-     ],
-     [
       "GPT-6.1 Sol",
       2.8257
      ],
@@ -10226,8 +10925,12 @@
       2.7013
      ],
      [
-      "GPT-6 Luna",
-      1.1208
+      "Claude Sonnet 4.5",
+      0.7637
+     ],
+     [
+      "Grok 4.7",
+      0.3146
      ]
     ],
     "others_share": 0
@@ -10249,16 +10952,16 @@
       8.5022
      ],
      [
+      "GLM 5.3 Flash",
+      4.2229
+     ],
+     [
       "DeepSeek V4 Flash 0731",
       2.5316
      ],
      [
       "GLM 5.3",
       0.9949
-     ],
-     [
-      "Claude Sonnet 5.5",
-      0.6738
      ]
     ],
     "others_share": 0
@@ -10327,20 +11030,16 @@
       3.7336
      ],
      [
-      "Claude Sonnet 4.6",
-      3.5949
-     ],
-     [
-      "Gemini 3.8 Flash",
-      3.0768
-     ],
-     [
       "GLM 5.3",
       2.096
      ],
      [
-      "GPT-6 Luna",
-      1.2684
+      "Grok 4.7",
+      0.7946
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.5556
      ]
     ],
     "others_share": 0
@@ -10362,12 +11061,12 @@
       6.0845
      ],
      [
-      "DeepSeek V4 Flash 0731",
-      2.6901
+      "GLM 5.3 Flash",
+      4.0405
      ],
      [
-      "Claude Sonnet 5.5",
-      0.9907
+      "DeepSeek V4 Flash 0731",
+      2.6901
      ],
      [
       "GLM 5.3",
@@ -10440,20 +11139,16 @@
       3.8248
      ],
      [
-      "Gemini 3.8 Flash",
-      2.9088
-     ],
-     [
-      "Claude Sonnet 4.6",
-      2.8694
-     ],
-     [
       "GLM 5.3",
       1.6776
      ],
      [
-      "GPT-6 Luna",
-      1.1278
+      "Grok 4.7",
+      1.0149
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.4816
      ]
     ],
     "others_share": 0
@@ -10479,8 +11174,8 @@
       3.4076
      ],
      [
-      "Claude Sonnet 5.5",
-      1.139
+      "GLM 5.3 Flash",
+      2.7643
      ],
      [
       "GLM 5.3",
@@ -10553,20 +11248,16 @@
       4.2399
      ],
      [
-      "Claude Sonnet 4.6",
-      3.1064
-     ],
-     [
-      "Gemini 3.8 Flash",
-      3.0851
-     ],
-     [
       "GLM 5.3",
       3.0828
      ],
      [
-      "GPT-6 Luna",
-      1.1539
+      "Grok 4.7",
+      0.8037
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.4065
      ]
     ],
     "others_share": 0
@@ -10588,12 +11279,12 @@
       5.8128
      ],
      [
-      "DeepSeek V4 Flash 0731",
-      2.7973
+      "GLM 5.3 Flash",
+      3.2108
      ],
      [
-      "Claude Sonnet 5.5",
-      1.1421
+      "DeepSeek V4 Flash 0731",
+      2.7973
      ],
      [
       "GLM 5.3",
@@ -10674,16 +11365,12 @@
       3.3012
      ],
      [
-      "Claude Sonnet 4.6",
-      2.7368
+      "Grok 4.7",
+      1.844
      ],
      [
-      "Gemini 3.8 Flash",
-      2.6906
-     ],
-     [
-      "GPT-6 Luna",
-      1.0208
+      "Claude Sonnet 4.5",
+      0.3111
      ]
     ],
     "others_share": 0
@@ -10705,16 +11392,16 @@
       6.7177
      ],
      [
+      "GLM 5.3 Flash",
+      3.7142
+     ],
+     [
       "DeepSeek V4 Flash 0731",
       2.5958
      ],
      [
       "Claude Haiku 5.5",
       1.2987
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.1931
      ],
      [
       "GLM 5.3",
@@ -10791,16 +11478,12 @@
       3.2352
      ],
      [
-      "Claude Sonnet 4.6",
-      2.5652
+      "Grok 4.7",
+      1.35
      ],
      [
-      "Gemini 3.8 Flash",
-      2.551
-     ],
-     [
-      "GPT-6 Luna",
-      1.2264
+      "Claude Sonnet 4.5",
+      0.2949
      ]
     ],
     "others_share": 0
@@ -10822,16 +11505,16 @@
       7.1021
      ],
      [
+      "GLM 5.3 Flash",
+      4.6337
+     ],
+     [
       "DeepSeek V4 Flash 0731",
       2.8042
      ],
      [
       "Claude Haiku 5.5",
       1.2893
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.1521
      ],
      [
       "GLM 5.3",
@@ -10908,16 +11591,12 @@
       3.8574
      ],
      [
-      "Gemini 3.8 Flash",
-      2.5307
+      "Grok 4.7",
+      1.6757
      ],
      [
-      "Claude Sonnet 4.6",
-      2.1171
-     ],
-     [
-      "GPT-6 Luna",
-      1.1567
+      "Claude Sonnet 4.5",
+      0.3373
      ]
     ],
     "others_share": 0
@@ -10939,16 +11618,16 @@
       5.972
      ],
      [
+      "GLM 5.3 Flash",
+      5.1913
+     ],
+     [
       "DeepSeek V4 Flash 0731",
       1.8305
      ],
      [
       "GLM 5.3",
       1.61
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.2414
      ],
      [
       "Claude Haiku 5.5",
@@ -11009,6 +11688,10 @@
       11.7017
      ],
      [
+      "Grok 4.7",
+      9.8922
+     ],
+     [
       "Kimi K3",
       6.7685
      ],
@@ -11025,16 +11708,8 @@
       3.3586
      ],
      [
-      "Gemini 3.8 Flash",
-      2.7245
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.9848
-     ],
-     [
-      "GPT-6 Luna",
-      1.0174
+      "Claude Sonnet 4.5",
+      0.3103
      ]
     ],
     "others_share": 0
@@ -11056,16 +11731,16 @@
       5.6802
      ],
      [
+      "GLM 5.3 Flash",
+      5.0425
+     ],
+     [
       "GLM 5.3",
       4.7172
      ],
      [
       "DeepSeek V4 Flash 0731",
       2.8058
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.0995
      ],
      [
       "Claude Haiku 5.5",
@@ -11142,16 +11817,12 @@
       4.4253
      ],
      [
-      "Claude Sonnet 4.6",
-      2.666
+      "Grok 4.7",
+      2.5535
      ],
      [
-      "Gemini 3.8 Flash",
-      2.6545
-     ],
-     [
-      "GPT-6 Luna",
-      1.2147
+      "Claude Sonnet 4.5",
+      0.3102
      ]
     ],
     "others_share": 0
@@ -11177,16 +11848,16 @@
       5.8583
      ],
      [
+      "GLM 5.3 Flash",
+      4.399
+     ],
+     [
       "GLM 5.3",
       3.4618
      ],
      [
       "Claude Haiku 5.5",
       1.3758
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.2947
      ]
     ],
     "others_share": 0
@@ -11259,16 +11930,12 @@
       3.446
      ],
      [
-      "Gemini 3.8 Flash",
-      2.2459
+      "Grok 4.7",
+      2.2248
      ],
      [
-      "Claude Sonnet 4.6",
-      2.1879
-     ],
-     [
-      "GPT-6 Luna",
-      1.224
+      "Claude Sonnet 4.5",
+      0.2601
      ]
     ],
     "others_share": 0
@@ -11294,16 +11961,16 @@
       4.1108
      ],
      [
+      "GLM 5.3 Flash",
+      3.6989
+     ],
+     [
       "DeepSeek V4 Flash 0731",
       3.3872
      ],
      [
       "Claude Haiku 5.5",
       1.4528
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.4485
      ]
     ],
     "others_share": 0
@@ -11376,16 +12043,12 @@
       2.9962
      ],
      [
-      "Gemini 3.8 Flash",
-      2.1951
+      "Grok 4.7",
+      2.3519
      ],
      [
-      "Claude Sonnet 4.6",
-      2.103
-     ],
-     [
-      "GPT-6 Luna",
-      1.1656
+      "Claude Sonnet 4.5",
+      0.2465
      ]
     ],
     "others_share": 0
@@ -11415,8 +12078,8 @@
       3.9873
      ],
      [
-      "Claude Sonnet 5.5",
-      1.5887
+      "GLM 5.3 Flash",
+      3.6742
      ],
      [
       "Claude Haiku 5.5",
@@ -11477,6 +12140,10 @@
       15.27
      ],
      [
+      "Grok 4.7",
+      5.9001
+     ],
+     [
       "Kimi K3",
       4.8816
      ],
@@ -11493,16 +12160,8 @@
       2.6156
      ],
      [
-      "Gemini 3.8 Flash",
-      1.9121
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.8153
-     ],
-     [
-      "GPT-6 Luna",
-      1.0057
+      "Claude Sonnet 4.5",
+      0.292
      ]
     ],
     "others_share": 0
@@ -11528,12 +12187,12 @@
       4.8191
      ],
      [
-      "DeepSeek V4 Flash 0731",
-      2.2901
+      "GLM 5.3 Flash",
+      4.0771
      ],
      [
-      "Claude Sonnet 5.5",
-      1.6072
+      "DeepSeek V4 Flash 0731",
+      2.2901
      ],
      [
       "Claude Haiku 5.5",
@@ -11602,6 +12261,10 @@
       15.763
      ],
      [
+      "Grok 4.7",
+      5.7232
+     ],
+     [
       "Claude Sonnet 5.5",
       4.6778
      ],
@@ -11618,16 +12281,8 @@
       2.8704
      ],
      [
-      "Gemini 3.8 Flash",
-      1.864
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.7771
-     ],
-     [
-      "GPT-6 Luna",
-      1.0133
+      "Claude Sonnet 4.5",
+      0.2681
      ]
     ],
     "others_share": 0
@@ -11653,16 +12308,16 @@
       5.4089
      ],
      [
+      "GLM 5.3 Flash",
+      4.317
+     ],
+     [
       "Jev 1.14.0",
       2.7112
      ],
      [
       "DeepSeek V4 Flash 0731",
       2.3906
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.7255
      ],
      [
       "Claude Haiku 5.5",
@@ -11747,16 +12402,12 @@
       3.1449
      ],
      [
-      "Gemini 3.8 Flash",
-      2.4668
+      "Grok 4.7",
+      1.9374
      ],
      [
-      "Claude Sonnet 4.6",
-      1.5129
-     ],
-     [
-      "GPT-6 Luna",
-      1.1303
+      "Claude Sonnet 4.5",
+      0.3366
      ],
      [
       "DeepSeek V4.1 Flash 1017",
@@ -11782,6 +12433,10 @@
       6.6993
      ],
      [
+      "GLM 5.3 Flash",
+      6.354
+     ],
+     [
       "Jev 1.14.0",
       4.7536
      ],
@@ -11792,10 +12447,6 @@
      [
       "DeepSeek V4 Flash 0731",
       2.7144
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.4885
      ],
      [
       "Claude Haiku 5.5",
@@ -11884,24 +12535,20 @@
       3.6569
      ],
      [
+      "Grok 4.7",
+      3.244
+     ],
+     [
       "GPT-6.1 Sol",
       3.1222
      ],
      [
-      "Gemini 3.8 Flash",
-      2.4189
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.4325
-     ],
-     [
-      "GPT-6 Luna",
-      1.0883
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       0.5242
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3371
      ]
     ],
     "others_share": 0
@@ -11927,6 +12574,10 @@
       6.037
      ],
      [
+      "GLM 5.3 Flash",
+      4.4716
+     ],
+     [
       "GLM 5.3",
       4.2312
      ],
@@ -11941,10 +12592,6 @@
      [
       "Claude Haiku 5.5",
       1.3542
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.2716
      ],
      [
       "Jev 1.13.0",
@@ -12029,20 +12676,16 @@
       3.3085
      ],
      [
-      "Gemini 3.8 Flash",
-      2.3975
-     ],
-     [
-      "Claude Sonnet 4.6",
-      2.0305
-     ],
-     [
-      "GPT-6 Luna",
-      1.2571
+      "Grok 4.7",
+      2.0545
      ],
      [
       "DeepSeek V4.1 Flash 1017",
       1.2299
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.2941
      ]
     ],
     "others_share": 0
@@ -12076,12 +12719,12 @@
       3.5154
      ],
      [
-      "DeepSeek V4 Flash 0731",
-      2.7857
+      "GLM 5.3 Flash",
+      3.3353
      ],
      [
-      "Claude Sonnet 5.5",
-      1.6764
+      "DeepSeek V4 Flash 0731",
+      2.7857
      ],
      [
       "Claude Haiku 5.5",
@@ -12154,6 +12797,10 @@
       15.4929
      ],
      [
+      "Grok 4.7",
+      13.4042
+     ],
+     [
       "Kimi K3",
       8.0115
      ],
@@ -12170,20 +12817,12 @@
       2.4523
      ],
      [
-      "Gemini 3.8 Flash",
-      2.1598
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       1.8912
      ],
      [
-      "Claude Sonnet 4.6",
-      1.5779
-     ],
-     [
-      "GPT-6 Luna",
-      1.1189
+      "Claude Sonnet 4.5",
+      0.2275
      ]
     ],
     "others_share": 0
@@ -12221,8 +12860,8 @@
       3.6898
      ],
      [
-      "Claude Sonnet 5.5",
-      2.0629
+      "GLM 5.3 Flash",
+      2.5247
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -12295,6 +12934,10 @@
       13.8003
      ],
      [
+      "Grok 4.7",
+      12.944
+     ],
+     [
       "Kimi K3",
       6.3628
      ],
@@ -12311,20 +12954,12 @@
       3.1634
      ],
      [
-      "Gemini 3.8 Flash",
-      2.311
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.8973
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       1.6096
      ],
      [
-      "GPT-6 Luna",
-      1.3522
+      "Claude Sonnet 4.5",
+      0.2734
      ]
     ],
     "others_share": 0
@@ -12358,12 +12993,12 @@
       4.1991
      ],
      [
-      "Claude Haiku 5.5",
-      1.8092
+      "GLM 5.3 Flash",
+      2.4949
      ],
      [
-      "Claude Sonnet 5.5",
-      1.5784
+      "Claude Haiku 5.5",
+      1.8092
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -12436,6 +13071,10 @@
       13.7942
      ],
      [
+      "Grok 4.7",
+      8.1502
+     ],
+     [
       "Kimi K3",
       6.3864
      ],
@@ -12452,20 +13091,12 @@
       3.9451
      ],
      [
-      "Gemini 3.8 Flash",
-      2.4112
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.7965
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       1.4571
      ],
      [
-      "GPT-6 Luna",
-      1.3877
+      "Claude Sonnet 4.5",
+      0.2509
      ]
     ],
     "others_share": 0
@@ -12491,6 +13122,10 @@
       5.2537
      ],
      [
+      "GLM 5.3 Flash",
+      4.7807
+     ],
+     [
       "DeepSeek V4.1 Flash 1017",
       4.3294
      ],
@@ -12501,10 +13136,6 @@
      [
       "Claude Haiku 5.5",
       1.9407
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.6604
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -12593,20 +13224,16 @@
       2.9499
      ],
      [
-      "Gemini 3.8 Flash",
-      2.3417
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.8844
+      "Grok 4.7",
+      1.8083
      ],
      [
       "DeepSeek V4.1 Flash 1017",
       1.4794
      ],
      [
-      "GPT-6 Luna",
-      1.3786
+      "Claude Sonnet 4.5",
+      0.2353
      ]
     ],
     "others_share": 0
@@ -12618,6 +13245,10 @@
      [
       "Jev",
       18.9331
+     ],
+     [
+      "GLM 5.3 Flash",
+      8.7587
      ],
      [
       "GPT-6 Luna",
@@ -12642,10 +13273,6 @@
      [
       "Claude Haiku 5.5",
       1.8758
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.5494
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -12730,24 +13357,20 @@
       3.6487
      ],
      [
-      "Gemini 3.8 Flash",
-      2.2577
-     ],
-     [
       "GPT-6 Astra",
       2.2254
      ],
      [
-      "Claude Sonnet 4.6",
-      1.6258
+      "Grok 4.7",
+      1.8729
      ],
      [
       "DeepSeek V4.1 Flash 1017",
       1.4047
      ],
      [
-      "GPT-6 Luna",
-      1.215
+      "Claude Sonnet 4.5",
+      0.2564
      ]
     ],
     "others_share": 0
@@ -12759,6 +13382,10 @@
      [
       "Jev",
       20.9649
+     ],
+     [
+      "GLM 5.3 Flash",
+      9.3503
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -12783,10 +13410,6 @@
      [
       "Claude Haiku 5.5",
       2.0147
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.2293
      ],
      [
       "Jev 1.13.0",
@@ -12859,6 +13482,10 @@
       15.4855
      ],
      [
+      "Grok 4.7",
+      7.6054
+     ],
+     [
       "Kimi K3",
       6.1303
      ],
@@ -12875,20 +13502,12 @@
       3.1058
      ],
      [
-      "Gemini 3.8 Flash",
-      2.7501
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       2.1499
      ],
      [
-      "Claude Sonnet 4.6",
-      1.632
-     ],
-     [
-      "GPT-6 Luna",
-      1.3394
+      "Claude Sonnet 4.5",
+      0.2609
      ]
     ],
     "others_share": 0
@@ -12926,16 +13545,16 @@
       2.7746
      ],
      [
+      "GLM 5.3 Flash",
+      1.8468
+     ],
+     [
       "Jev 1.13.0",
       1.6599
      ],
      [
       "DeepSeek V4 Flash 0731",
       1.5102
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.2097
      ]
     ],
     "others_share": 0
@@ -13016,20 +13635,16 @@
       3.045
      ],
      [
-      "Gemini 3.8 Flash",
-      2.7539
-     ],
-     [
-      "Claude Sonnet 4.6",
-      2.3197
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       2.239
      ],
      [
-      "GPT-6 Luna",
-      1.5317
+      "Grok 4.7",
+      2.1544
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3041
      ]
     ],
     "others_share": 0
@@ -13067,8 +13682,8 @@
       2.8595
      ],
      [
-      "Claude Sonnet 5.5",
-      1.5206
+      "GLM 5.3 Flash",
+      2.2783
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -13141,6 +13756,10 @@
       10.4315
      ],
      [
+      "Grok 4.7",
+      9.2519
+     ],
+     [
       "Claude Sonnet 5.5",
       6.0119
      ],
@@ -13157,20 +13776,12 @@
       3.5063
      ],
      [
-      "Gemini 3.8 Flash",
-      2.1995
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.9968
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       1.542
      ],
      [
-      "GPT-6 Luna",
-      1.48
+      "Claude Sonnet 4.5",
+      0.2667
      ]
     ],
     "others_share": 0
@@ -13186,6 +13797,10 @@
      [
       "GPT-6 Luna",
       8.2713
+     ],
+     [
+      "GLM 5.3 Flash",
+      5.6742
      ],
      [
       "Jev 1.14.0",
@@ -13210,10 +13825,6 @@
      [
       "DeepSeek V4 Flash 0731",
       2.1406
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.6203
      ],
      [
       "Jev 1.13.0",
@@ -13278,6 +13889,10 @@
       16.832
      ],
      [
+      "Grok 4.7",
+      15.6521
+     ],
+     [
       "Kimi K3",
       8.7395
      ],
@@ -13298,20 +13913,12 @@
       2.8611
      ],
      [
-      "Gemini 3.8 Flash",
-      2.1736
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.4502
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       1.3333
      ],
      [
-      "GPT-6 Luna",
-      1.1584
+      "Claude Sonnet 4.5",
+      0.1768
      ]
     ],
     "others_share": 0
@@ -13327,6 +13934,10 @@
      [
       "GPT-6 Luna",
       8.1861
+     ],
+     [
+      "GLM 5.3 Flash",
+      5.9989
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -13351,10 +13962,6 @@
      [
       "Claude Haiku 5.5",
       1.9187
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.6986
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -13423,6 +14030,10 @@
       11.2589
      ],
      [
+      "Grok 4.7",
+      11.1435
+     ],
+     [
       "Claude Sonnet 5.5",
       5.5357
      ],
@@ -13439,20 +14050,12 @@
       4.2058
      ],
      [
-      "Gemini 3.8 Flash",
-      2.7708
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       1.4328
      ],
      [
-      "Claude Sonnet 4.6",
-      1.4236
-     ],
-     [
-      "GPT-6 Luna",
-      1.2629
+      "Claude Sonnet 4.5",
+      0.1911
      ]
     ],
     "others_share": 0
@@ -13468,6 +14071,10 @@
      [
       "GPT-6 Luna",
       8.4055
+     ],
+     [
+      "GLM 5.3 Flash",
+      5.2041
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -13496,10 +14103,6 @@
      [
       "GLM 5.3",
       2.0432
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.6761
      ]
     ],
     "others_share": 0
@@ -13560,6 +14163,10 @@
       19.271
      ],
      [
+      "Grok 4.7",
+      17.775
+     ],
+     [
       "GLM 5.3",
       11.2842
      ],
@@ -13580,20 +14187,12 @@
       4.0302
      ],
      [
-      "Gemini 3.8 Flash",
-      2.0899
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       1.8678
      ],
      [
-      "Claude Sonnet 4.6",
-      1.368
-     ],
-     [
-      "GPT-6 Luna",
-      1.1132
+      "Claude Sonnet 4.5",
+      0.1915
      ]
     ],
     "others_share": 0
@@ -13609,6 +14208,10 @@
      [
       "GPT-6 Luna",
       7.2521
+     ],
+     [
+      "GLM 5.3 Flash",
+      5.932
      ],
      [
       "DeepSeek V4.1 Flash",
@@ -13637,10 +14240,6 @@
      [
       "Claude Haiku 5.5",
       2.3093
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.7937
      ]
     ],
     "others_share": 0
@@ -13705,6 +14304,10 @@
       14.1973
      ],
      [
+      "Grok 4.7",
+      12.4846
+     ],
+     [
       "Kimi K3",
       8.2106
      ],
@@ -13725,16 +14328,8 @@
       2.2988
      ],
      [
-      "Gemini 3.8 Flash",
-      2.029
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.2197
-     ],
-     [
-      "GPT-6 Luna",
-      1.071
+      "Claude Sonnet 4.5",
+      0.2298
      ]
     ],
     "others_share": 0
@@ -13760,6 +14355,10 @@
       5.9131
      ],
      [
+      "GLM 5.3 Flash",
+      4.2374
+     ],
+     [
       "Jev 1.14.0",
       4.2
      ],
@@ -13778,10 +14377,6 @@
      [
       "Claude Haiku 5.5",
       2.0532
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.6632
      ]
     ],
     "others_share": 0
@@ -13838,8 +14433,12 @@
     "metric": "cost",
     "shares": [
      [
+      "Grok 4.7",
+      17.8104
+     ],
+     [
       "Claude Opus 5.5",
-      17.2164
+      17.2163
      ],
      [
       "GLM 5.3",
@@ -13851,7 +14450,7 @@
      ],
      [
       "Claude Sonnet 5.5",
-      5.4548
+      5.4547
      ],
      [
       "GPT-6.1 Sol",
@@ -13866,16 +14465,8 @@
       2.2048
      ],
      [
-      "Gemini 3.8 Flash",
-      2.0886
-     ],
-     [
-      "GPT-6 Luna",
-      1.5466
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.3607
+      "Claude Sonnet 4.5",
+      0.2606
      ]
     ],
     "others_share": 0
@@ -13909,6 +14500,10 @@
       4.621
      ],
      [
+      "GLM 5.3 Flash",
+      4.6012
+     ],
+     [
       "Jev 1.13.0",
       2.9952
      ],
@@ -13919,10 +14514,6 @@
      [
       "Claude Haiku 5.5",
       2.0891
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.4048
      ]
     ],
     "others_share": 0
@@ -13953,7 +14544,7 @@
      ],
      [
       "GPT-6 Luna",
-      4.0325
+      4.0324
      ],
      [
       "Claude Opus 5.5",
@@ -13979,44 +14570,40 @@
     "metric": "cost",
     "shares": [
      [
+      "Grok 4.7",
+      23.5447
+     ],
+     [
       "Claude Opus 5.5",
-      21.089
+      21.0861
      ],
      [
       "GLM 5.3",
-      5.7242
+      5.7234
      ],
      [
       "Claude Sonnet 5.5",
-      5.6475
+      5.6467
      ],
      [
       "GPT-6.1 Sol",
-      4.5584
+      4.5578
      ],
      [
       "Kimi K3",
-      4.3335
-     ],
-     [
-      "Gemini 3.8 Flash",
-      2.2427
+      4.3329
      ],
      [
       "GPT-6 Astra",
-      2.2249
+      2.2246
      ],
      [
       "DeepSeek V4.1 Flash 1017",
-      1.7819
+      1.7817
      ],
      [
-      "Claude Sonnet 4.6",
-      1.7156
-     ],
-     [
-      "GPT-6 Luna",
-      1.5535
+      "Claude Sonnet 4.5",
+      0.2039
      ]
     ],
     "others_share": 0
@@ -14027,39 +14614,39 @@
     "shares": [
      [
       "Jev",
-      19.8814
+      19.8808
      ],
      [
       "GPT-6 Luna",
-      8.991
+      8.9907
      ],
      [
       "DeepSeek V4.1 Flash",
-      6.9702
+      6.97
      ],
      [
       "Jev 1.14.0",
-      5.4566
+      5.4565
      ],
      [
       "DeepSeek V4.1 Flash 1017",
-      4.8059
+      4.8057
+     ],
+     [
+      "GLM 5.3 Flash",
+      4.7697
      ],
      [
       "Jev 1.13.0",
-      4.2999
+      4.2998
      ],
      [
       "Claude Haiku 5.5",
-      2.1287
+      2.1286
      ],
      [
       "GLM 5.3",
       1.8068
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.5762
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -14074,43 +14661,43 @@
     "shares": [
      [
       "DeepSeek V4.1 Flash",
-      15.089
+      15.088
      ],
      [
       "Beam 1.0",
-      14.6674
+      14.6664
      ],
      [
       "DeepSeek V4.1 Flash 1017",
-      14.4303
+      14.4294
      ],
      [
       "GLM 5.3 Flash",
-      9.615
+      9.6144
      ],
      [
       "GPT-6 Luna",
-      5.7357
+      5.7353
      ],
      [
       "Claude Opus 5.5",
-      5.4998
+      5.4994
      ],
      [
       "GLM 5.3",
-      4.4637
+      4.4634
      ],
      [
       "Jev",
-      2.8502
+      2.85
      ],
      [
       "Claude Sonnet 5.5",
-      2.1234
+      2.1233
      ],
      [
       "GPT-6.1 Sol",
-      1.9349
+      1.9348
      ]
     ],
     "others_share": 0
@@ -14121,11 +14708,15 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      23.3134
+      23.3133
+     ],
+     [
+      "Grok 4.7",
+      16.3083
      ],
      [
       "GLM 5.3",
-      6.8775
+      6.8774
      ],
      [
       "Kimi K3",
@@ -14144,20 +14735,12 @@
       3.8636
      ],
      [
-      "Gemini 3.8 Flash",
-      2.1104
-     ],
-     [
-      "GPT-6 Luna",
-      1.8442
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       1.5845
      ],
      [
-      "Claude Sonnet 4.6",
-      1.4698
+      "Claude Sonnet 4.5",
+      0.1971
      ]
     ],
     "others_share": 0
@@ -14187,6 +14770,10 @@
       4.3192
      ],
      [
+      "GLM 5.3 Flash",
+      4.1858
+     ],
+     [
       "Jev 1.13.0",
       3.2595
      ],
@@ -14197,10 +14784,6 @@
      [
       "Claude Haiku 5.5",
       2.1501
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.847
      ],
      [
       "DeepSeek V4 Flash 0731",
@@ -14219,19 +14802,19 @@
      ],
      [
       "DeepSeek V4.1 Flash 1017",
-      14.2142
+      14.2141
      ],
      [
       "GLM 5.3 Flash",
-      8.7426
+      8.7425
      ],
      [
       "DeepSeek V4.1 Flash",
-      7.9514
+      7.9513
      ],
      [
       "GPT-6 Luna",
-      6.9608
+      6.9607
      ],
      [
       "Claude Opus 5.5",
@@ -14281,14 +14864,6 @@
       3.5837
      ],
      [
-      "Gemini 3.8 Flash",
-      2.7692
-     ],
-     [
-      "GPT-6 Luna",
-      2.3969
-     ],
-     [
       "GLM 5.3",
       2.3777
      ],
@@ -14297,8 +14872,12 @@
       1.9964
      ],
      [
-      "Claude Sonnet 4.6",
-      1.9518
+      "Grok 4.7",
+      1.6038
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.2354
      ]
     ],
     "others_share": 0
@@ -14336,12 +14915,12 @@
       2.5956
      ],
      [
-      "Claude Haiku 5.5",
-      2.2393
+      "GLM 5.3 Flash",
+      2.4649
      ],
      [
-      "Claude Sonnet 5.5",
-      1.9726
+      "Claude Haiku 5.5",
+      2.2393
      ],
      [
       "GLM 5.3",
@@ -14430,16 +15009,12 @@
       2.6497
      ],
      [
-      "Gemini 3.8 Flash",
-      2.2612
+      "Grok 4.7",
+      2.5795
      ],
      [
-      "GPT-6 Luna",
-      1.6668
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.6397
+      "Claude Sonnet 4.5",
+      0.2
      ]
     ],
     "others_share": 0
@@ -14473,16 +15048,16 @@
       3.1174
      ],
      [
+      "GLM 5.3 Flash",
+      3.1096
+     ],
+     [
       "DeepSeek V4 Flash 0731",
       2.7113
      ],
      [
       "Claude Haiku 5.5",
       2.4911
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.8968
      ],
      [
       "GLM 5.3",
@@ -14567,20 +15142,16 @@
       3.9516
      ],
      [
+      "Grok 4.7",
+      2.9236
+     ],
+     [
       "DeepSeek V4.1 Flash 1017",
       2.4041
      ],
      [
-      "Gemini 3.8 Flash",
-      2.3629
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.9019
-     ],
-     [
-      "GPT-6 Luna",
-      1.5532
+      "Claude Sonnet 4.5",
+      0.2299
      ]
     ],
     "others_share": 0
@@ -14606,6 +15177,10 @@
       4.386
      ],
      [
+      "GLM 5.3 Flash",
+      4.0131
+     ],
+     [
       "Jev 1.14.0",
       3.8155
      ],
@@ -14620,10 +15195,6 @@
      [
       "Claude Haiku 5.5",
       2.4013
-     ],
-     [
-      "Claude Sonnet 5.5",
-      1.7903
      ],
      [
       "GLM 5.3",
@@ -14685,43 +15256,39 @@
     "shares": [
      [
       "Claude Opus 5.5",
-      22.4663
+      22.466
      ],
      [
       "GLM 5.3",
-      15.1421
+      15.1419
      ],
      [
       "Claude Sonnet 5.5",
-      6.1644
+      6.1643
      ],
      [
       "GPT-6.1 Sol",
-      5.9276
+      5.9275
      ],
      [
       "Kimi K3",
-      5.1661
+      5.166
+     ],
+     [
+      "Grok 4.7",
+      4.0557
      ],
      [
       "DeepSeek V4.1 Flash 1017",
-      3.9939
+      3.9938
      ],
      [
       "GPT-6 Astra",
-      3.4255
+      3.4254
      ],
      [
-      "Gemini 3.8 Flash",
-      2.1563
-     ],
-     [
-      "Claude Sonnet 4.6",
-      1.4741
-     ],
-     [
-      "GPT-6 Luna",
-      1.3819
+      "Claude Sonnet 4.5",
+      0.3532
      ]
     ],
     "others_share": 0
@@ -14763,12 +15330,12 @@
       2.6862
      ],
      [
-      "Claude Haiku 5.5",
-      2.0962
+      "GLM 5.3 Flash",
+      2.3671
      ],
      [
-      "Claude Sonnet 5.5",
-      1.4306
+      "Claude Haiku 5.5",
+      2.0962
      ]
     ],
     "others_share": 0
@@ -14779,7 +15346,7 @@
     "shares": [
      [
       "Beam 1.0",
-      23.1916
+      23.1915
      ],
      [
       "DeepSeek V4.1 Flash 1017",
@@ -14807,7 +15374,7 @@
      ],
      [
       "Jev",
-      3.5351
+      3.535
      ],
      [
       "GPT-6.1 Sol",
@@ -14815,7 +15382,7 @@
      ],
      [
       "Claude Sonnet 5.5",
-      1.9019
+      1.9018
      ]
     ],
     "others_share": 0
@@ -14849,20 +15416,16 @@
       3.4938
      ],
      [
-      "Gemini 3.8 Flash",
-      3.1704
-     ],
-     [
-      "GPT-6 Luna",
-      2.4576
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       1.9891
      ],
      [
-      "Claude Sonnet 4.6",
-      1.9055
+      "Grok 4.7",
+      1.6773
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.3575
      ]
     ],
     "others_share": 0
@@ -14904,8 +15467,8 @@
       2.7496
      ],
      [
-      "Claude Sonnet 5.5",
-      1.4624
+      "GLM 5.3 Flash",
+      2.0918
      ],
      [
       "GLM 5.3",
@@ -14990,20 +15553,20 @@
       2.7779
      ],
      [
-      "Gemini 3.8 Flash",
-      2.7228
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       2.5653
      ],
      [
-      "Claude Sonnet 4.6",
-      2.1672
+      "Grok 4.7",
+      1.8021
      ],
      [
-      "GPT-6 Luna",
-      1.9648
+      "Claude Fable 5.2",
+      0.8746
+     ],
+     [
+      "Claude Sonnet 4.5",
+      0.2681
      ]
     ],
     "others_share": 0
@@ -15049,8 +15612,8 @@
       2.1836
      ],
      [
-      "Claude Sonnet 5.5",
-      2.115
+      "GLM 5.3 Flash",
+      1.8556
      ]
     ],
     "others_share": 0
@@ -15098,6 +15661,147 @@
      [
       "GLM 5.3 Flash",
       2.6621
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-11-10",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 5.5",
+      24.2044
+     ],
+     [
+      "GLM 5.3",
+      12.7425
+     ],
+     [
+      "Kimi K3",
+      8.6384
+     ],
+     [
+      "Claude Sonnet 5.5",
+      6.5938
+     ],
+     [
+      "GPT-6.1 Sol",
+      6.2202
+     ],
+     [
+      "Claude Fable 5.2",
+      4.5568
+     ],
+     [
+      "GPT-6 Astra",
+      2.9285
+     ],
+     [
+      "Claude Sonnet 4.5",
+      2.5547
+     ],
+     [
+      "Grok 4.7",
+      2.088
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      1.9646
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-11-10",
+    "metric": "requests",
+    "shares": [
+     [
+      "Jev",
+      20.4265
+     ],
+     [
+      "GPT-6 Luna",
+      8.4995
+     ],
+     [
+      "Jev 1.14.0",
+      5.2478
+     ],
+     [
+      "DeepSeek V4 Flash 0731",
+      4.5674
+     ],
+     [
+      "Jev 1.13.0",
+      4.5431
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      4.4528
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      4.2719
+     ],
+     [
+      "GLM 5.3",
+      2.8815
+     ],
+     [
+      "Claude Haiku 5.5",
+      2.5747
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.5224
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-11-10",
+    "metric": "tokens",
+    "shares": [
+     [
+      "Beam 1.0",
+      24.6818
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      13.326
+     ],
+     [
+      "GLM 5.3",
+      9.8374
+     ],
+     [
+      "Claude Opus 5.5",
+      6.5323
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      5.6216
+     ],
+     [
+      "GPT-6 Luna",
+      5.3175
+     ],
+     [
+      "GLM 5.3 Flash",
+      3.4159
+     ],
+     [
+      "GPT-6.1 Sol",
+      2.7733
+     ],
+     [
+      "Jev",
+      2.6195
+     ],
+     [
+      "Claude Sonnet 5.5",
+      2.5935
      ]
     ],
     "others_share": 0
