@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-11-11",
- "fetched_at": "2026-11-11T01:58:04+00:00",
+ "snapshot_date": "2026-11-12",
+ "fetched_at": "2026-11-12T03:06:54+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -1589,7 +1589,7 @@
    },
    {
     "site": "DayOne Nusajaya",
-    "date": "2023-10-01",
+    "date": "2023-06-01",
     "it_power_mw": 0.0,
     "power_mw": 0.0,
     "h100_equivalents": 0.0
@@ -1876,6 +1876,13 @@
    },
    {
     "site": "Google New Albany",
+    "date": "2021-03-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": null
+   },
+   {
+    "site": "Google New Albany",
     "date": "2024-04-20",
     "it_power_mw": 67.0,
     "power_mw": 80.0,
@@ -1967,7 +1974,7 @@
    },
    {
     "site": "Google Mesa",
-    "date": "2023-07-01",
+    "date": "2023-08-01",
     "it_power_mw": 0.0,
     "power_mw": 0.0,
     "h100_equivalents": 0.0
@@ -2191,7 +2198,7 @@
    },
    {
     "site": "QTS Richmond 1",
-    "date": "2023-10-01",
+    "date": "2023-09-01",
     "it_power_mw": 0.0,
     "power_mw": 0.0,
     "h100_equivalents": 0.0
@@ -2324,7 +2331,7 @@
    },
    {
     "site": "Meta Rosemount",
-    "date": "2024-05-01",
+    "date": "2024-02-01",
     "it_power_mw": 0.0,
     "power_mw": 0.0,
     "h100_equivalents": 0.0
@@ -2485,7 +2492,7 @@
    },
    {
     "site": "Google Kansas City East",
-    "date": "2024-01-01",
+    "date": "2023-12-01",
     "it_power_mw": 0.0,
     "power_mw": 0.0,
     "h100_equivalents": 0.0
@@ -2583,7 +2590,7 @@
    },
    {
     "site": "AWS New Albany",
-    "date": "2022-07-01",
+    "date": "2022-06-01",
     "it_power_mw": 0.0,
     "power_mw": 0.0,
     "h100_equivalents": 0.0
@@ -2695,7 +2702,7 @@
    },
    {
     "site": "Google Lincoln",
-    "date": "2023-07-01",
+    "date": "2023-06-01",
     "it_power_mw": 0.0,
     "power_mw": 0.0,
     "h100_equivalents": 0.0
@@ -2779,7 +2786,7 @@
    },
    {
     "site": "Google The Dalles",
-    "date": "2023-05-21",
+    "date": "2023-03-01",
     "it_power_mw": 0.0,
     "power_mw": 0.0,
     "h100_equivalents": 0.0
@@ -2912,7 +2919,7 @@
    },
    {
     "site": "Meta Cheyenne",
-    "date": "2024-04-01",
+    "date": "2024-05-01",
     "it_power_mw": 0.0,
     "power_mw": 0.0,
     "h100_equivalents": 0.0
@@ -3157,7 +3164,7 @@
    },
    {
     "site": "Meta Eagle Mountain",
-    "date": "2023-10-01",
+    "date": "2023-08-01",
     "it_power_mw": 0.0,
     "power_mw": 0.0,
     "h100_equivalents": 0.0
@@ -3213,7 +3220,7 @@
    },
    {
     "site": "Google Midlothian",
-    "date": "2023-11-28",
+    "date": "2023-04-01",
     "it_power_mw": 0.0,
     "power_mw": 0.0,
     "h100_equivalents": 0.0
@@ -3238,6 +3245,13 @@
     "it_power_mw": 103.0,
     "power_mw": 123.0,
     "h100_equivalents": 143580.85118746842
+   },
+   {
+    "site": "Google Storey County",
+    "date": "2019-03-18",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
    },
    {
     "site": "Google Storey County",
@@ -3416,7 +3430,7 @@
    },
    {
     "site": "VNET Bayin Ulanqab",
-    "date": "2024-03-15",
+    "date": "2024-03-25",
     "it_power_mw": 0.0,
     "power_mw": 0.0,
     "h100_equivalents": 0.0
@@ -4067,7 +4081,7 @@
    },
    {
     "site": "Huawei Wuhu",
-    "date": "2023-01-01",
+    "date": "2022-12-01",
     "it_power_mw": 0.0,
     "power_mw": 0.0,
     "h100_equivalents": 0.0
