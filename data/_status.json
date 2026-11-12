@@ -5,9 +5,9 @@
   "error": null
  },
  "sdk_downloads": {
-  "last_attempt": "2026-11-12T03:07:23+00:00",
-  "last_success": "2026-11-11T01:58:26+00:00",
-  "error": "HTTPError: 502 from https://pypistats.org/api/packages/anthropic/recent"
+  "last_attempt": "2026-11-12T03:44:44+00:00",
+  "last_success": "2026-11-12T03:44:44+00:00",
+  "error": null
  },
  "news": {
   "last_attempt": "2026-11-12T03:07:24+00:00",

@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "sdk_downloads",
- "snapshot_date": "2026-11-11",
- "fetched_at": "2026-11-11T01:58:26+00:00",
+ "snapshot_date": "2026-11-12",
+ "fetched_at": "2026-11-12T03:44:44+00:00",
  "source_meta": {
   "kind": "official-api"
  },
@@ -10,56 +10,56 @@
   "npm": {
    "openai": {
     "last-day": {
-     "downloads": 8853455,
-     "start": "2026-11-09",
-     "end": "2026-11-09"
+     "downloads": 10056101,
+     "start": "2026-11-10",
+     "end": "2026-11-10"
     },
     "last-week": {
-     "downloads": 57512236,
-     "start": "2026-11-03",
-     "end": "2026-11-09"
+     "downloads": 57910951,
+     "start": "2026-11-04",
+     "end": "2026-11-10"
     }
    },
    "@anthropic-ai/sdk": {
     "last-day": {
-     "downloads": 10435086,
-     "start": "2026-11-09",
-     "end": "2026-11-09"
+     "downloads": 11660671,
+     "start": "2026-11-10",
+     "end": "2026-11-10"
     },
     "last-week": {
-     "downloads": 67770336,
-     "start": "2026-11-03",
-     "end": "2026-11-09"
+     "downloads": 68126267,
+     "start": "2026-11-04",
+     "end": "2026-11-10"
     }
    },
    "@google/genai": {
     "last-day": {
-     "downloads": 4477645,
-     "start": "2026-11-09",
-     "end": "2026-11-09"
+     "downloads": 5048080,
+     "start": "2026-11-10",
+     "end": "2026-11-10"
     },
     "last-week": {
-     "downloads": 31302371,
-     "start": "2026-11-03",
-     "end": "2026-11-09"
+     "downloads": 30924911,
+     "start": "2026-11-04",
+     "end": "2026-11-10"
     }
    }
   },
   "pypi": {
    "openai": {
-    "last_day": 14539953,
+    "last_day": 14870869,
     "last_month": 295856631,
-    "last_week": 90619156
+    "last_week": 90279281
    },
    "anthropic": {
-    "last_day": 8400024,
+    "last_day": 7809746,
     "last_month": 150199657,
-    "last_week": 50139647
+    "last_week": 49531968
    },
    "google-genai": {
-    "last_day": 6555889,
+    "last_day": 6256487,
     "last_month": 137607856,
-    "last_week": 38561463
+    "last_week": 38456289
    }
   }
  }
