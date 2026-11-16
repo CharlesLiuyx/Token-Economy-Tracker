@@ -1,13 +1,48 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-11-15",
- "fetched_at": "2026-11-15T01:58:40+00:00",
+ "snapshot_date": "2026-11-16",
+ "fetched_at": "2026-11-16T02:13:42+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "How a Chinese Energy Company Is Outpacing the U.S. on AI Power Technology - The Information",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdTlsNk9obzRYRlc2RGU5M2NfU0QycHljVTYySnd4eHJTUzRwa3N2Y2QzQmNWVm5RYnNlei1ybVJIZ3FTMG9RbV9PNkw0RERIcDRQSVMzNFYwX2ppWHVfdlg1WGc2amI4V3BLTVBvcktUeGtQREo1UVNqVjl5NUlVeDdvSHU4REtvSFZoVjVwclprVHppcVdzeDhXcVZfb0pRTWx4SGx5eERFZjhRM3lweWVYV0piX3JZ?oc=5",
+    "source_name": "The Information",
+    "source_url": "https://www.theinformation.com",
+    "published": "2026-11-15T16:30:00+00:00"
+   },
+   {
+    "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests — email warning system fails, 40 first responders deployed for triage, four taken to hospital - Tom's Hardware",
+    "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxPNUtBYWlURV9kUWtiR2FoOVdHZGtDRXIxQTBDejk2cDhLQVZxTFpGN21uS1ZuZXRNTW41QUc2Y1o3YUphV2NkbWJwV3RRMUZMdlhPMGlMQkRjeDFqTlphRnhwalpEMFdDYV9QMXV6UHU2REJleEJHcFdOVGZ2Y0lUYlZ2d01seHF3UFhaTndVUzRxTUVCQ1AtdWZ5OWY0bnVsNlJUQU1GZ0dfSVVQNjgyZ2lfXzNxMEVkYXBlQ0hQWjJtUnRjOG5mUDNzYUJTbWtuVE5jTjdqdzRrVnliVnBJQnlkRUxDaU1YLTJJdkkzNm41QzB5RVlDcC1jMWpHZHpLd0VKR19RdlV0OFp3am4xRU9rdU95bUUyTGdkY1cwTWFKN0gzR1lZVXFoN2JudE9UUlJzeERpQQ?oc=5",
+    "source_name": "Tom's Hardware",
+    "source_url": "https://www.tomshardware.com",
+    "published": "2026-11-15T15:41:13+00:00"
+   },
+   {
+    "title": "Lutnick Pushed to Weaken Chip Rules That Overlap With His Family Business - The New York Times",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSG5Ua0Eya2ctVDEweEN2X3Z4VmxHU0EtZU5ERk5HRUNLZ3lLdWx3VFkzYjBjMzZKS0FPRE9CaHp2MUJNTWJaenk0UV9OQldvdGVrdndRakI2UmxwSllMQVVUZUM3Wi1aaEd3WllvNVRpNWdhaE9aRWJ2Z204WE5nRmtiNFgwMFJfMGlpMmIwdUdIN3gtVk52dXZscHFYRUFF?oc=5",
+    "source_name": "The New York Times",
+    "source_url": "https://www.nytimes.com",
+    "published": "2026-11-15T10:02:05+00:00"
+   },
+   {
+    "title": "How Jensen Huang Built the Backdoor Route That Keeps Beijing in the AI Race - WSJ",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5WRVRId0ZUcVRGRlNaOFhjRE5vUUVQWnZ6OElxc0llcUVsaXAxbDFxdXJocTh6UTc2OGN6VnZuN2sxMnZROVhnaU1aTWVVUlZLbU1KRzFYT2ljczNYTV9FTVQxWnFrS2xNdDdZQ2FHejNDUjh2d29PbHRROA?oc=5",
+    "source_name": "WSJ",
+    "source_url": "https://www.wsj.com",
+    "published": "2026-11-15T09:48:00+00:00"
+   },
+   {
+    "title": "Facing Backlash on Land, Data Centers Look to the Sea - WSJ",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9iWlpvQU5MYnljUk9hNWJvTUZOZks5ZG5HekctTW5ISjNVN211cVVaSVNZRlJOUldzXzRkOXZGSWVfb1duOUtUYm9PN0JIZ0tBWTlyRmVMN1ZZeVR6ZndITEdBa2ZMdw?oc=5",
+    "source_name": "WSJ",
+    "source_url": "https://www.wsj.com",
+    "published": "2026-11-14T18:00:00+00:00"
+   },
    {
     "title": "Malaysia plans new law using data center power consumption to catch AI GPU smugglers — but real-world TDP variance and lack of physical audits could undermine it, new law also forces operators to pay for unused electricity capacity - Tom's Hardware",
     "link": "https://news.google.com/rss/articles/CBMipgNBVV95cUxQM1E5R2dtYU9DSjNZTWYxb3FmVlNIM1E3V0FYS0h0M2tpdGszVG1UTkRIdXRfaFM3eUhmeGdhYTQyeGZ1UnNlUVJaeWFfNVBFcFUxM2Q3Y0N6UHZlLUN5eDd6RXhEYmU3VmU1U3JKcEdnc0RUU0NMbW5oNm5XTWNvcDJpejJzNk1OcVF5R3VjdmJsZlVQc3V3LVRFYTFJVU5Bem5RME1jYkd3aEsxeTAyYzFBeE9XYmVXOTZCZFpFc2hONXMzaUM2QWpSQ01sWUJxYkFRa3lSWjVzckwyTWk0MWI0d19mQXc4VjdZMU1FSGQ5WVV4ZjEtMnpqSUNxSHRtdnpXc2FyWHF2NTRleGxwQXpud1U3WWNrSnNvUDdGSkhsLWcwdzVabHJWMkxmcHBUdFhRWEZCRXlrX2hwSHZGSzN4LVg1b0RiTjZXVmVpQURnWGl5MV9TN3RSSXBkLThEMFB2aGx5WDVmbXVXXzhKeEtFeWVhY1VIZlkwRVhxV3diYVJ2dGVpV2RCbUpaeG5ERk9maGJmbk8wekl3Nm9HOXN6WG85Zw?oc=5",
@@ -2072,41 +2107,6 @@
     "source_name": "Business Insider",
     "source_url": "https://www.businessinsider.com",
     "published": "2026-10-26T06:37:00+00:00"
-   },
-   {
-    "title": "800 VDC for AI Data Centers: Rethinking Power Delivery in the White Space - Data Center Frontier",
-    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPckJjZU1nc3A3anUyVjRiNFF2bng2NDVjSFBqdGZLbHRNVHBHNGJwaE5MQjB1U2dTWDZhVVE1YlpfWi1rY0k5Z3RGazhwcERjZTVIYWR5bkdhZDI5dXVScEFXMFpUeUdVQl82aGRMRXdZeHBHS2dzOVpVVkY3Zmx0aEowem1mNFR4RDl4czVPMThSR1Q3OTVBbmdtcWVJa0c2SlVBUlhLNVFjeVhBa2p6SUVaazBFSGk4RHpmd3BJbWhSWlFUSm9Jdk1iUGlVQXc?oc=5",
-    "source_name": "Data Center Frontier",
-    "source_url": "https://www.datacenterfrontier.com",
-    "published": "2026-10-26T05:06:39+00:00"
-   },
-   {
-    "title": "Data Center Late Fees Hit $5 Million or More Per Day, Spawning New Insurance - The Information",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPRjhDWE91eThsT2RjM2djVkE4UlhrbkMzajQ2aVlHN3Q5cy1Ud0FNOW4xT1B6NzV2akxwUGxNcGtxRFFOcG9laGM5QV9GcV9KbGw4M0hZbFgzZ3hoWVptU19aalAwRXluWDJmblptOHYxLVgwSHRWWWFhQUpVNGhBSTlPTmJLMGpURHV2TE9hZzBiQVlqaktWdTNjSlRac3lleGl6cnJ5TVJCd3A4QlBNa1dGS2F3LVE2QjVRLVIyYXZNTHFpS0E?oc=5",
-    "source_name": "The Information",
-    "source_url": "https://www.theinformation.com",
-    "published": "2026-10-25T15:31:00+00:00"
-   },
-   {
-    "title": "This sold-out plushie emits the grating hum of a real-life data center when you squeeze it - Business Insider",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeWxjR3V2YlpXUHFvckNxdGd2S1Q2SFlaNElVdFJCdG1kazJlNXZwbjl4Qkc1dU1fR09ka0RNZlNUZlkySkpuU2h6bkN4MFJOalVqdjJEX3ZOVUpjdkpqRDRFVFZ4RXhDRGE4UlFMWmFiOE12aHY0WFhHYU5BOGIxWUFyeUZLd29zTXF5Tg?oc=5",
-    "source_name": "Business Insider",
-    "source_url": "https://www.businessinsider.com",
-    "published": "2026-10-25T10:17:00+00:00"
-   },
-   {
-    "title": "The AI data center boom has a ghost problem - Business Insider",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcnRMNFJlM3M5czJrbmZfdXZJeFdxb2N2aFFINktzZjk0ZzBKdFFnNUcxRDZXTnptU1RVc3BDSV9LYkpzdWdiUXRtTWFSb015aXhjdW1fWXZSNW1iaU9oZmZHQi1NQ2RuQm1pQ01HOXdkNDd5VWduME5WYzQ2b1ROUnpsOA?oc=5",
-    "source_name": "Business Insider",
-    "source_url": "https://www.businessinsider.com",
-    "published": "2026-10-24T14:00:00+00:00"
-   },
-   {
-    "title": "Georgia's Silk Cloud deploys Nvidia Blackwell Ultra GPUs - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNREdBbUlzTjJwaVZxY2oyTF9BM05GbTZ3U0dUOFZOMkxoME00ZTRoMmZzdTZYODdLWnk3MU0tb0hoWTZGdmZiR3RKNkVuZnNFXzBPT0xVcTNFSEhTcDlXeUJzRFQ1Vkd4YkxJQzE1VVg3WUlRc2JzOFJoZ0VOdWZNaFE5c2Zpa05BbDB4WGZYVTk2Z0JaYXlySWQ3aUFzM1FQ?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-10-24T13:04:23+00:00"
    }
   ],
   "queries": [
