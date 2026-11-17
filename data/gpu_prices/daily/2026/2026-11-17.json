@@ -1,0 +1,55 @@
+{
+ "schema_version": 1,
+ "source": "gpu_prices",
+ "snapshot_date": "2026-11-17",
+ "fetched_at": "2026-11-17T03:46:19+00:00",
+ "source_meta": {
+  "kind": "official-api"
+ },
+ "payload": {
+  "unit": "usd_per_gpu_hour",
+  "marketplace": "vast.ai on-demand",
+  "gpus": {
+   "H100": {
+    "min": 1.734,
+    "p25": 1.768,
+    "median": 1.935,
+    "p75": 3.648,
+    "max": 4.443,
+    "offers": 13
+   },
+   "H200": {
+    "min": 3.754,
+    "p25": 3.757,
+    "median": 4.607,
+    "p75": 7.897,
+    "max": 8.686,
+    "offers": 7
+   },
+   "B200": {
+    "min": 7.25,
+    "p25": 7.502,
+    "median": 9.988,
+    "p75": 10.628,
+    "max": 11.885,
+    "offers": 23
+   },
+   "A100": {
+    "min": 0.376,
+    "p25": 0.57,
+    "median": 0.846,
+    "p75": 1.335,
+    "max": 1.858,
+    "offers": 64
+   },
+   "RTX 5090": {
+    "min": 0.387,
+    "p25": 0.488,
+    "median": 0.655,
+    "p75": 0.739,
+    "max": 0.937,
+    "offers": 64
+   }
+  }
+ }
+}
