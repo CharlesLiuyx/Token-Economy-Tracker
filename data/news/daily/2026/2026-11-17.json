@@ -2,7 +2,7 @@
  "schema_version": 1,
  "source": "news",
  "snapshot_date": "2026-11-17",
- "fetched_at": "2026-11-17T03:46:16+00:00",
+ "fetched_at": "2026-11-17T04:34:37+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },

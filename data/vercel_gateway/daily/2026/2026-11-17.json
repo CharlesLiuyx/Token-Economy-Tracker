@@ -2,7 +2,7 @@
  "schema_version": 1,
  "source": "vercel_gateway",
  "snapshot_date": "2026-11-17",
- "fetched_at": "2026-11-17T03:46:17+00:00",
+ "fetched_at": "2026-11-17T04:34:38+00:00",
  "source_meta": {
   "kind": "scrape"
  },
@@ -14754,7 +14754,7 @@
     "shares": [
      [
       "Beam 1.0",
-      23.5777
+      23.5776
      ],
      [
       "DeepSeek V4.1 Flash 1017",
@@ -14774,7 +14774,7 @@
      ],
      [
       "GPT-6 Luna",
-      5.3555
+      5.3556
      ],
      [
       "Jev",
