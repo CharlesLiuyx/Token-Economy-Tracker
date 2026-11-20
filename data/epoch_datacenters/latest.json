@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-11-19",
- "fetched_at": "2026-11-19T03:37:21+00:00",
+ "snapshot_date": "2026-11-20",
+ "fetched_at": "2026-11-20T03:27:01+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -1551,6 +1551,13 @@
     "it_power_mw": 636.0,
     "power_mw": 859.0,
     "h100_equivalents": 768768.7220818596
+   },
+   {
+    "site": "Google Pryor (North)",
+    "date": "2019-08-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
    },
    {
     "site": "Google Pryor (North)",
