@@ -197,6 +197,8 @@ openrouter:
   `data/**` / `requirements.txt` 时，单独跑 `make build` → Pages 部署。**只构建不提交、
   不抓数**，因此不会被 daily.yml 的 bot push 触发成循环。两个 workflow 共用
   `pages-deploy` concurrency 锁，避免同时部署冲突。
+  daily.yml 的 deploy-pages 步骤失败时会自动 dispatch `deploy.yml` 兜底重部署
+  （需 `actions: write` 权限；应对 artifact API 瞬时查不到刚上传 artifact 的问题）。
 - **失败可见**：任一源连续失败 ≥2 天时，workflow 自动开/更新一个 GitHub Issue（带错误摘要）。
 - **本地等价**：`make update && make build && make serve`，与 CI 完全同路径；
   `make fetch-openrouter` 可单跑一源调试。

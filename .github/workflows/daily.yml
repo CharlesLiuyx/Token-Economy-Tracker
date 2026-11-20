@@ -14,6 +14,7 @@ permissions:
   issues: write
   pages: write
   id-token: write
+  actions: write   # deploy 失败时 dispatch deploy.yml 兜底
 
 concurrency:
   group: daily-update
@@ -87,3 +88,12 @@ jobs:
         with:
           path: site
       - uses: actions/deploy-pages@v5
+        id: deploy
+      # deploy-pages 偶发查不到刚上传的 artifact（"Found 0 artifact(s)"，11-13/11-20 两次）。
+      # 不能 rerun（会多出同名 artifact 再失败），改为 dispatch deploy.yml 从已提交数据重建部署。
+      # 它与本 job 共用 pages-deploy 锁，会排队到本 job 结束后再跑；本 job 仍标红以保留可见性。
+      - name: Fallback deploy via deploy.yml
+        if: failure() && steps.deploy.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main -R "$GITHUB_REPOSITORY"

@@ -38,3 +38,7 @@ make fetch-news          # 单跑一个源调试（fetch-<source>）
 - workflow 连续失败 ≥2 天会自动开/更新 GitHub Issue。
 - 本地救场：`make update && make build`，人工 commit `data: YYYY-MM-DD` 推上去即可，
   与 CI 产物完全等价。
+- **Pages 部署失败但数据已提交**（update job 绿、deploy-pages 红，常见报错
+  `Found 0 artifact(s)`）：**不要 `gh run rerun --failed`**——重跑会再传一份同名
+  artifact，deploy-pages 转报 `Multiple artifacts named github-pages`。daily.yml 已在
+  deploy 失败时自动 dispatch `deploy.yml` 兜底；若兜底也没跑，手动 `gh workflow run deploy.yml`。
