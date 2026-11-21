@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "sdk_downloads",
- "snapshot_date": "2026-11-20",
- "fetched_at": "2026-11-20T03:27:22+00:00",
+ "snapshot_date": "2026-11-21",
+ "fetched_at": "2026-11-21T03:15:56+00:00",
  "source_meta": {
   "kind": "official-api"
  },
@@ -10,56 +10,56 @@
   "npm": {
    "openai": {
     "last-day": {
-     "downloads": 10712078,
-     "start": "2026-11-18",
-     "end": "2026-11-18"
+     "downloads": 10357222,
+     "start": "2026-11-19",
+     "end": "2026-11-19"
     },
     "last-week": {
-     "downloads": 61498968,
-     "start": "2026-11-12",
-     "end": "2026-11-18"
+     "downloads": 61851531,
+     "start": "2026-11-13",
+     "end": "2026-11-19"
     }
    },
    "@anthropic-ai/sdk": {
     "last-day": {
-     "downloads": 12764186,
-     "start": "2026-11-18",
-     "end": "2026-11-18"
+     "downloads": 12464021,
+     "start": "2026-11-19",
+     "end": "2026-11-19"
     },
     "last-week": {
-     "downloads": 74257906,
-     "start": "2026-11-12",
-     "end": "2026-11-18"
+     "downloads": 74772193,
+     "start": "2026-11-13",
+     "end": "2026-11-19"
     }
    },
    "@google/genai": {
     "last-day": {
-     "downloads": 5808142,
-     "start": "2026-11-18",
-     "end": "2026-11-18"
+     "downloads": 5522069,
+     "start": "2026-11-19",
+     "end": "2026-11-19"
     },
     "last-week": {
-     "downloads": 32019712,
-     "start": "2026-11-12",
-     "end": "2026-11-18"
+     "downloads": 32461488,
+     "start": "2026-11-13",
+     "end": "2026-11-19"
     }
    }
   },
   "pypi": {
    "openai": {
-    "last_day": 14773010,
-    "last_month": 385777629,
-    "last_week": 92175187
+    "last_day": 13348222,
+    "last_month": 385011457,
+    "last_week": 91952133
    },
    "anthropic": {
-    "last_day": 8557870,
-    "last_month": 212082834,
-    "last_week": 51163295
+    "last_day": 7690957,
+    "last_month": 212219481,
+    "last_week": 51041306
    },
    "google-genai": {
-    "last_day": 6610603,
-    "last_month": 169355659,
-    "last_week": 41126580
+    "last_day": 5890288,
+    "last_month": 168954859,
+    "last_week": 40745946
    }
   }
  }
