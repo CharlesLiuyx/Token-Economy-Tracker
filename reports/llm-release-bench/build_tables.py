@@ -609,8 +609,8 @@ def f44():
         pi, po = price_pair(m['price'])
         tip = subst(F['tip'], {'name': m['name'], 'pout': po, 'pin': pi, 'aa': dplain(c['d']),
                                'ow': subst(F['ow_yes'], {'lic': m['license']['d']}) if ow else F['ow_no']})
-        dots.append('<span class="spt%s" data-key="%s" style="left:%s%%;bottom:%s%%%s"%s><i class="mark"></i><span class="pl noterm"><i class="sw k-%s"></i>%s</span></span>' % (
-            ' ow' if ow else '', m['vendor'], f3(px(m['price']['out'])), f3(py(c['v'])), dx, att('data-tip', tip), m['vendor'], TX(fname(m))))
+        dots.append('<span class="spt%s" data-key="%s" style="left:%s%%;bottom:%s%%%s"%s><i class="mark"></i><span class="pl noterm">%s</span></span>' % (
+            ' ow' if ow else '', m['vendor'], f3(px(m['price']['out'])), f3(py(c['v'])), dx, att('data-tip', tip), TX(fname(m))))   # 标签只留文字：点本身就是同色方块
     extra = ('<span class="li2"><i class="ptl"></i>%s</span><span class="li2"><i class="ptl ow"></i>%s</span>' % (TX(F['legend_solid']), TX(F['legend_hollow'])))
     h = [fig_head('f44', F), legend({m['vendor'] for m in pts}, extra),
          '<div class="sc"><div class="sc-yl">%s</div><div class="sc-plot">%s%s</div><div class="sc-xl">%s</div></div>' % (TX(F['ylabel']), grid, ''.join(dots), TX(F['xlabel']))]
@@ -676,7 +676,7 @@ C34_CSS = """tr.grp .gk{font-weight:400;color:var(--ink3);font-size:.9em;margin-
 #s4 .row{height:auto;min-height:26px;padding-top:2px;padding-bottom:2px}
 #s4 .row.hd{min-height:22px}#s4 .row.ax{min-height:18px;padding-top:0;padding-bottom:0}
 #s4 .row .nm{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.2;display:flex;align-items:baseline}
-#s4 .row .nm .sw,.sc .spt .pl .sw{flex:none;width:9px;height:9px;margin-right:5px;vertical-align:0}
+#s4 .row .nm .sw{flex:none;width:9px;height:9px;margin-right:5px;vertical-align:0}
 #s4 .row.c4{grid-template-columns:190px minmax(120px,1fr) 46px 124px}
 #s4 .row.c3{grid-template-columns:minmax(0,170px) minmax(90px,1fr) 50px;min-height:25px}
 @media (max-width:860px){#s4 .row.c4{grid-template-columns:132px minmax(90px,1fr) 44px 108px}}
