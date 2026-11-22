@@ -1,0 +1,11 @@
+# qa/zh_equiv.py 的「有意改动」登记：每行一个正则，匹配差异描述。2026-11-22 双语改造时登记的：
+# 1 <html> 多了 data-lang="zh"（语言状态）
+'html', \(\('data-fs', 'm'\), \('data-lang', 'zh'\)
+# 2 <head> 里多了一小段脚本：首帧前读 localStorage 定语言，免得英文用户先看到一闪中文
+\('<', 'script', \(\)\), \('raw', 'script'\)
+# 3 多了 <style id="i18n-css">：「已收起 · 点击展开」的英文版 CSS 文字
+\('<', 'style', \(\('id', 'i18n-css'\),\)\)
+# 4 顶栏语言按钮（中文模式检查时整块剔除）留下的空白
+\('t', '\\n  \\n  '\)
+# 5 图 2-1 底部快照标签多了 data-short / data-short-tip（放不下时的短称，原来写死在 compute/build.py 的 JS 里）
+'data-short', '快照'

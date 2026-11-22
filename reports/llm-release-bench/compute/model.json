@@ -12,7 +12,10 @@
        "kind": "epoch",
        "ship_month": "2025-08",
        "sku": "hopper",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 42448
       },
       {
@@ -23,7 +26,10 @@
        "kind": "epoch",
        "ship_month": "2025-08",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 115446
       },
       {
@@ -34,7 +40,10 @@
        "kind": "epoch",
        "ship_month": "2025-08",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 180639
       }
      ],
@@ -54,7 +63,10 @@
        "kind": "epoch",
        "ship_month": "2025-09",
        "sku": "trn2",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 95000
       },
       {
@@ -65,7 +77,10 @@
        "kind": "epoch",
        "ship_month": "2025-08",
        "sku": "mi300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 21856
       },
       {
@@ -76,7 +91,10 @@
        "kind": "epoch",
        "ship_month": "2025-08",
        "sku": "mi355",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 16203
       }
      ],
@@ -96,7 +114,10 @@
        "kind": "epoch",
        "ship_month": "2025-09",
        "sku": "tpu_v6e",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 244767
       },
       {
@@ -107,7 +128,10 @@
        "kind": "epoch",
        "ship_month": "2025-09",
        "sku": "tpu_v7",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 17095
       }
      ],
@@ -137,7 +161,10 @@
        "kind": "epoch",
        "ship_month": "2025-09",
        "sku": "hopper",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 42448
       },
       {
@@ -148,7 +175,10 @@
        "kind": "epoch",
        "ship_month": "2025-09",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 115446
       },
       {
@@ -159,7 +189,10 @@
        "kind": "epoch",
        "ship_month": "2025-09",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 180639
       }
      ],
@@ -179,7 +212,10 @@
        "kind": "epoch",
        "ship_month": "2025-10",
        "sku": "trn2",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 111667
       },
       {
@@ -190,7 +226,10 @@
        "kind": "epoch",
        "ship_month": "2025-09",
        "sku": "mi300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 21856
       },
       {
@@ -201,7 +240,10 @@
        "kind": "epoch",
        "ship_month": "2025-09",
        "sku": "mi355",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 16203
       }
      ],
@@ -221,7 +263,10 @@
        "kind": "epoch",
        "ship_month": "2025-10",
        "sku": "tpu_v6e",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 136119
       },
       {
@@ -232,7 +277,10 @@
        "kind": "epoch",
        "ship_month": "2025-10",
        "sku": "tpu_v7",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 70943
       }
      ],
@@ -262,7 +310,10 @@
        "kind": "epoch",
        "ship_month": "2025-10",
        "sku": "hopper",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 7797
       },
       {
@@ -273,7 +324,10 @@
        "kind": "epoch",
        "ship_month": "2025-10",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 139307
       },
       {
@@ -284,7 +338,10 @@
        "kind": "epoch",
        "ship_month": "2025-10",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 247973
       }
      ],
@@ -304,7 +361,10 @@
        "kind": "epoch",
        "ship_month": "2025-11",
        "sku": "trn2",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 111667
       },
       {
@@ -315,7 +375,10 @@
        "kind": "epoch",
        "ship_month": "2025-10",
        "sku": "mi300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 7991
       },
       {
@@ -326,7 +389,10 @@
        "kind": "epoch",
        "ship_month": "2025-10",
        "sku": "mi355",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 24082
       }
      ],
@@ -346,7 +412,10 @@
        "kind": "epoch",
        "ship_month": "2025-11",
        "sku": "tpu_v6e",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 136119
       },
       {
@@ -357,7 +426,10 @@
        "kind": "epoch",
        "ship_month": "2025-11",
        "sku": "tpu_v7",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 70943
       }
      ],
@@ -387,7 +459,10 @@
        "kind": "epoch",
        "ship_month": "2025-11",
        "sku": "hopper",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 7797
       },
       {
@@ -398,7 +473,10 @@
        "kind": "epoch",
        "ship_month": "2025-11",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 139307
       },
       {
@@ -409,7 +487,10 @@
        "kind": "epoch",
        "ship_month": "2025-11",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 247973
       }
      ],
@@ -429,7 +510,10 @@
        "kind": "epoch",
        "ship_month": "2025-12",
        "sku": "trn2",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 111667
       },
       {
@@ -440,7 +524,10 @@
        "kind": "epoch",
        "ship_month": "2025-11",
        "sku": "mi300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 7991
       },
       {
@@ -451,7 +538,10 @@
        "kind": "epoch",
        "ship_month": "2025-11",
        "sku": "mi355",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 24082
       }
      ],
@@ -471,7 +561,10 @@
        "kind": "epoch",
        "ship_month": "2025-12",
        "sku": "tpu_v6e",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 136119
       },
       {
@@ -482,7 +575,10 @@
        "kind": "epoch",
        "ship_month": "2025-12",
        "sku": "tpu_v7",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 70943
       }
      ],
@@ -512,7 +608,10 @@
        "kind": "epoch",
        "ship_month": "2025-12",
        "sku": "hopper",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 7797
       },
       {
@@ -523,7 +622,10 @@
        "kind": "epoch",
        "ship_month": "2025-12",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 139307
       },
       {
@@ -534,7 +636,10 @@
        "kind": "epoch",
        "ship_month": "2025-12",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 247973
       }
      ],
@@ -554,7 +659,10 @@
        "kind": "epoch",
        "ship_month": "2026-01",
        "sku": "trn2",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 115000
       },
       {
@@ -565,7 +673,10 @@
        "kind": "epoch",
        "ship_month": "2025-12",
        "sku": "mi300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 7991
       },
       {
@@ -576,7 +687,10 @@
        "kind": "epoch",
        "ship_month": "2025-12",
        "sku": "mi355",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 24082
       }
      ],
@@ -596,7 +710,10 @@
        "kind": "epoch",
        "ship_month": "2026-01",
        "sku": "tpu_v6e",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 51685
       },
       {
@@ -607,7 +724,10 @@
        "kind": "epoch",
        "ship_month": "2026-01",
        "sku": "tpu_v7",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 111449
       }
      ],
@@ -637,7 +757,10 @@
        "kind": "epoch",
        "ship_month": "2026-01",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 115847
       },
       {
@@ -648,7 +771,10 @@
        "kind": "epoch",
        "ship_month": "2026-01",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 331044
       }
      ],
@@ -668,7 +794,10 @@
        "kind": "epoch",
        "ship_month": "2026-02",
        "sku": "trn2",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 115000
       },
       {
@@ -679,7 +808,10 @@
        "kind": "epoch",
        "ship_month": "2026-01",
        "sku": "mi300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 9493
       },
       {
@@ -690,7 +822,10 @@
        "kind": "epoch",
        "ship_month": "2026-01",
        "sku": "mi355",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 26060
       }
      ],
@@ -710,7 +845,10 @@
        "kind": "epoch",
        "ship_month": "2026-02",
        "sku": "tpu_v6e",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 51685
       },
       {
@@ -721,7 +859,10 @@
        "kind": "epoch",
        "ship_month": "2026-02",
        "sku": "tpu_v7",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 111449
       }
      ],
@@ -751,7 +892,10 @@
        "kind": "epoch",
        "ship_month": "2026-02",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 115847
       },
       {
@@ -762,7 +906,10 @@
        "kind": "epoch",
        "ship_month": "2026-02",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 331044
       }
      ],
@@ -782,7 +929,10 @@
        "kind": "epoch",
        "ship_month": "2026-03",
        "sku": "trn2",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 115000
       },
       {
@@ -793,7 +943,10 @@
        "kind": "epoch",
        "ship_month": "2026-02",
        "sku": "mi300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 9493
       },
       {
@@ -804,7 +957,10 @@
        "kind": "epoch",
        "ship_month": "2026-02",
        "sku": "mi355",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 26060
       }
      ],
@@ -824,7 +980,10 @@
        "kind": "epoch",
        "ship_month": "2026-03",
        "sku": "tpu_v6e",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 51685
       },
       {
@@ -835,7 +994,10 @@
        "kind": "epoch",
        "ship_month": "2026-03",
        "sku": "tpu_v7",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 111449
       }
      ],
@@ -865,7 +1027,10 @@
        "kind": "epoch",
        "ship_month": "2026-03",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 115847
       },
       {
@@ -876,7 +1041,10 @@
        "kind": "epoch",
        "ship_month": "2026-03",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 331044
       }
      ],
@@ -896,7 +1064,10 @@
        "kind": "epoch",
        "ship_month": "2026-04",
        "sku": "trn2",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 85000
       },
       {
@@ -907,7 +1078,10 @@
        "kind": "epoch",
        "ship_month": "2026-04",
        "sku": "trn3",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 31667
       },
       {
@@ -918,7 +1092,10 @@
        "kind": "epoch",
        "ship_month": "2026-03",
        "sku": "mi300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 9493
       },
       {
@@ -929,7 +1106,10 @@
        "kind": "epoch",
        "ship_month": "2026-03",
        "sku": "mi355",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 26060
       }
      ],
@@ -949,7 +1129,10 @@
        "kind": "epoch",
        "ship_month": "2026-04",
        "sku": "tpu_v6e",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 13931
       },
       {
@@ -960,7 +1143,10 @@
        "kind": "epoch",
        "ship_month": "2026-04",
        "sku": "tpu_v7",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 205553
       },
       {
@@ -971,7 +1157,10 @@
        "kind": "epoch",
        "ship_month": "2026-04",
        "sku": "tpu_v8i",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 8551
       }
      ],
@@ -1001,7 +1190,10 @@
        "kind": "epoch",
        "ship_month": "2026-04",
        "sku": "hopper",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 6454
       },
       {
@@ -1012,7 +1204,10 @@
        "kind": "epoch",
        "ship_month": "2026-04",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 74461
       },
       {
@@ -1023,7 +1218,10 @@
        "kind": "epoch",
        "ship_month": "2026-04",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 444796
       }
      ],
@@ -1043,7 +1241,10 @@
        "kind": "epoch",
        "ship_month": "2026-05",
        "sku": "trn2",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 85000
       },
       {
@@ -1054,7 +1255,10 @@
        "kind": "epoch",
        "ship_month": "2026-05",
        "sku": "trn3",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 31667
       },
       {
@@ -1065,7 +1269,10 @@
        "kind": "epoch",
        "ship_month": "2026-04",
        "sku": "mi300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 10367
       },
       {
@@ -1076,7 +1283,10 @@
        "kind": "epoch",
        "ship_month": "2026-04",
        "sku": "mi355",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 29473
       }
      ],
@@ -1096,7 +1306,10 @@
        "kind": "epoch",
        "ship_month": "2026-05",
        "sku": "tpu_v6e",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 13931
       },
       {
@@ -1107,7 +1320,10 @@
        "kind": "epoch",
        "ship_month": "2026-05",
        "sku": "tpu_v7",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 205553
       },
       {
@@ -1118,7 +1334,10 @@
        "kind": "epoch",
        "ship_month": "2026-05",
        "sku": "tpu_v8i",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 8551
       }
      ],
@@ -1148,7 +1367,10 @@
        "kind": "epoch",
        "ship_month": "2026-05",
        "sku": "hopper",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 6454
       },
       {
@@ -1159,7 +1381,10 @@
        "kind": "epoch",
        "ship_month": "2026-05",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 74461
       },
       {
@@ -1170,7 +1395,10 @@
        "kind": "epoch",
        "ship_month": "2026-05",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 444796
       }
      ],
@@ -1190,7 +1418,10 @@
        "kind": "epoch",
        "ship_month": "2026-06",
        "sku": "trn2",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 85000
       },
       {
@@ -1201,7 +1432,10 @@
        "kind": "epoch",
        "ship_month": "2026-06",
        "sku": "trn3",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 31667
       },
       {
@@ -1212,7 +1446,10 @@
        "kind": "epoch",
        "ship_month": "2026-05",
        "sku": "mi300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 10367
       },
       {
@@ -1223,7 +1460,10 @@
        "kind": "epoch",
        "ship_month": "2026-05",
        "sku": "mi355",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 29473
       }
      ],
@@ -1243,7 +1483,10 @@
        "kind": "epoch",
        "ship_month": "2026-06",
        "sku": "tpu_v6e",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 13931
       },
       {
@@ -1254,7 +1497,10 @@
        "kind": "epoch",
        "ship_month": "2026-06",
        "sku": "tpu_v7",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 205553
       },
       {
@@ -1265,7 +1511,10 @@
        "kind": "epoch",
        "ship_month": "2026-06",
        "sku": "tpu_v8i",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 8551
       }
      ],
@@ -1295,7 +1544,10 @@
        "kind": "epoch",
        "ship_month": "2026-06",
        "sku": "hopper",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 6454
       },
       {
@@ -1306,7 +1558,10 @@
        "kind": "epoch",
        "ship_month": "2026-06",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 74461
       },
       {
@@ -1317,7 +1572,10 @@
        "kind": "epoch",
        "ship_month": "2026-06",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 444796
       },
       {
@@ -1328,7 +1586,10 @@
        "kind": "est",
        "ship_month": "2026-07",
        "sku": "r200",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 2000
       }
      ],
@@ -1348,7 +1609,10 @@
        "kind": "est",
        "ship_month": "2026-07",
        "sku": "trn2",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 50000
       },
       {
@@ -1359,7 +1623,10 @@
        "kind": "est",
        "ship_month": "2026-07",
        "sku": "trn3",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 116667
       },
       {
@@ -1370,7 +1637,10 @@
        "kind": "epoch",
        "ship_month": "2026-06",
        "sku": "mi300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 10367
       },
       {
@@ -1381,7 +1651,10 @@
        "kind": "epoch",
        "ship_month": "2026-06",
        "sku": "mi355",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 29473
       }
      ],
@@ -1401,7 +1674,10 @@
        "kind": "epoch",
        "ship_month": "2026-07",
        "sku": "tpu_v7",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 274866
       },
       {
@@ -1412,7 +1688,10 @@
        "kind": "epoch",
        "ship_month": "2026-07",
        "sku": "tpu_v8i",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 14596
       }
      ],
@@ -1442,7 +1721,10 @@
        "kind": "epoch",
        "ship_month": "2026-07",
        "sku": "hopper",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 24770
       },
       {
@@ -1453,7 +1735,10 @@
        "kind": "epoch",
        "ship_month": "2026-07",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 44976
       },
       {
@@ -1464,7 +1749,10 @@
        "kind": "epoch",
        "ship_month": "2026-07",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 474900
       },
       {
@@ -1475,7 +1763,10 @@
        "kind": "est",
        "ship_month": "2026-08",
        "sku": "r200",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 46500
       }
      ],
@@ -1495,7 +1786,10 @@
        "kind": "est",
        "ship_month": "2026-08",
        "sku": "trn2",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 50000
       },
       {
@@ -1506,7 +1800,10 @@
        "kind": "est",
        "ship_month": "2026-08",
        "sku": "trn3",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 116667
       },
       {
@@ -1517,7 +1814,10 @@
        "kind": "sa",
        "ship_month": "2026-07",
        "sku": "mi300",
-       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+       },
        "units": 8333
       },
       {
@@ -1528,7 +1828,10 @@
        "kind": "sa",
        "ship_month": "2026-07",
        "sku": "mi355",
-       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+       },
        "units": 46333
       },
       {
@@ -1539,7 +1842,10 @@
        "kind": "sa",
        "ship_month": "2026-07",
        "sku": "mi450",
-       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+       },
        "units": 1667
       }
      ],
@@ -1559,7 +1865,10 @@
        "kind": "est",
        "ship_month": "2026-08",
        "sku": "tpu_v7",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 272567
       },
       {
@@ -1570,7 +1879,10 @@
        "kind": "est",
        "ship_month": "2026-08",
        "sku": "tpu_v8i",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 52702
       },
       {
@@ -1581,7 +1893,10 @@
        "kind": "sa",
        "ship_month": "2026-08",
        "sku": "tpu_v8t",
-       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+       },
        "units": 27000
       }
      ],
@@ -1611,7 +1926,10 @@
        "kind": "epoch",
        "ship_month": "2026-08",
        "sku": "hopper",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 24770
       },
       {
@@ -1622,7 +1940,10 @@
        "kind": "epoch",
        "ship_month": "2026-08",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 44976
       },
       {
@@ -1633,7 +1954,10 @@
        "kind": "epoch",
        "ship_month": "2026-08",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 474900
       },
       {
@@ -1644,7 +1968,10 @@
        "kind": "est",
        "ship_month": "2026-09",
        "sku": "r200",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 68700
       }
      ],
@@ -1664,7 +1991,10 @@
        "kind": "est",
        "ship_month": "2026-09",
        "sku": "trn2",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 50000
       },
       {
@@ -1675,7 +2005,10 @@
        "kind": "est",
        "ship_month": "2026-09",
        "sku": "trn3",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 116667
       },
       {
@@ -1686,7 +2019,10 @@
        "kind": "sa",
        "ship_month": "2026-08",
        "sku": "mi300",
-       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+       },
        "units": 8333
       },
       {
@@ -1697,7 +2033,10 @@
        "kind": "sa",
        "ship_month": "2026-08",
        "sku": "mi355",
-       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+       },
        "units": 46333
       },
       {
@@ -1708,7 +2047,10 @@
        "kind": "sa",
        "ship_month": "2026-08",
        "sku": "mi450",
-       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+       },
        "units": 1667
       }
      ],
@@ -1728,7 +2070,10 @@
        "kind": "est",
        "ship_month": "2026-09",
        "sku": "tpu_v7",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 272567
       },
       {
@@ -1739,7 +2084,10 @@
        "kind": "est",
        "ship_month": "2026-09",
        "sku": "tpu_v8i",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 52702
       },
       {
@@ -1750,7 +2098,10 @@
        "kind": "sa",
        "ship_month": "2026-09",
        "sku": "tpu_v8t",
-       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+       },
        "units": 63000
       }
      ],
@@ -1780,7 +2131,10 @@
        "kind": "epoch",
        "ship_month": "2026-09",
        "sku": "hopper",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 24770
       },
       {
@@ -1791,7 +2145,10 @@
        "kind": "epoch",
        "ship_month": "2026-09",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 44976
       },
       {
@@ -1802,7 +2159,10 @@
        "kind": "epoch",
        "ship_month": "2026-09",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19)",
+        "zh": "Epoch AI Chip Sales（2026-11-19）"
+       },
        "units": 474900
       },
       {
@@ -1813,7 +2173,10 @@
        "kind": "est",
        "ship_month": "2026-10",
        "sku": "r200",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 124761
       }
      ],
@@ -1833,7 +2196,10 @@
        "kind": "est",
        "ship_month": "2026-10",
        "sku": "trn2",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 16667
       },
       {
@@ -1844,7 +2210,10 @@
        "kind": "est",
        "ship_month": "2026-10",
        "sku": "trn3",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 200000
       },
       {
@@ -1855,7 +2224,10 @@
        "kind": "sa",
        "ship_month": "2026-09",
        "sku": "mi300",
-       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+       },
        "units": 8333
       },
       {
@@ -1866,7 +2238,10 @@
        "kind": "sa",
        "ship_month": "2026-09",
        "sku": "mi355",
-       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+       },
        "units": 46333
       },
       {
@@ -1877,7 +2252,10 @@
        "kind": "sa",
        "ship_month": "2026-09",
        "sku": "mi450",
-       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+       },
        "units": 1667
       }
      ],
@@ -1897,7 +2275,10 @@
        "kind": "est",
        "ship_month": "2026-10",
        "sku": "tpu_v7",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 219027
       },
       {
@@ -1908,7 +2289,10 @@
        "kind": "est",
        "ship_month": "2026-10",
        "sku": "tpu_v8i",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 110973
       },
       {
@@ -1919,7 +2303,10 @@
        "kind": "sa",
        "ship_month": "2026-10",
        "sku": "tpu_v8t",
-       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+       },
        "units": 186667
       }
      ],
@@ -1949,7 +2336,10 @@
        "kind": "epoch",
        "ship_month": "2026-10",
        "sku": "hopper",
-       "src": "Epoch AI Chip Sales（2026-11-19；10 月只算到 10/25，按 31/25 补满整月）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19; October stops at Oct 25, scaled by 31/25 to a full month)",
+        "zh": "Epoch AI Chip Sales（2026-11-19；10 月只算到 10/25，按 31/25 补满整月）"
+       },
        "units": 31265
       },
       {
@@ -1960,7 +2350,10 @@
        "kind": "epoch",
        "ship_month": "2026-10",
        "sku": "b200",
-       "src": "Epoch AI Chip Sales（2026-11-19；10 月只算到 10/25，按 31/25 补满整月）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19; October stops at Oct 25, scaled by 31/25 to a full month)",
+        "zh": "Epoch AI Chip Sales（2026-11-19；10 月只算到 10/25，按 31/25 补满整月）"
+       },
        "units": 38373
       },
       {
@@ -1971,7 +2364,10 @@
        "kind": "epoch",
        "ship_month": "2026-10",
        "sku": "b300",
-       "src": "Epoch AI Chip Sales（2026-11-19；10 月只算到 10/25，按 31/25 补满整月）",
+       "src": {
+        "en": "Epoch AI Chip Sales (2026-11-19; October stops at Oct 25, scaled by 31/25 to a full month)",
+        "zh": "Epoch AI Chip Sales（2026-11-19；10 月只算到 10/25，按 31/25 补满整月）"
+       },
        "units": 477069
       },
       {
@@ -1982,7 +2378,10 @@
        "kind": "forecast",
        "ship_month": "2026-11",
        "sku": "r200",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 346297
       }
      ],
@@ -2002,7 +2401,10 @@
        "kind": "est",
        "ship_month": "2026-11",
        "sku": "trn2",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 16667
       },
       {
@@ -2013,7 +2415,10 @@
        "kind": "est",
        "ship_month": "2026-11",
        "sku": "trn3",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 200000
       },
       {
@@ -2024,7 +2429,10 @@
        "kind": "est",
        "ship_month": "2026-10",
        "sku": "mi300",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 3333
       },
       {
@@ -2035,7 +2443,10 @@
        "kind": "est",
        "ship_month": "2026-10",
        "sku": "mi355",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 33333
       },
       {
@@ -2046,7 +2457,10 @@
        "kind": "sa",
        "ship_month": "2026-10",
        "sku": "mi450",
-       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+       },
        "units": 69000
       }
      ],
@@ -2066,7 +2480,10 @@
        "kind": "est",
        "ship_month": "2026-11",
        "sku": "tpu_v7",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 265487
       },
       {
@@ -2077,7 +2494,10 @@
        "kind": "est",
        "ship_month": "2026-11",
        "sku": "tpu_v8i",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 134513
       },
       {
@@ -2088,7 +2508,10 @@
        "kind": "forecast",
        "ship_month": "2026-11",
        "sku": "tpu_v8t",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 186667
       }
      ],
@@ -2118,7 +2541,10 @@
        "kind": "forecast",
        "ship_month": "2026-11",
        "sku": "hopper",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 30931
       },
       {
@@ -2129,7 +2555,10 @@
        "kind": "forecast",
        "ship_month": "2026-11",
        "sku": "b200",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 15785
       },
       {
@@ -2140,7 +2569,10 @@
        "kind": "forecast",
        "ship_month": "2026-11",
        "sku": "b300",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 82793
       },
       {
@@ -2151,7 +2583,10 @@
        "kind": "forecast",
        "ship_month": "2026-12",
        "sku": "r200",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 478219
       }
      ],
@@ -2171,7 +2606,10 @@
        "kind": "est",
        "ship_month": "2026-12",
        "sku": "trn2",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 16667
       },
       {
@@ -2182,7 +2620,10 @@
        "kind": "est",
        "ship_month": "2026-12",
        "sku": "trn3",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 200000
       },
       {
@@ -2193,7 +2634,10 @@
        "kind": "est",
        "ship_month": "2026-11",
        "sku": "mi300",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 3333
       },
       {
@@ -2204,7 +2648,10 @@
        "kind": "est",
        "ship_month": "2026-11",
        "sku": "mi355",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 33333
       },
       {
@@ -2215,7 +2662,10 @@
        "kind": "forecast",
        "ship_month": "2026-11",
        "sku": "mi450",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 69000
       }
      ],
@@ -2235,7 +2685,10 @@
        "kind": "est",
        "ship_month": "2026-12",
        "sku": "tpu_v7",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 265487
       },
       {
@@ -2246,7 +2699,10 @@
        "kind": "est",
        "ship_month": "2026-12",
        "sku": "tpu_v8i",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 134513
       },
       {
@@ -2257,7 +2713,10 @@
        "kind": "forecast",
        "ship_month": "2026-12",
        "sku": "tpu_v8t",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 186667
       }
      ],
@@ -2287,7 +2746,10 @@
        "kind": "forecast",
        "ship_month": "2026-12",
        "sku": "hopper",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 37804
       },
       {
@@ -2298,7 +2760,10 @@
        "kind": "forecast",
        "ship_month": "2026-12",
        "sku": "b200",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 19292
       },
       {
@@ -2309,7 +2774,10 @@
        "kind": "forecast",
        "ship_month": "2026-12",
        "sku": "b300",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 101192
       },
       {
@@ -2320,7 +2788,10 @@
        "kind": "forecast",
        "ship_month": "2027-01",
        "sku": "r200",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 419427
       }
      ],
@@ -2340,7 +2811,10 @@
        "kind": "est",
        "ship_month": "2027-01",
        "sku": "trn3",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 233333
       },
       {
@@ -2351,7 +2825,10 @@
        "kind": "est",
        "ship_month": "2026-12",
        "sku": "mi300",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 3333
       },
       {
@@ -2362,7 +2839,10 @@
        "kind": "est",
        "ship_month": "2026-12",
        "sku": "mi355",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 33333
       },
       {
@@ -2373,7 +2853,10 @@
        "kind": "forecast",
        "ship_month": "2026-12",
        "sku": "mi450",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 69000
       }
      ],
@@ -2393,7 +2876,10 @@
        "kind": "est",
        "ship_month": "2027-01",
        "sku": "tpu_v7",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 100000
       },
       {
@@ -2404,7 +2890,10 @@
        "kind": "forecast",
        "ship_month": "2027-01",
        "sku": "tpu_v8i",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 165000
       },
       {
@@ -2415,7 +2904,10 @@
        "kind": "forecast",
        "ship_month": "2027-01",
        "sku": "tpu_v8t",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 237000
       }
      ],
@@ -2445,7 +2937,10 @@
        "kind": "forecast",
        "ship_month": "2027-01",
        "sku": "hopper",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 33333
       },
       {
@@ -2456,7 +2951,10 @@
        "kind": "forecast",
        "ship_month": "2027-01",
        "sku": "b200",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 11084
       },
       {
@@ -2467,7 +2965,10 @@
        "kind": "forecast",
        "ship_month": "2027-01",
        "sku": "b300",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 99756
       },
       {
@@ -2478,7 +2979,10 @@
        "kind": "forecast",
        "ship_month": "2027-02",
        "sku": "r200",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 419427
       }
      ],
@@ -2498,7 +3002,10 @@
        "kind": "est",
        "ship_month": "2027-02",
        "sku": "trn3",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 233333
       },
       {
@@ -2509,7 +3016,10 @@
        "kind": "est",
        "ship_month": "2027-01",
        "sku": "mi355",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 16667
       },
       {
@@ -2520,7 +3030,10 @@
        "kind": "forecast",
        "ship_month": "2027-01",
        "sku": "mi450",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 75000
       }
      ],
@@ -2540,7 +3053,10 @@
        "kind": "est",
        "ship_month": "2027-02",
        "sku": "tpu_v7",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 100000
       },
       {
@@ -2551,7 +3067,10 @@
        "kind": "forecast",
        "ship_month": "2027-02",
        "sku": "tpu_v8i",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 165000
       },
       {
@@ -2562,7 +3081,10 @@
        "kind": "forecast",
        "ship_month": "2027-02",
        "sku": "tpu_v8t",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 237000
       }
      ],
@@ -2592,7 +3114,10 @@
        "kind": "forecast",
        "ship_month": "2027-02",
        "sku": "hopper",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 33333
       },
       {
@@ -2603,7 +3128,10 @@
        "kind": "forecast",
        "ship_month": "2027-02",
        "sku": "b200",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 11084
       },
       {
@@ -2614,7 +3142,10 @@
        "kind": "forecast",
        "ship_month": "2027-02",
        "sku": "b300",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 99756
       },
       {
@@ -2625,7 +3156,10 @@
        "kind": "forecast",
        "ship_month": "2027-03",
        "sku": "r200",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 419427
       }
      ],
@@ -2645,7 +3179,10 @@
        "kind": "est",
        "ship_month": "2027-03",
        "sku": "trn3",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 233333
       },
       {
@@ -2656,7 +3193,10 @@
        "kind": "est",
        "ship_month": "2027-02",
        "sku": "mi355",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 16667
       },
       {
@@ -2667,7 +3207,10 @@
        "kind": "forecast",
        "ship_month": "2027-02",
        "sku": "mi450",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 75000
       }
      ],
@@ -2687,7 +3230,10 @@
        "kind": "est",
        "ship_month": "2027-03",
        "sku": "tpu_v7",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 100000
       },
       {
@@ -2698,7 +3244,10 @@
        "kind": "forecast",
        "ship_month": "2027-03",
        "sku": "tpu_v8i",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 165000
       },
       {
@@ -2709,7 +3258,10 @@
        "kind": "forecast",
        "ship_month": "2027-03",
        "sku": "tpu_v8t",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 237000
       }
      ],
@@ -2739,7 +3291,10 @@
        "kind": "forecast",
        "ship_month": "2027-03",
        "sku": "hopper",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 33333
       },
       {
@@ -2750,7 +3305,10 @@
        "kind": "forecast",
        "ship_month": "2027-03",
        "sku": "b200",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 11084
       },
       {
@@ -2761,7 +3319,10 @@
        "kind": "forecast",
        "ship_month": "2027-03",
        "sku": "b300",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 99756
       },
       {
@@ -2772,7 +3333,10 @@
        "kind": "forecast",
        "ship_month": "2027-04",
        "sku": "r200",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 352627
       },
       {
@@ -2783,7 +3347,10 @@
        "kind": "forecast",
        "ship_month": "2027-04",
        "sku": "rubin_ultra",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 83333
       }
      ],
@@ -2803,7 +3370,10 @@
        "kind": "est",
        "ship_month": "2027-04",
        "sku": "trn3",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 250000
       },
       {
@@ -2814,7 +3384,10 @@
        "kind": "est",
        "ship_month": "2027-03",
        "sku": "mi355",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 16667
       },
       {
@@ -2825,7 +3398,10 @@
        "kind": "forecast",
        "ship_month": "2027-03",
        "sku": "mi450",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 75000
       }
      ],
@@ -2845,7 +3421,10 @@
        "kind": "est",
        "ship_month": "2027-04",
        "sku": "tpu_v7",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 50000
       },
       {
@@ -2856,7 +3435,10 @@
        "kind": "forecast",
        "ship_month": "2027-04",
        "sku": "tpu_v8i",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 196667
       },
       {
@@ -2867,7 +3449,10 @@
        "kind": "forecast",
        "ship_month": "2027-04",
        "sku": "tpu_v8t",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 270667
       }
      ],
@@ -2897,7 +3482,10 @@
        "kind": "forecast",
        "ship_month": "2027-04",
        "sku": "hopper",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 16667
       },
       {
@@ -2908,7 +3496,10 @@
        "kind": "forecast",
        "ship_month": "2027-04",
        "sku": "b200",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 8749
       },
       {
@@ -2919,7 +3510,10 @@
        "kind": "forecast",
        "ship_month": "2027-04",
        "sku": "b300",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 78744
       },
       {
@@ -2930,7 +3524,10 @@
        "kind": "forecast",
        "ship_month": "2027-05",
        "sku": "r200",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 352627
       },
       {
@@ -2941,7 +3538,10 @@
        "kind": "forecast",
        "ship_month": "2027-05",
        "sku": "rubin_ultra",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 83333
       }
      ],
@@ -2961,7 +3561,10 @@
        "kind": "est",
        "ship_month": "2027-05",
        "sku": "trn3",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 250000
       },
       {
@@ -2972,7 +3575,10 @@
        "kind": "est",
        "ship_month": "2027-04",
        "sku": "mi355",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 8333
       },
       {
@@ -2983,7 +3589,10 @@
        "kind": "forecast",
        "ship_month": "2027-04",
        "sku": "mi450",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 88333
       }
      ],
@@ -3003,7 +3612,10 @@
        "kind": "est",
        "ship_month": "2027-05",
        "sku": "tpu_v7",
-       "src": "本报告推算",
+       "src": {
+        "en": "Our estimate",
+        "zh": "本报告推算"
+       },
        "units": 50000
       },
       {
@@ -3014,7 +3626,10 @@
        "kind": "forecast",
        "ship_month": "2027-05",
        "sku": "tpu_v8i",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 196667
       },
       {
@@ -3025,7 +3640,10 @@
        "kind": "forecast",
        "ship_month": "2027-05",
        "sku": "tpu_v8t",
-       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "src": {
+        "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+        "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+       },
        "units": 270667
       }
      ],
@@ -4561,15 +5179,24 @@
  "lanes": [
   {
    "key": "nvidia",
-   "name": "Nvidia"
+   "name": {
+    "en": "Nvidia",
+    "zh": "Nvidia"
+   }
   },
   {
    "key": "tpu",
-   "name": "TPU"
+   "name": {
+    "en": "TPU",
+    "zh": "TPU"
+   }
   },
   {
    "key": "other",
-   "name": "Trainium＋AMD"
+   "name": {
+    "en": "Trainium + AMD",
+    "zh": "Trainium＋AMD"
+   }
   }
  ],
  "meta": {
@@ -4577,19 +5204,46 @@
   "generated": "2026-11-22",
   "h100_fp8_dense_tflops": 1979,
   "lag_note": {
-   "1": "Rubin / TPU / Trainium：出货后约 1 个月投入使用",
-   "2": "Blackwell / Hopper / AMD：出货后约 2 个月投入使用"
+   "1": {
+    "en": "Rubin / TPU / Trainium: in service about 1 month after shipment",
+    "zh": "Rubin / TPU / Trainium：出货后约 1 个月投入使用"
+   },
+   "2": {
+    "en": "Blackwell / Hopper / AMD: in service about 2 months after shipment",
+    "zh": "Blackwell / Hopper / AMD：出货后约 2 个月投入使用"
+   }
   },
   "not_counted": [
-   "华为昇腾、寒武纪（中国国内供给）",
-   "Nvidia H20、AMD MI308X（中国特供）",
-   "Meta MTIA、微软 Maia、OpenAI 自研芯片（量小或未量产）",
-   "SemiAnalysis 的「Other Blackwell」每季 45 万颗（推测为 RTX Pro 等非训练卡）"
+   {
+    "en": "Huawei Ascend, Cambricon (domestic China supply)",
+    "zh": "华为昇腾、寒武纪（中国国内供给）"
+   },
+   {
+    "en": "Nvidia H20, AMD MI308X (China-only parts)",
+    "zh": "Nvidia H20、AMD MI308X（中国特供）"
+   },
+   {
+    "en": "Meta MTIA, Microsoft Maia, OpenAI in-house chips (low volume or not yet in volume production)",
+    "zh": "Meta MTIA、微软 Maia、OpenAI 自研芯片（量小或未量产）"
+   },
+   {
+    "en": "SemiAnalysis \"Other Blackwell\", 450K a quarter (likely RTX Pro-class, non-training cards)",
+    "zh": "SemiAnalysis 的「Other Blackwell」每季 45 万颗（推测为 RTX Pro 等非训练卡）"
+   }
   ],
   "sources": {
-   "epoch": "Epoch AI Chip Sales（2026-11-19 版）",
-   "est": "本报告推算",
-   "sa": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+   "epoch": {
+    "en": "Epoch AI Chip Sales (2026-11-19 release)",
+    "zh": "Epoch AI Chip Sales（2026-11-19 版）"
+   },
+   "est": {
+    "en": "Our estimate",
+    "zh": "本报告推算"
+   },
+   "sa": {
+    "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+    "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+   }
   }
  },
  "quarters_ship": [
@@ -5980,57 +6634,105 @@
   "b200": {
    "2025Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 346338
    },
    "2025Q4": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 417922
    },
    "2026Q1": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 347540
    },
    "2026Q2": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 223383
    },
    "2026Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 134927
    },
    "2026Q4": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "SemiAnalysis 只给 Blackwell 合计 734,504 颗，按 B200 10% / B300 90% 拆。10 月取 Epoch 的 30,946 颗 × 31/25（Epoch 的 10 月只算到 10/25）＝38,373 颗；11、12 月按 45% / 55% 分其余，属预测。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis gives only a Blackwell total of 734,504 units, split 10% B200 / 90% B300. October uses Epoch's 30,946 units × 31/25 (Epoch's October stops at Oct 25) = 38,373; the rest is split 45% / 55% across November and December and is a forecast.",
+     "zh": "SemiAnalysis 只给 Blackwell 合计 734,504 颗，按 B200 10% / B300 90% 拆。10 月取 Epoch 的 30,946 颗 × 31/25（Epoch 的 10 月只算到 10/25）＝38,373 颗；11、12 月按 45% / 55% 分其余，属预测。"
+    },
     "src": "sa",
     "units": 73450
    },
    "2027Q1": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "SemiAnalysis Blackwell 合计 332,520 颗，按 10% / 90% 拆。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis Blackwell total of 332,520 units, split 10% / 90%.",
+     "zh": "SemiAnalysis Blackwell 合计 332,520 颗，按 10% / 90% 拆。"
+    },
     "src": "sa",
     "units": 33252
    },
    "2027Q2": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "SemiAnalysis Blackwell 合计 262,480 颗，按 10% / 90% 拆。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis Blackwell total of 262,480 units, split 10% / 90%.",
+     "zh": "SemiAnalysis Blackwell 合计 262,480 颗，按 10% / 90% 拆。"
+    },
     "src": "sa",
     "units": 26248
    }
@@ -6038,57 +6740,105 @@
   "b300": {
    "2025Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 541916
    },
    "2025Q4": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 743918
    },
    "2026Q1": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 993133
    },
    "2026Q2": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 1334389
    },
    "2026Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 1424701
    },
    "2026Q4": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "SemiAnalysis 只给 Blackwell 合计 734,504 颗，按 B200 10% / B300 90% 拆。10 月取 Epoch 的 384,733 颗 × 31/25＝477,069 颗；11、12 月按 45% / 55% 分其余，属预测。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis gives only a Blackwell total of 734,504 units, split 10% B200 / 90% B300. October uses Epoch's 384,733 units × 31/25 = 477,069; the rest is split 45% / 55% across November and December and is a forecast.",
+     "zh": "SemiAnalysis 只给 Blackwell 合计 734,504 颗，按 B200 10% / B300 90% 拆。10 月取 Epoch 的 384,733 颗 × 31/25＝477,069 颗；11、12 月按 45% / 55% 分其余，属预测。"
+    },
     "src": "sa",
     "units": 661054
    },
    "2027Q1": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "SemiAnalysis Blackwell 合计 332,520 颗，按 10% / 90% 拆。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis Blackwell total of 332,520 units, split 10% / 90%.",
+     "zh": "SemiAnalysis Blackwell 合计 332,520 颗，按 10% / 90% 拆。"
+    },
     "src": "sa",
     "units": 299268
    },
    "2027Q2": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "SemiAnalysis Blackwell 合计 262,480 颗，按 10% / 90% 拆。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis Blackwell total of 262,480 units, split 10% / 90%.",
+     "zh": "SemiAnalysis Blackwell 合计 262,480 颗，按 10% / 90% 拆。"
+    },
     "src": "sa",
     "units": 236232
    }
@@ -6096,57 +6846,105 @@
   "hopper": {
    "2025Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 127343
    },
    "2025Q4": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 23391
    },
    "2026Q1": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q2": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 19361
    },
    "2026Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "用 Epoch。SemiAnalysis 这一季是 200,000 颗。",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "Epoch figure. SemiAnalysis has 200,000 for this quarter.",
+     "zh": "用 Epoch。SemiAnalysis 这一季是 200,000 颗。"
+    },
     "src": "epoch",
     "units": 74310
    },
    "2026Q4": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "10 月取 Epoch 的 25,214 颗 × 31/25＝31,265 颗；SemiAnalysis 全季 100,000 颗，11、12 月按 45% / 55% 分其余。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "October uses Epoch's 25,214 units × 31/25 = 31,265; SemiAnalysis has 100,000 for the quarter, and the rest is split 45% / 55% across November and December.",
+     "zh": "10 月取 Epoch 的 25,214 颗 × 31/25＝31,265 颗；SemiAnalysis 全季 100,000 颗，11、12 月按 45% / 55% 分其余。"
+    },
     "src": "sa",
     "units": 100000
    },
    "2027Q1": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "sa",
     "units": 100000
    },
    "2027Q2": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "sa",
     "units": 50000
    }
@@ -6154,57 +6952,105 @@
   "mi300": {
    "2025Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 65568
    },
    "2025Q4": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 23974
    },
    "2026Q1": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 28478
    },
    "2026Q2": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 31102
    },
    "2026Q3": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook（2026-11-13）",
-    "note": "SemiAnalysis（MI300/325）。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis (MI300/325).",
+     "zh": "SemiAnalysis（MI300/325）。"
+    },
     "src": "sa",
     "units": 25000
    },
    "2026Q4": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "est",
     "units": 10000
    },
    "2027Q1": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "est",
     "units": 0
    },
    "2027Q2": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "est",
     "units": 0
    }
@@ -6212,57 +7058,105 @@
   "mi355": {
    "2025Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 48610
    },
    "2025Q4": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "不含中国特供的 MI308X 31,783 颗。",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "Excludes 31,783 China-only MI308X units.",
+     "zh": "不含中国特供的 MI308X 31,783 颗。"
+    },
     "src": "epoch",
     "units": 72246
    },
    "2026Q1": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 78179
    },
    "2026Q2": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 88419
    },
    "2026Q3": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook（2026-11-13）",
-    "note": "",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "sa",
     "units": 139000
    },
    "2026Q4": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "10 万颗是本报告的假设。",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "The 100K figure is our assumption.",
+     "zh": "10 万颗是本报告的假设。"
+    },
     "src": "est",
     "units": 100000
    },
    "2027Q1": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "est",
     "units": 50000
    },
    "2027Q2": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "est",
     "units": 25000
    }
@@ -6270,57 +7164,105 @@
   "mi450": {
    "2025Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2025Q4": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q1": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q2": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q3": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook（2026-11-13）",
-    "note": "",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "sa",
     "units": 5000
    },
    "2026Q4": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "SemiAnalysis：MI400/450 155,000 + Meta 定制 52,000。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis: MI400/450 155,000 + Meta custom 52,000.",
+     "zh": "SemiAnalysis：MI400/450 155,000 + Meta 定制 52,000。"
+    },
     "src": "sa",
     "units": 207000
    },
    "2027Q1": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "SemiAnalysis：MI400/450 135,000 + Meta 定制 90,000。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis: MI400/450 135,000 + Meta custom 90,000.",
+     "zh": "SemiAnalysis：MI400/450 135,000 + Meta 定制 90,000。"
+    },
     "src": "sa",
     "units": 225000
    },
    "2027Q2": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "SemiAnalysis：MI400/450 140,000 + Meta 定制 125,000。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis: MI400/450 140,000 + Meta custom 125,000.",
+     "zh": "SemiAnalysis：MI400/450 140,000 + Meta 定制 125,000。"
+    },
     "src": "sa",
     "units": 265000
    }
@@ -6328,57 +7270,105 @@
   "r200": {
    "2025Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2025Q4": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q1": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q2": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q3": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "本报告推算：以 Nvidia 2027 财年三季度（7/27–10/25）Epoch 合计 201,961 颗为锚，按爬坡分 7 月 2,000、8 月 46,500、9 月 68,700、10/1–10/25 84,761。日历三季度＝117,200 颗。Epoch 的日历三季度是 146,477 颗（按天平摊），差额 29,277 颗移到四季度。SemiAnalysis 这一季是 220,752 颗。",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "Our estimate: anchored on Epoch's total of 201,961 units for Nvidia fiscal Q3 FY27 (Jul 27–Oct 25), spread along the ramp as Jul 2,000, Aug 46,500, Sep 68,700, Oct 1–25 84,761. Calendar Q3 = 117,200 units. Epoch's calendar Q3 is 146,477 (spread evenly by day); the 29,277 difference moves to Q4. SemiAnalysis has 220,752 for this quarter.",
+     "zh": "本报告推算：以 Nvidia 2027 财年三季度（7/27–10/25）Epoch 合计 201,961 颗为锚，按爬坡分 7 月 2,000、8 月 46,500、9 月 68,700、10/1–10/25 84,761。日历三季度＝117,200 颗。Epoch 的日历三季度是 146,477 颗（按天平摊），差额 29,277 颗移到四季度。SemiAnalysis 这一季是 220,752 颗。"
+    },
     "src": "est",
     "units": 117200
    },
    "2026Q4": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "SemiAnalysis 920,000 颗 + 三季度让出的 29,277 颗＝949,277 颗（下半年总数不变）。10 月＝84,761 + 10/26–31 的 40,000＝124,761 颗（推算）；11、12 月按 42% / 58% 分其余 824,516 颗（预测）。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis 920,000 units + the 29,277 moved out of Q3 = 949,277 (second-half total unchanged). October = 84,761 + 40,000 for Oct 26–31 = 124,761 (estimate); the remaining 824,516 is split 42% / 58% across November and December (forecast).",
+     "zh": "SemiAnalysis 920,000 颗 + 三季度让出的 29,277 颗＝949,277 颗（下半年总数不变）。10 月＝84,761 + 10/26–31 的 40,000＝124,761 颗（推算）；11、12 月按 42% / 58% 分其余 824,516 颗（预测）。"
+    },
     "src": "sa",
     "units": 949277
    },
    "2027Q1": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "sa",
     "units": 1258280
    },
    "2027Q2": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "sa",
     "units": 1057880
    }
@@ -6386,57 +7376,105 @@
   "rubin_ultra": {
    "2025Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2025Q4": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q1": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q2": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q4": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "sa",
     "units": 0
    },
    "2027Q1": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "sa",
     "units": 0
    },
    "2027Q2": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "sa",
     "units": 250000
    }
@@ -6444,57 +7482,105 @@
   "tpu_v6e": {
    "2025Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 734300
    },
    "2025Q4": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 408357
    },
    "2026Q1": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 155055
    },
    "2026Q2": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 41792
    },
    "2026Q3": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "est",
     "units": 0
    },
    "2026Q4": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "est",
     "units": 0
    },
    "2027Q1": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "est",
     "units": 0
    },
    "2027Q2": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "est",
     "units": 0
    }
@@ -6502,57 +7588,105 @@
   "tpu_v7": {
    "2025Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 51286
    },
    "2025Q4": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 212828
    },
    "2026Q1": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 334346
    },
    "2026Q2": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 616658
    },
    "2026Q3": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "本报告推算：Epoch 到 8/2 为止 274,866 颗（约等于 7 月）；博通 5–7 月那一季约 80 万颗、8–10 月推算约 100 万颗 → 日历三季度博通约 94 万颗（v7 + v8i）。",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "Our estimate: Epoch has 274,866 units through Aug 2 (roughly July); Broadcom shipped about 800K in its May–Jul quarter and an estimated 1M in Aug–Oct → about 940K from Broadcom in calendar Q3 (v7 + v8i).",
+     "zh": "本报告推算：Epoch 到 8/2 为止 274,866 颗（约等于 7 月）；博通 5–7 月那一季约 80 万颗、8–10 月推算约 100 万颗 → 日历三季度博通约 94 万颗（v7 + v8i）。"
+    },
     "src": "est",
     "units": 820000
    },
    "2026Q4": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "本报告推算：博通约 10 月 33 万 + 11–12 月 80 万颗（v7 + v8i 合计，按两者季度量的比例分）。",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "Our estimate: Broadcom ships about 330K in October + 800K in Nov–Dec (v7 + v8i combined, split in proportion to each chip's quarterly volume).",
+     "zh": "本报告推算：博通约 10 月 33 万 + 11–12 月 80 万颗（v7 + v8i 合计，按两者季度量的比例分）。"
+    },
     "src": "est",
     "units": 750000
    },
    "2027Q1": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "v7 尾量 30 万颗是本报告的假设。",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "The 300K v7 tail is our assumption.",
+     "zh": "v7 尾量 30 万颗是本报告的假设。"
+    },
     "src": "est",
     "units": 300000
    },
    "2027Q2": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "v7 尾量 15 万颗是本报告的假设。",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "The 150K v7 tail is our assumption.",
+     "zh": "v7 尾量 15 万颗是本报告的假设。"
+    },
     "src": "est",
     "units": 150000
    }
@@ -6560,57 +7694,105 @@
   "tpu_v8i": {
    "2025Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2025Q4": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q1": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q2": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 25654
    },
    "2026Q3": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "本报告推算：Epoch 到 8/2 为止 14,596 颗（约等于 7 月），8、9 月平分其余。",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "Our estimate: Epoch has 14,596 units through Aug 2 (roughly July); the rest is split evenly between August and September.",
+     "zh": "本报告推算：Epoch 到 8/2 为止 14,596 颗（约等于 7 月），8、9 月平分其余。"
+    },
     "src": "est",
     "units": 120000
    },
    "2026Q4": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "本报告推算：同 v7 那一格。",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "Our estimate: same method as the v7 cell.",
+     "zh": "本报告推算：同 v7 那一格。"
+    },
     "src": "est",
     "units": 380000
    },
    "2027Q1": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "SemiAnalysis（博通那一份，Google 自用 345,000 + Anthropic 150,000）。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis (Broadcom share: 345,000 for Google's own use + 150,000 for Anthropic).",
+     "zh": "SemiAnalysis（博通那一份，Google 自用 345,000 + Anthropic 150,000）。"
+    },
     "src": "sa",
     "units": 495000
    },
    "2027Q2": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "SemiAnalysis（博通那一份，Google 自用 275,000 + Anthropic 315,000）。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis (Broadcom share: 275,000 for Google's own use + 315,000 for Anthropic).",
+     "zh": "SemiAnalysis（博通那一份，Google 自用 275,000 + Anthropic 315,000）。"
+    },
     "src": "sa",
     "units": 590000
    }
@@ -6618,57 +7800,105 @@
   "tpu_v8t": {
    "2025Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2025Q4": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q1": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q2": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q3": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook（2026-11-13）",
-    "note": "SemiAnalysis（联发科那一份）。月度：8 月 30%、9 月 70%。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis (MediaTek share). Monthly: 30% August, 70% September.",
+     "zh": "SemiAnalysis（联发科那一份）。月度：8 月 30%、9 月 70%。"
+    },
     "src": "sa",
     "units": 90000
    },
    "2026Q4": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "SemiAnalysis（联发科那一份）。2026 全年 TPU 合计约 389 万颗，落在各家预测 330–460 万颗之内，低于 Google 说的 430 万颗。",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "SemiAnalysis (MediaTek share). Full-year 2026 TPUs total about 3.89M units, inside the 3.3M–4.6M range of outside forecasts and below the 4.3M Google cited.",
+     "zh": "SemiAnalysis（联发科那一份）。2026 全年 TPU 合计约 389 万颗，落在各家预测 330–460 万颗之内，低于 Google 说的 430 万颗。"
+    },
     "src": "sa",
     "units": 560000
    },
    "2027Q1": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "sa",
     "units": 711000
    },
    "2027Q2": {
     "conf": "中",
-    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
-    "note": "",
+    "label": {
+     "en": "SemiAnalysis Accelerator Outlook forecast (2026-11-13)",
+     "zh": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "sa",
     "units": 812000
    }
@@ -6676,57 +7906,105 @@
   "trn2": {
    "2025Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 285000
    },
    "2025Q4": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 335000
    },
    "2026Q1": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 345000
    },
    "2026Q2": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 255000
    },
    "2026Q3": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "est",
     "units": 150000
    },
    "2026Q4": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "est",
     "units": 50000
    },
    "2027Q1": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "est",
     "units": 0
    },
    "2027Q2": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "est",
     "units": 0
    }
@@ -6734,57 +8012,105 @@
   "trn3": {
    "2025Q3": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2025Q4": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q1": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 0
    },
    "2026Q2": {
     "conf": "中",
-    "label": "Epoch AI Chip Sales（2026-11-19）",
-    "note": "",
+    "label": {
+     "en": "Epoch AI Chip Sales (2026-11-19)",
+     "zh": "Epoch AI Chip Sales（2026-11-19）"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "epoch",
     "units": 95000
    },
    "2026Q3": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "本报告推算：JPMorgan 预计 2026 年 Trainium3 约 130 万颗。",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "Our estimate: J.P. Morgan expects about 1.3M Trainium3 units in 2026.",
+     "zh": "本报告推算：JPMorgan 预计 2026 年 Trainium3 约 130 万颗。"
+    },
     "src": "est",
     "units": 350000
    },
    "2026Q4": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "",
+     "zh": ""
+    },
     "src": "est",
     "units": 600000
    },
    "2027Q1": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "本报告推算：JPMorgan 预计 2027 年 Trainium3 约 310 万颗。",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "Our estimate: J.P. Morgan expects about 3.1M Trainium3 units in 2027.",
+     "zh": "本报告推算：JPMorgan 预计 2027 年 Trainium3 约 310 万颗。"
+    },
     "src": "est",
     "units": 700000
    },
    "2027Q2": {
     "conf": "低",
-    "label": "本报告推算",
-    "note": "本报告推算：JPMorgan 预计 2027 年 Trainium3 约 310 万颗。",
+    "label": {
+     "en": "Our estimate",
+     "zh": "本报告推算"
+    },
+    "note": {
+     "en": "Our estimate: J.P. Morgan expects about 3.1M Trainium3 units in 2027.",
+     "zh": "本报告推算：JPMorgan 预计 2027 年 Trainium3 约 310 万颗。"
+    },
     "src": "est",
     "units": 750000
    }
@@ -6792,144 +8118,228 @@
  },
  "skus": [
   {
-   "basis": "定义：H100 稠密 FP8 1,979 TFLOPS = 1",
+   "basis": {
+    "en": "By definition: H100 dense FP8 1,979 TFLOPS = 1",
+    "zh": "定义：H100 稠密 FP8 1,979 TFLOPS = 1"
+   },
    "conf": "高",
    "f4": 1.0,
    "f8": 1.0,
    "key": "hopper",
    "lag": 2,
    "lane": "nvidia",
-   "name": "H100 / H200"
+   "name": {
+    "en": "H100 / H200",
+    "zh": "H100 / H200"
+   }
   },
   {
-   "basis": "Nvidia 官方：GB200 每颗 5 PF FP8 / 10 PF FP4（稠密）",
+   "basis": {
+    "en": "Nvidia spec: GB200 5 PF FP8 / 10 PF FP4 per GPU (dense)",
+    "zh": "Nvidia 官方：GB200 每颗 5 PF FP8 / 10 PF FP4（稠密）"
+   },
    "conf": "高",
    "f4": 5.05,
    "f8": 2.53,
    "key": "b200",
    "lag": 2,
    "lane": "nvidia",
-   "name": "B200 / GB200"
+   "name": {
+    "en": "B200 / GB200",
+    "zh": "B200 / GB200"
+   }
   },
   {
-   "basis": "Nvidia 官方：GB300 每颗 5 PF FP8 / 15 PF FP4（稠密）",
+   "basis": {
+    "en": "Nvidia spec: GB300 5 PF FP8 / 15 PF FP4 per GPU (dense)",
+    "zh": "Nvidia 官方：GB300 每颗 5 PF FP8 / 15 PF FP4（稠密）"
+   },
    "conf": "高",
    "f4": 7.58,
    "f8": 2.53,
    "key": "b300",
    "lag": 2,
    "lane": "nvidia",
-   "name": "B300 / GB300"
+   "name": {
+    "en": "B300 / GB300",
+    "zh": "B300 / GB300"
+   }
   },
   {
-   "basis": "Nvidia 官方 + Epoch：17.5 PF FP8；4 位取 NVFP4 训练 35 PF。推理 50 PF 没有注明是否稠密，不用",
+   "basis": {
+    "en": "Nvidia spec + Epoch: 17.5 PF FP8; 4-bit uses the 35 PF NVFP4 training figure. The 50 PF inference figure is not stated as dense, so it is not used",
+    "zh": "Nvidia 官方 + Epoch：17.5 PF FP8；4 位取 NVFP4 训练 35 PF。推理 50 PF 没有注明是否稠密，不用"
+   },
    "conf": "中",
    "f4": 17.69,
    "f8": 8.84,
    "key": "r200",
    "lag": 1,
    "lane": "nvidia",
-   "name": "Rubin（VR200）"
+   "name": {
+    "en": "Rubin (VR200)",
+    "zh": "Rubin（VR200）"
+   }
   },
   {
-   "basis": "假设：按 Rubin × 2",
+   "basis": {
+    "en": "Assumption: Rubin × 2",
+    "zh": "假设：按 Rubin × 2"
+   },
    "conf": "低",
    "f4": 35.4,
    "f8": 17.7,
    "key": "rubin_ultra",
    "lag": 1,
    "lane": "nvidia",
-   "name": "Rubin Ultra"
+   "name": {
+    "en": "Rubin Ultra",
+    "zh": "Rubin Ultra"
+   }
   },
   {
-   "basis": "Epoch AI chip types（0.93）",
+   "basis": {
+    "en": "Epoch AI chip types (0.93)",
+    "zh": "Epoch AI chip types（0.93）"
+   },
    "conf": "中",
    "f4": 0.93,
    "f8": 0.93,
    "key": "tpu_v6e",
    "lag": 1,
    "lane": "tpu",
-   "name": "TPU v6e（Trillium）"
+   "name": {
+    "en": "TPU v6e (Trillium)",
+    "zh": "TPU v6e（Trillium）"
+   }
   },
   {
-   "basis": "Google Cloud 文档：4,614 TFLOPS FP8；没有 FP4",
+   "basis": {
+    "en": "Google Cloud docs: 4,614 TFLOPS FP8; no FP4",
+    "zh": "Google Cloud 文档：4,614 TFLOPS FP8；没有 FP4"
+   },
    "conf": "高",
    "f4": 2.33,
    "f8": 2.33,
    "key": "tpu_v7",
    "lag": 1,
    "lane": "tpu",
-   "name": "TPU v7（Ironwood）"
+   "name": {
+    "en": "TPU v7 (Ironwood)",
+    "zh": "TPU v7（Ironwood）"
+   }
   },
   {
-   "basis": "Google 只给 10.1 PF FP4；8 位按 FP4 ÷ 2 推算。Epoch 填的 5.10 是把 FP4 当成 8 位，不采用",
+   "basis": {
+    "en": "Google only discloses 10.1 PF FP4; 8-bit is estimated as FP4 ÷ 2. Epoch's 5.10 treats the FP4 figure as 8-bit, so it is not used",
+    "zh": "Google 只给 10.1 PF FP4；8 位按 FP4 ÷ 2 推算。Epoch 填的 5.10 是把 FP4 当成 8 位，不采用"
+   },
    "conf": "低",
    "f4": 5.1,
    "f8": 2.55,
    "key": "tpu_v8i",
    "lag": 1,
    "lane": "tpu",
-   "name": "TPU v8i"
+   "name": {
+    "en": "TPU v8i",
+    "zh": "TPU v8i"
+   }
   },
   {
-   "basis": "Google 只给 12.6 PF FP4；8 位按 FP4 ÷ 2 推算",
+   "basis": {
+    "en": "Google only discloses 12.6 PF FP4; 8-bit is estimated as FP4 ÷ 2",
+    "zh": "Google 只给 12.6 PF FP4；8 位按 FP4 ÷ 2 推算"
+   },
    "conf": "低",
    "f4": 6.37,
    "f8": 3.18,
    "key": "tpu_v8t",
    "lag": 1,
    "lane": "tpu",
-   "name": "TPU v8t"
+   "name": {
+    "en": "TPU v8t",
+    "zh": "TPU v8t"
+   }
   },
   {
-   "basis": "Epoch AI chip types（0.66）",
+   "basis": {
+    "en": "Epoch AI chip types (0.66)",
+    "zh": "Epoch AI chip types（0.66）"
+   },
    "conf": "中",
    "f4": 0.66,
    "f8": 0.66,
    "key": "trn2",
    "lag": 1,
    "lane": "other",
-   "name": "Trainium2"
+   "name": {
+    "en": "Trainium2",
+    "zh": "Trainium2"
+   }
   },
   {
-   "basis": "AWS：2.52 PF MXFP8；没有找到 FP4",
+   "basis": {
+    "en": "AWS: 2.52 PF MXFP8; no FP4 figure found",
+    "zh": "AWS：2.52 PF MXFP8；没有找到 FP4"
+   },
    "conf": "中",
    "f4": 1.27,
    "f8": 1.27,
    "key": "trn3",
    "lag": 1,
    "lane": "other",
-   "name": "Trainium3"
+   "name": {
+    "en": "Trainium3",
+    "zh": "Trainium3"
+   }
   },
   {
-   "basis": "Epoch AI chip types（1.32）",
+   "basis": {
+    "en": "Epoch AI chip types (1.32)",
+    "zh": "Epoch AI chip types（1.32）"
+   },
    "conf": "中",
    "f4": 1.32,
    "f8": 1.32,
    "key": "mi300",
    "lag": 2,
    "lane": "other",
-   "name": "MI300X / MI325X"
+   "name": {
+    "en": "MI300X / MI325X",
+    "zh": "MI300X / MI325X"
+   }
   },
   {
-   "basis": "AMD 官方：MI355X 5 PF FP8 / 10 PF FP4",
+   "basis": {
+    "en": "AMD spec: MI355X 5 PF FP8 / 10 PF FP4",
+    "zh": "AMD 官方：MI355X 5 PF FP8 / 10 PF FP4"
+   },
    "conf": "中",
    "f4": 5.05,
    "f8": 2.54,
    "key": "mi355",
    "lag": 2,
    "lane": "other",
-   "name": "MI350X / MI355X"
+   "name": {
+    "en": "MI350X / MI355X",
+    "zh": "MI350X / MI355X"
+   }
   },
   {
-   "basis": "AMD 官方：MI455X 20.1 PF FP8 / 40.3 PF FP4",
+   "basis": {
+    "en": "AMD spec: MI455X 20.1 PF FP8 / 40.3 PF FP4",
+    "zh": "AMD 官方：MI455X 20.1 PF FP8 / 40.3 PF FP4"
+   },
    "conf": "中",
    "f4": 20.4,
    "f8": 10.16,
    "key": "mi450",
    "lag": 2,
    "lane": "other",
-   "name": "MI450 / MI455X（含 Meta 定制）"
+   "name": {
+    "en": "MI450 / MI455X (incl. Meta custom)",
+    "zh": "MI450 / MI455X（含 Meta 定制）"
+   }
   }
  ]
 }

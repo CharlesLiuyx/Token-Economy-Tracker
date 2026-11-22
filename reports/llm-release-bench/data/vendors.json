@@ -1,7 +1,7 @@
 {
  "_readme": {
   "zh": "厂商表：顺序＝表 2-1 分组顺序＝图 3-x 图例顺序。builtin_css=true 的三家颜色写在报告原 CSS 里；其余由 build_tables.py 生成 <style id=\"data-css\">（只在该厂商有模型或时间轴事件时才生成）。改颜色后跑 qa/palette_check.py。",
-  "en": ""
+  "en": "Vendor table: order = Table 2-1 group order = Fig 3-x legend order. The three builtin_css=true vendors have colors in the report's own CSS; the rest get <style id=\"data-css\"> from build_tables.py (only when that vendor has a model or timeline event). Run qa/palette_check.py after changing colors."
  },
  "vendors": [
   {
@@ -10,14 +10,14 @@
    "product": "Gemini",
    "group": {
     "zh": "前沿",
-    "en": ""
+    "en": "Frontier"
    },
    "css_var": "--g",
    "light": "#2a78d6",
    "dark": "#3987e5",
    "legend_tip": {
     "zh": "Google Gemini 4 系列。悬停只看这一家。",
-    "en": ""
+    "en": "Google Gemini 4 family. Hover to show this vendor only."
    },
    "t22_class": "vg",
    "builtin_css": true
@@ -28,14 +28,14 @@
    "product": "Claude",
    "group": {
     "zh": "前沿",
-    "en": ""
+    "en": "Frontier"
    },
    "css_var": "--a",
    "light": "#eb6834",
    "dark": "#d95926",
    "legend_tip": {
     "zh": "Anthropic Claude 系列。悬停只看这一家。",
-    "en": ""
+    "en": "Anthropic Claude family. Hover to show this vendor only."
    },
    "t22_class": "va",
    "builtin_css": true
@@ -46,14 +46,14 @@
    "product": "ChatGPT / GPT",
    "group": {
     "zh": "前沿",
-    "en": ""
+    "en": "Frontier"
    },
    "css_var": "--o",
    "light": "#1baf7a",
    "dark": "#199e70",
    "legend_tip": {
     "zh": "OpenAI GPT 系列。悬停只看这一家。",
-    "en": ""
+    "en": "OpenAI GPT family. Hover to show this vendor only."
    },
    "t22_class": "vo",
    "builtin_css": true
@@ -64,14 +64,14 @@
    "product": "Grok",
    "group": {
     "zh": "大厂",
-    "en": ""
+    "en": "Big Tech"
    },
    "css_var": "--xa",
    "light": "#eda100",
    "dark": "#c98500",
    "legend_tip": {
     "zh": "xAI Grok 系列。悬停只看这一家。",
-    "en": ""
+    "en": "xAI Grok family. Hover to show this vendor only."
    },
    "t22_class": "vx",
    "builtin_css": false
@@ -82,14 +82,14 @@
    "product": "Muse",
    "group": {
     "zh": "大厂",
-    "en": ""
+    "en": "Big Tech"
    },
    "css_var": "--me",
    "light": "#e87ba4",
    "dark": "#d55181",
    "legend_tip": {
     "zh": "Meta Muse 系列。悬停只看这一家。",
-    "en": ""
+    "en": "Meta Muse family. Hover to show this vendor only."
    },
    "t22_class": "vm",
    "builtin_css": false
@@ -100,14 +100,14 @@
    "product": "DeepSeek",
    "group": {
     "zh": "开源",
-    "en": ""
+    "en": "Open-weight"
    },
    "css_var": "--ds",
-   "light": "#008300",
-   "dark": "#0ca30c",
+   "light": "#0eabd8",
+   "dark": "#2b98b0",
    "legend_tip": {
     "zh": "DeepSeek 系列。悬停只看这一家。",
-    "en": ""
+    "en": "DeepSeek family. Hover to show this vendor only."
    },
    "t22_class": "vd",
    "builtin_css": false
@@ -118,14 +118,14 @@
    "product": "Kimi",
    "group": {
     "zh": "开源",
-    "en": ""
+    "en": "Open-weight"
    },
    "css_var": "--ms",
    "light": "#6250d6",
    "dark": "#9085e9",
    "legend_tip": {
     "zh": "Moonshot Kimi 系列。悬停只看这一家。",
-    "en": ""
+    "en": "Moonshot Kimi family. Hover to show this vendor only."
    },
    "t22_class": "vk",
    "builtin_css": false
@@ -136,14 +136,14 @@
    "product": "GLM",
    "group": {
     "zh": "开源",
-    "en": ""
+    "en": "Open-weight"
    },
    "css_var": "--zp",
    "light": "#e34948",
    "dark": "#e66767",
    "legend_tip": {
     "zh": "智谱 GLM 系列。悬停只看这一家。",
-    "en": ""
+    "en": "Zhipu GLM family. Hover to show this vendor only."
    },
    "t22_class": "vz",
    "builtin_css": false
@@ -163,7 +163,7 @@
    "vendor": "anthropic",
    "label": {
     "zh": "内部代号",
-    "en": ""
+    "en": "Internal"
    },
    "hollow_swatch": true
   },
@@ -197,7 +197,7 @@
    "key": "nvidia",
    "role": {
     "zh": "算力泳道 Nvidia（compute/build.py 管）",
-    "en": ""
+    "en": "Compute row Nvidia (owned by compute/build.py)"
    },
    "light": "#494845",
    "dark": "#b8b7b4"
@@ -206,7 +206,7 @@
    "key": "tpu",
    "role": {
     "zh": "算力泳道 TPU，与 Google 同色（compute/build.py 管）",
-    "en": ""
+    "en": "Compute row TPU, same color as Google (owned by compute/build.py)"
    },
    "light": "#2a78d6",
    "dark": "#3987e5"
@@ -215,7 +215,7 @@
    "key": "other",
    "role": {
     "zh": "算力泳道 Trainium + AMD（compute/build.py 管）",
-    "en": ""
+    "en": "Compute row Trainium + AMD (owned by compute/build.py)"
    },
    "light": "#a8418b",
    "dark": "#a8418b"

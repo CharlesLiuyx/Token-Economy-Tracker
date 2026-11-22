@@ -2,33 +2,36 @@
 """算力到卡模型（按 compute/decisions.md 2026-11-22 裁定）。幂等：同样输入 → 同样的 model.json。
 步骤：按季出货（日历季，封装颗数）→ 拆到月 → 按 SKU 时滞平移 → 每月到卡 × 三种换算（8 位 / 4 位 / 颗数）。
 用法：python3 model.py   （在 compute/ 目录或任意目录均可）
+只读本文件里的数字（＝decisions.md 已裁定的数）和 web/ 下的 Epoch CSV（只用于自检核对），不读付费研报原文（compute/local/ 不进仓库）。
+面向读者的文字都是 Z('中文', 'English') 一对，写进 model.json 是 {"zh": …, "en": …}；build.py 按语言取。
 """
 import csv, json, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 H100 = 1979  # H100 稠密 FP8 TFLOPS，三种换算的分母
+def Z(zh, en): return {'zh': zh, 'en': en}
 
 # ---------- 1. SKU 与系数（decisions.md 第 1 节） ----------
 # key, 泳道, 显示名, 8 位系数, 4 位系数, 可信度, 依据
 SKUS = [
- ('hopper','nvidia','H100 / H200',1.00,1.00,'高','定义：H100 稠密 FP8 1,979 TFLOPS = 1'),
- ('b200','nvidia','B200 / GB200',2.53,5.05,'高','Nvidia 官方：GB200 每颗 5 PF FP8 / 10 PF FP4（稠密）'),
- ('b300','nvidia','B300 / GB300',2.53,7.58,'高','Nvidia 官方：GB300 每颗 5 PF FP8 / 15 PF FP4（稠密）'),
- ('r200','nvidia','Rubin（VR200）',8.84,17.69,'中','Nvidia 官方 + Epoch：17.5 PF FP8；4 位取 NVFP4 训练 35 PF。推理 50 PF 没有注明是否稠密，不用'),
- ('rubin_ultra','nvidia','Rubin Ultra',17.7,35.4,'低','假设：按 Rubin × 2'),
- ('tpu_v6e','tpu','TPU v6e（Trillium）',0.93,0.93,'中','Epoch AI chip types（0.93）'),
- ('tpu_v7','tpu','TPU v7（Ironwood）',2.33,2.33,'高','Google Cloud 文档：4,614 TFLOPS FP8；没有 FP4'),
- ('tpu_v8i','tpu','TPU v8i',2.55,5.10,'低','Google 只给 10.1 PF FP4；8 位按 FP4 ÷ 2 推算。Epoch 填的 5.10 是把 FP4 当成 8 位，不采用'),
- ('tpu_v8t','tpu','TPU v8t',3.18,6.37,'低','Google 只给 12.6 PF FP4；8 位按 FP4 ÷ 2 推算'),
- ('trn2','other','Trainium2',0.66,0.66,'中','Epoch AI chip types（0.66）'),
- ('trn3','other','Trainium3',1.27,1.27,'中','AWS：2.52 PF MXFP8；没有找到 FP4'),
- ('mi300','other','MI300X / MI325X',1.32,1.32,'中','Epoch AI chip types（1.32）'),
- ('mi355','other','MI350X / MI355X',2.54,5.05,'中','AMD 官方：MI355X 5 PF FP8 / 10 PF FP4'),
- ('mi450','other','MI450 / MI455X（含 Meta 定制）',10.16,20.4,'中','AMD 官方：MI455X 20.1 PF FP8 / 40.3 PF FP4'),
+ ('hopper','nvidia',Z('H100 / H200','H100 / H200'),1.00,1.00,'高',Z('定义：H100 稠密 FP8 1,979 TFLOPS = 1','By definition: H100 dense FP8 1,979 TFLOPS = 1')),
+ ('b200','nvidia',Z('B200 / GB200','B200 / GB200'),2.53,5.05,'高',Z('Nvidia 官方：GB200 每颗 5 PF FP8 / 10 PF FP4（稠密）','Nvidia spec: GB200 5 PF FP8 / 10 PF FP4 per GPU (dense)')),
+ ('b300','nvidia',Z('B300 / GB300','B300 / GB300'),2.53,7.58,'高',Z('Nvidia 官方：GB300 每颗 5 PF FP8 / 15 PF FP4（稠密）','Nvidia spec: GB300 5 PF FP8 / 15 PF FP4 per GPU (dense)')),
+ ('r200','nvidia',Z('Rubin（VR200）','Rubin (VR200)'),8.84,17.69,'中',Z('Nvidia 官方 + Epoch：17.5 PF FP8；4 位取 NVFP4 训练 35 PF。推理 50 PF 没有注明是否稠密，不用','Nvidia spec + Epoch: 17.5 PF FP8; 4-bit uses the 35 PF NVFP4 training figure. The 50 PF inference figure is not stated as dense, so it is not used')),
+ ('rubin_ultra','nvidia',Z('Rubin Ultra','Rubin Ultra'),17.7,35.4,'低',Z('假设：按 Rubin × 2','Assumption: Rubin × 2')),
+ ('tpu_v6e','tpu',Z('TPU v6e（Trillium）','TPU v6e (Trillium)'),0.93,0.93,'中',Z('Epoch AI chip types（0.93）','Epoch AI chip types (0.93)')),
+ ('tpu_v7','tpu',Z('TPU v7（Ironwood）','TPU v7 (Ironwood)'),2.33,2.33,'高',Z('Google Cloud 文档：4,614 TFLOPS FP8；没有 FP4','Google Cloud docs: 4,614 TFLOPS FP8; no FP4')),
+ ('tpu_v8i','tpu',Z('TPU v8i','TPU v8i'),2.55,5.10,'低',Z('Google 只给 10.1 PF FP4；8 位按 FP4 ÷ 2 推算。Epoch 填的 5.10 是把 FP4 当成 8 位，不采用','Google only discloses 10.1 PF FP4; 8-bit is estimated as FP4 ÷ 2. Epoch\'s 5.10 treats the FP4 figure as 8-bit, so it is not used')),
+ ('tpu_v8t','tpu',Z('TPU v8t','TPU v8t'),3.18,6.37,'低',Z('Google 只给 12.6 PF FP4；8 位按 FP4 ÷ 2 推算','Google only discloses 12.6 PF FP4; 8-bit is estimated as FP4 ÷ 2')),
+ ('trn2','other',Z('Trainium2','Trainium2'),0.66,0.66,'中',Z('Epoch AI chip types（0.66）','Epoch AI chip types (0.66)')),
+ ('trn3','other',Z('Trainium3','Trainium3'),1.27,1.27,'中',Z('AWS：2.52 PF MXFP8；没有找到 FP4','AWS: 2.52 PF MXFP8; no FP4 figure found')),
+ ('mi300','other',Z('MI300X / MI325X','MI300X / MI325X'),1.32,1.32,'中',Z('Epoch AI chip types（1.32）','Epoch AI chip types (1.32)')),
+ ('mi355','other',Z('MI350X / MI355X','MI350X / MI355X'),2.54,5.05,'中',Z('AMD 官方：MI355X 5 PF FP8 / 10 PF FP4','AMD spec: MI355X 5 PF FP8 / 10 PF FP4')),
+ ('mi450','other',Z('MI450 / MI455X（含 Meta 定制）','MI450 / MI455X (incl. Meta custom)'),10.16,20.4,'中',Z('AMD 官方：MI455X 20.1 PF FP8 / 40.3 PF FP4','AMD spec: MI455X 20.1 PF FP8 / 40.3 PF FP4')),
 ]
-LANES = [('nvidia','Nvidia'),('tpu','TPU'),('other','Trainium＋AMD')]
+LANES = [('nvidia',Z('Nvidia','Nvidia')),('tpu',Z('TPU','TPU')),('other',Z('Trainium＋AMD','Trainium + AMD'))]
 LAG = {'hopper':2,'b200':2,'b300':2,'r200':1,'rubin_ultra':1,
        'tpu_v6e':1,'tpu_v7':1,'tpu_v8i':1,'tpu_v8t':1,'trn2':1,'trn3':1,'mi300':2,'mi355':2,'mi450':2}
-LAG_NOTE = {2:'Blackwell / Hopper / AMD：出货后约 2 个月投入使用',1:'Rubin / TPU / Trainium：出货后约 1 个月投入使用'}
+LAG_NOTE = {2:Z('Blackwell / Hopper / AMD：出货后约 2 个月投入使用','Blackwell / Hopper / AMD: in service about 2 months after shipment'),1:Z('Rubin / TPU / Trainium：出货后约 1 个月投入使用','Rubin / TPU / Trainium: in service about 1 month after shipment')}
 
 QS = ['2025Q3','2025Q4','2026Q1','2026Q2','2026Q3','2026Q4','2027Q1','2027Q2']
 # ---------- 2. 按季出货（decisions.md 第 2 节；src: epoch / sa / est） ----------
@@ -51,30 +54,42 @@ SHIP = {
  'mi450': row([0,0,0,0,5000,207000,225000,265000],[E,E,E,E,S,S,S,S]),
 }
 NOTES = {  # 按季格的补充说明（表 2-3 悬停）
- ('b200','2026Q4'):'SemiAnalysis 只给 Blackwell 合计 734,504 颗，按 B200 10% / B300 90% 拆。10 月取 Epoch 的 30,946 颗 × 31/25（Epoch 的 10 月只算到 10/25）＝38,373 颗；11、12 月按 45% / 55% 分其余，属预测。',
- ('b300','2026Q4'):'SemiAnalysis 只给 Blackwell 合计 734,504 颗，按 B200 10% / B300 90% 拆。10 月取 Epoch 的 384,733 颗 × 31/25＝477,069 颗；11、12 月按 45% / 55% 分其余，属预测。',
- ('b200','2027Q1'):'SemiAnalysis Blackwell 合计 332,520 颗，按 10% / 90% 拆。',('b300','2027Q1'):'SemiAnalysis Blackwell 合计 332,520 颗，按 10% / 90% 拆。',
- ('b200','2027Q2'):'SemiAnalysis Blackwell 合计 262,480 颗，按 10% / 90% 拆。',('b300','2027Q2'):'SemiAnalysis Blackwell 合计 262,480 颗，按 10% / 90% 拆。',
- ('r200','2026Q3'):'本报告推算：以 Nvidia 2027 财年三季度（7/27–10/25）Epoch 合计 201,961 颗为锚，按爬坡分 7 月 2,000、8 月 46,500、9 月 68,700、10/1–10/25 84,761。日历三季度＝117,200 颗。Epoch 的日历三季度是 146,477 颗（按天平摊），差额 29,277 颗移到四季度。SemiAnalysis 这一季是 220,752 颗。',
- ('r200','2026Q4'):'SemiAnalysis 920,000 颗 + 三季度让出的 29,277 颗＝949,277 颗（下半年总数不变）。10 月＝84,761 + 10/26–31 的 40,000＝124,761 颗（推算）；11、12 月按 42% / 58% 分其余 824,516 颗（预测）。',
- ('hopper','2026Q3'):'用 Epoch。SemiAnalysis 这一季是 200,000 颗。',
- ('hopper','2026Q4'):'10 月取 Epoch 的 25,214 颗 × 31/25＝31,265 颗；SemiAnalysis 全季 100,000 颗，11、12 月按 45% / 55% 分其余。',
- ('tpu_v7','2026Q3'):'本报告推算：Epoch 到 8/2 为止 274,866 颗（约等于 7 月）；博通 5–7 月那一季约 80 万颗、8–10 月推算约 100 万颗 → 日历三季度博通约 94 万颗（v7 + v8i）。',
- ('tpu_v8i','2026Q3'):'本报告推算：Epoch 到 8/2 为止 14,596 颗（约等于 7 月），8、9 月平分其余。',
- ('tpu_v8t','2026Q3'):'SemiAnalysis（联发科那一份）。月度：8 月 30%、9 月 70%。',
- ('tpu_v7','2026Q4'):'本报告推算：博通约 10 月 33 万 + 11–12 月 80 万颗（v7 + v8i 合计，按两者季度量的比例分）。',
- ('tpu_v8i','2026Q4'):'本报告推算：同 v7 那一格。',
- ('tpu_v8t','2026Q4'):'SemiAnalysis（联发科那一份）。2026 全年 TPU 合计约 389 万颗，落在各家预测 330–460 万颗之内，低于 Google 说的 430 万颗。',
- ('tpu_v7','2027Q1'):'v7 尾量 30 万颗是本报告的假设。',('tpu_v7','2027Q2'):'v7 尾量 15 万颗是本报告的假设。',
- ('tpu_v8i','2027Q1'):'SemiAnalysis（博通那一份，Google 自用 345,000 + Anthropic 150,000）。',
- ('tpu_v8i','2027Q2'):'SemiAnalysis（博通那一份，Google 自用 275,000 + Anthropic 315,000）。',
- ('trn3','2026Q3'):'本报告推算：JPMorgan 预计 2026 年 Trainium3 约 130 万颗。',
- ('trn3','2027Q1'):'本报告推算：JPMorgan 预计 2027 年 Trainium3 约 310 万颗。',('trn3','2027Q2'):'本报告推算：JPMorgan 预计 2027 年 Trainium3 约 310 万颗。',
- ('mi355','2026Q4'):'10 万颗是本报告的假设。',
- ('mi300','2026Q3'):'SemiAnalysis（MI300/325）。',
- ('mi450','2026Q4'):'SemiAnalysis：MI400/450 155,000 + Meta 定制 52,000。',
- ('mi450','2027Q1'):'SemiAnalysis：MI400/450 135,000 + Meta 定制 90,000。',('mi450','2027Q2'):'SemiAnalysis：MI400/450 140,000 + Meta 定制 125,000。',
- ('mi355','2025Q4'):'不含中国特供的 MI308X 31,783 颗。',
+ ('b200','2026Q4'):Z('SemiAnalysis 只给 Blackwell 合计 734,504 颗，按 B200 10% / B300 90% 拆。10 月取 Epoch 的 30,946 颗 × 31/25（Epoch 的 10 月只算到 10/25）＝38,373 颗；11、12 月按 45% / 55% 分其余，属预测。',
+   'SemiAnalysis gives only a Blackwell total of 734,504 units, split 10% B200 / 90% B300. October uses Epoch\'s 30,946 units × 31/25 (Epoch\'s October stops at Oct 25) = 38,373; the rest is split 45% / 55% across November and December and is a forecast.'),
+ ('b300','2026Q4'):Z('SemiAnalysis 只给 Blackwell 合计 734,504 颗，按 B200 10% / B300 90% 拆。10 月取 Epoch 的 384,733 颗 × 31/25＝477,069 颗；11、12 月按 45% / 55% 分其余，属预测。',
+   'SemiAnalysis gives only a Blackwell total of 734,504 units, split 10% B200 / 90% B300. October uses Epoch\'s 384,733 units × 31/25 = 477,069; the rest is split 45% / 55% across November and December and is a forecast.'),
+ ('b200','2027Q1'):Z('SemiAnalysis Blackwell 合计 332,520 颗，按 10% / 90% 拆。','SemiAnalysis Blackwell total of 332,520 units, split 10% / 90%.'),
+ ('b300','2027Q1'):Z('SemiAnalysis Blackwell 合计 332,520 颗，按 10% / 90% 拆。','SemiAnalysis Blackwell total of 332,520 units, split 10% / 90%.'),
+ ('b200','2027Q2'):Z('SemiAnalysis Blackwell 合计 262,480 颗，按 10% / 90% 拆。','SemiAnalysis Blackwell total of 262,480 units, split 10% / 90%.'),
+ ('b300','2027Q2'):Z('SemiAnalysis Blackwell 合计 262,480 颗，按 10% / 90% 拆。','SemiAnalysis Blackwell total of 262,480 units, split 10% / 90%.'),
+ ('r200','2026Q3'):Z('本报告推算：以 Nvidia 2027 财年三季度（7/27–10/25）Epoch 合计 201,961 颗为锚，按爬坡分 7 月 2,000、8 月 46,500、9 月 68,700、10/1–10/25 84,761。日历三季度＝117,200 颗。Epoch 的日历三季度是 146,477 颗（按天平摊），差额 29,277 颗移到四季度。SemiAnalysis 这一季是 220,752 颗。',
+   'Our estimate: anchored on Epoch\'s total of 201,961 units for Nvidia fiscal Q3 FY27 (Jul 27–Oct 25), spread along the ramp as Jul 2,000, Aug 46,500, Sep 68,700, Oct 1–25 84,761. Calendar Q3 = 117,200 units. Epoch\'s calendar Q3 is 146,477 (spread evenly by day); the 29,277 difference moves to Q4. SemiAnalysis has 220,752 for this quarter.'),
+ ('r200','2026Q4'):Z('SemiAnalysis 920,000 颗 + 三季度让出的 29,277 颗＝949,277 颗（下半年总数不变）。10 月＝84,761 + 10/26–31 的 40,000＝124,761 颗（推算）；11、12 月按 42% / 58% 分其余 824,516 颗（预测）。',
+   'SemiAnalysis 920,000 units + the 29,277 moved out of Q3 = 949,277 (second-half total unchanged). October = 84,761 + 40,000 for Oct 26–31 = 124,761 (estimate); the remaining 824,516 is split 42% / 58% across November and December (forecast).'),
+ ('hopper','2026Q3'):Z('用 Epoch。SemiAnalysis 这一季是 200,000 颗。','Epoch figure. SemiAnalysis has 200,000 for this quarter.'),
+ ('hopper','2026Q4'):Z('10 月取 Epoch 的 25,214 颗 × 31/25＝31,265 颗；SemiAnalysis 全季 100,000 颗，11、12 月按 45% / 55% 分其余。',
+   'October uses Epoch\'s 25,214 units × 31/25 = 31,265; SemiAnalysis has 100,000 for the quarter, and the rest is split 45% / 55% across November and December.'),
+ ('tpu_v7','2026Q3'):Z('本报告推算：Epoch 到 8/2 为止 274,866 颗（约等于 7 月）；博通 5–7 月那一季约 80 万颗、8–10 月推算约 100 万颗 → 日历三季度博通约 94 万颗（v7 + v8i）。',
+   'Our estimate: Epoch has 274,866 units through Aug 2 (roughly July); Broadcom shipped about 800K in its May–Jul quarter and an estimated 1M in Aug–Oct → about 940K from Broadcom in calendar Q3 (v7 + v8i).'),
+ ('tpu_v8i','2026Q3'):Z('本报告推算：Epoch 到 8/2 为止 14,596 颗（约等于 7 月），8、9 月平分其余。','Our estimate: Epoch has 14,596 units through Aug 2 (roughly July); the rest is split evenly between August and September.'),
+ ('tpu_v8t','2026Q3'):Z('SemiAnalysis（联发科那一份）。月度：8 月 30%、9 月 70%。','SemiAnalysis (MediaTek share). Monthly: 30% August, 70% September.'),
+ ('tpu_v7','2026Q4'):Z('本报告推算：博通约 10 月 33 万 + 11–12 月 80 万颗（v7 + v8i 合计，按两者季度量的比例分）。','Our estimate: Broadcom ships about 330K in October + 800K in Nov–Dec (v7 + v8i combined, split in proportion to each chip\'s quarterly volume).'),
+ ('tpu_v8i','2026Q4'):Z('本报告推算：同 v7 那一格。','Our estimate: same method as the v7 cell.'),
+ ('tpu_v8t','2026Q4'):Z('SemiAnalysis（联发科那一份）。2026 全年 TPU 合计约 389 万颗，落在各家预测 330–460 万颗之内，低于 Google 说的 430 万颗。',
+   'SemiAnalysis (MediaTek share). Full-year 2026 TPUs total about 3.89M units, inside the 3.3M–4.6M range of outside forecasts and below the 4.3M Google cited.'),
+ ('tpu_v7','2027Q1'):Z('v7 尾量 30 万颗是本报告的假设。','The 300K v7 tail is our assumption.'),
+ ('tpu_v7','2027Q2'):Z('v7 尾量 15 万颗是本报告的假设。','The 150K v7 tail is our assumption.'),
+ ('tpu_v8i','2027Q1'):Z('SemiAnalysis（博通那一份，Google 自用 345,000 + Anthropic 150,000）。','SemiAnalysis (Broadcom share: 345,000 for Google\'s own use + 150,000 for Anthropic).'),
+ ('tpu_v8i','2027Q2'):Z('SemiAnalysis（博通那一份，Google 自用 275,000 + Anthropic 315,000）。','SemiAnalysis (Broadcom share: 275,000 for Google\'s own use + 315,000 for Anthropic).'),
+ ('trn3','2026Q3'):Z('本报告推算：JPMorgan 预计 2026 年 Trainium3 约 130 万颗。','Our estimate: J.P. Morgan expects about 1.3M Trainium3 units in 2026.'),
+ ('trn3','2027Q1'):Z('本报告推算：JPMorgan 预计 2027 年 Trainium3 约 310 万颗。','Our estimate: J.P. Morgan expects about 3.1M Trainium3 units in 2027.'),
+ ('trn3','2027Q2'):Z('本报告推算：JPMorgan 预计 2027 年 Trainium3 约 310 万颗。','Our estimate: J.P. Morgan expects about 3.1M Trainium3 units in 2027.'),
+ ('mi355','2026Q4'):Z('10 万颗是本报告的假设。','The 100K figure is our assumption.'),
+ ('mi300','2026Q3'):Z('SemiAnalysis（MI300/325）。','SemiAnalysis (MI300/325).'),
+ ('mi450','2026Q4'):Z('SemiAnalysis：MI400/450 155,000 + Meta 定制 52,000。','SemiAnalysis: MI400/450 155,000 + Meta custom 52,000.'),
+ ('mi450','2027Q1'):Z('SemiAnalysis：MI400/450 135,000 + Meta 定制 90,000。','SemiAnalysis: MI400/450 135,000 + Meta custom 90,000.'),
+ ('mi450','2027Q2'):Z('SemiAnalysis：MI400/450 140,000 + Meta 定制 125,000。','SemiAnalysis: MI400/450 140,000 + Meta custom 125,000.'),
+ ('mi355','2025Q4'):Z('不含中国特供的 MI308X 31,783 颗。','Excludes 31,783 China-only MI308X units.'),
 }
 
 def qmonths(q):
@@ -112,12 +127,12 @@ for k,rows in SHIP.items():
             ship_m[k][m]={'units':u,'src':src}
 
 def label(src,ship_month):
-    if src=='epoch': return ('epoch','Epoch AI Chip Sales（2026-11-19）','中',False)
-    if src=='epoch31': return ('epoch','Epoch AI Chip Sales（2026-11-19；10 月只算到 10/25，按 31/25 补满整月）','中',False)
+    if src=='epoch': return ('epoch',Z('Epoch AI Chip Sales（2026-11-19）','Epoch AI Chip Sales (2026-11-19)'),'中',False)
+    if src=='epoch31': return ('epoch',Z('Epoch AI Chip Sales（2026-11-19；10 月只算到 10/25，按 31/25 补满整月）','Epoch AI Chip Sales (2026-11-19; October stops at Oct 25, scaled by 31/25 to a full month)'),'中',False)
     if src=='sa':
-        if ship_month>='2026-11': return ('forecast','SemiAnalysis Accelerator Outlook 预测（2026-11-13）','中',True)
-        return ('sa','SemiAnalysis Accelerator Outlook（2026-11-13）','中',False)
-    return ('est','本报告推算','低',True)
+        if ship_month>='2026-11': return ('forecast',Z('SemiAnalysis Accelerator Outlook 预测（2026-11-13）','SemiAnalysis Accelerator Outlook forecast (2026-11-13)'),'中',True)
+        return ('sa',Z('SemiAnalysis Accelerator Outlook（2026-11-13）','SemiAnalysis Accelerator Outlook (2026-11-13)'),'中',False)
+    return ('est',Z('本报告推算','Our estimate'),'低',True)
 
 # ---------- 3. 平移到到卡 ----------
 ARR_MONTHS=[]; m='2025-10'
@@ -162,11 +177,11 @@ for q in AQ:
         lanes[ln]={'segs':segs,'total':{v:sum(x[v] for x in segs) for v in ('units','h8','h4')}}
     quarterly.append({'quarter':q,'lanes':lanes,'total':{v:sum(lanes[l]['total'][v] for l,_ in LANES) for v in ('units','h8','h4')}})
 
-ship_table={k:{q:dict(SHIP[k][q],note=NOTES.get((k,q),''),**{'label':label(SHIP[k][q]['src'],qmonths(q)[2])[1],'conf':label(SHIP[k][q]['src'],qmonths(q)[2])[2]}) for q in QS} for k in SHIP}
+ship_table={k:{q:dict(SHIP[k][q],note=NOTES.get((k,q),Z('','')),**{'label':label(SHIP[k][q]['src'],qmonths(q)[2])[1],'conf':label(SHIP[k][q]['src'],qmonths(q)[2])[2]}) for q in QS} for k in SHIP}
 
 out={'meta':{'generated':'2026-11-22','decisions':'compute/decisions.md（2026-11-22）','h100_fp8_dense_tflops':H100,
-             'sources':{'epoch':'Epoch AI Chip Sales（2026-11-19 版）','sa':'SemiAnalysis Accelerator Outlook（2026-11-13）','est':'本报告推算'},
-             'not_counted':['华为昇腾、寒武纪（中国国内供给）','Nvidia H20、AMD MI308X（中国特供）','Meta MTIA、微软 Maia、OpenAI 自研芯片（量小或未量产）','SemiAnalysis 的「Other Blackwell」每季 45 万颗（推测为 RTX Pro 等非训练卡）'],
+             'sources':{'epoch':Z('Epoch AI Chip Sales（2026-11-19 版）','Epoch AI Chip Sales (2026-11-19 release)'),'sa':Z('SemiAnalysis Accelerator Outlook（2026-11-13）','SemiAnalysis Accelerator Outlook (2026-11-13)'),'est':Z('本报告推算','Our estimate')},
+             'not_counted':[Z('华为昇腾、寒武纪（中国国内供给）','Huawei Ascend, Cambricon (domestic China supply)'),Z('Nvidia H20、AMD MI308X（中国特供）','Nvidia H20, AMD MI308X (China-only parts)'),Z('Meta MTIA、微软 Maia、OpenAI 自研芯片（量小或未量产）','Meta MTIA, Microsoft Maia, OpenAI in-house chips (low volume or not yet in volume production)'),Z('SemiAnalysis 的「Other Blackwell」每季 45 万颗（推测为 RTX Pro 等非训练卡）','SemiAnalysis "Other Blackwell", 450K a quarter (likely RTX Pro-class, non-training cards)')],
              'lag_note':LAG_NOTE},
      'lanes':[{'key':k,'name':n} for k,n in LANES],
      'skus':[SKU[s[0]] for s in SKUS],
@@ -185,7 +200,7 @@ for k in SHIP:
         if abs(s-SHIP[k][q]['units'])>0.5: bad+=1; print('   不等',k,q,s,SHIP[k][q]['units'])
 print('   %s（%d 个 SKU × %d 季）'%('全部相等' if not bad else '有 %d 处不等'%bad,len(SHIP),len(QS))); ok&=not bad
 for ln,nm in LANES:
-    print('   %-14s'%nm,'  '.join('%s %s'%(q[2:],format(sum(SHIP[k][q]['units'] for k in SHIP if SKU[k]['lane']==ln),',')) for q in QS))
+    print('   %-14s'%nm['zh'],'  '.join('%s %s'%(q[2:],format(sum(SHIP[k][q]['units'] for k in SHIP if SKU[k]['lane']==ln),',')) for q in QS))
 
 # 与 Epoch CSV 交叉核对（2025Q3–2026Q2 + 已给的月度数）
 EMAP={'H100/H200':'hopper','B200':'b200','B300':'b300','R200':'r200','TPU v6e':'tpu_v6e','TPU v7':'tpu_v7','TPU v8i':'tpu_v8i',

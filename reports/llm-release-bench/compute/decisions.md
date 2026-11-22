@@ -27,7 +27,7 @@
 | mi450（MI450/MI455X，含 Meta 定制 MC） | 10.16（20.1 PF） | 20.4（40.3 PF） | AMD 官方〔中〕 |
 
 ## 2. 出货量（日历季，封装颗数，单位：颗）
-来源规则：2025Q3–2026Q3 用 Epoch AI Chip Sales（2026-11-19 版，web/ 下 CSV 中位数）；2026Q4 起用 SemiAnalysis Accelerator Outlook（2026-11-13，local/findings.json）；两者都没有的用主控推算，标〔低〕。
+来源规则：2025Q3–2026Q3 用 Epoch AI Chip Sales（2026-11-19 版，web/ 下 CSV 中位数）；2026Q4 起用 SemiAnalysis Accelerator Outlook（2026-11-13，原始摘录在 local/findings.json——付费内容，只留在维护者本机、不进公开仓库；模型只用本文件裁定后的数字，写在 model.py 里）；两者都没有的用主控推算，标〔低〕。
 
 ### Nvidia
 | 季度 | hopper | h20 | b200 | b300 | r200 | rubin_ultra | 来源 |

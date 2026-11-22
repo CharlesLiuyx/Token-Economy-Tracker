@@ -1,13 +1,35 @@
 #!/usr/bin/env python3
 """浏览器自检（无头 Chromium + playwright）：3 种窗口宽 × 3 档字号 × 深浅主题截图，并断言布局、磁吸、切换与数值。
-用法：python3 qa_browser.py 报告.html 截图目录 [chrome 路径]"""
-import sys, json, os
+用法：python3 qa_browser.py 报告.html 截图目录 [chrome 路径] [--lang zh|en] [--data 数据目录]
+横轴月份与快照日从 data/models.json 推导（与构建脚本同一个函数）；--lang en 时按英文写法核对柱顶数字。"""
+import sys, json, os, math
 from playwright.sync_api import sync_playwright
-F, OUT = os.path.abspath(sys.argv[1]), sys.argv[2]
-CHROME = sys.argv[3] if len(sys.argv) > 3 else None
-M = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'model.json'), encoding='utf-8'))
+HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, os.path.dirname(HERE))
+from bilingual import axis
+args = sys.argv[1:]
+LANG = 'zh'
+if '--lang' in args:
+    i = args.index('--lang'); LANG = args[i + 1]; del args[i:i + 2]
+DATA = os.path.join(os.path.dirname(HERE), 'data')
+if '--data' in args:
+    i = args.index('--data'); DATA = args[i + 1]; del args[i:i + 2]
+F, OUT = os.path.abspath(args[0]), args[1]
+CHROME = args[2] if len(args) > 2 else None
+M = json.load(open(os.path.join(HERE, 'model.json'), encoding='utf-8'))
+SNAP = json.load(open(os.path.join(DATA, 'models.json'), encoding='utf-8'))['meta']['snapshot']
 os.makedirs(OUT, exist_ok=True)
-WIN = ['2026-06', '2026-07', '2026-08', '2026-09', '2026-10', '2026-11']
+WIN = ['%d-%02d' % (d.year, d.month) for d in axis(SNAP)[2]]
+def jround(x): return int(math.floor(x + 0.5))        # 与 JS 的 Math.round 一致
+def exp_full(v):                                       # 图 2-1 柱顶（不含单位）
+    if LANG == 'zh':
+        w = v / 1e4; return ('%d' % jround(w)) if w >= 100 else ('%.1f' % w)
+    if v >= 999500 or jround(v / 1e3) >= 1000:
+        m = v / 1e6; return ('%.1fM' % m) if m >= 10 else ('%.2fM' % m)
+    return ('%dK' % jround(v / 1e3)) if v >= 1e3 else str(jround(v))
+def exp_axis(v):                                       # 图 2-2 柱顶（单位在轴上）
+    if LANG == 'zh':
+        w = v / 1e4; return ('%d' % jround(w)) if w >= 100 else ('%.1f' % w)
+    m = v / 1e6; return ('%.1f' % m) if m >= 10 else ('%.2f' % m)
 MON = {r['month']: r for r in M['arrive_monthly']}
 LAYOUT_JS = r'''() => {
  const R=[],tr=(e)=>e.getBoundingClientRect(),fig=document.querySelector('#f21');
@@ -52,12 +74,12 @@ def values_check(pg, mode):
         for j, m in enumerate(WIN):
             exp = MON[m]['lanes'][ln]['total'][mode]
             s, tot, _ = got[ln][j]
-            w = exp / 1e4; txt = ('%d' % round(w)) if w >= 100 else ('%.1f' % w)
+            txt = exp_full(exp)
             if s != exp or not tot.startswith(txt): bad.append((ln, m, s, exp, tot))
     q0 = M['arrive_quarterly'][0]['lanes']
     exp22 = [q0[l]['total'][mode] for l in ('nvidia', 'tpu', 'other')]
     for t, e in zip(got['f22'], exp22):
-        w = e / 1e4; txt = ('%d' % round(w)) if w >= 100 else ('%.1f' % w)
+        txt = exp_axis(e)
         if t != txt: bad.append(('f22', t, txt))
     if set(got['btn']) != {mode} or len(got['btn']) != 2: bad.append(('按钮不同步', got['btn']))
     return bad, got
@@ -68,7 +90,7 @@ MAG_JS = r'''async ()=>{
  const mv=async(x,y,el)=>{(el||document.elementFromPoint(x,y)||hl).dispatchEvent(new PointerEvent('pointermove',{clientX:x,clientY:y,bubbles:true}));await raf();};
  const curX=()=>cur.getBoundingClientRect().left, st=()=>({cur:Math.round(curX()*10)/10,lab:lab.textContent,shown:cur.style.display,snap:cur.classList.contains('snap'),nsnap:hl.querySelectorAll('.pin.snap').length,tip:getComputedStyle(tip).display,lr:lab.getBoundingClientRect(),row:hl.querySelector('.hl-axis.top').getBoundingClientRect()});
  /* target: 11/17 pins (OpenAI lane + Nvidia lane, same day) */
- const pin=[...hl.querySelectorAll('.hl-track[data-lane=openai] .pin')].find(p=>p.style.left==='92.857%'), dot=pin.querySelector('.pd').getBoundingClientRect(), cx=dot.left+dot.width/2;
+ const pin=[...hl.querySelectorAll('.hl-track[data-lane=openai] .pin')].find(p=>(p.getAttribute('data-tip')||'').startsWith('2026-11-17')), dot=pin.querySelector('.pd').getBoundingClientRect(), cx=dot.left+dot.width/2;
  const otr=hl.querySelector('.hl-track[data-lane=internal]').getBoundingClientRect();
  // 1 empty spot (6/20 area, internal lane)
  const tr0=tracks[0].getBoundingClientRect(); await mv(tr0.left+tr0.width*0.10, otr.top+otr.height-3); R.empty=st();
@@ -132,14 +154,14 @@ def main():
                     errs = []
                     pg.on('pageerror', lambda e: errs.append(str(e)))
                     pg.on('console', lambda m: errs.append(m.text) if m.type == 'error' else None)
-                    pg.add_init_script("try{localStorage.clear();localStorage.setItem('mdl-fs','%s');localStorage.setItem('mdl-theme','%s')}catch(e){}" % (fs, th))
+                    pg.add_init_script("try{localStorage.clear();localStorage.setItem('mdl-fs','%s');localStorage.setItem('mdl-theme','%s');localStorage.setItem('mdl-lang','%s')}catch(e){}" % (fs, th, LANG))
                     pg.goto('file://' + F); pg.wait_for_timeout(500)
                     case = {'w': W, 'fs': fs, 'theme': th}
                     case['layout'] = run_layout(pg)
                     case['f23h'] = round(pg.evaluate('window.__f23h'))
                     case['snaptxt'] = pg.evaluate("document.querySelector('#f21 .hl-axis:not(.top) .mt.vm').textContent")
                     case['stag'] = pg.evaluate("document.querySelector('#f22 .qc').classList.contains('stag')")
-                    tag = 'w%d-%s-%s' % (W, fs, th)
+                    tag = 'w%d-%s-%s-%s' % (W, fs, th, LANG)
                     for sel in ('#f21', '#f22', '#f23', '#t23'):
                         el = pg.query_selector(sel); el.scroll_into_view_if_needed(); pg.wait_for_timeout(60)
                         el.screenshot(path=os.path.join(OUT, '%s-%s.png' % (tag, sel[1:])))

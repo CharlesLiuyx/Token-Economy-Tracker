@@ -17,3 +17,4 @@
 | [decisions/](decisions/) | ADR：已定决策，勿重议 | 想换库 / 换源 / 换口径时 |
 | [worklog.md](worklog.md) | 跨 harness 接力日志（append-only） | 每次会话开始 / 结束 |
 | [PLAN.md](PLAN.md) | 立项方案的历史记录（目标、面板映射、取舍） | 想知道「当初为什么这么定」时 |
+| [../reports/llm-release-bench/MAINTAIN.md](../reports/llm-release-bench/MAINTAIN.md) | 独立子目录：「大模型发布和 Bench 跟进」中英双语报告与它的构建脚本（不参与 make build / test / daily.yml） | 改这份报告前 |

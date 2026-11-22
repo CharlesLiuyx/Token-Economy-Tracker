@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """加模型 / 加 Bench 演练（不碰正式文件）：
-复制 data/ 与报告到 qa/rehearsal/，往副本 JSON 里加虚构模型「TEST Model」（vendor=xai）和虚构 Bench 列「TestB」，
+复制 data/ 与报告到 qa/rehearsal/（不进 git），往副本 JSON 里加虚构模型「TEST Model」（vendor=xai）和虚构 Bench 列「TestB」，
 重建，再把结构断言写到 qa/rehearsal/result.json。浏览器检查另跑 qa/browser_check.py。
 用法：python3 qa/rehearsal.py [正式报告路径]"""
 import json, os, re, shutil, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
-REPORT = sys.argv[1] if len(sys.argv) > 1 else os.path.normpath(os.path.join(ROOT, '..', '大模型发布和 Bench 跟进：前沿 Gemini Claude ChatGPT 大厂 Grok Muse 开源 DeepSeek Kimi GLM.html'))
+REPORT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, '大模型发布和 Bench 跟进：前沿 Gemini Claude ChatGPT 大厂 Grok Muse 开源 DeepSeek Kimi GLM.html')
 OUT = os.path.join(HERE, 'rehearsal'); os.makedirs(OUT, exist_ok=True)
 DD = os.path.join(OUT, 'data'); os.makedirs(DD, exist_ok=True)
 for f in ('models.json', 'vendors.json'): shutil.copyfile(os.path.join(ROOT, 'data', f), os.path.join(DD, f))
 before = os.path.join(OUT, 'before.html'); after = os.path.join(OUT, 'after.html')
 shutil.copyfile(REPORT, before); shutil.copyfile(REPORT, after)
-def L(s): return {'zh': s, 'en': ''}
+def L(s): return {'zh': s, 'en': s if not re.search(r'[\u4e00-\u9fff]', s) else 'Rehearsal data.'}   # 演练数据也中英都填（英文用占位句）
 D = json.load(open(os.path.join(DD, 'models.json'), encoding='utf-8'))
 # 1) 新 Bench 列：放在「通用能力」组末尾
 i = max(j for j, b in enumerate(D['benches']) if b['group'] == 'general')
@@ -36,7 +36,7 @@ log = subprocess.run([py, os.path.join(ROOT, 'build_tables.py'), after, '--data'
 print(log.stdout, log.stderr)
 comp = os.path.join(ROOT, 'compute', 'build.py')
 if os.path.exists(comp):
-    log2 = subprocess.run([py, comp, after], capture_output=True, text=True); print(log2.stdout, log2.stderr)
+    log2 = subprocess.run([py, comp, after, '--data', DD], capture_output=True, text=True); print(log2.stdout, log2.stderr)
 
 def t21(src):
     a = src.index('<div class="tblwrap wide" id="t21"'); b = src.index('</table></div>', a); return src[a:b]

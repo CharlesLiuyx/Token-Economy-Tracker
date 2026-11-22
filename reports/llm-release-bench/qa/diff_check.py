@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""回归比对：改前 HTML vs 改后 HTML，去掉 <!--data:NAME:start/end--> 标记注释后逐字节比较；
+"""回归比对：改前 HTML vs 改后 HTML，去掉 <!--data:/compute:NAME:start/end--> 标记注释后逐字节比较；
 不一致时再做 DOM 级比较（标签、属性集合、文本），把每处差异列出来。
 用法：python3 qa/diff_check.py 改前.html 改后.html   退出码 0＝无差异。只用标准库。"""
 import re, sys
 from html.parser import HTMLParser
-MARK = re.compile(r'<!--data:[a-z0-9_]+:(?:start|end)-->')
+MARK = re.compile(r'(?:/\*)?<!--(?:data|compute):[a-z0-9_-]+:(?:start|end)-->(?:\*/)?')
 a = open(sys.argv[1], encoding='utf-8').read(); b = open(sys.argv[2], encoding='utf-8').read()
 a0, b0 = MARK.sub('', a), MARK.sub('', b)
 print('标记注释：改前 %d 个，改后 %d 个' % (len(MARK.findall(a)), len(MARK.findall(b))))

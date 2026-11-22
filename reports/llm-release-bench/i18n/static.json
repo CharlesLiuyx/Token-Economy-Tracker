@@ -1,0 +1,448 @@
+{
+ "_readme": {
+  "zh": "报告里不属于 models.json / vendors.json / compute 的全部固定文字：顶栏、目录、各章标题、第 1 章结论、第 4 章、附录来源、图 2-1 图注图例、术语表、页面 JS 用的界面字。build_tables.py 输出。每条都要 zh、en 同时填。",
+  "en": "Every fixed piece of text in the report that is not owned by models.json / vendors.json / compute: top bar, TOC, headings, chapter 1 findings, chapter 4, appendix sources, Fig 2-1 caption and legend, glossary, UI strings used by page JS. Written by build_tables.py. Fill zh and en together."
+ },
+ "strings": {
+  "back": {
+   "zh": "返回",
+   "en": "Back"
+  },
+  "more": {
+   "zh": "更多",
+   "en": "More"
+  },
+  "m_theme": {
+   "zh": "主题",
+   "en": "Theme"
+  },
+  "m_light": {
+   "zh": "浅色",
+   "en": "Light"
+  },
+  "m_dark": {
+   "zh": "深色",
+   "en": "Dark"
+  },
+  "m_width": {
+   "zh": "宽度",
+   "en": "Width"
+  },
+  "m_wn": {
+   "zh": "常规",
+   "en": "Normal"
+  },
+  "m_ww": {
+   "zh": "加宽",
+   "en": "Wide"
+  },
+  "m_wf": {
+   "zh": "填满",
+   "en": "Full"
+  },
+  "m_fs": {
+   "zh": "字号",
+   "en": "Text"
+  },
+  "m_fss": {
+   "zh": "小",
+   "en": "S"
+  },
+  "m_fsm": {
+   "zh": "中",
+   "en": "M"
+  },
+  "m_fsl": {
+   "zh": "大",
+   "en": "L"
+  },
+  "m_terms": {
+   "zh": "术语",
+   "en": "Terms"
+  },
+  "m_on": {
+   "zh": "开",
+   "en": "On"
+  },
+  "m_off": {
+   "zh": "关",
+   "en": "Off"
+  },
+  "toc_aria": {
+   "zh": "目录",
+   "en": "Contents"
+  },
+  "toc_ch": {
+   "zh": "章节",
+   "en": "Sections"
+  },
+  "toc_as": {
+   "zh": "资产",
+   "en": "Assets"
+  },
+  "toc_all": {
+   "zh": "全部展开 / 全部收起",
+   "en": "Expand all / collapse all"
+  },
+  "toc_grip": {
+   "zh": "拖动改目录宽度；双击按文字宽度自动适配",
+   "en": "Drag to resize the contents; double-click to fit the text"
+  },
+  "hd_h1": {
+   "zh": "结论",
+   "en": "Key findings"
+  },
+  "hd_h2": {
+   "zh": "总表",
+   "en": "Master tables"
+  },
+  "hd_h3": {
+   "zh": "得分对比图",
+   "en": "Score charts"
+  },
+  "hd_h4": {
+   "zh": "怎么读这些数",
+   "en": "How to read these numbers"
+  },
+  "no_h5": {
+   "zh": "附录",
+   "en": "Appendix"
+  },
+  "hd_h5": {
+   "zh": "来源",
+   "en": "Sources"
+  },
+  "hd_h21": {
+   "zh": "2.1 模型总表",
+   "en": "2.1 All models"
+  },
+  "hd_h22": {
+   "zh": "2.2 Mythos 5.2 专项分数（System Card）",
+   "en": "2.2 Mythos 5.2 specialist scores (System Card)"
+  },
+  "hd_h31": {
+   "zh": "3.1 独立榜单：AA 指数",
+   "en": "3.1 Independent: AA Index"
+  },
+  "hd_h32": {
+   "zh": "3.2 独立榜单：Vals Index",
+   "en": "3.2 Independent: Vals Index"
+  },
+  "hd_h33": {
+   "zh": "3.3 厂商自报的六项测试",
+   "en": "3.3 Six vendor-reported tests"
+  },
+  "f21_toc": {
+   "zh": "图 2-1 发布时间轴与算力",
+   "en": "Fig 2-1 Release timeline and compute"
+  },
+  "f21_cap": {
+   "zh": "图 2-1　发布时间轴与算力（横轴按天等距）",
+   "en": "Fig 2-1 Release timeline and compute (linear time scale)"
+  },
+  "f21_l1": {
+   "zh": "实心：发布",
+   "en": "Solid: released"
+  },
+  "f21_l2": {
+   "zh": "空心：只是宣布",
+   "en": "Hollow: announced only"
+  },
+  "f21_l3": {
+   "zh": "虚线框：内部代号模型",
+   "en": "Dashed box: internal codename"
+  },
+  "f21_l4": {
+   "zh": "竖虚线：快照日",
+   "en": "Dashed line: snapshot date"
+  },
+  "lang_aria": {
+   "zh": "语言",
+   "en": "Language"
+  },
+  "lang_tip": {
+   "zh": "切换语言",
+   "en": "Switch language"
+  },
+  "collapsed": {
+   "zh": "已收起 · 点击展开",
+   "en": "Collapsed · click to expand"
+  }
+ },
+ "templates": {
+  "chrome": "<button id=\"back\" hidden>{{t:back}} ×0</button>\n  {{lang}}<div id=\"more\"><button id=\"moreBtn\">{{t:more}} ▾</button>\n    <div id=\"menu\" hidden>\n      <div class=\"mg\"><span class=\"ml\">{{t:m_theme}}</span><button data-set=\"theme:light\">{{t:m_light}}</button><button data-set=\"theme:dark\">{{t:m_dark}}</button></div>\n      <div class=\"mg\"><span class=\"ml\">{{t:m_width}}</span><button data-set=\"width:n\">{{t:m_wn}}</button><button data-set=\"width:w\">{{t:m_ww}}</button><button data-set=\"width:f\">{{t:m_wf}}</button></div>\n      <div class=\"mg\"><span class=\"ml\">{{t:m_fs}}</span><button data-set=\"fs:s\">{{t:m_fss}}</button><button data-set=\"fs:m\">{{t:m_fsm}}</button><button data-set=\"fs:l\">{{t:m_fsl}}</button></div>\n      <div class=\"mg\"><span class=\"ml\">{{t:m_terms}}</span><button data-set=\"terms:on\">{{t:m_on}}</button><button data-set=\"terms:off\">{{t:m_off}}</button></div>\n    </div>\n  </div>\n</div>\n<nav id=\"toc\"{{a:aria-label:toc_aria}}>\n  <div class=\"toc-head\"><button data-tab=\"ch\" class=\"on\">{{t:toc_ch}}</button><button data-tab=\"as\">{{t:toc_as}}</button><button id=\"tocAll\"{{a:data-tip:toc_all}}>±</button></div>\n  <ul id=\"tocCh\"></ul><ul id=\"tocAs\" hidden></ul>\n</nav>\n<div id=\"tocGrip\"{{a:data-tip:toc_grip}}></div>",
+  "hd-h1": "<h2 id=\"h1\"><span class=\"no\">1</span>{{t:hd_h1}}</h2>",
+  "hd-h2": "<h2 id=\"h2\"><span class=\"no\">2</span>{{t:hd_h2}}</h2>",
+  "hd-h3": "<h2 id=\"h3\"><span class=\"no\">3</span>{{t:hd_h3}}</h2>",
+  "hd-h4": "<h2 id=\"h4\"><span class=\"no\">4</span>{{t:hd_h4}}</h2>",
+  "hd-h5": "<h2 id=\"h5\"><span class=\"no\">{{t:no_h5}}</span>{{t:hd_h5}}</h2>",
+  "hd-h21": "<h3 id=\"h21\">{{t:hd_h21}}</h3>",
+  "hd-h22": "<h3 id=\"h22\">{{t:hd_h22}}</h3>",
+  "hd-h31": "<h3 id=\"h31\">{{t:hd_h31}}</h3>",
+  "hd-h32": "<h3 id=\"h32\">{{t:hd_h32}}</h3>",
+  "hd-h33": "<h3 id=\"h33\">{{t:hd_h33}}</h3>",
+  "f21cap": "<figure id=\"f21\" class=\"bleedw\"{{a:data-toc:f21_toc}}><figcaption>{{t:f21_cap}}",
+  "f21leg1": "</figcaption><div class=\"legend\"><span class=\"li2\"><i class=\"pd lg\"></i>{{t:f21_l1}}</span><span class=\"li2\"><i class=\"pd lg ho\"></i>{{t:f21_l2}}</span><span class=\"li2\"><i class=\"rb\"></i>{{t:f21_l3}}</span>",
+  "f21leg2": "<span class=\"li2\"><i class=\"vd\"></i>{{t:f21_l4}}</span></div>"
+ },
+ "blocks": {
+  "ch1": {
+   "zh": "<ol class=\"key\">\n  <li><b>综合第一：Claude Fable 5.2。</b>AA 指数 65，Vals Index 71.31%，两个独立榜单都第一。<span class=\"cf\">〔高〕</span></li>\n  <li><b>第二、第三：GPT-6.2 Astra（AA 62）、Gemini 4 Neon（AA 61）。</b>Vals Index 上 Neon 70.87% 第二，Astra 67.66% 第八。<span class=\"cf\">〔高〕</span></li>\n  <li><b>Google 四个里选 Neon。</b>$3 / $15，AA 61，高于 Carbon 的 60。Carbon 12 月 1 日从 $2 / $10 涨到 $4 / $20。<span class=\"cf\">〔高〕</span></li>\n  <li><b>旗舰同价不同耗。</b>Fable 5.2 和 GPT-6.2 Astra 都是 $8 / $40。跑完 AA 指数，Fable 每题 $26.54，Astra 每题 $4.00。<span class=\"cf\">〔高〕</span></li>\n  <li><b>$2 / $10 档：</b>GPT-6.2 Sol（AA 57）、Sonnet 5.5（55，Vals Index 第三）、GPT-6.1 Sol（55）。<span class=\"cf\">〔高〕</span></li>\n  <li><b>最低价 $0.10 / $0.50：</b>Haiku 5.5（AA 36）、GPT-6 Luna（28）。<span class=\"cf\">〔高〕</span></li>\n  <li><b>Mythos 5.2 专项：</b>CVE Rediscovery 89.6%，上一代 78.3%。ExploitGym 39.2%，低于 Carbon 的 53.5%。见<a href=\"#t22\">表 2-2</a>。<span class=\"cf\">〔中〕</span></li>\n  <li><b>内部还有更强的 Model 4：</b>AECI 178.78，Mythos 5.2 是 177.12。没有发布。<span class=\"cf\">〔高〕</span></li>\n</ol>",
+   "en": "<ol class=\"key\">\n  <li><b>Best overall: Claude Fable 5.2.</b> AA Index 65 and Vals Index 71.31%, first on both independent leaderboards. <span class=\"cf\">[high]</span></li>\n  <li><b>Second and third: GPT-6.2 Astra (AA 62) and Gemini 4 Neon (AA 61).</b> On the Vals Index, Neon is second at 70.87% and Astra eighth at 67.66%. <span class=\"cf\">[high]</span></li>\n  <li><b>Of Google's four, pick Neon.</b> $3 / $15 and AA 61, ahead of Carbon's 60. Carbon goes from $2 / $10 to $4 / $20 on December 1. <span class=\"cf\">[high]</span></li>\n  <li><b>Same flagship price, very different bills.</b> Fable 5.2 and GPT-6.2 Astra are both $8 / $40, yet a full AA Index run costs $26.54 per task on Fable and $4.00 on Astra. <span class=\"cf\">[high]</span></li>\n  <li><b>At $2 / $10:</b> GPT-6.2 Sol (AA 57), Sonnet 5.5 (55, third on the Vals Index), GPT-6.1 Sol (55). <span class=\"cf\">[high]</span></li>\n  <li><b>Cheapest, at $0.10 / $0.50:</b> Haiku 5.5 (AA 36) and GPT-6 Luna (28). <span class=\"cf\">[high]</span></li>\n  <li><b>Mythos 5.2 specialist results:</b> CVE Rediscovery 89.6%, up from 78.3% for the previous generation. ExploitGym 39.2%, below Carbon's 53.5%. See <a href=\"#t22\">Table 2-2</a>. <span class=\"cf\">[medium]</span></li>\n  <li><b>A stronger Model 4 exists internally:</b> AECI 178.78 vs. 177.12 for Mythos 5.2. Not released. <span class=\"cf\">[high]</span></li>\n</ol>\n"
+  },
+  "ch4": {
+   "zh": "<div class=\"hints col\"><span class=\"hint\" data-tiph=\"&lt;b&gt;独立三列可以横向比&lt;/b&gt;AA 指数、Vals Index、Vals 测的 Terminal-Bench 4.0。&lt;br&gt;由第三方用同一套方法统一测。〔高〕\">独立三列可以横向比<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;厂商自报的分数只能看大致位置&lt;/b&gt;同一个模型在不同厂商的表里分数不一样。&lt;br&gt;Opus 5.5 的 FrontierCode 2.0：Anthropic 报 45.5%，Google 报 47.3%。&lt;br&gt;Fable 5.2 的 Terminal-Bench-Science：Anthropic 报 74.6%，OpenAI 报 73.3%。〔中〕\">厂商自报的分数只能看大致位置<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;分数跟推理强度绑在一起&lt;/b&gt;Neon 的 AA 指数 61 是 xhigh 档，默认档是 60。&lt;br&gt;Hydrogen 的 xhigh 档是 54，默认档是 51。&lt;br&gt;Carbon 的 FrontierCode 2.0（41.1%）是 Anthropic 用中档测的，偏低。\">分数跟推理强度绑在一起<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;AA 指数换过版本&lt;/b&gt;表里全部是 v5.0.1（v5 在 10 月 27 日上线）。&lt;br&gt;更早的文章用 v4.3.2，分数不同：Haiku 5.5 旧版 43，新版 36。\">AA 指数换过版本<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;Terminal-Bench 4.0 有两列&lt;/b&gt;独立组那一列是 Vals 用同一个工具测的：Fable 5.2 和 Opus 5.5 并列第一（65.15%）。&lt;br&gt;自报那一列各家用自己的工具，分数普遍更高：Sonnet 5.5 自报 70.6%，Vals 测是 64.14%。\">Terminal-Bench 4.0 有两列<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;选了哪些模型&lt;/b&gt;Google：最近 4 个 Gemini 4 文本模型，不含 Flash、Omni 和图像模型。&lt;br&gt;Anthropic 和 OpenAI：近期发布的模型。&lt;br&gt;Anthropic 另加前两代 Fable（5、5.1）和 3 个内部代号模型。\">选了哪些模型<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;内部代号模型怎么记的&lt;/b&gt;System Card 里的「内部模型」记为 Model 4。&lt;br&gt;两边对得上：都是比 Mythos 5.2 略强的未发布模型，都按 15 项测试算 AECI，分数是 178.78（System Card）和 178.6（METR）。&lt;br&gt;System Card 本身没有用 Model 4 这个名字。&lt;br&gt;「Mythos 5.2 是 Model 3 的发布版本」是外部解读。\">内部代号模型怎么记的<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;受限模型&lt;/b&gt;Mythos 5.2、GPT-6 Rosalind、GPT-6 Cyber 只对通过审核的机构开放。&lt;br&gt;Mythos 5.2 的分数来自 Anthropic 的 System Card。&lt;br&gt;后两个没有公开评测，价格只有一个来源。〔低〕\">受限模型<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;GPT-6 Sol 没有独立分数&lt;/b&gt;它发布一周后被 GPT-6.1 Sol 取代。&lt;br&gt;AA 指数和 Vals Index 现在都不列它。\">GPT-6 Sol 没有独立分数<i>?</i></span></div>",
+   "en": "<div class=\"hints col\"><span class=\"hint\" data-tiph=\"&lt;b&gt;Independent columns are comparable&lt;/b&gt;AA Index, Vals Index, and Terminal-Bench 4.0 as run by Vals.&lt;br&gt;Each is measured by a third party using one method. [high]\">Independent columns are comparable<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;Vendor-reported scores are rough&lt;/b&gt;The same model scores differently in different vendors&#x27; tables.&lt;br&gt;Opus 5.5 on FrontierCode 2.0: 45.5% per Anthropic, 47.3% per Google.&lt;br&gt;Fable 5.2 on Terminal-Bench-Science: 74.6% per Anthropic, 73.3% per OpenAI. [medium]\">Vendor-reported scores are rough<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;Scores depend on reasoning effort&lt;/b&gt;Neon&#x27;s AA Index of 61 is at xhigh; the default setting gives 60.&lt;br&gt;Hydrogen scores 54 at xhigh and 51 at default.&lt;br&gt;Carbon&#x27;s FrontierCode 2.0 (41.1%) was run by Anthropic at medium, so it is on the low side.\">Scores depend on reasoning effort<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;The AA Index changed versions&lt;/b&gt;Everything in the table is v5.0.1 (v5 went live on October 27).&lt;br&gt;Older articles use v4.3.2, with different scores: Haiku 5.5 was 43 on the old version, 36 on the new.\">The AA Index changed versions<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;Terminal-Bench 4.0 has two columns&lt;/b&gt;The independent column was run by Vals with one harness: Fable 5.2 and Opus 5.5 tie for first (65.15%).&lt;br&gt;In the vendor-reported column each vendor uses its own harness, and scores run higher: Sonnet 5.5 self-reports 70.6% vs. 64.14% from Vals.\">Terminal-Bench 4.0 has two columns<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;Which models are included&lt;/b&gt;Google: the latest four Gemini 4 text models, excluding Flash, Omni and image models.&lt;br&gt;Anthropic and OpenAI: recent releases.&lt;br&gt;Anthropic also includes the two previous Fables (5 and 5.1) and three internal codenamed models.\">Which models are included<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;How codenames are recorded&lt;/b&gt;The System Card&#x27;s &quot;internal model&quot; is recorded as Model 4.&lt;br&gt;The two match: both are unreleased models slightly stronger than Mythos 5.2, both have AECI computed over 15 tests, scoring 178.78 (System Card) and 178.6 (METR).&lt;br&gt;The System Card itself never uses the name Model 4.&lt;br&gt;&quot;Mythos 5.2 is the released version of Model 3&quot; is an outside interpretation.\">How codenames are recorded<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;Gated models&lt;/b&gt;Mythos 5.2, GPT-6 Rosalind and GPT-6 Cyber are available only to vetted organizations.&lt;br&gt;Mythos 5.2&#x27;s scores come from Anthropic&#x27;s System Card.&lt;br&gt;The other two have no public evaluations, and their prices have a single source. [low]\">Gated models<i>?</i></span><span class=\"hint\" data-tiph=\"&lt;b&gt;GPT-6 Sol has no independent scores&lt;/b&gt;It was superseded by GPT-6.1 Sol a week after launch.&lt;br&gt;Neither the AA Index nor the Vals Index lists it now.\">GPT-6 Sol has no independent scores<i>?</i></span></div>"
+  },
+  "src": {
+   "zh": "\n<p class=\"sg\">官方与评测机构</p><ol class=\"src\"><li><a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/\" target=\"_blank\" rel=\"noopener\">Google：Introducing Gemini 4 Neon</a><span class=\"sw2\">Neon 价格与 Google 自报分数</span></li><li><a href=\"https://www.anthropic.com/claude/fable\" target=\"_blank\" rel=\"noopener\">Anthropic：Claude Fable 5.2 产品页</a><span class=\"sw2\">Fable 5.2 发布日与价格</span></li><li><a href=\"https://artificialanalysis.ai/models\" target=\"_blank\" rel=\"noopener\">Artificial Analysis：模型总榜</a><span class=\"sw2\">AA 指数前几名</span></li><li><a href=\"https://artificialanalysis.ai/models/claude-opus-5-5\" target=\"_blank\" rel=\"noopener\">Artificial Analysis：Claude Opus 5.5 模型页</a><span class=\"sw2\">Opus / Sonnet / Haiku 的 AA 指数</span></li><li><a href=\"https://artificialanalysis.ai/models/releases/gpt-6-1-terra\" target=\"_blank\" rel=\"noopener\">Artificial Analysis：GPT-6.1 Terra 模型页</a><span class=\"sw2\">Terra、Luna、GPT-6.2 的 AA 指数</span></li><li><a href=\"https://www.vals.ai/benchmarks/vals_index\" target=\"_blank\" rel=\"noopener\">Vals AI：Vals Index 榜单</a><span class=\"sw2\">41 个模型的 Vals Index 与每题成本</span></li><li><a href=\"https://x.com/ValsAI/status/2123168167879147542\" target=\"_blank\" rel=\"noopener\">Vals AI（X）：Neon 首发成绩</a><span class=\"sw2\">Neon 70.9%，第 2</span></li></ol><p class=\"sg\">Mythos 5.2 专项分数</p><ol class=\"src\"><li><a href=\"https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf\" target=\"_blank\" rel=\"noopener\">Anthropic：System Card: Claude Fable 5.2 and Claude Mythos 5.2（PDF，264 页）</a><span class=\"sw2\">表 2-2 的全部数字</span></li><li><a href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2\" target=\"_blank\" rel=\"noopener\">Anthropic：Introducing Claude Fable 5.2 and Claude Mythos 5.2</a><span class=\"sw2\">发布表里标了 Mythos 5.2 的 4 项</span></li><li><a href=\"https://platform.claude.com/docs/en/models/mythos-5-2/overview\" target=\"_blank\" rel=\"noopener\">Claude 文档：Claude Mythos 5.2</a><span class=\"sw2\">与 Fable 5.2 同规格、同价</span></li><li><a href=\"https://benchlm.ai/models/claude-mythos-5-2\" target=\"_blank\" rel=\"noopener\">BenchLM：Claude Mythos 5.2</a><span class=\"sw2\">16 项分数的交叉核对</span></li><li><a href=\"https://lesswrong.com/posts/DXqmHa4XkjvwZiDcB/fable-and-mythos-5-2-the-system-card\" target=\"_blank\" rel=\"noopener\">Zvi Mowshowitz：Fable and Mythos 5.2: The System Card</a><span class=\"sw2\">AECI 的全称</span></li></ol><p class=\"sg\">补全其他模型的分数（11-20）</p><ol class=\"src\"><li><a href=\"https://www.vals.ai/benchmarks/terminal-bench-4\" target=\"_blank\" rel=\"noopener\">Vals AI：Terminal-Bench 4.0 榜单</a><span class=\"sw2\">14 个模型的独立 TB 4.0 分数</span></li><li><a href=\"https://www.developersdigest.tech/benchmarks/terminal-bench\" target=\"_blank\" rel=\"noopener\">Developers Digest：Terminal-Bench 官方榜转录</a><span class=\"sw2\">GPT-6.1 Sol、GPT-6 Sol、GPT-6 Luna 的官方榜成绩</span></li><li><a href=\"https://deepmind.google/models/model-cards/gemini-4-carbon/\" target=\"_blank\" rel=\"noopener\">Google DeepMind：Gemini 4 Carbon 模型卡</a><span class=\"sw2\">Carbon、Argon 的 TB 4.0 与 ExploitGym</span></li><li><a href=\"https://benchlm.ai/benchmarks/exploitgym\" target=\"_blank\" rel=\"noopener\">BenchLM：ExploitGym</a><span class=\"sw2\">各厂商自报的 ExploitGym 分数</span></li><li><a href=\"https://benchlm.ai/cybersecurity\" target=\"_blank\" rel=\"noopener\">BenchLM：Cybersecurity</a><span class=\"sw2\">ExploitBench 等网络安全测试</span></li><li><a href=\"https://benchlm.ai/models/claude-opus-5-5\" target=\"_blank\" rel=\"noopener\">BenchLM：Claude Opus 5.5</a><span class=\"sw2\">Opus 5.5 的网络安全与生命科学分数</span></li><li><a href=\"https://benchlm.ai/models/claude-sonnet-5-5\" target=\"_blank\" rel=\"noopener\">BenchLM：Claude Sonnet 5.5</a><span class=\"sw2\">Sonnet 5.5 的生命科学分数</span></li><li><a href=\"https://benchlm.ai/models/claude-haiku-5-5\" target=\"_blank\" rel=\"noopener\">BenchLM：Claude Haiku 5.5</a><span class=\"sw2\">Haiku 5.5 的 TB 4.0</span></li><li><a href=\"https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf\" target=\"_blank\" rel=\"noopener\">Anthropic：Claude Sonnet 5.5 System Card（PDF）</a><span class=\"sw2\">Sonnet 5.5 分数的原始出处</span></li><li><a href=\"https://neuraltrust.ai/blog/gpt-6-cyber-enterprise-security\" target=\"_blank\" rel=\"noopener\">NeuralTrust：GPT-6 Cyber</a><span class=\"sw2\">GPT-6 Cyber 的 ExploitGym 与 CyScenarioBench</span></li><li><a href=\"https://thenewstack.io/openai-gpt6-cyber-exploits/\" target=\"_blank\" rel=\"noopener\">The New Stack：GPT-6 Cyber</a><span class=\"sw2\">GPT-6 Cyber 的 ExploitBench</span></li><li><a href=\"https://deploymentsafety.openai.com/gpt-6-2-astra-sol\" target=\"_blank\" rel=\"noopener\">OpenAI：GPT-6.2 System Card</a><span class=\"sw2\">GPT-6.2 的 ExploitBench、VCT 题成绩、CyScenarioBench</span></li><li><a href=\"https://deploymentsafety.openai.com/gpt-6-cyber\" target=\"_blank\" rel=\"noopener\">OpenAI：GPT-6 Cyber System Card</a><span class=\"sw2\">GPT-6 Cyber 的 CyScenarioBench</span></li><li><a href=\"https://www.irregular.com/research/assessing-gpt-6-astra\" target=\"_blank\" rel=\"noopener\">Irregular：Assessing GPT-6 Astra</a><span class=\"sw2\">GPT-6 Astra 的 CyScenarioBench</span></li><li><a href=\"https://benchmarklist.com/benchmarks/exploitbench_v8/\" target=\"_blank\" rel=\"noopener\">BenchmarkList：ExploitBench v8-bench</a><span class=\"sw2\">Opus 5.5、Sonnet 5.5、Mythos 5.1 的 ExploitBench</span></li><li><a href=\"https://benchlm.ai/models/gpt-6-astra\" target=\"_blank\" rel=\"noopener\">BenchLM：GPT-6 Astra</a><span class=\"sw2\">GPT-6 Astra 的 TB 4.0、ExploitGym 等</span></li><li><a href=\"https://benchlm.ai/models/claude-mythos-5-1\" target=\"_blank\" rel=\"noopener\">BenchLM：Claude Mythos 5.1</a><span class=\"sw2\">Mythos 5.1 的 TB 4.0</span></li><li><a href=\"https://llm-stats.com/benchmarks/latchbio-singlecellbench\" target=\"_blank\" rel=\"noopener\">LLM Stats：LatchBio SingleCellBench</a><span class=\"sw2\">Haiku 5.5 的 SingleCellBench</span></li><li><a href=\"https://securebio.substack.com/p/securebio-gpt-6-astra-pre-release\" target=\"_blank\" rel=\"noopener\">SecureBio：GPT-6 Astra 发布前测试报告</a><span class=\"sw2\">GPT-6 Astra 的 VCT 独立成绩</span></li><li><a href=\"https://deploymentsafety.openai.com/gpt-rosalind-6/gpt-rosalind-6.pdf\" target=\"_blank\" rel=\"noopener\">OpenAI：GPT-Rosalind-6 System Card Addendum</a><span class=\"sw2\">Rosalind 自己的三项测试</span></li></ol><p class=\"sg\">内部代号模型 Model 2 / 3 / 4</p><ol class=\"src\"><li><a href=\"https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/\" target=\"_blank\" rel=\"noopener\">METR：Independent Assessment of AI R&amp;D Acceleration at Anthropic in October 2026</a><span class=\"sw2\">三个代号的训练时间、Model 4 的 AECI 178.6 与 15 项测试</span></li><li><a href=\"https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf\" target=\"_blank\" rel=\"noopener\">Anthropic：System Card（Fable 5.2 / Mythos 5.2）</a><span class=\"sw2\">2.1、2.3、2.3.5.3 节「内部模型」：AECI 178.78 与置信区间；2.3.6 节 Model 3 Early</span></li><li><a href=\"https://thezvi.substack.com/p/fable-and-mythos-52-the-system-card\" target=\"_blank\" rel=\"noopener\">Zvi Mowshowitz：Fable and Mythos 5.2: The System Card</a><span class=\"sw2\">Mythos 5.2 是 Model 3 的版本、「内部模型」是 Model 4 的解读</span></li><li><a href=\"https://eu.36kr.com/en/p/4058973865825161\" target=\"_blank\" rel=\"noopener\">36Kr：Anthropic&#x27;s most powerful Model 4 is unveiled</a><span class=\"sw2\">METR 报告的转述，交叉核对</span></li></ol><p class=\"sg\">Fable 5、Fable 5.1 的分数</p><ol class=\"src\"><li><a href=\"https://artificialanalysis.ai/models/claude-fable-5-1\" target=\"_blank\" rel=\"noopener\">Artificial Analysis：Claude Fable 5.1</a><span class=\"sw2\">AA 指数 v5.0.1：xhigh 50、max 49；价格；发布日</span></li><li><a href=\"https://artificialanalysis.ai/models/claude-fable-5\" target=\"_blank\" rel=\"noopener\">Artificial Analysis：Claude Fable 5</a><span class=\"sw2\">v5.0.1 页面没有分数；价格；发布日</span></li><li><a href=\"https://www.vals.ai/models/anthropic_claude-fable-5-1\" target=\"_blank\" rel=\"noopener\">Vals AI：Claude Fable 5.1</a><span class=\"sw2\">TB 4.0 58.08%；旧版 Vals Index 67.87%</span></li><li><a href=\"https://www.vals.ai/models/anthropic_claude-fable-5\" target=\"_blank\" rel=\"noopener\">Vals AI：Claude Fable 5</a><span class=\"sw2\">TB 4.0 41.41%；旧版 Vals Index</span></li><li><a href=\"https://www.vals.ai/benchmarks/vals_index\" target=\"_blank\" rel=\"noopener\">Vals AI：Vals Index v2.2 榜单</a><span class=\"sw2\">确认 Fable 5 和 Fable 5.1 不在 v2.2 榜单上</span></li><li><a href=\"https://apidog.com/blog/claude-fable-5-1-benchmarks/\" target=\"_blank\" rel=\"noopener\">Apidog：Claude Fable 5.1 Benchmarks</a><span class=\"sw2\">Anthropic 9 月 1 日发布表的转录：TB 4.0、TB-Science、AutomationBench</span></li><li><a href=\"https://www.explainx.ai/blog/claude-fable-5-2-vs-opus-5-5-benchmarks-cost-routing-which-model-2026\" target=\"_blank\" rel=\"noopener\">explainx：Claude Fable 5.2 vs Opus 5.5</a><span class=\"sw2\">Fable 5.1 的 FrontierCode 2.0、OSWorld 2.1、Chartography</span></li><li><a href=\"https://benchlm.ai/compare/claude-fable-5-1-vs-gpt-6-astra\" target=\"_blank\" rel=\"noopener\">BenchLM：Claude Fable 5.1 vs GPT-6 Astra</a><span class=\"sw2\">OSWorld 2.1 离线 83.5%；FrontierCode 2.0 的另一个数 34.0%</span></li></ol><p class=\"sg\">算力行：Nvidia Rubin 与 Google TPU</p><ol class=\"src\"><li><a href=\"https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000088/q3fy27pr.htm\" target=\"_blank\" rel=\"noopener\">Nvidia：2027 财年第三季财报（2026-11-17）</a><span class=\"sw2\">NVL72 已出货；在哪些云上运行；第四季收入指引</span></li><li><a href=\"https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm\" target=\"_blank\" rel=\"noopener\">Nvidia：2027 财年第二季财报（2026-08-26）</a><span class=\"sw2\">Rubin 进入全面量产，机柜在 5 家云上运行</span></li><li><a href=\"https://www.cnbc.com/investingclub/2026/11/17/nvidia-takes-positive-step-forward-with-stronger-sales-outlook-heres-our-thoughts-on-the-stock.html\" target=\"_blank\" rel=\"noopener\">CNBC：Nvidia takes positive step forward（2026-11-17）</a><span class=\"sw2\">Rubin 首季收入近 200 亿美元</span></li><li><a href=\"https://wccftech.com/nvidia-confirms-vera-rubin-launch-in-q3-volume-ramp-q4-blackwell-continues-to-see-massive-demand/\" target=\"_blank\" rel=\"noopener\">Wccftech：Nvidia confirms Vera Rubin launch in Q3</a><span class=\"sw2\">5 月给的节奏：三季度首批、四季度放量、2027 上半年继续增加</span></li><li><a href=\"https://finance.yahoo.com/technology/ai/articles/asus-ramps-nvidia-vera-rubin-062100096.html\" target=\"_blank\" rel=\"noopener\">ASUS：Ramps up Vera Rubin NVL72 shipments in Q4（2026-11-17）</a><span class=\"sw2\">四季度批量出货</span></li><li><a href=\"https://www.spheron.network/blog/gpu-cloud-news-2026/\" target=\"_blank\" rel=\"noopener\">Spheron：GPU Cloud News</a><span class=\"sw2\">小云厂商比大厂晚 3–6 个月</span></li><li><a href=\"https://epoch.ai/data-insights/tpu-production-doubling\" target=\"_blank\" rel=\"noopener\">Epoch AI：Broadcom TPU shipments doubled（2026-11-04）</a><span class=\"sw2\">博通第三财季约 80 万颗、近 200 万颗 H100 当量；v8i 开始生产</span></li><li><a href=\"https://au.finance.yahoo.com/news/broadcom-anthropic-ramp-puts-google-113804111.html\" target=\"_blank\" rel=\"noopener\">Yahoo Finance：Broadcom’s Anthropic Ramp</a><span class=\"sw2\">9 月 2 日博通财报：Anthropic 1 GW / 5 GW / 10 GW</span></li><li><a href=\"https://www.thesoftwarefrontier.com/p/inside-googles-tpu-how-it-works-and\" target=\"_blank\" rel=\"noopener\">The Software Frontier：Inside Google’s TPU</a><span class=\"sw2\">Ironwood 大批量出货、TPU 8i 开始量产出货</span></li><li><a href=\"https://www.kgi.com.hk/en/-/media/files/kgishk/research-reports/tw-reports/it-hardware_20260930_en.pdf\" target=\"_blank\" rel=\"noopener\">凯基 KGI：IT Hardware（2026-09-30）</a><span class=\"sw2\">TPU v8 四季度进入整机量产；2026、2027 年出货预测</span></li><li><a href=\"https://thenextweb.com/news/google-ironwood-tpu-inference-cloud-next\" target=\"_blank\" rel=\"noopener\">The Next Web：Google launches Ironwood TPU</a><span class=\"sw2\">Google 的说法：2026 年 430 万颗，2027 年 1,000 万颗</span></li><li><a href=\"https://www.datagravity.dev/p/googles-tpu-supply-chain\" target=\"_blank\" rel=\"noopener\">Data Gravity：Google’s TPU Supply Chain</a><span class=\"sw2\">2026 年预测区间 330–460 万颗</span></li><li><a href=\"https://thebuildout.ai/intel/3bd003a5-04eb-44ba-ad8b-17129845d8a3\" target=\"_blank\" rel=\"noopener\">The Buildout：UBS TPU 出货预测</a><span class=\"sw2\">博通 368 万颗、联发科 45 万颗（2026）</span></li></ol><p class=\"sg\">Google 模型的交叉核对</p><ol class=\"src\"><li><a href=\"https://nhimg.org/google-gemini-llm-models-guide\" target=\"_blank\" rel=\"noopener\">nhimg：Google Gemini 模型汇总</a><span class=\"sw2\">发布日、价格</span></li><li><a href=\"https://neuraltrust.ai/blog/gemini-4-carbon\" target=\"_blank\" rel=\"noopener\">NeuralTrust：Gemini 4 Carbon</a><span class=\"sw2\">Carbon 分数、AA 排名、发布时间线</span></li><li><a href=\"https://emergent.sh/learn/gemini-4-hydrogen-benchmarks\" target=\"_blank\" rel=\"noopener\">Emergent：Gemini 4 Hydrogen Benchmarks</a><span class=\"sw2\">Hydrogen 模型卡对比表</span></li><li><a href=\"https://www.workspaceblog.in/blog/gemini-4-hydrogen-vs-carbon-vs-argon/\" target=\"_blank\" rel=\"noopener\">Workspace Blog：Hydrogen vs Carbon vs Argon</a><span class=\"sw2\">三个模型的同项分数</span></li><li><a href=\"https://officechai.com/ai/gemini-4-neon-places-second-on-vals-index-and-arena-agent-index-ahead-of-opus-5-5-tops-cursor-bench-outright/\" target=\"_blank\" rel=\"noopener\">OfficeChai：Neon 在 Vals 与 Agent Arena</a><span class=\"sw2\">Neon 独立榜单成绩</span></li><li><a href=\"https://kingy.ai/blog/gemini-4-neon/\" target=\"_blank\" rel=\"noopener\">Kingy AI：Gemini 4 Neon</a><span class=\"sw2\">Google 对比表里 Opus 5.5、GPT-6.2 Sol 的分数</span></li><li><a href=\"https://www.lindy.ai/blog/gemini-4-argon\" target=\"_blank\" rel=\"noopener\">Lindy：Gemini 4 Argon</a><span class=\"sw2\">Argon 宣布日与开放日</span></li><li><a href=\"https://www.digitaltrends.com/computing/google-says-gemini-4-neon-can-hang-with-claude-opus-5-5-and-gpt-6-2-sol-for-less/\" target=\"_blank\" rel=\"noopener\">Digital Trends：Gemini 4 Neon</a><span class=\"sw2\">Neon 价格、在 App 里取代 Argon</span></li><li><a href=\"https://techjacksolutions.com/ai-tools/google-gemini/gemini-4-pricing-and-api/\" target=\"_blank\" rel=\"noopener\">TechJack：Gemini 4 Pricing</a><span class=\"sw2\">Hydrogen / Carbon / Argon 价格</span></li></ol><p class=\"sg\">Anthropic 模型的交叉核对</p><ol class=\"src\"><li><a href=\"https://nhimg.org/anthropic-llm-models-guide\" target=\"_blank\" rel=\"noopener\">nhimg：Anthropic 模型汇总</a><span class=\"sw2\">发布日、价格</span></li><li><a href=\"https://madrobot.blog/2026/11/09/claude-fable-5-2-released-price-benchmarks/\" target=\"_blank\" rel=\"noopener\">MadRobot：Fable 5.2 发布</a><span class=\"sw2\">Anthropic 发布表</span></li><li><a href=\"https://alphacorp.ai/blog/fable-5-2-launch-benchmarks-pricing-and-everything-you-need-to-know\" target=\"_blank\" rel=\"noopener\">AlphaCorp：Fable 5.2 Launch</a><span class=\"sw2\">Anthropic 发布表（更全）</span></li><li><a href=\"https://beam.ai/agentic-insights/claude-haiku-5-5-subagents\" target=\"_blank\" rel=\"noopener\">Beam：Claude Haiku 5.5</a><span class=\"sw2\">Haiku 5.5 价格与分数</span></li><li><a href=\"https://www.deeplearning.ai/the-batch/claude-fills-out-its-model-family\" target=\"_blank\" rel=\"noopener\">DeepLearning.AI The Batch：Sonnet 5.5 与 Haiku 5.5</a><span class=\"sw2\">发布时的独立评测</span></li></ol><p class=\"sg\">OpenAI 模型的交叉核对</p><ol class=\"src\"><li><a href=\"https://nhimg.org/openai-llm-models-guide\" target=\"_blank\" rel=\"noopener\">nhimg：OpenAI 模型汇总</a><span class=\"sw2\">发布日、价格（含受限模型）</span></li><li><a href=\"https://www.datacamp.com/blog/gpt-6-2-astra-and-sol\" target=\"_blank\" rel=\"noopener\">DataCamp：GPT-6.2 Astra and Sol</a><span class=\"sw2\">OpenAI 发布表</span></li><li><a href=\"https://felloai.com/gpt-6-2/\" target=\"_blank\" rel=\"noopener\">Fello AI：GPT-6.2</a><span class=\"sw2\">AA 指数与每题成本</span></li><li><a href=\"https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains/\" target=\"_blank\" rel=\"noopener\">The Decoder：GPT-6.2 发布</a><span class=\"sw2\">价格</span></li><li><a href=\"https://computingforgeeks.com/gpt-6-2-astra-sol-pricing-api/\" target=\"_blank\" rel=\"noopener\">ComputingForGeeks：GPT-6.2 Pricing</a><span class=\"sw2\">长提示加价</span></li><li><a href=\"https://www.bloomberg.com/news/articles/2026-11-17/openai-unveils-new-astra-ai-model-after-scrapping-prior-release\" target=\"_blank\" rel=\"noopener\">Bloomberg：OpenAI Unveils New Astra</a><span class=\"sw2\">发布日</span></li><li><a href=\"https://founderz.com/blog/gpt-6-sol-luna-astra/\" target=\"_blank\" rel=\"noopener\">Founderz：GPT-6 Sol vs Luna vs Astra</a><span class=\"sw2\">GPT-6 Sol / Luna / 6.1 Sol 发布日</span></li><li><a href=\"https://neuraltrust.ai/blog/gpt-6-1-terra\" target=\"_blank\" rel=\"noopener\">NeuralTrust：GPT-6.1 Terra</a><span class=\"sw2\">Terra、Luna 的独立分数</span></li></ol>\n",
+   "en": "\n<p class=\"sg\">Vendors and evaluators</p><ol class=\"src\"><li><a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/\" target=\"_blank\" rel=\"noopener\">Google: Introducing Gemini 4 Neon</a><span class=\"sw2\">Neon price and Google's reported scores</span></li><li><a href=\"https://www.anthropic.com/claude/fable\" target=\"_blank\" rel=\"noopener\">Anthropic: Claude Fable 5.2 product page</a><span class=\"sw2\">Fable 5.2 release date and price</span></li><li><a href=\"https://artificialanalysis.ai/models\" target=\"_blank\" rel=\"noopener\">Artificial Analysis: model leaderboard</a><span class=\"sw2\">Top of the AA Index</span></li><li><a href=\"https://artificialanalysis.ai/models/claude-opus-5-5\" target=\"_blank\" rel=\"noopener\">Artificial Analysis: Claude Opus 5.5 model page</a><span class=\"sw2\">AA Index for Opus / Sonnet / Haiku</span></li><li><a href=\"https://artificialanalysis.ai/models/releases/gpt-6-1-terra\" target=\"_blank\" rel=\"noopener\">Artificial Analysis: GPT-6.1 Terra model page</a><span class=\"sw2\">AA Index for Terra, Luna, GPT-6.2</span></li><li><a href=\"https://www.vals.ai/benchmarks/vals_index\" target=\"_blank\" rel=\"noopener\">Vals AI: Vals Index leaderboard</a><span class=\"sw2\">Vals Index and cost per task for 41 models</span></li><li><a href=\"https://x.com/ValsAI/status/2123168167879147542\" target=\"_blank\" rel=\"noopener\">Vals AI (X): Neon's launch result</a><span class=\"sw2\">Neon 70.9%, #2</span></li></ol><p class=\"sg\">Mythos 5.2 specialist scores</p><ol class=\"src\"><li><a href=\"https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf\" target=\"_blank\" rel=\"noopener\">Anthropic: System Card: Claude Fable 5.2 and Claude Mythos 5.2 (PDF, 264 pages)</a><span class=\"sw2\">Every number in Table 2-2</span></li><li><a href=\"https://www.anthropic.com/claude-fable-and-mythos-5-2\" target=\"_blank\" rel=\"noopener\">Anthropic: Introducing Claude Fable 5.2 and Claude Mythos 5.2</a><span class=\"sw2\">The 4 launch-table rows marked Mythos 5.2</span></li><li><a href=\"https://platform.claude.com/docs/en/models/mythos-5-2/overview\" target=\"_blank\" rel=\"noopener\">Claude docs: Claude Mythos 5.2</a><span class=\"sw2\">Same specs and price as Fable 5.2</span></li><li><a href=\"https://benchlm.ai/models/claude-mythos-5-2\" target=\"_blank\" rel=\"noopener\">BenchLM: Claude Mythos 5.2</a><span class=\"sw2\">Cross-check of all 16 scores</span></li><li><a href=\"https://lesswrong.com/posts/DXqmHa4XkjvwZiDcB/fable-and-mythos-5-2-the-system-card\" target=\"_blank\" rel=\"noopener\">Zvi Mowshowitz: Fable and Mythos 5.2: The System Card</a><span class=\"sw2\">Full name of AECI</span></li></ol><p class=\"sg\">Scores for other models (added 11-20)</p><ol class=\"src\"><li><a href=\"https://www.vals.ai/benchmarks/terminal-bench-4\" target=\"_blank\" rel=\"noopener\">Vals AI: Terminal-Bench 4.0 leaderboard</a><span class=\"sw2\">Independent TB 4.0 scores for 14 models</span></li><li><a href=\"https://www.developersdigest.tech/benchmarks/terminal-bench\" target=\"_blank\" rel=\"noopener\">Developers Digest: transcription of the official Terminal-Bench leaderboard</a><span class=\"sw2\">Official-leaderboard results for GPT-6.1 Sol, GPT-6 Sol, GPT-6 Luna</span></li><li><a href=\"https://deepmind.google/models/model-cards/gemini-4-carbon/\" target=\"_blank\" rel=\"noopener\">Google DeepMind: Gemini 4 Carbon model card</a><span class=\"sw2\">TB 4.0 and ExploitGym for Carbon and Argon</span></li><li><a href=\"https://benchlm.ai/benchmarks/exploitgym\" target=\"_blank\" rel=\"noopener\">BenchLM: ExploitGym</a><span class=\"sw2\">Vendor-reported ExploitGym scores</span></li><li><a href=\"https://benchlm.ai/cybersecurity\" target=\"_blank\" rel=\"noopener\">BenchLM: Cybersecurity</a><span class=\"sw2\">ExploitBench and other cyber tests</span></li><li><a href=\"https://benchlm.ai/models/claude-opus-5-5\" target=\"_blank\" rel=\"noopener\">BenchLM: Claude Opus 5.5</a><span class=\"sw2\">Opus 5.5 cyber and life-science scores</span></li><li><a href=\"https://benchlm.ai/models/claude-sonnet-5-5\" target=\"_blank\" rel=\"noopener\">BenchLM: Claude Sonnet 5.5</a><span class=\"sw2\">Sonnet 5.5 life-science scores</span></li><li><a href=\"https://benchlm.ai/models/claude-haiku-5-5\" target=\"_blank\" rel=\"noopener\">BenchLM: Claude Haiku 5.5</a><span class=\"sw2\">Haiku 5.5 TB 4.0</span></li><li><a href=\"https://assets.claude.com/870c8f525702625d2c62fc6dd04c857e3250bec1.pdf\" target=\"_blank\" rel=\"noopener\">Anthropic: Claude Sonnet 5.5 System Card (PDF)</a><span class=\"sw2\">Primary source for Sonnet 5.5 scores</span></li><li><a href=\"https://neuraltrust.ai/blog/gpt-6-cyber-enterprise-security\" target=\"_blank\" rel=\"noopener\">NeuralTrust: GPT-6 Cyber</a><span class=\"sw2\">GPT-6 Cyber ExploitGym and CyScenarioBench</span></li><li><a href=\"https://thenewstack.io/openai-gpt6-cyber-exploits/\" target=\"_blank\" rel=\"noopener\">The New Stack: GPT-6 Cyber</a><span class=\"sw2\">GPT-6 Cyber ExploitBench</span></li><li><a href=\"https://deploymentsafety.openai.com/gpt-6-2-astra-sol\" target=\"_blank\" rel=\"noopener\">OpenAI: GPT-6.2 System Card</a><span class=\"sw2\">GPT-6.2 ExploitBench, VCT results, CyScenarioBench</span></li><li><a href=\"https://deploymentsafety.openai.com/gpt-6-cyber\" target=\"_blank\" rel=\"noopener\">OpenAI: GPT-6 Cyber System Card</a><span class=\"sw2\">GPT-6 Cyber CyScenarioBench</span></li><li><a href=\"https://www.irregular.com/research/assessing-gpt-6-astra\" target=\"_blank\" rel=\"noopener\">Irregular: Assessing GPT-6 Astra</a><span class=\"sw2\">GPT-6 Astra CyScenarioBench</span></li><li><a href=\"https://benchmarklist.com/benchmarks/exploitbench_v8/\" target=\"_blank\" rel=\"noopener\">BenchmarkList: ExploitBench v8-bench</a><span class=\"sw2\">ExploitBench for Opus 5.5, Sonnet 5.5, Mythos 5.1</span></li><li><a href=\"https://benchlm.ai/models/gpt-6-astra\" target=\"_blank\" rel=\"noopener\">BenchLM: GPT-6 Astra</a><span class=\"sw2\">GPT-6 Astra TB 4.0, ExploitGym and more</span></li><li><a href=\"https://benchlm.ai/models/claude-mythos-5-1\" target=\"_blank\" rel=\"noopener\">BenchLM: Claude Mythos 5.1</a><span class=\"sw2\">Mythos 5.1 TB 4.0</span></li><li><a href=\"https://llm-stats.com/benchmarks/latchbio-singlecellbench\" target=\"_blank\" rel=\"noopener\">LLM Stats: LatchBio SingleCellBench</a><span class=\"sw2\">Haiku 5.5 SingleCellBench</span></li><li><a href=\"https://securebio.substack.com/p/securebio-gpt-6-astra-pre-release\" target=\"_blank\" rel=\"noopener\">SecureBio: GPT-6 Astra pre-release testing report</a><span class=\"sw2\">Independent VCT result for GPT-6 Astra</span></li><li><a href=\"https://deploymentsafety.openai.com/gpt-rosalind-6/gpt-rosalind-6.pdf\" target=\"_blank\" rel=\"noopener\">OpenAI: GPT-Rosalind-6 System Card Addendum</a><span class=\"sw2\">Rosalind's own three tests</span></li></ol><p class=\"sg\">Internal codenamed models Model 2 / 3 / 4</p><ol class=\"src\"><li><a href=\"https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/\" target=\"_blank\" rel=\"noopener\">METR: Independent Assessment of AI R&amp;D Acceleration at Anthropic in October 2026</a><span class=\"sw2\">Training dates for the three codenames; Model 4's AECI of 178.6 and its 15 tests</span></li><li><a href=\"https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf\" target=\"_blank\" rel=\"noopener\">Anthropic: System Card (Fable 5.2 / Mythos 5.2)</a><span class=\"sw2\">Sections 2.1, 2.3, 2.3.5.3 on the \"internal model\": AECI 178.78 and confidence intervals; Section 2.3.6 on Model 3 Early</span></li><li><a href=\"https://thezvi.substack.com/p/fable-and-mythos-52-the-system-card\" target=\"_blank\" rel=\"noopener\">Zvi Mowshowitz: Fable and Mythos 5.2: The System Card</a><span class=\"sw2\">The reading that Mythos 5.2 is a version of Model 3 and the \"internal model\" is Model 4</span></li><li><a href=\"https://eu.36kr.com/en/p/4058973865825161\" target=\"_blank\" rel=\"noopener\">36Kr: Anthropic&#x27;s most powerful Model 4 is unveiled</a><span class=\"sw2\">Summary of the METR report, for cross-checking</span></li></ol><p class=\"sg\">Scores for Fable 5 and Fable 5.1</p><ol class=\"src\"><li><a href=\"https://artificialanalysis.ai/models/claude-fable-5-1\" target=\"_blank\" rel=\"noopener\">Artificial Analysis: Claude Fable 5.1</a><span class=\"sw2\">AA Index v5.0.1: xhigh 50, max 49; price; release date</span></li><li><a href=\"https://artificialanalysis.ai/models/claude-fable-5\" target=\"_blank\" rel=\"noopener\">Artificial Analysis: Claude Fable 5</a><span class=\"sw2\">No score on the v5.0.1 page; price; release date</span></li><li><a href=\"https://www.vals.ai/models/anthropic_claude-fable-5-1\" target=\"_blank\" rel=\"noopener\">Vals AI: Claude Fable 5.1</a><span class=\"sw2\">TB 4.0 58.08%; old Vals Index 67.87%</span></li><li><a href=\"https://www.vals.ai/models/anthropic_claude-fable-5\" target=\"_blank\" rel=\"noopener\">Vals AI: Claude Fable 5</a><span class=\"sw2\">TB 4.0 41.41%; old Vals Index</span></li><li><a href=\"https://www.vals.ai/benchmarks/vals_index\" target=\"_blank\" rel=\"noopener\">Vals AI: Vals Index v2.2 leaderboard</a><span class=\"sw2\">Confirms Fable 5 and Fable 5.1 are not on the v2.2 leaderboard</span></li><li><a href=\"https://apidog.com/blog/claude-fable-5-1-benchmarks/\" target=\"_blank\" rel=\"noopener\">Apidog: Claude Fable 5.1 Benchmarks</a><span class=\"sw2\">Transcription of Anthropic's Sep 1 launch table: TB 4.0, TB-Science, AutomationBench</span></li><li><a href=\"https://www.explainx.ai/blog/claude-fable-5-2-vs-opus-5-5-benchmarks-cost-routing-which-model-2026\" target=\"_blank\" rel=\"noopener\">explainx: Claude Fable 5.2 vs Opus 5.5</a><span class=\"sw2\">Fable 5.1 FrontierCode 2.0, OSWorld 2.1, Chartography</span></li><li><a href=\"https://benchlm.ai/compare/claude-fable-5-1-vs-gpt-6-astra\" target=\"_blank\" rel=\"noopener\">BenchLM: Claude Fable 5.1 vs GPT-6 Astra</a><span class=\"sw2\">OSWorld 2.1 offline 83.5%; an alternative FrontierCode 2.0 figure of 34.0%</span></li></ol><p class=\"sg\">Compute rows: Nvidia Rubin and Google TPU</p><ol class=\"src\"><li><a href=\"https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000088/q3fy27pr.htm\" target=\"_blank\" rel=\"noopener\">Nvidia: Q3 FY2027 results (2026-11-17)</a><span class=\"sw2\">NVL72 shipping; which clouds run it; Q4 revenue guidance</span></li><li><a href=\"https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm\" target=\"_blank\" rel=\"noopener\">Nvidia: Q2 FY2027 results (2026-08-26)</a><span class=\"sw2\">Rubin in full production, racks running on 5 clouds</span></li><li><a href=\"https://www.cnbc.com/investingclub/2026/11/17/nvidia-takes-positive-step-forward-with-stronger-sales-outlook-heres-our-thoughts-on-the-stock.html\" target=\"_blank\" rel=\"noopener\">CNBC: Nvidia takes positive step forward (2026-11-17)</a><span class=\"sw2\">Rubin's first-quarter revenue near $20B</span></li><li><a href=\"https://wccftech.com/nvidia-confirms-vera-rubin-launch-in-q3-volume-ramp-q4-blackwell-continues-to-see-massive-demand/\" target=\"_blank\" rel=\"noopener\">Wccftech: Nvidia confirms Vera Rubin launch in Q3</a><span class=\"sw2\">Cadence given in May: first units in Q3, volume ramp in Q4, further growth in 1H 2027</span></li><li><a href=\"https://finance.yahoo.com/technology/ai/articles/asus-ramps-nvidia-vera-rubin-062100096.html\" target=\"_blank\" rel=\"noopener\">ASUS: Ramps up Vera Rubin NVL72 shipments in Q4 (2026-11-17)</a><span class=\"sw2\">Volume shipments in Q4</span></li><li><a href=\"https://www.spheron.network/blog/gpu-cloud-news-2026/\" target=\"_blank\" rel=\"noopener\">Spheron: GPU Cloud News</a><span class=\"sw2\">Smaller clouds lag the hyperscalers by 3–6 months</span></li><li><a href=\"https://epoch.ai/data-insights/tpu-production-doubling\" target=\"_blank\" rel=\"noopener\">Epoch AI: Broadcom TPU shipments doubled (2026-11-04)</a><span class=\"sw2\">Broadcom fiscal Q3: about 800K units, nearly 2M H100-equivalents; v8i production begins</span></li><li><a href=\"https://au.finance.yahoo.com/news/broadcom-anthropic-ramp-puts-google-113804111.html\" target=\"_blank\" rel=\"noopener\">Yahoo Finance: Broadcom’s Anthropic Ramp</a><span class=\"sw2\">Broadcom's Sep 2 earnings: Anthropic 1 GW / 5 GW / 10 GW</span></li><li><a href=\"https://www.thesoftwarefrontier.com/p/inside-googles-tpu-how-it-works-and\" target=\"_blank\" rel=\"noopener\">The Software Frontier: Inside Google’s TPU</a><span class=\"sw2\">Ironwood shipping in volume; TPU 8i volume shipments begin</span></li><li><a href=\"https://www.kgi.com.hk/en/-/media/files/kgishk/research-reports/tw-reports/it-hardware_20260930_en.pdf\" target=\"_blank\" rel=\"noopener\">KGI Securities: IT Hardware (2026-09-30)</a><span class=\"sw2\">TPU v8 system-level volume production in Q4; 2026 and 2027 shipment forecasts</span></li><li><a href=\"https://thenextweb.com/news/google-ironwood-tpu-inference-cloud-next\" target=\"_blank\" rel=\"noopener\">The Next Web: Google launches Ironwood TPU</a><span class=\"sw2\">Google's figures: 4.3M units in 2026, 10M in 2027</span></li><li><a href=\"https://www.datagravity.dev/p/googles-tpu-supply-chain\" target=\"_blank\" rel=\"noopener\">Data Gravity: Google’s TPU Supply Chain</a><span class=\"sw2\">2026 forecast range 3.3M–4.6M units</span></li><li><a href=\"https://thebuildout.ai/intel/3bd003a5-04eb-44ba-ad8b-17129845d8a3\" target=\"_blank\" rel=\"noopener\">The Buildout: UBS TPU shipment forecast</a><span class=\"sw2\">Broadcom 3.68M units, MediaTek 450K (2026)</span></li></ol><p class=\"sg\">Cross-checks for Google models</p><ol class=\"src\"><li><a href=\"https://nhimg.org/google-gemini-llm-models-guide\" target=\"_blank\" rel=\"noopener\">nhimg: Google Gemini model roundup</a><span class=\"sw2\">Release dates, prices</span></li><li><a href=\"https://neuraltrust.ai/blog/gemini-4-carbon\" target=\"_blank\" rel=\"noopener\">NeuralTrust: Gemini 4 Carbon</a><span class=\"sw2\">Carbon scores, AA ranking, release timeline</span></li><li><a href=\"https://emergent.sh/learn/gemini-4-hydrogen-benchmarks\" target=\"_blank\" rel=\"noopener\">Emergent: Gemini 4 Hydrogen Benchmarks</a><span class=\"sw2\">Hydrogen model-card comparison table</span></li><li><a href=\"https://www.workspaceblog.in/blog/gemini-4-hydrogen-vs-carbon-vs-argon/\" target=\"_blank\" rel=\"noopener\">Workspace Blog: Hydrogen vs Carbon vs Argon</a><span class=\"sw2\">Like-for-like scores for the three models</span></li><li><a href=\"https://officechai.com/ai/gemini-4-neon-places-second-on-vals-index-and-arena-agent-index-ahead-of-opus-5-5-tops-cursor-bench-outright/\" target=\"_blank\" rel=\"noopener\">OfficeChai: Neon on Vals and Agent Arena</a><span class=\"sw2\">Neon's independent leaderboard results</span></li><li><a href=\"https://kingy.ai/blog/gemini-4-neon/\" target=\"_blank\" rel=\"noopener\">Kingy AI: Gemini 4 Neon</a><span class=\"sw2\">Opus 5.5 and GPT-6.2 Sol scores in Google's comparison table</span></li><li><a href=\"https://www.lindy.ai/blog/gemini-4-argon\" target=\"_blank\" rel=\"noopener\">Lindy: Gemini 4 Argon</a><span class=\"sw2\">Argon announcement and availability dates</span></li><li><a href=\"https://www.digitaltrends.com/computing/google-says-gemini-4-neon-can-hang-with-claude-opus-5-5-and-gpt-6-2-sol-for-less/\" target=\"_blank\" rel=\"noopener\">Digital Trends: Gemini 4 Neon</a><span class=\"sw2\">Neon price; replaces Argon in the app</span></li><li><a href=\"https://techjacksolutions.com/ai-tools/google-gemini/gemini-4-pricing-and-api/\" target=\"_blank\" rel=\"noopener\">TechJack: Gemini 4 Pricing</a><span class=\"sw2\">Hydrogen / Carbon / Argon prices</span></li></ol><p class=\"sg\">Cross-checks for Anthropic models</p><ol class=\"src\"><li><a href=\"https://nhimg.org/anthropic-llm-models-guide\" target=\"_blank\" rel=\"noopener\">nhimg: Anthropic model roundup</a><span class=\"sw2\">Release dates, prices</span></li><li><a href=\"https://madrobot.blog/2026/11/09/claude-fable-5-2-released-price-benchmarks/\" target=\"_blank\" rel=\"noopener\">MadRobot: Fable 5.2 launch</a><span class=\"sw2\">Anthropic's launch table</span></li><li><a href=\"https://alphacorp.ai/blog/fable-5-2-launch-benchmarks-pricing-and-everything-you-need-to-know\" target=\"_blank\" rel=\"noopener\">AlphaCorp: Fable 5.2 Launch</a><span class=\"sw2\">Anthropic's launch table (fuller)</span></li><li><a href=\"https://beam.ai/agentic-insights/claude-haiku-5-5-subagents\" target=\"_blank\" rel=\"noopener\">Beam: Claude Haiku 5.5</a><span class=\"sw2\">Haiku 5.5 price and scores</span></li><li><a href=\"https://www.deeplearning.ai/the-batch/claude-fills-out-its-model-family\" target=\"_blank\" rel=\"noopener\">DeepLearning.AI The Batch: Sonnet 5.5 and Haiku 5.5</a><span class=\"sw2\">Independent evaluations at launch</span></li></ol><p class=\"sg\">Cross-checks for OpenAI models</p><ol class=\"src\"><li><a href=\"https://nhimg.org/openai-llm-models-guide\" target=\"_blank\" rel=\"noopener\">nhimg: OpenAI model roundup</a><span class=\"sw2\">Release dates, prices (incl. restricted models)</span></li><li><a href=\"https://www.datacamp.com/blog/gpt-6-2-astra-and-sol\" target=\"_blank\" rel=\"noopener\">DataCamp: GPT-6.2 Astra and Sol</a><span class=\"sw2\">OpenAI's launch table</span></li><li><a href=\"https://felloai.com/gpt-6-2/\" target=\"_blank\" rel=\"noopener\">Fello AI: GPT-6.2</a><span class=\"sw2\">AA Index and cost per task</span></li><li><a href=\"https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains/\" target=\"_blank\" rel=\"noopener\">The Decoder: GPT-6.2 launch</a><span class=\"sw2\">Prices</span></li><li><a href=\"https://computingforgeeks.com/gpt-6-2-astra-sol-pricing-api/\" target=\"_blank\" rel=\"noopener\">ComputingForGeeks: GPT-6.2 Pricing</a><span class=\"sw2\">Long-prompt surcharge</span></li><li><a href=\"https://www.bloomberg.com/news/articles/2026-11-17/openai-unveils-new-astra-ai-model-after-scrapping-prior-release\" target=\"_blank\" rel=\"noopener\">Bloomberg: OpenAI Unveils New Astra</a><span class=\"sw2\">Release date</span></li><li><a href=\"https://founderz.com/blog/gpt-6-sol-luna-astra/\" target=\"_blank\" rel=\"noopener\">Founderz: GPT-6 Sol vs Luna vs Astra</a><span class=\"sw2\">Release dates for GPT-6 Sol / Luna / 6.1 Sol</span></li><li><a href=\"https://neuraltrust.ai/blog/gpt-6-1-terra\" target=\"_blank\" rel=\"noopener\">NeuralTrust: GPT-6.1 Terra</a><span class=\"sw2\">Independent scores for Terra and Luna</span></li></ol>\n"
+  }
+ },
+ "terms": {
+  "aa": {
+   "n": {
+    "zh": "AA 指数（Artificial Analysis Intelligence Index）",
+    "en": "AA Index (Artificial Analysis Intelligence Index)"
+   },
+   "d": {
+    "zh": "评测机构 Artificial Analysis 做的综合分。把编码、文档处理、科学推理等 9 项测试合成一个 0–100 的分数。它由第三方统一测，所以不同厂商的模型可以直接比。",
+    "en": "A composite score from evaluator Artificial Analysis that rolls 9 tests (coding, document work, scientific reasoning and more) into one 0–100 number. Because a third party runs it the same way for everyone, models from different vendors compare directly."
+   }
+  },
+  "vals": {
+   "n": {
+    "zh": "Vals Index",
+    "en": "Vals Index"
+   },
+   "d": {
+    "zh": "评测机构 Vals AI 做的综合分。题目来自金融、法律、编码等真实工作任务。它看的是模型能不能把一件实际工作做对，同时公布每题花多少钱。",
+    "en": "A composite score from evaluator Vals AI built from real work tasks in finance, law, coding and more. It asks whether a model gets an actual job done right, and it also publishes the cost per task."
+   }
+  },
+  "fc": {
+   "n": {
+    "zh": "FrontierCode 2.0",
+    "en": "FrontierCode 2.0"
+   },
+   "d": {
+    "zh": "一套难度很高的编码测试。模型要在真实代码库里独立完成复杂改动。目前最好的模型也只做对一半左右。",
+    "en": "A very hard coding test in which the model must make complex changes in a real codebase on its own. Even the best models solve only about half."
+   }
+  },
+  "ale": {
+   "n": {
+    "zh": "Agents' Last Exam",
+    "en": "Agents' Last Exam"
+   },
+   "d": {
+    "zh": "测模型能否像员工一样，独立做完一整件多步骤的职业任务。它衡量的是「能不能放手交给它」。",
+    "en": "Tests whether a model can finish a whole multi-step professional task on its own, like an employee would. It measures whether you can safely hand the job off."
+   }
+  },
+  "tbs": {
+   "n": {
+    "zh": "Terminal-Bench-Science",
+    "en": "Terminal-Bench-Science"
+   },
+   "d": {
+    "zh": "让模型在命令行里完成科研计算任务，比如跑模拟、处理实验数据。它衡量模型做科研助手的能力。",
+    "en": "Has the model do scientific computing in a terminal, such as running simulations or processing experimental data. It measures how useful the model is as a research assistant."
+   }
+  },
+  "osw": {
+   "n": {
+    "zh": "OSWorld",
+    "en": "OSWorld"
+   },
+   "d": {
+    "zh": "让模型像人一样看屏幕、点鼠标、敲键盘来操作电脑。它衡量模型替人操作软件的能力。",
+    "en": "Has the model operate a computer the way a person does: reading the screen, clicking and typing. It measures how well a model can drive software for you."
+   }
+  },
+  "chart": {
+   "n": {
+    "zh": "Chartography",
+    "en": "Chartography"
+   },
+   "d": {
+    "zh": "让模型读信息密集的专业图表并回答问题。它衡量模型「看图说对话」的能力。",
+    "en": "Has the model read dense professional charts and answer questions about them. It measures whether the model reads figures correctly."
+   }
+  },
+  "auto": {
+   "n": {
+    "zh": "AutomationBench",
+    "en": "AutomationBench"
+   },
+   "d": {
+    "zh": "Zapier 出的测试。模型要跨多个办公软件完成一条业务流程，比如收到邮件后建工单再通知同事。",
+    "en": "A test from Zapier: the model completes a business workflow across several office apps, e.g. turning an incoming email into a ticket and then notifying a colleague."
+   }
+  },
+  "token": {
+   "n": {
+    "zh": "token",
+    "en": "Token"
+   },
+   "d": {
+    "zh": "模型处理文字的计量单位。一个汉字约 1–2 个 token，一个英文词约 1.3 个。API 按输入和输出的 token 数分别收费。",
+    "en": "The unit models use to count text. A Chinese character is about 1–2 tokens, an English word about 1.3. APIs bill input and output tokens separately."
+   }
+  },
+  "effort": {
+   "n": {
+    "zh": "推理强度",
+    "en": "Reasoning effort"
+   },
+   "d": {
+    "zh": "模型回答前「想多久」的档位，常见有 low、medium、high、xhigh、max。档位越高，分数通常越高，但更慢、更贵。同一模型不同档位的分数可以差 10 分以上。",
+    "en": "How long the model \"thinks\" before answering, usually low, medium, high, xhigh or max. Higher settings usually score better but are slower and pricier; one model's scores can differ by 10+ points across settings."
+   }
+  },
+  "api": {
+   "n": {
+    "zh": "API（Application Programming Interface，应用程序接口）",
+    "en": "API (Application Programming Interface)"
+   },
+   "d": {
+    "zh": "开发者用代码调用模型的入口。这里的价格都是 API 价，按用量付费，不是 App 的月费。",
+    "en": "The way developers call a model from code. Prices here are API list prices, billed by usage, not app subscriptions."
+   }
+  },
+  "fairwind": {
+   "n": {
+    "zh": "Fairwind",
+    "en": "Fairwind"
+   },
+   "d": {
+    "zh": "Google 给网络安全防御方的优先试用项目。新模型先给这批人用，再对外开放。",
+    "en": "Google's early-access program for cyber defenders. New models go to this group first before opening to everyone."
+   }
+  },
+  "bench": {
+   "n": {
+    "zh": "Bench（Benchmark，基准测试）",
+    "en": "Benchmark"
+   },
+   "d": {
+    "zh": "一套固定的题目，用来给不同模型打分比较。",
+    "en": "A fixed set of tasks used to score and compare models."
+   }
+  },
+  "metr": {
+   "n": {
+    "zh": "METR（Model Evaluation & Threat Research）",
+    "en": "METR (Model Evaluation & Threat Research)"
+   },
+   "d": {
+    "zh": "一家独立的 AI 评测机构。它在模型发布前后测模型的自主能力。2026 年 11 月 5 日，它发布了一份对 Anthropic 内部研发加速情况的独立评估，里面第一次出现 Model 2、Model 3、Model 4 这三个代号。",
+    "en": "An independent AI evaluator that tests models' autonomous capabilities before and after release. On November 5, 2026 it published an independent assessment of AI R&D acceleration inside Anthropic, the first public mention of the codenames Model 2, Model 3 and Model 4."
+   }
+  },
+  "card": {
+   "n": {
+    "zh": "System Card",
+    "en": "System Card"
+   },
+   "d": {
+    "zh": "模型厂商随新模型发布的测试报告。里面写了发布前做过哪些能力测试和安全测试，以及结果。",
+    "en": "The test report a vendor publishes with a new model, describing the capability and safety evaluations run before release and their results."
+   }
+  },
+  "cve": {
+   "n": {
+    "zh": "CVE（Common Vulnerabilities and Exposures，公开漏洞库）",
+    "en": "CVE (Common Vulnerabilities and Exposures)"
+   },
+   "d": {
+    "zh": "全球通用的软件漏洞编号库。CVE Rediscovery 这项测试让模型在代码里重新找出库里已有的真实漏洞，分数是找回的比例。",
+    "en": "The global catalog of numbered software vulnerabilities. The CVE Rediscovery test has the model re-find real, already-catalogued vulnerabilities in code; the score is the share it finds."
+   }
+  },
+  "aeci": {
+   "n": {
+    "zh": "AECI（Anthropic Epoch Capabilities Index）",
+    "en": "AECI (Anthropic Epoch Capabilities Index)"
+   },
+   "d": {
+    "zh": "Anthropic 基于 Epoch AI 的能力指数改的综合分。它把很多测试合成一个数，用来看模型能力的增长趋势。",
+    "en": "Anthropic's composite score adapted from Epoch AI's capabilities index. It folds many tests into one number to track how model capability grows over time."
+   }
+  },
+  "guard": {
+   "n": {
+    "zh": "防护（safeguards）",
+    "en": "Safeguards"
+   },
+   "d": {
+    "zh": "Anthropic 加在模型外层的限制，用来拦截网络攻击、生物武器这类高风险请求。Fable 5.2 带全套防护。Mythos 5.2 对通过审核的机构放开其中一部分。",
+    "en": "Restrictions Anthropic layers around a model to block high-risk requests such as cyberattacks or bioweapons. Fable 5.2 ships with the full set; Mythos 5.2 relaxes some of them for vetted organizations."
+   }
+  }
+ },
+ "alias": {
+  "zh": {
+   "AA 指数": "aa",
+   "Artificial Analysis": "aa",
+   "Vals Index": "vals",
+   "FrontierCode 2.0": "fc",
+   "FrontierCode": "fc",
+   "Agents' Last Exam": "ale",
+   "Terminal-Bench-Science": "tbs",
+   "OSWorld 2.1": "osw",
+   "OSWorld": "osw",
+   "Chartography": "chart",
+   "AutomationBench": "auto",
+   "token": "token",
+   "推理强度": "effort",
+   "xhigh 档": "effort",
+   "xhigh": "effort",
+   "API": "api",
+   "Fairwind": "fairwind",
+   "Bench": "bench",
+   "System Card": "card",
+   "CVE Rediscovery": "cve",
+   "AECI": "aeci",
+   "防护": "guard",
+   "METR": "metr"
+  },
+  "en": {
+   "AA Index": "aa",
+   "Artificial Analysis": "aa",
+   "Vals Index": "vals",
+   "FrontierCode 2.0": "fc",
+   "FrontierCode": "fc",
+   "Agents' Last Exam": "ale",
+   "Terminal-Bench-Science": "tbs",
+   "OSWorld 2.1": "osw",
+   "OSWorld": "osw",
+   "Chartography": "chart",
+   "AutomationBench": "auto",
+   "tokens": "token",
+   "token": "token",
+   "reasoning effort": "effort",
+   "Reasoning effort": "effort",
+   "xhigh": "effort",
+   "API": "api",
+   "Fairwind": "fairwind",
+   "System Card": "card",
+   "CVE Rediscovery": "cve",
+   "AECI": "aeci",
+   "safeguards": "guard",
+   "Safeguards": "guard",
+   "METR": "metr",
+   "benchmark": "bench"
+  }
+ },
+ "js_ui": {
+  "back": {
+   "zh": "返回",
+   "en": "Back"
+  },
+  "tg_aria": {
+   "zh": "展开或收起本节",
+   "en": "Expand or collapse this section"
+  }
+ }
+}

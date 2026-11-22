@@ -116,6 +116,16 @@ fix: handle empty OpenRouter rankings response
 
 Automated daily commits from CI use `data: YYYY-MM-DD`.
 
+## Other reports
+
+[`reports/llm-release-bench/`](reports/llm-release-bench/) holds a separate,
+hand-curated single-file report — *LLM Releases & Benchmarks* (frontier, big-tech
+and open-weight models: release dates, API prices, benchmark scores, plus monthly
+AI-chip arrivals in H100-equivalents), with a built-in Chinese / English switch.
+It has its own stdlib-only build scripts and is not touched by `make build`,
+`make test` or the daily workflow; see its
+[MAINTAIN.md](reports/llm-release-bench/MAINTAIN.md) (in Chinese).
+
 ## Documentation
 
 Docs follow progressive disclosure: start at [AGENTS.md](AGENTS.md) (entry point
