@@ -39,7 +39,7 @@
  "layout": {
   "_readme": "列宽（em）。原表由浏览器实测得出；新增列沿用同组宽度。build_tables.py 会估算新内容所需宽度，超出时打印警告，需人工调大这里的值。",
   "t21": {
-   "model": 14.419,
+   "model": 18.2,
    "release": 4.34106,
    "price_in": 4.496,
    "price_out": 5.891,
@@ -50,7 +50,7 @@
    "model": 4.34106
   },
   "t31": {
-   "model": 18.4,
+   "model": 21.4,
    "release": 4.34106,
    "price_in": 4.496,
    "price_out": 5.891,
@@ -951,6 +951,7 @@
    "short": "Neon",
    "vendor": "google",
    "status": "public",
+   "open_weights": false,
    "release": "2026-11-18",
    "price": {
     "in": 3,
@@ -1049,6 +1050,7 @@
    "short": "Hydrogen",
    "vendor": "google",
    "status": "public",
+   "open_weights": false,
    "release": "2026-11-12",
    "price": {
     "in": 1.5,
@@ -1137,6 +1139,7 @@
    "short": "Carbon",
    "vendor": "google",
    "status": "public",
+   "open_weights": false,
    "release": "2026-11-10",
    "release_star": true,
    "release_tip": {
@@ -1272,6 +1275,7 @@
    "short": "Argon",
    "vendor": "google",
    "status": "public",
+   "open_weights": false,
    "release": "2026-10-13",
    "release_star": true,
    "release_tip": {
@@ -1387,6 +1391,7 @@
    "short": "Fable 5.2",
    "vendor": "anthropic",
    "status": "public",
+   "open_weights": false,
    "release": "2026-11-09",
    "price": {
     "in": 8,
@@ -1505,6 +1510,7 @@
    "short": "Mythos 5.2",
    "vendor": "anthropic",
    "status": "restricted",
+   "open_weights": false,
    "tag": {
     "text": {
      "zh": "受限",
@@ -1725,6 +1731,7 @@
    "short": "Haiku 5.5",
    "vendor": "anthropic",
    "status": "public",
+   "open_weights": false,
    "release": "2026-10-07",
    "price": {
     "in": 0.1,
@@ -1803,6 +1810,7 @@
    "short": "Sonnet 5.5",
    "vendor": "anthropic",
    "status": "public",
+   "open_weights": false,
    "release": "2026-09-28",
    "price": {
     "in": 2,
@@ -1997,6 +2005,7 @@
    "short": "Opus 5.5",
    "vendor": "anthropic",
    "status": "public",
+   "open_weights": false,
    "release": "2026-09-22",
    "price": {
     "in": 4,
@@ -2261,6 +2270,7 @@
    "short": "Fable 5.1",
    "vendor": "anthropic",
    "status": "public",
+   "open_weights": false,
    "release": "2026-09-01",
    "price": {
     "in": 10,
@@ -2371,6 +2381,7 @@
    "short": "Fable 5",
    "vendor": "anthropic",
    "status": "public",
+   "open_weights": false,
    "release": "2026-06-09",
    "price": {
     "in": 10,
@@ -2573,6 +2584,7 @@
    "short": "GPT-6.2 Astra",
    "vendor": "openai",
    "status": "public",
+   "open_weights": false,
    "release": "2026-11-17",
    "price": {
     "in": 8,
@@ -2691,6 +2703,7 @@
    "short": "GPT-6.2 Sol",
    "vendor": "openai",
    "status": "public",
+   "open_weights": false,
    "release": "2026-11-17",
    "price": {
     "in": 2,
@@ -2809,6 +2822,7 @@
    "short": "GPT-6 Cyber",
    "vendor": "openai",
    "status": "restricted",
+   "open_weights": false,
    "tag": {
     "text": {
      "zh": "受限",
@@ -2867,6 +2881,7 @@
    "short": "GPT-6 Rosalind",
    "vendor": "openai",
    "status": "restricted",
+   "open_weights": false,
    "tag": {
     "text": {
      "zh": "受限",
@@ -2894,6 +2909,7 @@
    "short": "GPT-6.1 Terra",
    "vendor": "openai",
    "status": "public",
+   "open_weights": false,
    "release": "2026-10-26",
    "price": {
     "in": 1,
@@ -2998,6 +3014,7 @@
    "short": "GPT-6.1 Sol",
    "vendor": "openai",
    "status": "public",
+   "open_weights": false,
    "release": "2026-09-29",
    "price": {
     "in": 2,
@@ -3122,6 +3139,7 @@
    "short": "GPT-6 Luna",
    "vendor": "openai",
    "status": "public",
+   "open_weights": false,
    "release": "2026-09-22",
    "price": {
     "in": 0.1,
@@ -3196,6 +3214,7 @@
    "short": "GPT-6 Sol",
    "vendor": "openai",
    "status": "public",
+   "open_weights": false,
    "release": "2026-09-22",
    "price": {
     "in": 2,
@@ -3254,6 +3273,7 @@
    "short": "Grok 4.7",
    "vendor": "xai",
    "status": "public",
+   "open_weights": false,
    "release": "2026-09-21",
    "price": {
     "in": 2,
@@ -3343,6 +3363,7 @@
    "short": "Grok 4.6",
    "vendor": "xai",
    "status": "public",
+   "open_weights": false,
    "release": "2026-08-12",
    "price": {
     "in": 2,
@@ -3464,6 +3485,7 @@
    "short": "Grok 4.5",
    "vendor": "xai",
    "status": "public",
+   "open_weights": false,
    "release": "2026-07-08",
    "release_star": true,
    "release_tip": {
@@ -3570,6 +3592,7 @@
    "short": "Wonder Full",
    "vendor": "meta",
    "status": "restricted",
+   "open_weights": false,
    "release": "2026-10-12",
    "tag": {
     "text": {
@@ -3703,6 +3726,7 @@
    "short": "Wonder",
    "vendor": "meta",
    "status": "public",
+   "open_weights": false,
    "release": "2026-10-12",
    "price": {
     "in": 4,
@@ -3802,6 +3826,7 @@
    "short": "Ember",
    "vendor": "meta",
    "status": "public",
+   "open_weights": false,
    "release": "2026-11-09",
    "price": {
     "in": 0.1,
@@ -3891,6 +3916,7 @@
    "short": "Spark Open",
    "vendor": "meta",
    "status": "public",
+   "open_weights": true,
    "release": "2026-10-15",
    "price": {
     "in": 1.25,
@@ -3990,6 +4016,7 @@
    "short": "V4.1-Flash-1017",
    "vendor": "deepseek",
    "status": "public",
+   "open_weights": true,
    "release": "2026-10-17",
    "price": {
     "in": 0.3,
@@ -4159,6 +4186,7 @@
    "short": "V4.1-Flash",
    "vendor": "deepseek",
    "status": "public",
+   "open_weights": true,
    "release": "2026-09-10",
    "tag": {
     "text": {
@@ -4310,6 +4338,7 @@
    "short": "V4-Pro-0813",
    "vendor": "deepseek",
    "status": "public",
+   "open_weights": true,
    "release": "2026-08-13",
    "price": {
     "in": 1.32,
@@ -4459,6 +4488,7 @@
    "short": "K3.1 Pro",
    "vendor": "moonshot",
    "status": "public",
+   "open_weights": true,
    "release": "2026-10-24",
    "release_tip": {
     "zh": "10 月 24 日 API 和 App 上线；权重约 11 月 4 日放出（Hugging Face 仓库 11 月 2 日建立）。",
@@ -4622,6 +4652,7 @@
    "short": "K3",
    "vendor": "moonshot",
    "status": "public",
+   "open_weights": true,
    "release": "2026-07-16",
    "release_tip": {
     "zh": "7 月 16 日 API 和 App 上线（博文署北京时间 7 月 17 日）；完整权重 7 月 27 日放出。",
@@ -4777,6 +4808,7 @@
    "short": "K2.7 Code",
    "vendor": "moonshot",
    "status": "public",
+   "open_weights": true,
    "release": "2026-06-12",
    "tag": {
     "text": {
@@ -4857,6 +4889,7 @@
    "short": "GLM-5.3",
    "vendor": "zhipu",
    "status": "public",
+   "open_weights": true,
    "release": "2026-08-18",
    "release_star": true,
    "release_tip": {
@@ -5041,6 +5074,7 @@
    "short": "GLM-5.3-Flash",
    "vendor": "zhipu",
    "status": "public",
+   "open_weights": true,
    "release": "2026-08-26",
    "price": {
     "in": 0.15,
@@ -5160,6 +5194,7 @@
    "short": "GLM-5.2",
    "vendor": "zhipu",
    "status": "public",
+   "open_weights": true,
    "release": "2026-06-16",
    "tag": {
     "text": {
@@ -5308,7 +5343,8 @@
    "tip": {
     "zh": "Gemini 4 Argon 宣布。先只给 Fairwind 项目里的网络安全防御方。",
     "en": "Gemini 4 Argon announced, initially only for cyber defenders in the Fairwind program."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "google",
@@ -5320,7 +5356,8 @@
    "tip": {
     "zh": "Gemini 4 Argon 全面开放。$2 / $10（12 月 1 日起 $4 / $20）。",
     "en": "Gemini 4 Argon generally available. $2 / $10 ($4 / $20 from Dec 1)."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "google",
@@ -5333,7 +5370,8 @@
    "tip": {
     "zh": "Gemini 4 Carbon 宣布。",
     "en": "Gemini 4 Carbon announced."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "google",
@@ -5345,7 +5383,8 @@
    "tip": {
     "zh": "Gemini 4 Carbon 对所有付费开发者开放。$2 / $10（12 月 1 日起 $4 / $20）。",
     "en": "Gemini 4 Carbon opens to all paying developers. $2 / $10 ($4 / $20 from Dec 1)."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "google",
@@ -5357,7 +5396,8 @@
    "tip": {
     "zh": "Gemini 4 Hydrogen。$1.50 / $7.50。",
     "en": "Gemini 4 Hydrogen. $1.50 / $7.50."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "google",
@@ -5369,7 +5409,8 @@
    "tip": {
     "zh": "Gemini 4 Neon。$3 / $15。",
     "en": "Gemini 4 Neon. $3 / $15."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "anthropic",
@@ -5381,7 +5422,8 @@
    "tip": {
     "zh": "Claude Fable 5（$10 / $50）和 Mythos 5（受限）。第一代公开的 Mythos 级模型。",
     "en": "Claude Fable 5 ($10 / $50) and Mythos 5 (restricted). The first public Mythos-class models."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "anthropic",
@@ -5393,7 +5435,8 @@
    "tip": {
     "zh": "Claude Fable 5.1（$10 / $50）和 Mythos 5.1（受限）。",
     "en": "Claude Fable 5.1 ($10 / $50) and Mythos 5.1 (restricted)."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "anthropic",
@@ -5405,7 +5448,8 @@
    "tip": {
     "zh": "Claude Opus 5.5。$4 / $20。",
     "en": "Claude Opus 5.5. $4 / $20."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "anthropic",
@@ -5417,7 +5461,8 @@
    "tip": {
     "zh": "Claude Sonnet 5.5。$2 / $10。",
     "en": "Claude Sonnet 5.5. $2 / $10."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "anthropic",
@@ -5429,7 +5474,8 @@
    "tip": {
     "zh": "Claude Haiku 5.5。$0.10 / $0.50。",
     "en": "Claude Haiku 5.5. $0.10 / $0.50."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "anthropic",
@@ -5441,7 +5487,8 @@
    "tip": {
     "zh": "Claude Fable 5.2（$8 / $40）和 Mythos 5.2（同一个底层模型，受限）。同日发布 264 页的 System Card。",
     "en": "Claude Fable 5.2 ($8 / $40) and Mythos 5.2 (same underlying model, restricted). A 264-page System Card was released the same day."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "internal",
@@ -5505,7 +5552,8 @@
    "tip": {
     "zh": "GPT-6 Astra。$10 / $50。在表 2-2 里作对照。",
     "en": "GPT-6 Astra. $10 / $50. Used for comparison in Table 2-2."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "openai",
@@ -5517,7 +5565,8 @@
    "tip": {
     "zh": "GPT-6 Sol（$2 / $10，一周后被 GPT-6.1 Sol 取代）和 GPT-6 Luna（$0.10 / $0.50）。",
     "en": "GPT-6 Sol ($2 / $10, superseded by GPT-6.1 Sol a week later) and GPT-6 Luna ($0.10 / $0.50)."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "openai",
@@ -5529,7 +5578,8 @@
    "tip": {
     "zh": "GPT-6.1 Sol。$2 / $10。",
     "en": "GPT-6.1 Sol. $2 / $10."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "openai",
@@ -5541,7 +5591,8 @@
    "tip": {
     "zh": "GPT-6.1 Terra。$1 / $5。",
     "en": "GPT-6.1 Terra. $1 / $5."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "openai",
@@ -5557,7 +5608,8 @@
    "tip": {
     "zh": "GPT-6 Rosalind。生命科学专用，只对通过审核的机构开放。",
     "en": "GPT-6 Rosalind. Life-sciences-specific, available only to vetted organizations."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "openai",
@@ -5573,7 +5625,8 @@
    "tip": {
     "zh": "GPT-6 Cyber。网络安全专用，只对 Daybreak 项目成员开放。",
     "en": "GPT-6 Cyber. Cybersecurity-specific, available only to Daybreak program members."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "openai",
@@ -5585,7 +5638,8 @@
    "tip": {
     "zh": "GPT-6.2 Astra（$8 / $40）和 GPT-6.2 Sol（$2 / $10）。",
     "en": "GPT-6.2 Astra ($8 / $40) and GPT-6.2 Sol ($2 / $10)."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "xai",
@@ -5597,7 +5651,8 @@
    "tip": {
     "zh": "Grok 4.5 上 API（正式博文 7 月 16 日）。$2 / $6。",
     "en": "Grok 4.5 on the API (launch post Jul 16). $2 / $6."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "xai",
@@ -5609,7 +5664,8 @@
    "tip": {
     "zh": "Grok 4.6。$2 / $6。",
     "en": "Grok 4.6. $2 / $6."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "xai",
@@ -5621,7 +5677,8 @@
    "tip": {
     "zh": "Grok 4.7，现在的旗舰。$2 / $6。",
     "en": "Grok 4.7, the current flagship. $2 / $6."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "meta",
@@ -5634,7 +5691,8 @@
     "zh": "Muse Spark 首发（早于横轴起点）。之后有 1.1 / 1.2 / 1.3，1.3 在 9 月 2 日。",
     "en": "Muse Spark first release (before the start of the axis), followed by 1.1, 1.2 and 1.3 (Sep 2)."
    },
-   "before": true
+   "before": true,
+   "open_weights": false
   },
   {
    "lane": "meta",
@@ -5646,7 +5704,8 @@
    "tip": {
     "zh": "Muse Glimmer：30B 开放权重小模型，Apache 2.0。AA 6.3，没列进表 3-1。",
     "en": "Muse Glimmer: a 30B open-weight small model under Apache 2.0. AA 6.3; not in Table 3-1."
-   }
+   },
+   "open_weights": true
   },
   {
    "lane": "meta",
@@ -5658,7 +5717,8 @@
    "tip": {
     "zh": "Muse Spark 1.3。$1.25 / $4.25，AA 36.6。没列进表 3-1（每家最多 4 个）。",
     "en": "Muse Spark 1.3. $1.25 / $4.25, AA 36.6. Not in Table 3-1 (four models per vendor at most)."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "meta",
@@ -5670,7 +5730,8 @@
    "tip": {
     "zh": "Muse Wonder（API $4 / $20）和 Muse Wonder Full（只在 Muse Code 订阅里）。",
     "en": "Muse Wonder (API, $4 / $20) and Muse Wonder Full (Muse Code subscription only)."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "meta",
@@ -5682,7 +5743,8 @@
    "tip": {
     "zh": "Muse Spark Open：816B 开放权重，Muse Model License。",
     "en": "Muse Spark Open: 816B open weights under the Muse Model License."
-   }
+   },
+   "open_weights": true
   },
   {
    "lane": "meta",
@@ -5694,7 +5756,8 @@
    "tip": {
     "zh": "Muse Ember。$0.10 / $0.50。",
     "en": "Muse Ember. $0.10 / $0.50."
-   }
+   },
+   "open_weights": false
   },
   {
    "lane": "deepseek",
@@ -5706,7 +5769,8 @@
    "tip": {
     "zh": "DeepSeek-V4-Flash-0731，现已下线，没列进表 3-1。",
     "en": "DeepSeek-V4-Flash-0731, since retired; not in Table 3-1."
-   }
+   },
+   "open_weights": true
   },
   {
    "lane": "deepseek",
@@ -5718,7 +5782,8 @@
    "tip": {
     "zh": "DeepSeek-V4-Pro-0813，V4-Pro 正式版，MIT。$1.32 / $3.96。",
     "en": "DeepSeek-V4-Pro-0813, the GA release of V4-Pro, MIT. $1.32 / $3.96."
-   }
+   },
+   "open_weights": true
   },
   {
    "lane": "deepseek",
@@ -5730,7 +5795,8 @@
    "tip": {
     "zh": "DeepSeek-V4.1-Flash，权重和 API 同日，MIT。$0.30 / $1.20。",
     "en": "DeepSeek-V4.1-Flash, weights and API the same day, MIT. $0.30 / $1.20."
-   }
+   },
+   "open_weights": true
   },
   {
    "lane": "deepseek",
@@ -5742,7 +5808,8 @@
    "tip": {
     "zh": "DeepSeek-V4.1-Flash-1017，现役，API 名 deepseek-flash。$0.30 / $1.20。",
     "en": "DeepSeek-V4.1-Flash-1017, current; API name deepseek-flash. $0.30 / $1.20."
-   }
+   },
+   "open_weights": true
   },
   {
    "lane": "moonshot",
@@ -5754,7 +5821,8 @@
    "tip": {
     "zh": "Kimi K2.7 Code，权重和 API 同日，修改版 MIT。$0.95 / $4.00。",
     "en": "Kimi K2.7 Code, weights and API the same day, modified MIT. $0.95 / $4.00."
-   }
+   },
+   "open_weights": true
   },
   {
    "lane": "moonshot",
@@ -5766,7 +5834,8 @@
    "tip": {
     "zh": "Kimi K3 上 API 和 App。$3 / $15。",
     "en": "Kimi K3 on the API and apps. $3 / $15."
-   }
+   },
+   "open_weights": true
   },
   {
    "lane": "moonshot",
@@ -5778,7 +5847,8 @@
    "tip": {
     "zh": "Kimi K3 完整权重放出，Kimi K3 License。",
     "en": "Kimi K3 full weights released under the Kimi K3 License."
-   }
+   },
+   "open_weights": true
   },
   {
    "lane": "moonshot",
@@ -5790,7 +5860,8 @@
    "tip": {
     "zh": "Kimi K3.1 Pro 上 API 和 App。$2 / $10。",
     "en": "Kimi K3.1 Pro on the API and apps. $2 / $10."
-   }
+   },
+   "open_weights": true
   },
   {
    "lane": "moonshot",
@@ -5802,7 +5873,8 @@
    "tip": {
     "zh": "约 11 月 4 日：Kimi K3.1 Pro 权重放出（Hugging Face 仓库 11 月 2 日建立）。",
     "en": "Around Nov 4: Kimi K3.1 Pro weights released (Hugging Face repo created Nov 2)."
-   }
+   },
+   "open_weights": true
   },
   {
    "lane": "zhipu",
@@ -5814,7 +5886,8 @@
    "tip": {
     "zh": "GLM-5.2，权重和 API 同日，MIT。$1.40 / $4.40。",
     "en": "GLM-5.2, weights and API the same day, MIT. $1.40 / $4.40."
-   }
+   },
+   "open_weights": true
   },
   {
    "lane": "zhipu",
@@ -5827,7 +5900,8 @@
     "zh": "GLM-5.3 宣布，先给 Coding Plan 用户。",
     "en": "GLM-5.3 announced, Coding Plan users first."
    },
-   "hollow": true
+   "hollow": true,
+   "open_weights": true
   },
   {
    "lane": "zhipu",
@@ -5839,7 +5913,8 @@
    "tip": {
     "zh": "GLM-5.3 上 API；权重约两周后放出，改用 GLM-5.3 License。$1.40 / $4.40。",
     "en": "GLM-5.3 on the API; weights about two weeks later under the new GLM-5.3 License. $1.40 / $4.40."
-   }
+   },
+   "open_weights": true
   },
   {
    "lane": "zhipu",
@@ -5851,7 +5926,8 @@
    "tip": {
     "zh": "GLM-5.3-Flash，权重和 API 同时，MIT。$0.15 / $0.50。",
     "en": "GLM-5.3-Flash, weights and API together, MIT. $0.15 / $0.50."
-   }
+   },
+   "open_weights": true
   }
  ],
  "t22": {
@@ -5880,7 +5956,8 @@
     "tip": {
      "zh": "Claude Mythos 5.2，2026-11-09。测试时关掉了对应防护。",
      "en": "Claude Mythos 5.2, 2026-11-09. Tested with the relevant safeguards off."
-    }
+    },
+    "open_weights": false
    },
    {
     "id": "fable-5-2",
@@ -5892,7 +5969,8 @@
     "tip": {
      "zh": "Claude Fable 5.2，2026-11-09。同一个底层模型，带全套防护。",
      "en": "Claude Fable 5.2, 2026-11-09. Same underlying model, full safeguards."
-    }
+    },
+    "open_weights": false
    },
    {
     "id": "mythos-5-1",
@@ -5904,7 +5982,8 @@
     "tip": {
      "zh": "上一代 Mythos，2026-09-01。",
      "en": "Previous-generation Mythos, 2026-09-01."
-    }
+    },
+    "open_weights": false
    },
    {
     "id": "fable-5-1",
@@ -5916,7 +5995,8 @@
     "tip": {
      "zh": "Claude Fable 5.1，2026-09-01。带全套防护。",
      "en": "Claude Fable 5.1, 2026-09-01. Full safeguards."
-    }
+    },
+    "open_weights": false
    },
    {
     "id": "fable-5",
@@ -5928,7 +6008,8 @@
     "tip": {
      "zh": "Claude Fable 5，2026-06-09。带全套防护。",
      "en": "Claude Fable 5, 2026-06-09. Full safeguards."
-    }
+    },
+    "open_weights": false
    },
    {
     "id": "opus-5-5",
@@ -5940,7 +6021,8 @@
     "tip": {
      "zh": "Claude Opus 5.5，2026-09-22。网络安全和生命科学两组是关掉防护后的分数。",
      "en": "Claude Opus 5.5, 2026-09-22. The cyber and life-science groups are scores with safeguards off."
-    }
+    },
+    "open_weights": false
    },
    {
     "id": "sonnet-5-5",
@@ -5952,7 +6034,8 @@
     "tip": {
      "zh": "Claude Sonnet 5.5，2026-09-28。",
      "en": "Claude Sonnet 5.5, 2026-09-28."
-    }
+    },
+    "open_weights": false
    },
    {
     "id": "haiku-5-5",
@@ -5964,7 +6047,8 @@
     "tip": {
      "zh": "Claude Haiku 5.5，2026-10-07。",
      "en": "Claude Haiku 5.5, 2026-10-07."
-    }
+    },
+    "open_weights": false
    },
    {
     "id": "model-4",
@@ -6012,7 +6096,8 @@
     "tip": {
      "zh": "GPT-6.2 Astra，2026-11-17。",
      "en": "GPT-6.2 Astra, 2026-11-17."
-    }
+    },
+    "open_weights": false
    },
    {
     "id": "gpt-6-2-sol",
@@ -6024,7 +6109,8 @@
     "tip": {
      "zh": "GPT-6.2 Sol，2026-11-17。",
      "en": "GPT-6.2 Sol, 2026-11-17."
-    }
+    },
+    "open_weights": false
    },
    {
     "id": "gpt-6-cyber",
@@ -6036,7 +6122,8 @@
     "tip": {
      "zh": "GPT-6 Cyber，2026-11-05。OpenAI 的网络安全专用模型，受限。",
      "en": "GPT-6 Cyber, 2026-11-05. OpenAI's cybersecurity model, restricted."
-    }
+    },
+    "open_weights": false
    },
    {
     "id": "gpt-6-astra",
@@ -6048,7 +6135,8 @@
     "tip": {
      "zh": "GPT-6 Astra，2026-09-03。",
      "en": "GPT-6 Astra, 2026-09-03."
-    }
+    },
+    "open_weights": false
    },
    {
     "id": "carbon",
@@ -6060,7 +6148,8 @@
     "tip": {
      "zh": "Gemini 4 Carbon，2026-11-10。网络安全分数是 Fairwind 版本的。",
      "en": "Gemini 4 Carbon, 2026-11-10. Cyber scores are for the Fairwind version."
-    }
+    },
+    "open_weights": false
    },
    {
     "id": "argon",
@@ -6072,7 +6161,8 @@
     "tip": {
      "zh": "Gemini 4 Argon，2026-10-13。",
      "en": "Gemini 4 Argon, 2026-10-13."
-    }
+    },
+    "open_weights": false
    }
   ],
   "sections": [
@@ -7429,12 +7519,12 @@
     "en": "{name}: output {pout} per million tokens (input {pin}), AA Index {aa}. {ow}"
    },
    "ow_yes": {
-    "zh": "开放权重（{lic}）。",
-    "en": "Open weights ({lic})."
+    "zh": "开源：开放权重（{lic}）。",
+    "en": "Open: weights released ({lic})."
    },
    "ow_no": {
-    "zh": "不开放权重。",
-    "en": "Closed weights."
+    "zh": "闭源：不开放权重。",
+    "en": "Closed: weights not released."
    }
   },
   "f45": {
@@ -7617,6 +7707,30 @@
   "snap3_short_tip": {
    "zh": "{date}：第 3 章的快照日期。",
    "en": "{date}: snapshot date for chapter 3."
+  },
+  "ow_open": {
+   "zh": "开源",
+   "en": "Open"
+  },
+  "ow_closed": {
+   "zh": "闭源",
+   "en": "Closed"
+  },
+  "ow_open_tip": {
+   "zh": "开源：开放权重，可以下载自己部署（许可证见表 3-1）。",
+   "en": "Open: weights released, can be downloaded and self-hosted (license in Table 3-1)."
+  },
+  "ow_closed_tip": {
+   "zh": "闭源：不开放权重，只能通过 API 或厂商自家产品用。",
+   "en": "Closed: weights not released; available only through the API or the vendor's own products."
+  },
+  "ow_tip_open": {
+   "zh": " 开源（开放权重）。",
+   "en": " Open weights."
+  },
+  "ow_tip_closed": {
+   "zh": " 闭源（不开放权重）。",
+   "en": " Closed weights."
   }
  },
  "t31": {

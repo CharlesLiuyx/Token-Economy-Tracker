@@ -188,6 +188,21 @@ def est_em(text, fs=1.0):
     return w * fs + 0.9   # 左右内边距约 0.45em × 2
 def est_bi(x, fs=1.0): b = bi(x); return max(est_em(b.zh, fs), est_em(b.en, fs))
 
+# ------------------------------------------------------------------ 开源 / 闭源标签（models.json 的 open_weights；内部代号模型不加）
+def ow_of(x):
+    if x.get('status') == 'internal': return None
+    if 'open_weights' not in x:
+        warn('「%s」缺 open_weights 字段，按闭源处理（新模型必须填）' % bi(x.get('name', x.get('label', '?'))).zh); return False
+    return bool(x['open_weights'])
+def ow_tag(m):
+    o = ow_of(m)
+    if o is None: return ''
+    return '<span class="tag ow-%s"%s>%s</span>' % ('o' if o else 'c', att('data-tip', ui('ow_open_tip' if o else 'ow_closed_tip')), TX(ui('ow_open' if o else 'ow_closed')))
+def ow_suffix(x):
+    """提示文字末尾补一句开源 / 闭源（时间轴节点、表 2-2 列头这类放不下标签的地方）。字段缺失时不补。"""
+    if 'open_weights' not in x: return ''
+    return ui('ow_tip_open' if x['open_weights'] else 'ow_tip_closed')
+
 # ------------------------------------------------------------------ 表 2-1
 def t21():
     L_ = D['layout']['t21']
@@ -220,8 +235,8 @@ def t21():
         h.append('<tr class="grp"><td colspan="%d"><span class="gl"><span class="sw k-%s"></span>%s</span></td></tr>' % (ncol, vk, TX(v['name'])))
         for m in ms:
             tag = m.get('tag')
-            nm = TX(m['name']) + ('<span class="tag"%s>%s</span>' % (att('data-tip', tag['tip']), TX(tag['text'])) if tag else '')
-            if max(est_em(bi(m['name']).get(l)) + (est_em(bi(tag['text']).get(l), 0.78) if tag else 0) for l in ('zh', 'en'))  + 0.4 > L_['model']: warn(   # 小标字号 .78em
+            nm = TX(m['name']) + ('<span class="tag"%s>%s</span>' % (att('data-tip', tag['tip']), TX(tag['text'])) if tag else '') + ow_tag(m)
+            if max(est_em(bi(m['name']).get(l)) + (est_em(bi(tag['text']).get(l), 0.78) if tag else 0) + (est_em(bi(ui('ow_closed')).get(l), 0.78) if ow_of(m) is not None else 0) for l in ('zh', 'en'))  + 0.4 > L_['model']: warn(   # 小标字号 .78em
                 '表 2-1 模型名「%s」可能放不下模型列' % bi(m['name']).zh)
             h.append('<tr class="v-%s"><td class="mn c0 noterm"><span class="sw k-%s"></span>%s</td>' % (vk, vk, nm))
             if 'release' in m:
@@ -296,7 +311,7 @@ def t22():
         h.append('<th colspan="%d" class="gh gs"><span class="sw k-%s"></span>%s</th>' % (len(cs), vk, TX(VK[vk]['name'])))
     h.append('</tr><tr class="h2">')
     for c in cols:
-        h.append('<th class="num wrapok%s"%s>%s</th>' % (' gs' if c['id'] in first else '', att('data-tip', c['tip']), TX(c['label'])))
+        h.append('<th class="num wrapok%s"%s>%s</th>' % (' gs' if c['id'] in first else '', att('data-tip', bi(c['tip']) + ow_suffix(c)), TX(c['label'])))
     h.append('</tr></thead><tbody>')
     for s in T['sections']:
         h.append('<tr class="grp"><td colspan="%d"><span class="gl">%s</span></td></tr>' % (len(cols) + 1, TX(s['label'])))
@@ -353,7 +368,7 @@ def lanes_html(chapter, snap, fig):
         es = sorted(es, key=lambda e: day(e['date']))
         vk = ln['vendor']; v = VK[vk]
         sw = ('<span class="sw ho-%s"></span>' if ln.get('hollow_swatch') else '<span class="sw k-%s"></span>') % vk
-        small = ''.join('<small class="pre noterm"%s>← %d/%d %s</small>' % (att('data-tip', L('%s：%s', '%s: %s') % (e['date'], e['tip'])), day(e['date']).month, day(e['date']).day, TX(e['label']))
+        small = ''.join('<small class="pre noterm"%s>← %d/%d %s</small>' % (att('data-tip', L('%s：%s', '%s: %s') % (e['date'], e['tip']) + ow_suffix(e)), day(e['date']).month, day(e['date']).day, TX(e['label']))
                         for e in sorted(pre, key=lambda e: e['date']))
         out.append('<div class="hl-lab li" data-key="%s"%s>%s%s%s</div>' % (vk, att('data-tip', ui('lane_tip', name=v['name'])), sw, TX(ln.get('label', v['name'])), small))
         out.append('<div class="hl-track" data-lane="%s">%s' % (ln['lane'], lines))
@@ -365,7 +380,7 @@ def lanes_html(chapter, snap, fig):
             else:
                 d = day(e['date'])
                 out.append('<span class="pin%s" data-key="%s" style="left:%s%%"%s><i class="pd"></i><span class="pl noterm"><small>%d/%d</small> %s%s</span></span>' % (
-                    ' mu' if e.get('hollow') else '', vk, f3(ps(e['date'])), att('data-tip', L('%s：%s', '%s: %s') % (e['date'], e['tip'])), d.month, d.day, TX(e['label']),
+                    ' mu' if e.get('hollow') else '', vk, f3(ps(e['date'])), att('data-tip', L('%s：%s', '%s: %s') % (e['date'], e['tip']) + ow_suffix(e)), d.month, d.day, TX(e['label']),
                     ('<span class="tag">%s</span>' % TX(e['tag'])) if e.get('tag') else ''))
         out.append('</div>')
     return ''.join(out)
@@ -438,8 +453,8 @@ def t31():
             ncol, vk, TX(v['name']), att('data-tip', g['tip']), TX(g['label'])))
         for m in ms:
             tag = m.get('tag')
-            nm = TX(m['name']) + ('<span class="tag"%s>%s</span>' % (att('data-tip', tag['tip']), TX(tag['text'])) if tag else '')
-            if max(est_em(bi(m['name']).get(l)) + (est_em(bi(tag['text']).get(l), 0.78) if tag else 0) for l in ('zh', 'en')) + 0.4 > L_['model']:
+            nm = TX(m['name']) + ('<span class="tag"%s>%s</span>' % (att('data-tip', tag['tip']), TX(tag['text'])) if tag else '') + ow_tag(m)
+            if max(est_em(bi(m['name']).get(l)) + (est_em(bi(tag['text']).get(l), 0.78) if tag else 0) + (est_em(bi(ui('ow_closed')).get(l), 0.78) if ow_of(m) is not None else 0) for l in ('zh', 'en')) + 0.4 > L_['model']:
                 warn('表 3-1 模型名「%s」可能放不下模型列' % bi(m['name']).zh)
             h.append('<tr class="v-%s"><td class="mn c0 noterm"%s><span class="sw k-%s"></span>%s</td>' % (vk, att('data-tip', m['row_tip']) if m.get('row_tip') else '', vk, nm))
             for k in order:
@@ -561,8 +576,8 @@ def rank_fig(fid):
             tip = tip + ui('api_price', pin=pi, pout=po)
         else: x = cost_of(m, k, fig)
         mark = '<span class="mark dot" style="left:%s%%"></span>' % pct if F['mark'] == 'dot' else '<span class="mark bar" style="width:%s%%"></span>' % pct
-        h.append('<div class="row c4" data-key="%s"%s><span class="nm noterm"><i class="sw k-%s"></i>%s</span><span class="track d%d">%s</span><span class="v">%s</span><span class="x">%s</span></div>' % (
-            m['vendor'], att('data-tip', tip), m['vendor'], TX(fname(m)), a['n'], mark, TX(c['d']), x))
+        h.append('<div class="row c4" data-key="%s"%s><span class="nm noterm"><i class="sw k-%s"></i><span>%s%s</span></span><span class="track d%d">%s</span><span class="v">%s</span><span class="x">%s</span></div>' % (
+            m['vendor'], att('data-tip', tip + ow_suffix(m)), m['vendor'], TX(fname(m)), ow_tag(m), a['n'], mark, TX(c['d']), x))
     h.append('<div class="row ax c4">%s</div></figure>' % ticks(a, 2))
     return ''.join(h)
 def f45():
@@ -576,8 +591,8 @@ def f45():
         for m in rows:
             c = m['scores'][k]
             tip = L('%s：%s %s%s。%s', '%s: %s %s%s. %s') % (m['name'], p['title'], dplain(c['d']), BK[k]['unit'], c['note'])   # 用面板标题，不用 bench.name
-            h.append('<div class="row c3" data-key="%s"%s><span class="nm noterm"><i class="sw k-%s"></i>%s</span><span class="track d%d"><span class="mark bar" style="width:%s%%"></span></span><span class="v">%s</span></div>' % (
-                m['vendor'], att('data-tip', tip), m['vendor'], TX(fname(m)), a['n'], t2((c['v'] - a['min']) / (a['max'] - a['min']) * 100), TX(c['d'])))
+            h.append('<div class="row c3" data-key="%s"%s><span class="nm noterm"><i class="sw k-%s"></i><span>%s%s</span></span><span class="track d%d"><span class="mark bar" style="width:%s%%"></span></span><span class="v">%s</span></div>' % (
+                m['vendor'], att('data-tip', tip + ow_suffix(m)), m['vendor'], TX(fname(m)), ow_tag(m), a['n'], t2((c['v'] - a['min']) / (a['max'] - a['min']) * 100), TX(c['d'])))
         h.append('<div class="row ax c3">%s</div></div>' % ticks(a, 1))
     h.append('</div></figure>')
     return ''.join(h)
@@ -648,6 +663,52 @@ def meta_line():
     if inn: s = s + (ui('internal_one', n=len(inn), vendor=VK[ivs[0]]['name']) if len(ivs) == 1 else ui('internal_many', n=len(inn)))
     return '<p class="meta">%s</p>' % TX(s)
 def appendix(): return hints(D['meta']['appendix_hints'], {'snapshot': SNAP})
+# ------------------------------------------------------------------ 格内色条的深浅上限（保证压在色条上的数字可读）
+# 表 2-1 / 2-2 / 3-1 的分数格：色条＝厂商色以透明度 --al 叠在页面底色上（td.cb 的 --bc），数字照常用 --ink。
+# 对每家、每个主题二分求「最深允许的透明度」A：底色混入色条、再叠上行悬停的 --hover 后，与 --ink 的对比度仍 ≥ 6.0（检查门槛 4.5；
+# 4.5 刚好及格的深蓝 / 海军蓝底配黑字读起来仍吃力，所以构建时留到 6.0）。
+# 名次分档在这个上限内按原比例缩放：r1＝min(74%, A)，r2、r3、普通格按 48 / 30 / 14 ÷ 74 同比缩小；A ≥ 74% 时保持原值。
+THEME = {'light': {'bg': (255, 255, 255), 'ink': (0x14, 0x14, 0x13), 'hover': ((20, 20, 19), .05)},
+         'dark': {'bg': (0x1a, 0x1a, 0x19), 'ink': (0xf0, 0xef, 0xec), 'hover': ((240, 239, 236), .07)}}
+AL_DEFAULT = {'r1': 74, 'r2': 48, 'r3': 30, 'n': 14}
+def _rgb(h): h = h.lstrip('#'); return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
+def _lum(c):
+    def ch(x):
+        x /= 255; return x / 12.92 if x <= 0.04045 else ((x + 0.055) / 1.055) ** 2.4
+    r, g, b = (ch(x) for x in c); return 0.2126 * r + 0.7152 * g + 0.0722 * b
+def _contrast(a, b):
+    la, lb = _lum(a), _lum(b); return (max(la, lb) + 0.05) / (min(la, lb) + 0.05)
+def _mix(fg, bg, a): return tuple(a * f + (1 - a) * b for f, b in zip(fg, bg))
+def bar_alpha_max(hexc, mode, target=6.0):
+    T = THEME[mode]; vc = _rgb(hexc)
+    def ok(a):
+        c = _mix(vc, T['bg'], a); h = _mix(T['hover'][0], c, T['hover'][1])
+        return min(_contrast(T['ink'], c), _contrast(T['ink'], h)) >= target
+    if ok(1.0): return 1.0
+    lo, hi = 0.0, 1.0
+    for _ in range(30):
+        mid = (lo + hi) / 2
+        if ok(mid): lo = mid
+        else: hi = mid
+    return lo
+def bar_tiers(hexc, mode):
+    A = math.floor(bar_alpha_max(hexc, mode) * 1000) / 10          # 百分比，向下取 0.1
+    if A >= AL_DEFAULT['r1']: return dict(AL_DEFAULT), A
+    return {k: math.floor(v / AL_DEFAULT['r1'] * A * 10) / 10 for k, v in AL_DEFAULT.items()}, A
+def bar_alpha_css():
+    out = ['/* 格内色条深浅上限：保证色条上的数字与文字色对比度 ≥ 4.5（build_tables.py 的 bar_alpha_max） */',
+           '/* 色条格里的角标与小字（†、*、AA、→$4）原来是 --ink3，压在色条上不够 4.5，改用正文色，靠字号区分主次 */',
+           'td.cb small,td.cb sup{color:var(--ink)}']
+    for mode in ('light', 'dark'):
+        pre = '' if mode == 'light' else ':root[data-theme=dark] '
+        for v in VEN:
+            t, A = bar_tiers(v[mode], mode)
+            if t == AL_DEFAULT: continue
+            k, c22 = v['key'], v['t22_class']
+            for tier, cls in (('n', ''), ('r1', '.r1'), ('r2', '.r2'), ('r3', '.r3')):
+                out.append('%str.v-%s>td.cb%s:not(.nb),%std.%s.cb%s{--al:%s%%}' % (pre, k, cls, pre, c22, cls, ('%g' % t[tier])))
+    return '\n'.join(out)
+
 def vendor_css():
     used = {m['vendor'] for m in ALLM} | {l['vendor'] for l in VJ['timeline_lanes'] if any(e['lane'] == l['lane'] for e in D['timeline_events'])}
     new = [v for v in VEN if v['key'] in used and not v.get('builtin_css')]
@@ -656,7 +717,7 @@ def vendor_css():
         F = D['figures'][fid]; k = F['bench']; dn.add(axis_of(F, [m['scores'][k]['v'] for m in ranked(k)], '图 %s-%s' % (fid[1], fid[2]))['n'])
     dn.add(axis_of(D['figures']['f45'], [], 'f45')['n'])
     dn -= {4, 5, 7}                                    # 原文 CSS 已有 .track.d4 / d5 / d7
-    if not new and not dn: return ''
+
     c = ['<style id="data-css">', '/* build_tables.py 生成：全部厂商的品牌色（vendors.json；前沿三家与报告原 CSS 一致）、新厂商的配色规则与新刻度数 */']
     allv = [v for v in VEN if v['key'] in used]
     c.append(':root{%s}' % ''.join('%s:%s;' % (v['css_var'], v['light']) for v in allv))
@@ -667,15 +728,19 @@ def vendor_css():
             k, cv, k, cv, v['t22_class'], cv, k, cv, k, cv, k, cv))
         c.append('figure[data-hl=%s] [data-key]:not([data-key~=%s]){opacity:.3}\nfigure[data-hl=%s] [data-key~=%s] .mark{outline:1px solid var(--ink);outline-offset:1px}\nfigure[data-hl=%s] .li[data-key~=%s]{background:var(--hover);color:var(--ink)}' % (k, k, k, k, k, k))
     for n in sorted(dn): c.append('.track.d%d{background-size:calc(100%% / %d) 100%%}' % (n, n))
+    c.append(bar_alpha_css())
     c.append('</style>')
     return '\n'.join(c)
 
 # ------------------------------------------------------------------ 第 3、4 章的样式与页面脚本（表 3-1、图 3-2、分组图例、图 4-4 散点）
-C34_CSS = """tr.grp .gk{font-weight:400;color:var(--ink3);font-size:.9em;margin-left:8px;cursor:help}
+C34_CSS = """.tag.ow-o{border-color:var(--ink3);color:var(--ink2)}
+.tag.ow-c{border-color:transparent;background:var(--soft);color:var(--ink3)}
+tr.grp .gk{font-weight:400;color:var(--ink3);font-size:.9em;margin-left:8px;cursor:help}
 .hl-lab small.pre{font-weight:400;color:var(--ink3);white-space:normal;line-height:1.25;cursor:help}
 #s4 .row{height:auto;min-height:26px;padding-top:2px;padding-bottom:2px}
 #s4 .row.hd{min-height:22px}#s4 .row.ax{min-height:18px;padding-top:0;padding-bottom:0}
 #s4 .row .nm{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.2;display:flex;align-items:baseline}
+#s4 .row .nm .tag{font-size:11px;line-height:13px;padding:0 3px;margin-left:5px;vertical-align:1px}
 #s4 .row .nm .sw{flex:none;width:9px;height:9px;margin-right:5px;vertical-align:0}
 #s4 .row.c4{grid-template-columns:190px minmax(120px,1fr) 46px 124px}
 #s4 .row.c3{grid-template-columns:minmax(0,170px) minmax(90px,1fr) 50px;min-height:25px}

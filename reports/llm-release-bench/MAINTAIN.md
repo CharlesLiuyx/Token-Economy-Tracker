@@ -69,6 +69,7 @@ python3 qa/ch2_equiv.py /tmp/prev.html "$R"                     # 7 没打算动
 python3 qa/i18n_check.py --browser --chrome /usr/bin/google-chrome        # 英文模式全页无汉字、提示框与术语逐个核对
 python3 qa/browser_check.py "$R" /tmp/qa-shots /usr/bin/google-chrome     # 3 宽 × 深浅 × 中英，断言 + 截图（含表 3-1 吸顶克隆、图 3-2 节点、图 4-4 散点标签）
 python3 qa/ch2_equiv.py /tmp/prev.html "$R" --browser --chrome /usr/bin/google-chrome   # 第 2 章运行后 DOM 与可见文本（中英 × 1440 / 800）
+python3 qa/contrast_check.py "$R" /usr/bin/google-chrome                 # 色条上的文字对比度：深浅 × 中英，所有压在色条上的文字 ≥ 4.5:1
 python3 qa/rehearsal.py                                                  # 加 Bench / 加大厂模型 / 加新厂商演练（副本，结果 qa/rehearsal/result.json）
 python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang zh   # 算力图：布局、磁吸、吸顶、数值
 python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
@@ -98,6 +99,7 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 | `benches[]` | 每个 Bench 一列，顺序＝表 2-1 的列序；`group` 不在 `t21.groups` 里的（现在是 `ext`）只出现在表 3-1。`key`、`label`、`name`、`unit`（`%`、` 个` / ` hijacks`、空）、`group`、`direction`（`higher` / `lower`）、`bar`（`auto` / `zero` / `minmax`，见 build_tables.py 开头）、`desc`（表头提示；脚本会自动接上「有分数的模型：N 个。」） |
 | `models[]` | 每个模型一行。`id`、`name`、`short`、`vendor`、`status`（`public` / `restricted` / `internal`）、`tag`（`text`、`tip`）、`release`、`release_star` + `release_tip`、`trained`（`label`、`tip`、`end`）、`price`（`in`、`out`、可选 `in_next` / `out_next`、`tip`）、`scores`、`blank` |
 | `models[].scores.<bench>` | `d` 显示文本（照来源写；可带角标 `<sup>AA</sup>`）、`v` 数值、`note`（格子提示里「名次」之后的全部文字：出处＋测试条件＋可信度〔高/中/低〕）、`src`、`cf`（可信度 高 / 中 / 低） |
+| `models[].open_weights` | **新模型必须填**（内部代号模型不填）：true＝开源（开放权重），false＝闭源。决定模型名后的「开源 / 闭源」小标签（表 2-1、3-1、图 4-1…4-5）、图 4-4 的空心 / 实心说明和悬停文字。缺了构建会提示并按闭源处理，`qa/rehearsal.py` 断言演练模型都填了。时间轴节点（`timeline_events[].open_weights`）和表 2-2 列（`t22.columns[].open_weights`）放不下标签，只在悬停末尾补一句 |
 | `models[]` 第 3 章另有 | `license`（`{d, tip}`，d＝MIT / Modified MIT / 自定义 / 否，tip 写许可证要点）、`params`（`{d, tip}`，d＝「总 / 激活」，tip 写出处与可信度）、`row_tip`（模型名悬停：一句简介＋没填进表的分数和原因）、`blank.price_in/price_out`（没有 API 价时的说明） |
 | `models[].blank.<bench>` | 没有分数但要写说明的格子：`d`（如「同上」/ ditto、「—」）、`tip` |
 | `timeline_events[]` | 图 2-1 模型泳道的节点：`lane`、`date`、可选 `end`、`hollow`、`label`、`tag`、`tip`（脚本自动在前面加「YYYY-MM-DD：」/「YYYY-MM-DD: 」，区间节点不加） |
@@ -258,6 +260,8 @@ FrontierCode 2.0 列里带 `<sup>AA</sup>` 角标的是 Artificial Analysis 自�
 - 在候选里做组合搜索，让 8 家两两最差的一对尽量大（正常视力 ΔE 与 CVD ΔE，深浅两种主题都算）；平手时公司主色 > 产品主色 > 辅色。深色底上看不清的颜色，取同一家官方色里更亮的；没有更亮的，才在同色相上提亮，记为派生。
 - 官方色实在拉不开（只有黑白或和别家同一种蓝）的厂商，用派生色（中性灰等），最多 1–2 家；现在是 xAI（浅灰 / 中灰）和智谱（官方近黑 #141618 提亮的石墨灰）。派生灰要和 OpenAI 黑白、Nvidia 算力灰拉开（正常视力 ΔE ≥10）。
 - 仍然撞色的对（现在是 Google↔Meta、Google↔DeepSeek，浅色还有 xAI↔DeepSeek）不再靠颜色区分，靠统一的厂商标识：「品牌色小方块 + 名字」——第 4 章每行模型名前（散点图除外：点本身就是品牌色方块，标签只留文字）、表 2-1 / 3-1 的行首、图例（按前沿 / 大厂 / 开源分组）都有。只用色块和文字，不画、不下载、不内嵌任何 Logo 或字标。
+
+**色条上的文字必须可读**：表 2-1 / 2-2 / 3-1 的格内色条是厂商色按透明度叠在底色上，数字照常用正文色。`build_tables.py` 的 `bar_alpha_max` 对每家、每个主题二分求出色条最深允许的透明度（叠上行悬停后与正文色对比度仍 ≥ 6.0），名次分档（r1 / r2 / r3 / 普通＝74 / 48 / 30 / 14%）在这个上限内同比缩小，写进 `<style id="data-css">`。色条格里的角标和小字（†、*、AA、→$4）用正文色。不要用白字硬救（色条只盖住格子一部分）。`qa/contrast_check.py` 逐格核对 ≥ 4.5:1，换颜色、加厂商后必跑。
 
 **加新厂商的步骤**
 1. `vendors.json → vendors[]` 加一条：`group` 选 `frontier` / `bigtech` / `open`（决定进第 2 章还是第 3 章）；`css_var` 取一个没用过的（如 `--tv`）；`light` / `dark` 按上面的规则从官方色里选；`color_src`（浅 / 深各一句中英出处说明，派生要写原因）；`derived`（是否派生）；`legend_tip`；`t22_class`；`builtin_css: false`。位置决定它在表格分组和图例里的顺序。全部厂商的颜色都由构建写进 `<style id="data-css">`；前沿三家还写在报告原 CSS 开头的 `:root` 里，构建时会核对两处一致。

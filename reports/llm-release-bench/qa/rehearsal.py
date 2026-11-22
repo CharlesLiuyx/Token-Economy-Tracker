@@ -25,7 +25,7 @@ byname = {m['name']: m for m in D['models']}
 byname['Claude Fable 5.2']['scores']['testb'] = {'d': '80.0', 'v': 80.0, 'note': L('演练数据。Anthropic 发布表。'), 'src': 'release_table', 'cf': '低'}
 byname['GPT-6.2 Astra']['scores']['testb'] = {'d': '75.5', 'v': 75.5, 'note': L('演练数据。OpenAI 发布表。'), 'src': 'release_table', 'cf': '低'}
 # 2) 大厂组的新模型
-D['models'].append({'id': 'test-model', 'name': 'TEST Model', 'short': 'TEST Model', 'vendor': 'xai', 'status': 'public',
+D['models'].append({'id': 'test-model', 'name': 'TEST Model', 'short': 'TEST Model', 'vendor': 'xai', 'status': 'public', 'open_weights': False,
     'release': '2026-11-21', 'price': {'in': 5, 'out': 25, 'tip': L('演练数据：API 标准价。')},
     'license': {'d': L('否'), 'tip': L('演练数据。')}, 'params': {'d': '1T / 50B', 'tip': L('演练数据。')}, 'row_tip': L('演练用虚构模型。'),
     'scores': {
@@ -39,12 +39,14 @@ D['timeline_events'].append({'lane': 'xai', 'date': '2026-11-21', 'label': L('TE
 V['vendors'].append({'key': 'testv', 'name': 'TestLab', 'product': 'Test', 'group': 'open', 'css_var': '--tv', 'light': '#6b8f00', 'dark': '#8fb31a',
                      'legend_tip': L('TestLab 演练用虚构厂商。悬停只看这一家。'), 't22_class': 'vt', 'builtin_css': False})
 V['timeline_lanes'].append({'lane': 'testv', 'vendor': 'testv'})
-D['models'].append({'id': 'test-open', 'name': 'TEST Open', 'short': 'TEST Open', 'vendor': 'testv', 'status': 'public',
+D['models'].append({'id': 'test-open', 'name': 'TEST Open', 'short': 'TEST Open', 'vendor': 'testv', 'status': 'public', 'open_weights': True,
     'release': '2026-11-01', 'price': {'in': 0.2, 'out': 0.8, 'tip': L('演练数据。')},
     'license': {'d': L('MIT'), 'tip': L('演练数据。')}, 'params': {'d': '100B / 10B', 'tip': L('演练数据。')},
     'scores': {'aa': {'d': '30', 'v': 30, 'note': L('演练数据。'), 'src': 'artificial_analysis', 'cf': '高'},
                'tb4_vals': {'d': '20.00', 'v': 20.0, 'note': L('演练数据。每题成本 $0.50。'), 'src': 'vals_ai', 'cf': '高'}}})
 D['timeline_events'].append({'lane': 'testv', 'date': '2026-11-01', 'label': L('TEST Open'), 'tip': L('TEST Open（演练用虚构模型）。')})
+# 新模型必须填 open_weights（开源 / 闭源标签的唯一来源；内部代号模型不填）
+missing_ow = [m['name'] for m in D['models'] if m['status'] != 'internal' and 'open_weights' not in m]
 json.dump(D, open(os.path.join(DD, 'models.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 json.dump(V, open(os.path.join(DD, 'vendors.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 py = sys.executable; comp = os.path.join(ROOT, 'compute', 'build.py')
@@ -83,10 +85,14 @@ res = {
     'f41_axis': re.search(r'AA 指数（0–(\d+)）', fig(A, 'f41')).group(1),
     'f44_points': [len(re.findall(r'class="spt', fig(B, 'f44'))), len(re.findall(r'class="spt', fig(A, 'f44')))],
     'meta': re.search(r'<p class="meta">.*?</p>', A).group(0),
+    'missing_open_weights': missing_ow,
+    'test_model_closed_tag': re.search(r'TEST Model<span class="tag ow-c"', t31a) is not None,
+    'test_open_open_tag': re.search(r'TEST Open<span class="tag ow-o"', t31a) is not None,
 }
 ok = (idem and res['t21_rows'][1] == res['t21_rows'][0] and res['t21_cols'][1] == res['t21_cols'][0] + 1 and not res['t21_has_xai_or_testv'] and res['testb_header']
       and len(res['testb_cells']) == 2 and res['t31_rows'][1] == res['t31_rows'][0] + 2 and res['t31_testv_group'] and '>72<' in res['t31_test_model_aa']
-      and res['f21_lanes_same'] and 'testv' in res['f32_lanes'] and res['testv_css'] and res['f41_legend_testv_in_open_group'] and res['f44_points'][1] == res['f44_points'][0] + 2)
+      and res['f21_lanes_same'] and 'testv' in res['f32_lanes'] and res['testv_css'] and res['f41_legend_testv_in_open_group'] and res['f44_points'][1] == res['f44_points'][0] + 2
+      and not missing_ow and res['test_model_closed_tag'] and res['test_open_open_tag'])
 res['ok'] = ok
 json.dump(res, open(os.path.join(OUT, 'result.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print(json.dumps(res, ensure_ascii=False, indent=1))
