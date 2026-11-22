@@ -1,0 +1,5 @@
+# build_tables.py / qa/diff_check.py / qa/rehearsal.py：只用 Python 3 标准库，不需要装任何包。
+# 下面这些只给可选的检查脚本用：
+playwright>=1.40        # qa/browser_check.py（另需 Chromium：python3 -m playwright install chromium，或传入本机 Chrome 路径）
+beautifulsoup4>=4.12    # qa/oneoff/extract.py（一次性反抽脚本，留档）
+# qa/palette_check.py 需要 Skill dataviz 的 scripts/validate_palette.py（纯标准库），把它所在目录作为第一个参数传入

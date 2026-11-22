@@ -1,0 +1,6935 @@
+{
+ "arrive_monthly": [
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 42448,
+       "h8": 42448,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-08",
+       "sku": "hopper",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 42448
+      },
+      {
+       "conf": "中",
+       "h4": 583002,
+       "h8": 292078,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-08",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 115446
+      },
+      {
+       "conf": "中",
+       "h4": 1369241,
+       "h8": 457016,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-08",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 180639
+      }
+     ],
+     "total": {
+      "h4": 1994691,
+      "h8": 791542,
+      "units": 338533
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 62700,
+       "h8": 62700,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-09",
+       "sku": "trn2",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 95000
+      },
+      {
+       "conf": "中",
+       "h4": 28850,
+       "h8": 28850,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-08",
+       "sku": "mi300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 21856
+      },
+      {
+       "conf": "中",
+       "h4": 81827,
+       "h8": 41156,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-08",
+       "sku": "mi355",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 16203
+      }
+     ],
+     "total": {
+      "h4": 173377,
+      "h8": 132706,
+      "units": 133059
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 227633,
+       "h8": 227633,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-09",
+       "sku": "tpu_v6e",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 244767
+      },
+      {
+       "conf": "中",
+       "h4": 39832,
+       "h8": 39832,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-09",
+       "sku": "tpu_v7",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 17095
+      }
+     ],
+     "total": {
+      "h4": 267465,
+      "h8": 267465,
+      "units": 261862
+     }
+    }
+   },
+   "month": "2025-10",
+   "total": {
+    "h4": 2435533,
+    "h8": 1191713,
+    "units": 733454
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 42448,
+       "h8": 42448,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-09",
+       "sku": "hopper",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 42448
+      },
+      {
+       "conf": "中",
+       "h4": 583002,
+       "h8": 292078,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-09",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 115446
+      },
+      {
+       "conf": "中",
+       "h4": 1369241,
+       "h8": 457016,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-09",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 180639
+      }
+     ],
+     "total": {
+      "h4": 1994691,
+      "h8": 791542,
+      "units": 338533
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 73700,
+       "h8": 73700,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-10",
+       "sku": "trn2",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 111667
+      },
+      {
+       "conf": "中",
+       "h4": 28850,
+       "h8": 28850,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-09",
+       "sku": "mi300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 21856
+      },
+      {
+       "conf": "中",
+       "h4": 81827,
+       "h8": 41156,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-09",
+       "sku": "mi355",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 16203
+      }
+     ],
+     "total": {
+      "h4": 184377,
+      "h8": 143706,
+      "units": 149726
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 126591,
+       "h8": 126591,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-10",
+       "sku": "tpu_v6e",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 136119
+      },
+      {
+       "conf": "中",
+       "h4": 165296,
+       "h8": 165296,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-10",
+       "sku": "tpu_v7",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 70943
+      }
+     ],
+     "total": {
+      "h4": 291887,
+      "h8": 291887,
+      "units": 207062
+     }
+    }
+   },
+   "month": "2025-11",
+   "total": {
+    "h4": 2470955,
+    "h8": 1227135,
+    "units": 695321
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 7797,
+       "h8": 7797,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-10",
+       "sku": "hopper",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 7797
+      },
+      {
+       "conf": "中",
+       "h4": 703502,
+       "h8": 352448,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-10",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 139307
+      },
+      {
+       "conf": "中",
+       "h4": 1879633,
+       "h8": 627371,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-10",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 247973
+      }
+     ],
+     "total": {
+      "h4": 2590932,
+      "h8": 987616,
+      "units": 395077
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 73700,
+       "h8": 73700,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-11",
+       "sku": "trn2",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 111667
+      },
+      {
+       "conf": "中",
+       "h4": 10549,
+       "h8": 10549,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-10",
+       "sku": "mi300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 7991
+      },
+      {
+       "conf": "中",
+       "h4": 121614,
+       "h8": 61168,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-10",
+       "sku": "mi355",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 24082
+      }
+     ],
+     "total": {
+      "h4": 205863,
+      "h8": 145417,
+      "units": 143740
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 126591,
+       "h8": 126591,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-11",
+       "sku": "tpu_v6e",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 136119
+      },
+      {
+       "conf": "中",
+       "h4": 165296,
+       "h8": 165296,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-11",
+       "sku": "tpu_v7",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 70943
+      }
+     ],
+     "total": {
+      "h4": 291887,
+      "h8": 291887,
+      "units": 207062
+     }
+    }
+   },
+   "month": "2025-12",
+   "total": {
+    "h4": 3088682,
+    "h8": 1424920,
+    "units": 745879
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 7797,
+       "h8": 7797,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-11",
+       "sku": "hopper",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 7797
+      },
+      {
+       "conf": "中",
+       "h4": 703502,
+       "h8": 352448,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-11",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 139307
+      },
+      {
+       "conf": "中",
+       "h4": 1879633,
+       "h8": 627371,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-11",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 247973
+      }
+     ],
+     "total": {
+      "h4": 2590932,
+      "h8": 987616,
+      "units": 395077
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 73700,
+       "h8": 73700,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-12",
+       "sku": "trn2",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 111667
+      },
+      {
+       "conf": "中",
+       "h4": 10549,
+       "h8": 10549,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-11",
+       "sku": "mi300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 7991
+      },
+      {
+       "conf": "中",
+       "h4": 121614,
+       "h8": 61168,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-11",
+       "sku": "mi355",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 24082
+      }
+     ],
+     "total": {
+      "h4": 205863,
+      "h8": 145417,
+      "units": 143740
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 126591,
+       "h8": 126591,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-12",
+       "sku": "tpu_v6e",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 136119
+      },
+      {
+       "conf": "中",
+       "h4": 165296,
+       "h8": 165296,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-12",
+       "sku": "tpu_v7",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 70943
+      }
+     ],
+     "total": {
+      "h4": 291887,
+      "h8": 291887,
+      "units": 207062
+     }
+    }
+   },
+   "month": "2026-01",
+   "total": {
+    "h4": 3088682,
+    "h8": 1424920,
+    "units": 745879
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 7797,
+       "h8": 7797,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-12",
+       "sku": "hopper",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 7797
+      },
+      {
+       "conf": "中",
+       "h4": 703502,
+       "h8": 352448,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-12",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 139307
+      },
+      {
+       "conf": "中",
+       "h4": 1879633,
+       "h8": 627371,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-12",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 247973
+      }
+     ],
+     "total": {
+      "h4": 2590932,
+      "h8": 987616,
+      "units": 395077
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 75900,
+       "h8": 75900,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-01",
+       "sku": "trn2",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 115000
+      },
+      {
+       "conf": "中",
+       "h4": 10549,
+       "h8": 10549,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-12",
+       "sku": "mi300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 7991
+      },
+      {
+       "conf": "中",
+       "h4": 121614,
+       "h8": 61168,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2025-12",
+       "sku": "mi355",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 24082
+      }
+     ],
+     "total": {
+      "h4": 208063,
+      "h8": 147617,
+      "units": 147073
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 48067,
+       "h8": 48067,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-01",
+       "sku": "tpu_v6e",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 51685
+      },
+      {
+       "conf": "中",
+       "h4": 259675,
+       "h8": 259675,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-01",
+       "sku": "tpu_v7",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 111449
+      }
+     ],
+     "total": {
+      "h4": 307742,
+      "h8": 307742,
+      "units": 163134
+     }
+    }
+   },
+   "month": "2026-02",
+   "total": {
+    "h4": 3106737,
+    "h8": 1442975,
+    "units": 705284
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 585026,
+       "h8": 293092,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-01",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 115847
+      },
+      {
+       "conf": "中",
+       "h4": 2509316,
+       "h8": 837542,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-01",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 331044
+      }
+     ],
+     "total": {
+      "h4": 3094342,
+      "h8": 1130634,
+      "units": 446891
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 75900,
+       "h8": 75900,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-02",
+       "sku": "trn2",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 115000
+      },
+      {
+       "conf": "中",
+       "h4": 12530,
+       "h8": 12530,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-01",
+       "sku": "mi300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 9493
+      },
+      {
+       "conf": "中",
+       "h4": 131601,
+       "h8": 66192,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-01",
+       "sku": "mi355",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 26060
+      }
+     ],
+     "total": {
+      "h4": 220031,
+      "h8": 154622,
+      "units": 150553
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 48067,
+       "h8": 48067,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-02",
+       "sku": "tpu_v6e",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 51685
+      },
+      {
+       "conf": "中",
+       "h4": 259675,
+       "h8": 259675,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-02",
+       "sku": "tpu_v7",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 111449
+      }
+     ],
+     "total": {
+      "h4": 307742,
+      "h8": 307742,
+      "units": 163134
+     }
+    }
+   },
+   "month": "2026-03",
+   "total": {
+    "h4": 3622115,
+    "h8": 1592998,
+    "units": 760578
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 585026,
+       "h8": 293092,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-02",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 115847
+      },
+      {
+       "conf": "中",
+       "h4": 2509316,
+       "h8": 837542,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-02",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 331044
+      }
+     ],
+     "total": {
+      "h4": 3094342,
+      "h8": 1130634,
+      "units": 446891
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 75900,
+       "h8": 75900,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-03",
+       "sku": "trn2",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 115000
+      },
+      {
+       "conf": "中",
+       "h4": 12530,
+       "h8": 12530,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-02",
+       "sku": "mi300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 9493
+      },
+      {
+       "conf": "中",
+       "h4": 131601,
+       "h8": 66192,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-02",
+       "sku": "mi355",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 26060
+      }
+     ],
+     "total": {
+      "h4": 220031,
+      "h8": 154622,
+      "units": 150553
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 48067,
+       "h8": 48067,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-03",
+       "sku": "tpu_v6e",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 51685
+      },
+      {
+       "conf": "中",
+       "h4": 259675,
+       "h8": 259675,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-03",
+       "sku": "tpu_v7",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 111449
+      }
+     ],
+     "total": {
+      "h4": 307742,
+      "h8": 307742,
+      "units": 163134
+     }
+    }
+   },
+   "month": "2026-04",
+   "total": {
+    "h4": 3622115,
+    "h8": 1592998,
+    "units": 760578
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 585026,
+       "h8": 293092,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-03",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 115847
+      },
+      {
+       "conf": "中",
+       "h4": 2509316,
+       "h8": 837542,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-03",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 331044
+      }
+     ],
+     "total": {
+      "h4": 3094342,
+      "h8": 1130634,
+      "units": 446891
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 56100,
+       "h8": 56100,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-04",
+       "sku": "trn2",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 85000
+      },
+      {
+       "conf": "中",
+       "h4": 40217,
+       "h8": 40217,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-04",
+       "sku": "trn3",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 31667
+      },
+      {
+       "conf": "中",
+       "h4": 12530,
+       "h8": 12530,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-03",
+       "sku": "mi300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 9493
+      },
+      {
+       "conf": "中",
+       "h4": 131601,
+       "h8": 66192,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-03",
+       "sku": "mi355",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 26060
+      }
+     ],
+     "total": {
+      "h4": 240448,
+      "h8": 175039,
+      "units": 152220
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 12956,
+       "h8": 12956,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-04",
+       "sku": "tpu_v6e",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 13931
+      },
+      {
+       "conf": "中",
+       "h4": 478938,
+       "h8": 478938,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-04",
+       "sku": "tpu_v7",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 205553
+      },
+      {
+       "conf": "中",
+       "h4": 43612,
+       "h8": 21806,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-04",
+       "sku": "tpu_v8i",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 8551
+      }
+     ],
+     "total": {
+      "h4": 535506,
+      "h8": 513700,
+      "units": 228035
+     }
+    }
+   },
+   "month": "2026-05",
+   "total": {
+    "h4": 3870296,
+    "h8": 1819373,
+    "units": 827146
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 6454,
+       "h8": 6454,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-04",
+       "sku": "hopper",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 6454
+      },
+      {
+       "conf": "中",
+       "h4": 376028,
+       "h8": 188386,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-04",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 74461
+      },
+      {
+       "conf": "中",
+       "h4": 3371556,
+       "h8": 1125335,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-04",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 444796
+      }
+     ],
+     "total": {
+      "h4": 3754038,
+      "h8": 1320175,
+      "units": 525711
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 56100,
+       "h8": 56100,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-05",
+       "sku": "trn2",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 85000
+      },
+      {
+       "conf": "中",
+       "h4": 40217,
+       "h8": 40217,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-05",
+       "sku": "trn3",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 31667
+      },
+      {
+       "conf": "中",
+       "h4": 13685,
+       "h8": 13685,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-04",
+       "sku": "mi300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 10367
+      },
+      {
+       "conf": "中",
+       "h4": 148839,
+       "h8": 74861,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-04",
+       "sku": "mi355",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 29473
+      }
+     ],
+     "total": {
+      "h4": 258841,
+      "h8": 184863,
+      "units": 156507
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 12956,
+       "h8": 12956,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-05",
+       "sku": "tpu_v6e",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 13931
+      },
+      {
+       "conf": "中",
+       "h4": 478938,
+       "h8": 478938,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-05",
+       "sku": "tpu_v7",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 205553
+      },
+      {
+       "conf": "中",
+       "h4": 43612,
+       "h8": 21806,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-05",
+       "sku": "tpu_v8i",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 8551
+      }
+     ],
+     "total": {
+      "h4": 535506,
+      "h8": 513700,
+      "units": 228035
+     }
+    }
+   },
+   "month": "2026-06",
+   "total": {
+    "h4": 4548385,
+    "h8": 2018738,
+    "units": 910253
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 6454,
+       "h8": 6454,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-05",
+       "sku": "hopper",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 6454
+      },
+      {
+       "conf": "中",
+       "h4": 376028,
+       "h8": 188386,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-05",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 74461
+      },
+      {
+       "conf": "中",
+       "h4": 3371556,
+       "h8": 1125335,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-05",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 444796
+      }
+     ],
+     "total": {
+      "h4": 3754038,
+      "h8": 1320175,
+      "units": 525711
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 56100,
+       "h8": 56100,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-06",
+       "sku": "trn2",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 85000
+      },
+      {
+       "conf": "中",
+       "h4": 40217,
+       "h8": 40217,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-06",
+       "sku": "trn3",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 31667
+      },
+      {
+       "conf": "中",
+       "h4": 13685,
+       "h8": 13685,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-05",
+       "sku": "mi300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 10367
+      },
+      {
+       "conf": "中",
+       "h4": 148839,
+       "h8": 74861,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-05",
+       "sku": "mi355",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 29473
+      }
+     ],
+     "total": {
+      "h4": 258841,
+      "h8": 184863,
+      "units": 156507
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 12956,
+       "h8": 12956,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-06",
+       "sku": "tpu_v6e",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 13931
+      },
+      {
+       "conf": "中",
+       "h4": 478938,
+       "h8": 478938,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-06",
+       "sku": "tpu_v7",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 205553
+      },
+      {
+       "conf": "中",
+       "h4": 43612,
+       "h8": 21806,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-06",
+       "sku": "tpu_v8i",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 8551
+      }
+     ],
+     "total": {
+      "h4": 535506,
+      "h8": 513700,
+      "units": 228035
+     }
+    }
+   },
+   "month": "2026-07",
+   "total": {
+    "h4": 4548385,
+    "h8": 2018738,
+    "units": 910253
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 6454,
+       "h8": 6454,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-06",
+       "sku": "hopper",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 6454
+      },
+      {
+       "conf": "中",
+       "h4": 376028,
+       "h8": 188386,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-06",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 74461
+      },
+      {
+       "conf": "中",
+       "h4": 3371556,
+       "h8": 1125335,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-06",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 444796
+      },
+      {
+       "conf": "低",
+       "h4": 35380,
+       "h8": 17680,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-07",
+       "sku": "r200",
+       "src": "本报告推算",
+       "units": 2000
+      }
+     ],
+     "total": {
+      "h4": 3789418,
+      "h8": 1337855,
+      "units": 527711
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 33000,
+       "h8": 33000,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-07",
+       "sku": "trn2",
+       "src": "本报告推算",
+       "units": 50000
+      },
+      {
+       "conf": "低",
+       "h4": 148167,
+       "h8": 148167,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-07",
+       "sku": "trn3",
+       "src": "本报告推算",
+       "units": 116667
+      },
+      {
+       "conf": "中",
+       "h4": 13685,
+       "h8": 13685,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-06",
+       "sku": "mi300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 10367
+      },
+      {
+       "conf": "中",
+       "h4": 148839,
+       "h8": 74861,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-06",
+       "sku": "mi355",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 29473
+      }
+     ],
+     "total": {
+      "h4": 343691,
+      "h8": 269713,
+      "units": 206507
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 640438,
+       "h8": 640438,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-07",
+       "sku": "tpu_v7",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 274866
+      },
+      {
+       "conf": "中",
+       "h4": 74440,
+       "h8": 37220,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-07",
+       "sku": "tpu_v8i",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 14596
+      }
+     ],
+     "total": {
+      "h4": 714878,
+      "h8": 677658,
+      "units": 289462
+     }
+    }
+   },
+   "month": "2026-08",
+   "total": {
+    "h4": 4847987,
+    "h8": 2285226,
+    "units": 1023680
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 24770,
+       "h8": 24770,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-07",
+       "sku": "hopper",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 24770
+      },
+      {
+       "conf": "中",
+       "h4": 227127,
+       "h8": 113788,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-07",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 44976
+      },
+      {
+       "conf": "中",
+       "h4": 3599745,
+       "h8": 1201498,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-07",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 474900
+      },
+      {
+       "conf": "低",
+       "h4": 822585,
+       "h8": 411060,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-08",
+       "sku": "r200",
+       "src": "本报告推算",
+       "units": 46500
+      }
+     ],
+     "total": {
+      "h4": 4674227,
+      "h8": 1751116,
+      "units": 591146
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 33000,
+       "h8": 33000,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-08",
+       "sku": "trn2",
+       "src": "本报告推算",
+       "units": 50000
+      },
+      {
+       "conf": "低",
+       "h4": 148167,
+       "h8": 148167,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-08",
+       "sku": "trn3",
+       "src": "本报告推算",
+       "units": 116667
+      },
+      {
+       "conf": "中",
+       "h4": 11000,
+       "h8": 11000,
+       "hatch": false,
+       "kind": "sa",
+       "ship_month": "2026-07",
+       "sku": "mi300",
+       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "units": 8333
+      },
+      {
+       "conf": "中",
+       "h4": 233983,
+       "h8": 117687,
+       "hatch": false,
+       "kind": "sa",
+       "ship_month": "2026-07",
+       "sku": "mi355",
+       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "units": 46333
+      },
+      {
+       "conf": "中",
+       "h4": 34000,
+       "h8": 16933,
+       "hatch": false,
+       "kind": "sa",
+       "ship_month": "2026-07",
+       "sku": "mi450",
+       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "units": 1667
+      }
+     ],
+     "total": {
+      "h4": 460150,
+      "h8": 326787,
+      "units": 223000
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 635081,
+       "h8": 635081,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-08",
+       "sku": "tpu_v7",
+       "src": "本报告推算",
+       "units": 272567
+      },
+      {
+       "conf": "低",
+       "h4": 268780,
+       "h8": 134390,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-08",
+       "sku": "tpu_v8i",
+       "src": "本报告推算",
+       "units": 52702
+      },
+      {
+       "conf": "中",
+       "h4": 171990,
+       "h8": 85860,
+       "hatch": false,
+       "kind": "sa",
+       "ship_month": "2026-08",
+       "sku": "tpu_v8t",
+       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "units": 27000
+      }
+     ],
+     "total": {
+      "h4": 1075851,
+      "h8": 855331,
+      "units": 352269
+     }
+    }
+   },
+   "month": "2026-09",
+   "total": {
+    "h4": 6210228,
+    "h8": 2933234,
+    "units": 1166415
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 24770,
+       "h8": 24770,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-08",
+       "sku": "hopper",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 24770
+      },
+      {
+       "conf": "中",
+       "h4": 227127,
+       "h8": 113788,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-08",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 44976
+      },
+      {
+       "conf": "中",
+       "h4": 3599745,
+       "h8": 1201498,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-08",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 474900
+      },
+      {
+       "conf": "低",
+       "h4": 1215303,
+       "h8": 607308,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-09",
+       "sku": "r200",
+       "src": "本报告推算",
+       "units": 68700
+      }
+     ],
+     "total": {
+      "h4": 5066945,
+      "h8": 1947364,
+      "units": 613346
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 33000,
+       "h8": 33000,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-09",
+       "sku": "trn2",
+       "src": "本报告推算",
+       "units": 50000
+      },
+      {
+       "conf": "低",
+       "h4": 148167,
+       "h8": 148167,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-09",
+       "sku": "trn3",
+       "src": "本报告推算",
+       "units": 116667
+      },
+      {
+       "conf": "中",
+       "h4": 11000,
+       "h8": 11000,
+       "hatch": false,
+       "kind": "sa",
+       "ship_month": "2026-08",
+       "sku": "mi300",
+       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "units": 8333
+      },
+      {
+       "conf": "中",
+       "h4": 233983,
+       "h8": 117687,
+       "hatch": false,
+       "kind": "sa",
+       "ship_month": "2026-08",
+       "sku": "mi355",
+       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "units": 46333
+      },
+      {
+       "conf": "中",
+       "h4": 34000,
+       "h8": 16933,
+       "hatch": false,
+       "kind": "sa",
+       "ship_month": "2026-08",
+       "sku": "mi450",
+       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "units": 1667
+      }
+     ],
+     "total": {
+      "h4": 460150,
+      "h8": 326787,
+      "units": 223000
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 635081,
+       "h8": 635081,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-09",
+       "sku": "tpu_v7",
+       "src": "本报告推算",
+       "units": 272567
+      },
+      {
+       "conf": "低",
+       "h4": 268780,
+       "h8": 134390,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-09",
+       "sku": "tpu_v8i",
+       "src": "本报告推算",
+       "units": 52702
+      },
+      {
+       "conf": "中",
+       "h4": 401310,
+       "h8": 200340,
+       "hatch": false,
+       "kind": "sa",
+       "ship_month": "2026-09",
+       "sku": "tpu_v8t",
+       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "units": 63000
+      }
+     ],
+     "total": {
+      "h4": 1305171,
+      "h8": 969811,
+      "units": 388269
+     }
+    }
+   },
+   "month": "2026-10",
+   "total": {
+    "h4": 6832266,
+    "h8": 3243962,
+    "units": 1224615
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 24770,
+       "h8": 24770,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-09",
+       "sku": "hopper",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 24770
+      },
+      {
+       "conf": "中",
+       "h4": 227127,
+       "h8": 113788,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-09",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 44976
+      },
+      {
+       "conf": "中",
+       "h4": 3599745,
+       "h8": 1201498,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-09",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19）",
+       "units": 474900
+      },
+      {
+       "conf": "低",
+       "h4": 2207022,
+       "h8": 1102887,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-10",
+       "sku": "r200",
+       "src": "本报告推算",
+       "units": 124761
+      }
+     ],
+     "total": {
+      "h4": 6058664,
+      "h8": 2442943,
+      "units": 669407
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 11000,
+       "h8": 11000,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-10",
+       "sku": "trn2",
+       "src": "本报告推算",
+       "units": 16667
+      },
+      {
+       "conf": "低",
+       "h4": 254000,
+       "h8": 254000,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-10",
+       "sku": "trn3",
+       "src": "本报告推算",
+       "units": 200000
+      },
+      {
+       "conf": "中",
+       "h4": 11000,
+       "h8": 11000,
+       "hatch": false,
+       "kind": "sa",
+       "ship_month": "2026-09",
+       "sku": "mi300",
+       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "units": 8333
+      },
+      {
+       "conf": "中",
+       "h4": 233983,
+       "h8": 117687,
+       "hatch": false,
+       "kind": "sa",
+       "ship_month": "2026-09",
+       "sku": "mi355",
+       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "units": 46333
+      },
+      {
+       "conf": "中",
+       "h4": 34000,
+       "h8": 16933,
+       "hatch": false,
+       "kind": "sa",
+       "ship_month": "2026-09",
+       "sku": "mi450",
+       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "units": 1667
+      }
+     ],
+     "total": {
+      "h4": 543983,
+      "h8": 410620,
+      "units": 273000
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 510332,
+       "h8": 510332,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-10",
+       "sku": "tpu_v7",
+       "src": "本报告推算",
+       "units": 219027
+      },
+      {
+       "conf": "低",
+       "h4": 565965,
+       "h8": 282982,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-10",
+       "sku": "tpu_v8i",
+       "src": "本报告推算",
+       "units": 110973
+      },
+      {
+       "conf": "中",
+       "h4": 1189067,
+       "h8": 593600,
+       "hatch": false,
+       "kind": "sa",
+       "ship_month": "2026-10",
+       "sku": "tpu_v8t",
+       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "units": 186667
+      }
+     ],
+     "total": {
+      "h4": 2265364,
+      "h8": 1386914,
+      "units": 516667
+     }
+    }
+   },
+   "month": "2026-11",
+   "total": {
+    "h4": 8868011,
+    "h8": 4240477,
+    "units": 1459074
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 31265,
+       "h8": 31265,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-10",
+       "sku": "hopper",
+       "src": "Epoch AI Chip Sales（2026-11-19；10 月只算到 10/25，按 31/25 补满整月）",
+       "units": 31265
+      },
+      {
+       "conf": "中",
+       "h4": 193784,
+       "h8": 97084,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-10",
+       "sku": "b200",
+       "src": "Epoch AI Chip Sales（2026-11-19；10 月只算到 10/25，按 31/25 补满整月）",
+       "units": 38373
+      },
+      {
+       "conf": "中",
+       "h4": 3616182,
+       "h8": 1206984,
+       "hatch": false,
+       "kind": "epoch",
+       "ship_month": "2026-10",
+       "sku": "b300",
+       "src": "Epoch AI Chip Sales（2026-11-19；10 月只算到 10/25，按 31/25 补满整月）",
+       "units": 477069
+      },
+      {
+       "conf": "中",
+       "h4": 6125989,
+       "h8": 3061263,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2026-11",
+       "sku": "r200",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 346297
+      }
+     ],
+     "total": {
+      "h4": 9967220,
+      "h8": 4396596,
+      "units": 893004
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 11000,
+       "h8": 11000,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-11",
+       "sku": "trn2",
+       "src": "本报告推算",
+       "units": 16667
+      },
+      {
+       "conf": "低",
+       "h4": 254000,
+       "h8": 254000,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-11",
+       "sku": "trn3",
+       "src": "本报告推算",
+       "units": 200000
+      },
+      {
+       "conf": "低",
+       "h4": 4400,
+       "h8": 4400,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-10",
+       "sku": "mi300",
+       "src": "本报告推算",
+       "units": 3333
+      },
+      {
+       "conf": "低",
+       "h4": 168333,
+       "h8": 84667,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-10",
+       "sku": "mi355",
+       "src": "本报告推算",
+       "units": 33333
+      },
+      {
+       "conf": "中",
+       "h4": 1407600,
+       "h8": 701040,
+       "hatch": false,
+       "kind": "sa",
+       "ship_month": "2026-10",
+       "sku": "mi450",
+       "src": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+       "units": 69000
+      }
+     ],
+     "total": {
+      "h4": 1845333,
+      "h8": 1055107,
+      "units": 322333
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 618584,
+       "h8": 618584,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-11",
+       "sku": "tpu_v7",
+       "src": "本报告推算",
+       "units": 265487
+      },
+      {
+       "conf": "低",
+       "h4": 686018,
+       "h8": 343009,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-11",
+       "sku": "tpu_v8i",
+       "src": "本报告推算",
+       "units": 134513
+      },
+      {
+       "conf": "中",
+       "h4": 1189067,
+       "h8": 593600,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2026-11",
+       "sku": "tpu_v8t",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 186667
+      }
+     ],
+     "total": {
+      "h4": 2493669,
+      "h8": 1555193,
+      "units": 586667
+     }
+    }
+   },
+   "month": "2026-12",
+   "total": {
+    "h4": 14306222,
+    "h8": 7006896,
+    "units": 1802004
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 30931,
+       "h8": 30931,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2026-11",
+       "sku": "hopper",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 30931
+      },
+      {
+       "conf": "中",
+       "h4": 79712,
+       "h8": 39935,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2026-11",
+       "sku": "b200",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 15785
+      },
+      {
+       "conf": "中",
+       "h4": 627573,
+       "h8": 209467,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2026-11",
+       "sku": "b300",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 82793
+      },
+      {
+       "conf": "中",
+       "h4": 8459699,
+       "h8": 4227458,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2026-12",
+       "sku": "r200",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 478219
+      }
+     ],
+     "total": {
+      "h4": 9197915,
+      "h8": 4507791,
+      "units": 607728
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 11000,
+       "h8": 11000,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-12",
+       "sku": "trn2",
+       "src": "本报告推算",
+       "units": 16667
+      },
+      {
+       "conf": "低",
+       "h4": 254000,
+       "h8": 254000,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-12",
+       "sku": "trn3",
+       "src": "本报告推算",
+       "units": 200000
+      },
+      {
+       "conf": "低",
+       "h4": 4400,
+       "h8": 4400,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-11",
+       "sku": "mi300",
+       "src": "本报告推算",
+       "units": 3333
+      },
+      {
+       "conf": "低",
+       "h4": 168333,
+       "h8": 84667,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-11",
+       "sku": "mi355",
+       "src": "本报告推算",
+       "units": 33333
+      },
+      {
+       "conf": "中",
+       "h4": 1407600,
+       "h8": 701040,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2026-11",
+       "sku": "mi450",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 69000
+      }
+     ],
+     "total": {
+      "h4": 1845333,
+      "h8": 1055107,
+      "units": 322333
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 618584,
+       "h8": 618584,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-12",
+       "sku": "tpu_v7",
+       "src": "本报告推算",
+       "units": 265487
+      },
+      {
+       "conf": "低",
+       "h4": 686018,
+       "h8": 343009,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-12",
+       "sku": "tpu_v8i",
+       "src": "本报告推算",
+       "units": 134513
+      },
+      {
+       "conf": "中",
+       "h4": 1189067,
+       "h8": 593600,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2026-12",
+       "sku": "tpu_v8t",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 186667
+      }
+     ],
+     "total": {
+      "h4": 2493669,
+      "h8": 1555193,
+      "units": 586667
+     }
+    }
+   },
+   "month": "2027-01",
+   "total": {
+    "h4": 13536917,
+    "h8": 7118091,
+    "units": 1516728
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 37804,
+       "h8": 37804,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2026-12",
+       "sku": "hopper",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 37804
+      },
+      {
+       "conf": "中",
+       "h4": 97426,
+       "h8": 48810,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2026-12",
+       "sku": "b200",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 19292
+      },
+      {
+       "conf": "中",
+       "h4": 767034,
+       "h8": 256015,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2026-12",
+       "sku": "b300",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 101192
+      },
+      {
+       "conf": "中",
+       "h4": 7419658,
+       "h8": 3707732,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-01",
+       "sku": "r200",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 419427
+      }
+     ],
+     "total": {
+      "h4": 8321922,
+      "h8": 4050361,
+      "units": 577715
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 296333,
+       "h8": 296333,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2027-01",
+       "sku": "trn3",
+       "src": "本报告推算",
+       "units": 233333
+      },
+      {
+       "conf": "低",
+       "h4": 4400,
+       "h8": 4400,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-12",
+       "sku": "mi300",
+       "src": "本报告推算",
+       "units": 3333
+      },
+      {
+       "conf": "低",
+       "h4": 168333,
+       "h8": 84667,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2026-12",
+       "sku": "mi355",
+       "src": "本报告推算",
+       "units": 33333
+      },
+      {
+       "conf": "中",
+       "h4": 1407600,
+       "h8": 701040,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2026-12",
+       "sku": "mi450",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 69000
+      }
+     ],
+     "total": {
+      "h4": 1876666,
+      "h8": 1086440,
+      "units": 338999
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 233000,
+       "h8": 233000,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2027-01",
+       "sku": "tpu_v7",
+       "src": "本报告推算",
+       "units": 100000
+      },
+      {
+       "conf": "中",
+       "h4": 841500,
+       "h8": 420750,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-01",
+       "sku": "tpu_v8i",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 165000
+      },
+      {
+       "conf": "中",
+       "h4": 1509690,
+       "h8": 753660,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-01",
+       "sku": "tpu_v8t",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 237000
+      }
+     ],
+     "total": {
+      "h4": 2584190,
+      "h8": 1407410,
+      "units": 502000
+     }
+    }
+   },
+   "month": "2027-02",
+   "total": {
+    "h4": 12782778,
+    "h8": 6544211,
+    "units": 1418714
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 33333,
+       "h8": 33333,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-01",
+       "sku": "hopper",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 33333
+      },
+      {
+       "conf": "中",
+       "h4": 55974,
+       "h8": 28043,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-01",
+       "sku": "b200",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 11084
+      },
+      {
+       "conf": "中",
+       "h4": 756150,
+       "h8": 252383,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-01",
+       "sku": "b300",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 99756
+      },
+      {
+       "conf": "中",
+       "h4": 7419658,
+       "h8": 3707732,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-02",
+       "sku": "r200",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 419427
+      }
+     ],
+     "total": {
+      "h4": 8265115,
+      "h8": 4021491,
+      "units": 563600
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 296333,
+       "h8": 296333,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2027-02",
+       "sku": "trn3",
+       "src": "本报告推算",
+       "units": 233333
+      },
+      {
+       "conf": "低",
+       "h4": 84167,
+       "h8": 42333,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2027-01",
+       "sku": "mi355",
+       "src": "本报告推算",
+       "units": 16667
+      },
+      {
+       "conf": "中",
+       "h4": 1530000,
+       "h8": 762000,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-01",
+       "sku": "mi450",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 75000
+      }
+     ],
+     "total": {
+      "h4": 1910500,
+      "h8": 1100666,
+      "units": 325000
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 233000,
+       "h8": 233000,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2027-02",
+       "sku": "tpu_v7",
+       "src": "本报告推算",
+       "units": 100000
+      },
+      {
+       "conf": "中",
+       "h4": 841500,
+       "h8": 420750,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-02",
+       "sku": "tpu_v8i",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 165000
+      },
+      {
+       "conf": "中",
+       "h4": 1509690,
+       "h8": 753660,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-02",
+       "sku": "tpu_v8t",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 237000
+      }
+     ],
+     "total": {
+      "h4": 2584190,
+      "h8": 1407410,
+      "units": 502000
+     }
+    }
+   },
+   "month": "2027-03",
+   "total": {
+    "h4": 12759805,
+    "h8": 6529567,
+    "units": 1390600
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 33333,
+       "h8": 33333,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-02",
+       "sku": "hopper",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 33333
+      },
+      {
+       "conf": "中",
+       "h4": 55974,
+       "h8": 28043,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-02",
+       "sku": "b200",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 11084
+      },
+      {
+       "conf": "中",
+       "h4": 756150,
+       "h8": 252383,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-02",
+       "sku": "b300",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 99756
+      },
+      {
+       "conf": "中",
+       "h4": 7419658,
+       "h8": 3707732,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-03",
+       "sku": "r200",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 419427
+      }
+     ],
+     "total": {
+      "h4": 8265115,
+      "h8": 4021491,
+      "units": 563600
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 296333,
+       "h8": 296333,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2027-03",
+       "sku": "trn3",
+       "src": "本报告推算",
+       "units": 233333
+      },
+      {
+       "conf": "低",
+       "h4": 84167,
+       "h8": 42333,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2027-02",
+       "sku": "mi355",
+       "src": "本报告推算",
+       "units": 16667
+      },
+      {
+       "conf": "中",
+       "h4": 1530000,
+       "h8": 762000,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-02",
+       "sku": "mi450",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 75000
+      }
+     ],
+     "total": {
+      "h4": 1910500,
+      "h8": 1100666,
+      "units": 325000
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 233000,
+       "h8": 233000,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2027-03",
+       "sku": "tpu_v7",
+       "src": "本报告推算",
+       "units": 100000
+      },
+      {
+       "conf": "中",
+       "h4": 841500,
+       "h8": 420750,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-03",
+       "sku": "tpu_v8i",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 165000
+      },
+      {
+       "conf": "中",
+       "h4": 1509690,
+       "h8": 753660,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-03",
+       "sku": "tpu_v8t",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 237000
+      }
+     ],
+     "total": {
+      "h4": 2584190,
+      "h8": 1407410,
+      "units": 502000
+     }
+    }
+   },
+   "month": "2027-04",
+   "total": {
+    "h4": 12759805,
+    "h8": 6529567,
+    "units": 1390600
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 33333,
+       "h8": 33333,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-03",
+       "sku": "hopper",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 33333
+      },
+      {
+       "conf": "中",
+       "h4": 55974,
+       "h8": 28043,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-03",
+       "sku": "b200",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 11084
+      },
+      {
+       "conf": "中",
+       "h4": 756150,
+       "h8": 252383,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-03",
+       "sku": "b300",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 99756
+      },
+      {
+       "conf": "中",
+       "h4": 6237966,
+       "h8": 3117220,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-04",
+       "sku": "r200",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 352627
+      },
+      {
+       "conf": "中",
+       "h4": 2950000,
+       "h8": 1475000,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-04",
+       "sku": "rubin_ultra",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 83333
+      }
+     ],
+     "total": {
+      "h4": 10033423,
+      "h8": 4905979,
+      "units": 580133
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 317500,
+       "h8": 317500,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2027-04",
+       "sku": "trn3",
+       "src": "本报告推算",
+       "units": 250000
+      },
+      {
+       "conf": "低",
+       "h4": 84167,
+       "h8": 42333,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2027-03",
+       "sku": "mi355",
+       "src": "本报告推算",
+       "units": 16667
+      },
+      {
+       "conf": "中",
+       "h4": 1530000,
+       "h8": 762000,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-03",
+       "sku": "mi450",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 75000
+      }
+     ],
+     "total": {
+      "h4": 1931667,
+      "h8": 1121833,
+      "units": 341667
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 116500,
+       "h8": 116500,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2027-04",
+       "sku": "tpu_v7",
+       "src": "本报告推算",
+       "units": 50000
+      },
+      {
+       "conf": "中",
+       "h4": 1003000,
+       "h8": 501500,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-04",
+       "sku": "tpu_v8i",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 196667
+      },
+      {
+       "conf": "中",
+       "h4": 1724147,
+       "h8": 860720,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-04",
+       "sku": "tpu_v8t",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 270667
+      }
+     ],
+     "total": {
+      "h4": 2843647,
+      "h8": 1478720,
+      "units": 517334
+     }
+    }
+   },
+   "month": "2027-05",
+   "total": {
+    "h4": 14808737,
+    "h8": 7506532,
+    "units": 1439134
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "conf": "中",
+       "h4": 16667,
+       "h8": 16667,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-04",
+       "sku": "hopper",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 16667
+      },
+      {
+       "conf": "中",
+       "h4": 44184,
+       "h8": 22136,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-04",
+       "sku": "b200",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 8749
+      },
+      {
+       "conf": "中",
+       "h4": 596880,
+       "h8": 199222,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-04",
+       "sku": "b300",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 78744
+      },
+      {
+       "conf": "中",
+       "h4": 6237966,
+       "h8": 3117220,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-05",
+       "sku": "r200",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 352627
+      },
+      {
+       "conf": "中",
+       "h4": 2950000,
+       "h8": 1475000,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-05",
+       "sku": "rubin_ultra",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 83333
+      }
+     ],
+     "total": {
+      "h4": 9845697,
+      "h8": 4830245,
+      "units": 540120
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 317500,
+       "h8": 317500,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2027-05",
+       "sku": "trn3",
+       "src": "本报告推算",
+       "units": 250000
+      },
+      {
+       "conf": "低",
+       "h4": 42083,
+       "h8": 21167,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2027-04",
+       "sku": "mi355",
+       "src": "本报告推算",
+       "units": 8333
+      },
+      {
+       "conf": "中",
+       "h4": 1802000,
+       "h8": 897467,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-04",
+       "sku": "mi450",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 88333
+      }
+     ],
+     "total": {
+      "h4": 2161583,
+      "h8": 1236134,
+      "units": 346666
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "conf": "低",
+       "h4": 116500,
+       "h8": 116500,
+       "hatch": true,
+       "kind": "est",
+       "ship_month": "2027-05",
+       "sku": "tpu_v7",
+       "src": "本报告推算",
+       "units": 50000
+      },
+      {
+       "conf": "中",
+       "h4": 1003000,
+       "h8": 501500,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-05",
+       "sku": "tpu_v8i",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 196667
+      },
+      {
+       "conf": "中",
+       "h4": 1724147,
+       "h8": 860720,
+       "hatch": true,
+       "kind": "forecast",
+       "ship_month": "2027-05",
+       "sku": "tpu_v8t",
+       "src": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+       "units": 270667
+      }
+     ],
+     "total": {
+      "h4": 2843647,
+      "h8": 1478720,
+      "units": 517334
+     }
+    }
+   },
+   "month": "2027-06",
+   "total": {
+    "h4": 14850927,
+    "h8": 7545099,
+    "units": 1404120
+   }
+  }
+ ],
+ "arrive_quarterly": [
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "h4": 92693,
+       "h8": 92693,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-08",
+        "2025-09",
+        "2025-10"
+       ],
+       "sku": "hopper",
+       "units": 92693
+      },
+      {
+       "h4": 1869506,
+       "h8": 936604,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-08",
+        "2025-09",
+        "2025-10"
+       ],
+       "sku": "b200",
+       "units": 370199
+      },
+      {
+       "h4": 4618115,
+       "h8": 1541403,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-08",
+        "2025-09",
+        "2025-10"
+       ],
+       "sku": "b300",
+       "units": 609251
+      }
+     ],
+     "total": {
+      "h4": 6580314,
+      "h8": 2570700,
+      "units": 1072143
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "h4": 210100,
+       "h8": 210100,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-09",
+        "2025-10",
+        "2025-11"
+       ],
+       "sku": "trn2",
+       "units": 318334
+      },
+      {
+       "h4": 68249,
+       "h8": 68249,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-08",
+        "2025-09",
+        "2025-10"
+       ],
+       "sku": "mi300",
+       "units": 51703
+      },
+      {
+       "h4": 285268,
+       "h8": 143480,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-08",
+        "2025-09",
+        "2025-10"
+       ],
+       "sku": "mi355",
+       "units": 56488
+      }
+     ],
+     "total": {
+      "h4": 563617,
+      "h8": 421829,
+      "units": 426525
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "h4": 480815,
+       "h8": 480815,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-09",
+        "2025-10",
+        "2025-11"
+       ],
+       "sku": "tpu_v6e",
+       "units": 517005
+      },
+      {
+       "h4": 370424,
+       "h8": 370424,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-09",
+        "2025-10",
+        "2025-11"
+       ],
+       "sku": "tpu_v7",
+       "units": 158981
+      }
+     ],
+     "total": {
+      "h4": 851239,
+      "h8": 851239,
+      "units": 675986
+     }
+    }
+   },
+   "quarter": "2025Q4",
+   "total": {
+    "h4": 7995170,
+    "h8": 3843768,
+    "units": 2174654
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "h4": 15594,
+       "h8": 15594,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-11",
+        "2025-12"
+       ],
+       "sku": "hopper",
+       "units": 15594
+      },
+      {
+       "h4": 1992030,
+       "h8": 997988,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-11",
+        "2025-12",
+        "2026-01"
+       ],
+       "sku": "b200",
+       "units": 394461
+      },
+      {
+       "h4": 6268582,
+       "h8": 2092284,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-11",
+        "2025-12",
+        "2026-01"
+       ],
+       "sku": "b300",
+       "units": 826990
+      }
+     ],
+     "total": {
+      "h4": 8276206,
+      "h8": 3105866,
+      "units": 1237045
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "h4": 225500,
+       "h8": 225500,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-12",
+        "2026-01",
+        "2026-02"
+       ],
+       "sku": "trn2",
+       "units": 341667
+      },
+      {
+       "h4": 33628,
+       "h8": 33628,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-11",
+        "2025-12",
+        "2026-01"
+       ],
+       "sku": "mi300",
+       "units": 25475
+      },
+      {
+       "h4": 374829,
+       "h8": 188528,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-11",
+        "2025-12",
+        "2026-01"
+       ],
+       "sku": "mi355",
+       "units": 74224
+      }
+     ],
+     "total": {
+      "h4": 633957,
+      "h8": 447656,
+      "units": 441366
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "h4": 222725,
+       "h8": 222725,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-12",
+        "2026-01",
+        "2026-02"
+       ],
+       "sku": "tpu_v6e",
+       "units": 239489
+      },
+      {
+       "h4": 684646,
+       "h8": 684646,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2025-12",
+        "2026-01",
+        "2026-02"
+       ],
+       "sku": "tpu_v7",
+       "units": 293841
+      }
+     ],
+     "total": {
+      "h4": 907371,
+      "h8": 907371,
+      "units": 533330
+     }
+    }
+   },
+   "quarter": "2026Q1",
+   "total": {
+    "h4": 9817534,
+    "h8": 4460893,
+    "units": 2211741
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "h4": 6454,
+       "h8": 6454,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-04"
+       ],
+       "sku": "hopper",
+       "units": 6454
+      },
+      {
+       "h4": 1546080,
+       "h8": 774570,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-02",
+        "2026-03",
+        "2026-04"
+       ],
+       "sku": "b200",
+       "units": 306155
+      },
+      {
+       "h4": 8390188,
+       "h8": 2800419,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-02",
+        "2026-03",
+        "2026-04"
+       ],
+       "sku": "b300",
+       "units": 1106884
+      }
+     ],
+     "total": {
+      "h4": 9942722,
+      "h8": 3581443,
+      "units": 1419493
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "h4": 188100,
+       "h8": 188100,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-03",
+        "2026-04",
+        "2026-05"
+       ],
+       "sku": "trn2",
+       "units": 285000
+      },
+      {
+       "h4": 80434,
+       "h8": 80434,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-04",
+        "2026-05"
+       ],
+       "sku": "trn3",
+       "units": 63334
+      },
+      {
+       "h4": 38745,
+       "h8": 38745,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-02",
+        "2026-03",
+        "2026-04"
+       ],
+       "sku": "mi300",
+       "units": 29353
+      },
+      {
+       "h4": 412041,
+       "h8": 207245,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-02",
+        "2026-03",
+        "2026-04"
+       ],
+       "sku": "mi355",
+       "units": 81593
+      }
+     ],
+     "total": {
+      "h4": 719320,
+      "h8": 514524,
+      "units": 459280
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "h4": 73979,
+       "h8": 73979,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-03",
+        "2026-04",
+        "2026-05"
+       ],
+       "sku": "tpu_v6e",
+       "units": 79547
+      },
+      {
+       "h4": 1217551,
+       "h8": 1217551,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-03",
+        "2026-04",
+        "2026-05"
+       ],
+       "sku": "tpu_v7",
+       "units": 522555
+      },
+      {
+       "h4": 87224,
+       "h8": 43612,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-04",
+        "2026-05"
+       ],
+       "sku": "tpu_v8i",
+       "units": 17102
+      }
+     ],
+     "total": {
+      "h4": 1378754,
+      "h8": 1335142,
+      "units": 619204
+     }
+    }
+   },
+   "quarter": "2026Q2",
+   "total": {
+    "h4": 12040796,
+    "h8": 5431109,
+    "units": 2497977
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "h4": 37678,
+       "h8": 37678,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-05",
+        "2026-06",
+        "2026-07"
+       ],
+       "sku": "hopper",
+       "units": 37678
+      },
+      {
+       "h4": 979183,
+       "h8": 490560,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-05",
+        "2026-06",
+        "2026-07"
+       ],
+       "sku": "b200",
+       "units": 193898
+      },
+      {
+       "h4": 10342857,
+       "h8": 3452168,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-05",
+        "2026-06",
+        "2026-07"
+       ],
+       "sku": "b300",
+       "units": 1364492
+      },
+      {
+       "h4": 857965,
+       "h8": 428740,
+       "hatch_h4": 857965,
+       "hatch_h8": 428740,
+       "hatch_units": 48500,
+       "kinds": [
+        "est"
+       ],
+       "ship_months": [
+        "2026-07",
+        "2026-08"
+       ],
+       "sku": "r200",
+       "units": 48500
+      }
+     ],
+     "total": {
+      "h4": 12217683,
+      "h8": 4409146,
+      "units": 1644568
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "h4": 122100,
+       "h8": 122100,
+       "hatch_h4": 66000,
+       "hatch_h8": 66000,
+       "hatch_units": 100000,
+       "kinds": [
+        "epoch",
+        "est"
+       ],
+       "ship_months": [
+        "2026-06",
+        "2026-07",
+        "2026-08"
+       ],
+       "sku": "trn2",
+       "units": 185000
+      },
+      {
+       "h4": 336551,
+       "h8": 336551,
+       "hatch_h4": 296334,
+       "hatch_h8": 296334,
+       "hatch_units": 233334,
+       "kinds": [
+        "epoch",
+        "est"
+       ],
+       "ship_months": [
+        "2026-06",
+        "2026-07",
+        "2026-08"
+       ],
+       "sku": "trn3",
+       "units": 265001
+      },
+      {
+       "h4": 38370,
+       "h8": 38370,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch",
+        "sa"
+       ],
+       "ship_months": [
+        "2026-05",
+        "2026-06",
+        "2026-07"
+       ],
+       "sku": "mi300",
+       "units": 29067
+      },
+      {
+       "h4": 531661,
+       "h8": 267409,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch",
+        "sa"
+       ],
+       "ship_months": [
+        "2026-05",
+        "2026-06",
+        "2026-07"
+       ],
+       "sku": "mi355",
+       "units": 105279
+      },
+      {
+       "h4": 34000,
+       "h8": 16933,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "sa"
+       ],
+       "ship_months": [
+        "2026-07"
+       ],
+       "sku": "mi450",
+       "units": 1667
+      }
+     ],
+     "total": {
+      "h4": 1062682,
+      "h8": 781363,
+      "units": 586014
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "h4": 12956,
+       "h8": 12956,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-06"
+       ],
+       "sku": "tpu_v6e",
+       "units": 13931
+      },
+      {
+       "h4": 1754457,
+       "h8": 1754457,
+       "hatch_h4": 635081,
+       "hatch_h8": 635081,
+       "hatch_units": 272567,
+       "kinds": [
+        "epoch",
+        "est"
+       ],
+       "ship_months": [
+        "2026-06",
+        "2026-07",
+        "2026-08"
+       ],
+       "sku": "tpu_v7",
+       "units": 752986
+      },
+      {
+       "h4": 386832,
+       "h8": 193416,
+       "hatch_h4": 268780,
+       "hatch_h8": 134390,
+       "hatch_units": 52702,
+       "kinds": [
+        "epoch",
+        "est"
+       ],
+       "ship_months": [
+        "2026-06",
+        "2026-07",
+        "2026-08"
+       ],
+       "sku": "tpu_v8i",
+       "units": 75849
+      },
+      {
+       "h4": 171990,
+       "h8": 85860,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "sa"
+       ],
+       "ship_months": [
+        "2026-08"
+       ],
+       "sku": "tpu_v8t",
+       "units": 27000
+      }
+     ],
+     "total": {
+      "h4": 2326235,
+      "h8": 2046689,
+      "units": 869766
+     }
+    }
+   },
+   "quarter": "2026Q3",
+   "total": {
+    "h4": 15606600,
+    "h8": 7237198,
+    "units": 3100348
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "h4": 80805,
+       "h8": 80805,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-08",
+        "2026-09",
+        "2026-10"
+       ],
+       "sku": "hopper",
+       "units": 80805
+      },
+      {
+       "h4": 648038,
+       "h8": 324660,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-08",
+        "2026-09",
+        "2026-10"
+       ],
+       "sku": "b200",
+       "units": 128325
+      },
+      {
+       "h4": 10815672,
+       "h8": 3609980,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "epoch"
+       ],
+       "ship_months": [
+        "2026-08",
+        "2026-09",
+        "2026-10"
+       ],
+       "sku": "b300",
+       "units": 1426869
+      },
+      {
+       "h4": 9548314,
+       "h8": 4771458,
+       "hatch_h4": 9548314,
+       "hatch_h8": 4771458,
+       "hatch_units": 539758,
+       "kinds": [
+        "est",
+        "forecast"
+       ],
+       "ship_months": [
+        "2026-09",
+        "2026-10",
+        "2026-11"
+       ],
+       "sku": "r200",
+       "units": 539758
+      }
+     ],
+     "total": {
+      "h4": 21092829,
+      "h8": 8786903,
+      "units": 2175757
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "h4": 55000,
+       "h8": 55000,
+       "hatch_h4": 55000,
+       "hatch_h8": 55000,
+       "hatch_units": 83334,
+       "kinds": [
+        "est"
+       ],
+       "ship_months": [
+        "2026-09",
+        "2026-10",
+        "2026-11"
+       ],
+       "sku": "trn2",
+       "units": 83334
+      },
+      {
+       "h4": 656167,
+       "h8": 656167,
+       "hatch_h4": 656167,
+       "hatch_h8": 656167,
+       "hatch_units": 516667,
+       "kinds": [
+        "est"
+       ],
+       "ship_months": [
+        "2026-09",
+        "2026-10",
+        "2026-11"
+       ],
+       "sku": "trn3",
+       "units": 516667
+      },
+      {
+       "h4": 26400,
+       "h8": 26400,
+       "hatch_h4": 4400,
+       "hatch_h8": 4400,
+       "hatch_units": 3333,
+       "kinds": [
+        "est",
+        "sa"
+       ],
+       "ship_months": [
+        "2026-08",
+        "2026-09",
+        "2026-10"
+       ],
+       "sku": "mi300",
+       "units": 19999
+      },
+      {
+       "h4": 636299,
+       "h8": 320041,
+       "hatch_h4": 168333,
+       "hatch_h8": 84667,
+       "hatch_units": 33333,
+       "kinds": [
+        "est",
+        "sa"
+       ],
+       "ship_months": [
+        "2026-08",
+        "2026-09",
+        "2026-10"
+       ],
+       "sku": "mi355",
+       "units": 125999
+      },
+      {
+       "h4": 1475600,
+       "h8": 734906,
+       "hatch_h4": 0,
+       "hatch_h8": 0,
+       "hatch_units": 0,
+       "kinds": [
+        "sa"
+       ],
+       "ship_months": [
+        "2026-08",
+        "2026-09",
+        "2026-10"
+       ],
+       "sku": "mi450",
+       "units": 72334
+      }
+     ],
+     "total": {
+      "h4": 2849466,
+      "h8": 1792514,
+      "units": 818333
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "h4": 1763997,
+       "h8": 1763997,
+       "hatch_h4": 1763997,
+       "hatch_h8": 1763997,
+       "hatch_units": 757081,
+       "kinds": [
+        "est"
+       ],
+       "ship_months": [
+        "2026-09",
+        "2026-10",
+        "2026-11"
+       ],
+       "sku": "tpu_v7",
+       "units": 757081
+      },
+      {
+       "h4": 1520763,
+       "h8": 760381,
+       "hatch_h4": 1520763,
+       "hatch_h8": 760381,
+       "hatch_units": 298188,
+       "kinds": [
+        "est"
+       ],
+       "ship_months": [
+        "2026-09",
+        "2026-10",
+        "2026-11"
+       ],
+       "sku": "tpu_v8i",
+       "units": 298188
+      },
+      {
+       "h4": 2779444,
+       "h8": 1387540,
+       "hatch_h4": 1189067,
+       "hatch_h8": 593600,
+       "hatch_units": 186667,
+       "kinds": [
+        "forecast",
+        "sa"
+       ],
+       "ship_months": [
+        "2026-09",
+        "2026-10",
+        "2026-11"
+       ],
+       "sku": "tpu_v8t",
+       "units": 436334
+      }
+     ],
+     "total": {
+      "h4": 6064204,
+      "h8": 3911918,
+      "units": 1491603
+     }
+    }
+   },
+   "quarter": "2026Q4",
+   "total": {
+    "h4": 30006499,
+    "h8": 14491335,
+    "units": 4485693
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "h4": 102068,
+       "h8": 102068,
+       "hatch_h4": 102068,
+       "hatch_h8": 102068,
+       "hatch_units": 102068,
+       "kinds": [
+        "forecast"
+       ],
+       "ship_months": [
+        "2026-11",
+        "2026-12",
+        "2027-01"
+       ],
+       "sku": "hopper",
+       "units": 102068
+      },
+      {
+       "h4": 233112,
+       "h8": 116788,
+       "hatch_h4": 233112,
+       "hatch_h8": 116788,
+       "hatch_units": 46161,
+       "kinds": [
+        "forecast"
+       ],
+       "ship_months": [
+        "2026-11",
+        "2026-12",
+        "2027-01"
+       ],
+       "sku": "b200",
+       "units": 46161
+      },
+      {
+       "h4": 2150757,
+       "h8": 717865,
+       "hatch_h4": 2150757,
+       "hatch_h8": 717865,
+       "hatch_units": 283741,
+       "kinds": [
+        "forecast"
+       ],
+       "ship_months": [
+        "2026-11",
+        "2026-12",
+        "2027-01"
+       ],
+       "sku": "b300",
+       "units": 283741
+      },
+      {
+       "h4": 23299015,
+       "h8": 11642922,
+       "hatch_h4": 23299015,
+       "hatch_h8": 11642922,
+       "hatch_units": 1317073,
+       "kinds": [
+        "forecast"
+       ],
+       "ship_months": [
+        "2026-12",
+        "2027-01",
+        "2027-02"
+       ],
+       "sku": "r200",
+       "units": 1317073
+      }
+     ],
+     "total": {
+      "h4": 25784952,
+      "h8": 12579643,
+      "units": 1749043
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "h4": 11000,
+       "h8": 11000,
+       "hatch_h4": 11000,
+       "hatch_h8": 11000,
+       "hatch_units": 16667,
+       "kinds": [
+        "est"
+       ],
+       "ship_months": [
+        "2026-12"
+       ],
+       "sku": "trn2",
+       "units": 16667
+      },
+      {
+       "h4": 846666,
+       "h8": 846666,
+       "hatch_h4": 846666,
+       "hatch_h8": 846666,
+       "hatch_units": 666666,
+       "kinds": [
+        "est"
+       ],
+       "ship_months": [
+        "2026-12",
+        "2027-01",
+        "2027-02"
+       ],
+       "sku": "trn3",
+       "units": 666666
+      },
+      {
+       "h4": 8800,
+       "h8": 8800,
+       "hatch_h4": 8800,
+       "hatch_h8": 8800,
+       "hatch_units": 6666,
+       "kinds": [
+        "est"
+       ],
+       "ship_months": [
+        "2026-11",
+        "2026-12"
+       ],
+       "sku": "mi300",
+       "units": 6666
+      },
+      {
+       "h4": 420833,
+       "h8": 211667,
+       "hatch_h4": 420833,
+       "hatch_h8": 211667,
+       "hatch_units": 83333,
+       "kinds": [
+        "est"
+       ],
+       "ship_months": [
+        "2026-11",
+        "2026-12",
+        "2027-01"
+       ],
+       "sku": "mi355",
+       "units": 83333
+      },
+      {
+       "h4": 4345200,
+       "h8": 2164080,
+       "hatch_h4": 4345200,
+       "hatch_h8": 2164080,
+       "hatch_units": 213000,
+       "kinds": [
+        "forecast"
+       ],
+       "ship_months": [
+        "2026-11",
+        "2026-12",
+        "2027-01"
+       ],
+       "sku": "mi450",
+       "units": 213000
+      }
+     ],
+     "total": {
+      "h4": 5632499,
+      "h8": 3242213,
+      "units": 986332
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "h4": 1084584,
+       "h8": 1084584,
+       "hatch_h4": 1084584,
+       "hatch_h8": 1084584,
+       "hatch_units": 465487,
+       "kinds": [
+        "est"
+       ],
+       "ship_months": [
+        "2026-12",
+        "2027-01",
+        "2027-02"
+       ],
+       "sku": "tpu_v7",
+       "units": 465487
+      },
+      {
+       "h4": 2369018,
+       "h8": 1184509,
+       "hatch_h4": 2369018,
+       "hatch_h8": 1184509,
+       "hatch_units": 464513,
+       "kinds": [
+        "est",
+        "forecast"
+       ],
+       "ship_months": [
+        "2026-12",
+        "2027-01",
+        "2027-02"
+       ],
+       "sku": "tpu_v8i",
+       "units": 464513
+      },
+      {
+       "h4": 4208447,
+       "h8": 2100920,
+       "hatch_h4": 4208447,
+       "hatch_h8": 2100920,
+       "hatch_units": 660667,
+       "kinds": [
+        "forecast"
+       ],
+       "ship_months": [
+        "2026-12",
+        "2027-01",
+        "2027-02"
+       ],
+       "sku": "tpu_v8t",
+       "units": 660667
+      }
+     ],
+     "total": {
+      "h4": 7662049,
+      "h8": 4370013,
+      "units": 1590667
+     }
+    }
+   },
+   "quarter": "2027Q1",
+   "total": {
+    "h4": 39079500,
+    "h8": 20191869,
+    "units": 4326042
+   }
+  },
+  {
+   "lanes": {
+    "nvidia": {
+     "segs": [
+      {
+       "h4": 83333,
+       "h8": 83333,
+       "hatch_h4": 83333,
+       "hatch_h8": 83333,
+       "hatch_units": 83333,
+       "kinds": [
+        "forecast"
+       ],
+       "ship_months": [
+        "2027-02",
+        "2027-03",
+        "2027-04"
+       ],
+       "sku": "hopper",
+       "units": 83333
+      },
+      {
+       "h4": 156132,
+       "h8": 78222,
+       "hatch_h4": 156132,
+       "hatch_h8": 78222,
+       "hatch_units": 30917,
+       "kinds": [
+        "forecast"
+       ],
+       "ship_months": [
+        "2027-02",
+        "2027-03",
+        "2027-04"
+       ],
+       "sku": "b200",
+       "units": 30917
+      },
+      {
+       "h4": 2109180,
+       "h8": 703988,
+       "hatch_h4": 2109180,
+       "hatch_h8": 703988,
+       "hatch_units": 278256,
+       "kinds": [
+        "forecast"
+       ],
+       "ship_months": [
+        "2027-02",
+        "2027-03",
+        "2027-04"
+       ],
+       "sku": "b300",
+       "units": 278256
+      },
+      {
+       "h4": 19895590,
+       "h8": 9942172,
+       "hatch_h4": 19895590,
+       "hatch_h8": 9942172,
+       "hatch_units": 1124681,
+       "kinds": [
+        "forecast"
+       ],
+       "ship_months": [
+        "2027-03",
+        "2027-04",
+        "2027-05"
+       ],
+       "sku": "r200",
+       "units": 1124681
+      },
+      {
+       "h4": 5900000,
+       "h8": 2950000,
+       "hatch_h4": 5900000,
+       "hatch_h8": 2950000,
+       "hatch_units": 166666,
+       "kinds": [
+        "forecast"
+       ],
+       "ship_months": [
+        "2027-04",
+        "2027-05"
+       ],
+       "sku": "rubin_ultra",
+       "units": 166666
+      }
+     ],
+     "total": {
+      "h4": 28144235,
+      "h8": 13757715,
+      "units": 1683853
+     }
+    },
+    "other": {
+     "segs": [
+      {
+       "h4": 931333,
+       "h8": 931333,
+       "hatch_h4": 931333,
+       "hatch_h8": 931333,
+       "hatch_units": 733333,
+       "kinds": [
+        "est"
+       ],
+       "ship_months": [
+        "2027-03",
+        "2027-04",
+        "2027-05"
+       ],
+       "sku": "trn3",
+       "units": 733333
+      },
+      {
+       "h4": 210417,
+       "h8": 105833,
+       "hatch_h4": 210417,
+       "hatch_h8": 105833,
+       "hatch_units": 41667,
+       "kinds": [
+        "est"
+       ],
+       "ship_months": [
+        "2027-02",
+        "2027-03",
+        "2027-04"
+       ],
+       "sku": "mi355",
+       "units": 41667
+      },
+      {
+       "h4": 4862000,
+       "h8": 2421467,
+       "hatch_h4": 4862000,
+       "hatch_h8": 2421467,
+       "hatch_units": 238333,
+       "kinds": [
+        "forecast"
+       ],
+       "ship_months": [
+        "2027-02",
+        "2027-03",
+        "2027-04"
+       ],
+       "sku": "mi450",
+       "units": 238333
+      }
+     ],
+     "total": {
+      "h4": 6003750,
+      "h8": 3458633,
+      "units": 1013333
+     }
+    },
+    "tpu": {
+     "segs": [
+      {
+       "h4": 466000,
+       "h8": 466000,
+       "hatch_h4": 466000,
+       "hatch_h8": 466000,
+       "hatch_units": 200000,
+       "kinds": [
+        "est"
+       ],
+       "ship_months": [
+        "2027-03",
+        "2027-04",
+        "2027-05"
+       ],
+       "sku": "tpu_v7",
+       "units": 200000
+      },
+      {
+       "h4": 2847500,
+       "h8": 1423750,
+       "hatch_h4": 2847500,
+       "hatch_h8": 1423750,
+       "hatch_units": 558334,
+       "kinds": [
+        "forecast"
+       ],
+       "ship_months": [
+        "2027-03",
+        "2027-04",
+        "2027-05"
+       ],
+       "sku": "tpu_v8i",
+       "units": 558334
+      },
+      {
+       "h4": 4957984,
+       "h8": 2475100,
+       "hatch_h4": 4957984,
+       "hatch_h8": 2475100,
+       "hatch_units": 778334,
+       "kinds": [
+        "forecast"
+       ],
+       "ship_months": [
+        "2027-03",
+        "2027-04",
+        "2027-05"
+       ],
+       "sku": "tpu_v8t",
+       "units": 778334
+      }
+     ],
+     "total": {
+      "h4": 8271484,
+      "h8": 4364850,
+      "units": 1536668
+     }
+    }
+   },
+   "quarter": "2027Q2",
+   "total": {
+    "h4": 42419469,
+    "h8": 21581198,
+    "units": 4233854
+   }
+  }
+ ],
+ "lanes": [
+  {
+   "key": "nvidia",
+   "name": "Nvidia"
+  },
+  {
+   "key": "tpu",
+   "name": "TPU"
+  },
+  {
+   "key": "other",
+   "name": "Trainium＋AMD"
+  }
+ ],
+ "meta": {
+  "decisions": "compute/decisions.md（2026-11-22）",
+  "generated": "2026-11-22",
+  "h100_fp8_dense_tflops": 1979,
+  "lag_note": {
+   "1": "Rubin / TPU / Trainium：出货后约 1 个月投入使用",
+   "2": "Blackwell / Hopper / AMD：出货后约 2 个月投入使用"
+  },
+  "not_counted": [
+   "华为昇腾、寒武纪（中国国内供给）",
+   "Nvidia H20、AMD MI308X（中国特供）",
+   "Meta MTIA、微软 Maia、OpenAI 自研芯片（量小或未量产）",
+   "SemiAnalysis 的「Other Blackwell」每季 45 万颗（推测为 RTX Pro 等非训练卡）"
+  ],
+  "sources": {
+   "epoch": "Epoch AI Chip Sales（2026-11-19 版）",
+   "est": "本报告推算",
+   "sa": "SemiAnalysis Accelerator Outlook（2026-11-13）"
+  }
+ },
+ "quarters_ship": [
+  "2025Q3",
+  "2025Q4",
+  "2026Q1",
+  "2026Q2",
+  "2026Q3",
+  "2026Q4",
+  "2027Q1",
+  "2027Q2"
+ ],
+ "ship_monthly": {
+  "b200": {
+   "2025-07": {
+    "src": "epoch",
+    "units": 115446
+   },
+   "2025-08": {
+    "src": "epoch",
+    "units": 115446
+   },
+   "2025-09": {
+    "src": "epoch",
+    "units": 115446
+   },
+   "2025-10": {
+    "src": "epoch",
+    "units": 139307
+   },
+   "2025-11": {
+    "src": "epoch",
+    "units": 139307
+   },
+   "2025-12": {
+    "src": "epoch",
+    "units": 139307
+   },
+   "2026-01": {
+    "src": "epoch",
+    "units": 115847
+   },
+   "2026-02": {
+    "src": "epoch",
+    "units": 115847
+   },
+   "2026-03": {
+    "src": "epoch",
+    "units": 115847
+   },
+   "2026-04": {
+    "src": "epoch",
+    "units": 74461
+   },
+   "2026-05": {
+    "src": "epoch",
+    "units": 74461
+   },
+   "2026-06": {
+    "src": "epoch",
+    "units": 74461
+   },
+   "2026-07": {
+    "src": "epoch",
+    "units": 44976
+   },
+   "2026-08": {
+    "src": "epoch",
+    "units": 44976
+   },
+   "2026-09": {
+    "src": "epoch",
+    "units": 44976
+   },
+   "2026-10": {
+    "src": "epoch31",
+    "units": 38373
+   },
+   "2026-11": {
+    "src": "sa",
+    "units": 15785
+   },
+   "2026-12": {
+    "src": "sa",
+    "units": 19292
+   },
+   "2027-01": {
+    "src": "sa",
+    "units": 11084
+   },
+   "2027-02": {
+    "src": "sa",
+    "units": 11084
+   },
+   "2027-03": {
+    "src": "sa",
+    "units": 11084
+   },
+   "2027-04": {
+    "src": "sa",
+    "units": 8749
+   },
+   "2027-05": {
+    "src": "sa",
+    "units": 8749
+   },
+   "2027-06": {
+    "src": "sa",
+    "units": 8749
+   }
+  },
+  "b300": {
+   "2025-07": {
+    "src": "epoch",
+    "units": 180639
+   },
+   "2025-08": {
+    "src": "epoch",
+    "units": 180639
+   },
+   "2025-09": {
+    "src": "epoch",
+    "units": 180639
+   },
+   "2025-10": {
+    "src": "epoch",
+    "units": 247973
+   },
+   "2025-11": {
+    "src": "epoch",
+    "units": 247973
+   },
+   "2025-12": {
+    "src": "epoch",
+    "units": 247973
+   },
+   "2026-01": {
+    "src": "epoch",
+    "units": 331044
+   },
+   "2026-02": {
+    "src": "epoch",
+    "units": 331044
+   },
+   "2026-03": {
+    "src": "epoch",
+    "units": 331044
+   },
+   "2026-04": {
+    "src": "epoch",
+    "units": 444796
+   },
+   "2026-05": {
+    "src": "epoch",
+    "units": 444796
+   },
+   "2026-06": {
+    "src": "epoch",
+    "units": 444796
+   },
+   "2026-07": {
+    "src": "epoch",
+    "units": 474900
+   },
+   "2026-08": {
+    "src": "epoch",
+    "units": 474900
+   },
+   "2026-09": {
+    "src": "epoch",
+    "units": 474900
+   },
+   "2026-10": {
+    "src": "epoch31",
+    "units": 477069
+   },
+   "2026-11": {
+    "src": "sa",
+    "units": 82793
+   },
+   "2026-12": {
+    "src": "sa",
+    "units": 101192
+   },
+   "2027-01": {
+    "src": "sa",
+    "units": 99756
+   },
+   "2027-02": {
+    "src": "sa",
+    "units": 99756
+   },
+   "2027-03": {
+    "src": "sa",
+    "units": 99756
+   },
+   "2027-04": {
+    "src": "sa",
+    "units": 78744
+   },
+   "2027-05": {
+    "src": "sa",
+    "units": 78744
+   },
+   "2027-06": {
+    "src": "sa",
+    "units": 78744
+   }
+  },
+  "hopper": {
+   "2025-07": {
+    "src": "epoch",
+    "units": 42448
+   },
+   "2025-08": {
+    "src": "epoch",
+    "units": 42448
+   },
+   "2025-09": {
+    "src": "epoch",
+    "units": 42448
+   },
+   "2025-10": {
+    "src": "epoch",
+    "units": 7797
+   },
+   "2025-11": {
+    "src": "epoch",
+    "units": 7797
+   },
+   "2025-12": {
+    "src": "epoch",
+    "units": 7797
+   },
+   "2026-01": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-02": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-03": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-04": {
+    "src": "epoch",
+    "units": 6454
+   },
+   "2026-05": {
+    "src": "epoch",
+    "units": 6454
+   },
+   "2026-06": {
+    "src": "epoch",
+    "units": 6454
+   },
+   "2026-07": {
+    "src": "epoch",
+    "units": 24770
+   },
+   "2026-08": {
+    "src": "epoch",
+    "units": 24770
+   },
+   "2026-09": {
+    "src": "epoch",
+    "units": 24770
+   },
+   "2026-10": {
+    "src": "epoch31",
+    "units": 31265
+   },
+   "2026-11": {
+    "src": "sa",
+    "units": 30931
+   },
+   "2026-12": {
+    "src": "sa",
+    "units": 37804
+   },
+   "2027-01": {
+    "src": "sa",
+    "units": 33333
+   },
+   "2027-02": {
+    "src": "sa",
+    "units": 33333
+   },
+   "2027-03": {
+    "src": "sa",
+    "units": 33333
+   },
+   "2027-04": {
+    "src": "sa",
+    "units": 16667
+   },
+   "2027-05": {
+    "src": "sa",
+    "units": 16667
+   },
+   "2027-06": {
+    "src": "sa",
+    "units": 16667
+   }
+  },
+  "mi300": {
+   "2025-07": {
+    "src": "epoch",
+    "units": 21856
+   },
+   "2025-08": {
+    "src": "epoch",
+    "units": 21856
+   },
+   "2025-09": {
+    "src": "epoch",
+    "units": 21856
+   },
+   "2025-10": {
+    "src": "epoch",
+    "units": 7991
+   },
+   "2025-11": {
+    "src": "epoch",
+    "units": 7991
+   },
+   "2025-12": {
+    "src": "epoch",
+    "units": 7991
+   },
+   "2026-01": {
+    "src": "epoch",
+    "units": 9493
+   },
+   "2026-02": {
+    "src": "epoch",
+    "units": 9493
+   },
+   "2026-03": {
+    "src": "epoch",
+    "units": 9493
+   },
+   "2026-04": {
+    "src": "epoch",
+    "units": 10367
+   },
+   "2026-05": {
+    "src": "epoch",
+    "units": 10367
+   },
+   "2026-06": {
+    "src": "epoch",
+    "units": 10367
+   },
+   "2026-07": {
+    "src": "sa",
+    "units": 8333
+   },
+   "2026-08": {
+    "src": "sa",
+    "units": 8333
+   },
+   "2026-09": {
+    "src": "sa",
+    "units": 8333
+   },
+   "2026-10": {
+    "src": "est",
+    "units": 3333
+   },
+   "2026-11": {
+    "src": "est",
+    "units": 3333
+   },
+   "2026-12": {
+    "src": "est",
+    "units": 3333
+   },
+   "2027-01": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-02": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-03": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-04": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-05": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-06": {
+    "src": "est",
+    "units": 0
+   }
+  },
+  "mi355": {
+   "2025-07": {
+    "src": "epoch",
+    "units": 16203
+   },
+   "2025-08": {
+    "src": "epoch",
+    "units": 16203
+   },
+   "2025-09": {
+    "src": "epoch",
+    "units": 16203
+   },
+   "2025-10": {
+    "src": "epoch",
+    "units": 24082
+   },
+   "2025-11": {
+    "src": "epoch",
+    "units": 24082
+   },
+   "2025-12": {
+    "src": "epoch",
+    "units": 24082
+   },
+   "2026-01": {
+    "src": "epoch",
+    "units": 26060
+   },
+   "2026-02": {
+    "src": "epoch",
+    "units": 26060
+   },
+   "2026-03": {
+    "src": "epoch",
+    "units": 26060
+   },
+   "2026-04": {
+    "src": "epoch",
+    "units": 29473
+   },
+   "2026-05": {
+    "src": "epoch",
+    "units": 29473
+   },
+   "2026-06": {
+    "src": "epoch",
+    "units": 29473
+   },
+   "2026-07": {
+    "src": "sa",
+    "units": 46333
+   },
+   "2026-08": {
+    "src": "sa",
+    "units": 46333
+   },
+   "2026-09": {
+    "src": "sa",
+    "units": 46333
+   },
+   "2026-10": {
+    "src": "est",
+    "units": 33333
+   },
+   "2026-11": {
+    "src": "est",
+    "units": 33333
+   },
+   "2026-12": {
+    "src": "est",
+    "units": 33333
+   },
+   "2027-01": {
+    "src": "est",
+    "units": 16667
+   },
+   "2027-02": {
+    "src": "est",
+    "units": 16667
+   },
+   "2027-03": {
+    "src": "est",
+    "units": 16667
+   },
+   "2027-04": {
+    "src": "est",
+    "units": 8333
+   },
+   "2027-05": {
+    "src": "est",
+    "units": 8333
+   },
+   "2027-06": {
+    "src": "est",
+    "units": 8333
+   }
+  },
+  "mi450": {
+   "2025-07": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-08": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-09": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-10": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-11": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-12": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-01": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-02": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-03": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-04": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-05": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-06": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-07": {
+    "src": "sa",
+    "units": 1667
+   },
+   "2026-08": {
+    "src": "sa",
+    "units": 1667
+   },
+   "2026-09": {
+    "src": "sa",
+    "units": 1667
+   },
+   "2026-10": {
+    "src": "sa",
+    "units": 69000
+   },
+   "2026-11": {
+    "src": "sa",
+    "units": 69000
+   },
+   "2026-12": {
+    "src": "sa",
+    "units": 69000
+   },
+   "2027-01": {
+    "src": "sa",
+    "units": 75000
+   },
+   "2027-02": {
+    "src": "sa",
+    "units": 75000
+   },
+   "2027-03": {
+    "src": "sa",
+    "units": 75000
+   },
+   "2027-04": {
+    "src": "sa",
+    "units": 88333
+   },
+   "2027-05": {
+    "src": "sa",
+    "units": 88333
+   },
+   "2027-06": {
+    "src": "sa",
+    "units": 88333
+   }
+  },
+  "r200": {
+   "2025-07": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-08": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-09": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-10": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-11": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-12": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-01": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-02": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-03": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-04": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-05": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-06": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-07": {
+    "src": "est",
+    "units": 2000
+   },
+   "2026-08": {
+    "src": "est",
+    "units": 46500
+   },
+   "2026-09": {
+    "src": "est",
+    "units": 68700
+   },
+   "2026-10": {
+    "src": "est",
+    "units": 124761
+   },
+   "2026-11": {
+    "src": "sa",
+    "units": 346297
+   },
+   "2026-12": {
+    "src": "sa",
+    "units": 478219
+   },
+   "2027-01": {
+    "src": "sa",
+    "units": 419427
+   },
+   "2027-02": {
+    "src": "sa",
+    "units": 419427
+   },
+   "2027-03": {
+    "src": "sa",
+    "units": 419427
+   },
+   "2027-04": {
+    "src": "sa",
+    "units": 352627
+   },
+   "2027-05": {
+    "src": "sa",
+    "units": 352627
+   },
+   "2027-06": {
+    "src": "sa",
+    "units": 352627
+   }
+  },
+  "rubin_ultra": {
+   "2025-07": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-08": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-09": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-10": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-11": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-12": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-01": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-02": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-03": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-04": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-05": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-06": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-07": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-08": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-09": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-10": {
+    "src": "sa",
+    "units": 0
+   },
+   "2026-11": {
+    "src": "sa",
+    "units": 0
+   },
+   "2026-12": {
+    "src": "sa",
+    "units": 0
+   },
+   "2027-01": {
+    "src": "sa",
+    "units": 0
+   },
+   "2027-02": {
+    "src": "sa",
+    "units": 0
+   },
+   "2027-03": {
+    "src": "sa",
+    "units": 0
+   },
+   "2027-04": {
+    "src": "sa",
+    "units": 83333
+   },
+   "2027-05": {
+    "src": "sa",
+    "units": 83333
+   },
+   "2027-06": {
+    "src": "sa",
+    "units": 83333
+   }
+  },
+  "tpu_v6e": {
+   "2025-07": {
+    "src": "epoch",
+    "units": 244767
+   },
+   "2025-08": {
+    "src": "epoch",
+    "units": 244767
+   },
+   "2025-09": {
+    "src": "epoch",
+    "units": 244767
+   },
+   "2025-10": {
+    "src": "epoch",
+    "units": 136119
+   },
+   "2025-11": {
+    "src": "epoch",
+    "units": 136119
+   },
+   "2025-12": {
+    "src": "epoch",
+    "units": 136119
+   },
+   "2026-01": {
+    "src": "epoch",
+    "units": 51685
+   },
+   "2026-02": {
+    "src": "epoch",
+    "units": 51685
+   },
+   "2026-03": {
+    "src": "epoch",
+    "units": 51685
+   },
+   "2026-04": {
+    "src": "epoch",
+    "units": 13931
+   },
+   "2026-05": {
+    "src": "epoch",
+    "units": 13931
+   },
+   "2026-06": {
+    "src": "epoch",
+    "units": 13931
+   },
+   "2026-07": {
+    "src": "est",
+    "units": 0
+   },
+   "2026-08": {
+    "src": "est",
+    "units": 0
+   },
+   "2026-09": {
+    "src": "est",
+    "units": 0
+   },
+   "2026-10": {
+    "src": "est",
+    "units": 0
+   },
+   "2026-11": {
+    "src": "est",
+    "units": 0
+   },
+   "2026-12": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-01": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-02": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-03": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-04": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-05": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-06": {
+    "src": "est",
+    "units": 0
+   }
+  },
+  "tpu_v7": {
+   "2025-07": {
+    "src": "epoch",
+    "units": 17095
+   },
+   "2025-08": {
+    "src": "epoch",
+    "units": 17095
+   },
+   "2025-09": {
+    "src": "epoch",
+    "units": 17095
+   },
+   "2025-10": {
+    "src": "epoch",
+    "units": 70943
+   },
+   "2025-11": {
+    "src": "epoch",
+    "units": 70943
+   },
+   "2025-12": {
+    "src": "epoch",
+    "units": 70943
+   },
+   "2026-01": {
+    "src": "epoch",
+    "units": 111449
+   },
+   "2026-02": {
+    "src": "epoch",
+    "units": 111449
+   },
+   "2026-03": {
+    "src": "epoch",
+    "units": 111449
+   },
+   "2026-04": {
+    "src": "epoch",
+    "units": 205553
+   },
+   "2026-05": {
+    "src": "epoch",
+    "units": 205553
+   },
+   "2026-06": {
+    "src": "epoch",
+    "units": 205553
+   },
+   "2026-07": {
+    "src": "epoch",
+    "units": 274866
+   },
+   "2026-08": {
+    "src": "est",
+    "units": 272567
+   },
+   "2026-09": {
+    "src": "est",
+    "units": 272567
+   },
+   "2026-10": {
+    "src": "est",
+    "units": 219027
+   },
+   "2026-11": {
+    "src": "est",
+    "units": 265487
+   },
+   "2026-12": {
+    "src": "est",
+    "units": 265487
+   },
+   "2027-01": {
+    "src": "est",
+    "units": 100000
+   },
+   "2027-02": {
+    "src": "est",
+    "units": 100000
+   },
+   "2027-03": {
+    "src": "est",
+    "units": 100000
+   },
+   "2027-04": {
+    "src": "est",
+    "units": 50000
+   },
+   "2027-05": {
+    "src": "est",
+    "units": 50000
+   },
+   "2027-06": {
+    "src": "est",
+    "units": 50000
+   }
+  },
+  "tpu_v8i": {
+   "2025-07": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-08": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-09": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-10": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-11": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-12": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-01": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-02": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-03": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-04": {
+    "src": "epoch",
+    "units": 8551
+   },
+   "2026-05": {
+    "src": "epoch",
+    "units": 8551
+   },
+   "2026-06": {
+    "src": "epoch",
+    "units": 8551
+   },
+   "2026-07": {
+    "src": "epoch",
+    "units": 14596
+   },
+   "2026-08": {
+    "src": "est",
+    "units": 52702
+   },
+   "2026-09": {
+    "src": "est",
+    "units": 52702
+   },
+   "2026-10": {
+    "src": "est",
+    "units": 110973
+   },
+   "2026-11": {
+    "src": "est",
+    "units": 134513
+   },
+   "2026-12": {
+    "src": "est",
+    "units": 134513
+   },
+   "2027-01": {
+    "src": "sa",
+    "units": 165000
+   },
+   "2027-02": {
+    "src": "sa",
+    "units": 165000
+   },
+   "2027-03": {
+    "src": "sa",
+    "units": 165000
+   },
+   "2027-04": {
+    "src": "sa",
+    "units": 196667
+   },
+   "2027-05": {
+    "src": "sa",
+    "units": 196667
+   },
+   "2027-06": {
+    "src": "sa",
+    "units": 196667
+   }
+  },
+  "tpu_v8t": {
+   "2025-07": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-08": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-09": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-10": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-11": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-12": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-01": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-02": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-03": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-04": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-05": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-06": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-07": {
+    "src": "sa",
+    "units": 0
+   },
+   "2026-08": {
+    "src": "sa",
+    "units": 27000
+   },
+   "2026-09": {
+    "src": "sa",
+    "units": 63000
+   },
+   "2026-10": {
+    "src": "sa",
+    "units": 186667
+   },
+   "2026-11": {
+    "src": "sa",
+    "units": 186667
+   },
+   "2026-12": {
+    "src": "sa",
+    "units": 186667
+   },
+   "2027-01": {
+    "src": "sa",
+    "units": 237000
+   },
+   "2027-02": {
+    "src": "sa",
+    "units": 237000
+   },
+   "2027-03": {
+    "src": "sa",
+    "units": 237000
+   },
+   "2027-04": {
+    "src": "sa",
+    "units": 270667
+   },
+   "2027-05": {
+    "src": "sa",
+    "units": 270667
+   },
+   "2027-06": {
+    "src": "sa",
+    "units": 270667
+   }
+  },
+  "trn2": {
+   "2025-07": {
+    "src": "epoch",
+    "units": 95000
+   },
+   "2025-08": {
+    "src": "epoch",
+    "units": 95000
+   },
+   "2025-09": {
+    "src": "epoch",
+    "units": 95000
+   },
+   "2025-10": {
+    "src": "epoch",
+    "units": 111667
+   },
+   "2025-11": {
+    "src": "epoch",
+    "units": 111667
+   },
+   "2025-12": {
+    "src": "epoch",
+    "units": 111667
+   },
+   "2026-01": {
+    "src": "epoch",
+    "units": 115000
+   },
+   "2026-02": {
+    "src": "epoch",
+    "units": 115000
+   },
+   "2026-03": {
+    "src": "epoch",
+    "units": 115000
+   },
+   "2026-04": {
+    "src": "epoch",
+    "units": 85000
+   },
+   "2026-05": {
+    "src": "epoch",
+    "units": 85000
+   },
+   "2026-06": {
+    "src": "epoch",
+    "units": 85000
+   },
+   "2026-07": {
+    "src": "est",
+    "units": 50000
+   },
+   "2026-08": {
+    "src": "est",
+    "units": 50000
+   },
+   "2026-09": {
+    "src": "est",
+    "units": 50000
+   },
+   "2026-10": {
+    "src": "est",
+    "units": 16667
+   },
+   "2026-11": {
+    "src": "est",
+    "units": 16667
+   },
+   "2026-12": {
+    "src": "est",
+    "units": 16667
+   },
+   "2027-01": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-02": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-03": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-04": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-05": {
+    "src": "est",
+    "units": 0
+   },
+   "2027-06": {
+    "src": "est",
+    "units": 0
+   }
+  },
+  "trn3": {
+   "2025-07": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-08": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-09": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-10": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-11": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2025-12": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-01": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-02": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-03": {
+    "src": "epoch",
+    "units": 0
+   },
+   "2026-04": {
+    "src": "epoch",
+    "units": 31667
+   },
+   "2026-05": {
+    "src": "epoch",
+    "units": 31667
+   },
+   "2026-06": {
+    "src": "epoch",
+    "units": 31667
+   },
+   "2026-07": {
+    "src": "est",
+    "units": 116667
+   },
+   "2026-08": {
+    "src": "est",
+    "units": 116667
+   },
+   "2026-09": {
+    "src": "est",
+    "units": 116667
+   },
+   "2026-10": {
+    "src": "est",
+    "units": 200000
+   },
+   "2026-11": {
+    "src": "est",
+    "units": 200000
+   },
+   "2026-12": {
+    "src": "est",
+    "units": 200000
+   },
+   "2027-01": {
+    "src": "est",
+    "units": 233333
+   },
+   "2027-02": {
+    "src": "est",
+    "units": 233333
+   },
+   "2027-03": {
+    "src": "est",
+    "units": 233333
+   },
+   "2027-04": {
+    "src": "est",
+    "units": 250000
+   },
+   "2027-05": {
+    "src": "est",
+    "units": 250000
+   },
+   "2027-06": {
+    "src": "est",
+    "units": 250000
+   }
+  }
+ },
+ "ship_quarterly": {
+  "b200": {
+   "2025Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 346338
+   },
+   "2025Q4": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 417922
+   },
+   "2026Q1": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 347540
+   },
+   "2026Q2": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 223383
+   },
+   "2026Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 134927
+   },
+   "2026Q4": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "SemiAnalysis 只给 Blackwell 合计 734,504 颗，按 B200 10% / B300 90% 拆。10 月取 Epoch 的 30,946 颗 × 31/25（Epoch 的 10 月只算到 10/25）＝38,373 颗；11、12 月按 45% / 55% 分其余，属预测。",
+    "src": "sa",
+    "units": 73450
+   },
+   "2027Q1": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "SemiAnalysis Blackwell 合计 332,520 颗，按 10% / 90% 拆。",
+    "src": "sa",
+    "units": 33252
+   },
+   "2027Q2": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "SemiAnalysis Blackwell 合计 262,480 颗，按 10% / 90% 拆。",
+    "src": "sa",
+    "units": 26248
+   }
+  },
+  "b300": {
+   "2025Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 541916
+   },
+   "2025Q4": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 743918
+   },
+   "2026Q1": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 993133
+   },
+   "2026Q2": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 1334389
+   },
+   "2026Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 1424701
+   },
+   "2026Q4": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "SemiAnalysis 只给 Blackwell 合计 734,504 颗，按 B200 10% / B300 90% 拆。10 月取 Epoch 的 384,733 颗 × 31/25＝477,069 颗；11、12 月按 45% / 55% 分其余，属预测。",
+    "src": "sa",
+    "units": 661054
+   },
+   "2027Q1": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "SemiAnalysis Blackwell 合计 332,520 颗，按 10% / 90% 拆。",
+    "src": "sa",
+    "units": 299268
+   },
+   "2027Q2": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "SemiAnalysis Blackwell 合计 262,480 颗，按 10% / 90% 拆。",
+    "src": "sa",
+    "units": 236232
+   }
+  },
+  "hopper": {
+   "2025Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 127343
+   },
+   "2025Q4": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 23391
+   },
+   "2026Q1": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q2": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 19361
+   },
+   "2026Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "用 Epoch。SemiAnalysis 这一季是 200,000 颗。",
+    "src": "epoch",
+    "units": 74310
+   },
+   "2026Q4": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "10 月取 Epoch 的 25,214 颗 × 31/25＝31,265 颗；SemiAnalysis 全季 100,000 颗，11、12 月按 45% / 55% 分其余。",
+    "src": "sa",
+    "units": 100000
+   },
+   "2027Q1": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "",
+    "src": "sa",
+    "units": 100000
+   },
+   "2027Q2": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "",
+    "src": "sa",
+    "units": 50000
+   }
+  },
+  "mi300": {
+   "2025Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 65568
+   },
+   "2025Q4": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 23974
+   },
+   "2026Q1": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 28478
+   },
+   "2026Q2": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 31102
+   },
+   "2026Q3": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+    "note": "SemiAnalysis（MI300/325）。",
+    "src": "sa",
+    "units": 25000
+   },
+   "2026Q4": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "",
+    "src": "est",
+    "units": 10000
+   },
+   "2027Q1": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "",
+    "src": "est",
+    "units": 0
+   },
+   "2027Q2": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "",
+    "src": "est",
+    "units": 0
+   }
+  },
+  "mi355": {
+   "2025Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 48610
+   },
+   "2025Q4": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "不含中国特供的 MI308X 31,783 颗。",
+    "src": "epoch",
+    "units": 72246
+   },
+   "2026Q1": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 78179
+   },
+   "2026Q2": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 88419
+   },
+   "2026Q3": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+    "note": "",
+    "src": "sa",
+    "units": 139000
+   },
+   "2026Q4": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "10 万颗是本报告的假设。",
+    "src": "est",
+    "units": 100000
+   },
+   "2027Q1": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "",
+    "src": "est",
+    "units": 50000
+   },
+   "2027Q2": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "",
+    "src": "est",
+    "units": 25000
+   }
+  },
+  "mi450": {
+   "2025Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2025Q4": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q1": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q2": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q3": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+    "note": "",
+    "src": "sa",
+    "units": 5000
+   },
+   "2026Q4": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "SemiAnalysis：MI400/450 155,000 + Meta 定制 52,000。",
+    "src": "sa",
+    "units": 207000
+   },
+   "2027Q1": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "SemiAnalysis：MI400/450 135,000 + Meta 定制 90,000。",
+    "src": "sa",
+    "units": 225000
+   },
+   "2027Q2": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "SemiAnalysis：MI400/450 140,000 + Meta 定制 125,000。",
+    "src": "sa",
+    "units": 265000
+   }
+  },
+  "r200": {
+   "2025Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2025Q4": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q1": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q2": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q3": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "本报告推算：以 Nvidia 2027 财年三季度（7/27–10/25）Epoch 合计 201,961 颗为锚，按爬坡分 7 月 2,000、8 月 46,500、9 月 68,700、10/1–10/25 84,761。日历三季度＝117,200 颗。Epoch 的日历三季度是 146,477 颗（按天平摊），差额 29,277 颗移到四季度。SemiAnalysis 这一季是 220,752 颗。",
+    "src": "est",
+    "units": 117200
+   },
+   "2026Q4": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "SemiAnalysis 920,000 颗 + 三季度让出的 29,277 颗＝949,277 颗（下半年总数不变）。10 月＝84,761 + 10/26–31 的 40,000＝124,761 颗（推算）；11、12 月按 42% / 58% 分其余 824,516 颗（预测）。",
+    "src": "sa",
+    "units": 949277
+   },
+   "2027Q1": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "",
+    "src": "sa",
+    "units": 1258280
+   },
+   "2027Q2": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "",
+    "src": "sa",
+    "units": 1057880
+   }
+  },
+  "rubin_ultra": {
+   "2025Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2025Q4": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q1": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q2": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q4": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "",
+    "src": "sa",
+    "units": 0
+   },
+   "2027Q1": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "",
+    "src": "sa",
+    "units": 0
+   },
+   "2027Q2": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "",
+    "src": "sa",
+    "units": 250000
+   }
+  },
+  "tpu_v6e": {
+   "2025Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 734300
+   },
+   "2025Q4": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 408357
+   },
+   "2026Q1": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 155055
+   },
+   "2026Q2": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 41792
+   },
+   "2026Q3": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "",
+    "src": "est",
+    "units": 0
+   },
+   "2026Q4": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "",
+    "src": "est",
+    "units": 0
+   },
+   "2027Q1": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "",
+    "src": "est",
+    "units": 0
+   },
+   "2027Q2": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "",
+    "src": "est",
+    "units": 0
+   }
+  },
+  "tpu_v7": {
+   "2025Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 51286
+   },
+   "2025Q4": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 212828
+   },
+   "2026Q1": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 334346
+   },
+   "2026Q2": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 616658
+   },
+   "2026Q3": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "本报告推算：Epoch 到 8/2 为止 274,866 颗（约等于 7 月）；博通 5–7 月那一季约 80 万颗、8–10 月推算约 100 万颗 → 日历三季度博通约 94 万颗（v7 + v8i）。",
+    "src": "est",
+    "units": 820000
+   },
+   "2026Q4": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "本报告推算：博通约 10 月 33 万 + 11–12 月 80 万颗（v7 + v8i 合计，按两者季度量的比例分）。",
+    "src": "est",
+    "units": 750000
+   },
+   "2027Q1": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "v7 尾量 30 万颗是本报告的假设。",
+    "src": "est",
+    "units": 300000
+   },
+   "2027Q2": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "v7 尾量 15 万颗是本报告的假设。",
+    "src": "est",
+    "units": 150000
+   }
+  },
+  "tpu_v8i": {
+   "2025Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2025Q4": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q1": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q2": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 25654
+   },
+   "2026Q3": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "本报告推算：Epoch 到 8/2 为止 14,596 颗（约等于 7 月），8、9 月平分其余。",
+    "src": "est",
+    "units": 120000
+   },
+   "2026Q4": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "本报告推算：同 v7 那一格。",
+    "src": "est",
+    "units": 380000
+   },
+   "2027Q1": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "SemiAnalysis（博通那一份，Google 自用 345,000 + Anthropic 150,000）。",
+    "src": "sa",
+    "units": 495000
+   },
+   "2027Q2": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "SemiAnalysis（博通那一份，Google 自用 275,000 + Anthropic 315,000）。",
+    "src": "sa",
+    "units": 590000
+   }
+  },
+  "tpu_v8t": {
+   "2025Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2025Q4": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q1": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q2": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q3": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook（2026-11-13）",
+    "note": "SemiAnalysis（联发科那一份）。月度：8 月 30%、9 月 70%。",
+    "src": "sa",
+    "units": 90000
+   },
+   "2026Q4": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "SemiAnalysis（联发科那一份）。2026 全年 TPU 合计约 389 万颗，落在各家预测 330–460 万颗之内，低于 Google 说的 430 万颗。",
+    "src": "sa",
+    "units": 560000
+   },
+   "2027Q1": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "",
+    "src": "sa",
+    "units": 711000
+   },
+   "2027Q2": {
+    "conf": "中",
+    "label": "SemiAnalysis Accelerator Outlook 预测（2026-11-13）",
+    "note": "",
+    "src": "sa",
+    "units": 812000
+   }
+  },
+  "trn2": {
+   "2025Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 285000
+   },
+   "2025Q4": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 335000
+   },
+   "2026Q1": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 345000
+   },
+   "2026Q2": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 255000
+   },
+   "2026Q3": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "",
+    "src": "est",
+    "units": 150000
+   },
+   "2026Q4": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "",
+    "src": "est",
+    "units": 50000
+   },
+   "2027Q1": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "",
+    "src": "est",
+    "units": 0
+   },
+   "2027Q2": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "",
+    "src": "est",
+    "units": 0
+   }
+  },
+  "trn3": {
+   "2025Q3": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2025Q4": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q1": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 0
+   },
+   "2026Q2": {
+    "conf": "中",
+    "label": "Epoch AI Chip Sales（2026-11-19）",
+    "note": "",
+    "src": "epoch",
+    "units": 95000
+   },
+   "2026Q3": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "本报告推算：JPMorgan 预计 2026 年 Trainium3 约 130 万颗。",
+    "src": "est",
+    "units": 350000
+   },
+   "2026Q4": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "",
+    "src": "est",
+    "units": 600000
+   },
+   "2027Q1": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "本报告推算：JPMorgan 预计 2027 年 Trainium3 约 310 万颗。",
+    "src": "est",
+    "units": 700000
+   },
+   "2027Q2": {
+    "conf": "低",
+    "label": "本报告推算",
+    "note": "本报告推算：JPMorgan 预计 2027 年 Trainium3 约 310 万颗。",
+    "src": "est",
+    "units": 750000
+   }
+  }
+ },
+ "skus": [
+  {
+   "basis": "定义：H100 稠密 FP8 1,979 TFLOPS = 1",
+   "conf": "高",
+   "f4": 1.0,
+   "f8": 1.0,
+   "key": "hopper",
+   "lag": 2,
+   "lane": "nvidia",
+   "name": "H100 / H200"
+  },
+  {
+   "basis": "Nvidia 官方：GB200 每颗 5 PF FP8 / 10 PF FP4（稠密）",
+   "conf": "高",
+   "f4": 5.05,
+   "f8": 2.53,
+   "key": "b200",
+   "lag": 2,
+   "lane": "nvidia",
+   "name": "B200 / GB200"
+  },
+  {
+   "basis": "Nvidia 官方：GB300 每颗 5 PF FP8 / 15 PF FP4（稠密）",
+   "conf": "高",
+   "f4": 7.58,
+   "f8": 2.53,
+   "key": "b300",
+   "lag": 2,
+   "lane": "nvidia",
+   "name": "B300 / GB300"
+  },
+  {
+   "basis": "Nvidia 官方 + Epoch：17.5 PF FP8；4 位取 NVFP4 训练 35 PF。推理 50 PF 没有注明是否稠密，不用",
+   "conf": "中",
+   "f4": 17.69,
+   "f8": 8.84,
+   "key": "r200",
+   "lag": 1,
+   "lane": "nvidia",
+   "name": "Rubin（VR200）"
+  },
+  {
+   "basis": "假设：按 Rubin × 2",
+   "conf": "低",
+   "f4": 35.4,
+   "f8": 17.7,
+   "key": "rubin_ultra",
+   "lag": 1,
+   "lane": "nvidia",
+   "name": "Rubin Ultra"
+  },
+  {
+   "basis": "Epoch AI chip types（0.93）",
+   "conf": "中",
+   "f4": 0.93,
+   "f8": 0.93,
+   "key": "tpu_v6e",
+   "lag": 1,
+   "lane": "tpu",
+   "name": "TPU v6e（Trillium）"
+  },
+  {
+   "basis": "Google Cloud 文档：4,614 TFLOPS FP8；没有 FP4",
+   "conf": "高",
+   "f4": 2.33,
+   "f8": 2.33,
+   "key": "tpu_v7",
+   "lag": 1,
+   "lane": "tpu",
+   "name": "TPU v7（Ironwood）"
+  },
+  {
+   "basis": "Google 只给 10.1 PF FP4；8 位按 FP4 ÷ 2 推算。Epoch 填的 5.10 是把 FP4 当成 8 位，不采用",
+   "conf": "低",
+   "f4": 5.1,
+   "f8": 2.55,
+   "key": "tpu_v8i",
+   "lag": 1,
+   "lane": "tpu",
+   "name": "TPU v8i"
+  },
+  {
+   "basis": "Google 只给 12.6 PF FP4；8 位按 FP4 ÷ 2 推算",
+   "conf": "低",
+   "f4": 6.37,
+   "f8": 3.18,
+   "key": "tpu_v8t",
+   "lag": 1,
+   "lane": "tpu",
+   "name": "TPU v8t"
+  },
+  {
+   "basis": "Epoch AI chip types（0.66）",
+   "conf": "中",
+   "f4": 0.66,
+   "f8": 0.66,
+   "key": "trn2",
+   "lag": 1,
+   "lane": "other",
+   "name": "Trainium2"
+  },
+  {
+   "basis": "AWS：2.52 PF MXFP8；没有找到 FP4",
+   "conf": "中",
+   "f4": 1.27,
+   "f8": 1.27,
+   "key": "trn3",
+   "lag": 1,
+   "lane": "other",
+   "name": "Trainium3"
+  },
+  {
+   "basis": "Epoch AI chip types（1.32）",
+   "conf": "中",
+   "f4": 1.32,
+   "f8": 1.32,
+   "key": "mi300",
+   "lag": 2,
+   "lane": "other",
+   "name": "MI300X / MI325X"
+  },
+  {
+   "basis": "AMD 官方：MI355X 5 PF FP8 / 10 PF FP4",
+   "conf": "中",
+   "f4": 5.05,
+   "f8": 2.54,
+   "key": "mi355",
+   "lag": 2,
+   "lane": "other",
+   "name": "MI350X / MI355X"
+  },
+  {
+   "basis": "AMD 官方：MI455X 20.1 PF FP8 / 40.3 PF FP4",
+   "conf": "中",
+   "f4": 20.4,
+   "f8": 10.16,
+   "key": "mi450",
+   "lag": 2,
+   "lane": "other",
+   "name": "MI450 / MI455X（含 Meta 定制）"
+  }
+ ]
+}

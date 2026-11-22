@@ -1,0 +1,12 @@
+# 公开仓库：以下内容不提交
+# 付费研报的原始摘录与截图（SemiAnalysis 等），只留在维护者本机
+compute/local/
+# 截图与浏览器检查产物（每次检查重新生成）
+*.png
+qa/out/
+qa/rehearsal/
+qa/regression/
+compute/qa/
+# 旧的手工备份：备份靠 git 历史
+backup/
+__pycache__/

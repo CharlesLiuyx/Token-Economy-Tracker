@@ -1,0 +1,5017 @@
+{
+ "_readme": "表 2-1、表 2-2、图 2-1 模型泳道、图 3-1~3-3、顶栏快照与模型计数的唯一数据源。改完跑 build_tables.py。字段说明见 ../MAINTAIN.md。",
+ "meta": {
+  "snapshot": "2026-11-19",
+  "title": {
+   "zh": "大模型发布和 Bench 跟进：前沿 Gemini Claude ChatGPT 大厂 Grok Muse 开源 DeepSeek Kimi GLM",
+   "en": ""
+  },
+  "meta_prefix": {
+   "zh": "Bench 得分 · 价格 · 发布时间",
+   "en": ""
+  },
+  "appendix_hints": [
+   {
+    "label": {
+     "zh": "核对方式",
+     "en": ""
+    },
+    "tip": {
+     "zh": "<b>核对方式</b>快照日期 {snapshot}。<br>发布日和价格至少用两个来源核对过；受限模型除外。",
+     "en": ""
+    }
+   }
+  ]
+ },
+ "timeline": {
+  "t0": "2026-06-01",
+  "span_days": 182
+ },
+ "layout": {
+  "_readme": "列宽（em）。原表由浏览器实测得出；新增列沿用同组宽度。build_tables.py 会估算新内容所需宽度，超出时打印警告，需人工调大这里的值。",
+  "t21": {
+   "model": 14.419,
+   "release": 4.34106,
+   "price_in": 4.496,
+   "price_out": 5.891,
+   "bench": 5.27135
+  },
+  "t22": {
+   "test": 14.574,
+   "model": 4.34106
+  }
+ },
+ "t21": {
+  "toc": {
+   "zh": "表 2-1 模型总表",
+   "en": ""
+  },
+  "c0": {
+   "label": {
+    "zh": "模型",
+    "en": ""
+   },
+   "tip": {
+    "zh": "厂商色块 + 模型名。「受限」＝只对通过审核的机构开放。",
+    "en": ""
+   }
+  },
+  "groups": [
+   {
+    "key": "basic",
+    "label": {
+     "zh": "基本 · 2026 年 · $/百万 token",
+     "en": ""
+    },
+    "short": {
+     "zh": "基本",
+     "en": ""
+    },
+    "tip": {
+     "zh": "发布日都在 2026 年。价格是 API 标准价，美元 / 每百万 token。",
+     "en": ""
+    }
+   },
+   {
+    "key": "indep",
+    "label": {
+     "zh": "独立榜单",
+     "en": ""
+    },
+    "short": {
+     "zh": "独立榜单",
+     "en": ""
+    },
+    "tip": {
+     "zh": "第三方用同一套方法统一测，可以横向比。",
+     "en": ""
+    }
+   },
+   {
+    "key": "general",
+    "label": {
+     "zh": "厂商自报 · 通用能力",
+     "en": ""
+    },
+    "short": {
+     "zh": "通用能力",
+     "en": ""
+    },
+    "tip": {
+     "zh": "各厂商自己测、自己报，测试条件不一样。",
+     "en": ""
+    }
+   },
+   {
+    "key": "cyber",
+    "label": {
+     "zh": "厂商自报 · 网络安全",
+     "en": ""
+    },
+    "short": {
+     "zh": "网络安全",
+     "en": ""
+    },
+    "tip": {
+     "zh": "多数只有专门的安全模型或关掉防护后才测。",
+     "en": ""
+    }
+   },
+   {
+    "key": "life",
+    "label": {
+     "zh": "厂商自报 · 生命科学",
+     "en": ""
+    },
+    "short": {
+     "zh": "生命科学",
+     "en": ""
+    },
+    "tip": {
+     "zh": "除 VCT 外，目前只有 Anthropic 公布这一组。",
+     "en": ""
+    }
+   }
+  ],
+  "basic": {
+   "release": {
+    "label": {
+     "zh": "发布",
+     "en": ""
+    },
+    "tip": {
+     "zh": "对外可用的日期，都在 2026 年。先宣布、后开放的，悬停看两个日期。色条越长越新。〔高〕",
+     "en": ""
+    }
+   },
+   "price_in": {
+    "label": {
+     "zh": "输入",
+     "en": ""
+    },
+    "tip": {
+     "zh": "API 标准价，美元 / 每百万输入 token。多个来源一致。色条按 0 到 {max}（公开模型最高价）画，越长越贵。〔高〕",
+     "en": ""
+    }
+   },
+   "price_out": {
+    "label": {
+     "zh": "输出",
+     "en": ""
+    },
+    "tip": {
+     "zh": "API 标准价，美元 / 每百万输出 token。多个来源一致。色条按 0 到 {max}（公开模型最高价）画，越长越贵。〔高〕",
+     "en": ""
+    }
+   }
+  },
+  "hints": [
+   {
+    "label": {
+     "zh": "怎么读",
+     "en": ""
+    },
+    "tip": {
+     "zh": "<b>怎么读这张表</b>价格是 API 标准价，美元 / 每百万 token。<br>分数 {n_bench} 列，分{n_groups_zh}组：{group_names}。<br>每列前三名加深，名次越靠前越深。<br>「—」是没有公开分数。<br>悬停任何数字可看出处和测试条件。",
+     "en": ""
+    }
+   },
+   {
+    "label": {
+     "zh": "色条",
+     "en": ""
+    },
+    "tip": {
+     "zh": "<b>格内色条</b>分数列：每列从最低分画到最高分；有分数的模型少于 5 个时，从 0 画起。<br>颜色跟厂商。<br>发布列：越长越新。<br>价格列：灰色，从 0 画到公开模型最高价（输入 {price_in_max}，输出 {price_out_max}），越长越贵。<br>斜纹：受限模型的价格超出这个范围。",
+     "en": ""
+    }
+   },
+   {
+    "label": {
+     "zh": "* 和 →",
+     "en": ""
+    },
+    "tip": {
+     "zh": "<b>* 和 →</b>*：先宣布、后开放，表里写的是开放日。<br>→：Argon 和 Carbon 在 12 月 1 日调价。箭头前是现价，箭头后是新价。",
+     "en": ""
+    }
+   },
+   {
+    "label": {
+     "zh": "内部代号",
+     "en": ""
+    },
+    "tip": {
+     "zh": "<b>Model 2 / 3 / 4</b>Anthropic 的内部代号，出自 METR 11 月 5 日的独立评估报告。<br>没有价格；「发布」列写的是训练完成的时间。<br>Model 4 就是 System Card 里的「内部模型」，只有 AECI 一个分数（178.78）。<br>Model 3 被认为是 Mythos 5.2 和 Fable 5.2 的底层模型。<br>Model 2 没有公开分数。",
+     "en": ""
+    }
+   },
+   {
+    "label": {
+     "zh": "右边为什么空格多",
+     "en": ""
+    },
+    "tip": {
+     "zh": "<b>右边为什么空格多</b>网络安全和生命科学的测试多数是 Anthropic 内部的，Google 和 OpenAI 没有公布同一套题的分数。<br>VCT 的 OpenAI 分数是 OpenAI 用同一套题自测的，计分可能不同。<br>GPT-6 Rosalind 只有 OpenAI 自己的三项：MedChemBench v7 49.6%，GeneBench Pro v13 37.7%，LifeSciBench Gold 61.3%。不是同一套题，没有填。<br>ExploitGym 和 CyScenarioBench 各家的限时或题目不同，只能看大致位置。",
+     "en": ""
+    }
+   }
+  ]
+ },
+ "benches": [
+  {
+   "key": "aa",
+   "label": {
+    "zh": "AA",
+    "en": ""
+   },
+   "name": {
+    "zh": "Artificial Analysis Intelligence Index",
+    "en": ""
+   },
+   "unit": {
+    "zh": "",
+    "en": ""
+   },
+   "group": "indep",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Artificial Analysis Intelligence Index v5.0.1。第三方机构用同一套 9 项测试统一打分，满分 100。可以横向比。〔高〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "vals",
+   "label": {
+    "zh": "Vals",
+    "en": ""
+   },
+   "name": {
+    "zh": "Vals Index",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "indep",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Vals Index v2.2，单位 %。第三方机构 Vals AI 用金融、法律、编码等真实工作任务统一测。可以横向比。〔高〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "tb4_vals",
+   "label": {
+    "zh": "TB 4.0",
+    "en": ""
+   },
+   "name": {
+    "zh": "Terminal-Bench 4.0（Vals 独立测）",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "indep",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Terminal-Bench 4.0，单位 %。在命令行里完成真实工程任务。这一列是 Vals AI 用同一个工具（mini-SWE-agent）统一测的，2026-11-18。可以横向比。〔高〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "fc2",
+   "label": {
+    "zh": "FC 2.0",
+    "en": ""
+   },
+   "name": {
+    "zh": "FrontierCode 2.0",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "general",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "FrontierCode 2.0，单位 %。难度很高的编码测试。分数来自各厂商自己的发布表。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "ale",
+   "label": {
+    "zh": "ALE",
+    "en": ""
+   },
+   "name": {
+    "zh": "Agents' Last Exam v1.1",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "general",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Agents' Last Exam v1.1，单位 %。测模型能否独立做完多步骤的职业任务。分数来自各厂商自己的发布表。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "tbsci",
+   "label": {
+    "zh": "TB-Sci",
+    "en": ""
+   },
+   "name": {
+    "zh": "Terminal-Bench-Science 0.1",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "general",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Terminal-Bench-Science 0.1，单位 %。在命令行里完成科研计算任务。分数来自各厂商自己的发布表。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "osw",
+   "label": {
+    "zh": "OSW",
+    "en": ""
+   },
+   "name": {
+    "zh": "OSWorld 2.1",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "general",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "OSWorld 2.1（离线子集），单位 %。测模型像人一样操作电脑界面的能力。分数来自各厂商自己的发布表。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "chart",
+   "label": {
+    "zh": "Chart",
+    "en": ""
+   },
+   "name": {
+    "zh": "Chartography",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "general",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Chartography，单位 %。读懂信息密集的专业图表。分数来自各厂商自己的发布表。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "auto",
+   "label": {
+    "zh": "Auto",
+    "en": ""
+   },
+   "name": {
+    "zh": "AutomationBench",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "general",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "AutomationBench（Zapier 出品），单位 %。跨多个办公软件完成业务流程。分数来自各厂商自己的发布表。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "tb4_vendor",
+   "label": {
+    "zh": "TB 4.0",
+    "en": ""
+   },
+   "name": {
+    "zh": "Terminal-Bench 4.0",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "general",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Terminal-Bench 4.0，单位 %。这一列是厂商自己报的，或官方榜上厂商自家工具的成绩。各家工具不同，和左边 Vals 那一列不能混着比。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "aeci",
+   "label": {
+    "zh": "AECI",
+    "en": ""
+   },
+   "name": {
+    "zh": "AECI",
+    "en": ""
+   },
+   "unit": {
+    "zh": "",
+    "en": ""
+   },
+   "group": "general",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Anthropic Epoch Capabilities Index。Anthropic 内部的能力综合指数，只有 Anthropic 的模型有。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "cve",
+   "label": {
+    "zh": "CVE",
+    "en": ""
+   },
+   "name": {
+    "zh": "CVE Rediscovery",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "cyber",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "CVE Rediscovery，单位 %。在代码里重新找出已公开的真实漏洞，分数是找回的比例。Anthropic 的内部测试。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "cysb",
+   "label": {
+    "zh": "CySB",
+    "en": ""
+   },
+   "name": {
+    "zh": "CyScenarioBench",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "cyber",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "CyScenarioBench，单位 %。模拟完整的网络攻防场景。各家用的题目不同，不能精确比。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "binexp",
+   "label": {
+    "zh": "BinExp",
+    "en": ""
+   },
+   "name": {
+    "zh": "Binary Exploitation Benchmark",
+    "en": ""
+   },
+   "unit": {
+    "zh": " 个",
+    "en": ""
+   },
+   "group": "cyber",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Binary Exploitation Benchmark。数字是成功劫持程序控制流的个数，共 831 个入口点。Anthropic 的内部测试。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "exgym",
+   "label": {
+    "zh": "ExGym",
+    "en": ""
+   },
+   "name": {
+    "zh": "ExploitGym",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "cyber",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "ExploitGym，单位 %。给定一个漏洞，看模型能不能写出可用的攻击。各家的限时和题目范围不完全一样。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "exbench",
+   "label": {
+    "zh": "ExBench",
+    "en": ""
+   },
+   "name": {
+    "zh": "ExploitBench",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "cyber",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "ExploitBench，单位 %。针对 V8 引擎的漏洞利用测试。Anthropic 报的是带自动提示的 Cap%，OpenAI 报的是 mean capability credit。已接近满分。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "binder",
+   "label": {
+    "zh": "Binder",
+    "en": ""
+   },
+   "name": {
+    "zh": "De Novo Binder Design",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "life",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "De Novo Binder Design。从零设计能结合指定靶点的蛋白，限时 24 小时。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "protdes",
+   "label": {
+    "zh": "ProtDes",
+    "en": ""
+   },
+   "name": {
+    "zh": "Protein Design · Sequence Generation",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "life",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Protein Design · Sequence Generation，单位 %。按要求生成蛋白序列。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "scb",
+   "label": {
+    "zh": "SCB",
+    "en": ""
+   },
+   "name": {
+    "zh": "SingleCellBench",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "life",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "SingleCellBench（LatchBio），单位 %。单细胞测序数据的分析任务。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "protoc",
+   "label": {
+    "zh": "Protoc",
+    "en": ""
+   },
+   "name": {
+    "zh": "Protocols（Troubleshooting）",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "life",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Protocols（Troubleshooting），单位 %。实验方案出了问题，让模型找原因。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "domain",
+   "label": {
+    "zh": "Domain",
+    "en": ""
+   },
+   "name": {
+    "zh": "Protein Domain ID",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "life",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Protein Domain ID，单位 %。识别蛋白里的功能结构域。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "mutattr",
+   "label": {
+    "zh": "MutAttr",
+    "en": ""
+   },
+   "name": {
+    "zh": "Protein Mutation Attribution",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "life",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Protein Mutation Attribution，单位 %。判断蛋白突变带来的影响。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "medchem",
+   "label": {
+    "zh": "MedChem",
+    "en": ""
+   },
+   "name": {
+    "zh": "Medicinal Chemistry",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "life",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Medicinal Chemistry，单位 %。药物化学题。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "morph",
+   "label": {
+    "zh": "Morph",
+    "en": ""
+   },
+   "name": {
+    "zh": "Morphology-to-molecule",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "life",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Morphology-to-molecule，单位 %。看细胞形态图，判断是哪种分子处理的。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "bioimg",
+   "label": {
+    "zh": "BioImg",
+    "en": ""
+   },
+   "name": {
+    "zh": "Biomedical Image Analysis",
+    "en": ""
+   },
+   "unit": {
+    "zh": "%",
+    "en": ""
+   },
+   "group": "life",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Biomedical Image Analysis，单位 %。生物医学图像分析。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  },
+  {
+   "key": "vct",
+   "label": {
+    "zh": "VCT",
+    "en": ""
+   },
+   "name": {
+    "zh": "VCT",
+    "en": ""
+   },
+   "unit": {
+    "zh": "",
+    "en": ""
+   },
+   "group": "life",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Virology Capabilities Test，0–1 分。病毒学实验排障测试，带图片。Anthropic 用它评估生物风险。分数来自各厂商自己的发布表或 System Card。〔中〕",
+    "en": ""
+   }
+  }
+ ],
+ "models": [
+  {
+   "id": "gemini-4-neon",
+   "name": "Gemini 4 Neon",
+   "short": "Neon",
+   "vendor": "google",
+   "status": "public",
+   "release": "2026-11-18",
+   "price": {
+    "in": 3,
+    "out": 15,
+    "tip": {
+     "zh": "全上下文统一价。缓存输入 $0.15。",
+     "en": ""
+    }
+   },
+   "scores": {
+    "aa": {
+     "d": "61",
+     "v": 61,
+     "note": {
+      "zh": "推理强度 xhigh。精确值 61.4。默认 high 档是 60。每题约 $6.44。",
+      "en": ""
+     },
+     "src": "artificial_analysis",
+     "cf": "高"
+    },
+    "vals": {
+     "d": "70.87",
+     "v": 70.87,
+     "note": {
+      "zh": "11 月 18 日加入，第 2 名。推理强度 xhigh；high 档 70.5%。每题成本 $7.40。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vals": {
+     "d": "61.62",
+     "v": 61.62,
+     "note": {
+      "zh": "每题成本 $6.42。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "fc2": {
+     "d": "46.2",
+     "v": 46.2,
+     "note": {
+      "zh": "Google 发布表，默认 high 档，不是最高档。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "ale": {
+     "d": "75.8",
+     "v": 75.8,
+     "note": {
+      "zh": "Google 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tbsci": {
+     "d": "70.5",
+     "v": 70.5,
+     "note": {
+      "zh": "Google 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "chart": {
+     "d": "73.5",
+     "v": 73.5,
+     "note": {
+      "zh": "Google 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "auto": {
+     "d": "56.3",
+     "v": 56.3,
+     "note": {
+      "zh": "Google 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "gemini-4-hydrogen",
+   "name": "Gemini 4 Hydrogen",
+   "short": "Hydrogen",
+   "vendor": "google",
+   "status": "public",
+   "release": "2026-11-12",
+   "price": {
+    "in": 1.5,
+    "out": 7.5,
+    "tip": {
+     "zh": "全上下文统一价。Gemini 4 里最便宜，也是唯一有免费档的。",
+     "en": ""
+    }
+   },
+   "scores": {
+    "aa": {
+     "d": "54",
+     "v": 54,
+     "note": {
+      "zh": "推理强度 xhigh。默认 high 档是 51。",
+      "en": ""
+     },
+     "src": "artificial_analysis",
+     "cf": "高"
+    },
+    "vals": {
+     "d": "68.49",
+     "v": 68.49,
+     "note": {
+      "zh": "每题成本 $9.84。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vals": {
+     "d": "54.04",
+     "v": 54.04,
+     "note": {
+      "zh": "每题成本 $7.56。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "ale": {
+     "d": "71.6",
+     "v": 71.6,
+     "note": {
+      "zh": "Google 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tbsci": {
+     "d": "51.4",
+     "v": 51.4,
+     "note": {
+      "zh": "Google 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "osw": {
+     "d": "77.6",
+     "v": 77.6,
+     "note": {
+      "zh": "Google 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "chart": {
+     "d": "66.6",
+     "v": 66.6,
+     "note": {
+      "zh": "Google 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "gemini-4-carbon",
+   "name": "Gemini 4 Carbon",
+   "short": "Carbon",
+   "vendor": "google",
+   "status": "public",
+   "release": "2026-11-10",
+   "release_star": true,
+   "release_tip": {
+    "zh": "10 月 28 日宣布，11 月 10 日对所有付费开发者开放。",
+    "en": ""
+   },
+   "price": {
+    "in": 2,
+    "out": 10,
+    "in_next": 4,
+    "out_next": 20,
+    "tip": {
+     "zh": "11 月 30 日前 $2 / $10；12 月 1 日起 $4 / $20。",
+     "en": ""
+    }
+   },
+   "scores": {
+    "aa": {
+     "d": "60",
+     "v": 60,
+     "note": {
+      "zh": "推理强度 high。medium 档 58，low 档 54。",
+      "en": ""
+     },
+     "src": "artificial_analysis",
+     "cf": "高"
+    },
+    "vals": {
+     "d": "70.45",
+     "v": 70.45,
+     "note": {
+      "zh": "每题成本 $10.51。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vals": {
+     "d": "63.13",
+     "v": 63.13,
+     "note": {
+      "zh": "每题成本 $7.45。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "fc2": {
+     "d": "41.1",
+     "v": 41.1,
+     "note": {
+      "zh": "Anthropic 发布表里给 Carbon 的分数，medium 档，偏低估。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "ale": {
+     "d": "77.4",
+     "v": 77.4,
+     "note": {
+      "zh": "Google 发布表，OpenAI 的表里同为 77.4%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tbsci": {
+     "d": "64.8",
+     "v": 64.8,
+     "note": {
+      "zh": "Anthropic 发布表里给 Carbon 的分数。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "osw": {
+     "d": "81.5",
+     "v": 81.5,
+     "note": {
+      "zh": "Google 发布表，Anthropic 的表里同为 81.5%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "chart": {
+     "d": "72.5",
+     "v": 72.5,
+     "note": {
+      "zh": "Google 发布表，Anthropic 的表里同为 72.5%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "auto": {
+     "d": "53.9",
+     "v": 53.9,
+     "note": {
+      "zh": "Anthropic 与 OpenAI 的表里都给 Carbon 53.9%。",
+      "en": ""
+     },
+     "src": "other",
+     "cf": "中"
+    },
+    "tb4_vendor": {
+     "d": "65.2",
+     "v": 65.2,
+     "note": {
+      "zh": "Google 模型卡，引用 Artificial Analysis 的测试（mini-SWE-agent）。",
+      "en": ""
+     },
+     "src": "model_card",
+     "cf": "中"
+    },
+    "exgym": {
+     "d": "53.5",
+     "v": 53.5,
+     "note": {
+      "zh": "Google 自报，6 小时限时，Fairwind 版本。放宽到 10 小时是 54.8%。",
+      "en": ""
+     },
+     "src": "vendor_self_report",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "gemini-4-argon",
+   "name": "Gemini 4 Argon",
+   "short": "Argon",
+   "vendor": "google",
+   "status": "public",
+   "release": "2026-10-13",
+   "release_star": true,
+   "release_tip": {
+    "zh": "9 月 30 日宣布，先只给 Fairwind 项目里的网络安全防御方；10 月 13 日全面开放。",
+    "en": ""
+   },
+   "price": {
+    "in": 2,
+    "out": 10,
+    "in_next": 4,
+    "out_next": 20,
+    "tip": {
+     "zh": "11 月 30 日前 $2 / $10；12 月 1 日起 $4 / $20。",
+     "en": ""
+    }
+   },
+   "scores": {
+    "aa": {
+     "d": "50",
+     "v": 50,
+     "note": {
+      "zh": "推理强度 high。",
+      "en": ""
+     },
+     "src": "artificial_analysis",
+     "cf": "高"
+    },
+    "vals": {
+     "d": "69.39",
+     "v": 69.39,
+     "note": {
+      "zh": "每题成本 $13.37。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vals": {
+     "d": "57.58",
+     "v": 57.58,
+     "note": {
+      "zh": "每题成本 $17.64。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "ale": {
+     "d": "69.0",
+     "v": 69.0,
+     "note": {
+      "zh": "Google 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "osw": {
+     "d": "74.7",
+     "v": 74.7,
+     "note": {
+      "zh": "Google 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "chart": {
+     "d": "71.6",
+     "v": 71.6,
+     "note": {
+      "zh": "Google 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tb4_vendor": {
+     "d": "57.1",
+     "v": 57.1,
+     "note": {
+      "zh": "Google 模型卡，引用 Artificial Analysis 的测试（mini-SWE-agent）。",
+      "en": ""
+     },
+     "src": "model_card",
+     "cf": "中"
+    },
+    "exgym": {
+     "d": "39.5",
+     "v": 39.5,
+     "note": {
+      "zh": "Google 自报，6 小时限时。放宽到 10 小时是 42.0%。",
+      "en": ""
+     },
+     "src": "vendor_self_report",
+     "cf": "中"
+    },
+    "morph": {
+     "d": "25.2",
+     "v": 25.2,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.18.2 节里 Anthropic 给 Argon 测的分数，最高思考档。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "claude-fable-5-2",
+   "name": "Claude Fable 5.2",
+   "short": "Fable 5.2",
+   "vendor": "anthropic",
+   "status": "public",
+   "release": "2026-11-09",
+   "price": {
+    "in": 8,
+    "out": 40,
+    "tip": {
+     "zh": "比 Fable 5.1（$10 / $50）降 20%。快速模式 $16 / $80。",
+     "en": ""
+    }
+   },
+   "scores": {
+    "aa": {
+     "d": "65",
+     "v": 65,
+     "note": {
+      "zh": "推理强度 max。精确值 64.6。跑完整套测试每题约 $26.54。",
+      "en": ""
+     },
+     "src": "artificial_analysis",
+     "cf": "高"
+    },
+    "vals": {
+     "d": "71.31",
+     "v": 71.31,
+     "note": {
+      "zh": "第 1 名。每题成本 $17.94。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vals": {
+     "d": "65.15",
+     "v": 65.15,
+     "note": {
+      "zh": "并列第 1。每题成本 $14.56。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "fc2": {
+     "d": "49.1",
+     "v": 49.1,
+     "note": {
+      "zh": "Anthropic 发布表，推理强度 xhigh。high 档 45.3%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "ale": {
+     "d": "72.8",
+     "v": 72.8,
+     "note": {
+      "zh": "OpenAI 发布表里给 Fable 5.2 的分数，剔除了 9 道用到备用模型的题。每题 $60.05。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tbsci": {
+     "d": "74.6",
+     "v": 74.6,
+     "note": {
+      "zh": "Anthropic 发布表。OpenAI 的表里给 Fable 5.2 的是 73.3%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "osw": {
+     "d": "89.3",
+     "v": 89.3,
+     "note": {
+      "zh": "Anthropic 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "chart": {
+     "d": "73.4",
+     "v": 73.4,
+     "note": {
+      "zh": "Anthropic 发布表，不带工具。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "auto": {
+     "d": "51.4",
+     "v": 51.4,
+     "note": {
+      "zh": "Anthropic 发布表，OpenAI 的表里同为 51.4%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tb4_vendor": {
+     "d": "67.6",
+     "v": 67.6,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.5 节。带防护：2.5% 的请求被转给备用模型，影响 10% 的试验。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "claude-mythos-5-2",
+   "name": "Claude Mythos 5.2",
+   "short": "Mythos 5.2",
+   "vendor": "anthropic",
+   "status": "restricted",
+   "tag": {
+    "text": {
+     "zh": "受限",
+     "en": ""
+    },
+    "tip": {
+     "zh": "只对通过审核的机构开放，普通开发者不能直接调用。",
+     "en": ""
+    }
+   },
+   "release": "2026-11-09",
+   "price": {
+    "in": 8,
+    "out": 40,
+    "tip": {
+     "zh": "Anthropic 官方文档写明与 Fable 5.2 同规格、同价。只对通过 Anthropic 审核的机构开放。〔高〕",
+     "en": ""
+    }
+   },
+   "scores": {
+    "tbsci": {
+     "d": "75.3",
+     "v": 75.3,
+     "note": {
+      "zh": "Anthropic System Card 8.6 节，防护关闭。与 Fable 5.2 是同一个底层模型。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "tb4_vendor": {
+     "d": "70.5",
+     "v": 70.5,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.5 节。防护关闭，最高推理强度，660 次试验，标准误 ±1.8。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "aeci": {
+     "d": "177.12",
+     "v": 177.12,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 2.3.5.3 节。置信区间 172.42–182.94。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "cve": {
+     "d": "89.6",
+     "v": 89.6,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.19 节。网络与生物防护关闭，共 1,829 条漏洞公告。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "cysb": {
+     "d": "76.3",
+     "v": 76.3,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 3.3.2 节。10 题子集，防护关闭，用的是发布前的版本。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "binexp": {
+     "d": "148",
+     "v": 148,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 3.3.3 节。共 831 个入口点、228 个项目。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "exgym": {
+     "d": "39.2",
+     "v": 39.2,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 3.3.4 节。6 小时限时，341 / 869。2 小时是 331 / 869（38.1%）。防护关闭。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "exbench": {
+     "d": "97",
+     "v": 97,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 3.3.1 节的 Cap% 指标，带自动提示（AutoNudge）。不带是 95%。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "binder": {
+     "d": "85.1",
+     "v": 85.1,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.18.4 节。生物防护关闭。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "protdes": {
+     "d": "64.6",
+     "v": 64.6,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.18.4 节。每题只跑一次。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "scb": {
+     "d": "65.6",
+     "v": 65.6,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.18.1 节。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "protoc": {
+     "d": "77.1",
+     "v": 77.1,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.18.6 节。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "domain": {
+     "d": "91.8",
+     "v": 91.8,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.18.7 节。不带工具。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "mutattr": {
+     "d": "51.5",
+     "v": 51.5,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.18.8 节。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "medchem": {
+     "d": "69.0",
+     "v": 69.0,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.18.3 节。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "morph": {
+     "d": "35.2",
+     "v": 35.2,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.18.2 节。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "bioimg": {
+     "d": "80.7",
+     "v": 80.7,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.18.5 节。每题只跑一次。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "vct": {
+     "d": "0.63",
+     "v": 0.63,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 2.2.3.1 节。人类专家基线 0.221。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    }
+   },
+   "blank": {
+    "aa": {
+     "d": {
+      "zh": "同上",
+      "en": ""
+     },
+     "tip": {
+      "zh": "与 Fable 5.2 是同一个底层模型。System Card 的通用能力测试只在 Fable 5.2 上跑，所以独立榜单和多数通用测试没有 Mythos 5.2 的单独分数。",
+      "en": ""
+     }
+    }
+   }
+  },
+  {
+   "id": "claude-haiku-5-5",
+   "name": "Claude Haiku 5.5",
+   "short": "Haiku 5.5",
+   "vendor": "anthropic",
+   "status": "public",
+   "release": "2026-10-07",
+   "price": {
+    "in": 0.1,
+    "out": 0.5,
+    "tip": {
+     "zh": "提示不超过 10 万 token 时的价格；超过后 $0.50 / $2.50。",
+     "en": ""
+    }
+   },
+   "scores": {
+    "aa": {
+     "d": "36",
+     "v": 36,
+     "note": {
+      "zh": "v5.0.1 的最高档分数。旧版指数（v4.3.2）上是 43，两版不能直接比。",
+      "en": ""
+     },
+     "src": "artificial_analysis",
+     "cf": "高"
+    },
+    "vals": {
+     "d": "58.73",
+     "v": 58.73,
+     "note": {
+      "zh": "每题成本 $3.17。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vals": {
+     "d": "36.36",
+     "v": 36.36,
+     "note": {
+      "zh": "每题成本 $3.12。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "osw": {
+     "d": "72.4",
+     "v": 72.4,
+     "note": {
+      "zh": "Anthropic 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tb4_vendor": {
+     "d": "39.2",
+     "v": 39.2,
+     "note": {
+      "zh": "Anthropic 发布表，最高推理强度。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "scb": {
+     "d": "56.2",
+     "v": 56.2,
+     "note": {
+      "zh": "Haiku 5.5 的 System Card（经 LLM Stats 转录）。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "claude-sonnet-5-5",
+   "name": "Claude Sonnet 5.5",
+   "short": "Sonnet 5.5",
+   "vendor": "anthropic",
+   "status": "public",
+   "release": "2026-09-28",
+   "price": {
+    "in": 2,
+    "out": 10
+   },
+   "scores": {
+    "aa": {
+     "d": "55",
+     "v": 55,
+     "note": {
+      "zh": "Artificial Analysis 模型页的最高档分数。",
+      "en": ""
+     },
+     "src": "artificial_analysis",
+     "cf": "高"
+    },
+    "vals": {
+     "d": "70.85",
+     "v": 70.85,
+     "note": {
+      "zh": "每题成本 $16.18。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vals": {
+     "d": "64.14",
+     "v": 64.14,
+     "note": {
+      "zh": "每题成本 $10.75。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "ale": {
+     "d": "60.4",
+     "v": 60.4,
+     "note": {
+      "zh": "Google 发布表里给 Sonnet 5.5 的分数。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tbsci": {
+     "d": "59.9",
+     "v": 59.9,
+     "note": {
+      "zh": "Google 发布表里给 Sonnet 5.5 的分数。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "osw": {
+     "d": "83.9",
+     "v": 83.9,
+     "note": {
+      "zh": "Anthropic 发布表，Google 的表里同为 83.9%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "chart": {
+     "d": "61.6",
+     "v": 61.6,
+     "note": {
+      "zh": "Google 发布表里给 Sonnet 5.5 的分数。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tb4_vendor": {
+     "d": "70.6",
+     "v": 70.6,
+     "note": {
+      "zh": "Anthropic 发布表。带防护，最高推理强度，Claude Code。Vals 独立测是 64.14%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "cysb": {
+     "d": "46.1",
+     "v": 46.1,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 3.3.2 节。防护关闭。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "binexp": {
+     "d": "48",
+     "v": 48,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 3.3.3 节。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "exbench": {
+     "d": "80",
+     "v": 80,
+     "note": {
+      "zh": "Sonnet 5.5 的 System Card，Cap%，带自动提示。完整任意代码执行 178 / 410 次。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "binder": {
+     "d": "82.3",
+     "v": 82.3,
+     "note": {
+      "zh": "Sonnet 5.5 的 System Card。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "protdes": {
+     "d": "51.0",
+     "v": 51.0,
+     "note": {
+      "zh": "Sonnet 5.5 的 System Card。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "scb": {
+     "d": "59.1",
+     "v": 59.1,
+     "note": {
+      "zh": "Sonnet 5.5 的 System Card 8.17.2 节。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "protoc": {
+     "d": "67.3",
+     "v": 67.3,
+     "note": {
+      "zh": "Sonnet 5.5 的 System Card。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "medchem": {
+     "d": "65.3",
+     "v": 65.3,
+     "note": {
+      "zh": "Sonnet 5.5 的 System Card 8.17.4 节，504 题。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "morph": {
+     "d": "25.0",
+     "v": 25.0,
+     "note": {
+      "zh": "Sonnet 5.5 的 System Card。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "bioimg": {
+     "d": "72.2",
+     "v": 72.2,
+     "note": {
+      "zh": "Sonnet 5.5 的 System Card。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "claude-opus-5-5",
+   "name": "Claude Opus 5.5",
+   "short": "Opus 5.5",
+   "vendor": "anthropic",
+   "status": "public",
+   "release": "2026-09-22",
+   "price": {
+    "in": 4,
+    "out": 20
+   },
+   "scores": {
+    "aa": {
+     "d": "59",
+     "v": 59,
+     "note": {
+      "zh": "推理强度 max。xhigh 档 57，high 档 52。",
+      "en": ""
+     },
+     "src": "artificial_analysis",
+     "cf": "高"
+    },
+    "vals": {
+     "d": "70.14",
+     "v": 70.14,
+     "note": {
+      "zh": "每题成本 $24.77。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vals": {
+     "d": "65.15",
+     "v": 65.15,
+     "note": {
+      "zh": "并列第 1。每题成本 $12.04。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "fc2": {
+     "d": "45.5",
+     "v": 45.5,
+     "note": {
+      "zh": "Anthropic 发布表。Google 的表里给 Opus 5.5 的是 47.3%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tbsci": {
+     "d": "58.7",
+     "v": 58.7,
+     "note": {
+      "zh": "Anthropic 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "osw": {
+     "d": "87.2",
+     "v": 87.2,
+     "note": {
+      "zh": "Anthropic 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "chart": {
+     "d": "64.4",
+     "v": 64.4,
+     "note": {
+      "zh": "Anthropic 发布表。Google 的表里给 Opus 5.5 的是 66.3%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "auto": {
+     "d": "42.5",
+     "v": 42.5,
+     "note": {
+      "zh": "Anthropic 发布表，Google 的表里同为 42.5%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tb4_vendor": {
+     "d": "66.4",
+     "v": 66.4,
+     "note": {
+      "zh": "Anthropic 发布表，xhigh 档。max 档是 64.8%（官方榜）。",
+      "en": ""
+     },
+     "src": "leaderboard",
+     "cf": "中"
+    },
+    "aeci": {
+     "d": "174.78",
+     "v": 174.78,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 2.3.5.3 节。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "cve": {
+     "d": "81.3",
+     "v": 81.3,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.19 节。防护关闭。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "cysb": {
+     "d": "67.6",
+     "v": 67.6,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 3.3.2 节。防护关闭。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "binexp": {
+     "d": "112",
+     "v": 112,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 3.3.3 节。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "exgym": {
+     "d": "34.5",
+     "v": 34.5,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 3.3.4 节。6 小时限时，300 / 869。2 小时是 289 / 869（33.3%）。Google 的表里给 Opus 5.5 的也是 34.5%。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "exbench": {
+     "d": "91",
+     "v": 91,
+     "note": {
+      "zh": "Opus 5.5 的 System Card，Cap%，带自动提示。完整任意代码执行 301 次。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "binder": {
+     "d": "82.6",
+     "v": 82.6,
+     "note": {
+      "zh": "Opus 5.5 的 System Card。防护关闭。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "protdes": {
+     "d": "60.2",
+     "v": 60.2,
+     "note": {
+      "zh": "Opus 5.5 的 System Card。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "scb": {
+     "d": "61.2",
+     "v": 61.2,
+     "note": {
+      "zh": "Opus 5.5 的 System Card。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "protoc": {
+     "d": "73.7",
+     "v": 73.7,
+     "note": {
+      "zh": "Opus 5.5 的 System Card。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "domain": {
+     "d": "73.6",
+     "v": 73.6,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.18.7 节。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "mutattr": {
+     "d": "49.5",
+     "v": 49.5,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 8.18.8 节。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "medchem": {
+     "d": "63.5",
+     "v": 63.5,
+     "note": {
+      "zh": "Opus 5.5 的 System Card。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "morph": {
+     "d": "34.0",
+     "v": 34.0,
+     "note": {
+      "zh": "Opus 5.5 的 System Card。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "bioimg": {
+     "d": "71.4",
+     "v": 71.4,
+     "note": {
+      "zh": "Opus 5.5 的 System Card。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "vct": {
+     "d": "0.59",
+     "v": 0.59,
+     "note": {
+      "zh": "Anthropic System Card（Fable 5.2 / Mythos 5.2） 2.2.3.1 节。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "claude-fable-5-1",
+   "name": "Claude Fable 5.1",
+   "short": "Fable 5.1",
+   "vendor": "anthropic",
+   "status": "public",
+   "release": "2026-09-01",
+   "price": {
+    "in": 10,
+    "out": 50,
+    "tip": {
+     "zh": "上一代 Fable。Artificial Analysis 的页面标为已停用，由 Fable 5.2 接替。",
+     "en": ""
+    }
+   },
+   "scores": {
+    "aa": {
+     "d": "50",
+     "v": 50,
+     "note": {
+      "zh": "推理强度 xhigh。max 档 49，high 档 47。跑完整套测试每题约 $12.99（max 档）。发布时在旧版指数上是 66，不能和 v5 混用。",
+      "en": ""
+     },
+     "src": "artificial_analysis",
+     "cf": "高"
+    },
+    "tb4_vals": {
+     "d": "58.08",
+     "v": 58.08,
+     "note": {
+      "zh": "每题成本 $17.18。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "fc2": {
+     "d": "32.4",
+     "v": 32.4,
+     "note": {
+      "zh": "Anthropic 在 Fable 5.2 发布表里给 Fable 5.1 的对照分数，经 explainx 转录。BenchLM 转录的另一份表里是 34.0%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tbsci": {
+     "d": "52.6",
+     "v": 52.6,
+     "note": {
+      "zh": "Anthropic 的 Fable 5.1 发布表（9 月 1 日）。Vals 独立测是 40.00%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "osw": {
+     "d": "83.5",
+     "v": 83.5,
+     "note": {
+      "zh": "Anthropic 在 Fable 5.2 发布表里给 Fable 5.1 的对照分数，经 explainx 和 BenchLM 转录。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "chart": {
+     "d": "44.8",
+     "v": 44.8,
+     "note": {
+      "zh": "Anthropic 在 Fable 5.2 发布表里给 Fable 5.1 的对照分数，不带工具，经 explainx 转录。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "auto": {
+     "d": "31.4",
+     "v": 31.4,
+     "note": {
+      "zh": "Anthropic 的 Fable 5.1 发布表（9 月 1 日）。Google 的表里同为 31.4%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tb4_vendor": {
+     "d": "55.8",
+     "v": 55.8,
+     "note": {
+      "zh": "Anthropic 的 Fable 5.1 发布表（9 月 1 日）。Google 的表里给 Fable 5.1 的是 57.9%。Vals 独立测是 58.08%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    }
+   },
+   "blank": {
+    "vals": {
+     "d": {
+      "zh": "—",
+      "en": ""
+     },
+     "tip": {
+      "zh": "Vals Index v2.2 的榜单没有列 Fable 5.1。它在旧版指数上是 67.87%（9 月 1 日），不能和 v2.2 混用。",
+      "en": ""
+     }
+    }
+   }
+  },
+  {
+   "id": "claude-fable-5",
+   "name": "Claude Fable 5",
+   "short": "Fable 5",
+   "vendor": "anthropic",
+   "status": "public",
+   "release": "2026-06-09",
+   "price": {
+    "in": 10,
+    "out": 50,
+    "tip": {
+     "zh": "第一个公开的 Mythos 级模型。Artificial Analysis 的页面标为已停用。",
+     "en": ""
+    }
+   },
+   "scores": {
+    "tb4_vals": {
+     "d": "41.41",
+     "v": 41.41,
+     "note": {
+      "zh": "每题成本 $30.34。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tbsci": {
+     "d": "24.7",
+     "v": 24.7,
+     "note": {
+      "zh": "Anthropic 的 Fable 5.1 发布表里给 Fable 5 的对照分数。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "auto": {
+     "d": "17.1",
+     "v": 17.1,
+     "note": {
+      "zh": "Anthropic 的 Fable 5.1 发布表里给 Fable 5 的对照分数。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tb4_vendor": {
+     "d": "42.0",
+     "v": 42.0,
+     "note": {
+      "zh": "Anthropic 的 Fable 5.1 发布表里给 Fable 5 的对照分数。Vals 独立测是 41.41%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    }
+   },
+   "blank": {
+    "aa": {
+     "d": {
+      "zh": "—",
+      "en": ""
+     },
+     "tip": {
+      "zh": "Artificial Analysis 的 v5.0.1 页面上 Fable 5 没有分数，模型已停用。发布时在旧版指数上是 64.9，不能和 v5 混用。",
+      "en": ""
+     }
+    },
+    "vals": {
+     "d": {
+      "zh": "—",
+      "en": ""
+     },
+     "tip": {
+      "zh": "Vals Index v2.2 的榜单没有列 Fable 5。它在旧版指数上的分数（6 月 75.15%，9 月 66.04%）不能和 v2.2 混用。",
+      "en": ""
+     }
+    }
+   }
+  },
+  {
+   "id": "model-4",
+   "name": "Model 4",
+   "short": "Model 4",
+   "vendor": "anthropic",
+   "status": "internal",
+   "tag": {
+    "text": {
+     "zh": "内部代号",
+     "en": ""
+    },
+    "tip": {
+     "zh": "Anthropic 的内部代号，未发布。评测机构 METR 在 11 月 5 日的独立评估报告里披露：2026 年 9–10 月训练完成，是 10 月时 Anthropic 内部最强的模型，在测过的 15 项 AECI 测试上全部超过 50%。员工自报的提效约 12 倍。它就是 System Card 里的「内部模型」：System Card 说它比 Mythos 5.2 略强，并写明除 AECI 外没有在别处评测它。所以它只有 AECI 一个分数。",
+     "en": ""
+    }
+   },
+   "trained": {
+    "label": {
+     "zh": "9–10月",
+     "en": ""
+    },
+    "tip": {
+     "zh": "训练完成的时间（2026 年 9–10 月），不是发布日。",
+     "en": ""
+    },
+    "end": "2026-10-31"
+   },
+   "scores": {
+    "aeci": {
+     "d": "178.78",
+     "v": 178.78,
+     "note": {
+      "zh": "System Card 2.3.5.3 节表里的「内部模型」，本报告按 Model 4 记。全局置信区间 173.75–185.18，局部 177.08–180.59。按 15 项测试算出。比 Mythos 5.2 高 1.66 分，两者的置信区间重叠。METR 自己的算法给 Model 4 的是 178.6，去掉 3 个拟合差的测试后是 179.7。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "model-3",
+   "name": "Model 3",
+   "short": "Model 3",
+   "vendor": "anthropic",
+   "status": "internal",
+   "tag": {
+    "text": {
+     "zh": "内部代号",
+     "en": ""
+    },
+    "tip": {
+     "zh": "Anthropic 的内部代号。METR 报告：2026 年 8–9 月训练完成。Mythos 5.2 和 Fable 5.2 被认为是它的发布版本：System Card 2.3.6 节写明 METR 测的那个版本叫 Model 3 Early。没有以 Model 3 名义公布的分数。",
+     "en": ""
+    }
+   },
+   "trained": {
+    "label": {
+     "zh": "8–9月",
+     "en": ""
+    },
+    "tip": {
+     "zh": "训练完成的时间（2026 年 8–9 月），不是发布日。",
+     "en": ""
+    },
+    "end": "2026-09-30"
+   },
+   "scores": {},
+   "blank": {
+    "aeci": {
+     "d": {
+      "zh": "—",
+      "en": ""
+     },
+     "tip": {
+      "zh": "没有以 Model 3 名义公布的分数。它的发布版本 Mythos 5.2 是 177.12。",
+      "en": ""
+     }
+    }
+   }
+  },
+  {
+   "id": "model-2",
+   "name": "Model 2",
+   "short": "Model 2",
+   "vendor": "anthropic",
+   "status": "internal",
+   "tag": {
+    "text": {
+     "zh": "内部代号",
+     "en": ""
+    },
+    "tip": {
+     "zh": "Anthropic 的内部代号，未发布。METR 报告：2026 年 7 月训练完成。没有任何公开分数，也没有公开说明它对应哪个已发布模型。",
+     "en": ""
+    }
+   },
+   "trained": {
+    "label": {
+     "zh": "7月",
+     "en": ""
+    },
+    "tip": {
+     "zh": "训练完成的时间（2026 年 7 月），不是发布日。",
+     "en": ""
+    },
+    "end": "2026-07-31"
+   },
+   "scores": {},
+   "blank": {
+    "aeci": {
+     "d": {
+      "zh": "—",
+      "en": ""
+     },
+     "tip": {
+      "zh": "METR 的报告没有给 Model 2 的分数。",
+      "en": ""
+     }
+    }
+   }
+  },
+  {
+   "id": "gpt-6-2-astra",
+   "name": "GPT-6.2 Astra",
+   "short": "GPT-6.2 Astra",
+   "vendor": "openai",
+   "status": "public",
+   "release": "2026-11-17",
+   "price": {
+    "in": 8,
+    "out": 40,
+    "tip": {
+     "zh": "比 GPT-6 Astra（$10 / $50）降 20%。输入超过 27.2 万 token 时 $16 / $60。",
+     "en": ""
+    }
+   },
+   "scores": {
+    "aa": {
+     "d": "62",
+     "v": 62,
+     "note": {
+      "zh": "推理强度 max。精确值 62.1。每题约 $4.00。",
+      "en": ""
+     },
+     "src": "artificial_analysis",
+     "cf": "高"
+    },
+    "vals": {
+     "d": "67.66",
+     "v": 67.66,
+     "note": {
+      "zh": "每题成本 $10.68。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vals": {
+     "d": "63.13",
+     "v": 63.13,
+     "note": {
+      "zh": "每题成本 $4.69。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "fc2": {
+     "d": "44.2",
+     "v": 44.2,
+     "note": {
+      "zh": "OpenAI 发布表，最高推理强度。每题 $5.97。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "ale": {
+     "d": "78.3",
+     "v": 78.3,
+     "note": {
+      "zh": "OpenAI 发布表。每题 $2.89。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tbsci": {
+     "d": "77.1",
+     "v": 77.1,
+     "note": {
+      "zh": "OpenAI 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "auto": {
+     "d": "52.4",
+     "v": 52.4,
+     "note": {
+      "zh": "OpenAI 发布表（AutomationBench 1.0.6）。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "cysb": {
+     "d": "63.0",
+     "v": 63.0,
+     "note": {
+      "zh": "第三方 Irregular 测的平均成功率（OpenAI GPT-6.2 System Card 引用）。题集和 Anthropic 用的不同，不能直接比。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "exbench": {
+     "d": "100",
+     "v": 100,
+     "note": {
+      "zh": "OpenAI GPT-6.2 System Card，指标是 mean capability credit。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "vct": {
+     "d": "0.62",
+     "v": 0.618,
+     "note": {
+      "zh": "OpenAI 自测的 Multi-select Virology Troubleshooting，用的是同一套 VCT 题（322 题），多选全对才算。计分方式可能和 Anthropic 不同。GPT-6.2 System Card：61.80%。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "gpt-6-2-sol",
+   "name": "GPT-6.2 Sol",
+   "short": "GPT-6.2 Sol",
+   "vendor": "openai",
+   "status": "public",
+   "release": "2026-11-17",
+   "price": {
+    "in": 2,
+    "out": 10,
+    "tip": {
+     "zh": "与 GPT-6.1 Sol 同价。输入超过 27.2 万 token 时 $4 / $15。",
+     "en": ""
+    }
+   },
+   "scores": {
+    "aa": {
+     "d": "57",
+     "v": 57,
+     "note": {
+      "zh": "推理强度 max。精确值 57.3。每题约 $1.01。",
+      "en": ""
+     },
+     "src": "artificial_analysis",
+     "cf": "高"
+    },
+    "vals": {
+     "d": "66.06",
+     "v": 66.06,
+     "note": {
+      "zh": "每题成本 $3.18。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vals": {
+     "d": "60.61",
+     "v": 60.61,
+     "note": {
+      "zh": "每题成本 $1.13。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "fc2": {
+     "d": "43.8",
+     "v": 43.8,
+     "note": {
+      "zh": "OpenAI 发布表，最高推理强度。每题 $1.29。Google 的表里同为 43.8%。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "ale": {
+     "d": "73.0",
+     "v": 73.0,
+     "note": {
+      "zh": "OpenAI 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tbsci": {
+     "d": "68.0",
+     "v": 68.0,
+     "note": {
+      "zh": "OpenAI 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "chart": {
+     "d": "75.1",
+     "v": 75.1,
+     "note": {
+      "zh": "Google 发布表里给 GPT-6.2 Sol 的分数。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "auto": {
+     "d": "41.2",
+     "v": 41.2,
+     "note": {
+      "zh": "OpenAI 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "exbench": {
+     "d": "100",
+     "v": 100,
+     "note": {
+      "zh": "OpenAI GPT-6.2 System Card。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "vct": {
+     "d": "0.55",
+     "v": 0.554,
+     "note": {
+      "zh": "OpenAI 自测的 Multi-select Virology Troubleshooting，用的是同一套 VCT 题（322 题），多选全对才算。计分方式可能和 Anthropic 不同。GPT-6.2 System Card：55.40%。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "gpt-6-cyber",
+   "name": "GPT-6 Cyber",
+   "short": "GPT-6 Cyber",
+   "vendor": "openai",
+   "status": "restricted",
+   "tag": {
+    "text": {
+     "zh": "受限",
+     "en": ""
+    },
+    "tip": {
+     "zh": "只对通过审核的机构开放，普通开发者不能直接调用。",
+     "en": ""
+    }
+   },
+   "release": "2026-11-05",
+   "price": {
+    "in": 20,
+    "out": 100,
+    "tip": {
+     "zh": "网络安全专用，只对 OpenAI Daybreak 项目成员开放。价格只有一个来源。〔低〕",
+     "en": ""
+    }
+   },
+   "scores": {
+    "cysb": {
+     "d": "61.0",
+     "v": 61.0,
+     "note": {
+      "zh": "第三方 Irregular 测的平均解题率，11 个场景全部至少解出一次。题集和 Anthropic 用的不同，不能直接比。",
+      "en": ""
+     },
+     "src": "other",
+     "cf": "中"
+    },
+    "exgym": {
+     "d": "48.5",
+     "v": 48.5,
+     "note": {
+      "zh": "OpenAI 自报。上一代 GPT-5.6 Cyber 是 32.1%。",
+      "en": ""
+     },
+     "src": "vendor_self_report",
+     "cf": "中"
+    },
+    "exbench": {
+     "d": "100",
+     "v": 100,
+     "note": {
+      "zh": "OpenAI 自报。OpenAI 提示：题目里有 2023 年的旧漏洞，可能进过训练数据。",
+      "en": ""
+     },
+     "src": "vendor_self_report",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "gpt-6-rosalind",
+   "name": "GPT-6 Rosalind",
+   "short": "GPT-6 Rosalind",
+   "vendor": "openai",
+   "status": "restricted",
+   "tag": {
+    "text": {
+     "zh": "受限",
+     "en": ""
+    },
+    "tip": {
+     "zh": "只对通过审核的机构开放，普通开发者不能直接调用。",
+     "en": ""
+    }
+   },
+   "release": "2026-10-30",
+   "price": {
+    "in": 15,
+    "out": 75,
+    "tip": {
+     "zh": "生命科学专用，只对通过审核的机构开放。价格只有一个来源。〔低〕",
+     "en": ""
+    }
+   },
+   "scores": {}
+  },
+  {
+   "id": "gpt-6-1-terra",
+   "name": "GPT-6.1 Terra",
+   "short": "GPT-6.1 Terra",
+   "vendor": "openai",
+   "status": "public",
+   "release": "2026-10-26",
+   "price": {
+    "in": 1,
+    "out": 5
+   },
+   "scores": {
+    "aa": {
+     "d": "51",
+     "v": 51,
+     "note": {
+      "zh": "推理强度 max。xhigh 档 45，high 档 42。",
+      "en": ""
+     },
+     "src": "artificial_analysis",
+     "cf": "高"
+    },
+    "vals": {
+     "d": "60.54",
+     "v": 60.54,
+     "note": {
+      "zh": "每题成本 $2.94。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vals": {
+     "d": "49.49",
+     "v": 49.49,
+     "note": {
+      "zh": "每题成本 $2.16。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "ale": {
+     "d": "69.8",
+     "v": 69.8,
+     "note": {
+      "zh": "Google 发布表里给 Terra 的分数。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tbsci": {
+     "d": "58.3",
+     "v": 58.3,
+     "note": {
+      "zh": "Google 发布表里给 Terra 的分数。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "osw": {
+     "d": "74.2",
+     "v": 74.2,
+     "note": {
+      "zh": "Google 发布表里给 Terra 的分数。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "chart": {
+     "d": "63.2",
+     "v": 63.2,
+     "note": {
+      "zh": "Google 发布表里给 Terra 的分数。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "exbench": {
+     "d": "97.1",
+     "v": 97.1,
+     "note": {
+      "zh": "OpenAI GPT-6.2 System Card。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "vct": {
+     "d": "0.47",
+     "v": 0.4652,
+     "note": {
+      "zh": "OpenAI 自测的 Multi-select Virology Troubleshooting，用的是同一套 VCT 题（322 题），多选全对才算。计分方式可能和 Anthropic 不同。GPT-6.2 System Card：46.52%。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "gpt-6-1-sol",
+   "name": "GPT-6.1 Sol",
+   "short": "GPT-6.1 Sol",
+   "vendor": "openai",
+   "status": "public",
+   "release": "2026-09-29",
+   "price": {
+    "in": 2,
+    "out": 10
+   },
+   "scores": {
+    "aa": {
+     "d": "55",
+     "v": 55,
+     "note": {
+      "zh": "推理强度 max。精确值 54.6。",
+      "en": ""
+     },
+     "src": "artificial_analysis",
+     "cf": "高"
+    },
+    "vals": {
+     "d": "63.94",
+     "v": 63.94,
+     "note": {
+      "zh": "每题成本 $3.61。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vals": {
+     "d": "55.05",
+     "v": 55.05,
+     "note": {
+      "zh": "每题成本 $1.72。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "fc2": {
+     "d": "39.0",
+     "v": 39.0,
+     "note": {
+      "zh": "OpenAI 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "ale": {
+     "d": "72.5",
+     "v": 72.5,
+     "note": {
+      "zh": "OpenAI 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tbsci": {
+     "d": "57.0",
+     "v": 57.0,
+     "note": {
+      "zh": "OpenAI 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "auto": {
+     "d": "36.1",
+     "v": 36.1,
+     "note": {
+      "zh": "OpenAI 发布表。",
+      "en": ""
+     },
+     "src": "release_table",
+     "cf": "中"
+    },
+    "tb4_vendor": {
+     "d": "58.2",
+     "v": 58.2,
+     "note": {
+      "zh": "Terminal-Bench 官方榜，Codex，max 档，±3.1。",
+      "en": ""
+     },
+     "src": "leaderboard",
+     "cf": "中"
+    },
+    "exgym": {
+     "d": "35.1",
+     "v": 35.1,
+     "note": {
+      "zh": "OpenAI 自报。",
+      "en": ""
+     },
+     "src": "vendor_self_report",
+     "cf": "中"
+    },
+    "exbench": {
+     "d": "99.7",
+     "v": 99.7,
+     "note": {
+      "zh": "OpenAI GPT-6.2 System Card。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    },
+    "vct": {
+     "d": "0.55",
+     "v": 0.5534,
+     "note": {
+      "zh": "OpenAI 自测的 Multi-select Virology Troubleshooting，用的是同一套 VCT 题（322 题），多选全对才算。计分方式可能和 Anthropic 不同。GPT-6.1 Sol 补充卡：55.34%（拒答校正后）。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "gpt-6-luna",
+   "name": "GPT-6 Luna",
+   "short": "GPT-6 Luna",
+   "vendor": "openai",
+   "status": "public",
+   "release": "2026-09-22",
+   "price": {
+    "in": 0.1,
+    "out": 0.5
+   },
+   "scores": {
+    "aa": {
+     "d": "28",
+     "v": 28,
+     "note": {
+      "zh": "推理强度 max。",
+      "en": ""
+     },
+     "src": "artificial_analysis",
+     "cf": "高"
+    },
+    "vals": {
+     "d": "52.32",
+     "v": 52.32,
+     "note": {
+      "zh": "每题成本 $0.45。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vals": {
+     "d": "13.64",
+     "v": 13.64,
+     "note": {
+      "zh": "每题成本 $0.35。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vendor": {
+     "d": "16.4",
+     "v": 16.4,
+     "note": {
+      "zh": "Terminal-Bench 官方榜，Codex，max 档，±2.7。",
+      "en": ""
+     },
+     "src": "leaderboard",
+     "cf": "中"
+    },
+    "exgym": {
+     "d": "11.6",
+     "v": 11.6,
+     "note": {
+      "zh": "OpenAI 自报。",
+      "en": ""
+     },
+     "src": "vendor_self_report",
+     "cf": "中"
+    },
+    "vct": {
+     "d": "0.49",
+     "v": 0.491,
+     "note": {
+      "zh": "OpenAI 自测的 Multi-select Virology Troubleshooting，用的是同一套 VCT 题（322 题），多选全对才算。计分方式可能和 Anthropic 不同。GPT-6.1 Sol 补充卡：49.1%。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    }
+   }
+  },
+  {
+   "id": "gpt-6-sol",
+   "name": "GPT-6 Sol",
+   "short": "GPT-6 Sol",
+   "vendor": "openai",
+   "status": "public",
+   "release": "2026-09-22",
+   "price": {
+    "in": 2,
+    "out": 10,
+    "tip": {
+     "zh": "发布一周后被 GPT-6.1 Sol 取代。",
+     "en": ""
+    }
+   },
+   "scores": {
+    "tb4_vals": {
+     "d": "44.44",
+     "v": 44.44,
+     "note": {
+      "zh": "每题成本 $5.79。",
+      "en": ""
+     },
+     "src": "vals_ai",
+     "cf": "高"
+    },
+    "tb4_vendor": {
+     "d": "49.4",
+     "v": 49.4,
+     "note": {
+      "zh": "Terminal-Bench 官方榜，Codex，max 档，±3.2。",
+      "en": ""
+     },
+     "src": "leaderboard",
+     "cf": "中"
+    },
+    "exgym": {
+     "d": "22.1",
+     "v": 22.1,
+     "note": {
+      "zh": "OpenAI 自报。",
+      "en": ""
+     },
+     "src": "vendor_self_report",
+     "cf": "中"
+    },
+    "vct": {
+     "d": "0.51",
+     "v": 0.506,
+     "note": {
+      "zh": "OpenAI 自测的 Multi-select Virology Troubleshooting，用的是同一套 VCT 题（322 题），多选全对才算。计分方式可能和 Anthropic 不同。GPT-6.1 Sol 补充卡：50.6%。",
+      "en": ""
+     },
+     "src": "system_card",
+     "cf": "中"
+    }
+   }
+  }
+ ],
+ "timeline_events": [
+  {
+   "lane": "google",
+   "date": "2026-09-30",
+   "hollow": true,
+   "label": {
+    "zh": "Argon 宣布",
+    "en": ""
+   },
+   "tip": {
+    "zh": "Gemini 4 Argon 宣布。先只给 Fairwind 项目里的网络安全防御方。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "google",
+   "date": "2026-10-13",
+   "label": {
+    "zh": "Argon 全面开放",
+    "en": ""
+   },
+   "tip": {
+    "zh": "Gemini 4 Argon 全面开放。$2 / $10（12 月 1 日起 $4 / $20）。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "google",
+   "date": "2026-10-28",
+   "hollow": true,
+   "label": {
+    "zh": "Carbon 宣布",
+    "en": ""
+   },
+   "tip": {
+    "zh": "Gemini 4 Carbon 宣布。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "google",
+   "date": "2026-11-10",
+   "label": {
+    "zh": "Carbon 开放",
+    "en": ""
+   },
+   "tip": {
+    "zh": "Gemini 4 Carbon 对所有付费开发者开放。$2 / $10（12 月 1 日起 $4 / $20）。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "google",
+   "date": "2026-11-12",
+   "label": {
+    "zh": "Hydrogen",
+    "en": ""
+   },
+   "tip": {
+    "zh": "Gemini 4 Hydrogen。$1.50 / $7.50。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "google",
+   "date": "2026-11-18",
+   "label": {
+    "zh": "Neon",
+    "en": ""
+   },
+   "tip": {
+    "zh": "Gemini 4 Neon。$3 / $15。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "anthropic",
+   "date": "2026-06-09",
+   "label": {
+    "zh": "Fable 5 · Mythos 5",
+    "en": ""
+   },
+   "tip": {
+    "zh": "Claude Fable 5（$10 / $50）和 Mythos 5（受限）。第一代公开的 Mythos 级模型。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "anthropic",
+   "date": "2026-09-01",
+   "label": {
+    "zh": "Fable 5.1 · Mythos 5.1",
+    "en": ""
+   },
+   "tip": {
+    "zh": "Claude Fable 5.1（$10 / $50）和 Mythos 5.1（受限）。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "anthropic",
+   "date": "2026-09-22",
+   "label": {
+    "zh": "Opus 5.5",
+    "en": ""
+   },
+   "tip": {
+    "zh": "Claude Opus 5.5。$4 / $20。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "anthropic",
+   "date": "2026-09-28",
+   "label": {
+    "zh": "Sonnet 5.5",
+    "en": ""
+   },
+   "tip": {
+    "zh": "Claude Sonnet 5.5。$2 / $10。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "anthropic",
+   "date": "2026-10-07",
+   "label": {
+    "zh": "Haiku 5.5",
+    "en": ""
+   },
+   "tip": {
+    "zh": "Claude Haiku 5.5。$0.10 / $0.50。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "anthropic",
+   "date": "2026-11-09",
+   "label": {
+    "zh": "Fable 5.2 · Mythos 5.2",
+    "en": ""
+   },
+   "tip": {
+    "zh": "Claude Fable 5.2（$8 / $40）和 Mythos 5.2（同一个底层模型，受限）。同日发布 264 页的 System Card。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "internal",
+   "date": "2026-07-01",
+   "end": "2026-07-31",
+   "label": {
+    "zh": "Model 2 · 7 月训练完成",
+    "en": ""
+   },
+   "tip": {
+    "zh": "METR 报告：2026 年 7 月训练完成。没有公开分数。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "internal",
+   "date": "2026-08-01",
+   "end": "2026-09-30",
+   "label": {
+    "zh": "Model 3 · 8–9 月训练完成",
+    "en": ""
+   },
+   "tip": {
+    "zh": "METR 报告：2026 年 8–9 月训练完成。Mythos 5.2 和 Fable 5.2 被认为是它的发布版本。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "internal",
+   "date": "2026-09-01",
+   "end": "2026-10-31",
+   "label": {
+    "zh": "Model 4 · 9–10 月训练完成",
+    "en": ""
+   },
+   "tip": {
+    "zh": "METR 报告：2026 年 9–10 月训练完成，10 月时 Anthropic 内部最强。就是 System Card 里的「内部模型」，AECI 178.78。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "internal",
+   "date": "2026-11-05",
+   "hollow": true,
+   "label": {
+    "zh": "METR 报告披露三个代号",
+    "en": ""
+   },
+   "tip": {
+    "zh": "METR 发布对 Anthropic 研发加速的独立评估。Model 2 / 3 / 4 第一次公开出现。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "openai",
+   "date": "2026-09-03",
+   "label": {
+    "zh": "GPT-6 Astra",
+    "en": ""
+   },
+   "tip": {
+    "zh": "GPT-6 Astra。$10 / $50。在表 2-2 里作对照。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "openai",
+   "date": "2026-09-22",
+   "label": {
+    "zh": "GPT-6 Sol · Luna",
+    "en": ""
+   },
+   "tip": {
+    "zh": "GPT-6 Sol（$2 / $10，一周后被 GPT-6.1 Sol 取代）和 GPT-6 Luna（$0.10 / $0.50）。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "openai",
+   "date": "2026-09-29",
+   "label": {
+    "zh": "GPT-6.1 Sol",
+    "en": ""
+   },
+   "tip": {
+    "zh": "GPT-6.1 Sol。$2 / $10。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "openai",
+   "date": "2026-10-26",
+   "label": {
+    "zh": "GPT-6.1 Terra",
+    "en": ""
+   },
+   "tip": {
+    "zh": "GPT-6.1 Terra。$1 / $5。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "openai",
+   "date": "2026-10-30",
+   "label": {
+    "zh": "GPT-6 Rosalind",
+    "en": ""
+   },
+   "tag": {
+    "zh": "受限",
+    "en": ""
+   },
+   "tip": {
+    "zh": "GPT-6 Rosalind。生命科学专用，只对通过审核的机构开放。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "openai",
+   "date": "2026-11-05",
+   "label": {
+    "zh": "GPT-6 Cyber",
+    "en": ""
+   },
+   "tag": {
+    "zh": "受限",
+    "en": ""
+   },
+   "tip": {
+    "zh": "GPT-6 Cyber。网络安全专用，只对 Daybreak 项目成员开放。",
+    "en": ""
+   }
+  },
+  {
+   "lane": "openai",
+   "date": "2026-11-17",
+   "label": {
+    "zh": "GPT-6.2 Astra · Sol",
+    "en": ""
+   },
+   "tip": {
+    "zh": "GPT-6.2 Astra（$8 / $40）和 GPT-6.2 Sol（$2 / $10）。",
+    "en": ""
+   }
+  }
+ ],
+ "t22": {
+  "toc": {
+   "zh": "表 2-2 Mythos 5.2 专项分数与对照模型",
+   "en": ""
+  },
+  "c0": {
+   "label": {
+    "zh": "测试",
+    "en": ""
+   },
+   "tip": {
+    "zh": "测试名。悬停看它测什么。",
+    "en": ""
+   }
+  },
+  "columns": [
+   {
+    "id": "mythos-5-2",
+    "label": {
+     "zh": "Mythos 5.2",
+     "en": ""
+    },
+    "vendor": "anthropic",
+    "tip": {
+     "zh": "Claude Mythos 5.2，2026-11-09。测试时关掉了对应防护。",
+     "en": ""
+    }
+   },
+   {
+    "id": "fable-5-2",
+    "label": {
+     "zh": "Fable 5.2",
+     "en": ""
+    },
+    "vendor": "anthropic",
+    "tip": {
+     "zh": "Claude Fable 5.2，2026-11-09。同一个底层模型，带全套防护。",
+     "en": ""
+    }
+   },
+   {
+    "id": "mythos-5-1",
+    "label": {
+     "zh": "Mythos 5.1",
+     "en": ""
+    },
+    "vendor": "anthropic",
+    "tip": {
+     "zh": "上一代 Mythos，2026-09-01。",
+     "en": ""
+    }
+   },
+   {
+    "id": "fable-5-1",
+    "label": {
+     "zh": "Fable 5.1",
+     "en": ""
+    },
+    "vendor": "anthropic",
+    "tip": {
+     "zh": "Claude Fable 5.1，2026-09-01。带全套防护。",
+     "en": ""
+    }
+   },
+   {
+    "id": "fable-5",
+    "label": {
+     "zh": "Fable 5",
+     "en": ""
+    },
+    "vendor": "anthropic",
+    "tip": {
+     "zh": "Claude Fable 5，2026-06-09。带全套防护。",
+     "en": ""
+    }
+   },
+   {
+    "id": "opus-5-5",
+    "label": {
+     "zh": "Opus 5.5",
+     "en": ""
+    },
+    "vendor": "anthropic",
+    "tip": {
+     "zh": "Claude Opus 5.5，2026-09-22。网络安全和生命科学两组是关掉防护后的分数。",
+     "en": ""
+    }
+   },
+   {
+    "id": "sonnet-5-5",
+    "label": {
+     "zh": "Sonnet 5.5",
+     "en": ""
+    },
+    "vendor": "anthropic",
+    "tip": {
+     "zh": "Claude Sonnet 5.5，2026-09-28。",
+     "en": ""
+    }
+   },
+   {
+    "id": "haiku-5-5",
+    "label": {
+     "zh": "Haiku 5.5",
+     "en": ""
+    },
+    "vendor": "anthropic",
+    "tip": {
+     "zh": "Claude Haiku 5.5，2026-10-07。",
+     "en": ""
+    }
+   },
+   {
+    "id": "model-4",
+    "label": {
+     "zh": "Model 4<br><small>内部代号</small>",
+     "en": ""
+    },
+    "vendor": "anthropic",
+    "tip": {
+     "zh": "Anthropic 的内部代号，未发布。评测机构 METR 在 11 月 5 日的独立评估报告里披露：2026 年 9–10 月训练完成，是 10 月时 Anthropic 内部最强的模型，在测过的 15 项 AECI 测试上全部超过 50%。员工自报的提效约 12 倍。它就是 System Card 里的「内部模型」：System Card 说它比 Mythos 5.2 略强，并写明除 AECI 外没有在别处评测它。所以它只有 AECI 一个分数。",
+     "en": ""
+    }
+   },
+   {
+    "id": "model-3",
+    "label": {
+     "zh": "Model 3<br><small>内部代号</small>",
+     "en": ""
+    },
+    "vendor": "anthropic",
+    "tip": {
+     "zh": "Anthropic 的内部代号。METR 报告：2026 年 8–9 月训练完成。Mythos 5.2 和 Fable 5.2 被认为是它的发布版本：System Card 2.3.6 节写明 METR 测的那个版本叫 Model 3 Early。没有以 Model 3 名义公布的分数。",
+     "en": ""
+    }
+   },
+   {
+    "id": "model-2",
+    "label": {
+     "zh": "Model 2<br><small>内部代号</small>",
+     "en": ""
+    },
+    "vendor": "anthropic",
+    "tip": {
+     "zh": "Anthropic 的内部代号，未发布。METR 报告：2026 年 7 月训练完成。没有任何公开分数，也没有公开说明它对应哪个已发布模型。",
+     "en": ""
+    }
+   },
+   {
+    "id": "gpt-6-2-astra",
+    "label": {
+     "zh": "GPT-6.2 Astra",
+     "en": ""
+    },
+    "vendor": "openai",
+    "tip": {
+     "zh": "GPT-6.2 Astra，2026-11-17。",
+     "en": ""
+    }
+   },
+   {
+    "id": "gpt-6-2-sol",
+    "label": {
+     "zh": "GPT-6.2 Sol",
+     "en": ""
+    },
+    "vendor": "openai",
+    "tip": {
+     "zh": "GPT-6.2 Sol，2026-11-17。",
+     "en": ""
+    }
+   },
+   {
+    "id": "gpt-6-cyber",
+    "label": {
+     "zh": "GPT-6 Cyber",
+     "en": ""
+    },
+    "vendor": "openai",
+    "tip": {
+     "zh": "GPT-6 Cyber，2026-11-05。OpenAI 的网络安全专用模型，受限。",
+     "en": ""
+    }
+   },
+   {
+    "id": "gpt-6-astra",
+    "label": {
+     "zh": "GPT-6 Astra",
+     "en": ""
+    },
+    "vendor": "openai",
+    "tip": {
+     "zh": "GPT-6 Astra，2026-09-03。",
+     "en": ""
+    }
+   },
+   {
+    "id": "carbon",
+    "label": {
+     "zh": "Carbon",
+     "en": ""
+    },
+    "vendor": "google",
+    "tip": {
+     "zh": "Gemini 4 Carbon，2026-11-10。网络安全分数是 Fairwind 版本的。",
+     "en": ""
+    }
+   },
+   {
+    "id": "argon",
+    "label": {
+     "zh": "Argon",
+     "en": ""
+    },
+    "vendor": "google",
+    "tip": {
+     "zh": "Gemini 4 Argon，2026-10-13。",
+     "en": ""
+    }
+   }
+  ],
+  "sections": [
+   {
+    "label": {
+     "zh": "通用能力",
+     "en": ""
+    },
+    "rows": [
+     {
+      "name": {
+       "zh": "Terminal-Bench 4.0",
+       "en": ""
+      },
+      "tip": {
+       "zh": "在命令行里完成真实工程任务。各家用自己的工具测。 其他：Mythos 5.2：最高推理强度。 System Card 8.5 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "70.5",
+        "v": 70.5,
+        "note": {
+         "zh": "防护关闭，660 次试验，标准误 ±1.8。",
+         "en": ""
+        }
+       },
+       "fable-5-2": {
+        "d": "67.6",
+        "v": 67.6,
+        "note": {
+         "zh": "带防护：2.5% 的请求被转给备用模型。",
+         "en": ""
+        }
+       },
+       "mythos-5-1": {
+        "d": "60.9",
+        "v": 60.9,
+        "note": {
+         "zh": "Fable 5.1 / Mythos 5.1 的 System Card。",
+         "en": ""
+        }
+       },
+       "fable-5-1": {
+        "d": "55.8",
+        "v": 55.8,
+        "note": {
+         "zh": "Anthropic 的 Fable 5.1 发布表。Google 的表里是 57.9%。",
+         "en": ""
+        }
+       },
+       "fable-5": {
+        "d": "42.0",
+        "v": 42.0,
+        "note": {
+         "zh": "Anthropic 的 Fable 5.1 发布表里的对照分数。",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "66.4",
+        "v": 66.4,
+        "note": {
+         "zh": "xhigh 档；max 档 64.8%。",
+         "en": ""
+        }
+       },
+       "sonnet-5-5": {
+        "d": "70.6",
+        "v": 70.6,
+        "note": {
+         "zh": "带防护，最高推理强度。Vals 独立测是 64.14%。",
+         "en": ""
+        }
+       },
+       "haiku-5-5": {
+        "d": "39.2",
+        "v": 39.2,
+        "note": {
+         "zh": "最高推理强度。",
+         "en": ""
+        }
+       },
+       "gpt-6-astra": {
+        "d": "57.9",
+        "v": 57.9,
+        "note": {
+         "zh": "OpenAI 自报。",
+         "en": ""
+        }
+       },
+       "carbon": {
+        "d": "65.2",
+        "v": 65.2,
+        "note": {
+         "zh": "Google 模型卡，引用 Artificial Analysis 的测试。",
+         "en": ""
+        }
+       },
+       "argon": {
+        "d": "57.1",
+        "v": 57.1,
+        "note": {
+         "zh": "Google 模型卡，引用 Artificial Analysis 的测试。",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "Terminal-Bench-Science 0.1",
+       "en": ""
+      },
+      "tip": {
+       "zh": "在命令行里完成科研计算任务。 其他：Fable 5.1 52.6%。 System Card 8.6 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "75.3",
+        "v": 75.3,
+        "note": {
+         "zh": "防护关闭。",
+         "en": ""
+        }
+       },
+       "fable-5-2": {
+        "d": "74.6",
+        "v": 74.6,
+        "note": {
+         "zh": "带防护。OpenAI 的表里给的是 73.3%。",
+         "en": ""
+        }
+       },
+       "fable-5-1": {
+        "d": "52.6",
+        "v": 52.6,
+        "note": {
+         "zh": "Anthropic 的 Fable 5.1 发布表。Vals 独立测是 40.00%。",
+         "en": ""
+        }
+       },
+       "fable-5": {
+        "d": "24.7",
+        "v": 24.7,
+        "note": {
+         "zh": "Anthropic 的 Fable 5.1 发布表里的对照分数。",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "58.7",
+        "v": 58.7,
+        "note": {
+         "zh": "Anthropic 自报。",
+         "en": ""
+        }
+       },
+       "sonnet-5-5": {
+        "d": "59.9",
+        "v": 59.9,
+        "note": {
+         "zh": "Sonnet 5.5 的 System Card。",
+         "en": ""
+        }
+       },
+       "gpt-6-2-astra": {
+        "d": "77.1",
+        "v": 77.1,
+        "note": {
+         "zh": "OpenAI 自报。",
+         "en": ""
+        }
+       },
+       "gpt-6-2-sol": {
+        "d": "68.0",
+        "v": 68.0,
+        "note": {
+         "zh": "OpenAI 自报。",
+         "en": ""
+        }
+       },
+       "gpt-6-astra": {
+        "d": "64.6",
+        "v": 64.6,
+        "note": {
+         "zh": "OpenAI 自报。",
+         "en": ""
+        }
+       },
+       "carbon": {
+        "d": "64.8",
+        "v": 64.8,
+        "note": {
+         "zh": "Google 模型卡。",
+         "en": ""
+        }
+       },
+       "argon": {
+        "d": "52.9",
+        "v": 52.9,
+        "note": {
+         "zh": "Google 模型卡。",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "AECI",
+       "en": ""
+      },
+      "tip": {
+       "zh": "Anthropic Epoch Capabilities Index。Anthropic 基于 Epoch AI 的能力指数改的综合分。只有 Anthropic 的模型有。 其他：Model 4 即 System Card 的「内部模型」，METR 算法下是 178.6；Opus 5 169.40；Mythos 5 168.68；Mythos Preview 165.71。 System Card 2.3.5.3 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "177.12",
+        "v": 177.12,
+        "note": {
+         "zh": "置信区间 172.42–182.94。",
+         "en": ""
+        }
+       },
+       "mythos-5-1": {
+        "d": "172.62",
+        "v": 172.62,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "174.78",
+        "v": 174.78,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "model-4": {
+        "d": "178.78",
+        "v": 178.78,
+        "note": {
+         "zh": "System Card 2.3.5.3 节表里的「内部模型」，本报告按 Model 4 记。全局置信区间 173.75–185.18，局部 177.08–180.59。按 15 项测试算出。比 Mythos 5.2 高 1.66 分，两者的置信区间重叠。METR 自己的算法给 Model 4 的是 178.6，去掉 3 个拟合差的测试后是 179.7。",
+         "en": ""
+        }
+       }
+      }
+     }
+    ]
+   },
+   {
+    "label": {
+     "zh": "网络安全",
+     "en": ""
+    },
+    "rows": [
+     {
+      "name": {
+       "zh": "CVE Rediscovery",
+       "en": ""
+      },
+      "tip": {
+       "zh": "在代码里重新找出已公开的真实漏洞。分数是找回的比例。Anthropic 的内部测试。 其他：只有 Anthropic 的模型有。 System Card 8.19 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "89.6",
+        "v": 89.6,
+        "note": {
+         "zh": "防护关闭，1,829 条漏洞公告。",
+         "en": ""
+        }
+       },
+       "mythos-5-1": {
+        "d": "78.3",
+        "v": 78.3,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "81.3",
+        "v": 81.3,
+        "note": {
+         "zh": "防护关闭。",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "CyScenarioBench",
+       "en": ""
+      },
+      "tip": {
+       "zh": "模拟完整的网络攻防场景，看平均成功率。 其他：OpenAI 的分数来自 Irregular 的另一套题。 System Card 3.3.2 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "76.3",
+        "v": 76.3,
+        "note": {
+         "zh": "10 题子集，防护关闭，用的是发布前的版本。",
+         "en": ""
+        }
+       },
+       "mythos-5-1": {
+        "d": "61.7",
+        "v": 61.7,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "67.6",
+        "v": 67.6,
+        "note": {
+         "zh": "防护关闭。",
+         "en": ""
+        }
+       },
+       "sonnet-5-5": {
+        "d": "46.1",
+        "v": 46.1,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "gpt-6-2-astra": {
+        "d": "63.0",
+        "v": 63.0,
+        "note": {
+         "zh": "第三方 Irregular 测的平均成功率。题集和 Anthropic 的 10 题子集不同，不能直接比。11 个场景解出 9 个。",
+         "en": ""
+        },
+        "dagger": true
+       },
+       "gpt-6-cyber": {
+        "d": "61.0",
+        "v": 61.0,
+        "note": {
+         "zh": "第三方 Irregular 测的平均成功率。题集和 Anthropic 的 10 题子集不同，不能直接比。11 个场景全部至少解出一次。",
+         "en": ""
+        },
+        "dagger": true
+       },
+       "gpt-6-astra": {
+        "d": "59.0",
+        "v": 59.0,
+        "note": {
+         "zh": "第三方 Irregular 测的平均成功率。题集和 Anthropic 的 10 题子集不同，不能直接比。这是 9 月的评估；后来换过题集，OpenAI 的卡里也写过 54% 和 61%。",
+         "en": ""
+        },
+        "dagger": true
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "Binary Exploitation Benchmark",
+       "en": ""
+      },
+      "tip": {
+       "zh": "在 228 个开源项目的 831 个入口点上找漏洞并写出利用。数字是成功劫持程序控制流的个数。Anthropic 的内部测试。 其他：共 831 个入口点。 System Card 3.3.3 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": " 个",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "148",
+        "v": 148.0,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "mythos-5-1": {
+        "d": "84",
+        "v": 84.0,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "112",
+        "v": 112.0,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "sonnet-5-5": {
+        "d": "48",
+        "v": 48.0,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "ExploitGym · 2 小时",
+       "en": ""
+      },
+      "tip": {
+       "zh": "给定一个漏洞，看模型能不能写出可用的攻击。共 869 题，限时 2 小时。 其他：只有 Anthropic 报 2 小时成绩。 System Card 3.3.4 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "38.1",
+        "v": 38.1,
+        "note": {
+         "zh": "331 / 869。",
+         "en": ""
+        }
+       },
+       "mythos-5-1": {
+        "d": "23.4",
+        "v": 23.4,
+        "note": {
+         "zh": "203 / 869。",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "33.3",
+        "v": 33.3,
+        "note": {
+         "zh": "289 / 869。",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "ExploitGym · 6 小时",
+       "en": ""
+      },
+      "tip": {
+       "zh": "同上，限时 6 小时。各家的题目范围和限时不完全一样。 其他：GPT-6.1 Sol 35.1%；GPT-6 Sol 22.1%；GPT-6 Luna 11.6%。 System Card 3.3.4 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "39.2",
+        "v": 39.2,
+        "note": {
+         "zh": "341 / 869。",
+         "en": ""
+        }
+       },
+       "mythos-5-1": {
+        "d": "30.4",
+        "v": 30.4,
+        "note": {
+         "zh": "264 / 869。",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "34.5",
+        "v": 34.5,
+        "note": {
+         "zh": "300 / 869。Google 的表里给的也是 34.5%。",
+         "en": ""
+        }
+       },
+       "gpt-6-cyber": {
+        "d": "48.5",
+        "v": 48.5,
+        "note": {
+         "zh": "OpenAI 自报。",
+         "en": ""
+        }
+       },
+       "gpt-6-astra": {
+        "d": "42.4",
+        "v": 42.4,
+        "note": {
+         "zh": "OpenAI 自报，取消了 6 小时限时。",
+         "en": ""
+        }
+       },
+       "carbon": {
+        "d": "53.5",
+        "v": 53.5,
+        "note": {
+         "zh": "Google 自报，6 小时，Fairwind 版本。10 小时是 54.8%。",
+         "en": ""
+        }
+       },
+       "argon": {
+        "d": "39.5",
+        "v": 39.5,
+        "note": {
+         "zh": "Google 自报，6 小时。10 小时是 42.0%。",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "ExploitBench",
+       "en": ""
+      },
+      "tip": {
+       "zh": "针对 V8 引擎的漏洞利用测试。Anthropic 报带自动提示的 Cap%。 其他：算法不同；GPT-6.1 Sol 99.7%，GPT-6.1 Terra 97.1%。 System Card 3.3.1 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "97",
+        "v": 97.0,
+        "note": {
+         "zh": "带自动提示。不带是 95%。完整任意代码执行 90.0%（369 / 410 次）。",
+         "en": ""
+        }
+       },
+       "mythos-5-1": {
+        "d": "83",
+        "v": 83.0,
+        "note": {
+         "zh": "带自动提示。完整任意代码执行 221 次。",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "91",
+        "v": 91.0,
+        "note": {
+         "zh": "带自动提示。完整任意代码执行 301 次。",
+         "en": ""
+        }
+       },
+       "sonnet-5-5": {
+        "d": "80",
+        "v": 80.0,
+        "note": {
+         "zh": "带自动提示。完整任意代码执行 178 / 410 次。",
+         "en": ""
+        }
+       },
+       "gpt-6-2-astra": {
+        "d": "100",
+        "v": 100.0,
+        "note": {
+         "zh": "OpenAI 自报的 mean capability credit，和 Anthropic 的 Cap% 不是同一个算法。",
+         "en": ""
+        },
+        "dagger": true
+       },
+       "gpt-6-2-sol": {
+        "d": "100",
+        "v": 100.0,
+        "note": {
+         "zh": "OpenAI 自报的 mean capability credit，和 Anthropic 的 Cap% 不是同一个算法。",
+         "en": ""
+        },
+        "dagger": true
+       },
+       "gpt-6-cyber": {
+        "d": "100",
+        "v": 100.0,
+        "note": {
+         "zh": "OpenAI 自报的 mean capability credit，和 Anthropic 的 Cap% 不是同一个算法。题目里有 2023 年的旧漏洞，可能进过训练数据。",
+         "en": ""
+        },
+        "dagger": true
+       },
+       "gpt-6-astra": {
+        "d": "100",
+        "v": 100.0,
+        "note": {
+         "zh": "OpenAI 自报的 mean capability credit，和 Anthropic 的 Cap% 不是同一个算法。",
+         "en": ""
+        },
+        "dagger": true
+       }
+      }
+     }
+    ]
+   },
+   {
+    "label": {
+     "zh": "生命科学",
+     "en": ""
+    },
+    "rows": [
+     {
+      "name": {
+       "zh": "De Novo Binder Design（24 小时）",
+       "en": ""
+      },
+      "tip": {
+       "zh": "从零设计能结合指定靶点的蛋白，限时 24 小时。 System Card 8.18.4 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "85.1",
+        "v": 85.1,
+        "note": {
+         "zh": "生物防护关闭。",
+         "en": ""
+        }
+       },
+       "mythos-5-1": {
+        "d": "79.1",
+        "v": 79.1,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "82.6",
+        "v": 82.6,
+        "note": {
+         "zh": "防护关闭。",
+         "en": ""
+        }
+       },
+       "sonnet-5-5": {
+        "d": "82.3",
+        "v": 82.3,
+        "note": {
+         "zh": "Sonnet 5.5 的 System Card。",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "Protein Design · Sequence Generation",
+       "en": ""
+      },
+      "tip": {
+       "zh": "按要求生成蛋白序列。 System Card 8.18.4 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "64.6",
+        "v": 64.6,
+        "note": {
+         "zh": "每题只跑一次。",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "60.2",
+        "v": 60.2,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "sonnet-5-5": {
+        "d": "51.0",
+        "v": 51.0,
+        "note": {
+         "zh": "Sonnet 5.5 的 System Card。",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "SingleCellBench（LatchBio）",
+       "en": ""
+      },
+      "tip": {
+       "zh": "单细胞测序数据的分析任务，195 题。 其他：LatchBio 公开榜用别的工具测：GPT-5.5 58.0%。 System Card 8.18.1 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "65.6",
+        "v": 65.6,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "mythos-5-1": {
+        "d": "61.8",
+        "v": 61.8,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "61.2",
+        "v": 61.2,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "sonnet-5-5": {
+        "d": "59.1",
+        "v": 59.1,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "haiku-5-5": {
+        "d": "56.2",
+        "v": 56.2,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "Protocols（Troubleshooting）",
+       "en": ""
+      },
+      "tip": {
+       "zh": "实验方案出了问题，让模型找原因。 System Card 8.18.6 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "77.1",
+        "v": 77.1,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "mythos-5-1": {
+        "d": "70.2",
+        "v": 70.2,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "73.7",
+        "v": 73.7,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "sonnet-5-5": {
+        "d": "67.3",
+        "v": 67.3,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "Protein Domain ID",
+       "en": ""
+      },
+      "tip": {
+       "zh": "识别蛋白里的功能结构域。 System Card 8.18.7 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "91.8",
+        "v": 91.8,
+        "note": {
+         "zh": "不带工具。",
+         "en": ""
+        }
+       },
+       "mythos-5-1": {
+        "d": "63.5",
+        "v": 63.5,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "73.6",
+        "v": 73.6,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "Protein Mutation Attribution",
+       "en": ""
+      },
+      "tip": {
+       "zh": "判断蛋白突变带来的影响。 System Card 8.18.8 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "51.5",
+        "v": 51.5,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "mythos-5-1": {
+        "d": "48.0",
+        "v": 48.0,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "49.5",
+        "v": 49.5,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "Medicinal Chemistry",
+       "en": ""
+      },
+      "tip": {
+       "zh": "药物化学题。 System Card 8.18.3 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "69.0",
+        "v": 69.0,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "mythos-5-1": {
+        "d": "57.7",
+        "v": 57.7,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "63.5",
+        "v": 63.5,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "sonnet-5-5": {
+        "d": "65.3",
+        "v": 65.3,
+        "note": {
+         "zh": "504 题。",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "Morphology-to-molecule",
+       "en": ""
+      },
+      "tip": {
+       "zh": "看细胞形态图，判断是哪种分子处理的。 System Card 8.18.2 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "35.2",
+        "v": 35.2,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "34.0",
+        "v": 34.0,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "sonnet-5-5": {
+        "d": "25.0",
+        "v": 25.0,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "gpt-6-astra": {
+        "d": "22.8",
+        "v": 22.8,
+        "note": {
+         "zh": "Anthropic 测的，最高推理强度。",
+         "en": ""
+        }
+       },
+       "argon": {
+        "d": "25.2",
+        "v": 25.2,
+        "note": {
+         "zh": "Anthropic 测的，最高思考档。",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "Biomedical Image Analysis",
+       "en": ""
+      },
+      "tip": {
+       "zh": "生物医学图像分析。 System Card 8.18.5 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "%",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "80.7",
+        "v": 80.7,
+        "note": {
+         "zh": "每题只跑一次。",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "71.4",
+        "v": 71.4,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "sonnet-5-5": {
+        "d": "72.2",
+        "v": 72.2,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "gpt-6-astra": {
+        "d": "77.5",
+        "v": 77.5,
+        "note": {
+         "zh": "Anthropic 测的。",
+         "en": ""
+        }
+       }
+      }
+     },
+     {
+      "name": {
+       "zh": "VCT（多模态病毒学）",
+       "en": ""
+      },
+      "tip": {
+       "zh": "Virology Capabilities Test，病毒学实验排障测试，带图片，322 题。满分 1。 其他：计分可能不同；人类专家基线 0.221。 System Card 2.2.3.1 节。",
+       "en": ""
+      },
+      "unit": {
+       "zh": "",
+       "en": ""
+      },
+      "cells": {
+       "mythos-5-2": {
+        "d": "0.63",
+        "v": 0.63,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "opus-5-5": {
+        "d": "0.59",
+        "v": 0.59,
+        "note": {
+         "zh": "",
+         "en": ""
+        }
+       },
+       "gpt-6-2-astra": {
+        "d": "0.62",
+        "v": 0.618,
+        "note": {
+         "zh": "OpenAI 自测，用同一套 VCT 题，多选全对才算。计分方式可能和 Anthropic 不同。61.80%。",
+         "en": ""
+        },
+        "dagger": true
+       },
+       "gpt-6-2-sol": {
+        "d": "0.55",
+        "v": 0.554,
+        "note": {
+         "zh": "OpenAI 自测，用同一套 VCT 题，多选全对才算。计分方式可能和 Anthropic 不同。55.40%。",
+         "en": ""
+        },
+        "dagger": true
+       },
+       "gpt-6-astra": {
+        "d": "0.56",
+        "v": 0.5578,
+        "note": {
+         "zh": "OpenAI 自测，用同一套 VCT 题，多选全对才算。计分方式可能和 Anthropic 不同。55.78%；SecureBio 独立测是 57.8%。",
+         "en": ""
+        },
+        "dagger": true
+       }
+      }
+     }
+    ]
+   }
+  ],
+  "hints": [
+   {
+    "text": {
+     "zh": "{n_rows} 项测试 × {n_cmp} 个对照模型",
+     "en": ""
+    }
+   },
+   {
+    "label": {
+     "zh": "数据从哪来",
+     "en": ""
+    },
+    "tip": {
+     "zh": "<b>数据从哪来</b>Anthropic 的 System Card（264 页，11 月 9 日）。<br>通用能力在 Fable 5.2 上测；漏洞发现和生命科学在 Mythos 5.2 上测，测试时关掉了对应防护。<br>Mythos 5.2 和 Fable 5.2 是同一个底层模型。<br>对照分数共 {n_cmp_scores} 个，全部是厂商自报或厂商引用的第三方测试。〔中〕",
+     "en": ""
+    }
+   },
+   {
+    "label": {
+     "zh": "色条和 †",
+     "en": ""
+    },
+    "tip": {
+     "zh": "<b>色条和 †</b>色条每行单独画，从 0 到该行最高值；颜色跟厂商；每行前三名加深。<br>†：同名测试，但题目或算法不同，只能看大致位置。<br>「—」：没有找到公开分数。",
+     "en": ""
+    }
+   },
+   {
+    "label": {
+     "zh": "哪些测试能对比",
+     "en": ""
+    },
+    "tip": {
+     "zh": "<b>哪些测试能对比</b>三家都有：Terminal-Bench 两项、ExploitGym。<br>有 OpenAI 的分数但算法不同：CyScenarioBench、ExploitBench、VCT。<br>只有 Claude 模型：CVE Rediscovery、Binary Exploitation Benchmark、AECI、多数生命科学测试。<br>核对：Mythos 5.2 的 16 项与 BenchLM 的转录一致；AECI、VCT、ExploitGym 6 小时只有 System Card 一个出处。",
+     "en": ""
+    }
+   }
+  ]
+ },
+ "figures": {
+  "f31": {
+   "bench": "aa",
+   "caption": {
+    "zh": "图 3-1　AA 指数（独立）",
+    "en": ""
+   },
+   "source_tip": {
+    "zh": "<b>来源</b>Artificial Analysis 各模型页，v5.0.1。<br>各模型取最高推理强度。<br>快照 {snapshot}。〔高〕",
+    "en": ""
+   },
+   "label": {
+    "zh": "AA 指数",
+    "en": ""
+   },
+   "axis": {
+    "min": 0,
+    "max": 70,
+    "step": 10
+   },
+   "head": [
+    {
+     "zh": "模型",
+     "en": ""
+    },
+    {
+     "zh": "AA 指数（0–{max}）",
+     "en": ""
+    },
+    {
+     "zh": "分",
+     "en": ""
+    },
+    {
+     "zh": "输出价 / 百万 token",
+     "en": ""
+    }
+   ],
+   "mark": "bar",
+   "toc": {
+    "zh": "图 3-1 AA 指数排名",
+    "en": ""
+   }
+  },
+  "f32": {
+   "bench": "vals",
+   "caption": {
+    "zh": "图 3-2　Vals Index（独立）",
+    "en": ""
+   },
+   "source_tip": {
+    "zh": "<b>来源</b>Vals AI 榜单，v2.2，2026-11-16；Neon 是 11-18 追加的。<br>横轴从 50% 起，所以用点不用条。〔高〕",
+    "en": ""
+   },
+   "label": {
+    "zh": "Vals Index",
+    "en": ""
+   },
+   "axis": {
+    "min": 50,
+    "max": 75,
+    "step": 5
+   },
+   "head": [
+    {
+     "zh": "模型",
+     "en": ""
+    },
+    {
+     "zh": "Vals Index（横轴从 {min}% 起）",
+     "en": ""
+    },
+    {
+     "zh": "%",
+     "en": ""
+    },
+    {
+     "zh": "每题成本",
+     "en": ""
+    }
+   ],
+   "mark": "dot",
+   "toc": {
+    "zh": "图 3-2 Vals Index 排名",
+    "en": ""
+   }
+  },
+  "f33": {
+   "caption": {
+    "zh": "图 3-3　厂商自报的六项测试（%）",
+    "en": ""
+   },
+   "source_tip": {
+    "zh": "<b>来源</b>Google、Anthropic、OpenAI 各自的发布表。<br>同一模型在不同厂商的表里分数可能不同，悬停看是谁报的。<br>没有分数的模型不画。〔中〕",
+    "en": ""
+   },
+   "axis": {
+    "min": 0,
+    "max": 100,
+    "step": 25
+   },
+   "panels": [
+    {
+     "bench": "fc2",
+     "title": {
+      "zh": "FrontierCode 2.0",
+      "en": ""
+     },
+     "sub": {
+      "zh": "高难度编码",
+      "en": ""
+     }
+    },
+    {
+     "bench": "ale",
+     "title": {
+      "zh": "Agents' Last Exam v1.1",
+      "en": ""
+     },
+     "sub": {
+      "zh": "多步骤职业任务",
+      "en": ""
+     }
+    },
+    {
+     "bench": "tbsci",
+     "title": {
+      "zh": "Terminal-Bench-Science 0.1",
+      "en": ""
+     },
+     "sub": {
+      "zh": "命令行里做科研计算",
+      "en": ""
+     }
+    },
+    {
+     "bench": "osw",
+     "title": {
+      "zh": "OSWorld 2.1（离线子集）",
+      "en": ""
+     },
+     "sub": {
+      "zh": "操作电脑界面",
+      "en": ""
+     }
+    },
+    {
+     "bench": "chart",
+     "title": {
+      "zh": "Chartography",
+      "en": ""
+     },
+     "sub": {
+      "zh": "读专业图表",
+      "en": ""
+     }
+    },
+    {
+     "bench": "auto",
+     "title": {
+      "zh": "AutomationBench",
+      "en": ""
+     },
+     "sub": {
+      "zh": "跨软件业务流程",
+      "en": ""
+     }
+    }
+   ],
+   "toc": {
+    "zh": "图 3-3 厂商自报的六项测试",
+    "en": ""
+   }
+  }
+ },
+ "ui": {
+  "rank_col": {
+   "zh": "本列第 {n} 名。",
+   "en": ""
+  },
+  "rank_row": {
+   "zh": "本行第 {n} 名。",
+   "en": ""
+  },
+  "count_suffix": {
+   "zh": " 有分数的模型：{n} 个。",
+   "en": ""
+  },
+  "lane_tip": {
+   "zh": "悬停只看 {name}。",
+   "en": ""
+  },
+  "snapshot": {
+   "zh": "快照",
+   "en": ""
+  },
+  "published": {
+   "zh": "{n} 个已发布模型",
+   "en": ""
+  },
+  "internal_one": {
+   "zh": " + {n} 个 {vendor} 内部代号模型",
+   "en": ""
+  },
+  "internal_many": {
+   "zh": " + {n} 个内部代号模型",
+   "en": ""
+  },
+  "source": {
+   "zh": "来源",
+   "en": ""
+  },
+  "api_price": {
+   "zh": " API 价 输入 {pin} / 输出 {pout}。",
+   "en": ""
+  },
+  "cost_re": {
+   "zh": "每题成本 (\\$[0-9.,]+)",
+   "en": ""
+  },
+  "month": {
+   "zh": "{m} 月",
+   "en": ""
+  },
+  "snap_tip": {
+   "zh": "本报告的快照日期。",
+   "en": ""
+  },
+  "snap_label": {
+   "zh": "{m}/{d} 快照",
+   "en": ""
+  },
+  "restricted_tip": {
+   "zh": "只对通过审核的机构开放，普通开发者不能直接调用。",
+   "en": ""
+  },
+  "groups_zh_digits": {
+   "zh": "零一二三四五六七八九十",
+   "en": ""
+  }
+ }
+}
