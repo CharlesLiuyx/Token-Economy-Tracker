@@ -8,6 +8,7 @@ on:
       - "site/**"
       - "scripts/**"
       - "data/**"
+      - "reports/**"
       - "requirements.txt"
       - ".github/workflows/deploy.yml"
   workflow_dispatch: {}

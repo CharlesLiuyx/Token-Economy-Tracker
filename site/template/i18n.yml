@@ -16,6 +16,12 @@ ui.data_asof:
 ui.github:
   zh: 在 GitHub 上查看源码
   en: View source on GitHub
+ui.nav_models:
+  zh: 模型发布 & Bench →
+  en: Model Releases & Benchmarks →
+ui.nav_models_tip:
+  zh: 另一个页面：前沿 / 大厂 / 开源大模型的发布时间、价格、Bench 分数与算力到卡，每日更新
+  en: "Separate page: release dates, prices, benchmark scores and compute arrivals for frontier, big-tech and open-weight models, updated daily"
 ui.footer:
   zh: "纯静态单文件 · 离线可开 · 数据管道 & 页面由 Token-Tracker 每日自动构建 · Source: Epoch AI (CC-BY) / OpenRouter / Vercel AI Gateway / Vast.ai / npm / PyPI / Google News"
   en: "Static single-file page · works offline · data pipeline & page rebuilt daily by Token-Tracker · Source: Epoch AI (CC-BY) / OpenRouter / Vercel AI Gateway / Vast.ai / npm / PyPI / Google News"

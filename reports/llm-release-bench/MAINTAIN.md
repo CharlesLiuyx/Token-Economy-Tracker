@@ -181,6 +181,11 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
    ```
 4. 线上只留最近 10 个版本：运行时先看 `html-review --help`（和各子命令的 `--help`）有没有删除旧版本的命令；有就删到只剩 10 个；没有就在汇报里写「CLI 不支持清理」。
 
+## 10b. 线上地址与入口
+- 报告随 Token-Economy-Tracker 的 GitHub Pages 一起发布：`make build` 会把本目录唯一的报告 .html 复制成 `site/llm-release-bench/index.html`（scripts/build.py 的 COMPANION_REPORTS，只搬运不改内容），线上地址 https://charlesliuyx.github.io/Token-Economy-Tracker/llm-release-bench/ 。改了这里的报告、推到 main 后 deploy.yml 会自动重新部署（paths 含 reports/**）。
+- 主看板顶栏有入口「模型发布 & Bench →」，链接带 `?lang=zh|en`。本页 head 里的首帧脚本按 URL ?lang= > 本页记忆 mdl-lang > 主看板的 lang > 中文 决定语言。改 head 脚本时保留这个顺序。
+- 本目录只能有一个报告 .html（否则复制会被跳过并打印 warn）。
+
 ## 11. 本地副本
 
 用户电脑上另有一个定时任务，每天把仓库里的报告 HTML 拉到 Info 库的 `04 行业与宏观数据/大模型发布跟进和算力/`。那份文件只读：**不在本地改**，改了也会被下一次拉取覆盖。本地原来的构建目录 `大模型发布和Bench跟进-构建/` 已停用（顶部写了迁移说明），不要再在那里跑脚本。

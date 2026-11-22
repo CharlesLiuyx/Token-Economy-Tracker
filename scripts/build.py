@@ -27,6 +27,9 @@ from scripts.lib import registry, status, store
 
 SITE = store.ROOT / "site"
 TEMPLATE_DIR = SITE / "template"
+# 附属报告：reports/<name>/ 下唯一的报告 .html 复制到 site/<name>/index.html，随 Pages 一起发布。
+# 报告由它自己的构建脚本生成（见 reports/llm-release-bench/MAINTAIN.md），这里只搬运、不改内容。
+COMPANION_REPORTS = {"llm-release-bench": store.ROOT / "reports" / "llm-release-bench"}
 
 FRESH_WARN_HOURS = 48
 FRESH_RED_DAYS = 7
@@ -766,6 +769,21 @@ def delta_class(v: float | None) -> str:
     return "flat" if v is None or abs(v) < 0.0005 else "up" if v > 0 else "down"
 
 
+def copy_companion_reports(site: Path = SITE, reports: dict[str, Path] | None = None) -> list[Path]:
+    """把每个附属报告复制成 site/<name>/index.html。目录或报告缺失时跳过并提示，不让主站构建失败。"""
+    written = []
+    for name, src_dir in (COMPANION_REPORTS if reports is None else reports).items():
+        htmls = sorted(src_dir.glob("*.html")) if src_dir.is_dir() else []
+        if len(htmls) != 1:
+            print(f"warn: companion report {name}: expected 1 .html in {src_dir}, found {len(htmls)}; skipped")
+            continue
+        dst = site / name / "index.html"
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        dst.write_bytes(htmls[0].read_bytes())
+        written.append(dst)
+    return written
+
+
 def main() -> int:
     env = Environment(loader=FileSystemLoader(TEMPLATE_DIR), autoescape=False)
     env.globals["t"] = t
@@ -791,6 +809,8 @@ def main() -> int:
     out = SITE / "index.html"
     out.write_text(html, encoding="utf-8")
     print(f"build ok -> {out} ({out.stat().st_size / 1024:.0f} KB)")
+    for dst in copy_companion_reports():
+        print(f"companion report -> {dst} ({dst.stat().st_size / 1024:.0f} KB)")
     return 0
 
 

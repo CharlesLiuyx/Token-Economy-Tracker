@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<script>/* 语言在首帧前定下来，避免先闪一下中文 */try{if(localStorage.getItem('mdl-lang')==='en'){document.documentElement.setAttribute('data-lang','en');document.documentElement.lang='en'}}catch(e){}</script>
+<script>/* 语言在首帧前定下来，避免先闪一下中文。优先级：URL ?lang= > 本页记忆 mdl-lang > 同站主看板的 lang > 中文 */try{var q=(location.search.match(/[?&]lang=(zh|en)\b/)||[])[1],ls=localStorage,l=q||ls.getItem('mdl-lang')||ls.getItem('lang');if(q||!ls.getItem('mdl-lang')){if(l==='en'||l==='zh')ls.setItem('mdl-lang',l)}if(l==='en'){document.documentElement.setAttribute('data-lang','en');document.documentElement.lang='en'}}catch(e){}</script>
 <title>大模型发布和 Bench 跟进：前沿 Gemini Claude ChatGPT 大厂 Grok Muse 开源 DeepSeek Kimi GLM</title>
 <!-- html-review 同步信息（页面不可见）
      review-id : -ql-69iE_Lz3

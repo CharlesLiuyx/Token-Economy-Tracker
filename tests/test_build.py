@@ -60,3 +60,16 @@ def test_gpu_meta_accepts_legacy_string_and_dict():
                                      "B300": {"name": "B300", "vram_gb": 270, "tier": "frontier"}}})
     assert meta["H100"] == {"name": "H100 SXM"}
     assert meta["B300"]["vram_gb"] == 270
+
+
+def test_copy_companion_reports(tmp_path):
+    src = tmp_path / "reports" / "r1"
+    src.mkdir(parents=True)
+    (src / "报告.html").write_text("<html>ok</html>", encoding="utf-8")
+    empty = tmp_path / "reports" / "r2"
+    empty.mkdir()
+    site = tmp_path / "site"
+    out = build.copy_companion_reports(site, {"r1": src, "r2": empty, "r3": tmp_path / "missing"})
+    assert out == [site / "r1" / "index.html"]
+    assert (site / "r1" / "index.html").read_text(encoding="utf-8") == "<html>ok</html>"
+    assert not (site / "r2").exists()

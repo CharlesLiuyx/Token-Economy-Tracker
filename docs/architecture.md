@@ -27,6 +27,8 @@ push 到 main（deploy.yml）：只 build + 部署，不抓数、不提交
   `runner.run()`；配置一律来自 `data/sources.yml`。
 - `scripts/derive/arr.py`：锚点 → 拟合 → `data/derived/arr.json`（方法见 arr-methodology.md）。
 - `scripts/build.py`：读 data/ + 模板渲染单文件 HTML；唯一允许写 site/index.html 的代码。
+  另把附属报告 `reports/llm-release-bench/` 里唯一的 .html 原样复制成 `site/llm-release-bench/index.html`
+  （不入库，随 Pages 发布；报告自己的构建见该目录 MAINTAIN.md）。deploy.yml 的 paths 含 `reports/**`。
   「较 N 天前」的变化量都在这里由每日快照现算（`series_delta`），不落盘。
 
 ## 关键机制

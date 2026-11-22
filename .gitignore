@@ -5,3 +5,5 @@ __pycache__/
 .DS_Store
 .claude/*
 !.claude/skills/
+# 构建时由 scripts/build.py 从 reports/ 复制生成，不入库
+site/llm-release-bench/

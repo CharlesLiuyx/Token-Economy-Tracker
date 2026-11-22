@@ -605,6 +605,8 @@
   function setLang(next) {
     lang = next;
     root.dataset.lang = next;
+    var navModels = $("nav-models");   // 跳到模型发布页时带上当前语言（该页读 ?lang=）
+    if (navModels) navModels.href = "llm-release-bench/?lang=" + next;
     hideTip();
     unwrapTerms();
     applyI18n();
