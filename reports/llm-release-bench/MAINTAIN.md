@@ -151,6 +151,7 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 备份就是 git：每次改完 commit，提交信息写清改了什么。不再维护 `backup/` 目录。线上 html-review 的版本见第 10 节。
 
 ## 9. 双语
+- 英文字体：英文模式下正文用 Adobe Clean（用户 2026-11-22 指定），写在报告 <style> 静态部分的 `:root[data-lang=en] body{font-family:…}`；页面不内嵌字体文件（Adobe Clean 是 Adobe 授权字体，且页面要离线可开），没装这款字体的机器按后备字体（系统无衬线体）显示。改英文排版时不要删掉这一条。
 
 页面右上角「中文 / EN」切换，选择存在 `localStorage` 的 `mdl-lang`，默认中文；`<html lang>`、`<title>`、`aria-label` 跟着变。
 
