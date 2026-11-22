@@ -1,10 +1,14 @@
 # 专家观点 / Podcast 摘录（面板 2h，人工维护，AI 辅助整理）。
-# 收录标准：先手工少量高质量，形成手感后再定标准（PLAN §11 开放问题）。
 # 每条：speaker / role / date / quote / source_url；quote 保持原文，不转述。
 # 只收一手来源可逐字核对的原话（财报电话会 / 官方稿 / 有完整文字稿的访谈）；
 # 无完整文字稿的播客片段不收（2026-09-05 首批 5 条，核对方式见 worklog）。
 
 quotes:
+  - speaker: Sundar Pichai
+    role: CEO, Alphabet（2026 Q3 财报电话会开场陈述）
+    date: 2026-10-28
+    quote: "Our first-party model APIs are now processing nearly 32 billion tokens per minute — 40% more than last quarter and more than four times what we processed a year ago."
+    source_url: https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/
   - speaker: Jensen Huang
     role: CEO, NVIDIA（Q2 FY2027 财报电话会，答 UBS 提问）
     date: 2026-08-26

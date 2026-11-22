@@ -51,13 +51,14 @@ news:
     - nytimes.com
 
 manual:
-  fetcher: null              # git 即编辑界面，人工维护
-  doc: docs/arr-methodology.md
+  fetcher: null              # git 即编辑界面；每日更新任务维护（docs/daily-routine.md）
+  doc: docs/daily-routine.md
   schedule: ad-hoc
   kind: manual
   files:
     - data/manual/arr_anchors.yml
     - data/manual/quotes.yml
+    - data/manual/digest.yml
 
 openrouter:
   fetcher: scripts/fetch/openrouter.py
@@ -69,20 +70,19 @@ openrouter:
     base: https://openrouter.ai/api/frontend/v1/rankings
     datasets: [model-rankings-chart, models, apps]
   # 面板 2b 重点模型对比（permaslug，slug 变更时同步更新面板配置）。
-  # 顺序即配色序（0=Anthropic clay / 1=OpenAI teal）。历史快照含全部模型，换 slug 后
-  # 序列自动从该模型上线日起回溯，无需回补。名单维护记录见 docs/sources/openrouter.md。
-  # 2026-09-05 换代：claude-4.8/4.7-opus→fable-5.1/opus-5/sonnet-5，gpt-5.5→gpt-5.6-luna，
-  # gemini-3-flash-preview→3.7-flash，deepseek-v4-flash-0423→0731，grok-4.5→4.6，
-  # kimi-k2.6→k3；新增 glm-5.3-flash（当周 OpenRouter 用量第一）。
+  # 颜色跟厂商走（build.py VENDORS），同厂商多条线靠线型区分；前 5 个进「变化雷达」。
+  # 历史快照含全部模型，换 slug 后序列自动从该模型上线日起回溯，无需回补。
+  # 换代记录见 docs/sources/openrouter.md「重点模型名单」（最近一次 2026-11-22）。
   models_tracked:
-    - anthropic/claude-fable-5.1-20260831
-    - openai/gpt-5.6-luna-20260709
-    - anthropic/claude-opus-5-20260723
-    - anthropic/claude-sonnet-5-20260630
-    - google/gemini-3.7-flash-20260813
-    - deepseek/deepseek-v4-flash-20260731
-    - x-ai/grok-4.6-20260810
-    - moonshotai/kimi-k3-20260715
+    - anthropic/claude-opus-5.5-20260921
+    - openai/gpt-6-luna-20260922
+    - anthropic/claude-sonnet-5.5-20260928
+    - anthropic/claude-fable-5.2-20261109
+    - google/gemini-4-carbon-20261110
+    - openai/gpt-6.1-sol-20260929
+    - deepseek/deepseek-v4.1-flash-20261017
+    - x-ai/grok-4.7-20260916
+    - moonshotai/kimi-k3.1-pro-20261023
     - z-ai/glm-5.3-flash-20260826
 
 vercel_gateway:
@@ -101,9 +101,24 @@ gpu_prices:
   kind: official-api        # Vast.ai 公开市场 API，免鉴权，见 ADR-004
   refetch_window_days: 3
   api: https://console.vast.ai/api/v0/bundles/
-  gpus:                     # 面板标签 -> Vast.ai gpu_name
-    H100: H100 SXM
-    H200: H200
-    B200: B200
-    A100: A100 SXM4
-    RTX 5090: RTX 5090
+  # 面板标签 -> {name: Vast.ai gpu_name 精确枚举, vram_gb, tier}。顺序即表格与配色序。
+  # 既有 5 个标签（H100/H200/B200/A100/RTX 5090）不可改名——历史快照按标签累积。
+  # tier: frontier（旗舰训练卡）/ datacenter（上代与推理卡）/ workstation / consumer。
+  # 2026-11-22 由 5 扩到 16 卡型；新卡型序列自该日起累积（探测结果见 docs/sources/gpu_prices.md）。
+  gpus:
+    B300:            {name: B300,           vram_gb: 270, tier: frontier}
+    B200:            {name: B200,           vram_gb: 180, tier: frontier}
+    H200:            {name: H200,           vram_gb: 141, tier: frontier}
+    H200 NVL:        {name: H200 NVL,       vram_gb: 141, tier: frontier}
+    H100:            {name: H100 SXM,       vram_gb: 80,  tier: frontier}
+    H100 PCIe:       {name: H100 PCIE,      vram_gb: 80,  tier: frontier}
+    A100:            {name: A100 SXM4,      vram_gb: 80,  tier: datacenter}
+    L40S:            {name: L40S,           vram_gb: 48,  tier: datacenter}
+    L4:              {name: L4,             vram_gb: 24,  tier: datacenter}
+    RTX PRO 6000:    {name: RTX PRO 6000 S, vram_gb: 96,  tier: workstation}
+    RTX 6000 Ada:    {name: RTX 6000Ada,    vram_gb: 48,  tier: workstation}
+    RTX A6000:       {name: RTX A6000,      vram_gb: 48,  tier: workstation}
+    RTX 5090:        {name: RTX 5090,       vram_gb: 32,  tier: consumer}
+    RTX 4090:        {name: RTX 4090,       vram_gb: 24,  tier: consumer}
+    RTX 5080:        {name: RTX 5080,       vram_gb: 16,  tier: consumer}
+    RTX 3090:        {name: RTX 3090,       vram_gb: 24,  tier: consumer}

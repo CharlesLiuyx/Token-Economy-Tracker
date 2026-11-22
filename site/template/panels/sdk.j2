@@ -1,0 +1,20 @@
+{% from '_macros.j2' import panel with context %}
+{% call panel('sdk', 'panel.sdk.title', 'sdk_downloads', kind='fig', note_key='panel.sdk.note') %}
+    <div class="bars five">
+      {% for r in sdk_rows %}
+      <div class="bar-row" data-i18n-tip="panel.sdk.tip"
+           data-i18n-args='{{ {"name": r.label, "reg": r.registry, "v": "%.2f" | format(r.value), "d7": r.d7 | delta} | tojson }}'>
+        <span class="bar-label">{{ r.label | e }}</span>
+        <span class="bar-label flat">{{ r.registry }}</span>
+        <span class="bar-track"><span class="bar-fill{{ ' hollow' if r.hollow else '' }}" style="width:{{ '%.1f' | format(r.pct) }}%;background:{{ r.color }};border-color:{{ r.color }}"></span></span>
+        <span class="bar-val">{{ '%.1f' | format(r.value) }} M</span>
+        <span class="bar-delta {{ r.d7 | dcls }}">{{ r.d7 | delta }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="legend">
+      <span><i class="hollow" style="border-color:{{ neutral_color }}"></i>npm</span>
+      <span><i style="background:{{ neutral_color }}"></i>PyPI</span>
+      <span class="flat" data-i18n="panel.legend.d7">{{ t('panel.legend.d7') | e }}</span>
+    </p>
+{% endcall %}

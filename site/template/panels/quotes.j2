@@ -1,19 +1,16 @@
-{% from '_macros.j2' import panel_head with context %}
-<section class="panel">
-  {{ panel_head('panel.quotes.title', 'manual') }}
-  <div class="panel-body">
+{% from '_macros.j2' import panel with context %}
+{% call panel('quotes', 'panel.quotes.title', 'manual') %}
     {% if quotes %}
     <ul class="quote-list">
       {% for q in quotes %}
       <li>
         <p class="quote-text">“{{ q.quote | e }}”</p>
         <p class="quote-meta">— {{ q.speaker | e }}{% if q.role %}，{{ q.role | e }}{% endif %}
-          · {{ q.date }}{% if q.source_url %} · <a href="{{ q.source_url | e }}">source</a>{% endif %}</p>
+          · {{ q.date }}{% if q.source_url %} · <a href="{{ q.source_url | e }}" target="_blank" rel="noopener noreferrer">source ↗</a>{% endif %}</p>
       </li>
       {% endfor %}
     </ul>
     {% else %}
     <p class="empty-note" data-i18n-html="panel.quotes.empty">{{ t('panel.quotes.empty') }}</p>
     {% endif %}
-  </div>
-</section>
+{% endcall %}

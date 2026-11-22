@@ -1,0 +1,30 @@
+{% from '_macros.j2' import panel, dcell with context %}
+{% set kind_keys = {
+     'or_total': 'panel.radar.kind.or_total',
+     'or_model': 'panel.radar.kind.or_model',
+     'vercel_share': 'panel.radar.kind.vercel_share',
+     'sdk_pypi': 'panel.radar.kind.sdk_pypi',
+     'gpu': 'panel.radar.kind.gpu',
+     'dc_power': 'panel.radar.kind.dc_power',
+     'dc_sites': 'panel.radar.kind.dc_sites',
+   } %}
+{% call panel('radar', 'panel.radar.title', 'openrouter', kind='tbl', flush=True, note_key='panel.radar.note') %}
+    <table class="data-table">
+      <thead><tr>
+        <th data-i18n="panel.col.metric">{{ t('panel.col.metric') | e }}</th>
+        <th class="num" data-i18n="panel.col.latest">{{ t('panel.col.latest') | e }}</th>
+        <th class="num" data-sort="num" data-i18n="panel.col.d1">{{ t('panel.col.d1') | e }}</th>
+        <th class="num" data-sort="num" data-i18n="panel.col.d7">{{ t('panel.col.d7') | e }}</th>
+        <th class="num" data-sort="num" data-i18n="panel.col.d30">{{ t('panel.col.d30') | e }}</th>
+      </tr></thead>
+      <tbody>
+      {% for r in radar %}
+        <tr data-i18n-tip="ui.data_asof" data-i18n-args='{{ {"date": r.asof} | tojson }}'>
+          <td class="nowrap"><a href="{{ r.href }}">{% if r.subject %}<b>{{ r.subject | e }}</b> · {% endif %}<span data-i18n="{{ kind_keys[r.kind] }}">{{ t(kind_keys[r.kind]) | e }}</span></a></td>
+          <td class="num strong">{{ r.value }}</td>
+          {{ dcell(r.d1) }}{{ dcell(r.d7) }}{{ dcell(r.d30) }}
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+{% endcall %}

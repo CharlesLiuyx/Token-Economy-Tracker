@@ -140,6 +140,20 @@ anchors:
   source_url: https://www.bloomberg.com/news/articles/2026-08-17/anthropic-revenue-run-rate-surpasses-65-billion-ahead-of-ipo
   note: end-July 2026 65B｜公司向投资者定期更新口径；同文披露 Q2 初步收入 11.5B（去年同期 787M）
   confidence: confident
+- company: anthropic
+  date: '2026-09-30'
+  value_usd: 71000000000
+  metric: run_rate_arr
+  source_url: https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm
+  note: end-Sep 2026 ~71B｜推导值：S-1/A No.2 称 10-31 的 ~81B「up $10 billion from September 30, 2026」，文件未单列 9-30 数字
+  confidence: likely
+- company: anthropic
+  date: '2026-10-31'
+  value_usd: 81000000000
+  metric: run_rate_arr
+  source_url: https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm
+  note: end-Oct 2026 ~81B｜S-1/A No.2（2026-11-10 提交）原文 Run-Rate Revenue；口径＝近 28 天消耗型收入 ×13 + 月订阅 ×12，与此前媒体口径可能略有差异；同文 Q3 收入 16.96B、前九个月 33.2B
+  confidence: confident
 - company: openai
   date: '2022-12-31'
   value_usd: 28000000
@@ -286,4 +300,11 @@ anchors:
   metric: run_rate_arr
   source_url: https://www.bloomberg.com/news/articles/2026-08-13/openai-s-revenue-run-rate-tops-40-billion-ahead-of-ipo
   note: end-July 2026 >40B｜Brockman 内部通告称 7 月 ARR 环比 +20%+，动力为 GPT-5.6 系列 / ChatGPT Work / Codex；同文 Friar 称 2025 年末 >20B；Bloomberg 提示与 Anthropic 的计算口径可能不同
+  confidence: likely
+- company: openai
+  date: '2026-09-30'
+  value_usd: 50000000000
+  metric: run_rate_arr
+  source_url: https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html
+  note: end-Sep 2026 ~50B｜公司向投资者口径（FT 首报、CNBC 证实）；净额口径（只计自有分成）。同期 Axios 报的 ~68–70B 是加回合作伙伴毛收入的另一口径，未收为锚点
   confidence: likely

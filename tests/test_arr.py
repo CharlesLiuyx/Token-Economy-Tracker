@@ -131,7 +131,7 @@ def test_extrapolation_freezes_growth_rate():
     anchors = _synth(lambda d: 1e9 * math.exp(0.002 * d + 8e-6 * d**2), n=12, step=45)
     out = arr.fit_company(anchors, today=dt.date(2026, 9, 1))
     assert out["fit"]["model"] == "log_quadratic"
-    tail = [p for p in out["series"] if p["extrapolated"]]
+    tail = [p for p in out["series"] if p["extrapolated"]][1:]  # 首点是披露点本身（非周频格）
     steps = [math.log(b["fitted"] / a["fitted"]) for a, b in zip(tail, tail[1:])]
     assert max(steps) - min(steps) < 1e-6  # log 空间等步长 = 直线
 
@@ -183,3 +183,21 @@ def test_real_anchors_file_loads():
     anchors = arr.load_anchors()
     companies = {a["company"] for a in anchors}
     assert {"anthropic", "openai"} <= companies
+
+
+def test_extrapolation_starts_from_last_disclosed_value():
+    """水平校准：外推段首点 = 最近披露值本身，今日估算不继承拟合曲线在该点的残差。"""
+    anchors = [
+        {"company": "x", "date": d, "value_usd": v, "metric": "run_rate_arr", "source_url": "u"}
+        for d, v in [("2025-01-01", 1e9), ("2025-04-01", 2e9), ("2025-07-01", 4e9),
+                     ("2025-10-01", 8e9), ("2026-01-01", 10e9)]   # 最后一点明显低于趋势
+    ]
+    out = arr.fit_company(anchors, today=dt.date(2026, 1, 15))
+    first = next(p for p in out["series"] if p["extrapolated"])
+    assert first["date"] == "2026-01-01" and first["fitted"] == 10_000_000_000
+    ratio = out["fit"]["level_shift_ratio"]
+    assert ratio == pytest.approx(10e9 / out["fit"]["fitted_at_last_anchor"], rel=1e-3)
+    assert abs(ratio - 1) > 0.02                                 # 曲线在该点确有残差
+    # 今日值 = 披露值 × 14 天增长，而不是曲线值 × 14 天增长
+    growth = math.exp(out["fit"]["k_per_day"] * 14)
+    assert out["realtime"]["arr_at_build"] == pytest.approx(10e9 * growth, rel=0.01)

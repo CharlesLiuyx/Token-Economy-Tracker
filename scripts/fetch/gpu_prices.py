@@ -34,7 +34,8 @@ def _quantiles(values: list[float]) -> dict:
 
 def fetch(cfg: dict) -> dict:
     gpus = {}
-    for label, gpu_name in cfg["gpus"].items():
+    for label, spec in cfg["gpus"].items():
+        gpu_name = spec["name"] if isinstance(spec, dict) else spec
         query = {
             "gpu_name": {"eq": gpu_name},
             "rentable": {"eq": True},
@@ -61,8 +62,10 @@ def validate(payload: dict) -> None:
             if not (0.05 <= q["median"] <= 50):
                 raise schema.SchemaError(f"{label}: median={q['median']} 超出合理区间")
             ok += 1
-    if ok < 3:
-        raise schema.SchemaError(f"仅 {ok} 个卡型有足量报价（≥3），疑似 API 异常")
+    # 至少一半卡型有足量报价（下限 3）：个别卡型下架可容忍，大面积为空即 API 异常
+    need = max(3, len(payload["gpus"]) // 2)
+    if ok < need:
+        raise schema.SchemaError(f"仅 {ok} 个卡型有足量报价（≥3），低于下限 {need}，疑似 API 异常")
 
 
 def main(argv: list[str] | None = None) -> int:

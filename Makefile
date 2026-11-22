@@ -2,7 +2,7 @@
 PY  := .venv/bin/python
 PIP := .venv/bin/pip
 
-.PHONY: venv update build serve test clean
+.PHONY: venv update update-arr build serve test clean
 
 venv: .venv/bin/python
 
@@ -19,6 +19,10 @@ update: venv
 	-$(PY) -m scripts.fetch.vercel_gateway
 	-$(PY) -m scripts.fetch.gpu_prices
 	-$(PY) -m scripts.derive.arr
+
+# 只重跑 ARR 拟合（改了 data/manual/arr_anchors.yml 之后）
+update-arr: venv
+	$(PY) -m scripts.derive.arr
 
 # data/ -> site/index.html（唯一允许生成 site/index.html 的入口）
 build: venv

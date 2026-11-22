@@ -1,0 +1,47 @@
+{% from '_macros.j2' import panel, dcell with context %}
+{% set tier_keys = {
+     'frontier': 'panel.gpu.tier.frontier',
+     'datacenter': 'panel.gpu.tier.datacenter',
+     'workstation': 'panel.gpu.tier.workstation',
+     'consumer': 'panel.gpu.tier.consumer',
+   } %}
+{% call panel('gpu_table', 'panel.gpu_table.title', 'gpu_prices', kind='tbl', flush=True, note_key='panel.gpu_table.note') %}
+    <table class="data-table">
+      <thead><tr>
+        <th data-sort="text">GPU</th>
+        <th class="opt" data-sort="text" data-i18n="panel.gpu.col.tier">{{ t('panel.gpu.col.tier') | e }}</th>
+        <th class="num" data-sort="num">VRAM</th>
+        <th class="num" data-sort="num" data-i18n="panel.gpu.col.median">{{ t('panel.gpu.col.median') | e }}</th>
+        <th data-i18n="panel.gpu.col.range" data-i18n-tip="panel.gpu.col.range_tip">{{ t('panel.gpu.col.range') | e }}</th>
+        <th class="num" data-sort="num" data-i18n="panel.gpu.col.offers">{{ t('panel.gpu.col.offers') | e }}</th>
+        <th class="num opt" data-sort="num" data-i18n-tip="panel.gpu.col.per_gb_tip">$/GB·hr</th>
+        <th class="num" data-sort="num" data-i18n="panel.col.d1">{{ t('panel.col.d1') | e }}</th>
+        <th class="num" data-sort="num" data-i18n="panel.col.d7">{{ t('panel.col.d7') | e }}</th>
+        <th class="num" data-sort="num" data-i18n="panel.col.d30">{{ t('panel.col.d30') | e }}</th>
+        <th data-i18n="panel.gpu.col.spark">{{ t('panel.gpu.col.spark') | e }}</th>
+      </tr></thead>
+      <tbody>
+      {% for g in gpu_rows %}
+        <tr>
+          <td class="nowrap strong" data-v="{{ g.label }}" data-i18n-tip="panel.gpu.name_tip"
+              data-i18n-args='{{ {"name": g.name, "day": g.first_day or "—", "n": g.days_tracked} | tojson }}'><i class="swatch" style="background:{{ g.color }}"></i>{{ g.label }}</td>
+          <td class="nowrap opt" data-v="{{ g.tier }}" data-i18n="{{ tier_keys[g.tier] }}">{{ t(tier_keys[g.tier]) | e }}</td>
+          <td class="num" data-v="{{ g.vram_gb or '' }}">{{ g.vram_gb or '—' }} GB</td>
+          {% if g.offers %}
+          <td class="num strong" data-v="{{ g.median }}">${{ '%.2f' | format(g.median) }}</td>
+          <td data-i18n-tip="panel.gpu.range_tip"
+              data-i18n-args='{{ {"min": "%.2f" | format(g.min), "p25": "%.2f" | format(g.p25), "median": "%.2f" | format(g.median), "p75": "%.2f" | format(g.p75), "max": "%.2f" | format(g.max)} | tojson }}'>
+            <div class="range"><span class="range-box" style="left:{{ '%.1f' | format(g.box_left) }}%;width:{{ '%.1f' | format([g.box_width, 100 - g.box_left] | min) }}%"></span><span class="range-med" style="left:{{ '%.1f' | format([g.med_left, 99] | min) }}%"></span></div></td>
+          <td class="num" data-v="{{ g.offers }}">{{ g.offers }}</td>
+          <td class="num opt" data-v="{{ g.per_gb or '' }}">{% if g.per_gb %}${{ '%.4f' | format(g.per_gb) }}{% else %}—{% endif %}</td>
+          {% else %}
+          <td class="num flat" data-v="">—</td><td class="flat" data-i18n="panel.gpu.no_offers">{{ t('panel.gpu.no_offers') | e }}</td>
+          <td class="num" data-v="0">0</td><td class="num flat opt" data-v="">—</td>
+          {% endif %}
+          {{ dcell(g.d1) }}{{ dcell(g.d7) }}{{ dcell(g.d30) }}
+          <td><div class="spark">{% for s in g.spark %}<i style="height:{{ '%.0f' | format(s.h) }}%" data-tip="{{ s.day }}  ${{ '%.2f' | format(s.v) }}"></i>{% endfor %}</div></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+{% endcall %}

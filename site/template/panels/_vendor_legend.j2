@@ -1,0 +1,5 @@
+<p class="legend">
+  {% for name, color in vendor_legend %}<span><i style="background:{{ color }}"></i>{{ name }}</span>{% endfor %}
+  <span><i class="hollow" style="border-color:{{ neutral_color }}"></i><span data-i18n="panel.legend.other">{{ t('panel.legend.other') | e }}</span></span>
+  <span class="flat" data-i18n="panel.legend.d7">{{ t('panel.legend.d7') | e }}</span>
+</p>

@@ -3,8 +3,8 @@
 方法（docs/arr-methodology.md）：每家公司取 run_rate_arr 锚点，在 log 空间用加权
 最小二乘拟合若干**候选形态**（linear / exponential / log_quadratic，近期锚点权重高，
 半衰期 HALF_LIFE_DAYS），再用**滚动起点回测**（用前 i 个锚点拟合、预测第 i+1 个）
-挑出预测最准的那个——形态由数据决定，不预设。最后锚点之后用该处的瞬时增速直线
-延伸（不外推曲率）；置信带取预测区间，随外推距离自然张开。
+挑出预测最准的那个——形态由数据决定，不预设。最后锚点之后**从披露值出发**、用该处的
+瞬时增速直线延伸（水平校准，不外推曲率）；置信带取预测区间，随外推距离自然张开。
 third_party_est / projected_rev / reported_rev 仅作展示散点，不入拟合——第三方面板估算
 （YipitData 之类）与公司披露的运行率不是同一个口径，混进拟合会出鬼图。
 """
@@ -285,19 +285,34 @@ def fit_company(anchors: list[dict], today: dt.date) -> dict:
     half = Z95 * curve.log_sd_at(grid)
     start = _trim_unsupported(half, grid, curve.t_last)
     days, log_fit, half = days[start:], log_fit[start:], half[start:]
+    # 水平校准：外推段与今日值从「最近披露值」出发，而不是从拟合曲线在该点的值出发。
+    # 全历史拟合的曲线在最后锚点处常有 ±10% 以上残差（2026-11 Anthropic：拟合 93B vs 披露 81B），
+    # 不校准的话这个残差会原样带进今日估算。增速仍取拟合的瞬时增速（方法见 arr-methodology §3）。
+    shift = float(ly[-1] - curve.log_at(t[-1])[0])
     series = [
         {
             "date": d.isoformat(),
-            "fitted": round(math.exp(lf)),
-            "lo": round(math.exp(lf - h)),
-            "hi": round(math.exp(lf + h)),
+            "fitted": round(math.exp(lf + (shift if d > last_anchor_date else 0.0))),
+            "lo": round(math.exp(lf - h + (shift if d > last_anchor_date else 0.0))),
+            "hi": round(math.exp(lf + h + (shift if d > last_anchor_date else 0.0))),
             "extrapolated": d > last_anchor_date,
         }
         for d, lf, h in zip(days, log_fit, half)
     ]
+    # 外推段起点 = 最近披露点本身（虚线从锚点出发）
+    h_last = Z95 * float(curve.log_sd_at(t[-1:])[0])
+    start_pt = {
+        "date": last_anchor_date.isoformat(),
+        "fitted": round(math.exp(float(ly[-1]))),
+        "lo": round(math.exp(float(ly[-1]) - h_last)),
+        "hi": round(math.exp(float(ly[-1]) + h_last)),
+        "extrapolated": True,
+    }
+    idx = next((i for i, p in enumerate(series) if p["extrapolated"]), len(series))
+    series.insert(idx, start_pt)
 
     t_now = _days(today.isoformat(), epoch)
-    arr_now = math.exp(float(curve.log_at(t_now)[0]))
+    arr_now = math.exp(float(curve.log_at(t_now)[0]) + shift)
     k_now = curve.rate_at(t_now)
     mom = curve.mom_at(t_now)
     return {
@@ -312,6 +327,7 @@ def fit_company(anchors: list[dict], today: dt.date) -> dict:
             "last_anchor_date": last_anchor_date.isoformat(),
             "last_anchor_value": fit_pts[-1]["value_usd"],
             "fitted_at_last_anchor": round(math.exp(float(curve.log_at(t[-1])[0]))),
+            "level_shift_ratio": round(math.exp(shift), 4),   # 披露值 ÷ 拟合值（外推段的水平校准系数）
             "candidates": candidates,
         },
         "realtime": {

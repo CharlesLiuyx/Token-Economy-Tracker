@@ -1,66 +1,85 @@
 # 前端
 
-> TL;DR：单文件 HTML，CSS/JS/Chart.js/数据全内联；面板 = panels/*.j2 + spec 函数 + renderPanel；
-> 文案走 i18n.yml（zh/en 运行时切换）。
-> 何时读我：加/改面板、调样式、改文案、动 build.py 渲染逻辑前。
-> 最后核对日期：2026-07-24（新增 legend hover 高亮；此前：Linear 风格重构 +
-> dark/light 双主题 + zh/en i18n）
+> TL;DR：单文件 HTML，CSS / JS / Chart.js / 数据全内联。报告式外壳（24px 顶栏 + 左侧目录），
+> 无圆角、无动效。时序图走 Chart.js，条形图与表格是原生 DOM（ADR-006）。文案走 i18n.yml，
+> 术语释义走 terms.yml，悬停提示全站只有一个节点。
+> 何时读我：加 / 改面板、调样式、改文案、动 build.py 渲染逻辑前。
+> 最后核对日期：2026-11-22（外壳与图表整体改版；此前为 Linear 风格卡片页）
 
 ## 单文件产物
 
-- `make build` 把 `site/template/index.html.j2` + `style.css` + `app.js` +
-  `site/vendor/chart.umd.min.js`（M4 引入）+ 当日展示数据渲染为 `site/index.html`。
-- 数据内联在 `<script id="dashboard-data" type="application/json">`，
-  前端从 `window.DASHBOARD` 读。无任何外部请求，离线可开。
-- 体积控制：日频序列近 90 天，更早降采样为周频；全量历史留在 data/ 不进 HTML；
-  目标 gzip 后 < 600KB。
+- `make build` 把 `site/template/index.html.j2` + `style.css` + `app.js` + `i18n.yml` +
+  `terms.yml` + `site/vendor/chart.umd.min.js` + 当日展示数据渲染为 `site/index.html`。
+- 时序图数据内联在 `<script id="dashboard-data">`；表格 / 条形图 / 卡片直接渲染成 HTML。
+- 体积：日频序列只内联近 90 天；目标 gzip 后 < 600KB（2026-11-22 实测 144KB）。
 
-## 面板约定（M4）
+## 外壳
 
-- 每个面板一个 `site/template/panels/<panel>.j2` 片段 + build.py 里一个 spec 生成函数；
-  加减面板不动骨架。
-- 图表统一走 `renderPanel(id, spec)` 薄封装，只允许 Chart.js 子集：
-  line / bar / horizontalBar / area + tooltip。方便日后整体换库。
-- 交互只用 Chart.js 自带 hover tooltip、legend 开关与 legend hover 高亮；不做缩放/刷选。
-- legend hover 高亮（app.js `setEmphasis`）：hover 图例项时其余系列颜色淡出到 15%
-  （只改 spec 里的十六进制色，原色缓存在 chart 实例上，onLeave 还原）。同一
-  `dataset.__group` 的系列一起高亮——ARR 图的置信带/外推段/锚点靠它跟拟合线同组；
-  不写 `__group` 则每系列自成一组。
-- 每个面板带新鲜度徽章（数据来自 _status.json，ok/warn/stale 样式见 style.css）。
-- 口径警示：OpenRouter / Vercel 面板标题必须保留来源后缀，Methodology 区写清
-  「测的是什么、不是什么」。
+- **顶栏 24px**：站名、区块导航、【返回 ×N】（仅跳转栈非空时出现）、构建时间、「更多」菜单。
+- **「更多」菜单**收纳全部全局控制：主题（浅色缺省 / 深色）、宽度三档（880 / 1160 缺省 / 100%）、
+  字号三档、语言、术语释义开关、GitHub 链接。偏好存 localStorage，`<head>` 内联脚本在首帧前写到
+  `<html data-theme|width|fs|lang|terms>`，防闪。
+- **左侧目录**（fixed）：一行切换「章节 / 资产 / ±」。章节＝区块（h2）→ 面板（h3）；资产＝带
+  `data-toc="fig|tbl"` 的面板，自动编号「图 3-2」。区块条目带开关，收起会同时隐藏正文
+  （标题保留 +「已收起」标记）；Ctrl 点开关或点 ± 是批量三态（全展开→收起，否则→展开）。
+- **锚点跳转**：目标落在视口高 5% 处（下限＝顶栏高 + 8px），目标块浅色高亮 2 秒；目标在收起的
+  区块里先展开。只有正文内锚点入返回栈（上限 5），目录与顶栏导航不入栈。
+- 无圆角（`* { border-radius: 0 }`）、无 transition / animation / smooth scroll。
+- 断点：≤1320px 两栏收成一栏并隐藏表格次要列（`.opt`）；≤1000px 目录降为顶部静态块，
+  表格放弃吸顶换横向滚动。**任何宽度下都不允许横向溢出**——加宽表格前先算最窄正文列。
 
-## 主题
+## 面板约定
 
-Linear 风格：中性色、1px 细边框、8px 圆角、紧凑排版、mono 数字。dark/light 双主题：
+- 每个面板 = `site/template/panels/<panel>.j2` + build.py 里一个生成函数，外壳用
+  `_macros.j2` 的 `panel(id, title_key, source, kind, flush, note_key)`（`{% call %}` 包正文）
+  或 `chart_panel(...)`。面板 id 固定为 `p-<id>`；`kind='fig'|'tbl'` 才进「资产」目录。
+- 每个面板带新鲜度徽章；OpenRouter / Vercel 面板标题必须保留来源后缀。
+- **时序图（Chart.js）**：`renderPanel(id, spec)`，只用 line / scatter / 叠加 bar。类目 x 轴的图
+  用 index 模式提示（同一天全部系列，按数值降序）+ 十字指示线；跨数量级的图用对数轴
+  （重点模型、GPU 走势、ARR）。图例 hover 聚光：其余系列淡出，同 `dataset.__group` 一起亮。
+  图内文字 ≥12px。spec 占位符：`"__surface"`、`"__i18n:<key>"`、`ticks.__epochDays`、
+  `legend.labels.__filterUnderscore`。
+- **条形图（原生 DOM）**：`.bars` 网格，每行＝名称 / 条 / 数值 / 较 7 天前。条厚 20px，
+  hover 用 outline 高亮，文本可选中可搜索。
+- **表格**：`.data-table`，表头吸顶。`top` 取 `--thTop`（app.js 实测顶栏高度，ResizeObserver
+  重测，禁止硬编码）；`border-collapse: separate`；sticky 表头的祖先不得有 overflow。
+  `th[data-sort="num|text"]` 可点排序，单元格用 `data-v` 提供原始值，空值恒在末尾。
+  `td.num`（右对齐 + nowrap + tabular-nums）只给短数值格。
+- **配色**：同一厂商全页同色（build.py `VENDORS`，按 slug / 显示名关键字归属），同厂商多条线
+  靠线型区分；未识别厂商用中性色 + 空心。GPU 走势按 sources.yml 顺序取 `PALETTE`。
+- **变化量**：`series_delta(series, days)` 由每日快照现算，模板用 `| delta` / `| dcls` 过滤器
+  或 `dcell` 宏渲染（涨绿跌红，「—」＝无可比快照）。
+- **可信度**：关键数字标〔高 / 中 / 低〕（`ui.conf.*`）。ARR 估算：最近披露 ≤45 天〔中〕，
+  更久〔低〕；披露锚点：公司一手〔高〕、媒体引述〔中〕、第三方估算〔低〕。
 
-- token 集中在 style.css：`:root` 为 light 缺省（无 JS 时兜底），
-  `:root[data-theme="dark"]` 覆盖。系列色 = build.py `PALETTE`（双主题可读，
-  0=Anthropic clay / 1=OpenAI teal，与 CSS `--c-clay/--c-teal` 对应）。
-- 初始主题由 index.html.j2 `<head>` 内联脚本在首帧前设定（localStorage `theme`
-  覆盖 > 系统 `prefers-color-scheme`），防白闪；顶栏按钮切换并持久化。
-- 全站动效原则：瞬时到位。顶栏锚点跳转不用 `scroll-behavior: smooth`（原生
-  平滑滚动几百 ms 且不可调速，粘滞感来源）；主题切换硬切无颜色过渡。若日后
-  重加过渡注意坑：图表同步重建（~30ms+）与 CSS 过渡同帧启动会吃掉动画首帧。
-- 图表随主题重渲染：app.js 从 CSS 变量读色注入 Chart.defaults，销毁全部实例后
-  按 `D.charts` 原 spec 深拷贝重建。spec 里的 `"__surface"` 占位符（锚点描边 /
-  空心点填充）渲染时替换为当前面板底色。改 CSS 变量名需同步 app.js。
+## 悬停提示（全站单例）
+
+禁用原生 `title`。目标只声明 `data-tip`（纯文本，`\n` 换行）或 `data-tiph`（受信 HTML）；
+需要翻译的用 `data-i18n-tip="<key>"` + `data-i18n-args`，app.js 写入 `data-tip`。一个 `#tip` 节点、
+document 级事件委托、显示时定位一次（目标正下方左对齐，越界才滑入或翻到上方）。目录里被
+截断的条目用 peek 形态原位展开。Chart.js 画布内的提示仍用其自带 tooltip（同样无圆角、无动画）。
+
+## 术语释义
+
+`site/template/terms.yml`：`词条: {aliases, zh, en}`。app.js 加载后扫正文文本节点自动包成
+`<span class="term">`，每处出现都标，hover 现查词典。长词优先匹配，英数词做词边界校验；
+标题、链接、`code`、徽章、已带提示的元素内部不标。释义写法：缩写先给全称，一句「它是什么」
++ 一句「本质在衡量什么」。新增面板用到新术语就补词条。
 
 ## i18n（zh/en，决策见 ADR-005）
 
-**规则：模板与 spec 不允许硬编码可见文案**，全部进 `site/template/i18n.yml`
-（key -> {zh, en}，扁平点分命名空间 ui/sec/panel/chart/meth）。
-tests/test_i18n.py 校验：zh/en 齐全、`{args}` 双语一致、引用与目录双向对齐（无死 key）。
+**模板与 spec 不允许硬编码可见文案**，全部进 `site/template/i18n.yml`（扁平点分命名空间
+ui / sec / panel / chart / meth）。tests/test_i18n.py 校验：zh/en 齐全、`{args}` 双语一致、
+引用与目录双向对齐（无死 key；app.js 里用到的 key 必须以字面量出现在某个模板里）。
 
-- 静态 DOM：模板 `{{ t(key) }}` 渲染默认语言 zh（无 JS 兜底），同元素标
-  `data-i18n`（textContent，配 `| e`）/ `data-i18n-html`（受信 HTML，
-  仅 <b>/<code> 级内联标签）/ `data-i18n-title` / `data-i18n-aria-label`；
-  参数化文案用 `data-i18n-args`（JSON，`{name}` 占位，见 _macros.j2 badge）。
-- 图表 spec：build.py `L(key)` 生成 `"__i18n:<key>"` 占位符（可嵌长串），
-  app.js resolveSpec 按当前语言正则解析——与 `__surface` 同一管线；
-  语言切换与主题切换共用 renderAll 销毁重建。
-- 偏好：localStorage `lang` > `navigator.language`（zh* → zh，否则 en），
-  head 内联脚本首帧前设 `data-lang`；顶栏按钮显示切换目标（EN / 中）。
-- 面板宏约定：`chart_panel(id, title_key, source, note_key=...)` /
-  `panel_head(title_key, source)` 一律传 key；数据内容（新闻标题、引语、
-  站点/模型名、日期数字格式）不翻译。
+- 静态 DOM：`{{ t(key) }}` 渲染默认 zh，同元素标 `data-i18n`（textContent）/
+  `data-i18n-html`（受信 HTML，仅 `<b>` / `<code>`）/ `data-i18n-tip` / `data-i18n-aria-label`。
+- 图表 spec：build.py `L(key)` 生成 `"__i18n:<key>"`，app.js `resolveSpec` 解析。
+- 数据内容（新闻标题、引语、每日速读、模型 / 站点名）不翻译。
+- 切语言 = 去掉术语标注 → 重写文案 → 重新标注 → 重建目录 → 重建图表 → 重算位置缓存。
+
+## 性能约定
+
+滚动帧内零几何查询：目录条目对应的文档位置一次性缓存（`recalc`），只在布局真正变化时重算
+（resize、字号 / 宽度切换、区块收放、排序、load、fonts.ready）；主题切换不重算。scroll / resize
+监听一律 passive + rAF 节流；同一帧先读后写；scrollspy 结果与上帧相同则不写 DOM。

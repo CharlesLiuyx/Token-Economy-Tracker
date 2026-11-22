@@ -11,11 +11,11 @@
 
 ## 机制
 
-- 每条只存 `title / link / source_name / source_url / published`（PLAN §4 约定）。
+- 每条只存 `title / link / source_name / source_url / published`。
 - 白名单按 `<source url>` 的 host 匹配（含子域），防内容农场。
 - **滚动窗口**：fetch 时与上次 latest 合并、按 link 去重、时间倒序、截 300 条。
   RSS 单次只给 ~100 条且无历史，窗口靠我们每日快照累积。
-- v1 直接展示英文原文标题；中文摘要是可选增强（PLAN §11 风险 6，未做）。
+- v1 直接展示英文原文标题；中文摘要是可选增强（未做）。
 
 ## 坑
 

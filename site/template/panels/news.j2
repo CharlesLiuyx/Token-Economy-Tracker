@@ -1,15 +1,12 @@
-{% from '_macros.j2' import panel_head with context %}
-<section class="panel">
-  {{ panel_head('panel.news.title', 'news') }}
-  <div class="panel-body">
+{% from '_macros.j2' import panel with context %}
+{% call panel('news', 'panel.news.title', 'news', flush=True, note_key='panel.news.note') %}
     <ul class="news-list">
       {% for n in news %}
       <li class="{{ 'highlight' if n.highlight else '' }}">
         <span class="news-date">{{ n.date }}</span>
-        <a class="news-title" href="{{ n.link | e }}" target="_blank" rel="noopener">{{ n.title | e }}</a>
+        <a class="news-title" href="{{ n.link | e }}" target="_blank" rel="noopener noreferrer">{% if n.is_new %}<span class="tag tag-new">NEW</span>{% endif %}{{ n.title | e }}</a>
         <span class="news-source">{{ n.source | e }}</span>
       </li>
       {% endfor %}
     </ul>
-  </div>
-</section>
+{% endcall %}

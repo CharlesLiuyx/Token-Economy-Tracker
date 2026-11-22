@@ -1,13 +1,41 @@
-<section class="panel methodology" id="sec-methodology">
-  <header class="panel-head"><h3 data-i18n="meth.title">{{ t('meth.title') | e }}</h3></header>
-  <div class="panel-body">
-    <ul>
-      <li data-i18n-html="meth.arr">{{ t('meth.arr') }}</li>
-      <li data-i18n-html="meth.openrouter">{{ t('meth.openrouter') }}</li>
-      <li data-i18n-html="meth.vercel">{{ t('meth.vercel') }}</li>
-      <li data-i18n-html="meth.sdk">{{ t('meth.sdk') }}</li>
-      <li data-i18n-html="meth.gpu">{{ t('meth.gpu') }}</li>
-      <li data-i18n-html="meth.dc">{{ t('meth.dc') }}</li>
-    </ul>
+<section class="section" id="sec-methodology">
+  <h2 class="section-title"><span class="section-index">M</span><span
+      data-i18n="meth.title">{{ t('meth.title') | e }}</span>
+    <span class="collapsed-mark" data-i18n="ui.collapsed">{{ t('ui.collapsed') | e }}</span></h2>
+  <div class="section-body">
+    <section class="panel prose" id="p-methodology">
+      <div class="panel-body">
+        <ul>
+          <li data-i18n-html="meth.arr">{{ t('meth.arr') }}</li>
+          <li data-i18n-html="meth.openrouter">{{ t('meth.openrouter') }}</li>
+          <li data-i18n-html="meth.vercel">{{ t('meth.vercel') }}</li>
+          <li data-i18n-html="meth.sdk">{{ t('meth.sdk') }}</li>
+          <li data-i18n-html="meth.gpu">{{ t('meth.gpu') }}</li>
+          <li data-i18n-html="meth.dc">{{ t('meth.dc') }}</li>
+          <li data-i18n-html="meth.delta">{{ t('meth.delta') }}</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</section>
+<section class="section" id="sec-sources">
+  <h2 class="section-title"><span class="section-index">S</span><span
+      data-i18n="sec.sources.title">{{ t('sec.sources.title') | e }}</span>
+    <span class="section-sub"><span data-i18n="sec.sources.snapshot">{{ t('sec.sources.snapshot') | e }}</span> {{ today }}</span>
+    <span class="collapsed-mark" data-i18n="ui.collapsed">{{ t('ui.collapsed') | e }}</span></h2>
+  <div class="section-body">
+    <section class="panel prose" id="p-sources">
+      <div class="panel-body">
+        <ul>
+          <li><a href="https://openrouter.ai/rankings" target="_blank" rel="noopener noreferrer">OpenRouter Rankings</a> — {{ source_status.openrouter.snapshot_date }}</li>
+          <li><a href="https://vercel.com/ai-gateway/leaderboards" target="_blank" rel="noopener noreferrer">Vercel AI Gateway Leaderboards</a> — {{ source_status.vercel_gateway.snapshot_date }}</li>
+          <li><a href="https://console.vast.ai/" target="_blank" rel="noopener noreferrer">Vast.ai marketplace API</a> — {{ source_status.gpu_prices.snapshot_date }}</li>
+          <li><a href="https://epoch.ai/data/data-centers" target="_blank" rel="noopener noreferrer">Epoch AI Frontier Data Centers</a> (CC-BY) — {{ source_status.epoch_datacenters.snapshot_date }}</li>
+          <li><a href="https://api.npmjs.org/" target="_blank" rel="noopener noreferrer">npm</a> + <a href="https://pypistats.org/" target="_blank" rel="noopener noreferrer">PyPI Stats</a> — {{ source_status.sdk_downloads.snapshot_date }}</li>
+          <li>Google News RSS — {{ source_status.news.snapshot_date }}</li>
+          <li data-i18n-html="meth.manual_sources">{{ t('meth.manual_sources') }}</li>
+        </ul>
+      </div>
+    </section>
   </div>
 </section>

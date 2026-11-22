@@ -1,28 +1,33 @@
-{# 面板外壳宏：标题 + 新鲜度徽章（Linear 风格，无装饰件）。
-   title/note 一律传 i18n key，文案唯一出处 site/template/i18n.yml。 #}
+{# 面板外壳宏。title/note 一律传 i18n key（文案唯一出处 i18n.yml）。
+   每个面板 id="p-<id>"；kind='fig'|'tbl' 时写 data-toc，进入目录「资产」Tab。
+   悬停提示一律 data-tip / data-i18n-tip（单例 tooltip），禁用原生 title。 #}
 
 {% macro badge(source) -%}
 {%- set st = source_status.get(source, {}) -%}
 {%- set date = st.snapshot_date or '—' -%}
 <span class="badge badge-{{ st.freshness or 'missing' }}"
-      {%- if st.error %} title="{{ st.error | e }}"
-      {%- else %} title="{{ t('ui.data_asof', date=date) | e }}" data-i18n-title="ui.data_asof"
-      data-i18n-args='{{ {"date": date} | tojson }}'{% endif %}>{{ date }}</span>
+      {%- if st.error %} data-tip="{{ st.error | e }}"
+      {%- else %} data-i18n-tip="ui.data_asof" data-i18n-args='{{ {"date": date} | tojson }}'{% endif %}>{{ date }}</span>
 {%- endmacro %}
 
-{% macro panel_head(title_key, source) -%}
-<header class="panel-head">
-  <h3 data-i18n="{{ title_key }}">{{ t(title_key) | e }}</h3>
-  {{ badge(source) }}
-</header>
+{% macro panel(id, title_key, source, kind='', flush=False, note_key='') -%}
+<section class="panel" id="p-{{ id }}"{% if kind %} data-toc="{{ kind }}"{% endif %}>
+  <header class="panel-head">
+    <h3 data-i18n="{{ title_key }}">{{ t(title_key) | e }}</h3>
+    {{ badge(source) }}
+  </header>
+  <div class="panel-body{{ ' flush' if flush else '' }}">{{ caller() }}</div>
+  {% if note_key %}<p class="note flush-note" data-i18n="{{ note_key }}">{{ t(note_key) | e }}</p>{% endif %}
+</section>
 {%- endmacro %}
 
 {% macro chart_panel(id, title_key, source, note_key='', tall=False) -%}
-<section class="panel">
-  {{ panel_head(title_key, source) }}
-  <div class="panel-body">
+{% call panel(id, title_key, source, kind='fig', note_key=note_key) %}
     <div class="chart-box{{ ' tall' if tall else '' }}"><canvas id="chart-{{ id }}"></canvas></div>
-    {% if note_key %}<p class="note" data-i18n="{{ note_key }}">{{ t(note_key) | e }}</p>{% endif %}
-  </div>
-</section>
+{% endcall %}
+{%- endmacro %}
+
+{# 变化量单元格：v 为小数（unit='%'）或百分点（unit='pp'） #}
+{% macro dcell(v, unit='%') -%}
+<td class="num {{ v | dcls }}" data-v="{{ v if v is not none else '' }}">{{ v | delta(unit) }}</td>
 {%- endmacro %}

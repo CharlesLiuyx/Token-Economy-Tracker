@@ -1,4 +1,4 @@
-# 每日数据更新：make update && make build → commit → Pages（PLAN §8）
+# 每日数据更新：make update && make build → commit → Pages（调度说明见 docs/architecture.md）
 name: daily-update
 
 on:

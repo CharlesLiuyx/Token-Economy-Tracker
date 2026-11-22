@@ -6,16 +6,21 @@
 <meta name="color-scheme" content="light dark">
 <title>TOKEN ECONOMY TRACKER</title>
 <script>
-/* 首帧前设定主题与语言，防白闪：localStorage 覆盖 > 系统偏好（语言默认 zh，浏览器非中文则 en） */
+/* 首帧前设定偏好，防闪：localStorage 覆盖 > 缺省（浅色 / 加宽 / 中字号 / 术语开；
+   语言缺省 zh，浏览器非中文则 en） */
 (function () {
-  var t = null, l = null;
-  try { t = localStorage.getItem("theme"); l = localStorage.getItem("lang"); } catch (e) {}
-  if (t !== "light" && t !== "dark")
-    t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-  if (l !== "zh" && l !== "en")
-    l = /^zh/i.test(navigator.language || "") ? "zh" : "en";
-  var root = document.documentElement;
-  root.dataset.theme = t;
+  var root = document.documentElement, ls = {};
+  try { ls = localStorage; } catch (e) {}
+  function pick(key, allowed, dflt) {
+    var v = null;
+    try { v = ls.getItem(key); } catch (e) {}
+    return allowed.indexOf(v) >= 0 ? v : dflt;
+  }
+  root.dataset.theme = pick("theme", ["light", "dark"], "light");
+  root.dataset.width = pick("width", ["normal", "wide", "full"], "wide");
+  root.dataset.fs = pick("fs", ["s", "m", "l"], "m");
+  root.dataset.terms = pick("terms", ["on", "off"], "on");
+  var l = pick("lang", ["zh", "en"], /^zh/i.test(navigator.language || "") ? "zh" : "en");
   root.dataset.lang = l;
   if (l === "en") root.lang = "en";
 })();
@@ -26,96 +31,141 @@
 </head>
 <body>
 
-<header class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="#top">Token Economy Tracker</a>
-    <nav class="topnav">
-      <a href="#sec-arr">ARR</a>
-      <a href="#sec-tokens">Tokens</a>
-      <a href="#sec-gpu">GPU</a>
-      <a href="#sec-dc">Datacenters</a>
-      <a href="#sec-methodology">Methodology</a>
-    </nav>
-    <span class="build-ts">BUILD {{ build_ts }}</span>
-    <a class="icon-btn" href="https://github.com/CharlesLiuyx/Token-Economy-Tracker"
-       target="_blank" rel="noopener noreferrer"
-       aria-label="{{ t('ui.github') | e }}" title="{{ t('ui.github') | e }}"
-       data-i18n-aria-label="ui.github" data-i18n-title="ui.github">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.82 1.1.82 2.22 0 1.61-.02 2.9-.02 3.29 0 .32.22.7.83.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/>
-      </svg>
-    </a>
-    <button id="lang-toggle" class="icon-btn lang-btn" type="button"
-            aria-label="{{ t('ui.lang_toggle') | e }}" title="{{ t('ui.lang_toggle') | e }}"
-            data-i18n-aria-label="ui.lang_toggle" data-i18n-title="ui.lang_toggle">EN</button>
-    <button id="theme-toggle" class="icon-btn" type="button"
-            aria-label="{{ t('ui.theme_toggle') | e }}" title="{{ t('ui.theme_toggle') | e }}"
-            data-i18n-aria-label="ui.theme_toggle" data-i18n-title="ui.theme_toggle">
-      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-           stroke-width="2" stroke-linecap="round" aria-hidden="true">
-        <circle cx="12" cy="12" r="4"/>
-        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
-      </svg>
-      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-           stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
-      </svg>
-    </button>
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top">TOKEN ECONOMY TRACKER</a>
+  <nav class="topnav">
+    <a href="#sec-brief" data-i18n="sec.brief.title">{{ t('sec.brief.title') | e }}</a>
+    <a href="#sec-arr">ARR</a>
+    <a href="#sec-tokens">Tokens</a>
+    <a href="#sec-gpu">GPU</a>
+    <a href="#sec-dc">Datacenters</a>
+    <a href="#sec-methodology">Methodology</a>
+  </nav>
+  <span class="spacer"></span>
+  <button id="back-btn" class="tb-btn" type="button" hidden
+          data-i18n="ui.back" data-i18n-args='{"n": 0}'>{{ t('ui.back', n=0) | e }}</button>
+  <span class="build-ts">BUILD {{ build_ts }}</span>
+  <div class="more">
+    <button id="more-btn" class="tb-btn" type="button" aria-haspopup="true" aria-expanded="false"
+            data-i18n="ui.more">{{ t('ui.more') | e }}</button>
+    <div id="more-menu" class="more-menu" hidden>
+      <div class="menu-row"><span data-i18n="ui.theme">{{ t('ui.theme') | e }}</span>
+        <div class="seg" data-pref="theme">
+          <button type="button" data-v="light" data-i18n="ui.theme.light">{{ t('ui.theme.light') | e }}</button>
+          <button type="button" data-v="dark" data-i18n="ui.theme.dark">{{ t('ui.theme.dark') | e }}</button>
+        </div></div>
+      <div class="menu-row"><span data-i18n="ui.width">{{ t('ui.width') | e }}</span>
+        <div class="seg" data-pref="width">
+          <button type="button" data-v="normal" data-i18n="ui.width.normal">{{ t('ui.width.normal') | e }}</button>
+          <button type="button" data-v="wide" data-i18n="ui.width.wide">{{ t('ui.width.wide') | e }}</button>
+          <button type="button" data-v="full" data-i18n="ui.width.full">{{ t('ui.width.full') | e }}</button>
+        </div></div>
+      <div class="menu-row"><span data-i18n="ui.fs">{{ t('ui.fs') | e }}</span>
+        <div class="seg" data-pref="fs">
+          <button type="button" data-v="s" data-i18n="ui.fs.s">{{ t('ui.fs.s') | e }}</button>
+          <button type="button" data-v="m" data-i18n="ui.fs.m">{{ t('ui.fs.m') | e }}</button>
+          <button type="button" data-v="l" data-i18n="ui.fs.l">{{ t('ui.fs.l') | e }}</button>
+        </div></div>
+      <div class="menu-row"><span data-i18n="ui.lang">{{ t('ui.lang') | e }}</span>
+        <div class="seg" data-pref="lang">
+          <button type="button" data-v="zh">中文</button>
+          <button type="button" data-v="en">EN</button>
+        </div></div>
+      <div class="menu-row"><span data-i18n="ui.terms">{{ t('ui.terms') | e }}</span>
+        <div class="seg" data-pref="terms">
+          <button type="button" data-v="on" data-i18n="ui.on">{{ t('ui.on') | e }}</button>
+          <button type="button" data-v="off" data-i18n="ui.off">{{ t('ui.off') | e }}</button>
+        </div></div>
+      <a class="menu-link" href="https://github.com/CharlesLiuyx/Token-Economy-Tracker"
+         target="_blank" rel="noopener noreferrer" data-i18n="ui.github">{{ t('ui.github') | e }}</a>
+    </div>
   </div>
 </header>
 
-<main id="top">
-  <div class="page-head">
-    <p class="source-line">
-      {%- for name, st in source_status.items() %}
-      {%- set date = st.snapshot_date or '—' %}
-      <span class="badge badge-{{ st.freshness or 'missing' }}"
-            {%- if st.error %} title="{{ st.error | e }}"
-            {%- else %} title="{{ t('ui.data_asof', date=date) | e }}" data-i18n-title="ui.data_asof"
-            data-i18n-args='{{ {"date": date} | tojson }}'{% endif %}>{{ name }} · {{ date }}</span>
-      {%- endfor %}
-    </p>
+<aside id="toc" data-fig-key="ui.fig" data-tbl-key="ui.tbl">
+  <div class="toc-tabs">
+    <button type="button" id="toc-tab-ch" aria-pressed="true" data-i18n="ui.toc.chapters">{{ t('ui.toc.chapters') | e }}</button>
+    <button type="button" id="toc-tab-as" aria-pressed="false" data-i18n="ui.toc.assets">{{ t('ui.toc.assets') | e }}</button>
+    <button type="button" id="toc-all" data-i18n-tip="ui.toc.all_tip">±</button>
   </div>
+  <ul class="toc-list" id="toc-ch"></ul>
+  <ul class="toc-list" id="toc-as" hidden></ul>
+</aside>
+
+<main id="top">
+  <p class="source-line">
+    {%- for name, st in source_status.items() %}
+    {%- set date = st.snapshot_date or '—' %}
+    <span class="badge badge-{{ st.freshness or 'missing' }}"
+          {%- if st.error %} data-tip="{{ st.error | e }}"
+          {%- else %} data-i18n-tip="ui.data_asof" data-i18n-args='{{ {"date": date} | tojson }}'{% endif %}>{{ name }} · {{ date }}</span>
+    {%- endfor %}
+  </p>
+
+  <section class="section" id="sec-brief">
+    <h2 class="section-title"><span class="section-index">00</span><span
+        data-i18n="sec.brief.title">{{ t('sec.brief.title') | e }}</span>
+      <span class="section-sub" data-i18n="sec.brief.sub">{{ t('sec.brief.sub') | e }}</span>
+      <span class="collapsed-mark" data-i18n="ui.collapsed">{{ t('ui.collapsed') | e }}</span></h2>
+    <div class="section-body">
+      <div class="grid2">
+        {% include 'panels/digest.j2' %}
+        {% include 'panels/radar.j2' %}
+      </div>
+    </div>
+  </section>
 
   <section class="section" id="sec-arr">
-    <h2 class="section-title"><span class="section-index si-arr">01</span>Frontier Lab ARR
-      <span class="section-sub" data-i18n="sec.arr.sub">{{ t('sec.arr.sub') | e }}</span></h2>
-    {% include 'panels/arr_cards.j2' %}
-    {% include 'panels/arr_chart.j2' %}
+    <h2 class="section-title"><span class="section-index">01</span><span>Frontier Lab ARR</span>
+      <span class="section-sub" data-i18n="sec.arr.sub">{{ t('sec.arr.sub') | e }}</span>
+      <span class="collapsed-mark" data-i18n="ui.collapsed">{{ t('ui.collapsed') | e }}</span></h2>
+    <div class="section-body">
+      {% include 'panels/arr_cards.j2' %}
+      {% include 'panels/arr_chart.j2' %}
+      {% include 'panels/arr_anchors.j2' %}
+    </div>
   </section>
 
   <section class="section" id="sec-tokens">
-    <h2 class="section-title"><span class="section-index si-tokens">02</span><span
+    <h2 class="section-title"><span class="section-index">02</span><span
         data-i18n="sec.tokens.title">{{ t('sec.tokens.title') | e }}</span>
-      <span class="section-sub">OpenRouter · Vercel Gateway · SDK</span></h2>
-    <div class="grid2">
-      {% include 'panels/or_tracked.j2' %}
-      {% include 'panels/or_top_models.j2' %}
-      {% include 'panels/or_weekly_total.j2' %}
-      {% include 'panels/sdk.j2' %}
-      {% include 'panels/vercel_tokens.j2' %}
-      {% include 'panels/vercel_cost.j2' %}
-      {% include 'panels/vercel_trend.j2' %}
+      <span class="section-sub">OpenRouter · Vercel Gateway · SDK</span>
+      <span class="collapsed-mark" data-i18n="ui.collapsed">{{ t('ui.collapsed') | e }}</span></h2>
+    <div class="section-body">
+      <div class="grid2">
+        {% include 'panels/or_tracked.j2' %}
+        {% include 'panels/or_top.j2' %}
+        {% include 'panels/or_weekly_total.j2' %}
+        {% include 'panels/vercel_trend.j2' %}
+        {% include 'panels/vercel_share.j2' %}
+        {% include 'panels/sdk.j2' %}
+      </div>
       {% include 'panels/quotes.j2' %}
     </div>
-    {% include 'panels/epoch_sites.j2' %}
   </section>
 
   <section class="section" id="sec-gpu">
-    <h2 class="section-title"><span class="section-index si-gpu">03</span><span
+    <h2 class="section-title"><span class="section-index">03</span><span
         data-i18n="sec.gpu.title">{{ t('sec.gpu.title') | e }}</span>
-      <span class="section-sub" data-i18n="sec.gpu.sub">{{ t('sec.gpu.sub') | e }}</span></h2>
-    {% include 'panels/gpu_cards.j2' %}
-    {% include 'panels/gpu_trend.j2' %}
+      <span class="section-sub" data-i18n="sec.gpu.sub">{{ t('sec.gpu.sub') | e }}</span>
+      <span class="collapsed-mark" data-i18n="ui.collapsed">{{ t('ui.collapsed') | e }}</span></h2>
+    <div class="section-body">
+      {% include 'panels/gpu_table.j2' %}
+      {% include 'panels/gpu_trend.j2' %}
+    </div>
   </section>
 
   <section class="section" id="sec-dc">
-    <h2 class="section-title"><span class="section-index si-dc">04</span><span
+    <h2 class="section-title"><span class="section-index">04</span><span
         data-i18n="sec.dc.title">{{ t('sec.dc.title') | e }}</span>
-      <span class="section-sub">Epoch AI + News</span></h2>
-    {% include 'panels/dc_cards.j2' %}
-    {% include 'panels/dc_growth.j2' %}
-    {% include 'panels/news.j2' %}
+      <span class="section-sub">Epoch AI + News</span>
+      <span class="collapsed-mark" data-i18n="ui.collapsed">{{ t('ui.collapsed') | e }}</span></h2>
+    <div class="section-body">
+      {% include 'panels/dc_cards.j2' %}
+      {% include 'panels/dc_growth.j2' %}
+      {% include 'panels/epoch_sites.j2' %}
+      {% include 'panels/news.j2' %}
+    </div>
   </section>
 
   {% include 'panels/methodology.j2' %}
@@ -125,8 +175,11 @@
   <p data-i18n="ui.footer">{{ t('ui.footer') | e }}</p>
 </footer>
 
+<div id="tip" hidden></div>
+
 <script id="dashboard-data" type="application/json">{{ dashboard_json }}</script>
 <script id="i18n-data" type="application/json">{{ i18n_json }}</script>
+<script id="terms-data" type="application/json">{{ terms_json }}</script>
 <script>
 {{ chart_js }}
 </script>

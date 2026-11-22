@@ -1,0 +1,93 @@
+# 术语 / 缩写 hover 释义（docs/frontend.md「术语」）。app.js 加载后扫正文自动标注，每处出现都标。
+# key = 规范写法；aliases 映射到同一词条（大小写敏感；英数词做词边界校验）。
+# 释义写法：缩写先给全称，再一句大白话「它是什么」+ 一句「本质在衡量什么」；zh/en 都要有。
+# 别收单字或过短高频词（满屏下划线）。
+ARR:
+  zh: Annual Recurring Revenue，年化经常性收入。把最近一段时间的收入速度折算成一整年——本质是「按现在的速度跑一年能收多少」，不是已经到手的全年收入。
+  en: Annual Recurring Revenue — the recent revenue pace scaled to a full year. It answers "what would a year at today's speed bring in", not what has actually been collected.
+run-rate:
+  aliases: [Run-rate, 运行率, 年化运行率]
+  zh: 年化运行率。拿最近一个月（或 28 天）的收入乘以 12 推出的全年数——增长快的公司它远高于实际全年收入，本质是速度表而不是里程表。
+  en: The latest month (or 28 days) of revenue multiplied out to a year. For fast growers it sits far above actual annual revenue — a speedometer, not an odometer.
+MoM:
+  zh: Month over Month，月环比增速。这个月比上个月多了百分之几——本质是增长的「复利利率」，25% 意味着大约 3 个月翻倍。
+  en: Month over Month growth — how much larger this month is than last. It is the compounding rate of growth; 25% means doubling in roughly three months.
+置信带:
+  aliases: [预测区间, confidence band, prediction interval]
+  zh: 围着拟合曲线画的阴影区间，表示「真实值有 95% 的把握落在这里」。带越宽说明估算越没底——离最近一次披露越远，带张得越开。
+  en: The shaded range around the fitted curve where the true value should fall 95% of the time. The wider the band the shakier the estimate; it opens up with distance from the latest disclosure.
+外推:
+  aliases: [extrapolation, extrapolated]
+  zh: 用已有数据的趋势去推算还没有数据的时段。本质是假设「过去的增速会延续」，离最后一个真实数据点越远越不可靠。
+  en: Projecting the existing trend into a period with no data. It assumes past growth simply continues, and gets less reliable the further it runs past the last real data point.
+锚点:
+  aliases: [anchors, anchor]
+  zh: 公司或可靠媒体披露过的真实收入数字（带日期）。整条估算曲线就是靠这些点「钉」住的，点越新越密，估算越可信。
+  en: Real revenue figures, with dates, disclosed by the company or reputable press. They pin the whole estimate curve down; the fresher and denser they are, the more the estimate can be trusted.
+对数轴:
+  aliases: [log scale, Log scale]
+  zh: 纵轴每一格代表「乘以固定倍数」而不是「加上固定数量」。指数增长在对数轴上是一条直线，方便把相差百倍的数放在同一张图里比较。
+  en: A vertical axis where each step multiplies by a fixed factor instead of adding a fixed amount. Exponential growth becomes a straight line, and values 100× apart fit on one chart.
+OpenRouter:
+  zh: 一个把上百家模型接口聚合成一个入口的路由平台。它公开各模型的 token 用量，但只代表经它转发的流量，不含各家直连 API 的主力流量。
+  en: A routing platform that fronts hundreds of model APIs behind one endpoint. It publishes per-model token usage, but only for traffic it routes — not the labs' direct API traffic.
+Vercel AI Gateway:
+  aliases: [Vercel Gateway]
+  zh: Vercel 提供的模型网关，开发者经它调用各家模型。它只公开各模型的份额百分比，不公开绝对量，也只是自家客户这一小片。
+  en: Vercel's model gateway through which developers call many vendors' models. It publishes share percentages only, no absolute volumes, and covers only its own customers.
+Token:
+  aliases: [token, tokens, Tokens]
+  zh: 大模型处理文本的最小计量单位，约等于四分之三个英文单词或一个多汉字。模型按 token 收费，所以 token 量本质上是 AI 的「用电量」。
+  en: The smallest unit a language model reads and writes, about three quarters of an English word. Models bill by the token, so token volume is effectively AI's electricity meter.
+滚动 7 天:
+  aliases: [rolling 7d, rolling-7d, Rolling 7 days]
+  zh: 每天都取「截至当天的最近 7 天合计」。相邻两天的数字有 6 天重叠，所以曲线平滑，但单日突变会被摊薄。
+  en: Each day's figure is the total of the 7 days ending that day. Adjacent days overlap by six, so the line is smooth but one-day spikes are diluted.
+SDK:
+  zh: Software Development Kit，软件开发工具包。这里指 OpenAI / Anthropic / Google 官方的调用库；它的下载量反映有多少开发者和自动化流程在装它，是采用度的间接信号。
+  en: Software Development Kit — here the official client libraries of OpenAI / Anthropic / Google. Download counts show how many developers and pipelines install them, an indirect adoption signal.
+PyPI:
+  zh: Python Package Index，Python 官方软件包仓库。pip install 下载的包都来自这里。
+  en: Python Package Index, the official Python package repository that pip installs from.
+npm:
+  zh: Node.js 的官方软件包仓库，JavaScript / TypeScript 项目的依赖都从这里下载。
+  en: The official Node.js package registry from which JavaScript / TypeScript projects pull dependencies.
+on-demand:
+  zh: 按需租用：随租随用、按小时计费、不签长约。价格比长期预留贵，但最能反映当下的市场供需。
+  en: Rent-as-you-go, billed hourly with no commitment. Pricier than reserved capacity, but the best reflection of current supply and demand.
+p25–p75:
+  aliases: [p25, p75]
+  zh: 第 25 和第 75 百分位。把所有报价从低到高排队，中间那一半落在这个区间里——本质是去掉两头极端值后的「主流价格带」。
+  en: The 25th and 75th percentiles. Sort every ask from low to high and the middle half falls in this range — the mainstream price band with the extremes trimmed.
+中位数:
+  aliases: [中位价, median, Median]
+  zh: 把所有报价从低到高排队，正中间那一个。它不受个别离谱高价或低价影响，比平均数更能代表「典型价格」。
+  en: The middle value when all asks are sorted. Unmoved by a few absurd highs or lows, it represents the typical price better than the average.
+VRAM:
+  aliases: [显存]
+  zh: Video RAM，显卡自带的内存。它决定一张卡能装下多大的模型，是租 GPU 时除了算力之外最关键的规格。
+  en: Video RAM, the memory on the graphics card. It caps how large a model one card can hold — the key spec besides raw compute when renting GPUs.
+H100-eq:
+  aliases: [H100 等效算力, H100-equivalent, H100-equivalents]
+  zh: H100 等效算力。把各种型号的芯片按性能折算成「相当于多少张 NVIDIA H100」，这样不同数据中心的算力才能加总和比较。
+  en: H100-equivalents — every chip type converted by performance into "how many NVIDIA H100s is this worth", so compute can be summed and compared across datacenters.
+GW:
+  zh: Gigawatt，吉瓦，等于 100 万千瓦。1 GW 大约是一座核电机组的功率；AI 数据中心的规模现在直接用耗电功率来衡量。
+  en: Gigawatt, a million kilowatts — about the output of one nuclear reactor. AI datacenter scale is now measured directly in power draw.
+Capex:
+  aliases: [资本开支, capex]
+  zh: Capital Expenditure，资本开支。建数据中心、买芯片这类一次性的大额投入，区别于电费、人工这类日常运营开销。
+  en: Capital Expenditure — one-off spending on building datacenters and buying chips, as opposed to running costs like power and staff.
+OCPI:
+  zh: Ornn Compute Price Index，Ornn 算力价格指数。把多家云厂商的 GPU 租价归一成一个指数，价格水平系统性高于本页用的 Vast.ai 低价市场。
+  en: Ornn Compute Price Index — GPU rental prices from many cloud vendors normalised into one index, systematically higher than the budget Vast.ai market used here.
+Vast.ai:
+  zh: 一个 GPU 租赁撮合市场，个人和小机房都可以挂牌出租显卡。报价公开透明，但整体是低价切片，不等于大云厂商的牌价。
+  en: A GPU rental marketplace where individuals and small datacenters list cards. Asks are public, but it is a budget slice, not hyperscaler list pricing.
+Epoch AI:
+  zh: 一家研究 AI 发展趋势的非营利机构，公开维护全球前沿 AI 数据中心的数据集（位置、功率、算力、投资额）。
+  en: A non-profit researching AI trends that maintains an open dataset of frontier AI datacenters (location, power, compute, capital cost).
+S-1:
+  aliases: [S-1/A]
+  zh: 美国公司上市前向证监会提交的招股说明书（S-1/A 是修订版）。里面的财务数字要承担法律责任，是最可靠的一手来源。
+  en: The registration statement a US company files before going public (S-1/A is an amendment). Its financials carry legal liability, making it the most reliable primary source.

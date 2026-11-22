@@ -1,0 +1,16 @@
+{% from '_macros.j2' import panel with context %}
+{% for metric, data, title_key in [('tokens', vercel_tokens, 'panel.vercel_tokens.title'), ('cost', vercel_cost, 'panel.vercel_cost.title')] %}
+{% call panel('vercel_' ~ metric, title_key, 'vercel_gateway', kind='fig', note_key='panel.vercel_share.note') %}
+    <div class="bars">
+      {% for r in data.rows %}
+      <div class="bar-row" data-i18n-tip="panel.vercel_share.tip"
+           data-i18n-args='{{ {"name": r.label, "v": "%.2f" | format(r.value), "day": data.day, "d7": r.d7pp | delta("pp")} | tojson }}'>
+        <span class="bar-label">{{ r.label | e }}</span>
+        <span class="bar-track"><span class="bar-fill{{ ' hollow' if r.neutral else '' }}" style="width:{{ '%.1f' | format(r.pct) }}%;background:{{ r.color }};border-color:{{ r.color }}"></span></span>
+        <span class="bar-val">{{ '%.1f' | format(r.value) }}%</span>
+        <span class="bar-delta {{ r.d7pp | dcls }}">{{ r.d7pp | delta('pp') }}</span>
+      </div>
+      {% endfor %}
+    </div>
+{% endcall %}
+{% endfor %}

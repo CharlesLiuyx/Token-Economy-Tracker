@@ -1,0 +1,15 @@
+{% from '_macros.j2' import panel with context %}
+{% call panel('or_top', 'panel.or_top_models.title', 'openrouter', kind='fig', note_key='panel.or_top_models.note') %}
+    <div class="bars">
+      {% for r in or_top %}
+      <div class="bar-row" data-i18n-tip="panel.or_top_models.tip"
+           data-i18n-args='{{ {"name": r.slug, "v": "%.2f" | format(r.value), "share": "%.1f" | format(r.share), "d7": r.d7 | delta} | tojson }}'>
+        <span class="bar-label">{{ r.label | e }}</span>
+        <span class="bar-track"><span class="bar-fill{{ ' hollow' if r.neutral else '' }}" style="width:{{ '%.1f' | format(r.pct) }}%;background:{{ r.color }};border-color:{{ r.color }}"></span></span>
+        <span class="bar-val">{{ '%.2f' | format(r.value) }} T</span>
+        <span class="bar-delta {{ r.d7 | dcls }}">{{ r.d7 | delta }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    {% include 'panels/_vendor_legend.j2' %}
+{% endcall %}

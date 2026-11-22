@@ -1,0 +1,34 @@
+{% from '_macros.j2' import panel with context %}
+{% set metric_keys = {
+     'run_rate_arr': 'panel.metric.run_rate_arr',
+     'third_party_est': 'panel.metric.third_party_est',
+     'projected_rev': 'panel.metric.projected_rev',
+     'reported_rev': 'panel.metric.reported_rev',
+   } %}
+{% call panel('arr_anchors', 'panel.anchors.title', 'arr', kind='tbl', flush=True, note_key='panel.anchors.note') %}
+    <table class="data-table">
+      <thead><tr>
+        <th data-sort="text" data-i18n="panel.col.date">{{ t('panel.col.date') | e }}</th>
+        <th data-sort="text" data-i18n="panel.col.company">{{ t('panel.col.company') | e }}</th>
+        <th class="num" data-sort="num" data-i18n="panel.col.value">{{ t('panel.col.value') | e }}</th>
+        <th data-sort="text" data-i18n="panel.col.metric_type">{{ t('panel.col.metric_type') | e }}</th>
+        <th data-i18n="panel.col.conf">{{ t('panel.col.conf') | e }}</th>
+        <th data-i18n="panel.col.source">{{ t('panel.col.source') | e }}</th>
+        <th data-i18n="panel.col.note">{{ t('panel.col.note') | e }}</th>
+      </tr></thead>
+      <tbody>
+      {% for a in anchor_rows %}
+        {% set ck = 'ui.conf.low' if a.metric == 'third_party_est' else ('ui.conf.high' if a.confidence == 'confident' else 'ui.conf.mid') %}
+        <tr>
+          <td class="num" data-v="{{ a.date }}">{{ a.date }}</td>
+          <td class="nowrap co-{{ a.company }}" data-v="{{ a.company }}">{{ a.company }}</td>
+          <td class="num strong" data-v="{{ a.value_b }}">${{ '%.1f' | format(a.value_b) }}B</td>
+          <td class="nowrap" data-v="{{ a.metric }}" data-i18n="{{ metric_keys[a.metric] }}">{{ t(metric_keys[a.metric]) | e }}</td>
+          <td class="nowrap conf" data-i18n="{{ ck }}">{{ t(ck) | e }}</td>
+          <td class="nowrap"><a href="{{ a.url | e }}" target="_blank" rel="noopener noreferrer">{{ a.host | e }} ↗</a></td>
+          <td>{{ a.note | e }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+{% endcall %}

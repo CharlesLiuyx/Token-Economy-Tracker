@@ -1,0 +1,15 @@
+{% from '_macros.j2' import panel with context %}
+{% call panel('digest', 'panel.digest.title', 'manual', flush=True) %}
+    {% if digest %}
+    <ul class="digest">
+      {% for day in digest %}
+      <li class="digest-day">{{ day.date }}{% if day.date == today %} <span class="tag tag-new">NEW</span>{% endif %}</li>
+      {% for it in day['items'] %}
+      <li><span class="tag">{{ it.tag | e }}</span>{{ it.text | e }}{% if it.url %}<a class="src" href="{{ it.url | e }}" target="_blank" rel="noopener noreferrer">source ↗</a>{% endif %}</li>
+      {% endfor %}
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="empty-note" style="padding:9px 10px" data-i18n-html="panel.digest.empty">{{ t('panel.digest.empty') }}</p>
+    {% endif %}
+{% endcall %}

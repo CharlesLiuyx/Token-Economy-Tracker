@@ -6,10 +6,13 @@
 
 A daily auto-updating **AI monetization dashboard**. The build artifact is a pure
 static, single-file HTML page (Chart.js inlined, no CDN, works offline), refreshed
-once a day by GitHub Actions and served on GitHub Pages.
+once a day by GitHub Actions and served on GitHub Pages. A daily agent run also
+checks for newly disclosed revenue figures and writes a short sourced digest.
 
 ## What it tracks
 
+0. **Daily brief** — a hand-verified digest of what is new today, plus a change
+   radar (key metrics vs 1 / 7 / 30 days ago).
 1. **Frontier Lab ARR (live estimate)** — big live-ticking ARR numbers for
    Anthropic / OpenAI, built from publicly disclosed anchors + curve fitting +
    extrapolation with confidence bands.
@@ -17,8 +20,9 @@ once a day by GitHub Actions and served on GitHub Pages.
    comparison, network-wide total, weekly Top Models), Vercel AI Gateway share
    (Token / $ Spend Top 10 + trends), SDK downloads (npm / PyPI), expert quotes,
    and Epoch AI Top Sites.
-3. **GPU rental prices** — $/GPU-hr cards for H100 / H200 / B200 / A100 /
-   RTX 5090, plus price trend charts.
+3. **GPU rental prices** — a sortable table of 16 GPU models (B300 down to
+   RTX 3090) with ask distribution, price per GB of VRAM and 7 / 30-day change,
+   plus a log-scale trend chart.
 4. **AI datacenter buildout** — summary cards from the Epoch AI Frontier Data
    Centers dataset (site count / IT power GW / H100-equivalents), cumulative
    industry growth, and a daily news feed.
@@ -56,7 +60,7 @@ minimal) and vanilla JS with a vendored Chart.js inlined at build time.
 | Vercel AI Gateway | unofficial API | Gateway token / spend leaderboards |
 | npm + PyPI | official APIs | AI SDK download counts |
 | Epoch AI | official dataset (CC-BY) | Frontier data centers dataset |
-| GPU price indexes | web | GPU rental $/GPU-hr |
+| Vast.ai | official API | GPU rental asks, $/GPU-hr |
 | Google News RSS | unofficial API | Datacenter news feed (domain-whitelisted) |
 | Manual anchors | git-maintained | Publicly disclosed ARR data points |
 
@@ -81,7 +85,7 @@ make fetch-<source>   # debug a single fetcher, e.g. make fetch-openrouter
 - `site/index.html` is a build artifact — never edit it by hand; only
   `make build` may generate it.
 - No external CDNs or runtime network requests; the page must open offline.
-- Behavior changes must update the corresponding docs in the same PR.
+- Behavior changes must update the corresponding docs in the same commit.
 - A new data source ships as a trio: `data/sources.yml` entry +
   `docs/sources/<source>.md` + a response sample.
 

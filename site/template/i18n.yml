@@ -1,8 +1,9 @@
 # 全部 UI 文案的唯一出处（key -> {zh, en}）。模板与图表 spec 只引用 key，不写文案。
 # 约定（详见 docs/frontend.md「i18n」）：
 #   - key 扁平、点分命名空间：ui.* / sec.* / panel.* / chart.* / meth.*
+#   - 术语释义不在这里，在 site/template/terms.yml
 #   - 模板：{{ t(key) }} 渲染构建期默认语言（zh），同一元素标注
-#     data-i18n / data-i18n-html / data-i18n-title / data-i18n-aria-label
+#     data-i18n / data-i18n-html / data-i18n-tip（写入 data-tip，单例悬停提示）/ data-i18n-aria-label
 #     （参数化文案配 data-i18n-args，值里用 {name} 占位），app.js 运行期按当前语言重渲染
 #   - 图表 spec：build.py 的 L(key) 生成 "__i18n:<key>" 占位符，app.js 渲染时解析（同 __surface）
 #   - data-i18n-html 的值是受信 HTML（innerHTML 注入），只允许 <b>/<code> 级内联标签
@@ -12,12 +13,6 @@
 ui.data_asof:
   zh: "数据截至 {date}"
   en: "Data as of {date}"
-ui.theme_toggle:
-  zh: 切换深色 / 浅色模式
-  en: Toggle dark / light theme
-ui.lang_toggle:
-  zh: 切换语言（中文 / English）
-  en: Switch language (中文 / English)
 ui.github:
   zh: 在 GitHub 上查看源码
   en: View source on GitHub
@@ -73,8 +68,8 @@ panel.arr_chart.note:
 
 # ---- ② Token 需求与采用度 ----
 panel.or_tracked.title:
-  zh: 重点模型 Token · 滚动 7 天 (B) — OpenRouter
-  en: Tracked models · rolling-7d tokens (B) — OpenRouter
+  zh: 重点模型 Token · 滚动 7 天 (B，对数轴) — OpenRouter
+  en: Tracked models · rolling-7d tokens (B, log scale) — OpenRouter
 panel.or_tracked.note:
   zh: 口径：OpenRouter 平台切片（不含各 lab 直连流量）；序列由每日快照累积，自 2026-07-12 起。
   en: "Scope: OpenRouter platform slice (excludes labs' direct API traffic); series accumulated from daily snapshots, since 2026-07-12."
@@ -97,8 +92,8 @@ panel.vercel_cost.title:
   zh: Vercel Gateway — $ Spend 份额 Top 10 (%)
   en: Vercel Gateway — $ spend share top 10 (%)
 panel.vercel_trend.title:
-  zh: Vercel Gateway — Token 份额走势 Top 5 (61 天)
-  en: Vercel Gateway — token share trend top 5 (61 days)
+  zh: Vercel Gateway — Token 份额走势 Top 8
+  en: Vercel Gateway — token share trend top 8
 panel.vercel_trend.note:
   zh: 份额百分比（Vercel 不公开绝对量）；仅 Gateway 客户切片。
   en: Share percentages (Vercel publishes no absolute volumes); Gateway-customer slice only.
@@ -106,25 +101,22 @@ panel.quotes.title:
   zh: KOL / Podcast — 专家观点摘录
   en: KOL / Podcast — expert quote excerpts
 panel.quotes.empty:
-  zh: 暂无收录。人工维护 <code>data/manual/quotes.yml</code>，收录标准：少量高质量原文摘录（见 PLAN §11 开放问题）。
-  en: "Nothing collected yet. Hand-curated in <code>data/manual/quotes.yml</code>; the bar: a few high-quality verbatim excerpts (see PLAN §11 open questions)."
+  zh: 暂无收录。人工维护 <code>data/manual/quotes.yml</code>，收录标准：少量高质量原文摘录。
+  en: "Nothing collected yet. Hand-curated in <code>data/manual/quotes.yml</code>; the bar: a few high-quality verbatim excerpts."
 panel.epoch_sites.title:
   zh: Top Sites by Power — Epoch AI Frontier Data Centers
   en: Top sites by power — Epoch AI Frontier Data Centers
 
 # ---- ③ GPU ----
-panel.gpu.offers_word:
-  zh: 条报价
-  en: offers
 panel.gpu.no_offers:
   zh: 暂无报价
   en: No offers
 panel.gpu_trend.title:
-  zh: 价格走势 ($/GPU-hr · 每日中位数)
-  en: Price trend ($/GPU-hr · daily median)
+  zh: 价格走势 ($/GPU-hr · 每日中位数 · 对数轴)
+  en: Price trend ($/GPU-hr · daily median · log scale)
 panel.gpu_trend.note:
-  zh: 口径：Vast.ai 市场 on-demand 报价中位数（低价市场切片，≠OCPI/超算云牌价）；序列自 2026-07-12 起每日累积。
-  en: "Scope: median on-demand asks on the Vast.ai marketplace (budget-market slice, ≠ OCPI / hyperscaler list prices); accumulated daily since 2026-07-12."
+  zh: 口径：Vast.ai 市场 on-demand 报价中位数（低价市场切片，≠OCPI/超算云牌价）；H100 / H200 / B200 / A100 / RTX 5090 自 2026-07-12 起每日累积，其余 11 个卡型自 2026-11-22 起；悬停图例可聚光单条线。
+  en: "Scope: median on-demand asks on the Vast.ai marketplace (budget-market slice, ≠ OCPI / hyperscaler list prices); H100 / H200 / B200 / A100 / RTX 5090 accumulated daily since 2026-07-12, the other 11 models since 2026-11-22; hover a legend item to spotlight one line."
 
 # ---- ④ 数据中心 ----
 panel.dc.sites_title:
@@ -232,27 +224,12 @@ chart.or_weekly.label:
 chart.or_weekly.y:
   zh: T tokens/周
   en: T tokens/week
-chart.or_top.label:
-  zh: 近 7 天 Token (T)
-  en: Tokens, last 7 days (T)
 chart.or_tracked.y:
   zh: B tokens / 滚动7天
   en: B tokens / rolling 7d
-chart.share_pct:
-  zh: 份额 %
-  en: share %
 chart.vercel_trend.y:
   zh: Token 份额 %
   en: Token share %
-chart.sdk.npm:
-  zh: npm 周下载 (M)
-  en: npm weekly downloads (M)
-chart.sdk.pypi:
-  zh: PyPI 周下载 (M)
-  en: PyPI weekly downloads (M)
-chart.sdk.y:
-  zh: 百万次 / 周
-  en: millions / week
 chart.gpu.y:
   zh: $/GPU-hr（中位数）
   en: $/GPU-hr (median)
@@ -262,3 +239,280 @@ chart.dc.power:
 chart.dc.h100:
   zh: 累计算力 (M H100-eq)
   en: Cumulative compute (M H100-eq)
+
+# ---- 外壳：更多菜单 / 目录 / 返回栈 ----
+ui.more:
+  zh: 更多 ▾
+  en: More ▾
+ui.theme:
+  zh: 主题
+  en: Theme
+ui.theme.light:
+  zh: 浅色
+  en: Light
+ui.theme.dark:
+  zh: 深色
+  en: Dark
+ui.width:
+  zh: 宽度
+  en: Width
+ui.width.normal:
+  zh: 常规
+  en: Normal
+ui.width.wide:
+  zh: 加宽
+  en: Wide
+ui.width.full:
+  zh: 填满
+  en: Full
+ui.fs:
+  zh: 字号
+  en: Font size
+ui.fs.s:
+  zh: 小
+  en: S
+ui.fs.m:
+  zh: 中
+  en: M
+ui.fs.l:
+  zh: 大
+  en: L
+ui.lang:
+  zh: 语言
+  en: Language
+ui.terms:
+  zh: 术语释义
+  en: Term hints
+ui.on:
+  zh: 开
+  en: "On"
+ui.off:
+  zh: 关
+  en: "Off"
+ui.back:
+  zh: "返回 ×{n}"
+  en: "Back ×{n}"
+ui.toc.chapters:
+  zh: 章节
+  en: Sections
+ui.toc.assets:
+  zh: 资产
+  en: Assets
+ui.toc.all_tip:
+  zh: 全部展开 / 收起（全展开→收起，否则→展开）；Ctrl 点击某一节的开关＝批量操作全部章节
+  en: Expand / collapse all (all open → collapse, otherwise → expand); Ctrl-click a section toggle to apply to every section
+ui.collapsed:
+  zh: 已收起
+  en: collapsed
+ui.fig:
+  zh: 图
+  en: Fig
+ui.tbl:
+  zh: 表
+  en: Table
+ui.conf.high:
+  zh: 〔高〕
+  en: "[high]"
+ui.conf.mid:
+  zh: 〔中〕
+  en: "[mid]"
+ui.conf.low:
+  zh: 〔低〕
+  en: "[low]"
+
+# ---- ⓪ 今日要点 ----
+sec.brief.title:
+  zh: 今日要点
+  en: Daily Brief
+sec.brief.sub:
+  zh: 今天新增了什么、什么在变
+  en: what is new today, what is moving
+sec.sources.title:
+  zh: 来源
+  en: Sources
+sec.sources.snapshot:
+  zh: 快照日期
+  en: snapshot date
+panel.digest.title:
+  zh: 每日速读 — 人工核对过的新增信息（近 7 天）
+  en: Daily digest — verified new information (last 7 days)
+panel.digest.empty:
+  zh: 暂无条目。由每日更新任务写入 <code>data/manual/digest.yml</code>，每条都带一手来源链接。
+  en: "No entries yet. Written by the daily update task into <code>data/manual/digest.yml</code>; every entry carries a primary-source link."
+panel.radar.title:
+  zh: 变化雷达 — 关键指标较 1 / 7 / 30 天前
+  en: Change radar — key metrics vs 1 / 7 / 30 days ago
+panel.radar.note:
+  zh: OpenRouter 为滚动 7 天 Token，GPU 为当日中位价（$/GPU-hr），全部由本站每日快照现算；「—」表示该时点没有可比快照。点指标名跳到对应面板，点表头排序。
+  en: "OpenRouter rows are rolling-7d tokens, GPU rows are today's median ($/GPU-hr); all computed from this site's own daily snapshots; '—' means no comparable snapshot at that horizon. Click a metric to jump to its panel, click a header to sort."
+panel.radar.kind.or_total:
+  zh: OpenRouter 全平台
+  en: OpenRouter site-wide
+panel.radar.kind.or_model:
+  zh: OpenRouter
+  en: OpenRouter
+panel.radar.kind.vercel_share:
+  zh: Vercel 份额第一
+  en: Vercel top share
+panel.radar.kind.sdk_pypi:
+  zh: PyPI 周下载
+  en: PyPI weekly downloads
+panel.radar.kind.gpu:
+  zh: GPU 租价
+  en: GPU rental
+panel.radar.kind.dc_power:
+  zh: 数据中心功率
+  en: Datacenter power
+panel.radar.kind.dc_sites:
+  zh: 数据中心站点数
+  en: Datacenter sites
+panel.col.metric:
+  zh: 指标
+  en: Metric
+panel.col.latest:
+  zh: 最新值
+  en: Latest
+panel.col.d1:
+  zh: 较 1 天前
+  en: vs 1d
+panel.col.d7:
+  zh: 较 7 天前
+  en: vs 7d
+panel.col.d30:
+  zh: 较 30 天前
+  en: vs 30d
+panel.col.date:
+  zh: 时点
+  en: As of
+panel.col.company:
+  zh: 公司
+  en: Company
+panel.col.value:
+  zh: 数值
+  en: Value
+panel.col.metric_type:
+  zh: 口径
+  en: Metric type
+panel.col.conf:
+  zh: 可信度
+  en: Confidence
+panel.col.source:
+  zh: 来源
+  en: Source
+panel.col.note:
+  zh: 备注
+  en: Note
+panel.legend.other:
+  zh: 其他厂商（空心）
+  en: other vendors (hollow)
+panel.legend.d7:
+  zh: 右列＝较 7 天前
+  en: right column = vs 7 days ago
+
+# ---- ① ARR 补充 ----
+panel.arr.age:
+  zh: "距最近披露 {days} 天"
+  en: "{days}d since last disclosure"
+panel.arr.age_tip:
+  zh: 大数字是从最近一次披露按拟合增速外推出来的。距披露 ≤45 天正常，46–90 天提示，超过 90 天标红：此时数字基本是纯外推，误差随天数复利放大。
+  en: The big number is extrapolated from the latest disclosure at the fitted growth rate. ≤45 days is normal, 46–90 is a caution, beyond 90 is flagged red — by then the figure is nearly pure extrapolation and the error compounds daily.
+panel.arr.multiple_tip:
+  zh: 当前估算值 ÷ 最近一次披露值。倍数越大，说明估算里「外推出来的部分」越多。
+  en: Current estimate ÷ latest disclosed value. The larger the multiple, the more of the estimate is extrapolated rather than disclosed.
+panel.arr.range:
+  zh: 今日 95% 预测区间
+  en: Today's 95% prediction interval
+panel.arr.conf_tip:
+  zh: 估算可信度：最近披露距今 ≤45 天为〔中〕，更久为〔低〕。披露值本身的可信度见下方锚点表。
+  en: "Estimate confidence: [mid] if the latest disclosure is ≤45 days old, [low] otherwise. Confidence of the disclosed values themselves is in the anchor table below."
+panel.anchors.title:
+  zh: 最近披露一览 — 估算的地基（新→旧）
+  en: Latest disclosures — the estimate's foundation (newest first)
+panel.anchors.note:
+  zh: 只有「年化运行率」口径进入拟合；第三方估算、年度预测、期间实际收入只展示不拟合。可信度：〔高〕公司一手文件或公告，〔中〕可靠媒体引述知情人士，〔低〕第三方面板估算。
+  en: "Only run-rate anchors enter the fit; third-party estimates, full-year forecasts and reported period revenue are shown but never fitted. Confidence: [high] company filing or announcement, [mid] reputable press citing people familiar, [low] third-party panel estimate."
+panel.metric.run_rate_arr:
+  zh: 年化运行率
+  en: run-rate
+panel.metric.third_party_est:
+  zh: 第三方估算
+  en: third-party est.
+panel.metric.projected_rev:
+  zh: 预测
+  en: forecast
+panel.metric.reported_rev:
+  zh: 期间实际收入
+  en: reported revenue
+
+# ---- ② 条形图提示 ----
+panel.or_top_models.note:
+  zh: 条长＝近 7 天 Token 合计；颜色＝厂商（全页一致）；右列＝较 7 天前变化。
+  en: Bar length = tokens over the last 7 days; colour = vendor (consistent page-wide); right column = change vs 7 days ago.
+panel.or_top_models.tip:
+  zh: "{name}\n近 7 天 {v} T tokens · 占平台 {share}% · 较 7 天前 {d7}"
+  en: "{name}\n{v} T tokens over 7d · {share}% of platform · {d7} vs 7d ago"
+panel.vercel_share.note:
+  zh: 份额百分比（Vercel 不公开绝对量）；右列＝较 7 天前的百分点变化。
+  en: Share percentages (Vercel publishes no absolute volumes); right column = percentage-point change vs 7 days ago.
+panel.vercel_share.tip:
+  zh: "{name}\n{day} 份额 {v}% · 较 7 天前 {d7}"
+  en: "{name}\nshare {v}% on {day} · {d7} vs 7d ago"
+panel.sdk.tip:
+  zh: "{name}（{reg}）\n周下载 {v} M · 较 7 天前 {d7}"
+  en: "{name} ({reg})\n{v} M weekly downloads · {d7} vs 7d ago"
+
+# ---- ③ GPU 表 ----
+panel.gpu_table.title:
+  zh: 16 卡型当日报价 ($/GPU-hr) — Vast.ai on-demand
+  en: Today's asks for 16 GPU models ($/GPU-hr) — Vast.ai on-demand
+panel.gpu_table.note:
+  zh: 区间条：细线＝最低到最高报价，灰盒＝p25–p75，竖线＝中位数。$/GB·hr＝中位价÷显存，便于跨卡型比较「每 GB 显存的租价」。每卡型最多取 64 条报价（API 上限）。点表头排序。
+  en: "Range bar: thin line = min to max ask, grey box = p25–p75, tick = median. $/GB·hr = median ÷ VRAM, for comparing rental price per GB of memory across models. At most 64 asks per model (API cap). Click a header to sort."
+panel.gpu.col.tier:
+  zh: 档位
+  en: Tier
+panel.gpu.col.median:
+  zh: 中位价
+  en: Median
+panel.gpu.col.range:
+  zh: 报价分布
+  en: Ask distribution
+panel.gpu.col.range_tip:
+  zh: 细线＝最低到最高报价，灰盒＝p25–p75，竖线＝中位数
+  en: thin line = min to max ask, grey box = p25–p75, tick = median
+panel.gpu.col.offers:
+  zh: 报价数
+  en: Asks
+panel.gpu.col.per_gb_tip:
+  zh: 中位价 ÷ 显存 GB：每 GB 显存每小时的租价
+  en: Median ÷ VRAM GB — rental price per GB of memory per hour
+panel.gpu.col.spark:
+  zh: 近 30 天
+  en: Last 30d
+panel.gpu.range_tip:
+  zh: "最低 ${min} · p25 ${p25} · 中位 ${median} · p75 ${p75} · 最高 ${max}"
+  en: "min ${min} · p25 ${p25} · median ${median} · p75 ${p75} · max ${max}"
+panel.gpu.name_tip:
+  zh: "Vast.ai 卡型名：{name}\n自 {day} 起跟踪，已累积 {n} 天"
+  en: "Vast.ai model name: {name}\ntracked since {day}, {n} days of history"
+panel.gpu.tier.frontier:
+  zh: 旗舰训练
+  en: Frontier
+panel.gpu.tier.datacenter:
+  zh: 数据中心
+  en: Datacenter
+panel.gpu.tier.workstation:
+  zh: 工作站
+  en: Workstation
+panel.gpu.tier.consumer:
+  zh: 消费级
+  en: Consumer
+panel.news.note:
+  zh: NEW＝标题未出现在上一份快照里（今日新增）。左侧竖条＝标题命中 Anthropic / OpenAI / xAI / NVIDIA / GW 等关键词。
+  en: "NEW = headline absent from the previous snapshot (new today). Left bar = headline matches Anthropic / OpenAI / xAI / NVIDIA / GW keywords."
+meth.delta:
+  zh: <b>变化量</b>：页面上所有「较 N 天前」都由本站每日快照现算（取该日或之前 3 天内最近一份快照），源头不提供历史时无法回溯到开始跟踪之前。
+  en: "<b>Deltas</b>: every 'vs N days ago' figure is computed from this site's own daily snapshots (the nearest snapshot on or within 3 days before that date); where the source offers no history, nothing predates the start of tracking."
+meth.manual_sources:
+  zh: 人工维护：ARR 披露锚点（<code>data/manual/arr_anchors.yml</code>，逐条带来源链接，见「最近披露一览」）、专家观点与每日速读（每条带一手来源）。
+  en: "Hand-curated: ARR disclosure anchors (<code>data/manual/arr_anchors.yml</code>, each with a source link — see the disclosures table), expert quotes and the daily digest (each with a primary source)."
