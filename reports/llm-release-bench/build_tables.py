@@ -561,8 +561,8 @@ def rank_fig(fid):
             tip = tip + ui('api_price', pin=pi, pout=po)
         else: x = cost_of(m, k, fig)
         mark = '<span class="mark dot" style="left:%s%%"></span>' % pct if F['mark'] == 'dot' else '<span class="mark bar" style="width:%s%%"></span>' % pct
-        h.append('<div class="row c4" data-key="%s"%s><span class="nm noterm">%s</span><span class="track d%d">%s</span><span class="v">%s</span><span class="x">%s</span></div>' % (
-            m['vendor'], att('data-tip', tip), TX(fname(m)), a['n'], mark, TX(c['d']), x))
+        h.append('<div class="row c4" data-key="%s"%s><span class="nm noterm"><i class="sw k-%s"></i>%s</span><span class="track d%d">%s</span><span class="v">%s</span><span class="x">%s</span></div>' % (
+            m['vendor'], att('data-tip', tip), m['vendor'], TX(fname(m)), a['n'], mark, TX(c['d']), x))
     h.append('<div class="row ax c4">%s</div></figure>' % ticks(a, 2))
     return ''.join(h)
 def f45():
@@ -576,8 +576,8 @@ def f45():
         for m in rows:
             c = m['scores'][k]
             tip = L('%s：%s %s%s。%s', '%s: %s %s%s. %s') % (m['name'], p['title'], dplain(c['d']), BK[k]['unit'], c['note'])   # 用面板标题，不用 bench.name
-            h.append('<div class="row c3" data-key="%s"%s><span class="nm noterm">%s</span><span class="track d%d"><span class="mark bar" style="width:%s%%"></span></span><span class="v">%s</span></div>' % (
-                m['vendor'], att('data-tip', tip), TX(fname(m)), a['n'], t2((c['v'] - a['min']) / (a['max'] - a['min']) * 100), TX(c['d'])))
+            h.append('<div class="row c3" data-key="%s"%s><span class="nm noterm"><i class="sw k-%s"></i>%s</span><span class="track d%d"><span class="mark bar" style="width:%s%%"></span></span><span class="v">%s</span></div>' % (
+                m['vendor'], att('data-tip', tip), m['vendor'], TX(fname(m)), a['n'], t2((c['v'] - a['min']) / (a['max'] - a['min']) * 100), TX(c['d'])))
         h.append('<div class="row ax c3">%s</div></div>' % ticks(a, 1))
     h.append('</div></figure>')
     return ''.join(h)
@@ -609,8 +609,8 @@ def f44():
         pi, po = price_pair(m['price'])
         tip = subst(F['tip'], {'name': m['name'], 'pout': po, 'pin': pi, 'aa': dplain(c['d']),
                                'ow': subst(F['ow_yes'], {'lic': m['license']['d']}) if ow else F['ow_no']})
-        dots.append('<span class="spt%s" data-key="%s" style="left:%s%%;bottom:%s%%%s"%s><i class="mark"></i><span class="pl noterm">%s</span></span>' % (
-            ' ow' if ow else '', m['vendor'], f3(px(m['price']['out'])), f3(py(c['v'])), dx, att('data-tip', tip), TX(fname(m))))
+        dots.append('<span class="spt%s" data-key="%s" style="left:%s%%;bottom:%s%%%s"%s><i class="mark"></i><span class="pl noterm"><i class="sw k-%s"></i>%s</span></span>' % (
+            ' ow' if ow else '', m['vendor'], f3(px(m['price']['out'])), f3(py(c['v'])), dx, att('data-tip', tip), m['vendor'], TX(fname(m))))
     extra = ('<span class="li2"><i class="ptl"></i>%s</span><span class="li2"><i class="ptl ow"></i>%s</span>' % (TX(F['legend_solid']), TX(F['legend_hollow'])))
     h = [fig_head('f44', F), legend({m['vendor'] for m in pts}, extra),
          '<div class="sc"><div class="sc-yl">%s</div><div class="sc-plot">%s%s</div><div class="sc-xl">%s</div></div>' % (TX(F['ylabel']), grid, ''.join(dots), TX(F['xlabel']))]
@@ -657,9 +657,10 @@ def vendor_css():
     dn.add(axis_of(D['figures']['f45'], [], 'f45')['n'])
     dn -= {4, 5, 7}                                    # 原文 CSS 已有 .track.d4 / d5 / d7
     if not new and not dn: return ''
-    c = ['<style id="data-css">', '/* build_tables.py 生成：新厂商配色（已过 dataviz 校验，见 vendors.json）与新刻度数 */']
-    c.append(':root{%s}' % ''.join('%s:%s;' % (v['css_var'], v['light']) for v in new))
-    c.append(':root[data-theme=dark]{%s}' % ''.join('%s:%s;' % (v['css_var'], v['dark']) for v in new))
+    c = ['<style id="data-css">', '/* build_tables.py 生成：全部厂商的品牌色（vendors.json；前沿三家与报告原 CSS 一致）、新厂商的配色规则与新刻度数 */']
+    allv = [v for v in VEN if v['key'] in used]
+    c.append(':root{%s}' % ''.join('%s:%s;' % (v['css_var'], v['light']) for v in allv))
+    c.append(':root[data-theme=dark]{%s}' % ''.join('%s:%s;' % (v['css_var'], v['dark']) for v in allv))
     for v in new:
         k, cv = v['key'], v['css_var']
         c.append('tr.v-%s{--vc:var(%s)}\n.pin[data-key=%s]{--vc:var(%s)}\ntd.%s{--vc:var(%s)}\n.k-%s{background:var(%s)}\n.sw.ho-%s{background:transparent;box-shadow:inset 0 0 0 1.5px var(%s)}\n[data-key~=%s] .mark{background:var(%s)}' % (
@@ -674,7 +675,8 @@ C34_CSS = """tr.grp .gk{font-weight:400;color:var(--ink3);font-size:.9em;margin-
 .hl-lab small.pre{font-weight:400;color:var(--ink3);white-space:normal;line-height:1.25;cursor:help}
 #s4 .row{height:auto;min-height:26px;padding-top:2px;padding-bottom:2px}
 #s4 .row.hd{min-height:22px}#s4 .row.ax{min-height:18px;padding-top:0;padding-bottom:0}
-#s4 .row .nm{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.2}
+#s4 .row .nm{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.2;display:flex;align-items:baseline}
+#s4 .row .nm .sw,.sc .spt .pl .sw{flex:none;width:9px;height:9px;margin-right:5px;vertical-align:0}
 #s4 .row.c4{grid-template-columns:190px minmax(120px,1fr) 46px 124px}
 #s4 .row.c3{grid-template-columns:minmax(0,170px) minmax(90px,1fr) 50px;min-height:25px}
 @media (max-width:860px){#s4 .row.c4{grid-template-columns:132px minmax(90px,1fr) 44px 108px}}
@@ -818,6 +820,11 @@ else: check_ch1()
 
 src = open(REPORT, encoding='utf-8').read()
 before = src
+for v in VEN:                                                     # 前沿三家的颜色也写在报告原 CSS 里，必须与 vendors.json 一致
+    if v.get('builtin_css'):
+        for mode, rx in (('light', r':root\{[^}]*%s:(#[0-9A-Fa-f]{6});'), ('dark', r':root\[data-theme=dark\]\{[^}]*%s:(#[0-9A-Fa-f]{6});')):
+            m_ = re.search(rx % re.escape(v['css_var']), src)
+            assert m_ and m_.group(1).lower() == v[mode].lower(), ('报告原 CSS 里 %s 的%s色与 vendors.json 不一致：改 <style> 开头的 :root' % (v['css_var'], mode), m_ and m_.group(1), v[mode])
 src = put(src, 'vcss', vendor_css())
 src = put(src, 's-css', i18n_css(), first=after('<!--data:vcss:end-->'))
 src = put(src, 'topbar', topbar())

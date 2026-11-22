@@ -38,8 +38,8 @@ SHORT = {'hopper': 'H100/H200', 'b200': 'B200', 'b300': 'B300', 'r200': 'Rubin',
 NX = dict(SHORT, tpu_v6e='TPU v6e', tpu_v7='TPU v7', tpu_v8i='TPU v8i', tpu_v8t='TPU v8t', trn2='Trainium2', trn3='Trainium3')
 def NAME(k): return bi(SK[k]['name'])
 def BASIS(k): return bi(SK[k]['basis'])
-# 颜色：Nvidia 石墨灰、TPU 与 Google 同一蓝色系、Trainium＋AMD 品红；型号按代际由浅到深（深色主题由暗到亮）。
-# 已过 dataviz 校验：各色阶 ordinal 两种主题全过；泳道色与 Google / Anthropic / OpenAI 两两比较最差 CVD 9.2（浅）/ 9.4（深）。
+# 颜色：Nvidia 石墨灰、TPU 与 Google 同一蓝色系（2026-11-22 起跟随 Google 官方蓝 #4285F4，色阶同色相）、Trainium＋AMD 品红；型号按代际由浅到深（深色主题由暗到亮）。
+# 已过 dataviz 校验：各色阶 ordinal 两种主题全过（TPU 新色阶同样全过）。
 RAMP_IDX = {'hopper': ('nv', 0), 'b200': ('nv', 1), 'b300': ('nv', 2), 'r200': ('nv', 3), 'rubin_ultra': ('nv', 4),
             'tpu_v6e': ('tpu', 0), 'tpu_v7': ('tpu', 1), 'tpu_v8i': ('tpu', 2), 'tpu_v8t': ('tpu', 3),
             'trn2': ('trn', 0), 'trn3': ('trn', 1), 'mi300': ('amd', 0), 'mi355': ('amd', 1), 'mi450': ('amd', 2)}

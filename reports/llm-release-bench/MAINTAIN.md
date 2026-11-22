@@ -19,7 +19,7 @@
 | `data/models.json` | 模型、Bench 列、分数、价格、许可证、参数、发布日、时间轴节点、表 2-2、表 3-1 列配置、图 3-2 与图 4-x 配置、快照日期（含第 3 章快照）、第 3 章来源 |
 | `data/vendors.json` | 厂商表：顺序、颜色、泳道顺序、分组（groups：前沿 / 大厂 / 开源，及每组进哪一章） |
 | `i18n/static.json` | 不属于上面两个文件的全部固定文字：顶栏控件、目录头、各章标题、第 1 章结论、第 5 章、附录手写来源、图 2-1 图注图例、术语表 TERMS、页面 JS 的界面字 |
-| `research/` | 加模型前的调研底稿（每份 JSON 带分数、价格、出处与 caveats）和改章裁定 `decisions-ch3.md`。构建不读它；第 3 章数据由 `qa/oneoff/ch3_import.py` 从这里一次性导入 |
+| `research/` | 加模型前的调研底稿（每份 JSON 带分数、价格、出处与 caveats）、官方品牌色调研 `2026-11-22-brand-colors.json` 和改章裁定 `decisions-ch3.md`。构建不读它；第 3 章数据由 `qa/oneoff/ch3_import.py` 从这里一次性导入 |
 | `bilingual.py` | 两个构建脚本共用：双语输出规则、图 2-1 横轴推导 |
 | `build_tables.py` | 读 data/ 和 i18n/，重写报告里 `<!--data:…-->` 标记之间的内容 |
 | `compute/` | 算力到卡模型（`model.py` → `model.json` → `build.py`），管 `<!--compute:…-->`。口径说明 `compute/decisions.md` |
@@ -60,7 +60,7 @@ python3 compute/build.py                                        # 3 算力块（
 python3 build_tables.py && python3 compute/build.py             # 4 再跑一遍，两个都必须输出 unchanged（幂等）
 python3 qa/i18n_check.py                                        # 5 双语检查（静态，标准库），必须「通过」
 python3 qa/diff_check.py /tmp/prev.html "$R"                    # 6 列出这次改动，逐条确认都是你想改的
-python3 qa/ch2_equiv.py /tmp/prev.html "$R"                     # 7 没打算动第 2 章时：第 2 章除章名外必须逐字节一致（加 --browser 再比运行后的 DOM 与可见文本）
+python3 qa/ch2_equiv.py /tmp/prev.html "$R"                     # 7 没打算动第 2 章时：第 2 章除章名外必须逐字节一致（颜色值默认忽略，--strict-color 连颜色也比；加 --browser 再比运行后的 DOM 与可见文本）
 ```
 
 然后做浏览器检查（需要 playwright + Chromium；云端容器一般有 `/usr/bin/google-chrome`）：
@@ -75,7 +75,7 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 ```
 
 要求：全部「通过 / OK」，并亲眼看 `/tmp/qa-shots` 里中英各一张 `f21`、`t21`、`t31`、`f32`、`f44` 截图。截图不要提交（`.gitignore` 已排除 png）。
-改了厂商颜色时，还要跑 `python3 qa/palette_check.py <Skill dataviz 的 scripts 目录>`，结果写进 `qa/palette_report.txt`（要提交）。
+改了厂商颜色时，还要跑 `python3 qa/palette_check.py <Skill dataviz 的 scripts 目录>`，结果写进 `qa/palette_report.txt`（要提交）。配色规则见第 13.5 节（官方品牌色优先）。
 
 `build_tables.py --check` 只校验不写盘；`--data 目录` 可以指向一份副本数据（演练用）。`compute/build.py` 也接受 `--data 目录`（它从 `models.json` 读快照日）。
 
@@ -251,9 +251,17 @@ FrontierCode 2.0 列里带 `<sup>AA</sup>` 角标的是 Artificial Analysis 自�
 - 标签：页面 JS `fitScatter` 按 AA 从高到低依次在 12 个候选位置里找不压点、不压别的标签、不出绘图区的位置；找不到就隐藏标签（悬停仍有完整提示）。`qa/browser_check.py` 断言可见标签互不重叠、不压点，并打印被隐藏的标签。
 - 横轴刻度在 `figures.f44.xaxis.ticks`；有模型的输出价超出 `min` / `max` 时构建打印提示，去改范围。
 
-### 13.5 以后加新厂商
-1. `vendors.json → vendors[]` 加一条：`group` 选 `frontier` / `bigtech` / `open`（决定进第 2 章还是第 3 章）；`css_var` 取一个没用过的（如 `--tv`）；`light` / `dark` 两个颜色；`legend_tip`；`t22_class`；`builtin_css: false`。位置决定它在表格分组和图例里的顺序。
+### 13.5 配色规则与以后加新厂商（2026-11-22 第三版：官方品牌色系）
+**规则：官方色优先，撞了取官方辅色，最后才派生。**
+- 每家只从自己的官方色里选：`research/2026-11-22-brand-colors.json` 里的公司主色、公司辅色、产品主色、产品辅色（每个颜色带出处与可信度）。新厂商先按同样格式把官方色调研进 `research/`，只取官方站点 CSS、品牌手册这类一手来源。
+- 固定：Anthropic #D97757；Google #4285F4；OpenAI 浅色主题 #000000、深色主题官方辅色 #FFFFFF（旧 ChatGPT 绿 #10A37F 已不是现行品牌色，不用）。图 2-1 的 TPU 算力泳道跟着 Google 的蓝走（`compute/ramps.json` 的 tpu 色阶是 #4285F4 同色相）。
+- 在候选里做组合搜索，让 8 家两两最差的一对尽量大（正常视力 ΔE 与 CVD ΔE，深浅两种主题都算）；平手时公司主色 > 产品主色 > 辅色。深色底上看不清的颜色，取同一家官方色里更亮的；没有更亮的，才在同色相上提亮，记为派生。
+- 官方色实在拉不开（只有黑白或和别家同一种蓝）的厂商，用派生色（中性灰等），最多 1–2 家；现在是 xAI（浅灰 / 中灰）和智谱（官方近黑 #141618 提亮的石墨灰）。派生灰要和 OpenAI 黑白、Nvidia 算力灰拉开（正常视力 ΔE ≥10）。
+- 仍然撞色的对（现在是 Google↔Meta、Google↔DeepSeek，浅色还有 xAI↔DeepSeek）不再靠颜色区分，靠统一的厂商标识：「品牌色小方块 + 名字」——第 4 章每行模型名前、散点标签里、表 2-1 / 3-1 的行首、图例（按前沿 / 大厂 / 开源分组）都有。只用色块和文字，不画、不下载、不内嵌任何 Logo 或字标。
+
+**加新厂商的步骤**
+1. `vendors.json → vendors[]` 加一条：`group` 选 `frontier` / `bigtech` / `open`（决定进第 2 章还是第 3 章）；`css_var` 取一个没用过的（如 `--tv`）；`light` / `dark` 按上面的规则从官方色里选；`color_src`（浅 / 深各一句中英出处说明，派生要写原因）；`derived`（是否派生）；`legend_tip`；`t22_class`；`builtin_css: false`。位置决定它在表格分组和图例里的顺序。全部厂商的颜色都由构建写进 `<style id="data-css">`；前沿三家还写在报告原 CSS 开头的 `:root` 里，构建时会核对两处一致。
 2. `timeline_lanes[]` 加一条泳道（`lane`、`vendor`），时间轴节点写进 `models.json → timeline_events`。
-3. 颜色校验：`python3 qa/palette_check.py <dataviz 的 scripts 目录>`。要求两种主题都满足：A（按厂商顺序的相邻对）正常视力 ≥15、CVD ≥8；D（所有厂商两两全部，图 4-1、4-4 里任意两家都可能挨着）正常视力 ΔE ≥12、CVD ΔE ≥6；和算力泳道三色（Nvidia 灰、TPU 蓝、其他品红）正常视力 ≥10。不过就换颜色（前沿三家原色不动）；可以用石墨灰、深棕、深洋红这类色相或拉开明度。现在 xAI 是石墨灰，故意低于 dataviz 的彩度下限（报告里那一行 FAIL 是预期的）。结果写进 `qa/palette_report.txt` 一起提交，并更新 vendors.json 的 `_readme`。新厂商 CSS（色块、条、泳道节点、散点空心描边、图例聚光）由构建自动生成。
+3. 颜色报告：`python3 qa/palette_check.py <dataviz 的 scripts 目录>`。它列出最终颜色与出处、8 家（或更多）两两全部的正常视力 / CVD ΔE、撞色的对（正常 <12 或 CVD <6）、与算力泳道三色的距离，并附 dataviz 校验器原样输出（官方色多为黑白蓝，校验器的亮度带 / 彩度下限 FAIL 是预期的，只作参考）。结果写进 `qa/palette_report.txt` 一起提交。
 4. 跑第 3 节全部命令，外加 `python3 qa/rehearsal.py`（演练里就有一个虚构的新开源厂商 TestLab）。
 

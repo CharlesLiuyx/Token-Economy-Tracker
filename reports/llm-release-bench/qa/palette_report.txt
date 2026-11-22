@@ -1,82 +1,64 @@
+规则：官方色优先，撞了取官方辅色，最后才派生（research/2026-11-22-brand-colors.json）。撞色判定：正常视力 ΔE <12 或 CVD ΔE <6。
+
+1 最终 8 色
+   厂商        浅色        深色        出处（浅 / 深）
+   google    #4285F4   #4285F4   ［官方］官方公司主色（Google 蓝，Gemini 同色）
+   anthropic #D97757   #D97757   ［官方］官方公司主色（clay）
+   openai    #000000   #FFFFFF   ［官方］官方公司主色（黑） ／ 深色：官方辅色（白）：深色底上看不见黑色
+   xai       #B7B7B7   #7A7A7A   ［派生］非官方，派生：中性浅灰（深色主题用中灰）。官方只有黑、白（与 OpenAI 撞色）和界面蓝 #1084FE（与 Google 等蓝色撞色）；灰度和智谱、Nvidia 算力灰都拉开
+   meta      #0064E0   #0064E0   ［官方］官方公司主色（Meta 蓝）。辅色 #0040DC 能和 Google 拉开一点，但它只出自第三方图标、未经 Meta 核实，深色底上对比度也只有 2.3，所以不用
+   deepseek  #73A3D2   #73A3D2   ［官方］官方辅色（--ds-color-brand-light-reverse）。主色 #4D6BFE 和 Google 蓝撞色
+   moonshot  #002F5B   #00F6FF   ［官方］官方产品辅色（Kimi 品牌手册的深海军蓝）。产品主色 #007CFF 和 Google、Meta 撞色 ／ 深色：官方产品辅色（Kimi 青 #00F6FF）：深色底上海军蓝看不清，取同一份手册里更亮的
+   zhipu     #747474   #525252   ［派生］非官方，派生：把官方主色 #141618（近黑）提亮成石墨灰。原色与 OpenAI 撞色；另一个官方色 #0B7FFF 与 Google 等蓝色撞色；灰度和 xAI、Nvidia 算力灰都拉开
+
 ==== light（底色 #ffffff）
-A. 厂商顺序相邻对：google #2a78d6 → anthropic #eb6834 → openai #1baf7a → xai #817376 → meta #6f3b72 → deepseek #5eb7e3 → moonshot #9d80f6 → zhipu #a72725
-   [pass] Lightness band：all 8 inside L 0.43–0.77
-   [FAIL] Chroma floor：below floor (reads gray): [["#817376",0.018]]
-   [pass] CVD separation：worst adjacent #1baf7a↔#eb6834 ΔE 9.2 (deutan) · tritan 13.2
-   [pass] Normal-vision floor：worst adjacent #6f3b72↔#817376 ΔE 16.0 (normal)
-   [relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#1baf7a",2.82],["#5eb7e3",2.24]]
-B. 图 2-1 泳道顺序相邻对：
-   google    #2a78d6 ↔ anthropic #eb6834  CVD 24.7  正常 33.6  pass
-   anthropic #eb6834 ↔ openai    #1baf7a  CVD 9.2  正常 27.6  pass
-   openai    #1baf7a ↔ xai       #817376  CVD 10.4  正常 18.7  pass
-   xai       #817376 ↔ meta      #6f3b72  CVD 14.5  正常 16.0  pass
-   meta      #6f3b72 ↔ deepseek  #5eb7e3  CVD 29.8  正常 34.0  pass
-   deepseek  #5eb7e3 ↔ moonshot  #9d80f6  CVD 9.6  正常 16.2  pass
-   moonshot  #9d80f6 ↔ zhipu     #a72725  CVD 29.5  正常 31.5  pass
-   zhipu     #a72725 ↔ nvidia    #494845  CVD 4.9  正常 18.1  FAIL
-   nvidia    #494845 ↔ tpu       #2a78d6  CVD 23.3  正常 24.1  pass
-   tpu       #2a78d6 ↔ other     #a8418b  CVD 13.0  正常 22.0  pass
-C. 全部两两对（10 色，45 对）里低于门槛的：
-   zhipu     ↔ nvidia    CVD 4.9  正常 18.1  新厂商相关
-   xai       ↔ other     CVD 5.3  正常 14.7  新厂商相关
-   meta      ↔ nvidia    CVD 6.9  正常 11.6  新厂商相关
-   google    ↔ moonshot  CVD 7.1  正常 14.8  新厂商相关
-   meta      ↔ other     CVD 7.2  正常 11.9  新厂商相关
-   zhipu     ↔ other     CVD 13.7  正常 14.1  新厂商相关
+2 8 家两两全部 28 对；撞色 3 对（靠「品牌色小方块 + 名字」区分）。最差 10 对：
+   google    ↔ meta      正常  10.0  CVD   8.5  撞色
+   xai       ↔ deepseek  正常  11.8  CVD   9.4  撞色
+   google    ↔ deepseek  正常  11.9  CVD  11.5  撞色
+   deepseek  ↔ zhipu     正常  16.5  CVD  15.7  ok
+   anthropic ↔ xai       正常  16.9  CVD  13.2  ok
+   anthropic ↔ zhipu     正常  17.3  CVD   8.8  ok
+   google    ↔ zhipu     正常  19.4  CVD  19.7  ok
+   meta      ↔ deepseek  正常  20.5  CVD  19.3  ok
+   meta      ↔ zhipu     正常  20.6  CVD  19.2  ok
+   anthropic ↔ deepseek  正常  21.2  CVD  17.5  ok
+3 与算力泳道三色的正常视力 ΔE（低于 10 的列出）：
+   无（TPU 与 Google 同色是有意的：同一家）
+4 dataviz 校验器（参考）：
+   [adjacent FAIL] Lightness band：outside band: [["#000000",0],["#B7B7B7",0.779],["#002F5B",0.304]]
+   [adjacent FAIL] Chroma floor：below floor (reads gray): [["#000000",0],["#B7B7B7",0],["#73A3D2",0.087],["#002F5B",0.092],["#747474",0]]
+   [adjacent pass] CVD separation：worst adjacent #73A3D2↔#0064E0 ΔE 19.3 (protan) · tritan 13.5
+   [adjacent pass] Normal-vision floor：worst adjacent #73A3D2↔#0064E0 ΔE 20.5 (normal)
+   [adjacent relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#B7B7B7",2.01],["#73A3D2",2.66]]
+   [all FAIL] Lightness band：outside band: [["#000000",0],["#B7B7B7",0.779],["#002F5B",0.304]]
+   [all FAIL] Chroma floor：below floor (reads gray): [["#000000",0],["#B7B7B7",0],["#73A3D2",0.087],["#002F5B",0.092],["#747474",0]]
+   [all pass] CVD separation：worst all-pairs #0064E0↔#4285F4 ΔE 8.5 (deutan) · tritan 5.7
+   [all fail] Normal-vision floor：worst all-pairs #0064E0↔#4285F4 ΔE 10.0 (normal) — below 15, hard to tell apart even with full color vision
+   [all relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#B7B7B7",2.01],["#73A3D2",2.66]]
+
 ==== dark（底色 #1a1a19）
-A. 厂商顺序相邻对：google #3987e5 → anthropic #d95926 → openai #199e70 → xai #796a6e → meta #b37bb6 → deepseek #00739c → moonshot #6745b6 → zhipu #aa2b28
-   [pass] Lightness band：all 8 inside L 0.48–0.67
-   [FAIL] Chroma floor：below floor (reads gray): [["#796a6e",0.02]]
-   [pass] CVD separation：worst adjacent #6745b6↔#00739c ΔE 8.1 (deutan) · tritan 9.9
-   [pass] Normal-vision floor：worst adjacent #b37bb6↔#796a6e ΔE 15.0 (normal)
-   [relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#6745b6",2.57],["#aa2b28",2.56]]
-B. 图 2-1 泳道顺序相邻对：
-   google    #3987e5 ↔ anthropic #d95926  CVD 26.8  正常 31.8  pass
-   anthropic #d95926 ↔ openai    #199e70  CVD 9.4  正常 26.5  pass
-   openai    #199e70 ↔ xai       #796a6e  CVD 8.5  正常 16.8  pass
-   xai       #796a6e ↔ meta      #b37bb6  CVD 12.5  正常 15.0  pass
-   meta      #b37bb6 ↔ deepseek  #00739c  CVD 8.2  正常 20.7  pass
-   deepseek  #00739c ↔ moonshot  #6745b6  CVD 8.1  正常 15.4  pass
-   moonshot  #6745b6 ↔ zhipu     #aa2b28  CVD 23.0  正常 24.4  pass
-   zhipu     #aa2b28 ↔ nvidia    #b8b7b4  CVD 28.8  正常 33.2  pass
-   nvidia    #b8b7b4 ↔ tpu       #3987e5  CVD 19.6  正常 22.8  pass
-   tpu       #3987e5 ↔ other     #a8418b  CVD 14.0  正常 23.2  pass
-C. 全部两两对（10 色，45 对）里低于门槛的：
-   xai       ↔ other     CVD 4.4  正常 14.1  新厂商相关
-   deepseek  ↔ other     CVD 5.8  正常 21.9  新厂商相关
-   xai       ↔ deepseek  CVD 7.3  正常 12.1  新厂商相关
-   google    ↔ meta      CVD 7.6  正常 16.4  新厂商相关
-   moonshot  ↔ other     CVD 8.4  正常 14.2  新厂商相关
-   meta      ↔ other     CVD 11.7  正常 13.6  新厂商相关
-   google    ↔ deepseek  CVD 11.9  正常 12.5  新厂商相关
-   zhipu     ↔ other     CVD 13.4  正常 13.7  新厂商相关
-   anthropic ↔ zhipu     CVD 13.8  正常 13.8  新厂商相关
-D. light：8 家两两全部 28 对，目标正常 ≥12、CVD ≥6：全部达标；最差 8 对：
-   google    ↔ moonshot  CVD 7.1  正常 14.8  pass
-   meta      ↔ zhipu     CVD 12.9  正常 15.3  pass
-   xai       ↔ meta      CVD 14.5  正常 16.0  pass
-   openai    ↔ deepseek  CVD 14.0  正常 16.2  pass
-   deepseek  ↔ moonshot  CVD 9.6  正常 16.2  pass
-   google    ↔ xai       CVD 15.4  正常 16.9  pass
-   xai       ↔ zhipu     CVD 11.3  正常 17.3  pass
-   google    ↔ deepseek  CVD 18.6  正常 18.4  pass
-   [all-pairs pass] Lightness band：all 8 inside L 0.43–0.77
-   [all-pairs FAIL] Chroma floor：below floor (reads gray): [["#817376",0.018]]
-   [all-pairs floor] CVD separation：worst all-pairs #9d80f6↔#2a78d6 ΔE 7.1 (protan) · tritan 6.9
-   [all-pairs fail] Normal-vision floor：worst all-pairs #9d80f6↔#2a78d6 ΔE 14.8 (normal) — below 15, hard to tell apart even with full color vision
-   [all-pairs relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#1baf7a",2.82],["#5eb7e3",2.24]]
-D. dark：8 家两两全部 28 对，目标正常 ≥12、CVD ≥6：全部达标；最差 8 对：
-   xai       ↔ deepseek  CVD 7.3  正常 12.1  pass
-   google    ↔ deepseek  CVD 11.9  正常 12.5  pass
-   anthropic ↔ zhipu     CVD 13.8  正常 13.8  pass
-   xai       ↔ meta      CVD 12.5  正常 15.0  pass
-   google    ↔ meta      CVD 7.6  正常 16.4  pass
-   deepseek  ↔ moonshot  CVD 8.1  正常 15.4  pass
-   xai       ↔ zhipu     CVD 9.2  正常 15.5  pass
-   meta      ↔ deepseek  CVD 8.2  正常 20.7  pass
-   [all-pairs pass] Lightness band：all 8 inside L 0.48–0.67
-   [all-pairs FAIL] Chroma floor：below floor (reads gray): [["#796a6e",0.02]]
-   [all-pairs floor] CVD separation：worst all-pairs #00739c↔#796a6e ΔE 7.3 (protan) · tritan 4.0
-   [all-pairs fail] Normal-vision floor：worst all-pairs #00739c↔#796a6e ΔE 12.1 (normal) — below 15, hard to tell apart even with full color vision
-   [all-pairs relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#6745b6",2.57],["#aa2b28",2.56]]
-说明：dataviz 的 all-pairs 正常视力门槛是 15、彩度下限 0.10；本报告按主控裁定用 12 / 6 作为两两目标，xAI 的石墨灰故意低于彩度下限。
+2 8 家两两全部 28 对；撞色 2 对（靠「品牌色小方块 + 名字」区分）。最差 10 对：
+   google    ↔ meta      正常  10.0  CVD   8.5  撞色
+   google    ↔ deepseek  正常  11.9  CVD  11.5  撞色
+   openai    ↔ moonshot  正常  19.0  CVD   6.9  ok
+   xai       ↔ zhipu     正常  14.1  CVD  14.1  ok
+   xai       ↔ deepseek  正常  14.8  CVD  14.0  ok
+   anthropic ↔ xai       正常  16.0  CVD   7.7  ok
+   google    ↔ xai       正常  18.7  CVD  18.8  ok
+   meta      ↔ deepseek  正常  20.5  CVD  19.3  ok
+   xai       ↔ meta      正常  21.0  CVD  19.2  ok
+   anthropic ↔ deepseek  正常  21.2  CVD  17.5  ok
+3 与算力泳道三色的正常视力 ΔE（低于 10 的列出）：
+   无（TPU 与 Google 同色是有意的：同一家）
+4 dataviz 校验器（参考）：
+   [adjacent FAIL] Lightness band：outside band: [["#D97757",0.672],["#FFFFFF",1],["#73A3D2",0.7],["#00F6FF",0.884],["#525252",0.439]]
+   [adjacent FAIL] Chroma floor：below floor (reads gray): [["#FFFFFF",0],["#7A7A7A",0],["#73A3D2",0.087],["#525252",0]]
+   [adjacent pass] CVD separation：worst adjacent #00F6FF↔#73A3D2 ΔE 18.6 (deutan) · tritan 10.0
+   [adjacent pass] Normal-vision floor：worst adjacent #73A3D2↔#0064E0 ΔE 20.5 (normal)
+   [adjacent relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#525252",2.23]]
+   [all FAIL] Lightness band：outside band: [["#D97757",0.672],["#FFFFFF",1],["#73A3D2",0.7],["#00F6FF",0.884],["#525252",0.439]]
+   [all FAIL] Chroma floor：below floor (reads gray): [["#FFFFFF",0],["#7A7A7A",0],["#73A3D2",0.087],["#525252",0]]
+   [all floor] CVD separation：worst all-pairs #00F6FF↔#FFFFFF ΔE 6.9 (protan) · tritan 5.7
+   [all fail] Normal-vision floor：worst all-pairs #0064E0↔#4285F4 ΔE 10.0 (normal) — below 15, hard to tell apart even with full color vision
+   [all relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#525252",2.23]]

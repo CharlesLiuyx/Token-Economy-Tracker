@@ -1,0 +1,105 @@
+{
+  "snapshot_date": "2026-11-22",
+  "method": "No official brand-guideline hex values were publicly retrievable for most vendors (brand.openai.com is JS-rendered, about.meta.com/brand 404, x.ai 403 to bots). Hex values read directly from live official site/app CSS via curl, plus Kimi's official Brand Book. Third-party palette sites were not used as primary evidence.",
+  "vendors": [
+    {
+      "key": "google",
+      "company_primary": "#4285F4",
+      "company_secondary": ["#EA4335", "#FBBC04", "#34A853"],
+      "product": "Gemini",
+      "product_primary": "#4285F4",
+      "product_secondary": ["#9B72CB", "#D96570", "#3186FF", "#346BF1", "#4FA0FF"],
+      "source_title": "gemini.google.com page CSS (Gemini sparkle gradient #4285F4/#9B72CB/#D96570; UI accent --lumi-sys-color-acc-color--accent-fixed #3186FF); 9to5google 2026-05-15 reports the icon now uses blue/red/yellow/green",
+      "source_url": "https://gemini.google.com",
+      "confidence": "中",
+      "note": "Gemini gradient hexes are found verbatim in Gemini's live CSS (high for those values). Google company four-color values (#4285F4, #FBBC04 verified in CSS; #EA4335/#34A853 from the standard Google palette) were not read from an official brand-resource page, so company side is medium. In a one-color chart, #4285F4 is shared by Google and Gemini; Gemini's own distinctive hue is the purple-pink end #9B72CB/#D96570."
+    },
+    {
+      "key": "anthropic",
+      "company_primary": "#D97757",
+      "company_secondary": ["#141413", "#FAF9F5", "#F0EEE6", "#C6613F"],
+      "product": "Claude",
+      "product_primary": "#D97757",
+      "product_secondary": ["#C6613F", "#141413", "#FAF9F5"],
+      "source_title": "anthropic.com live CSS: --color-clay / --color-clay-primary #D97757, --color-clay-interactive #C6613F; theme-color #141413; ivory #FAF9F5",
+      "source_url": "https://www.anthropic.com",
+      "confidence": "高",
+      "note": "No public brand-guideline PDF found (anthropic.com/brand 404), but the official site CSS names the clay token explicitly. Company and Claude share the same primary."
+    },
+    {
+      "key": "openai",
+      "company_primary": "#000000",
+      "company_secondary": ["#FFFFFF"],
+      "product": "ChatGPT",
+      "product_primary": "#000000",
+      "product_secondary": ["#FFFFFF", "#3A83F7"],
+      "source_title": "openai.com/brand (text: logo must not be recolored; gallery uses black/white) + openai.com CSS (monochrome UI; accent tokens --color-primitive-blue-400 #3A83F7 etc. are marketing palette, not brand mark); chatgpt.com CSS accent #3A83F7 (codex) / #2C67C5",
+      "source_url": "https://openai.com/brand/",
+      "confidence": "中",
+      "note": "Brand page confirms the Blossom logo takes no added color; official hex palette lives at brand.openai.com (Frontify, JS-rendered, not retrievable). Treat OpenAI/ChatGPT as monochrome black/white. The old ChatGPT green #10A37F was NOT found anywhere in current openai.com or chatgpt.com CSS, so do not use it as the current brand color. If a chart needs a non-black hue, #3A83F7 is only a UI accent (confidence 低)."
+    },
+    {
+      "key": "xai",
+      "company_primary": "#000000",
+      "company_secondary": ["#FFFFFF"],
+      "product": "Grok",
+      "product_primary": "#1E1F22",
+      "product_secondary": ["#F9F8F7", "#1084FE"],
+      "source_title": "grok.com page CSS: theme-color #1E1F22 (dark) / #F9F8F7 (light); UI accent --grok-accent #1084FE. Company naming: xAI -> SpaceXAI (July 2026) -> Musk said Oct 4 it will be renamed SpaceXSI (no date given)",
+      "source_url": "https://grok.com",
+      "confidence": "低",
+      "note": "x.ai returns 403 to bots and spacex.com is a near-empty shell, so no official company palette was read. Company color inferred as black/white monochrome (SpaceX wordmark style; Fast Company describes SpaceXAI logo as a modified SpaceX wordmark, no colors given). Grok's only hue is the UI accent #1084FE (blue), not a logo color. Naming per TechRepublic, Fast Company, Jalopnik."
+    },
+    {
+      "key": "meta",
+      "company_primary": "#0064E0",
+      "company_secondary": ["#0866FF", "#1C2B33", "#F0F2F5"],
+      "product": "Muse",
+      "product_primary": "#0064E0",
+      "product_secondary": ["#0082FB", "#0040DC"],
+      "source_title": "ai.meta.com live CSS (#0064E0 dominant accent, #0866FF, ink #1C2B33). Muse: DesignRush describes an iridescent teal/magenta/electric-blue wash on a flat blue wordmark; no hex published. Logomark by Jessica Hische (Daring Fireball 2026-09-22)",
+      "source_url": "https://ai.meta.com",
+      "confidence": "低",
+      "note": "Company blue #0064E0 is solid (read from official CSS). Muse has no officially published hex: the product primary here is just Meta blue as a stand-in (confidence 低); #0082FB/#0040DC are gradient stops from a third-party (lobehub) Muse icon SVG and are unverified against Meta."
+    },
+    {
+      "key": "deepseek",
+      "company_primary": "#4D6BFE",
+      "company_secondary": ["#3A65C2", "#4176E6", "#73A3D2", "#1A1615"],
+      "product": "DeepSeek (chat/app)",
+      "product_primary": "#4D6BFE",
+      "product_secondary": ["#3A65C2"],
+      "source_title": "deepseek.com live CSS: --ds-color-brand #4D6BFE, --ds-color-brand-deep #3A65C2, --ds-color-brand-medium-reverse #4176E6, --ds-color-brand-light-reverse #73A3D2, --ds-btn-primary-bg #1A1615",
+      "source_url": "https://www.deepseek.com",
+      "confidence": "高",
+      "note": "Explicit brand tokens in official site CSS. Company and product are the same blue."
+    },
+    {
+      "key": "moonshot",
+      "company_primary": "#121212",
+      "company_secondary": ["#1F1F1F", "#1A88FF"],
+      "product": "Kimi",
+      "product_primary": "#007CFF",
+      "product_secondary": ["#00A1FF", "#002F5B", "#A0DAF7", "#00F6FF", "#121212"],
+      "source_title": "Kimi Brand Book (official): 'signature brand blue' palette #002F5B #007CFF #00A1FF #A0DAF7 #00F6FF + accents #DFC8F5 #FFD1D4 #B3F4A8 #F4F9A7, neutrals #8D9390 #121212 #707070 #C3C3C3 #E1E3E6 #FFFFFF; moonshot.ai CSS is near-black #121212/#1F1F1F with #1A88FF once",
+      "source_url": "https://www.kimi.com/en/resources/kimi-brand",
+      "confidence": "中",
+      "note": "Kimi blue palette is official, but the brand book lists swatches without role labels in the HTML; #007CFF is taken as the signature blue because it is the first saturated blue after navy #002F5B (and Kimi's historic logo blue is near #1783FF). Moonshot company site is monochrome, so company primary is a near-black neutral (confidence 低); Kimi is Moonshot's only consumer blue."
+    },
+    {
+      "key": "zhipu",
+      "company_primary": "#141618",
+      "company_secondary": ["#F4F6F8"],
+      "product": "Z.ai (GLM)",
+      "product_primary": "#141618",
+      "product_secondary": ["#0B7FFF", "#F4F6F8", "#000000"],
+      "source_title": "docs.z.ai CSS: --primary 20 22 24 (= #141618), theme-color #141618; chat.z.ai theme-color #F4F6F8, UI accent --color-blue-light-400 #0B7FFF; 智谱清言 chatglm.cn CSS --brand_blue_100 #49B3FC",
+      "source_url": "https://docs.z.ai",
+      "confidence": "低",
+      "note": "No brand guide found. Z.ai presents as near-black/white with a blue UI accent #0B7FFF (not a logo color). Legacy Zhipu/ChatGLM CN products use a lighter blue #49B3FC (chatglm.cn) and bigmodel.cn uses #007AFF (Swiper default, likely not brand). If a single hue is needed, #0B7FFF is the best Z.ai blue but is medium-low evidence."
+    }
+  ],
+  "lookalike_groups": [
+    ["google", "deepseek", "moonshot", "meta", "zhipu"]
+  ]
+}

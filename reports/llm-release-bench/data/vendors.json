@@ -1,7 +1,7 @@
 {
  "_readme": {
-  "zh": "厂商表：顺序＝表 2-1 / 表 3-1 分组顺序＝图 4-x 图例顺序。group 取 groups[].key，groups[].chapter 决定厂商的模型进哪一章（2＝前沿：表 2-1、图 2-1；3＝表 3-1、图 3-2；第 4 章取全部）。builtin_css=true 的三家颜色写在报告原 CSS 里；其余由 build_tables.py 生成 <style id=\"data-css\">（只在该厂商有模型或时间轴事件时才生成）。改颜色后跑 qa/palette_check.py。 配色（2026-11-22 第二版）：前沿三家原色不动；其余五家为 xAI 石墨灰、Meta 深洋红、DeepSeek 天蓝（深色主题里是深青）、Moonshot 紫、智谱深砖红，用 dataviz 校验器做 8 家两两校验（深浅两种主题）：正常视力 ΔE 全部 ≥12、CVD ΔE 全部 ≥6，按 vendors 顺序的相邻对正常视力 ≥15、CVD ≥8；与算力泳道三色（Nvidia 灰、TPU 蓝、其他品红）正常视力 ΔE ≥10。xAI 的灰色故意低于 dataviz 的彩度下限 0.10（石墨灰，和 Nvidia 灰相差 ΔE 17 / 24）。结果见 qa/palette_report.txt。",
-  "en": "Vendor table: order = Table 2-1 / 3-1 group order = Fig 4-x legend order. group is a groups[].key; groups[].chapter decides which chapter a vendor's models go to (2 = frontier: Table 2-1, Fig 2-1; 3 = Table 3-1, Fig 3-2; chapter 4 takes everything). The three builtin_css=true vendors have colors in the report's own CSS; the rest get <style id=\"data-css\"> from build_tables.py (only when that vendor has a model or timeline event). Run qa/palette_check.py after changing colors. Palette (second version, 2026-11-22): the three frontier colors are unchanged; the other five are xAI graphite, Meta deep magenta, DeepSeek sky blue (deep teal in dark mode), Moonshot violet and Zhipu deep brick red, checked across all 8 vendors pairwise with the dataviz validator in both themes: normal-vision ΔE ≥12 and CVD ΔE ≥6 for every pair, adjacent pairs in vendor order ≥15 / ≥8, and normal-vision ΔE ≥10 against the three compute-row colors (Nvidia gray, TPU blue, other magenta). xAI's graphite is deliberately below the dataviz chroma floor of 0.10 (ΔE 17 / 24 from the Nvidia gray). See qa/palette_report.txt."
+  "zh": "厂商表：顺序＝表 2-1 / 表 3-1 分组顺序＝图 4-x 图例顺序。group 取 groups[].key，groups[].chapter 决定厂商的模型进哪一章（2＝前沿：表 2-1、图 2-1；3＝表 3-1、图 3-2；第 4 章取全部）。颜色（2026-11-22 第三版，官方品牌色系）：规则是「官方色优先，撞了取官方辅色，最后才派生」，每家只从 research/2026-11-22-brand-colors.json 里自己的官方色（公司主色 / 辅色 / 产品主色 / 产品辅色）选，组合搜索让 8 家两两最差的一对尽量大；color_src 写每个颜色的出处类型，derived=true 表示非官方派生色（现在是 xAI、智谱两家）。仍然撞色的对靠图里每行的「品牌色小方块 + 名字」区分，见 qa/palette_report.txt。全部 8 家的颜色都由 build_tables.py 写进 <style id=\"data-css\">（前沿三家同时也写在报告原 CSS 里，两处必须一致）。改颜色后跑 qa/palette_check.py。",
+  "en": "Vendor table: order = Table 2-1 / 3-1 group order = Fig 4-x legend order. group is a groups[].key; groups[].chapter decides which chapter a vendor's models go to (2 = frontier: Table 2-1, Fig 2-1; 3 = Table 3-1, Fig 3-2; chapter 4 takes everything). Colors (third version, 2026-11-22, official brand palettes): the rule is \"official colors first, an official secondary when they collide, a derived color only as a last resort\". Each vendor picks only from its own official colors in research/2026-11-22-brand-colors.json (company primary / secondary, product primary / secondary), and a combinatorial search maximizes the worst pair among the 8. color_src records where each color comes from; derived=true marks a non-official derived color (currently xAI and Zhipu). Pairs that still collide are told apart by the \"brand swatch + name\" on every row; see qa/palette_report.txt. build_tables.py writes all 8 vendors' colors into <style id=\"data-css\"> (the three frontier colors also sit in the report's own CSS; the two must match). Run qa/palette_check.py after changing colors."
  },
  "groups": [
   {
@@ -48,14 +48,25 @@
    "product": "Gemini",
    "group": "frontier",
    "css_var": "--g",
-   "light": "#2a78d6",
-   "dark": "#3987e5",
+   "light": "#4285F4",
+   "dark": "#4285F4",
    "legend_tip": {
     "zh": "Google Gemini 4 系列。悬停只看这一家。",
     "en": "Google Gemini 4 family. Hover to show this vendor only."
    },
    "t22_class": "vg",
-   "builtin_css": true
+   "builtin_css": true,
+   "color_src": {
+    "light": {
+     "zh": "官方公司主色（Google 蓝，Gemini 同色）",
+     "en": "Official company primary (Google blue, shared by Gemini)"
+    },
+    "dark": {
+     "zh": "官方公司主色（Google 蓝，Gemini 同色）",
+     "en": "Official company primary (Google blue, shared by Gemini)"
+    }
+   },
+   "derived": false
   },
   {
    "key": "anthropic",
@@ -63,14 +74,25 @@
    "product": "Claude",
    "group": "frontier",
    "css_var": "--a",
-   "light": "#eb6834",
-   "dark": "#d95926",
+   "light": "#D97757",
+   "dark": "#D97757",
    "legend_tip": {
     "zh": "Anthropic Claude 系列。悬停只看这一家。",
     "en": "Anthropic Claude family. Hover to show this vendor only."
    },
    "t22_class": "va",
-   "builtin_css": true
+   "builtin_css": true,
+   "color_src": {
+    "light": {
+     "zh": "官方公司主色（clay）",
+     "en": "Official company primary (clay)"
+    },
+    "dark": {
+     "zh": "官方公司主色（clay）",
+     "en": "Official company primary (clay)"
+    }
+   },
+   "derived": false
   },
   {
    "key": "openai",
@@ -78,14 +100,25 @@
    "product": "ChatGPT / GPT",
    "group": "frontier",
    "css_var": "--o",
-   "light": "#1baf7a",
-   "dark": "#199e70",
+   "light": "#000000",
+   "dark": "#FFFFFF",
    "legend_tip": {
     "zh": "OpenAI GPT 系列。悬停只看这一家。",
     "en": "OpenAI GPT family. Hover to show this vendor only."
    },
    "t22_class": "vo",
-   "builtin_css": true
+   "builtin_css": true,
+   "color_src": {
+    "light": {
+     "zh": "官方公司主色（黑）",
+     "en": "Official company primary (black)"
+    },
+    "dark": {
+     "zh": "官方辅色（白）：深色底上看不见黑色",
+     "en": "Official secondary (white): black is invisible on the dark background"
+    }
+   },
+   "derived": false
   },
   {
    "key": "xai",
@@ -93,14 +126,25 @@
    "product": "Grok",
    "group": "bigtech",
    "css_var": "--xa",
-   "light": "#817376",
-   "dark": "#796a6e",
+   "light": "#B7B7B7",
+   "dark": "#7A7A7A",
    "legend_tip": {
     "zh": "xAI Grok 系列。悬停只看这一家。",
     "en": "xAI Grok family. Hover to show this vendor only."
    },
    "t22_class": "vx",
-   "builtin_css": false
+   "builtin_css": false,
+   "color_src": {
+    "light": {
+     "zh": "非官方，派生：中性浅灰（深色主题用中灰）。官方只有黑、白（与 OpenAI 撞色）和界面蓝 #1084FE（与 Google 等蓝色撞色）；灰度和智谱、Nvidia 算力灰都拉开",
+     "en": "Not official, derived: a light neutral gray (mid gray in dark mode). The official colors are black and white (collide with OpenAI) and the UI blue #1084FE (collides with Google and the other blues); the gray level is kept apart from Zhipu and from the Nvidia compute gray"
+    },
+    "dark": {
+     "zh": "非官方，派生：中性浅灰（深色主题用中灰）。官方只有黑、白（与 OpenAI 撞色）和界面蓝 #1084FE（与 Google 等蓝色撞色）；灰度和智谱、Nvidia 算力灰都拉开",
+     "en": "Not official, derived: a light neutral gray (mid gray in dark mode). The official colors are black and white (collide with OpenAI) and the UI blue #1084FE (collides with Google and the other blues); the gray level is kept apart from Zhipu and from the Nvidia compute gray"
+    }
+   },
+   "derived": true
   },
   {
    "key": "meta",
@@ -108,14 +152,25 @@
    "product": "Muse",
    "group": "bigtech",
    "css_var": "--me",
-   "light": "#6f3b72",
-   "dark": "#b37bb6",
+   "light": "#0064E0",
+   "dark": "#0064E0",
    "legend_tip": {
     "zh": "Meta Muse 系列。悬停只看这一家。",
     "en": "Meta Muse family. Hover to show this vendor only."
    },
    "t22_class": "vm",
-   "builtin_css": false
+   "builtin_css": false,
+   "color_src": {
+    "light": {
+     "zh": "官方公司主色（Meta 蓝）。辅色 #0040DC 能和 Google 拉开一点，但它只出自第三方图标、未经 Meta 核实，深色底上对比度也只有 2.3，所以不用",
+     "en": "Official company primary (Meta blue). The secondary #0040DC would separate a little more from Google, but it comes only from a third-party icon, is unverified by Meta and has only 2.3:1 contrast on the dark background, so it is not used"
+    },
+    "dark": {
+     "zh": "官方公司主色（Meta 蓝）。辅色 #0040DC 能和 Google 拉开一点，但它只出自第三方图标、未经 Meta 核实，深色底上对比度也只有 2.3，所以不用",
+     "en": "Official company primary (Meta blue). The secondary #0040DC would separate a little more from Google, but it comes only from a third-party icon, is unverified by Meta and has only 2.3:1 contrast on the dark background, so it is not used"
+    }
+   },
+   "derived": false
   },
   {
    "key": "deepseek",
@@ -123,14 +178,25 @@
    "product": "DeepSeek",
    "group": "open",
    "css_var": "--ds",
-   "light": "#5eb7e3",
-   "dark": "#00739c",
+   "light": "#73A3D2",
+   "dark": "#73A3D2",
    "legend_tip": {
     "zh": "DeepSeek 系列。悬停只看这一家。",
     "en": "DeepSeek family. Hover to show this vendor only."
    },
    "t22_class": "vd",
-   "builtin_css": false
+   "builtin_css": false,
+   "color_src": {
+    "light": {
+     "zh": "官方辅色（--ds-color-brand-light-reverse）。主色 #4D6BFE 和 Google 蓝撞色",
+     "en": "Official secondary (--ds-color-brand-light-reverse). The primary #4D6BFE collides with Google blue"
+    },
+    "dark": {
+     "zh": "官方辅色（--ds-color-brand-light-reverse）。主色 #4D6BFE 和 Google 蓝撞色",
+     "en": "Official secondary (--ds-color-brand-light-reverse). The primary #4D6BFE collides with Google blue"
+    }
+   },
+   "derived": false
   },
   {
    "key": "moonshot",
@@ -138,14 +204,25 @@
    "product": "Kimi",
    "group": "open",
    "css_var": "--ms",
-   "light": "#9d80f6",
-   "dark": "#6745b6",
+   "light": "#002F5B",
+   "dark": "#00F6FF",
    "legend_tip": {
     "zh": "Moonshot Kimi 系列。悬停只看这一家。",
     "en": "Moonshot Kimi family. Hover to show this vendor only."
    },
    "t22_class": "vk",
-   "builtin_css": false
+   "builtin_css": false,
+   "color_src": {
+    "light": {
+     "zh": "官方产品辅色（Kimi 品牌手册的深海军蓝）。产品主色 #007CFF 和 Google、Meta 撞色",
+     "en": "Official product secondary (navy from the Kimi brand book). The product primary #007CFF collides with Google and Meta"
+    },
+    "dark": {
+     "zh": "官方产品辅色（Kimi 青 #00F6FF）：深色底上海军蓝看不清，取同一份手册里更亮的",
+     "en": "Official product secondary (Kimi cyan #00F6FF): navy is unreadable on the dark background, so the brighter swatch from the same brand book is used"
+    }
+   },
+   "derived": false
   },
   {
    "key": "zhipu",
@@ -153,14 +230,25 @@
    "product": "GLM",
    "group": "open",
    "css_var": "--zp",
-   "light": "#a72725",
-   "dark": "#aa2b28",
+   "light": "#747474",
+   "dark": "#525252",
    "legend_tip": {
     "zh": "智谱 GLM 系列。悬停只看这一家。",
     "en": "Zhipu GLM family. Hover to show this vendor only."
    },
    "t22_class": "vz",
-   "builtin_css": false
+   "builtin_css": false,
+   "color_src": {
+    "light": {
+     "zh": "非官方，派生：把官方主色 #141618（近黑）提亮成石墨灰。原色与 OpenAI 撞色；另一个官方色 #0B7FFF 与 Google 等蓝色撞色；灰度和 xAI、Nvidia 算力灰都拉开",
+     "en": "Not official, derived: the official primary #141618 (near-black) lightened to graphite. The original collides with OpenAI; the other official color, #0B7FFF, collides with Google and the other blues; the gray level is kept apart from xAI and from the Nvidia compute gray"
+    },
+    "dark": {
+     "zh": "非官方，派生：把官方主色 #141618（近黑）提亮成石墨灰。原色与 OpenAI 撞色；另一个官方色 #0B7FFF 与 Google 等蓝色撞色；灰度和 xAI、Nvidia 算力灰都拉开",
+     "en": "Not official, derived: the official primary #141618 (near-black) lightened to graphite. The original collides with OpenAI; the other official color, #0B7FFF, collides with Google and the other blues; the gray level is kept apart from xAI and from the Nvidia compute gray"
+    }
+   },
+   "derived": true
   }
  ],
  "timeline_lanes": [
@@ -222,8 +310,8 @@
     "zh": "算力泳道 TPU，与 Google 同色（compute/build.py 管）",
     "en": "Compute row TPU, same color as Google (owned by compute/build.py)"
    },
-   "light": "#2a78d6",
-   "dark": "#3987e5"
+   "light": "#4285F4",
+   "dark": "#4285F4"
   },
   {
    "key": "other",
