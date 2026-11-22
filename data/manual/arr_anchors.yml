@@ -4,6 +4,7 @@
 #   projected_rev    —— 全年预测（仅展示，不入拟合）
 #   reported_rev     —— 事后披露的实际收入（仅展示，不入拟合）
 # 每条必填：company / date / value_usd / metric / source_url；note/confidence 选填。
+# note 含中文时必须同时给 note_en（页面英文模式显示；tests/test_manual_data.py 校验）。
 # 初始数据 bootstrap 自 Epoch AI ai_companies_revenue_reports.csv（2026-07-12，CC-BY），
 # 仅收 Full company 口径；后续新披露直接手工追加。
 anchors:
@@ -69,6 +70,7 @@ anchors:
   metric: run_rate_arr
   source_url: https://www.bloomberg.com/news/articles/2025-07-29/anthropic-nears-deal-to-raise-funding-at-170-billion-valuation
   note: July 2025 5B | ARR 口径
+  note_en: "July 2025 5B | ARR basis"
   confidence: likely
 - company: anthropic
   date: '2025-10-21'
@@ -132,6 +134,7 @@ anchors:
   metric: third_party_est
   source_url: https://www.yipitdata.com/
   note: YipitData estimate as of 2026-07-12 79B（私有订阅口径，无公开链接）
+  note_en: "YipitData estimate as of 2026-07-12 79B (private subscription data, no public link)"
   confidence: likely
 - company: anthropic
   date: '2026-07-31'
@@ -139,6 +142,7 @@ anchors:
   metric: run_rate_arr
   source_url: https://www.bloomberg.com/news/articles/2026-08-17/anthropic-revenue-run-rate-surpasses-65-billion-ahead-of-ipo
   note: end-July 2026 65B｜公司向投资者定期更新口径；同文披露 Q2 初步收入 11.5B（去年同期 787M）
+  note_en: "end-July 2026 65B | figure from the company's regular investor update; same report gives preliminary Q2 revenue of 11.5B (787M a year earlier)"
   confidence: confident
 - company: anthropic
   date: '2026-09-30'
@@ -146,6 +150,7 @@ anchors:
   metric: run_rate_arr
   source_url: https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm
   note: end-Sep 2026 ~71B｜推导值：S-1/A No.2 称 10-31 的 ~81B「up $10 billion from September 30, 2026」，文件未单列 9-30 数字
+  note_en: "end-Sep 2026 ~71B | derived: S-1/A No.2 says the ~81B at 10-31 was 'up $10 billion from September 30, 2026'; the filing does not state the 9-30 figure itself"
   confidence: likely
 - company: anthropic
   date: '2026-10-31'
@@ -153,6 +158,7 @@ anchors:
   metric: run_rate_arr
   source_url: https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm
   note: end-Oct 2026 ~81B｜S-1/A No.2（2026-11-10 提交）原文 Run-Rate Revenue；口径＝近 28 天消耗型收入 ×13 + 月订阅 ×12，与此前媒体口径可能略有差异；同文 Q3 收入 16.96B、前九个月 33.2B
+  note_en: "end-Oct 2026 ~81B | S-1/A No.2 (filed 2026-11-10), 'Run-Rate Revenue'; defined as trailing-28-day consumption revenue x13 plus monthly subscriptions x12, which may differ slightly from earlier press figures; same filing: Q3 revenue 16.96B, nine-month revenue 33.2B"
   confidence: confident
 - company: openai
   date: '2022-12-31'
@@ -216,6 +222,7 @@ anchors:
   metric: run_rate_arr
   source_url: https://www.wsj.com/tech/ai/united-arab-emirates-fund-in-talks-to-invest-in-openai-fd4e4977?
   note: Sep 2024 4B | ARR 口径
+  note_en: "Sep 2024 4B | ARR basis"
   confidence: likely
 - company: openai
   date: '2024-12-31'
@@ -223,6 +230,7 @@ anchors:
   metric: run_rate_arr
   source_url: https://www.cnbc.com/2025/06/09/openai-hits-10-billion-in-annualized-revenue-fueled-by-chatgpt-growth.html
   note: Dec 2024 5.5B | ARR 口径
+  note_en: "Dec 2024 5.5B | ARR basis"
   confidence: likely
 - company: openai
   date: '2024-12-31'
@@ -237,6 +245,7 @@ anchors:
   metric: run_rate_arr
   source_url: https://www.cnbc.com/2025/06/09/openai-hits-10-billion-in-annualized-revenue-fueled-by-chatgpt-growth.html
   note: June 2025 10B | ARR 口径
+  note_en: "June 2025 10B | ARR basis"
   confidence: likely
 - company: openai
   date: '2025-07-30'
@@ -251,6 +260,7 @@ anchors:
   metric: run_rate_arr
   source_url: https://www.nytimes.com/2025/08/01/business/dealbook/openai-ai-mega-funding-deal.html
   note: August 2025 13B | ARR 口径
+  note_en: "August 2025 13B | ARR basis"
   confidence: likely
 - company: openai
   date: '2025-12-18'
@@ -293,6 +303,7 @@ anchors:
   metric: third_party_est
   source_url: https://www.yipitdata.com/
   note: YipitData estimate as of 2026-07-12 50B（私有订阅口径，无公开链接）
+  note_en: "YipitData estimate as of 2026-07-12 50B (private subscription data, no public link)"
   confidence: likely
 - company: openai
   date: '2026-07-31'
@@ -300,6 +311,7 @@ anchors:
   metric: run_rate_arr
   source_url: https://www.bloomberg.com/news/articles/2026-08-13/openai-s-revenue-run-rate-tops-40-billion-ahead-of-ipo
   note: end-July 2026 >40B｜Brockman 内部通告称 7 月 ARR 环比 +20%+，动力为 GPT-5.6 系列 / ChatGPT Work / Codex；同文 Friar 称 2025 年末 >20B；Bloomberg 提示与 Anthropic 的计算口径可能不同
+  note_en: "end-July 2026 >40B | Brockman's internal memo cited 20%+ month-over-month ARR growth in July, driven by the GPT-5.6 family / ChatGPT Work / Codex; Friar said >20B at end-2025 in the same report; Bloomberg notes the calculation may differ from Anthropic's"
   confidence: likely
 - company: openai
   date: '2026-09-30'
@@ -307,4 +319,5 @@ anchors:
   metric: run_rate_arr
   source_url: https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html
   note: end-Sep 2026 ~50B｜公司向投资者口径（FT 首报、CNBC 证实）；净额口径（只计自有分成）。同期 Axios 报的 ~68–70B 是加回合作伙伴毛收入的另一口径，未收为锚点
+  note_en: "end-Sep 2026 ~50B | company-to-investor figure (first reported by the FT, confirmed by CNBC); net basis (own share only). The ~68-70B reported by Axios at the same time adds back partner gross revenue - a different basis, not used as an anchor"
   confidence: likely

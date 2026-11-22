@@ -88,6 +88,9 @@ button { font: inherit; color: inherit; }
   background: transparent; color: var(--text-2); cursor: pointer; font-size: 12px;
 }
 .tb-btn:hover { background: var(--surface-2); color: var(--text); }
+.tb-link { display: inline-flex; align-items: center; text-decoration: none; }
+:root[data-lang="zh"] .when-en, :root[data-lang="en"] .when-zh,
+:root[data-theme="light"] .when-dark, :root[data-theme="dark"] .when-light { display: none; }
 #back-btn { color: var(--accent); font-weight: 600; border-right: 1px solid var(--border); }
 #back-btn[hidden] { display: none; }
 .more { position: relative; }
@@ -106,8 +109,6 @@ button { font: inherit; color: inherit; }
 }
 .seg button:first-child { border-left: 0; }
 .seg button[aria-pressed="true"] { background: var(--text); color: var(--surface); }
-.menu-link { display: block; padding: 5px 10px; color: var(--text-2); text-decoration: none; border-top: 1px solid var(--border); margin-top: 4px; }
-.menu-link:hover { background: var(--surface-2); color: var(--text); }
 
 /* ---- 左侧目录 ---- */
 #toc {
@@ -366,6 +367,7 @@ main > * { max-width: var(--page-w); margin-left: auto; margin-right: auto; }
   main { padding: 0 10px 40px; }
   .grid2 { grid-template-columns: 1fr; }
   .topnav, .build-ts { display: none; }
+  .topbar { gap: 0; }
   .panel-body.flush { overflow-x: auto; }
   .data-table thead th { position: static; }
   .chart-box, .chart-box.tall { height: 260px; }

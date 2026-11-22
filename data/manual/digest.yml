@@ -1,22 +1,33 @@
-# 每日速读（面板 00，agent 每日维护，人工可改）。只追加当天条目，不改历史。
-# 每天 3–6 条，每条：tag（ARR / Token / GPU / DC / Quote / Model 之一）+ text（中文，一两句，
-# 带具体数字与时点）+ source_url（一手或可靠媒体，必填；本站自有数据写站内锚点如 "#p-gpu_table"）。
+# 每日速读（面板 00，每日更新任务维护，人工可改）。只追加当天条目，不改历史。
+# 每天 3–6 条，每条：tag（ARR / Token / GPU / DC / Quote / Model 之一）+ text.zh + text.en
+# （一两句，带具体数字与时点；两种语言都必填，build 会校验）+ source_url（必填；一手或可靠媒体，
+# 本站自有数据写站内锚点如 "#p-gpu_table"）。
 # 收录门槛：今天才知道的增量信息；数字必须在来源里能核对到；没有新信息就不写当天条目。
 digest:
   - date: 2026-11-22
     items:
       - tag: ARR
-        text: Anthropic 招股书修订稿（S-1/A No.2，11-10 提交）首次给出一手口径：截至 10-31 年化运行率约 810 亿美元，较 9-30 增加 100 亿；Q3 单季收入 169.6 亿，前九个月 332 亿。本站锚点由 7-31 的 650 亿更新到 10-31 的 810 亿。
+        text:
+          zh: Anthropic 招股书修订稿（S-1/A No.2，11-10 提交）首次给出一手口径：截至 10-31 年化运行率约 810 亿美元，较 9-30 增加 100 亿；Q3 单季收入 169.6 亿，前九个月 332 亿。本站锚点由 7-31 的 650 亿更新到 10-31 的 810 亿。
+          en: "Anthropic's amended prospectus (S-1/A No.2, filed Nov 10) gives the first primary-source figure: run-rate revenue of about $81B as of Oct 31, up $10B from Sep 30; Q3 revenue $16.96B, nine-month revenue $33.2B. This site's anchor moves from $65B (Jul 31) to $81B (Oct 31)."
         source_url: https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm
       - tag: ARR
-        text: OpenAI 向投资者披露 9 月底年化收入约 500 亿美元（7 月底为 400 亿以上）；同期 Axios 报的约 700 亿是加回合作伙伴毛收入的另一口径，两者不能相加也不能当作增长。
+        text:
+          zh: OpenAI 向投资者披露 9 月底年化收入约 500 亿美元（7 月底为 400 亿以上）；同期 Axios 报的约 700 亿是加回合作伙伴毛收入的另一口径，两者不能相加也不能当作增长。
+          en: "OpenAI told investors its annualized revenue was about $50B at the end of September (above $40B at end-July). The roughly $70B Axios reported at the same time adds back partner gross revenue - a different basis, neither additive nor evidence of growth."
         source_url: https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html
       - tag: ARR
-        text: 估算方法修正：外推改为从最近披露值出发。此前按全历史曲线外推，Anthropic 今日估算一度到 1542 亿；更新锚点并校准后为约 934 亿（最近披露 810 亿之后 22 天）。
+        text:
+          zh: 估算方法修正：外推改为从最近披露值出发。此前按全历史曲线外推，Anthropic 今日估算一度到 1542 亿；更新锚点并校准后为约 934 亿（最近披露 810 亿之后 22 天）。
+          en: "Method fix: extrapolation now starts from the latest disclosed value. Extrapolating along the full-history curve had pushed Anthropic's estimate to $154.2B; with new anchors and level calibration it is about $93.4B (22 days after the $81B disclosure)."
         source_url: "#p-arr_anchors"
       - tag: Quote
-        text: Alphabet Q3 财报：自家模型 API 每分钟处理近 320 亿 token，比上季多 40%，是一年前的四倍多。
+        text:
+          zh: Alphabet Q3 财报：自家模型 API 每分钟处理近 320 亿 token，比上季多 40%，是一年前的四倍多。
+          en: "Alphabet Q3 earnings: its first-party model APIs now process nearly 32 billion tokens per minute, 40% more than last quarter and over four times a year ago."
         source_url: https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/
       - tag: GPU
-        text: 租价面板由 5 个卡型扩到 16 个（新增 B300、H200 NVL、H100 PCIe、L40S、L4、RTX PRO 6000、RTX 6000 Ada、RTX A6000、RTX 4090、RTX 5080、RTX 3090）。首日读数：B300 中位 $10.10/小时，比 B200（$8.13）贵约 24%。
+        text:
+          zh: 租价面板由 5 个卡型扩到 16 个（新增 B300、H200 NVL、H100 PCIe、L40S、L4、RTX PRO 6000、RTX 6000 Ada、RTX A6000、RTX 4090、RTX 5080、RTX 3090）。首日读数：B300 中位 $10.10/小时，比 B200（$8.13）贵约 24%。
+          en: "The rental panel grows from 5 GPU models to 16 (adding B300, H200 NVL, H100 PCIe, L40S, L4, RTX PRO 6000, RTX 6000 Ada, RTX A6000, RTX 4090, RTX 5080, RTX 3090). First-day reading: B300 median $10.10/hr, about 24% above B200 ($8.13)."
         source_url: "#p-gpu_table"

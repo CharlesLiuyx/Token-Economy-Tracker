@@ -5,7 +5,7 @@
       {% for day in digest %}
       <li class="digest-day">{{ day.date }}{% if day.date == today %} <span class="tag tag-new">NEW</span>{% endif %}</li>
       {% for it in day['items'] %}
-      <li><span class="tag">{{ it.tag | e }}</span>{{ it.text | e }}{% if it.url %}<a class="src" href="{{ it.url | e }}" target="_blank" rel="noopener noreferrer">source ↗</a>{% endif %}</li>
+      <li><span class="tag">{{ it.tag | e }}</span><span data-zh="{{ it.zh | e }}" data-en="{{ it.en | e }}">{{ it.zh | e }}</span>{% if it.url %}<a class="src" href="{{ it.url | e }}" target="_blank" rel="noopener noreferrer" data-i18n="panel.digest.source">{{ t('panel.digest.source') | e }}</a>{% endif %}</li>
       {% endfor %}
       {% endfor %}
     </ul>

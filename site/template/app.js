@@ -1,5 +1,5 @@
 // 前端运行时（约定见 docs/frontend.md）。分块：
-//   偏好（主题/宽度/字号/语言/术语，localStorage）· i18n · 单例悬停提示 · 术语自动标注 ·
+//   偏好（顶栏：语言 / 主题；更多菜单：宽度 / 字号 / 术语；均存 localStorage）· i18n · 单例悬停提示 · 术语自动标注 ·
 //   左侧目录（章节/资产 + 收放 + scrollspy）· 锚点跳转（5% 落点 + 高亮 + 返回栈）·
 //   表头吸顶测量 · 表格排序 · Chart.js 时序图（renderPanel）· ARR 跳动计数器。
 // 性能约定：滚动帧内零几何查询（位置一次性缓存，只在布局变化时重算）；scroll/resize
@@ -47,6 +47,10 @@
     });
     document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
       el.innerHTML = msgFor(el, el.getAttribute("data-i18n-html"));
+    });
+    // 数据内容的双语：元素带 data-zh / data-en（每日速读、锚点备注、观点场合）
+    document.querySelectorAll("[data-zh]").forEach(function (el) {
+      el.textContent = el.getAttribute("data-" + lang) || el.getAttribute("data-zh");
     });
     document.querySelectorAll("[data-i18n-tip]").forEach(function (el) {
       el.setAttribute("data-tip", msgFor(el, el.getAttribute("data-i18n-tip")));
@@ -624,16 +628,26 @@
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") { moreMenu.hidden = true; hideTip(); }
   });
+  $("lang-btn").addEventListener("click", function () {
+    var next = lang === "zh" ? "en" : "zh";
+    store("lang", next);
+    setLang(next);
+  });
+  $("theme-btn").addEventListener("click", function () {
+    var next = root.dataset.theme === "dark" ? "light" : "dark";
+    store("theme", next);
+    root.dataset.theme = next;
+    renderAll();          // 主题不改布局，只重注入图表颜色
+  });
   moreMenu.addEventListener("click", function (e) {
     var b = e.target.closest(".seg button");
     if (!b) return;
     var pref = b.parentNode.getAttribute("data-pref"), v = b.getAttribute("data-v");
     store(pref, v);
-    if (pref === "lang") { setLang(v); syncSegs(); return; }
     root.dataset[pref] = v;
     syncSegs();
-    if (pref === "theme" || pref === "fs") renderAll();   // 主题不改布局，但图表颜色要重注入
-    if (pref !== "theme" && pref !== "terms") queueRelayout();
+    if (pref === "fs") renderAll();
+    if (pref !== "terms") queueRelayout();
   });
 
   // ================= 启动 =================

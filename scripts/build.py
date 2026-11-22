@@ -298,7 +298,8 @@ def anchor_rows(arr: dict, top_n: int = 14) -> list[dict]:
             host = re.sub(r"^www\.", "", re.sub(r"^https?://([^/]+).*$", r"\1", url))
             rows.append({"company": company, "date": str(a["date"]), "value_b": a["value_usd"] / 1e9,
                          "metric": a["metric"], "confidence": a.get("confidence") or "likely",
-                         "url": url, "host": host, "note": a.get("note") or ""})
+                         "url": url, "host": host, "note": a.get("note") or "",
+                         "note_en": a.get("note_en") or a.get("note") or ""})
     rows.sort(key=lambda r: (r["date"], r["value_b"]), reverse=True)
     return rows[:top_n]
 
@@ -623,9 +624,12 @@ def load_digest(limit_days: int = 7) -> list[dict]:
     for d in sorted(days, key=lambda d: str(d["date"]), reverse=True)[:limit_days]:
         items = []
         for it in d.get("items") or []:
-            if not it.get("text") or not it.get("tag"):
-                raise ValueError(f"digest.yml {d['date']}: 条目缺 tag/text: {it}")
-            items.append({"tag": it["tag"], "text": it["text"], "url": it.get("source_url") or ""})
+            text = it.get("text") or {}
+            if not it.get("tag") or not isinstance(text, dict) or not text.get("zh") or not text.get("en"):
+                raise ValueError(f"digest.yml {d['date']}: 条目需要 tag 与 text.zh / text.en: {it}")
+            if not it.get("source_url"):
+                raise ValueError(f"digest.yml {d['date']}: 条目缺 source_url: {it}")
+            items.append({"tag": it["tag"], "zh": text["zh"], "en": text["en"], "url": it["source_url"]})
         out.append({"date": str(d["date"]), "items": items})
     return out
 

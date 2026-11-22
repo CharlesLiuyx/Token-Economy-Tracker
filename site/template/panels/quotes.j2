@@ -5,8 +5,8 @@
       {% for q in quotes %}
       <li>
         <p class="quote-text">“{{ q.quote | e }}”</p>
-        <p class="quote-meta">— {{ q.speaker | e }}{% if q.role %}，{{ q.role | e }}{% endif %}
-          · {{ q.date }}{% if q.source_url %} · <a href="{{ q.source_url | e }}" target="_blank" rel="noopener noreferrer">source ↗</a>{% endif %}</p>
+        <p class="quote-meta">— {{ q.speaker | e }}{% if q.role %} · <span data-zh="{{ q.role | e }}" data-en="{{ (q.role_en or q.role) | e }}">{{ q.role | e }}</span>{% endif %}
+          · {{ q.date }}{% if q.source_url %} · <a href="{{ q.source_url | e }}" target="_blank" rel="noopener noreferrer" data-i18n="panel.digest.source">{{ t('panel.digest.source') | e }}</a>{% endif %}</p>
       </li>
       {% endfor %}
     </ul>

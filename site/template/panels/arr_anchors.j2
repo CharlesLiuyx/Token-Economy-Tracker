@@ -26,7 +26,7 @@
           <td class="nowrap" data-v="{{ a.metric }}" data-i18n="{{ metric_keys[a.metric] }}">{{ t(metric_keys[a.metric]) | e }}</td>
           <td class="nowrap conf" data-i18n="{{ ck }}">{{ t(ck) | e }}</td>
           <td class="nowrap"><a href="{{ a.url | e }}" target="_blank" rel="noopener noreferrer">{{ a.host | e }} ↗</a></td>
-          <td>{{ a.note | e }}</td>
+          <td data-zh="{{ a.note | e }}" data-en="{{ a.note_en | e }}">{{ a.note | e }}</td>
         </tr>
       {% endfor %}
       </tbody>

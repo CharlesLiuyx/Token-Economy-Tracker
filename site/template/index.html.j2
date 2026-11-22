@@ -45,15 +45,14 @@
   <button id="back-btn" class="tb-btn" type="button" hidden
           data-i18n="ui.back" data-i18n-args='{"n": 0}'>{{ t('ui.back', n=0) | e }}</button>
   <span class="build-ts">BUILD {{ build_ts }}</span>
+  <button id="lang-btn" class="tb-btn" type="button" data-i18n-tip="ui.lang_tip"><span class="when-zh">EN</span><span class="when-en">中文</span></button>
+  <button id="theme-btn" class="tb-btn" type="button" data-i18n-tip="ui.theme_tip"><span class="when-light" data-i18n="ui.theme.dark">{{ t('ui.theme.dark') | e }}</span><span class="when-dark" data-i18n="ui.theme.light">{{ t('ui.theme.light') | e }}</span></button>
+  <a class="tb-btn tb-link" href="https://github.com/CharlesLiuyx/Token-Economy-Tracker"
+     target="_blank" rel="noopener noreferrer" data-i18n-tip="ui.github">GitHub ↗</a>
   <div class="more">
     <button id="more-btn" class="tb-btn" type="button" aria-haspopup="true" aria-expanded="false"
             data-i18n="ui.more">{{ t('ui.more') | e }}</button>
     <div id="more-menu" class="more-menu" hidden>
-      <div class="menu-row"><span data-i18n="ui.theme">{{ t('ui.theme') | e }}</span>
-        <div class="seg" data-pref="theme">
-          <button type="button" data-v="light" data-i18n="ui.theme.light">{{ t('ui.theme.light') | e }}</button>
-          <button type="button" data-v="dark" data-i18n="ui.theme.dark">{{ t('ui.theme.dark') | e }}</button>
-        </div></div>
       <div class="menu-row"><span data-i18n="ui.width">{{ t('ui.width') | e }}</span>
         <div class="seg" data-pref="width">
           <button type="button" data-v="normal" data-i18n="ui.width.normal">{{ t('ui.width.normal') | e }}</button>
@@ -66,18 +65,11 @@
           <button type="button" data-v="m" data-i18n="ui.fs.m">{{ t('ui.fs.m') | e }}</button>
           <button type="button" data-v="l" data-i18n="ui.fs.l">{{ t('ui.fs.l') | e }}</button>
         </div></div>
-      <div class="menu-row"><span data-i18n="ui.lang">{{ t('ui.lang') | e }}</span>
-        <div class="seg" data-pref="lang">
-          <button type="button" data-v="zh">中文</button>
-          <button type="button" data-v="en">EN</button>
-        </div></div>
       <div class="menu-row"><span data-i18n="ui.terms">{{ t('ui.terms') | e }}</span>
         <div class="seg" data-pref="terms">
           <button type="button" data-v="on" data-i18n="ui.on">{{ t('ui.on') | e }}</button>
           <button type="button" data-v="off" data-i18n="ui.off">{{ t('ui.off') | e }}</button>
         </div></div>
-      <a class="menu-link" href="https://github.com/CharlesLiuyx/Token-Economy-Tracker"
-         target="_blank" rel="noopener noreferrer" data-i18n="ui.github">{{ t('ui.github') | e }}</a>
     </div>
   </div>
 </header>

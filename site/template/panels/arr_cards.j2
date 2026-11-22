@@ -11,7 +11,7 @@
 {% for c in arr_cards %}
   <section class="panel arr-card company-{{ c.company }}" id="p-arr-{{ c.company }}">
     <header class="panel-head">
-      <h3>{{ c.display }} — estimated ARR</h3>
+      <h3 data-i18n="panel.arr.card_title" data-i18n-args='{{ {"name": c.display} | tojson }}'>{{ t('panel.arr.card_title', name=c.display) | e }}</h3>
       <span class="est-badge" data-i18n-tip="panel.arr.est_title"
             data-i18n="panel.arr.est_badge">{{ t('panel.arr.est_badge') | e }}</span>
       <span class="conf" data-i18n-tip="panel.arr.conf_tip"

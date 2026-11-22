@@ -244,9 +244,12 @@ chart.dc.h100:
 ui.more:
   zh: 更多 ▾
   en: More ▾
-ui.theme:
-  zh: 主题
-  en: Theme
+ui.theme_tip:
+  zh: 切换浅色 / 深色
+  en: Toggle light / dark
+ui.lang_tip:
+  zh: 切换语言（中文 / English）
+  en: Switch language (中文 / English)
 ui.theme.light:
   zh: 浅色
   en: Light
@@ -277,9 +280,6 @@ ui.fs.m:
 ui.fs.l:
   zh: 大
   en: L
-ui.lang:
-  zh: 语言
-  en: Language
 ui.terms:
   zh: 术语释义
   en: Term hints
@@ -516,3 +516,9 @@ meth.delta:
 meth.manual_sources:
   zh: 人工维护：ARR 披露锚点（<code>data/manual/arr_anchors.yml</code>，逐条带来源链接，见「最近披露一览」）、专家观点与每日速读（每条带一手来源）。
   en: "Hand-curated: ARR disclosure anchors (<code>data/manual/arr_anchors.yml</code>, each with a source link — see the disclosures table), expert quotes and the daily digest (each with a primary source)."
+panel.digest.source:
+  zh: 来源 ↗
+  en: source ↗
+panel.arr.card_title:
+  zh: "{name} — ARR 估算"
+  en: "{name} — estimated ARR"
