@@ -702,9 +702,9 @@ var cmp=(function(){
       for(var j=0;j+1<rs.length;j++){if(rs[j].right+3>rs[j+1].left){q.classList.add('stag');break}}
     });
   }
-  /* fig 2-1 bottom axis: the snapshot label must not collide with the last month tick; fall back to the short label (data-short*) */
-  function fitSnap(){
-    var el=$('#f21 .hl-axis:not(.top) .mt.vm');if(!el)return;
+  /* timeline bottom axes (fig 2-1, 3-2): the snapshot label must not collide with the last month tick; fall back to the short label (data-short*) */
+  function fitSnap(){$$('.hl .hl-axis:not(.top) .mt.vm',main).forEach(fitSnap1)}
+  function fitSnap1(el){
     if(el._h==null){el._h=el.innerHTML;el._tip=el.getAttribute('data-tip')||'';el._tipe=el.getAttribute('data-tip-en')}
     var prev=el.previousElementSibling,ax=el.parentNode;
     function bad(){var a=prev.getBoundingClientRect(),b=el.getBoundingClientRect(),c=ax.getBoundingClientRect();return b.left<a.right+6||b.right>c.right+1||b.left<c.left-1}

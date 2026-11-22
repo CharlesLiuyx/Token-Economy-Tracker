@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """无头 Chromium 检查（playwright）：3 种窗口宽 × 深浅主题 × 中英两种语言，每种都断言并截图。
-断言：JS 报错、页面横向溢出、图内元素越出图框、宽表吸顶克隆与原表头逐列对齐（表 2-1 / 2-2 / 2-3）、
-     图 2-1 节点互不重叠且不越出泳道、语言切换后 <html lang> 正确、表 2-1 行列数、图 3-x 行数。
-截图：每种组合存 top（首屏，含顶栏与语言按钮）、f21、t21（滚到表中间、表头吸顶）、f31。
+断言：JS 报错、页面横向溢出、图内元素越出图框、宽表吸顶克隆与原表头逐列对齐（表 2-1 / 2-2 / 2-3 / 3-1）、
+     时间轴（图 2-1、图 3-2）节点互不重叠且不越出泳道、图 4-4 散点标签互不重叠且不压别的点、不出绘图区、
+     语言切换后 <html lang> 正确、表 2-1 / 3-1 行列数、图 4-x 行数。
+截图：每种组合存 top（首屏，含顶栏与语言按钮）、f21、t21（滚到表中间、表头吸顶）、t31（同）、f32、f41、f44、f45。
 用法：python3 qa/browser_check.py 报告.html 截图目录 [chrome 路径] [--widths 1440,1100,800]
 VM 里没有浏览器时：把报告 stage 到容器里跑（容器有 playwright + google-chrome）。"""
 import json, os, sys
@@ -18,14 +19,26 @@ JS = r'''() => {
  r.lang=document.documentElement.lang; r.title=document.title.slice(0,40);
  r.t21_rows=q('#t21 tbody tr[class^="v-"]').length; r.t21_cols=q('#t21 colgroup col').length; r.t21_th2=q('#t21 thead tr.h2 th').length;
  r.t22_rows=q('#t22 tbody tr:not(.grp)').length;
+ r.t31_rows=q('#t31 tbody tr[class^="v-"]').length; r.t31_cols=q('#t31 colgroup col').length;
+ r.f32_lanes=[...q('#f32 .hl-track')].map(e=>e.getAttribute('data-lane'));
  r.f21_lanes=[...q('#f21 .hl-track')].map(e=>e.getAttribute('data-lane'));
- r.f31_rows=q('#f31 .row[data-key]').length; r.f32_rows=q('#f32 .row[data-key]').length; r.f33_rows=q('#f33 .row[data-key]').length;
+ r.f41_rows=q('#f41 .row[data-key]').length; r.f42_rows=q('#f42 .row[data-key]').length; r.f43_rows=q('#f43 .row[data-key]').length;
+ r.f44_pts=q('#f44 .spt').length; r.f44_hidden=[...q('#f44 .spt .pl.hid')].map(e=>e.textContent); r.f45_rows=q('#f45 .row[data-key]').length;
  if(document.documentElement.scrollWidth>document.documentElement.clientWidth+1) R.push('页面横向溢出 '+document.documentElement.scrollWidth);
  q('figure').forEach(f=>{ if(f.scrollWidth>f.clientWidth+1) R.push(f.id+' 图内横向溢出'); });
- /* 图 2-1：节点不重叠、不越出泳道 */
- q('#f21 .hl-track').forEach((L,i)=>{const lr=tr(L),ps=[...L.querySelectorAll('.pin')].map(tr);
+ /* 图 2-1、图 3-2：节点不重叠、不越出泳道 */
+ q('#f21 .hl-track, #f32 .hl-track').forEach((L,i)=>{const lr=tr(L),ps=[...L.querySelectorAll('.pin')].map(tr);
    ps.forEach((a,j)=>{ if(a.left<lr.left-2||a.right>lr.right+2) R.push('节点越出泳道 '+L.getAttribute('data-lane')+' #'+j);
      ps.slice(j+1).forEach((b,k)=>{ if(a.left<b.right-1&&b.left<a.right-1&&a.top<b.bottom-1&&b.top<a.bottom-1) R.push('节点重叠 '+L.getAttribute('data-lane')+' #'+j+'/'+(j+k+1)); });});});
+ /* 图 4-4：可见标签互不重叠、不压别的点、不出绘图区；点不出绘图区 */
+ const pl=document.querySelector('#f44 .sc-plot');
+ if(pl){const pr=tr(pl),P=[...pl.querySelectorAll('.spt')],D=P.map(p=>tr(p.querySelector('.mark'))),Lb=P.map(p=>p.querySelector('.pl'));
+   const ov=(a,b,m)=>a.left<b.right-m&&b.left<a.right-m&&a.top<b.bottom-m&&b.top<a.bottom-m;
+   D.forEach((d,i)=>{ if(d.left<pr.left-6||d.right>pr.right+6||d.top<pr.top-6||d.bottom>pr.bottom+6) R.push('散点出绘图区 '+Lb[i].textContent); });
+   Lb.forEach((l,i)=>{ if(l.classList.contains('hid'))return; const a=tr(l);
+     if(a.left<pr.left||a.right>pr.right||a.top<pr.top||a.bottom>pr.bottom) R.push('散点标签出绘图区 '+l.textContent);
+     D.forEach((d,j)=>{ if(j!==i&&ov(a,d,0.5)) R.push('散点标签压到别的点 '+l.textContent+' / '+Lb[j].textContent); });
+     Lb.forEach((m,j)=>{ if(j>i&&!m.classList.contains('hid')&&ov(a,tr(m),0.5)) R.push('散点标签重叠 '+l.textContent+' / '+m.textContent); }); });}
  /* 目录、提示框里的语言 */
  const en=document.documentElement.getAttribute('data-lang')==='en';
  if((document.documentElement.lang==='en')!==en) R.push('<html lang> 与 data-lang 不一致');
@@ -51,12 +64,13 @@ with sync_playwright() as p:
                 pg.goto('file://' + F); pg.wait_for_timeout(700)
                 r = pg.evaluate(JS); r['errors'] = errs
                 pg.screenshot(path=os.path.join(OUT, '%s-top.png' % tag))
-                for sel in ('#f21', '#f31'):
+                for sel in ('#f21', '#f32', '#f41', '#f44', '#f45'):
                     el = pg.query_selector(sel); el.scroll_into_view_if_needed(); pg.wait_for_timeout(80)
                     el.screenshot(path=os.path.join(OUT, '%s-%s.png' % (tag, sel[1:])))
-                r['sticky'] = {t: pg.evaluate(ALIGN, t) for t in ('t21', 't22', 't23')}
-                pg.evaluate(ALIGN, 't21'); pg.wait_for_timeout(80)
-                pg.screenshot(path=os.path.join(OUT, '%s-t21.png' % tag))
+                r['sticky'] = {t: pg.evaluate(ALIGN, t) for t in ('t21', 't22', 't23', 't31')}
+                for t in ('t21', 't31'):
+                    pg.evaluate(ALIGN, t); pg.wait_for_timeout(80)
+                    pg.screenshot(path=os.path.join(OUT, '%s-%s.png' % (tag, t)))
                 # 语言按钮：切到另一种语言再切回，<html lang> 跟着变、无报错
                 other = 'en' if lang == 'zh' else 'zh'
                 pg.click('#lang [data-set="lang:%s"]' % other); pg.wait_for_timeout(120)
@@ -66,7 +80,7 @@ with sync_playwright() as p:
                 st_bad = [t for t, v in r['sticky'].items() if not v.get('visible') or v['maxdx'] > 0.5 or abs(v['top'] - v['bar']) > 1]
                 ok = not (r['errors'] or r['errors_layout'] or st_bad or r['switch'][1] != other or r['switch_back'] != lang)
                 bad += not ok
-                print(tag, 'OK' if ok else 'FAIL', r['lang'], 'rows=%d cols=%d' % (r['t21_rows'], r['t21_cols']), r['errors_layout'][:3], errs[:2], 'sticky:', {t: (v.get('maxdx'), v.get('top'), v.get('bar')) for t, v in r['sticky'].items()}, r['switch'])
+                print(tag, 'OK' if ok else 'FAIL', r['lang'], 'rows=%d cols=%d t31=%dx%d f44=%d 隐藏标签=%s' % (r['t21_rows'], r['t21_cols'], r['t31_rows'], r['t31_cols'], r['f44_pts'], r['f44_hidden']), r['errors_layout'][:3], errs[:2], 'sticky:', {t: (v.get('maxdx'), v.get('top'), v.get('bar')) for t, v in r['sticky'].items()}, r['switch'])
                 out[tag] = r; pg.close()
     b.close()
 json.dump(out, open(os.path.join(OUT, 'browser.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

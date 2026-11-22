@@ -16,15 +16,16 @@
 | 路径 | 是什么 |
 |---|---|
 | `大模型发布和 Bench 跟进：前沿 Gemini Claude ChatGPT 大厂 Grok Muse 开源 DeepSeek Kimi GLM.html` | 正式报告（单文件，中英双语） |
-| `data/models.json` | 模型、Bench 列、分数、价格、发布日、时间轴节点、表 2-2、图 3-x 配置、快照日期 |
-| `data/vendors.json` | 厂商表：顺序、颜色、泳道顺序、分组（前沿 / 大厂 / 开源） |
-| `i18n/static.json` | 不属于上面两个文件的全部固定文字：顶栏控件、目录头、各章标题、第 1 章结论、第 4 章、附录手写来源、图 2-1 图注图例、术语表 TERMS、页面 JS 的界面字 |
+| `data/models.json` | 模型、Bench 列、分数、价格、许可证、参数、发布日、时间轴节点、表 2-2、表 3-1 列配置、图 3-2 与图 4-x 配置、快照日期（含第 3 章快照）、第 3 章来源 |
+| `data/vendors.json` | 厂商表：顺序、颜色、泳道顺序、分组（groups：前沿 / 大厂 / 开源，及每组进哪一章） |
+| `i18n/static.json` | 不属于上面两个文件的全部固定文字：顶栏控件、目录头、各章标题、第 1 章结论、第 5 章、附录手写来源、图 2-1 图注图例、术语表 TERMS、页面 JS 的界面字 |
+| `research/` | 加模型前的调研底稿（每份 JSON 带分数、价格、出处与 caveats）和改章裁定 `decisions-ch3.md`。构建不读它；第 3 章数据由 `qa/oneoff/ch3_import.py` 从这里一次性导入 |
 | `bilingual.py` | 两个构建脚本共用：双语输出规则、图 2-1 横轴推导 |
 | `build_tables.py` | 读 data/ 和 i18n/，重写报告里 `<!--data:…-->` 标记之间的内容 |
 | `compute/` | 算力到卡模型（`model.py` → `model.json` → `build.py`），管 `<!--compute:…-->`。口径说明 `compute/decisions.md` |
 | `compute/web/` | Epoch AI 公开数据（两份 CSV）与由它生成的 `findings.json`，见第 1.1 节 |
-| `qa/` | 双语检查、中文等价检查、浏览器检查、换快照日演练、加模型演练、配色校验 |
-| `qa/oneoff/` | 一次性脚本留档（2026-11-22 数据化、双语迁移），不要再跑 |
+| `qa/` | 双语检查、中文等价检查、第 2 章一致性检查、浏览器检查、换快照日演练、加模型 / 加厂商演练、配色校验 |
+| `qa/oneoff/` | 一次性脚本留档（2026-11-22 数据化、双语迁移、第 3 章导入 `ch3_import.py`、改章骨架 `ch34_skeleton.py`），不要再跑 |
 | `requirements.txt` | 可选检查脚本的依赖（构建本身只用标准库） |
 
 ### 1.1 不进仓库的东西（公开仓库）
@@ -37,9 +38,13 @@
 ## 2. 两套构建，各管各的标记
 
 - `build_tables.py` 只改 `<!--data:NAME:start-->…<!--data:NAME:end-->`（JS 里写成 `/*<!--…-->*/`）：
-  - 数据块：`vcss`（新厂商配色）、`topbar`、`h1`、`meta`、`t21hints`、`t21`、`f21hl`（图 2-1 的 `<div class="hl">`，带横轴起点和天数）、`f21lanes`、`f21axis`、`t22hints`、`t22`、`f31`、`f32`、`f33`、`appendix`。
-  - 固定文字块（来自 `i18n/static.json`，名字带 `s-` 前缀）：`s-chrome`（顶栏按钮、语言切换、更多菜单、目录头）、`s-hd-*`（各章标题）、`s-ch1`、`s-ch4`、`s-src`、`s-f21cap` / `s-f21leg1` / `s-f21leg2`（图 2-1 图注与图例）、`s-css`（随语言变的 CSS 文字）、`s-terms`（TERMS / ALIAS / ALIAS_EN）、`s-ui`（I18N 界面字）。
-- `compute/build.py` 只改 `<!--compute:…-->`：图 2-1 顶部刻度、三条算力泳道、图 2-1 的算力图例和「怎么读」、2.3 节（含图 2-2 / 2-3、表 2-3）、算力来源、算力术语、相关 JS。
+  - 数据块：`vcss`（新厂商配色）、`c34css`（第 3、4 章的样式：表 3-1 组标题、图 3-2 泳道小字、分组图例、散点）、`topbar`、`h1`、`meta`、
+    第 2 章 `t21hints`、`t21`、`f21hl`（图 2-1 的 `<div class="hl">`，带横轴起点和天数）、`f21lanes`、`f21axis`、`t22hints`、`t22`；
+    第 3 章 `ch3meta`（章首快照行）、`t31hints`、`t31`、`f32`（整张时间轴）；第 4 章 `f41`…`f45`；附录 `appendix`、`src3`（第 3 章来源）；
+    页面脚本 `c34js`（JS 里写成 `/*<!--data:c34js:…-->*/`：散点标签避让 fitScatter，接在 relayout 后面）。
+  - 固定文字块（来自 `i18n/static.json`，名字带 `s-` 前缀）：`s-chrome`（顶栏按钮、语言切换、更多菜单、目录头）、`s-hd-*`（各章标题：h1–h6、h21/h22、h31/h32、h41–h45）、`s-ch1`、`s-ch5`、`s-src`、`s-f21cap` / `s-f21leg1` / `s-f21leg2`（图 2-1 图注与图例）、`s-css`（随语言变的 CSS 文字）、`s-terms`（TERMS / ALIAS / ALIAS_EN）、`s-ui`（I18N 界面字）。
+  - 章节：1 结论｜2 前沿模型（2.1 表 2-1 / 图 2-1、2.2 表 2-2、2.3 算力）｜3 大厂与开源模型（3.1 表 3-1、3.2 图 3-2）｜4 全部模型对比（4.1 AA、4.2 Vals、4.3 TB 4.0 Vals、4.4 价格与得分散点、4.5 厂商自报六项）｜5 怎么读这些数｜附录 来源。
+- `compute/build.py` 只改 `<!--compute:…-->`：图 2-1 顶部刻度、三条算力泳道、图 2-1 的算力图例和「怎么读」、2.3 节（含图 2-2 / 2-3、表 2-3）、算力来源、算力术语、相关 JS（其中时间轴指示线 / 磁吸和底部快照标签避让 fitSnap 对页面里所有 `.hl` 生效，图 3-2 直接复用）。
 - 标记之外剩下的是页面骨架：`<head>` 里的 CSS 和 `<script>` 主体（目录、提示框、吸顶表头、语言切换等交互代码）。这些是代码不是文字，改它们直接改 HTML，改完同样跑第 3 节。**任何面向读者的文字都不要直接写进 HTML**，写进数据文件，否则下次构建不会出英文。
 
 ## 3. 每次改完必须跑的命令
@@ -55,18 +60,21 @@ python3 compute/build.py                                        # 3 算力块（
 python3 build_tables.py && python3 compute/build.py             # 4 再跑一遍，两个都必须输出 unchanged（幂等）
 python3 qa/i18n_check.py                                        # 5 双语检查（静态，标准库），必须「通过」
 python3 qa/diff_check.py /tmp/prev.html "$R"                    # 6 列出这次改动，逐条确认都是你想改的
+python3 qa/ch2_equiv.py /tmp/prev.html "$R"                     # 7 没打算动第 2 章时：第 2 章除章名外必须逐字节一致（加 --browser 再比运行后的 DOM 与可见文本）
 ```
 
 然后做浏览器检查（需要 playwright + Chromium；云端容器一般有 `/usr/bin/google-chrome`）：
 
 ```bash
 python3 qa/i18n_check.py --browser --chrome /usr/bin/google-chrome        # 英文模式全页无汉字、提示框与术语逐个核对
-python3 qa/browser_check.py "$R" /tmp/qa-shots /usr/bin/google-chrome     # 3 宽 × 深浅 × 中英，断言 + 截图
+python3 qa/browser_check.py "$R" /tmp/qa-shots /usr/bin/google-chrome     # 3 宽 × 深浅 × 中英，断言 + 截图（含表 3-1 吸顶克隆、图 3-2 节点、图 4-4 散点标签）
+python3 qa/ch2_equiv.py /tmp/prev.html "$R" --browser --chrome /usr/bin/google-chrome   # 第 2 章运行后 DOM 与可见文本（中英 × 1440 / 800）
+python3 qa/rehearsal.py                                                  # 加 Bench / 加大厂模型 / 加新厂商演练（副本，结果 qa/rehearsal/result.json）
 python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang zh   # 算力图：布局、磁吸、吸顶、数值
 python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 ```
 
-要求：全部「通过 / OK」，并亲眼看 `/tmp/qa-shots` 里中英各一张 `f21`、`t21` 截图。截图不要提交（`.gitignore` 已排除 png）。
+要求：全部「通过 / OK」，并亲眼看 `/tmp/qa-shots` 里中英各一张 `f21`、`t21`、`t31`、`f32`、`f44` 截图。截图不要提交（`.gitignore` 已排除 png）。
 改了厂商颜色时，还要跑 `python3 qa/palette_check.py <Skill dataviz 的 scripts 目录>`，结果写进 `qa/palette_report.txt`（要提交）。
 
 `build_tables.py --check` 只校验不写盘；`--data 目录` 可以指向一份副本数据（演练用）。`compute/build.py` 也接受 `--data 目录`（它从 `models.json` 读快照日）。
@@ -79,26 +87,34 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 
 | 字段 | 说明 |
 |---|---|
-| `meta.snapshot` | 快照日期 `YYYY-MM-DD`。顶栏、首屏、图 3-1 来源提示、附录「核对方式」、**图 2-1 的整个横轴**（第 7 节）都从这里来 |
+| `meta.snapshot` | 快照日期 `YYYY-MM-DD`。顶栏、首屏、图 4-x 来源提示、附录「核对方式」、**图 2-1 的整个横轴**（第 7 节）都从这里来 |
+| `meta.chapters.ch3` | 第 3 章：`snapshot`（章首快照行、**图 3-2 的横轴**、图 4-x 来源提示里的 `{snapshot3}`）、`label`（章首那一行，占位 `{snapshot}` `{n}`） |
 | `meta.title` / `meta_prefix` / `appendix_hints` | 报告标题（h1、顶栏、`<title>` 同源）、首屏前缀、附录提示（`{snapshot}` 会被替换） |
-| `layout.t21` / `layout.t22` | 列宽（em），中英共用一套。原值是浏览器实测的；新列沿用同组宽度。脚本按中英两种文字估算放不下时会打印提示，这时调大这里的值或把英文写短 |
+| `layout.t21` / `layout.t22` / `layout.t31` | 列宽（em），中英共用一套。t31 另有 `license`、`params` 两列的宽度。原值是浏览器实测的；新列沿用同组宽度。脚本按中英两种文字估算放不下时会打印提示，这时调大这里的值或把英文写短 |
 | `t21.groups` | 表 2-1 的分组表头：`key`（basic / indep / general / cyber / life）、`label`、`short`（「怎么读」提示里用）、`tip` |
 | `t21.basic` | 发布 / 输入 / 输出三列的表头文字与提示（`{max}`＝公开模型最高价） |
 | `t21.hints` | 表上方的提示。可用占位：`{n_bench}` `{n_groups_zh}`（中文「四」/ 英文 four，取自 `ui.groups_zh_digits`）`{group_names}` `{price_in_max}` `{price_out_max}` |
-| `benches[]` | 每个 Bench 一列，顺序＝列序。`key`、`label`、`name`、`unit`（`%`、` 个` / ` hijacks`、空）、`group`、`direction`（`higher` / `lower`）、`bar`（`auto` / `zero` / `minmax`，见 build_tables.py 开头）、`desc`（表头提示；脚本会自动接上「有分数的模型：N 个。」） |
+| `t31` | 表 3-1 的列配置，见第 13 节：`toc`、`c0`、`groups[]`（`key`、`label`、`short`、`tip`、**`cols`**）、`basic`（release / price_in / price_out / license / params 的表头文字与提示）、`hints`（占位 `{n_models}` `{n_bench}` `{n_groups_zh}` `{group_names}` `{price_in_max}` `{price_out_max}`） |
+| `benches[]` | 每个 Bench 一列，顺序＝表 2-1 的列序；`group` 不在 `t21.groups` 里的（现在是 `ext`）只出现在表 3-1。`key`、`label`、`name`、`unit`（`%`、` 个` / ` hijacks`、空）、`group`、`direction`（`higher` / `lower`）、`bar`（`auto` / `zero` / `minmax`，见 build_tables.py 开头）、`desc`（表头提示；脚本会自动接上「有分数的模型：N 个。」） |
 | `models[]` | 每个模型一行。`id`、`name`、`short`、`vendor`、`status`（`public` / `restricted` / `internal`）、`tag`（`text`、`tip`）、`release`、`release_star` + `release_tip`、`trained`（`label`、`tip`、`end`）、`price`（`in`、`out`、可选 `in_next` / `out_next`、`tip`）、`scores`、`blank` |
-| `models[].scores.<bench>` | `d` 显示文本（照来源写）、`v` 数值、`note`（格子提示里「名次」之后的全部文字：出处＋测试条件）、`src`、`cf`（可信度 高 / 中 / 低） |
+| `models[].scores.<bench>` | `d` 显示文本（照来源写；可带角标 `<sup>AA</sup>`）、`v` 数值、`note`（格子提示里「名次」之后的全部文字：出处＋测试条件＋可信度〔高/中/低〕）、`src`、`cf`（可信度 高 / 中 / 低） |
+| `models[]` 第 3 章另有 | `license`（`{d, tip}`，d＝MIT / Modified MIT / 自定义 / 否，tip 写许可证要点）、`params`（`{d, tip}`，d＝「总 / 激活」，tip 写出处与可信度）、`row_tip`（模型名悬停：一句简介＋没填进表的分数和原因）、可选 `fig`（图 4-x 里用的短名）、`blank.price_in/price_out`（没有 API 价时的说明） |
 | `models[].blank.<bench>` | 没有分数但要写说明的格子：`d`（如「同上」/ ditto、「—」）、`tip` |
 | `timeline_events[]` | 图 2-1 模型泳道的节点：`lane`、`date`、可选 `end`、`hollow`、`label`、`tag`、`tip`（脚本自动在前面加「YYYY-MM-DD：」/「YYYY-MM-DD: 」，区间节点不加） |
 | `t22` | 表 2-2：`columns[]`、`sections[].rows[]`、`hints`（占位 `{n_rows}` `{n_cmp}` `{n_cmp_scores}`） |
-| `figures.f31/f32/f33` | 图 3-1 / 3-2 / 3-3：`bench`、`axis`、`head`、`caption`、`source_tip`、`panels[]` |
-| `ui` | 脚本拼句用的固定字词。`month`（中文 `{m} 月`，英文 `{mon}`＝Jan…Dec）、`snap_label` / `snap_short` / `snap_short_tip`（图 2-1 底部快照标签：全称 / 放不下时的短称 / 短称时的提示）、`cost_re`（从 note 里抓「每题成本 $X」的正则，中英各一条，抓到的 $X 必须一致） |
+| `figures.f41/f42/f43` | 图 4-1 / 4-2 / 4-3：`bench`、`mark`（bar / dot）、`xcol`（price / cost）、`axis`、`head`、`caption`、`source_tip`（占位 `{snapshot}` `{snapshot3}` `{min}` `{max}`）、`toc` |
+| `figures.f44` | 图 4-4 散点：`x`（price_out）、`y`（aa）、`xaxis`（`min` / `max` / `ticks`，对数刻度）、`yaxis`、轴名、图例、`missing`（没有价格未画的图注）、`tip` / `ow_yes` / `ow_no`（悬停文字） |
+| `figures.f45` | 图 4-5：`panels[]`（`bench`、`title`、`sub`），轴 0–100 |
+| `f32` | 图 3-2：`toc`、`caption`、图例三项、`hints`（占位 `{snapshot}`） |
+| `sources_ch3` | 附录里第 3 章的来源：`groups[]`（`group`、`label`、`items[]`：`title`（可为 `{zh,en}`）、`url`、`date`、`accessed`） |
+| `ui` | 脚本拼句用的固定字词。`count_groups`（首屏分组计数）、`snap3_tip` / `snap3_short_tip`（图 3-2 底部快照标签）。`month`（中文 `{m} 月`，英文 `{mon}`＝Jan…Dec）、`snap_label` / `snap_short` / `snap_short_tip`（图 2-1 底部快照标签：全称 / 放不下时的短称 / 短称时的提示）、`cost_re`（从 note 里抓「每题成本 $X」的正则，中英各一条，抓到的 $X 必须一致） |
 
 `src` 的取值：`artificial_analysis`、`vals_ai`、`system_card`、`model_card`、`release_table`、`leaderboard`、`vendor_self_report`、`lmarena`、`other`。
 
 ### vendors.json
 
-`vendors[]` 顺序＝表 2-1 分组顺序＝图 3-x 图例顺序。字段：`key`、`name`、`product`、`group`、`css_var`、`light` / `dark`、`legend_tip`、`t22_class`、`builtin_css`（true＝颜色写在报告原 CSS 里，只有 google / anthropic / openai）。
+`groups[]`：`key`（frontier / bigtech / open）、`label`、`tip`、**`chapter`**（2 或 3：这一组厂商的模型进哪一章）。顺序＝图 4-x 图例里分组的顺序。
+`vendors[]` 顺序＝表 2-1 / 表 3-1 分组顺序＝图 4-x 组内图例顺序。字段：`key`、`name`、`product`、`group`（取 `groups[].key`）、`css_var`、`light` / `dark`、`legend_tip`、`t22_class`、`builtin_css`（true＝颜色写在报告原 CSS 里，只有 google / anthropic / openai）。
 `timeline_lanes[]`：图 2-1 模型泳道顺序（`lane`、`vendor`、可选 `label` 和 `hollow_swatch`）。没有事件的泳道不画，没有模型的厂商不出组标题行。
 `reference_colors`：compute 管的三条算力泳道颜色，只用于配色校验。
 
@@ -108,7 +124,7 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 |---|---|
 | `strings` | 短文字（菜单、标题、图注、图例）。模板里用 `{{t:键}}` 输出文字，`{{a:属性:键}}` 输出属性 |
 | `templates` | 带占位的 HTML 片段（顶栏、各章标题、图 2-1 图注图例）。结构改动改这里；`{{lang}}` 是语言切换按钮 |
-| `blocks` | 整段 HTML，中英各一份（`ch1` 第 1 章结论、`ch4` 第 4 章、`src` 附录手写来源）。两份结构要对应（同样的条目、同样的链接） |
+| `blocks` | 整段 HTML，中英各一份（`ch1` 第 1 章结论、`ch5` 第 5 章「怎么读」、`src` 附录手写来源）。两份结构要对应（同样的条目、同样的链接） |
 | `terms` | 术语表：`n` 名称、`d` 释义，各 `{zh, en}`。算力相关术语在 `compute/build.py` 的 `C_TERMS` |
 | `alias` | 正文里自动加术语下划线的词：`zh` 管中文和两种语言共用的文字，`en` 管英文文字。长词优先、英文按词边界 |
 | `js_ui` | 页面 JS 用的界面字（返回按钮等）；标题自动取 `models.json` 的 `meta.title` |
@@ -125,7 +141,8 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 4. 在 `timeline_events` 里加节点：先宣布后开放的，加一个 `hollow: true` 的宣布节点和一个开放节点，模型的 `release` 写开放日，`release_star: true`，`release_tip` 写两个日期。同一天同一家发多个模型，合成一个节点（label 用「A · B」）。
 5. 有 System Card 专项分数的，在 `t22` 里加列或补格子。
 6. 跑第 3 节的命令。看提示行：列宽、轴外扩、节点在横轴外、英文缺失都会提示。
-7. **人工判断**：第 1 章结论要不要改（`i18n/static.json → blocks.ch1`，中英两份一起改）；第 4 章（`blocks.ch4`）是否还成立；附录来源（`blocks.src`，中英两份都加新链接）。
+7. **人工判断**：第 1 章结论要不要改（`i18n/static.json → blocks.ch1`，中英两份一起改；后 3 条由 `check_ch1()` 核对，数据一变构建就失败并告诉你缺哪句）；第 5 章（`blocks.ch5`）是否还成立；附录来源（`blocks.src`，中英两份都加新链接；第 3 章的来源加到 `models.json → sources_ch3`）。
+8. **第 3 章的模型**（厂商的 group 是大厂或开源）另外要写 `license`、`params`、`row_tip`。厂商自报分数只填版本、单位、子集都和那一列一致的；不一致的不填，写进 `row_tip`（「没填进表的：…」）。同一个数各家表里不一样时，先用模型自家的表，再用别家表里口径一致的，note 里写清是谁报的、别家是多少。先整理成 `research/` 下的 JSON（出处、条件、caveats），再进 `models.json`。
 
 ## 6. 加一个新 Bench 列
 
@@ -133,8 +150,9 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 2. 新组：在 `t21.groups` 里加 `{key, label, short, tip}`。
 3. 越低越好的指标设 `direction: "lower"`。
 4. 给已有模型补 `scores.<key>`。没有分数的格子不用写，自动显示「—」。
-5. 如果它也该进图 3-3，在 `figures.f33.panels` 加 `{bench, title, sub}`；图 3-3 标题里的「六项」/ "Six" 是写在 `figures.f33.caption` 和 `hd_h33` 里的，要一起改。
-6. 跑命令。表头太长会提示列宽不够，调 `layout.t21.bench`（所有 Bench 列同宽）。演练：`python3 qa/rehearsal.py`（副本里加虚构模型和列，结果在 `qa/rehearsal/`，不进 git）。
+5. 如果它也该进图 4-5，在 `figures.f45.panels` 加 `{bench, title, sub}`；图 4-5 标题里的「六项」/ "Six" 是写在 `figures.f45.caption` 和 `hd_h45` 里的，要一起改。
+6. 如果它该进表 3-1：在 `t31.groups[].cols` 里点名（第 13 节）。只给表 3-1 用的列，`group` 写 `ext`（或任何不在 `t21.groups` 里的组名），表 2-1 不会出这一列。
+7. 跑命令。表头太长会提示列宽不够，调 `layout.t21.bench`（所有 Bench 列同宽）。演练：`python3 qa/rehearsal.py`（副本里加虚构的列、大厂模型和新开源厂商，结果在 `qa/rehearsal/`，不进 git）。
 
 ## 7. 快照日期与图 2-1 横轴
 
@@ -145,6 +163,8 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 5. 换月前先演练：`python3 qa/rehearse_snapshot.py 2027-01-10 /tmp/rehearse /usr/bin/google-chrome`（在临时副本里改快照日、构建两遍、检查横轴首月 / 末柱 / 竖线位置 / 越界 / 重叠并截图，不碰正式文件）。
 6. 2.3 节的结论文字（Rubin 过半的月份等）有断言保护：数据变了会构建失败，届时要人工改结论再改断言。
 7. 正文里还有手写的日期（第 1 章、Vals「2026-11-16」、Epoch「2026-11-19 版」等），不是快照日期，不要批量替换。
+
+8. 第 3 章快照（`meta.chapters.ch3.snapshot`）单独改：它只管章首快照行和图 3-2 的横轴，横轴算法同上。`qa/rehearse_snapshot.py` 把两个快照日一起换来演练。
 
 ## 8. 版本与备份
 
@@ -199,3 +219,40 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 - 列宽来自浏览器实测值，中英共用一套，脚本只能估算；加长名字或长表头后，务必看中英两种截图有没有折行。
 - 每段文字都存两份，报告从约 0.29 M 字符增到约 0.52 M 字符，属正常。
 - `qa/oneoff/` 里的脚本依赖历史版本的 HTML 结构，以后不要再跑。
+
+## 13. 分组决定章节、表 3-1 列配置、散点图、加新厂商（2026-11-22）
+
+### 13.1 分组决定章节
+- `vendors.json → groups[].chapter`：前沿＝2，大厂、开源＝3。模型跟着厂商走：第 2 章的表 2-1、图 2-1、首屏「前沿 N 个」只取 chapter 2 的厂商；第 3 章的表 3-1、图 3-2、「大厂与开源 M 个」只取 chapter 3；第 4 章（图 4-1…4-5）取全部。
+- 第 2 章内容不随第 3 章变：改第 3 章数据后跑 `qa/ch2_equiv.py`，第 2 章源码和运行后 DOM 都必须和改前逐字节一致（只有章名在这次改章时变过）。
+
+### 13.2 表 3-1 的列配置怎么写
+`models.json → t31.groups[]` 每组一个 `cols` 列表，列名两种：
+- 基本列：`release`、`price_in`、`price_out`、`license`、`params`（表头文字与提示在 `t31.basic`）。
+- Bench 列：`benches[].key`。和表 2-1 共用同一个 key（同一个测试、同一版本、同一单位和子集）才能放进「与前沿同列」组；口径不同就新建一个 bench。
+- 本章一个分数都没有的 bench 列自动不出（构建时打印「不出」），以后有了分数自动出现——现在 OSWorld 2.1 就是这样。
+- 组的分组线、前三名、色条与表 2-1 同规则；名次只在表 3-1 的模型里排。
+
+### 13.3 第 3 章新增列的含义（`group: ext`）
+| 列 | 测什么 | 只收哪种口径 |
+|---|---|---|
+| DeepSWE | 真实代码仓库里修 bug（Datacurve） | v1.1；v1.0 的不填 |
+| ProgB（ProgramBench） | 从零写完整程序 | 「几乎做对」：一题测试通过 ≥95% 才算 1；按测试通过率的部分分不填 |
+| Marathon（SWE-Marathon） | 要做几个小时的长程编码 | v1.1；更早或没写版本的不填 |
+| HLE | Humanity's Last Exam | 全集、带工具；不带工具、纯文本子集不填 |
+| GDPval（GDPval-AA） | AA 的职业任务两两比较 | v2，单位 Elo；取数时间不同会漂，note 里写 AA 现值 |
+| CyberGym | 按描述复现真实漏洞 | 多为关掉防护；单位 % |
+FrontierCode 2.0 列里带 `<sup>AA</sup>` 角标的是 Artificial Analysis 自己测的 FrontierCode-AA 2.0（132 题私有集），不是厂商自报。
+
+### 13.4 散点图（图 4-4）规则
+- 横轴输出价（对数），纵轴 AA v5.0.1。只画同时有 AA 和 API 价的模型；有 AA 没价格的进图注（现在是 Muse Wonder Full）。
+- 点色＝厂商色；实心＝不开放权重，空心＝开放权重（`license.d` 不是「否」）。完全重合的点左右错开 12px。
+- 标签：页面 JS `fitScatter` 按 AA 从高到低依次在 12 个候选位置里找不压点、不压别的标签、不出绘图区的位置；找不到就隐藏标签（悬停仍有完整提示）。`qa/browser_check.py` 断言可见标签互不重叠、不压点，并打印被隐藏的标签。
+- 横轴刻度在 `figures.f44.xaxis.ticks`；有模型的输出价超出 `min` / `max` 时构建打印提示，去改范围。
+
+### 13.5 以后加新厂商
+1. `vendors.json → vendors[]` 加一条：`group` 选 `frontier` / `bigtech` / `open`（决定进第 2 章还是第 3 章）；`css_var` 取一个没用过的（如 `--tv`）；`light` / `dark` 两个颜色；`legend_tip`；`t22_class`；`builtin_css: false`。位置决定它在表格分组和图例里的顺序。
+2. `timeline_lanes[]` 加一条泳道（`lane`、`vendor`），时间轴节点写进 `models.json → timeline_events`。
+3. 颜色校验：`python3 qa/palette_check.py <dataviz 的 scripts 目录>`，看 A（相邻对）两种主题都 pass；不过就换颜色（前沿三家原色不动），结果写进 `qa/palette_report.txt` 一起提交。新厂商 CSS（色块、条、泳道节点、散点空心描边、图例聚光）由构建自动生成。
+4. 跑第 3 节全部命令，外加 `python3 qa/rehearsal.py`（演练里就有一个虚构的新开源厂商 TestLab）。
+

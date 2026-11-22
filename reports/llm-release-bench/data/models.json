@@ -21,7 +21,20 @@
      "en": "<b>How we checked</b>Snapshot date {snapshot}.<br>Release dates and prices are confirmed by at least two sources, except for restricted models."
     }
    }
-  ]
+  ],
+  "chapters": {
+   "ch3": {
+    "snapshot": "2026-11-22",
+    "groups": [
+     "bigtech",
+     "open"
+    ],
+    "label": {
+     "zh": "快照 {snapshot} · 大厂 xAI、Meta · 开源 DeepSeek、Moonshot、智谱 · {n} 个模型",
+     "en": "Snapshot {snapshot} · Big Tech xAI, Meta · Open-weight DeepSeek, Moonshot, Zhipu · {n} models"
+    }
+   }
+  }
  },
  "layout": {
   "_readme": "列宽（em）。原表由浏览器实测得出；新增列沿用同组宽度。build_tables.py 会估算新内容所需宽度，超出时打印警告，需人工调大这里的值。",
@@ -35,6 +48,15 @@
   "t22": {
    "test": 14.574,
    "model": 4.34106
+  },
+  "t31": {
+   "model": 18.4,
+   "release": 4.34106,
+   "price_in": 4.496,
+   "price_out": 5.891,
+   "license": 7.7,
+   "params": 7.8,
+   "bench": 5.27135
   }
  },
  "t21": {
@@ -785,6 +807,138 @@
    "desc": {
     "zh": "Virology Capabilities Test，0–1 分。病毒学实验排障测试，带图片。Anthropic 用它评估生物风险。分数来自各厂商自己的发布表或 System Card。〔中〕",
     "en": "Virology Capabilities Test, scored 0–1. Troubleshooting virology lab work, with images. Anthropic uses it to assess biological risk. Scores come from vendor launch tables or System Cards. [medium]"
+   }
+  },
+  {
+   "key": "deepswe",
+   "label": {
+    "zh": "DeepSWE",
+    "en": "DeepSWE"
+   },
+   "name": {
+    "zh": "DeepSWE v1.1",
+    "en": "DeepSWE v1.1"
+   },
+   "unit": {
+    "zh": "%",
+    "en": "%"
+   },
+   "group": "ext",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "DeepSWE v1.1，单位 %。在真实代码仓库里修 bug（Datacurve 出品）。分数来自各厂商自己的发布表，各家用的工具不同。〔中〕",
+    "en": "DeepSWE v1.1, in %. Fixing bugs in real code repositories (by Datacurve). Scores come from each vendor's launch table, and harnesses differ. [medium]"
+   }
+  },
+  {
+   "key": "progb",
+   "label": {
+    "zh": "ProgB",
+    "en": "ProgB"
+   },
+   "name": {
+    "zh": "ProgramBench",
+    "en": "ProgramBench"
+   },
+   "unit": {
+    "zh": "%",
+    "en": "%"
+   },
+   "group": "ext",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "ProgramBench，单位 %。从零写出完整程序。只收「几乎做对」口径：一题测试通过 ≥95% 才算 1。按测试通过率算的部分分不填。分数来自各厂商发布表。〔中〕",
+    "en": "ProgramBench, in %. Writing complete programs from scratch. Only the \"almost solved\" metric is used: a task counts once at least 95% of its tests pass. Partial-credit scores (share of tests passed) are left out. Scores come from vendors' launch tables. [medium]"
+   }
+  },
+  {
+   "key": "swem",
+   "label": {
+    "zh": "Marathon",
+    "en": "Marathon"
+   },
+   "name": {
+    "zh": "SWE-Marathon v1.1",
+    "en": "SWE-Marathon v1.1"
+   },
+   "unit": {
+    "zh": "%",
+    "en": "%"
+   },
+   "group": "ext",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "SWE-Marathon v1.1，单位 %。要做好几个小时的长程编码任务（Abundant AI 出品）。v1.1 之前或没写版本的分数不填。分数来自各厂商发布表。〔中〕",
+    "en": "SWE-Marathon v1.1, in %. Long coding tasks that take hours (by Abundant AI). Scores from before v1.1, or with no version stated, are left out. Scores come from vendors' launch tables. [medium]"
+   }
+  },
+  {
+   "key": "hle",
+   "label": {
+    "zh": "HLE",
+    "en": "HLE"
+   },
+   "name": {
+    "zh": "Humanity's Last Exam（全集，带工具）",
+    "en": "Humanity's Last Exam (full set, with tools)"
+   },
+   "unit": {
+    "zh": "%",
+    "en": "%"
+   },
+   "group": "ext",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "Humanity's Last Exam（HLE），全集、带工具，单位 %。跨学科的超难问答。不带工具、或只考纯文本子集的分数不填。分数来自各厂商发布表。〔中〕",
+    "en": "Humanity's Last Exam (HLE), full set, with tools, in %. Extremely hard questions across disciplines. Scores without tools, or on the text-only subset, are left out. Scores come from vendors' launch tables. [medium]"
+   }
+  },
+  {
+   "key": "gdpval",
+   "label": {
+    "zh": "GDPval",
+    "en": "GDPval"
+   },
+   "name": {
+    "zh": "GDPval-AA v2",
+    "en": "GDPval-AA v2"
+   },
+   "unit": {
+    "zh": " Elo",
+    "en": " Elo"
+   },
+   "group": "ext",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "GDPval-AA v2，单位 Elo。Artificial Analysis 把模型在 OpenAI GDPval 职业任务上的产出两两比较，Elo 越高越好。分数来自各厂商发布表，多数引用 AA；取数时间不同，Elo 会随榜上模型变化而漂移。〔中〕",
+    "en": "GDPval-AA v2, in Elo. Artificial Analysis compares models head-to-head on OpenAI's GDPval professional tasks; higher is better. Scores come from vendors' launch tables, mostly citing AA; they were taken at different times, and Elo drifts as the field changes. [medium]"
+   }
+  },
+  {
+   "key": "cygym",
+   "label": {
+    "zh": "CyberGym",
+    "en": "CyberGym"
+   },
+   "name": {
+    "zh": "CyberGym",
+    "en": "CyberGym"
+   },
+   "unit": {
+    "zh": "%",
+    "en": "%"
+   },
+   "group": "ext",
+   "direction": "higher",
+   "bar": "auto",
+   "desc": {
+    "zh": "CyberGym，单位 %。按漏洞描述复现真实软件里的漏洞（写出能触发它的输入）。多数是关掉防护测的。分数来自各厂商发布表。〔中〕",
+    "en": "CyberGym, in %. Reproducing real software vulnerabilities from a description (writing an input that triggers each one). Mostly run with safeguards off. Scores come from vendors' launch tables. [medium]"
    }
   }
  ],
@@ -3091,6 +3245,2106 @@
      "cf": "中"
     }
    }
+  },
+  {
+   "id": "grok-4-7",
+   "name": "Grok 4.7",
+   "short": "Grok 4.7",
+   "vendor": "xai",
+   "status": "public",
+   "release": "2026-09-21",
+   "price": {
+    "in": 2,
+    "out": 6,
+    "tip": {
+     "zh": "xAI 官方 API 标准价（提示不超过 200K token）：输入 $2、缓存输入 $0.50、输出 $6；超过 200K 是 $4 / $1 / $12。Grok 4.7 Fast（输出快一倍、价格翻倍）只在 Cursor 和 Grok Build 里有。〔高〕",
+     "en": "xAI standard API price (prompts up to 200K tokens): $2 input, $0.50 cached input, $6 output; above 200K, $4 / $1 / $12. Grok 4.7 Fast (twice the output speed at twice the price) is only in Cursor and Grok Build. [high]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "否",
+     "en": "No"
+    },
+    "tip": {
+     "zh": "不开放权重，只能通过 API 或自家产品用。〔高〕",
+     "en": "Weights are not released; available only through the API or the vendor's own products. [high]"
+    }
+   },
+   "params": {
+    "d": "~2.1T / —",
+    "tip": {
+     "zh": "总参数约 2.1T，出自 Decrypt 和 Epoch AI 的引述，xAI 官方文档没有写；激活参数没有公开。〔低〕",
+     "en": "About 2.1T total parameters, per Decrypt and Epoch AI; xAI's own docs do not say. Active parameters are not disclosed. [low]"
+    }
+   },
+   "row_tip": {
+    "zh": "SpaceXSI（原 xAI）现在的旗舰，主打编码和知识工作，换了更大的新底座。价格和 Grok 4.6 一样。没有 Model Card。没填进表的：GDPval 1695（发布文没写是不是 v2）、CursorBench 46.3%、EEBench 64.0% 等本表没有的测试。",
+    "en": "The current flagship of SpaceXSI (formerly xAI), aimed at coding and knowledge work, on a larger new base model. Same price as Grok 4.6. No model card. Not in the table: GDPval 1695 (the launch post does not say whether it is v2), CursorBench 46.3%, EEBench 64.0% and other tests this table does not track."
+   },
+   "scores": {
+    "aa": {
+     "d": "35",
+     "v": 35,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，xhigh 档（high 35.21、low 31.13），精确值 35.49。跑完整个指数每题约 $7.77。发布当天 AA 文章用的旧版指数是 46，不能混用。〔高〕",
+      "en": "Artificial Analysis v5.0.1, xhigh setting (high 35.21, low 31.13), exact 35.49. About $7.77 per task over the full index. AA's launch-day article used the older index, where it scored 46; do not mix. [high]"
+     }
+    },
+    "vals": {
+     "d": "58.62",
+     "v": 58.62,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 23。每题成本 $11.63。发布当天 Vals 在旧版指数上测得 60.22%。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #23 of 43 on the full Vals leaderboard. Cost per task $11.63. On launch day Vals measured 60.22% on the older index. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "28.79",
+     "v": 28.79,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 32。每题成本 $18.01。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #32 of 70 on the full Vals leaderboard. Cost per task $18.01. [high]"
+     }
+    },
+    "tb4_vendor": {
+     "d": "37.6",
+     "v": 37.6,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "xAI 的 Grok 4.7 发布文（9 月 21 日）分数表，xhigh 档；没写用的什么工具。AA 在 Grok Build 里测是 33%，Vals 测是 28.79%。〔中〕",
+      "en": "Benchmark table in xAI's Grok 4.7 launch post (Sep 21), xhigh setting; harness not stated. AA measured 33% in Grok Build and Vals 28.79%. [medium]"
+     }
+    },
+    "deepswe": {
+     "d": "71.0",
+     "v": 71.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "xAI 的 Grok 4.7 发布文，high 档（表里打了星号，其余各项是 xhigh）。〔中〕",
+      "en": "xAI's Grok 4.7 launch post, high setting (starred in the table; the other rows are xhigh). [medium]"
+     }
+    }
+   }
+  },
+  {
+   "id": "grok-4-6",
+   "name": "Grok 4.6",
+   "short": "Grok 4.6",
+   "vendor": "xai",
+   "status": "public",
+   "release": "2026-08-12",
+   "price": {
+    "in": 2,
+    "out": 6,
+    "tip": {
+     "zh": "xAI 官方 API 标准价（提示不超过 200K token）：$2 / 缓存 $0.50 / $6；超过 200K 是 $4 / $1 / $12。fast 版价格翻倍。〔高〕",
+     "en": "xAI standard API price (prompts up to 200K tokens): $2 / $0.50 cached / $6; above 200K, $4 / $1 / $12. The fast variant costs twice as much. [high]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "否",
+     "en": "No"
+    },
+    "tip": {
+     "zh": "不开放权重，只能通过 API 或自家产品用。〔高〕",
+     "en": "Weights are not released; available only through the API or the vendor's own products. [high]"
+    }
+   },
+   "params": {
+    "d": "~1.5T / —",
+    "tip": {
+     "zh": "Grok 4.6 Model Card 说是「1.5T 级」模型家族；激活参数没有公开。〔中〕",
+     "en": "The Grok 4.6 model card calls it a \"1.5T-scale model family\"; active parameters are not disclosed. [medium]"
+    }
+   },
+   "row_tip": {
+    "zh": "Grok 4.7 的上一代，价格相同。没填进表的：FrontierCode 61.3%（是 v1.1 扩展版，不是 2.0）、Terminal-Bench 3.0 26.0%。Grok 4.7 发布文里给它的 DeepSWE 是 65.2%，Model Card 写 65.9%，表里用 Model Card。",
+    "en": "The generation before Grok 4.7, at the same price. Not in the table: FrontierCode 61.3% (the v1.1 Extended set, not 2.0) and Terminal-Bench 3.0 at 26.0%. The Grok 4.7 launch post gives it 65.2% on DeepSWE while the model card says 65.9%; the table uses the model card."
+   },
+   "scores": {
+    "aa": {
+     "d": "31",
+     "v": 31,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，xhigh 档，精确值 31.03。跑完整个指数每题约 $4.68。xAI 发布时引用的是旧版 AA 指数 61。〔高〕",
+      "en": "Artificial Analysis v5.0.1, xhigh setting, exact 31.03. About $4.68 per task over the full index. xAI's launch post cited 61 on an older AA index. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "17.17",
+     "v": 17.17,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 44。每题成本 $5.06。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #44 of 70 on the full Vals leaderboard. Cost per task $5.06. [high]"
+     }
+    },
+    "tb4_vendor": {
+     "d": "20.3",
+     "v": 20.3,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "xAI 在 Grok 4.7 发布文里给 Grok 4.6 的对照分数，high 档。〔中〕",
+      "en": "Comparison score for Grok 4.6 in xAI's Grok 4.7 launch post, high setting. [medium]"
+     }
+    },
+    "deepswe": {
+     "d": "65.9",
+     "v": 65.9,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Grok 4.6 Model Card §2.4，high 档，mini-SWE-agent，Datacurve 测，pass@1。xhigh 档是 67.0%。〔中〕",
+      "en": "Grok 4.6 model card §2.4, high setting, mini-SWE-agent, run by Datacurve, pass@1. 67.0% at xhigh. [medium]"
+     }
+    },
+    "swem": {
+     "d": "31.9",
+     "v": 31.9,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Grok 4.6 Model Card §2.5，v1.1，high 档，在 Grok Build 里跑，Abundant AI 测。〔中〕",
+      "en": "Grok 4.6 model card §2.5, v1.1, high setting, run in Grok Build by Abundant AI. [medium]"
+     }
+    },
+    "gdpval": {
+     "d": "1753",
+     "v": 1753,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Grok 4.6 Model Card §3.1，v2，high 档，AA 测。〔中〕",
+      "en": "Grok 4.6 model card §3.1, v2, high setting, run by AA. [medium]"
+     }
+    },
+    "cygym": {
+     "d": "79.7",
+     "v": 79.7,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Grok 4.6 Model Card §7.1，high 档，不带防护，按平均复现率算。〔中〕",
+      "en": "Grok 4.6 model card §7.1, high setting, safeguards off, mean reproduction rate. [medium]"
+     }
+    }
+   },
+   "blank": {
+    "vals": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "不在 Vals Index v2.2 榜上。Vals 9 月 21 日的更新里引用旧版指数 59.17%，不能和 v2.2 混用。",
+      "en": "Not on the Vals Index v2.2 leaderboard. Vals' Sep 21 update cites 59.17% on the older index; do not mix with v2.2."
+     }
+    }
+   }
+  },
+  {
+   "id": "grok-4-5",
+   "name": "Grok 4.5",
+   "short": "Grok 4.5",
+   "vendor": "xai",
+   "status": "public",
+   "release": "2026-07-08",
+   "release_star": true,
+   "release_tip": {
+    "zh": "7 月 8 日先上 API（xAI 发布说明），7 月 16 日发正式博文，7 月 22 日上消费端 App。",
+    "en": "API first on Jul 8 (xAI release notes), launch post on Jul 16, consumer apps on Jul 22."
+   },
+   "price": {
+    "in": 2,
+    "out": 6,
+    "tip": {
+     "zh": "xAI 官方 API 标准价 $2 / $6。AA 页显示缓存打 85 折以下（约 $0.30），xAI 文档没单列。〔高〕",
+     "en": "xAI standard API price $2 / $6. AA lists cached input at about $0.30; xAI's docs do not break it out. [high]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "否",
+     "en": "No"
+    },
+    "tip": {
+     "zh": "不开放权重，只能通过 API 或自家产品用。〔高〕",
+     "en": "Weights are not released; available only through the API or the vendor's own products. [high]"
+    }
+   },
+   "params": {
+    "d": "~1.5T / —",
+    "tip": {
+     "zh": "Grok 4.6 Model Card 说两者是同一个 1.5T 级家族；激活参数没有公开。〔中〕",
+     "en": "The Grok 4.6 model card places both in the same 1.5T-scale family; active parameters are not disclosed. [medium]"
+    }
+   },
+   "row_tip": {
+    "zh": "xAI 6 月以来的第一个文本模型。没填进表的：DeepSWE v1.0 62.0%（不是 v1.1）、SWE-Marathon 29.0%（没写版本）、ProgramBench 57.2%（按测试通过率算，不是「几乎做对」）、Terminal-Bench 2.1 83.3%。",
+    "en": "xAI's first text model since June. Not in the table: DeepSWE v1.0 at 62.0% (not v1.1), SWE-Marathon 29.0% (version not stated), ProgramBench 57.2% (share of tests passed, not the \"almost solved\" metric) and Terminal-Bench 2.1 at 83.3%."
+   },
+   "scores": {
+    "tb4_vals": {
+     "d": "8.59",
+     "v": 8.59,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 55。每题成本 $5.52。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #55 of 70 on the full Vals leaderboard. Cost per task $5.52. [high]"
+     }
+    },
+    "deepswe": {
+     "d": "53.0",
+     "v": 53.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Grok 4.5 Model Card §2.2，v1.1，high 档，mini-SWE-agent，Datacurve 测。Grok 4.6 的卡里写的是 54.0%。〔中〕",
+      "en": "Grok 4.5 model card §2.2, v1.1, high setting, mini-SWE-agent, run by Datacurve. The Grok 4.6 card gives 54.0%. [medium]"
+     }
+    },
+    "gdpval": {
+     "d": "1535",
+     "v": 1535,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Grok 4.5 Model Card §4.1，v2，high 档，AA 测。Grok 4.6 的卡里写的是 1526。〔中〕",
+      "en": "Grok 4.5 model card §4.1, v2, high setting, run by AA. The Grok 4.6 card gives 1526. [medium]"
+     }
+    },
+    "cygym": {
+     "d": "79.0",
+     "v": 79.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Grok 4.6 Model Card §7.1 里给 Grok 4.5 的分数，high 档，不带防护。〔中〕",
+      "en": "Score for Grok 4.5 in the Grok 4.6 model card §7.1, high setting, safeguards off. [medium]"
+     }
+    }
+   },
+   "blank": {
+    "aa": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "Artificial Analysis 没给它算 v5.0.1 分数（页面显示 N/A）。xAI 引用的旧版 AA 指数是 56，不能混用。",
+      "en": "Artificial Analysis has no v5.0.1 score for it (the page shows N/A). xAI cites 56 on an older AA index; do not mix."
+     }
+    },
+    "vals": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "不在 Vals Index v2.2 榜上；旧版指数是 51.53%（Vals 9 月 21 日的更新）。",
+      "en": "Not on the Vals Index v2.2 leaderboard; 51.53% on the older index (Vals' Sep 21 update)."
+     }
+    }
+   }
+  },
+  {
+   "id": "muse-wonder-full",
+   "name": "Muse Wonder Full",
+   "short": "Wonder Full",
+   "vendor": "meta",
+   "status": "restricted",
+   "release": "2026-10-12",
+   "tag": {
+    "text": {
+     "zh": "仅订阅",
+     "en": "Plan only"
+    },
+    "tip": {
+     "zh": "没有 API，只在 Meta 的 Muse Code 订阅（Power Usage / Maximum Usage 两档）里能用。",
+     "en": "No API; available only inside Meta's Muse Code subscription (Power Usage and Maximum Usage plans)."
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "否",
+     "en": "No"
+    },
+    "tip": {
+     "zh": "不开放权重，只能通过 API 或自家产品用。〔高〕",
+     "en": "Weights are not released; available only through the API or the vendor's own products. [high]"
+    }
+   },
+   "params": {
+    "d": "—",
+    "tip": {
+     "zh": "Meta 没有公布参数量。",
+     "en": "Meta has not disclosed the parameter count."
+    }
+   },
+   "row_tip": {
+    "zh": "Muse Wonder 的加强版，没有 API，只在 Muse Code 订阅里用；API 把 Muse Wonder 调到 max 也不会切到它。没填进表的：OSWorld 78.4%（108 题全集、Meta 自己的框架，不是离线子集）、SWE-Marathon 57.5%（没写版本）、AutomationBench-AA 45.4%（AA 的严格计分版，不是 v1.0.6）、ExploitGym 20 个目标 flag（是个数不是 %）。",
+    "en": "A stronger version of Muse Wonder with no API, used only inside the Muse Code subscription; setting Muse Wonder to max on the API does not switch to it. Not in the table: OSWorld 78.4% (the full 108-task set on Meta's own harness, not the offline subset), SWE-Marathon 57.5% (version not stated), AutomationBench-AA 45.4% (AA's strict-scoring variant, not v1.0.6) and ExploitGym 20 intended flags (a count, not a %)."
+   },
+   "scores": {
+    "aa": {
+     "d": "50",
+     "v": 50,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，max 档，精确值 50.08。没有 API 价格，所以 AA 没算每题成本。〔高〕",
+      "en": "Artificial Analysis v5.0.1, max setting, exact 50.08. No API price, so AA gives no cost per task. [high]"
+     }
+    },
+    "vals": {
+     "d": "66.79",
+     "v": 66.79,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 9。每题成本 $6.81。Vals 按 $4 / $20 算成本。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #9 of 43 on the full Vals leaderboard. Cost per task $6.81. Vals prices it at $4 / $20. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "58.08",
+     "v": 58.08,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 11。每题成本 $10.53。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #11 of 70 on the full Vals leaderboard. Cost per task $10.53. [high]"
+     }
+    },
+    "tb4_vendor": {
+     "d": "57.1",
+     "v": 57.1,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Meta 的 Muse Wonder 发布表，max 档，成绩来自 AA。〔中〕",
+      "en": "Meta's Muse Wonder launch table, max setting, score from AA. [medium]"
+     }
+    },
+    "deepswe": {
+     "d": "79.0",
+     "v": 79.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Meta 的 Muse Wonder 发布表，v1.1，max 档，Datacurve 测，pass@1。〔中〕",
+      "en": "Meta's Muse Wonder launch table, v1.1, max setting, run by Datacurve, pass@1. [medium]"
+     }
+    },
+    "progb": {
+     "d": "59.0",
+     "v": 59.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Meta 的 Muse Wonder 发布表，max 档，mini-SWE-agent，按「测试通过 ≥95% 的比例」算。〔中〕",
+      "en": "Meta's Muse Wonder launch table, max setting, mini-SWE-agent, share of runs passing at least 95% of tests. [medium]"
+     }
+    },
+    "cygym": {
+     "d": "88.4",
+     "v": 88.4,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Muse Wonder Model Card §4，不带防护。〔中〕",
+      "en": "Muse Wonder model card §4, safeguards off. [medium]"
+     }
+    }
+   },
+   "blank": {
+    "price_in": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "没有 API：只在 Muse Code 的 Power Usage / Maximum Usage 订阅里提供。Vals 按 $4 / $20（与 Muse Wonder 相同）算成本，AA 页没有价格。〔中〕",
+      "en": "No API: offered only in the Muse Code Power Usage / Maximum Usage plans. Vals prices it at $4 / $20 (same as Muse Wonder); AA lists no price. [medium]"
+     }
+    },
+    "price_out": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "没有 API：只在 Muse Code 的 Power Usage / Maximum Usage 订阅里提供。Vals 按 $4 / $20（与 Muse Wonder 相同）算成本，AA 页没有价格。〔中〕",
+      "en": "No API: offered only in the Muse Code Power Usage / Maximum Usage plans. Vals prices it at $4 / $20 (same as Muse Wonder); AA lists no price. [medium]"
+     }
+    }
+   }
+  },
+  {
+   "id": "muse-wonder",
+   "name": "Muse Wonder",
+   "short": "Wonder",
+   "vendor": "meta",
+   "status": "public",
+   "release": "2026-10-12",
+   "price": {
+    "in": 4,
+    "out": 20,
+    "tip": {
+     "zh": "Meta Model API 标准价（muse-wonder-1.0）：输入 $4、缓存输入 $0.20、输出 $20，不收长上下文溢价。API 还标着 preview。〔高〕",
+     "en": "Meta Model API standard price (muse-wonder-1.0): $4 input, $0.20 cached input, $20 output, no long-context premium. Still marked preview on the API. [high]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "否",
+     "en": "No"
+    },
+    "tip": {
+     "zh": "不开放权重，只能通过 API 或自家产品用。〔高〕",
+     "en": "Weights are not released; available only through the API or the vendor's own products. [high]"
+    }
+   },
+   "params": {
+    "d": "—",
+    "tip": {
+     "zh": "Meta 没有公布参数量。",
+     "en": "Meta has not disclosed the parameter count."
+    }
+   },
+   "row_tip": {
+    "zh": "Meta 当前对外的旗舰。没填进表的：OSWorld 72.6%（108 题全集，不是离线子集）、SWE-Marathon 53.1%（没写版本）、AutomationBench-AA 39.1%（AA 的严格计分版）。",
+    "en": "Meta's current public flagship. Not in the table: OSWorld 72.6% (the full 108-task set, not the offline subset), SWE-Marathon 53.1% (version not stated) and AutomationBench-AA 39.1% (AA's strict-scoring variant)."
+   },
+   "scores": {
+    "aa": {
+     "d": "44",
+     "v": 44,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，max 档，精确值 43.57。跑完整个指数每题约 $6.95。〔高〕",
+      "en": "Artificial Analysis v5.0.1, max setting, exact 43.57. About $6.95 per task over the full index. [high]"
+     }
+    },
+    "vals": {
+     "d": "64.88",
+     "v": 64.88,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 12。每题成本 $10.65。发布当天旧版指数是 61.06%。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #12 of 43 on the full Vals leaderboard. Cost per task $10.65. 61.06% on the older index at launch. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "49.49",
+     "v": 49.49,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 17。每题成本 $14.66。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #17 of 70 on the full Vals leaderboard. Cost per task $14.66. [high]"
+     }
+    },
+    "tb4_vendor": {
+     "d": "52.0",
+     "v": 52.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Meta 的 Muse Wonder 发布表，max 档，成绩来自 AA。〔中〕",
+      "en": "Meta's Muse Wonder launch table, max setting, score from AA. [medium]"
+     }
+    },
+    "deepswe": {
+     "d": "78.8",
+     "v": 78.8,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Meta 的 Muse Wonder 发布表，v1.1，max 档，Datacurve 测。〔中〕",
+      "en": "Meta's Muse Wonder launch table, v1.1, max setting, run by Datacurve. [medium]"
+     }
+    },
+    "progb": {
+     "d": "50.0",
+     "v": 50.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Meta 的 Muse Wonder 发布表，max 档，mini-SWE-agent，按「测试通过 ≥95% 的比例」算。〔中〕",
+      "en": "Meta's Muse Wonder launch table, max setting, mini-SWE-agent, share of runs passing at least 95% of tests. [medium]"
+     }
+    }
+   }
+  },
+  {
+   "id": "muse-ember",
+   "name": "Muse Ember",
+   "short": "Ember",
+   "vendor": "meta",
+   "status": "public",
+   "release": "2026-11-09",
+   "price": {
+    "in": 0.1,
+    "out": 0.5,
+    "tip": {
+     "zh": "Meta Model API 标准价（muse-ember-1.0）：输入不超过 200K token 时 $0.10 / 缓存 $0.004 / 输出 $0.50；超过 200K 整单按 $0.30 / $1.50 算。〔高〕",
+     "en": "Meta Model API standard price (muse-ember-1.0): with input up to 200K tokens, $0.10 / $0.004 cached / $0.50 output; above 200K the whole request bills at $0.30 / $1.50. [high]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "否",
+     "en": "No"
+    },
+    "tip": {
+     "zh": "不开放权重，只能通过 API 或自家产品用。〔高〕",
+     "en": "Weights are not released; available only through the API or the vendor's own products. [high]"
+    }
+   },
+   "params": {
+    "d": "—",
+    "tip": {
+     "zh": "Meta 没有公布参数量。",
+     "en": "Meta has not disclosed the parameter count."
+    }
+   },
+   "row_tip": {
+    "zh": "Meta 最小最省的模型，和 Haiku 5.5 同价。没填进表的：Agents' Last Exam 61.6%（是 v1.0 的 Linux 子集，不是 v1.1）、OSWorld 69.5%（108 题全集）、AutomationBench-AA 37.8%（AA 的严格计分版）。",
+    "en": "Meta's smallest, cheapest model, priced like Haiku 5.5. Not in the table: Agents' Last Exam 61.6% (the v1.0 Linux subset, not v1.1), OSWorld 69.5% (the full 108-task set) and AutomationBench-AA 37.8% (AA's strict-scoring variant)."
+   },
+   "scores": {
+    "aa": {
+     "d": "36",
+     "v": 36,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，max 档（xhigh 34.11），精确值 36.02。跑完整个指数每题约 $0.14。〔高〕",
+      "en": "Artificial Analysis v5.0.1, max setting (xhigh 34.11), exact 36.02. About $0.14 per task over the full index. [high]"
+     }
+    },
+    "vals": {
+     "d": "60.48",
+     "v": 60.48,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 18。每题成本 $0.153。Vals 说它是榜上每题成本最低的模型。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #18 of 43 on the full Vals leaderboard. Cost per task $0.153. Vals calls it the cheapest per test on the index. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "39.39",
+     "v": 39.39,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 21。每题成本 $0.22。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #21 of 70 on the full Vals leaderboard. Cost per task $0.22. [high]"
+     }
+    },
+    "tb4_vendor": {
+     "d": "40.9",
+     "v": 40.9,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Meta 的评测方法说明（11 月），max 档，AA 在 mini-SWE-agent 里测。〔中〕",
+      "en": "Meta's evaluation methodology note (November), max setting, run by AA with mini-SWE-agent. [medium]"
+     }
+    },
+    "fc2": {
+     "d": "27.2<sup>AA</sup>",
+     "v": 27.2,
+     "src": "artificial_analysis",
+     "cf": "中",
+     "note": {
+      "zh": "Meta 的 Muse Ember 发布文，引用 AA 测的 FrontierCode-AA 2.0（132 题私有集），max 档。〔中〕",
+      "en": "Meta's Muse Ember launch post, citing AA's FrontierCode-AA 2.0 run (132-task private set), max setting. [medium]"
+     }
+    }
+   }
+  },
+  {
+   "id": "muse-spark-open",
+   "name": "Muse Spark Open",
+   "short": "Spark Open",
+   "vendor": "meta",
+   "status": "public",
+   "release": "2026-10-15",
+   "price": {
+    "in": 1.25,
+    "out": 4.25,
+    "tip": {
+     "zh": "开放权重，Meta 自家 API 不托管。价格是 AA 和 Vals 列的第三方托管价（Baseten、Fireworks、Together AI 等），各家可能不同；和 Muse Spark 1.3 的 API 价一样。〔中〕",
+     "en": "Open weights; not hosted on Meta's own API. Price is the third-party hosting rate listed by AA and Vals (Baseten, Fireworks, Together AI and others) and may vary by provider; it matches Muse Spark 1.3's API price. [medium]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "自定义",
+     "en": "Custom"
+    },
+    "tip": {
+     "zh": "Muse Model License：自定义许可，商用有限制；Hugging Face 上的权重要人工审批才能下载。〔中〕",
+     "en": "Muse Model License: custom, with limited commercial use; the Hugging Face weights require manual approval to download. [medium]"
+    }
+   },
+   "params": {
+    "d": "816B / 42B",
+    "tip": {
+     "zh": "Hugging Face 模型卡：总参数 816B，激活 42B。〔高〕",
+     "en": "Hugging Face model card: 816B total, 42B active. [high]"
+    }
+   },
+   "row_tip": {
+    "zh": "Meta 第一个大尺寸开放权重模型。没填进表的：OSWorld-Verified 80.4%（另一个测试集）、Terminal-Bench 2.1 76.4%、HLE 不带工具的 26.1%（Diamond 子集）。Vals 测的 Terminal-Bench 4.0 只有 6.57%，可能是第三方托管或接入问题。",
+    "en": "Meta's first large open-weight model. Not in the table: OSWorld-Verified 80.4% (a different test set), Terminal-Bench 2.1 at 76.4% and HLE without tools at 26.1% (Diamond subset). Vals' Terminal-Bench 4.0 run gives only 6.57%, possibly a hosting or integration issue."
+   },
+   "scores": {
+    "aa": {
+     "d": "25",
+     "v": 25,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，xhigh 档，精确值 24.88。跑完整个指数每题约 $2.02。Meta 发布时引用的旧版 v4.3 是 39，两版不能比。〔高〕",
+      "en": "Artificial Analysis v5.0.1, xhigh setting, exact 24.88. About $2.02 per task over the full index. Meta's launch cited 39 on the older v4.3; the two versions are not comparable. [high]"
+     }
+    },
+    "vals": {
+     "d": "48.57",
+     "v": 48.57,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 37。每题成本 $4.72。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #37 of 43 on the full Vals leaderboard. Cost per task $4.72. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "6.57",
+     "v": 6.57,
+     "src": "vals_ai",
+     "cf": "低",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 58。每题成本 $7.26。远低于同家其他型号（Ember 39.39%），可能是第三方托管或接入问题。〔低〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #58 of 70 on the full Vals leaderboard. Cost per task $7.26. Far below the rest of the family (Ember scores 39.39%); possibly a third-party hosting or integration issue. [low]"
+     }
+    },
+    "deepswe": {
+     "d": "60",
+     "v": 60,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Muse Spark Open 模型卡，v1.1，Muse Code 工具，成绩来自 AA。〔中〕",
+      "en": "Muse Spark Open model card, v1.1, Muse Code harness, score from AA. [medium]"
+     }
+    },
+    "hle": {
+     "d": "61.0",
+     "v": 61.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Muse Spark Open 模型卡，带工具，xhigh 档。〔中〕",
+      "en": "Muse Spark Open model card, with tools, xhigh setting. [medium]"
+     }
+    },
+    "gdpval": {
+     "d": "1401",
+     "v": 1401,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Muse Spark Open 模型卡，v2，xhigh 档，AA 测。〔中〕",
+      "en": "Muse Spark Open model card, v2, xhigh setting, run by AA. [medium]"
+     }
+    }
+   }
+  },
+  {
+   "id": "deepseek-v4-1-flash-1017",
+   "name": "DeepSeek-V4.1-Flash-1017",
+   "short": "V4.1-Flash-1017",
+   "fig": "DS V4.1-Flash-1017",
+   "vendor": "deepseek",
+   "status": "public",
+   "release": "2026-10-17",
+   "price": {
+    "in": 0.3,
+    "out": 1.2,
+    "tip": {
+     "zh": "DeepSeek 官方价（高峰）：输入 $0.30、输出 $1.20；空闲时段半价 $0.15 / $0.60；缓存命中 $0.006。API 名 deepseek-flash 现在指向它。〔高〕",
+     "en": "DeepSeek list price (peak): $0.30 input, $1.20 output; half price off-peak ($0.15 / $0.60); cached input $0.006. The API name deepseek-flash now points to it. [high]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "MIT",
+     "en": "MIT"
+    },
+    "tip": {
+     "zh": "MIT 许可证：可以商用、可以修改，基本没有附加条件。〔高〕",
+     "en": "MIT license: commercial use and modification allowed, with essentially no strings attached. [high]"
+    }
+   },
+   "params": {
+    "d": "552B / 8–16B",
+    "tip": {
+     "zh": "Hugging Face 模型卡：主干 552B（safetensors 里算上 196B 的 Engram 记忆和视觉编码器是 763B）；激活参数预填充 8B、解码 16B。〔高〕",
+     "en": "Hugging Face model card: a 552B backbone (763B in the safetensors, counting the 196B Engram memory and the vision encoder); 8B active in prefill, 16B in decode. [high]"
+    }
+   },
+   "row_tip": {
+    "zh": "DeepSeek 现役模型，权重和 API 同一天放出。不少对照分数出自 Moonshot 的 Kimi K3.1 Pro 模型卡（多数是 Moonshot 用 Claude Code 跑的）。没填进表的：OSWorld V2.1 69.3%（Moonshot 的表，没写是不是离线子集）、HLE 不带工具 42.6%。",
+    "en": "DeepSeek's current model; weights and API shipped the same day. Many comparison scores come from Moonshot's Kimi K3.1 Pro model card (mostly Moonshot's own runs in Claude Code). Not in the table: OSWorld V2.1 69.3% (Moonshot's table; offline subset not stated) and HLE without tools at 42.6%."
+   },
+   "scores": {
+    "aa": {
+     "d": "33",
+     "v": 33,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，max 档（high 28.64），精确值 32.59。跑完整个指数每题约 $0.60。〔高〕",
+      "en": "Artificial Analysis v5.0.1, max setting (high 28.64), exact 32.59. About $0.60 per task over the full index. [high]"
+     }
+    },
+    "vals": {
+     "d": "61.26",
+     "v": 61.26,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 16。每题成本 $0.66。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #16 of 43 on the full Vals leaderboard. Cost per task $0.66. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "31.82",
+     "v": 31.82,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 29。每题成本 $0.54。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #29 of 70 on the full Vals leaderboard. Cost per task $0.54. [high]"
+     }
+    },
+    "tb4_vendor": {
+     "d": "42.3",
+     "v": 42.3,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡，Claude Code 工具（见卡片脚注）。Moonshot 的表里同为 42.3%。〔中〕",
+      "en": "DeepSeek's model card, Claude Code harness (per the card's footnote). Moonshot's table gives the same 42.3%. [medium]"
+     }
+    },
+    "ale": {
+     "d": "37.7",
+     "v": 37.7,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 在 Kimi K3.1 Pro 模型卡里给的对照分数，v1.1 全部 122 题。DeepSeek 自己报 35.4%，没写版本。〔中〕",
+      "en": "Comparison score in Moonshot's Kimi K3.1 Pro model card, v1.1, all 122 tasks. DeepSeek itself reports 35.4% without a version. [medium]"
+     }
+    },
+    "auto": {
+     "d": "60.5",
+     "v": 60.5,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡，AutomationBench v1.0.6；没写推理强度（V4.1 的卡全部按 max 报）。〔中〕",
+      "en": "DeepSeek's model card, AutomationBench v1.0.6; reasoning effort not stated (the V4.1 card reports everything at max). [medium]"
+     }
+    },
+    "chart": {
+     "d": "83.0",
+     "v": 83.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡，带工具。Moonshot 的表里同为 83.0%。〔中〕",
+      "en": "DeepSeek's model card, with tools. Moonshot's table gives the same 83.0%. [medium]"
+     }
+    },
+    "tbsci": {
+     "d": "9.3",
+     "v": 9.3,
+     "src": "release_table",
+     "cf": "低",
+     "note": {
+      "zh": "Moonshot 在 Kimi K3.1 Pro 模型卡脚注里写的自测分数。表里那一格写的 15.7% 其实是旧版 V4.1-Flash 的官方榜成绩。〔低〕",
+      "en": "Moonshot's own run, given in a footnote to its Kimi K3.1 Pro model card. The 15.7% printed in that table is actually the older V4.1-Flash's official leaderboard score. [low]"
+     }
+    },
+    "fc2": {
+     "d": "28.5<sup>AA</sup>",
+     "v": 28.5,
+     "src": "artificial_analysis",
+     "cf": "中",
+     "note": {
+      "zh": "Artificial Analysis 模型页的分项成绩（FrontierCode-AA 2.0，132 题私有集），max 档。〔中〕",
+      "en": "Component result on the Artificial Analysis model page (FrontierCode-AA 2.0, 132-task private set), max setting. [medium]"
+     }
+    },
+    "deepswe": {
+     "d": "77.0",
+     "v": 77.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡，v1.1，Mini-SWE-V2 工具（见卡片脚注）。〔中〕",
+      "en": "DeepSeek's model card, v1.1, Mini-SWE-V2 harness (per the card's footnote). [medium]"
+     }
+    },
+    "progb": {
+     "d": "29.1",
+     "v": 29.1,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡；Moonshot 的表里同为 29.1%，按「几乎做对」算。〔中〕",
+      "en": "DeepSeek's model card; Moonshot's table gives the same 29.1%, on the \"almost solved\" metric. [medium]"
+     }
+    },
+    "swem": {
+     "d": "40.0",
+     "v": 40.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 在 Kimi K3.1 Pro 模型卡里给的对照分数，v1.1。〔中〕",
+      "en": "Comparison score in Moonshot's Kimi K3.1 Pro model card, v1.1. [medium]"
+     }
+    },
+    "hle": {
+     "d": "58.8",
+     "v": 58.8,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 在 Kimi K3.1 Pro 模型卡里给的对照分数，全集、带工具。DeepSeek 自己只报了不带工具的 42.6%。〔中〕",
+      "en": "Comparison score in Moonshot's Kimi K3.1 Pro model card, full set, with tools. DeepSeek itself reports only the no-tools 42.6%. [medium]"
+     }
+    },
+    "gdpval": {
+     "d": "1746",
+     "v": 1746,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 在 Kimi K3.1 Pro 模型卡里给的对照分数，v2，引用 AA。AA 模型页现在是 1745.8。〔中〕",
+      "en": "Comparison score in Moonshot's Kimi K3.1 Pro model card, v2, citing AA. The AA model page now shows 1745.8. [medium]"
+     }
+    }
+   }
+  },
+  {
+   "id": "deepseek-v4-1-flash",
+   "name": "DeepSeek-V4.1-Flash",
+   "short": "V4.1-Flash",
+   "fig": "DS V4.1-Flash",
+   "vendor": "deepseek",
+   "status": "public",
+   "release": "2026-09-10",
+   "tag": {
+    "text": {
+     "zh": "已取代",
+     "en": "Superseded"
+    },
+    "tip": {
+     "zh": "10 月 17 日起 API 上被 V4.1-Flash-1017 取代：现在调 deepseek-flash 实际由 1017 服务。权重仍可下载。",
+     "en": "Replaced on the API by V4.1-Flash-1017 on Oct 17: calls to deepseek-flash are now served by -1017. The weights remain available."
+    }
+   },
+   "price": {
+    "in": 0.3,
+    "out": 1.2,
+    "tip": {
+     "zh": "和 1017 同价：高峰 $0.30 / $1.20，空闲时段半价。〔高〕",
+     "en": "Same price as -1017: $0.30 / $1.20 at peak, half off-peak. [high]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "MIT",
+     "en": "MIT"
+    },
+    "tip": {
+     "zh": "MIT 许可证：可以商用、可以修改，基本没有附加条件。〔高〕",
+     "en": "MIT license: commercial use and modification allowed, with essentially no strings attached. [high]"
+    }
+   },
+   "params": {
+    "d": "552B / 8–16B",
+    "tip": {
+     "zh": "Hugging Face 模型卡：主干 552B（safetensors 里算上 196B 的 Engram 记忆和视觉编码器是 763B）；激活参数预填充 8B、解码 16B。〔高〕",
+     "en": "Hugging Face model card: a 552B backbone (763B in the safetensors, counting the 196B Engram memory and the vision encoder); 8B active in prefill, 16B in decode. [high]"
+    }
+   },
+   "row_tip": {
+    "zh": "1017 的前一版，权重和 API 同一天放出。没填进表的：Agents' Last Exam 31.8%（没写版本）、HLE 不带工具 36.8%。",
+    "en": "The version before -1017; weights and API shipped the same day. Not in the table: Agents' Last Exam 31.8% (version not stated) and HLE without tools at 36.8%."
+   },
+   "scores": {
+    "tb4_vals": {
+     "d": "19.70",
+     "v": 19.7,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 41。每题成本 $0.50。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #41 of 70 on the full Vals leaderboard. Cost per task $0.50. [high]"
+     }
+    },
+    "tb4_vendor": {
+     "d": "31.2",
+     "v": 31.2,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡，max 档，DeepSeek Harness 的 Minimal 模式，1M 上下文。〔中〕",
+      "en": "DeepSeek's model card, max setting, DeepSeek Harness in Minimal mode, 1M context. [medium]"
+     }
+    },
+    "auto": {
+     "d": "54.8",
+     "v": 54.8,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡，max 档，官方脚手架；1017 的卡里标的是 v1.0.6。〔中〕",
+      "en": "DeepSeek's model card, max setting, official scaffold; the -1017 card labels it v1.0.6. [medium]"
+     }
+    },
+    "chart": {
+     "d": "78.9",
+     "v": 78.9,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡，带工具，max 档，Claude Code，512K 上下文。〔中〕",
+      "en": "DeepSeek's model card, with tools, max setting, Claude Code, 512K context. [medium]"
+     }
+    },
+    "tbsci": {
+     "d": "15.7",
+     "v": 15.7,
+     "src": "release_table",
+     "cf": "低",
+     "note": {
+      "zh": "Terminal-Bench-Science 官方榜成绩，由 Moonshot 在 Kimi K3.1 Pro 模型卡里引用。〔低〕",
+      "en": "Official Terminal-Bench-Science leaderboard score, cited in Moonshot's Kimi K3.1 Pro model card. [low]"
+     }
+    },
+    "deepswe": {
+     "d": "74.2",
+     "v": 74.2,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡，v1.1，max 档，mini-SWE。换成 Claude Code 是 69.8%。〔中〕",
+      "en": "DeepSeek's model card, v1.1, max setting, mini-SWE. 69.8% in Claude Code. [medium]"
+     }
+    },
+    "progb": {
+     "d": "20.3",
+     "v": 20.3,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡，Almost@1（「几乎做对」），max 档。〔中〕",
+      "en": "DeepSeek's model card, Almost@1 (\"almost solved\"), max setting. [medium]"
+     }
+    },
+    "hle": {
+     "d": "63.9",
+     "v": 63.9,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡，带工具，max 档。〔中〕",
+      "en": "DeepSeek's model card, with tools, max setting. [medium]"
+     }
+    },
+    "cygym": {
+     "d": "88.1",
+     "v": 88.1,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡，max 档。〔中〕",
+      "en": "DeepSeek's model card, max setting. [medium]"
+     }
+    }
+   },
+   "blank": {
+    "aa": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "AA 把它标成已停用，没算 v5.0.1 指数。",
+      "en": "AA marks it deprecated and computes no v5.0.1 index."
+     }
+    },
+    "vals": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "不在 Vals Index v2.2 榜上。",
+      "en": "Not on the Vals Index v2.2 leaderboard."
+     }
+    }
+   }
+  },
+  {
+   "id": "deepseek-v4-pro-0813",
+   "name": "DeepSeek-V4-Pro-0813",
+   "short": "V4-Pro-0813",
+   "fig": "DS V4-Pro-0813",
+   "vendor": "deepseek",
+   "status": "public",
+   "release": "2026-08-13",
+   "price": {
+    "in": 1.32,
+    "out": 3.96,
+    "tip": {
+     "zh": "DeepSeek 官方价（高峰）$1.32 / $3.96，空闲时段半价 $0.66 / $1.98；缓存命中 $0.044。不支持看图。〔高〕",
+     "en": "DeepSeek list price (peak) $1.32 / $3.96, half off-peak ($0.66 / $1.98); cached input $0.044. No image input. [high]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "MIT",
+     "en": "MIT"
+    },
+    "tip": {
+     "zh": "MIT 许可证：可以商用、可以修改，基本没有附加条件。〔高〕",
+     "en": "MIT license: commercial use and modification allowed, with essentially no strings attached. [high]"
+    }
+   },
+   "params": {
+    "d": "1.6T / 49B",
+    "tip": {
+     "zh": "Hugging Face 模型卡：总参数 1.6T（safetensors 里算上 DSpark 草稿模块是 1.65T），激活 49B。〔高〕",
+     "en": "Hugging Face model card: 1.6T total (1.65T in the safetensors, counting the DSpark draft module), 49B active. [high]"
+    }
+   },
+   "row_tip": {
+    "zh": "V4-Pro 的正式版。9 月 10 日宣布下线，之后两次改口；11 月 22 日官方价格页仍列着 deepseek-v4-pro。没填进表的：Agents' Last Exam 25.7%（只是 CLI 子集）；它自己的模型卡里 AutomationBench 写 31.8%（Public 子集，较早版本）。",
+    "en": "The GA release of V4-Pro. Its retirement was announced on Sep 10 and reversed twice since; the official pricing page still lists deepseek-v4-pro on Nov 22. Not in the table: Agents' Last Exam 25.7% (CLI subset only); its own model card gives AutomationBench 31.8% (Public subset, an earlier version)."
+   },
+   "scores": {
+    "aa": {
+     "d": "23",
+     "v": 23,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，max 档（high 20.8），精确值 23.06。跑完整个指数每题约 $1.77。〔高〕",
+      "en": "Artificial Analysis v5.0.1, max setting (high 20.8), exact 23.06. About $1.77 per task over the full index. [high]"
+     }
+    },
+    "vals": {
+     "d": "52.97",
+     "v": 52.97,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 32。每题成本 $2.50。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #32 of 43 on the full Vals leaderboard. Cost per task $2.50. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "14.14",
+     "v": 14.14,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 47。每题成本 $3.31。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #47 of 70 on the full Vals leaderboard. Cost per task $3.31. [high]"
+     }
+    },
+    "tb4_vendor": {
+     "d": "12.4",
+     "v": 12.4,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 在 V4.1-Flash 模型卡里给它的对照分数，max 档。〔中〕",
+      "en": "Comparison score in DeepSeek's V4.1-Flash model card, max setting. [medium]"
+     }
+    },
+    "auto": {
+     "d": "43.2",
+     "v": 43.2,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 在 V4.1-Flash 模型卡里给的对照分数；Z.ai 的表里同为 43.2%（v1.0.6）。〔中〕",
+      "en": "Comparison score in DeepSeek's V4.1-Flash model card; Z.ai's table gives the same 43.2% (v1.0.6). [medium]"
+     }
+    },
+    "fc2": {
+     "d": "17.1<sup>AA</sup>",
+     "v": 17.1,
+     "src": "artificial_analysis",
+     "cf": "中",
+     "note": {
+      "zh": "Artificial Analysis 模型页的分项成绩（FrontierCode-AA 2.0，132 题私有集），max 档。〔中〕",
+      "en": "Component result on the Artificial Analysis model page (FrontierCode-AA 2.0, 132-task private set), max setting. [medium]"
+     }
+    },
+    "deepswe": {
+     "d": "62.7",
+     "v": 62.7,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡；后来的 V4.1-Flash 卡标明是 v1.1。〔中〕",
+      "en": "DeepSeek's model card; the later V4.1-Flash card labels it v1.1. [medium]"
+     }
+    },
+    "progb": {
+     "d": "15.5",
+     "v": 15.5,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 在 V4.1-Flash 模型卡里给的对照分数，Almost@1。〔中〕",
+      "en": "Comparison score in DeepSeek's V4.1-Flash model card, Almost@1. [medium]"
+     }
+    },
+    "hle": {
+     "d": "60.0",
+     "v": 60.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡，带工具。〔中〕",
+      "en": "DeepSeek's model card, with tools. [medium]"
+     }
+    },
+    "gdpval": {
+     "d": "1590",
+     "v": 1590,
+     "src": "release_table",
+     "cf": "低",
+     "note": {
+      "zh": "Z.ai 在 GLM-5.3 模型卡里给的对照分数，v2。AA 模型页现在是 1455.6，取数时间不同。〔低〕",
+      "en": "Comparison score in Z.ai's GLM-5.3 model card, v2. The AA model page now shows 1455.6; the two were taken at different times. [low]"
+     }
+    },
+    "cygym": {
+     "d": "83.3",
+     "v": 83.3,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 模型卡。〔中〕",
+      "en": "DeepSeek's model card. [medium]"
+     }
+    }
+   }
+  },
+  {
+   "id": "kimi-k3-1-pro",
+   "name": "Kimi K3.1 Pro",
+   "short": "K3.1 Pro",
+   "vendor": "moonshot",
+   "status": "public",
+   "release": "2026-10-24",
+   "release_tip": {
+    "zh": "10 月 24 日 API 和 App 上线；权重约 11 月 4 日放出（Hugging Face 仓库 11 月 2 日建立）。",
+    "en": "API and apps went live on Oct 24; weights followed around Nov 4 (Hugging Face repo created Nov 2)."
+   },
+   "price": {
+    "in": 2,
+    "out": 10,
+    "tip": {
+     "zh": "Moonshot 官方价 $2 / $10；缓存命中 $0.20，写缓存另计。批量接口打 6 折。快 2–3 倍的 Highspeed 版 $4 / $20。〔高〕",
+     "en": "Moonshot list price $2 / $10; cached input $0.20, cache writes billed separately. Batch API at 60% of list. The 2–3× faster Highspeed variant costs $4 / $20. [high]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "自定义",
+     "en": "Custom"
+    },
+    "tip": {
+     "zh": "Kimi K3.1 Pro License：MIT 式的自定义许可。任意 12 个月收入超过 2,000 万美元的 MaaS 业务要另签协议；月活超 1 亿或月收入超 2,000 万美元的产品要在界面上显示「Kimi K3.1-Pro」。〔高〕",
+     "en": "Kimi K3.1 Pro License: a custom, MIT-style license. MaaS businesses with more than $20M revenue in any 12 months need a separate agreement; products with over 100M monthly users or $20M monthly revenue must display \"Kimi K3.1-Pro\". [high]"
+    }
+   },
+   "params": {
+    "d": "2.8T / 104B",
+    "tip": {
+     "zh": "Moonshot 模型卡：总参数 2.8T，激活 104B。〔高〕",
+     "en": "Moonshot model card: 2.8T total, 104B active. [high]"
+    }
+   },
+   "row_tip": {
+    "zh": "开放权重里 AA 第一，Vals 测的 Terminal-Bench 4.0 排第 4。没填进表的：OSWorld V2.1 79.6%（模型卡没说是不是离线子集）、AutomationBench-AA 73.3%（AA 的部分分口径，不是 v1.0.6）。",
+    "en": "Top open-weight model on the AA Index, and fourth on Vals' Terminal-Bench 4.0. Not in the table: OSWorld V2.1 79.6% (the card does not say whether it is the offline subset) and AutomationBench-AA 73.3% (AA's partial-credit variant, not v1.0.6)."
+   },
+   "scores": {
+    "aa": {
+     "d": "46",
+     "v": 46,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，max 档，精确值 46.45。跑完整个指数每题约 $3.68。v5.0.1 上开放权重模型第一。〔高〕",
+      "en": "Artificial Analysis v5.0.1, max setting, exact 46.45. About $3.68 per task over the full index. The top open-weight model on v5.0.1. [high]"
+     }
+    },
+    "vals": {
+     "d": "62.52",
+     "v": 62.52,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 15。每题成本 $6.44。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #15 of 43 on the full Vals leaderboard. Cost per task $6.44. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "63.64",
+     "v": 63.64,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 4。每题成本 $4.57。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #4 of 70 on the full Vals leaderboard. Cost per task $4.57. [high]"
+     }
+    },
+    "tb4_vendor": {
+     "d": "65.7",
+     "v": 65.7,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 模型卡，Claude Code 工具。AA 测是 67.2%。〔中〕",
+      "en": "Moonshot's model card, Claude Code harness. AA measured 67.2%. [medium]"
+     }
+    },
+    "ale": {
+     "d": "43.2",
+     "v": 43.2,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 模型卡，v1.1 正式版全部 122 题，Kimi Code 工具。〔中〕",
+      "en": "Moonshot's model card, the official v1.1 release, all 122 tasks, Kimi Code harness. [medium]"
+     }
+    },
+    "chart": {
+     "d": "90.2",
+     "v": 90.2,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 模型卡，带 Python 沙箱，5 次平均。〔中〕",
+      "en": "Moonshot's model card, with a Python sandbox, averaged over 5 runs. [medium]"
+     }
+    },
+    "tbsci": {
+     "d": "38.1",
+     "v": 38.1,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 模型卡，Claude Code 工具。AA 测是 34.3%。〔中〕",
+      "en": "Moonshot's model card, Claude Code harness. AA measured 34.3%. [medium]"
+     }
+    },
+    "fc2": {
+     "d": "25.5<sup>AA</sup>",
+     "v": 25.5,
+     "src": "artificial_analysis",
+     "cf": "中",
+     "note": {
+      "zh": "Artificial Analysis 模型页的分项成绩（FrontierCode-AA 2.0，132 题私有集），max 档。〔中〕",
+      "en": "Component result on the Artificial Analysis model page (FrontierCode-AA 2.0, 132-task private set), max setting. [medium]"
+     }
+    },
+    "deepswe": {
+     "d": "75.5",
+     "v": 75.5,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 模型卡，v1.1，Claude Code 工具。〔中〕",
+      "en": "Moonshot's model card, v1.1, Claude Code harness. [medium]"
+     }
+    },
+    "progb": {
+     "d": "31.5",
+     "v": 31.5,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 模型卡，二值计分（一题测试通过 ≥95% 才算 1），Claude Code 工具。〔中〕",
+      "en": "Moonshot's model card, binary scoring (a task counts only if at least 95% of its tests pass), Claude Code harness. [medium]"
+     }
+    },
+    "swem": {
+     "d": "51.7",
+     "v": 51.7,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 模型卡，v1.1，Claude Code 工具。〔中〕",
+      "en": "Moonshot's model card, v1.1, Claude Code harness. [medium]"
+     }
+    },
+    "hle": {
+     "d": "70.0",
+     "v": 70.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 模型卡，全集、带工具，max 档。不带工具是 51.1%。〔中〕",
+      "en": "Moonshot's model card, full set, with tools, max setting. 51.1% without tools. [medium]"
+     }
+    },
+    "gdpval": {
+     "d": "1846",
+     "v": 1846,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 模型卡，v2，引用 AA。AA 模型页现在是 1860.6。〔中〕",
+      "en": "Moonshot's model card, v2, citing AA. The AA model page now shows 1860.6. [medium]"
+     }
+    }
+   }
+  },
+  {
+   "id": "kimi-k3",
+   "name": "Kimi K3",
+   "short": "K3",
+   "vendor": "moonshot",
+   "status": "public",
+   "release": "2026-07-16",
+   "release_tip": {
+    "zh": "7 月 16 日 API 和 App 上线（博文署北京时间 7 月 17 日）；完整权重 7 月 27 日放出。",
+    "en": "API and apps went live on Jul 16 (the blog is dated Jul 17 Beijing time); full weights followed on Jul 27."
+   },
+   "price": {
+    "in": 3,
+    "out": 15,
+    "tip": {
+     "zh": "Moonshot 官方价 $3 / $15，缓存命中 $0.30；比后继的 K3.1 Pro 还贵。〔高〕",
+     "en": "Moonshot list price $3 / $15, cached input $0.30; pricier than its successor K3.1 Pro. [high]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "自定义",
+     "en": "Custom"
+    },
+    "tip": {
+     "zh": "Kimi K3 License：自定义许可（从 K3 起不再叫修改版 MIT）。任意 12 个月收入超过 2,000 万美元的 MaaS 业务要另签协议。〔高〕",
+     "en": "Kimi K3 License: custom (from K3 on it is no longer called modified MIT). MaaS businesses with more than $20M revenue in any 12 months need a separate agreement. [high]"
+    }
+   },
+   "params": {
+    "d": "2.8T / 104B",
+    "tip": {
+     "zh": "Moonshot 模型卡：总参数 2.8T，激活 104B。〔高〕",
+     "en": "Moonshot model card: 2.8T total, 104B active. [high]"
+    }
+   },
+   "row_tip": {
+    "zh": "K3.1 Pro 的上一代。没填进表的：Agents' Last Exam 28.3%（没写版本）、OSWorld-Verified 84.8% 和 OSWorld 2.0 58.3%（都不是 2.1 离线子集）。Moonshot 自己报的 ProgramBench 77.8% 是部分分口径，AutomationBench 30.8% 是 600 题公开子集，SWE-Marathon 42.0% 用的是 v1.1 定稿前的题，所以表里用了别家表格里口径一致的数。",
+    "en": "The generation before K3.1 Pro. Not in the table: Agents' Last Exam 28.3% (version not stated), OSWorld-Verified 84.8% and OSWorld 2.0 58.3% (neither is the 2.1 offline subset). Moonshot's own ProgramBench 77.8% is partial credit, its AutomationBench 30.8% is the 600-task public subset and its SWE-Marathon 42.0% predates the final v1.1 tasks, so the table uses like-for-like numbers from other vendors' tables."
+   },
+   "scores": {
+    "vals": {
+     "d": "52.95",
+     "v": 52.95,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 33。每题成本 $7.17。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #33 of 43 on the full Vals leaderboard. Cost per task $7.17. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "17.17",
+     "v": 17.17,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 45。每题成本 $12.48。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #45 of 70 on the full Vals leaderboard. Cost per task $12.48. [high]"
+     }
+    },
+    "tb4_vendor": {
+     "d": "12.6",
+     "v": 12.6,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 在 V4.1-Flash 模型卡里给的对照分数，max 档。AA 测也是 12.6%。〔中〕",
+      "en": "Comparison score in DeepSeek's V4.1-Flash model card, max setting. AA also measured 12.6%. [medium]"
+     }
+    },
+    "auto": {
+     "d": "46.7",
+     "v": 46.7,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 和 Z.ai 的表里都给 46.7%（v1.0.6）。〔中〕",
+      "en": "Both DeepSeek's and Z.ai's tables give 46.7% (v1.0.6). [medium]"
+     }
+    },
+    "chart": {
+     "d": "68.1",
+     "v": 68.1,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 在 V4.1-Flash 模型卡里给的对照分数，带工具。〔中〕",
+      "en": "Comparison score in DeepSeek's V4.1-Flash model card, with tools. [medium]"
+     }
+    },
+    "deepswe": {
+     "d": "67.5",
+     "v": 67.5,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 模型卡，v1.1，Kimi Code 工具；用 mini-SWE-agent 在官方榜上是 67.3%。〔中〕",
+      "en": "Moonshot's model card, v1.1, Kimi Code harness; 67.3% with mini-SWE-agent on the official leaderboard. [medium]"
+     }
+    },
+    "progb": {
+     "d": "17.5",
+     "v": 17.5,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 和 Z.ai 的表里都给 17.5%（「几乎做对」）。〔中〕",
+      "en": "Both DeepSeek's and Z.ai's tables give 17.5% (\"almost solved\"). [medium]"
+     }
+    },
+    "swem": {
+     "d": "48.1",
+     "v": 48.1,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 在 GLM-5.3 模型卡里给的对照分数，v1.1。〔中〕",
+      "en": "Comparison score in Z.ai's GLM-5.3 model card, v1.1. [medium]"
+     }
+    },
+    "hle": {
+     "d": "56.0",
+     "v": 56.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 模型卡，全集、带工具。DeepSeek 和 Z.ai 的表里给的是 59.8%。〔中〕",
+      "en": "Moonshot's model card, full set, with tools. DeepSeek's and Z.ai's tables give 59.8%. [medium]"
+     }
+    },
+    "gdpval": {
+     "d": "1686",
+     "v": 1686,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 模型卡，v2，引用 AA（7 月 23 日取数）。〔中〕",
+      "en": "Moonshot's model card, v2, citing AA (as of Jul 23). [medium]"
+     }
+    },
+    "cygym": {
+     "d": "80.0",
+     "v": 80.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "DeepSeek 和 Z.ai 的表里都给 80.0%。〔中〕",
+      "en": "Both DeepSeek's and Z.ai's tables give 80.0%. [medium]"
+     }
+    }
+   },
+   "blank": {
+    "aa": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "AA 把 K3 标成已停用：max 档没有 v5.0.1 指数，只有 low 档 17.42。",
+      "en": "AA marks K3 deprecated: no v5.0.1 index at max, only 17.42 at the low setting."
+     }
+    }
+   }
+  },
+  {
+   "id": "kimi-k2-7-code",
+   "name": "Kimi K2.7 Code",
+   "short": "K2.7 Code",
+   "vendor": "moonshot",
+   "status": "public",
+   "release": "2026-06-12",
+   "tag": {
+    "text": {
+     "zh": "将下线",
+     "en": "Retiring"
+    },
+    "tip": {
+     "zh": "10 月 31 日起不再对新 API 用户开放，计划 12 月底下线。",
+     "en": "Closed to new API users since Oct 31; due to retire by end of December."
+    }
+   },
+   "price": {
+    "in": 0.95,
+    "out": 4,
+    "tip": {
+     "zh": "Moonshot 官方价 $0.95 / $4.00，缓存命中 $0.19；Highspeed 版 $1.90 / $8.00。〔高〕",
+     "en": "Moonshot list price $0.95 / $4.00, cached input $0.19; Highspeed $1.90 / $8.00. [high]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "Modified MIT",
+     "en": "Modified MIT"
+    },
+    "tip": {
+     "zh": "修改版 MIT 许可（Moonshot 的原话是 Modified MIT）。K3 起改用自定义许可证。〔高〕",
+     "en": "A modified MIT license (Moonshot's own term). From K3 on, Moonshot switched to custom licenses. [high]"
+    }
+   },
+   "params": {
+    "d": "1T / 32B",
+    "tip": {
+     "zh": "Moonshot 模型卡：总参数 1T，激活 32B。〔高〕",
+     "en": "Moonshot model card: 1T total, 32B active. [high]"
+    }
+   },
+   "row_tip": {
+    "zh": "K2 系列的编码版。没有可以横向比的分数：AA 列了它但没算 v5.0.1 指数；ProgramBench 53.6% 没写是哪种计分。",
+    "en": "The coding variant of the K2 series. No comparable scores: AA lists it but computes no v5.0.1 index, and its ProgramBench 53.6% does not say which scoring it uses."
+   },
+   "scores": {},
+   "blank": {
+    "aa": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "AA 列了它，但没算 v5.0.1 指数。",
+      "en": "AA lists it but computes no v5.0.1 index."
+     }
+    },
+    "vals": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "不在 Vals Index v2.2 榜上。",
+      "en": "Not on the Vals Index v2.2 leaderboard."
+     }
+    },
+    "tb4_vals": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "不在 Vals 的 Terminal-Bench 4.0 榜上。",
+      "en": "Not on Vals' Terminal-Bench 4.0 leaderboard."
+     }
+    }
+   }
+  },
+  {
+   "id": "glm-5-3",
+   "name": "GLM-5.3",
+   "short": "GLM-5.3",
+   "vendor": "zhipu",
+   "status": "public",
+   "release": "2026-08-18",
+   "release_star": true,
+   "release_tip": {
+    "zh": "8 月 14 日宣布（先给 Coding Plan 用户），8 月 18 日上 API；权重约两周后放出（Hugging Face 仓库 8 月 25 日建立）。",
+    "en": "Announced Aug 14 (Coding Plan users first), on the API from Aug 18; weights about two weeks later (Hugging Face repo created Aug 25)."
+   },
+   "price": {
+    "in": 1.4,
+    "out": 4.4,
+    "tip": {
+     "zh": "Z.ai 官方价 $1.40 / $4.40，缓存命中 $0.26。只接受文本输入，只能开思考模式。〔高〕",
+     "en": "Z.ai list price $1.40 / $4.40, cached input $0.26. Text-only input; reasoning is always on. [high]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "自定义",
+     "en": "Custom"
+    },
+    "tip": {
+     "zh": "GLM-5.3 License：MIT 式的自定义许可，但 12 个月收入超过 100 亿美元的 MaaS 运营方商用前要通过 Z.ai 的安全审查。〔高〕",
+     "en": "GLM-5.3 License: a custom, MIT-style license, but MaaS operators with more than $10B revenue over 12 months must pass a Z.ai security review before commercial use. [high]"
+    }
+   },
+   "params": {
+    "d": "753B / 40B",
+    "tip": {
+     "zh": "总参数 753B（按 safetensors 算）；激活 40B 是 Artificial Analysis 的说法，Z.ai 没写。〔中〕",
+     "en": "753B total (from the safetensors); the 40B active figure is from Artificial Analysis, as Z.ai does not state it. [medium]"
+    }
+   },
+   "row_tip": {
+    "zh": "智谱现在的旗舰。Z.ai 自己没报 Terminal-Bench 4.0，表里那格用的是 Moonshot 的数。Z.ai 自己报的 Agents' Last Exam 28.5% 是 CLI 子集、没写版本，表里用 Moonshot 给的 v1.1 全集分数。",
+    "en": "Zhipu's current flagship. Z.ai did not report Terminal-Bench 4.0 itself, so that cell uses Moonshot's number. Z.ai's own Agents' Last Exam figure, 28.5%, is the CLI subset with no version stated; the table uses Moonshot's full-set v1.1 score."
+   },
+   "scores": {
+    "aa": {
+     "d": "32",
+     "v": 32,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，max 档（low 23.11），精确值 31.65。跑完整个指数每题约 $5.01。〔高〕",
+      "en": "Artificial Analysis v5.0.1, max setting (low 23.11), exact 31.65. About $5.01 per task over the full index. [high]"
+     }
+    },
+    "vals": {
+     "d": "59.85",
+     "v": 59.85,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 19。每题成本 $8.52。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #19 of 43 on the full Vals leaderboard. Cost per task $8.52. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "38.89",
+     "v": 38.89,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 23。每题成本 $9.37。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #23 of 70 on the full Vals leaderboard. Cost per task $9.37. [high]"
+     }
+    },
+    "tb4_vendor": {
+     "d": "41.8",
+     "v": 41.8,
+     "src": "release_table",
+     "cf": "低",
+     "note": {
+      "zh": "Moonshot 在 Kimi K3.1 Pro 模型卡里给的对照分数（Claude Code）。Z.ai 自己没报；DeepSeek 的表里是 37.9%，AA 测是 41.9%。〔低〕",
+      "en": "Comparison score in Moonshot's Kimi K3.1 Pro model card (Claude Code). Z.ai did not report it; DeepSeek's table gives 37.9% and AA measured 41.9%. [low]"
+     }
+    },
+    "ale": {
+     "d": "26.2",
+     "v": 26.2,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Moonshot 在 Kimi K3.1 Pro 模型卡里给的对照分数，v1.1 全部题。〔中〕",
+      "en": "Comparison score in Moonshot's Kimi K3.1 Pro model card, v1.1, all tasks. [medium]"
+     }
+    },
+    "auto": {
+     "d": "48.2",
+     "v": 48.2,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 模型卡，v1.0.6（含 null 类型修复）。DeepSeek 的表里是 48.8%。〔中〕",
+      "en": "Z.ai's model card, v1.0.6 (with the null-type fix). DeepSeek's table gives 48.8%. [medium]"
+     }
+    },
+    "tbsci": {
+     "d": "8.1",
+     "v": 8.1,
+     "src": "release_table",
+     "cf": "低",
+     "note": {
+      "zh": "Moonshot 在 Kimi K3.1 Pro 模型卡里给的对照分数。〔低〕",
+      "en": "Comparison score in Moonshot's Kimi K3.1 Pro model card. [low]"
+     }
+    },
+    "fc2": {
+     "d": "21.6<sup>AA</sup>",
+     "v": 21.6,
+     "src": "artificial_analysis",
+     "cf": "中",
+     "note": {
+      "zh": "Artificial Analysis 模型页的分项成绩（FrontierCode-AA 2.0，132 题私有集），max 档。〔中〕",
+      "en": "Component result on the Artificial Analysis model page (FrontierCode-AA 2.0, 132-task private set), max setting. [medium]"
+     }
+    },
+    "deepswe": {
+     "d": "66.9",
+     "v": 66.9,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 模型卡，v1.1，mini-SWE-agent。〔中〕",
+      "en": "Z.ai's model card, v1.1, mini-SWE-agent. [medium]"
+     }
+    },
+    "progb": {
+     "d": "19.0",
+     "v": 19.0,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 模型卡，「几乎做对」口径。〔中〕",
+      "en": "Z.ai's model card, \"almost solved\" metric. [medium]"
+     }
+    },
+    "swem": {
+     "d": "42.5",
+     "v": 42.5,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 模型卡，v1.1，Claude Code，max 档。〔中〕",
+      "en": "Z.ai's model card, v1.1, Claude Code, max setting. [medium]"
+     }
+    },
+    "hle": {
+     "d": "62.5",
+     "v": 62.5,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 模型卡，带工具。〔中〕",
+      "en": "Z.ai's model card, with tools. [medium]"
+     }
+    },
+    "gdpval": {
+     "d": "1769",
+     "v": 1769,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 模型卡，v2，AA 测。AA 模型页现在是 1654.8。〔中〕",
+      "en": "Z.ai's model card, v2, run by AA. The AA model page now shows 1654.8. [medium]"
+     }
+    },
+    "cygym": {
+     "d": "84.5",
+     "v": 84.5,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 模型卡，Claude Code，max 档，不用联网工具，1,507 题跑一次。〔中〕",
+      "en": "Z.ai's model card, Claude Code, max setting, no web tools, one pass over 1,507 tasks. [medium]"
+     }
+    }
+   }
+  },
+  {
+   "id": "glm-5-3-flash",
+   "name": "GLM-5.3-Flash",
+   "short": "GLM-5.3-Flash",
+   "vendor": "zhipu",
+   "status": "public",
+   "release": "2026-08-26",
+   "price": {
+    "in": 0.15,
+    "out": 0.5,
+    "tip": {
+     "zh": "Z.ai 官方价 $0.15 / $0.50，缓存命中 $0.03；高速版 GLM-5.3-FlashX（约 200 token/秒）$0.37 / $1.25。〔高〕",
+     "en": "Z.ai list price $0.15 / $0.50, cached input $0.03; the faster GLM-5.3-FlashX (about 200 tokens/s) is $0.37 / $1.25. [high]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "MIT",
+     "en": "MIT"
+    },
+    "tip": {
+     "zh": "MIT 许可证：可以商用、可以修改，基本没有附加条件。〔高〕",
+     "en": "MIT license: commercial use and modification allowed, with essentially no strings attached. [high]"
+    }
+   },
+   "params": {
+    "d": "320B / 18B",
+    "tip": {
+     "zh": "Hugging Face 模型卡：总参数 320B，激活 18B。〔高〕",
+     "en": "Hugging Face model card: 320B total, 18B active. [high]"
+    }
+   },
+   "row_tip": {
+    "zh": "GLM-5.3 的小号，MIT 许可，权重和 API 同时放出。没填进表的：Agents' Last Exam 26.3%（没写版本）、OSWorld 2.0 59.1%（不是 2.1）。",
+    "en": "The small sibling of GLM-5.3, MIT-licensed, with weights and API at launch. Not in the table: Agents' Last Exam 26.3% (version not stated) and OSWorld 2.0 59.1% (not 2.1)."
+   },
+   "scores": {
+    "aa": {
+     "d": "28",
+     "v": 28,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，max 档，精确值 27.8。跑完整个指数每题约 $0.58。〔高〕",
+      "en": "Artificial Analysis v5.0.1, max setting, exact 27.8. About $0.58 per task over the full index. [high]"
+     }
+    },
+    "vals": {
+     "d": "50.86",
+     "v": 50.86,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 35。每题成本 $2.05。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #35 of 43 on the full Vals leaderboard. Cost per task $2.05. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "37.37",
+     "v": 37.37,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 26。每题成本 $1.22。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #26 of 70 on the full Vals leaderboard. Cost per task $1.22. [high]"
+     }
+    },
+    "auto": {
+     "d": "48.8",
+     "v": 48.8,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 发布博文，v1.0.6。〔中〕",
+      "en": "Z.ai's launch blog, v1.0.6. [medium]"
+     }
+    },
+    "chart": {
+     "d": "78",
+     "v": 78,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 发布博文，带工具。〔中〕",
+      "en": "Z.ai's launch blog, with tools. [medium]"
+     }
+    },
+    "fc2": {
+     "d": "17.6<sup>AA</sup>",
+     "v": 17.6,
+     "src": "artificial_analysis",
+     "cf": "中",
+     "note": {
+      "zh": "Artificial Analysis 模型页的分项成绩（FrontierCode-AA 2.0，132 题私有集），max 档。〔中〕",
+      "en": "Component result on the Artificial Analysis model page (FrontierCode-AA 2.0, 132-task private set), max setting. [medium]"
+     }
+    },
+    "deepswe": {
+     "d": "63.4",
+     "v": 63.4,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 发布博文，v1.1，mini-SWE-agent。〔中〕",
+      "en": "Z.ai's launch blog, v1.1, mini-SWE-agent. [medium]"
+     }
+    },
+    "hle": {
+     "d": "55.3",
+     "v": 55.3,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 发布博文，全集、带工具。〔中〕",
+      "en": "Z.ai's launch blog, full set, with tools. [medium]"
+     }
+    },
+    "gdpval": {
+     "d": "1773",
+     "v": 1773,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 发布博文，v2，AA 测。AA 模型页现在是 1648.3。〔中〕",
+      "en": "Z.ai's launch blog, v2, run by AA. The AA model page now shows 1648.3. [medium]"
+     }
+    }
+   }
+  },
+  {
+   "id": "glm-5-2",
+   "name": "GLM-5.2",
+   "short": "GLM-5.2",
+   "vendor": "zhipu",
+   "status": "public",
+   "release": "2026-06-16",
+   "tag": {
+    "text": {
+     "zh": "已取代",
+     "en": "Superseded"
+    },
+    "tip": {
+     "zh": "已被 GLM-5.3 取代。",
+     "en": "Superseded by GLM-5.3."
+    }
+   },
+   "price": {
+    "in": 1.4,
+    "out": 4.4,
+    "tip": {
+     "zh": "Z.ai 官方价 $1.40 / $4.40，缓存命中 $0.26（与 GLM-5.3 同价）。〔高〕",
+     "en": "Z.ai list price $1.40 / $4.40, cached input $0.26 (same as GLM-5.3). [high]"
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "MIT",
+     "en": "MIT"
+    },
+    "tip": {
+     "zh": "MIT 许可证：可以商用、可以修改，基本没有附加条件。〔高〕",
+     "en": "MIT license: commercial use and modification allowed, with essentially no strings attached. [high]"
+    }
+   },
+   "params": {
+    "d": "753B / 40B",
+    "tip": {
+     "zh": "总参数 753B（按 safetensors 算；GLM-5 底座是 744B）；激活 40B 是 GLM-5 底座的数字。〔中〕",
+     "en": "753B total (from the safetensors; the GLM-5 base is 744B); 40B active is the GLM-5 base figure. [medium]"
+    }
+   },
+   "row_tip": {
+    "zh": "6 月发布、MIT 许可，已被 GLM-5.3 取代。表里多是 Z.ai 在 GLM-5.3 模型卡里重跑的分数。没填进表的：HLE 带工具 54.7%（是纯文本子集，不是全集）；原博文的 ProgramBench 63.7% 是部分分、SWE-Marathon 13.0% 是 v1.1 之前的题。",
+    "en": "Released in June under MIT and superseded by GLM-5.3. Most scores here are Z.ai's re-runs in the GLM-5.3 model card. Not in the table: HLE with tools 54.7% (text-only subset, not the full set); the original blog's ProgramBench 63.7% is partial credit and its SWE-Marathon 13.0% predates v1.1."
+   },
+   "scores": {
+    "auto": {
+     "d": "26.2",
+     "v": 26.2,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 在 GLM-5.3 模型卡里重跑的分数，v1.0.6。〔中〕",
+      "en": "Z.ai's re-run in the GLM-5.3 model card, v1.0.6. [medium]"
+     }
+    },
+    "deepswe": {
+     "d": "46.2",
+     "v": 46.2,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 发布博文；GLM-5.3 模型卡标为 v1.1。〔中〕",
+      "en": "Z.ai's launch blog; the GLM-5.3 model card labels it v1.1. [medium]"
+     }
+    },
+    "progb": {
+     "d": "9.5",
+     "v": 9.5,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 在 GLM-5.3 模型卡里重跑，「几乎做对」口径。〔中〕",
+      "en": "Z.ai's re-run in the GLM-5.3 model card, \"almost solved\" metric. [medium]"
+     }
+    },
+    "swem": {
+     "d": "19.4",
+     "v": 19.4,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 在 GLM-5.3 模型卡里重跑，v1.1。〔中〕",
+      "en": "Z.ai's re-run in the GLM-5.3 model card, v1.1. [medium]"
+     }
+    },
+    "gdpval": {
+     "d": "1508",
+     "v": 1508,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 在 GLM-5.3 模型卡里给的分数，v2。〔中〕",
+      "en": "Z.ai's figure in the GLM-5.3 model card, v2. [medium]"
+     }
+    },
+    "cygym": {
+     "d": "77.2",
+     "v": 77.2,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Z.ai 在 GLM-5.3 模型卡里重跑。〔中〕",
+      "en": "Z.ai's re-run in the GLM-5.3 model card. [medium]"
+     }
+    }
+   },
+   "blank": {
+    "aa": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "AA 把它标成已停用，没算 v5.0.1 指数。",
+      "en": "AA marks it deprecated and computes no v5.0.1 index."
+     }
+    },
+    "vals": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "不在 Vals Index v2.2 榜上。",
+      "en": "Not on the Vals Index v2.2 leaderboard."
+     }
+    },
+    "tb4_vals": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "不在 Vals 的 Terminal-Bench 4.0 榜上。",
+      "en": "Not on Vals' Terminal-Bench 4.0 leaderboard."
+     }
+    }
+   }
   }
  ],
  "timeline_events": [
@@ -3382,6 +5636,272 @@
    "tip": {
     "zh": "GPT-6.2 Astra（$8 / $40）和 GPT-6.2 Sol（$2 / $10）。",
     "en": "GPT-6.2 Astra ($8 / $40) and GPT-6.2 Sol ($2 / $10)."
+   }
+  },
+  {
+   "lane": "xai",
+   "date": "2026-07-08",
+   "label": {
+    "zh": "Grok 4.5",
+    "en": "Grok 4.5"
+   },
+   "tip": {
+    "zh": "Grok 4.5 上 API（正式博文 7 月 16 日）。$2 / $6。",
+    "en": "Grok 4.5 on the API (launch post Jul 16). $2 / $6."
+   }
+  },
+  {
+   "lane": "xai",
+   "date": "2026-08-12",
+   "label": {
+    "zh": "Grok 4.6",
+    "en": "Grok 4.6"
+   },
+   "tip": {
+    "zh": "Grok 4.6。$2 / $6。",
+    "en": "Grok 4.6. $2 / $6."
+   }
+  },
+  {
+   "lane": "xai",
+   "date": "2026-09-21",
+   "label": {
+    "zh": "Grok 4.7",
+    "en": "Grok 4.7"
+   },
+   "tip": {
+    "zh": "Grok 4.7，现在的旗舰。$2 / $6。",
+    "en": "Grok 4.7, the current flagship. $2 / $6."
+   }
+  },
+  {
+   "lane": "meta",
+   "date": "2026-04-08",
+   "label": {
+    "zh": "Spark",
+    "en": "Spark"
+   },
+   "tip": {
+    "zh": "Muse Spark 首发（早于横轴起点）。之后有 1.1 / 1.2 / 1.3，1.3 在 9 月 2 日。",
+    "en": "Muse Spark first release (before the start of the axis), followed by 1.1, 1.2 and 1.3 (Sep 2)."
+   },
+   "before": true
+  },
+  {
+   "lane": "meta",
+   "date": "2026-08-10",
+   "label": {
+    "zh": "Glimmer",
+    "en": "Glimmer"
+   },
+   "tip": {
+    "zh": "Muse Glimmer：30B 开放权重小模型，Apache 2.0。AA 6.3，没列进表 3-1。",
+    "en": "Muse Glimmer: a 30B open-weight small model under Apache 2.0. AA 6.3; not in Table 3-1."
+   }
+  },
+  {
+   "lane": "meta",
+   "date": "2026-09-02",
+   "label": {
+    "zh": "Spark 1.3",
+    "en": "Spark 1.3"
+   },
+   "tip": {
+    "zh": "Muse Spark 1.3。$1.25 / $4.25，AA 36.6。没列进表 3-1（每家最多 4 个）。",
+    "en": "Muse Spark 1.3. $1.25 / $4.25, AA 36.6. Not in Table 3-1 (four models per vendor at most)."
+   }
+  },
+  {
+   "lane": "meta",
+   "date": "2026-10-12",
+   "label": {
+    "zh": "Wonder · Wonder Full",
+    "en": "Wonder · Wonder Full"
+   },
+   "tip": {
+    "zh": "Muse Wonder（API $4 / $20）和 Muse Wonder Full（只在 Muse Code 订阅里）。",
+    "en": "Muse Wonder (API, $4 / $20) and Muse Wonder Full (Muse Code subscription only)."
+   }
+  },
+  {
+   "lane": "meta",
+   "date": "2026-10-15",
+   "label": {
+    "zh": "Spark Open",
+    "en": "Spark Open"
+   },
+   "tip": {
+    "zh": "Muse Spark Open：816B 开放权重，Muse Model License。",
+    "en": "Muse Spark Open: 816B open weights under the Muse Model License."
+   }
+  },
+  {
+   "lane": "meta",
+   "date": "2026-11-09",
+   "label": {
+    "zh": "Ember",
+    "en": "Ember"
+   },
+   "tip": {
+    "zh": "Muse Ember。$0.10 / $0.50。",
+    "en": "Muse Ember. $0.10 / $0.50."
+   }
+  },
+  {
+   "lane": "deepseek",
+   "date": "2026-07-31",
+   "label": {
+    "zh": "V4-Flash-0731",
+    "en": "V4-Flash-0731"
+   },
+   "tip": {
+    "zh": "DeepSeek-V4-Flash-0731，现已下线，没列进表 3-1。",
+    "en": "DeepSeek-V4-Flash-0731, since retired; not in Table 3-1."
+   }
+  },
+  {
+   "lane": "deepseek",
+   "date": "2026-08-13",
+   "label": {
+    "zh": "V4-Pro-0813",
+    "en": "V4-Pro-0813"
+   },
+   "tip": {
+    "zh": "DeepSeek-V4-Pro-0813，V4-Pro 正式版，MIT。$1.32 / $3.96。",
+    "en": "DeepSeek-V4-Pro-0813, the GA release of V4-Pro, MIT. $1.32 / $3.96."
+   }
+  },
+  {
+   "lane": "deepseek",
+   "date": "2026-09-10",
+   "label": {
+    "zh": "V4.1-Flash",
+    "en": "V4.1-Flash"
+   },
+   "tip": {
+    "zh": "DeepSeek-V4.1-Flash，权重和 API 同日，MIT。$0.30 / $1.20。",
+    "en": "DeepSeek-V4.1-Flash, weights and API the same day, MIT. $0.30 / $1.20."
+   }
+  },
+  {
+   "lane": "deepseek",
+   "date": "2026-10-17",
+   "label": {
+    "zh": "V4.1-Flash-1017",
+    "en": "V4.1-Flash-1017"
+   },
+   "tip": {
+    "zh": "DeepSeek-V4.1-Flash-1017，现役，API 名 deepseek-flash。$0.30 / $1.20。",
+    "en": "DeepSeek-V4.1-Flash-1017, current; API name deepseek-flash. $0.30 / $1.20."
+   }
+  },
+  {
+   "lane": "moonshot",
+   "date": "2026-06-12",
+   "label": {
+    "zh": "K2.7 Code",
+    "en": "K2.7 Code"
+   },
+   "tip": {
+    "zh": "Kimi K2.7 Code，权重和 API 同日，修改版 MIT。$0.95 / $4.00。",
+    "en": "Kimi K2.7 Code, weights and API the same day, modified MIT. $0.95 / $4.00."
+   }
+  },
+  {
+   "lane": "moonshot",
+   "date": "2026-07-16",
+   "label": {
+    "zh": "K3",
+    "en": "K3"
+   },
+   "tip": {
+    "zh": "Kimi K3 上 API 和 App。$3 / $15。",
+    "en": "Kimi K3 on the API and apps. $3 / $15."
+   }
+  },
+  {
+   "lane": "moonshot",
+   "date": "2026-07-27",
+   "label": {
+    "zh": "K3 权重",
+    "en": "K3 weights"
+   },
+   "tip": {
+    "zh": "Kimi K3 完整权重放出，Kimi K3 License。",
+    "en": "Kimi K3 full weights released under the Kimi K3 License."
+   }
+  },
+  {
+   "lane": "moonshot",
+   "date": "2026-10-24",
+   "label": {
+    "zh": "K3.1 Pro",
+    "en": "K3.1 Pro"
+   },
+   "tip": {
+    "zh": "Kimi K3.1 Pro 上 API 和 App。$2 / $10。",
+    "en": "Kimi K3.1 Pro on the API and apps. $2 / $10."
+   }
+  },
+  {
+   "lane": "moonshot",
+   "date": "2026-11-04",
+   "label": {
+    "zh": "K3.1 Pro 权重",
+    "en": "K3.1 Pro weights"
+   },
+   "tip": {
+    "zh": "约 11 月 4 日：Kimi K3.1 Pro 权重放出（Hugging Face 仓库 11 月 2 日建立）。",
+    "en": "Around Nov 4: Kimi K3.1 Pro weights released (Hugging Face repo created Nov 2)."
+   }
+  },
+  {
+   "lane": "zhipu",
+   "date": "2026-06-16",
+   "label": {
+    "zh": "GLM-5.2",
+    "en": "GLM-5.2"
+   },
+   "tip": {
+    "zh": "GLM-5.2，权重和 API 同日，MIT。$1.40 / $4.40。",
+    "en": "GLM-5.2, weights and API the same day, MIT. $1.40 / $4.40."
+   }
+  },
+  {
+   "lane": "zhipu",
+   "date": "2026-08-14",
+   "label": {
+    "zh": "GLM-5.3 宣布",
+    "en": "GLM-5.3 announced"
+   },
+   "tip": {
+    "zh": "GLM-5.3 宣布，先给 Coding Plan 用户。",
+    "en": "GLM-5.3 announced, Coding Plan users first."
+   },
+   "hollow": true
+  },
+  {
+   "lane": "zhipu",
+   "date": "2026-08-18",
+   "label": {
+    "zh": "GLM-5.3",
+    "en": "GLM-5.3"
+   },
+   "tip": {
+    "zh": "GLM-5.3 上 API；权重约两周后放出，改用 GLM-5.3 License。$1.40 / $4.40。",
+    "en": "GLM-5.3 on the API; weights about two weeks later under the new GLM-5.3 License. $1.40 / $4.40."
+   }
+  },
+  {
+   "lane": "zhipu",
+   "date": "2026-08-26",
+   "label": {
+    "zh": "GLM-5.3-Flash",
+    "en": "GLM-5.3-Flash"
+   },
+   "tip": {
+    "zh": "GLM-5.3-Flash，权重和 API 同时，MIT。$0.15 / $0.50。",
+    "en": "GLM-5.3-Flash, weights and API together, MIT. $0.15 / $0.50."
    }
   }
  ],
@@ -4770,15 +7290,15 @@
   ]
  },
  "figures": {
-  "f31": {
+  "f41": {
    "bench": "aa",
    "caption": {
-    "zh": "图 3-1　AA 指数（独立）",
-    "en": "Fig 3-1 AA Index (independent)"
+    "zh": "图 4-1　AA 指数（独立，全部模型）",
+    "en": "Fig 4-1 AA Index (independent, all models)"
    },
    "source_tip": {
-    "zh": "<b>来源</b>Artificial Analysis 各模型页，v5.0.1。<br>各模型取最高推理强度。<br>快照 {snapshot}。〔高〕",
-    "en": "<b>Source</b>Artificial Analysis model pages, v5.0.1.<br>Each model at its highest reasoning effort.<br>Snapshot {snapshot}. [high]"
+    "zh": "<b>来源</b>Artificial Analysis 各模型页，v5.0.1。<br>各模型取最高推理强度。<br>前沿快照 {snapshot}，大厂与开源快照 {snapshot3}。〔高〕",
+    "en": "<b>Source</b>Artificial Analysis model pages, v5.0.1.<br>Each model at its highest reasoning effort.<br>Frontier snapshot {snapshot}; Big Tech and open-weight snapshot {snapshot3}. [high]"
    },
    "label": {
     "zh": "AA 指数",
@@ -4809,26 +7329,27 @@
    ],
    "mark": "bar",
    "toc": {
-    "zh": "图 3-1 AA 指数排名",
-    "en": "Fig 3-1 AA Index ranking"
-   }
+    "zh": "图 4-1 AA 指数排名",
+    "en": "Fig 4-1 AA Index ranking"
+   },
+   "xcol": "price"
   },
-  "f32": {
+  "f42": {
    "bench": "vals",
    "caption": {
-    "zh": "图 3-2　Vals Index（独立）",
-    "en": "Fig 3-2 Vals Index (independent)"
+    "zh": "图 4-2　Vals Index（独立，全部模型）",
+    "en": "Fig 4-2 Vals Index (independent, all models)"
    },
    "source_tip": {
-    "zh": "<b>来源</b>Vals AI 榜单，v2.2，2026-11-16；Neon 是 11-18 追加的。<br>横轴从 50% 起，所以用点不用条。〔高〕",
-    "en": "<b>Source</b>Vals AI leaderboard, v2.2, 2026-11-16; Neon was added on 11-18.<br>The axis starts at 50%, so dots rather than bars. [high]"
+    "zh": "<b>来源</b>Vals AI 榜单，v2.2：前沿取 2026-11-16 版（Neon 是 11-18 追加的），大厂与开源取 11-19 版。<br>横轴从 {min}% 起，所以用点不用条。〔高〕",
+    "en": "<b>Source</b>Vals AI leaderboard, v2.2: frontier models from the 2026-11-16 release (Neon added on 11-18), Big Tech and open-weight from the 11-19 release.<br>The axis starts at {min}%, so dots rather than bars. [high]"
    },
    "label": {
     "zh": "Vals Index",
     "en": "Vals Index"
    },
    "axis": {
-    "min": 50,
+    "min": 45,
     "max": 75,
     "step": 5
    },
@@ -4852,18 +7373,129 @@
    ],
    "mark": "dot",
    "toc": {
-    "zh": "图 3-2 Vals Index 排名",
-    "en": "Fig 3-2 Vals Index ranking"
-   }
+    "zh": "图 4-2 Vals Index 排名",
+    "en": "Fig 4-2 Vals Index ranking"
+   },
+   "xcol": "cost"
   },
-  "f33": {
+  "f43": {
+   "bench": "tb4_vals",
    "caption": {
-    "zh": "图 3-3　厂商自报的六项测试（%）",
-    "en": "Fig 3-3 Six vendor-reported tests (%)"
+    "zh": "图 4-3　Terminal-Bench 4.0（Vals 独立测，全部模型）",
+    "en": "Fig 4-3 Terminal-Bench 4.0 (independent, Vals; all models)"
    },
    "source_tip": {
-    "zh": "<b>来源</b>Google、Anthropic、OpenAI 各自的发布表。<br>同一模型在不同厂商的表里分数可能不同，悬停看是谁报的。<br>没有分数的模型不画。〔中〕",
-    "en": "<b>Source</b>Launch tables from Google, Anthropic and OpenAI.<br>The same model can score differently in different vendors' tables; hover to see who reported it.<br>Models without a score are not drawn. [medium]"
+    "zh": "<b>来源</b>Vals AI 的 Terminal-Bench 4.0 榜，所有模型用同一个工具 mini-SWE-agent 测：前沿取 2026-11-18 版，大厂与开源取 11-19 版。<br>厂商自报的 TB 4.0 各用各的工具，不在这张图里。〔高〕",
+    "en": "<b>Source</b>Vals AI's Terminal-Bench 4.0 leaderboard, every model run with the same mini-SWE-agent harness: frontier models from the 2026-11-18 release, Big Tech and open-weight from 11-19.<br>Vendor-reported TB 4.0 scores use each vendor's own harness and are not in this chart. [high]"
+   },
+   "label": {
+    "zh": "Terminal-Bench 4.0",
+    "en": "Terminal-Bench 4.0"
+   },
+   "axis": {
+    "min": 0,
+    "max": 70,
+    "step": 10
+   },
+   "head": [
+    {
+     "zh": "模型",
+     "en": "Model"
+    },
+    {
+     "zh": "TB 4.0（0–{max}%）",
+     "en": "TB 4.0 (0–{max}%)"
+    },
+    {
+     "zh": "%",
+     "en": "%"
+    },
+    {
+     "zh": "每题成本",
+     "en": "Cost per task"
+    }
+   ],
+   "mark": "bar",
+   "toc": {
+    "zh": "图 4-3 Terminal-Bench 4.0 排名",
+    "en": "Fig 4-3 Terminal-Bench 4.0 ranking"
+   },
+   "xcol": "cost"
+  },
+  "f44": {
+   "x": "price_out",
+   "y": "aa",
+   "toc": {
+    "zh": "图 4-4 价格与 AA 指数",
+    "en": "Fig 4-4 Price vs. AA Index"
+   },
+   "caption": {
+    "zh": "图 4-4　输出价与 AA 指数（横轴对数刻度）",
+    "en": "Fig 4-4 Output price vs. AA Index (log scale)"
+   },
+   "source_tip": {
+    "zh": "<b>来源</b>横轴：API 标准输出价，美元 / 每百万 token（同表 2-1、表 3-1）。纵轴：Artificial Analysis v5.0.1。<br>横轴是对数刻度：每格价格翻倍或更多。<br>实心点＝不开放权重，空心点＝开放权重。〔高〕",
+    "en": "<b>Source</b>X axis: standard API output price, USD per million tokens (as in Tables 2-1 and 3-1). Y axis: Artificial Analysis v5.0.1.<br>The x axis is logarithmic: each step is a doubling or more.<br>Solid dot = closed weights; hollow dot = open weights. [high]"
+   },
+   "xaxis": {
+    "ticks": [
+     0.5,
+     1,
+     2,
+     5,
+     10,
+     20,
+     50
+    ],
+    "min": 0.4,
+    "max": 60
+   },
+   "yaxis": {
+    "min": 20,
+    "max": 70,
+    "step": 10
+   },
+   "xlabel": {
+    "zh": "输出价 $/百万 token（对数）",
+    "en": "Output $/M tokens (log)"
+   },
+   "ylabel": {
+    "zh": "AA 指数",
+    "en": "AA Index"
+   },
+   "legend_solid": {
+    "zh": "实心：不开放权重",
+    "en": "Solid: closed weights"
+   },
+   "legend_hollow": {
+    "zh": "空心：开放权重",
+    "en": "Hollow: open weights"
+   },
+   "missing": {
+    "zh": "没有 API 价、所以没画：{names}。",
+    "en": "Not drawn for lack of an API price: {names}."
+   },
+   "tip": {
+    "zh": "{name}：输出 {pout} / 百万 token（输入 {pin}），AA 指数 {aa}。{ow}",
+    "en": "{name}: output {pout} per million tokens (input {pin}), AA Index {aa}. {ow}"
+   },
+   "ow_yes": {
+    "zh": "开放权重（{lic}）。",
+    "en": "Open weights ({lic})."
+   },
+   "ow_no": {
+    "zh": "不开放权重。",
+    "en": "Closed weights."
+   }
+  },
+  "f45": {
+   "caption": {
+    "zh": "图 4-5　厂商自报的六项测试（%，全部模型里口径一致的分数）",
+    "en": "Fig 4-5 Six vendor-reported tests (%, like-for-like scores from all models)"
+   },
+   "source_tip": {
+    "zh": "<b>来源</b>各厂商的发布表（前沿三家，以及第 3 章大厂与开源厂商里版本、单位、子集一致的分数）。<br>同一模型在不同厂商的表里分数可能不同，悬停看是谁报的。<br>FrontierCode 里第 3 章的分数多是 AA 测的 FrontierCode-AA 2.0。<br>没有分数的模型不画。〔中〕",
+    "en": "<b>Source</b>Vendors' launch tables (the three frontier labs, plus chapter 3 scores that match on version, unit and subset).<br>The same model can score differently in different vendors' tables; hover to see who reported it.<br>Most chapter 3 FrontierCode scores are AA's own FrontierCode-AA 2.0 runs.<br>Models without a score are not drawn. [medium]"
    },
    "axis": {
     "min": 0,
@@ -4939,8 +7571,8 @@
     }
    ],
    "toc": {
-    "zh": "图 3-3 厂商自报的六项测试",
-    "en": "Fig 3-3 Six vendor-reported tests"
+    "zh": "图 4-5 厂商自报的六项测试",
+    "en": "Fig 4-5 Six vendor-reported tests"
    }
   }
  },
@@ -5024,6 +7656,748 @@
   "home_tip": {
    "zh": "返回 Token Economy Tracker 主页（同一语言）",
    "en": "Back to the Token Economy Tracker home page (same language)"
+  },
+  "count_groups": {
+   "zh": "前沿 {n_front} 个 + 大厂与开源 {n_other} 个已发布模型",
+   "en": "{n_front} frontier + {n_other} Big Tech and open-weight released models"
+  },
+  "snap3_tip": {
+   "zh": "第 3 章的快照日期（第 2 章是 {snap2}）。",
+   "en": "Snapshot date for chapter 3 (chapter 2 uses {snap2})."
+  },
+  "snap3_short_tip": {
+   "zh": "{date}：第 3 章的快照日期。",
+   "en": "{date}: snapshot date for chapter 3."
   }
+ },
+ "t31": {
+  "toc": {
+   "zh": "表 3-1 大厂与开源模型总表",
+   "en": "Table 3-1 Big Tech and open-weight models"
+  },
+  "c0": {
+   "label": {
+    "zh": "模型",
+    "en": "Model"
+   },
+   "tip": {
+    "zh": "厂商色块 + 模型名。悬停模型名看简介和没填进表的分数；小标签：仅订阅、已取代、将下线。",
+    "en": "Vendor swatch + model name. Hover a name for a short profile and the scores left out of the table. Small tags: Plan only, Superseded, Retiring."
+   }
+  },
+  "groups": [
+   {
+    "key": "basic",
+    "label": {
+     "zh": "基本 · 2026 年 · $/百万 token",
+     "en": "Basics · 2026 · $/M tokens"
+    },
+    "short": {
+     "zh": "基本",
+     "en": "Basics"
+    },
+    "tip": {
+     "zh": "发布日都在 2026 年。价格是 API 标准价，美元 / 每百万 token。开放权重写许可证简称，参数写总参数 / 激活参数。",
+     "en": "All release dates are in 2026. Prices are standard API list prices, USD per million tokens. Open weights shows the license in short; parameters are total / active."
+    },
+    "cols": [
+     "release",
+     "price_in",
+     "price_out",
+     "license",
+     "params"
+    ]
+   },
+   {
+    "key": "indep",
+    "label": {
+     "zh": "独立榜单",
+     "en": "Independent leaderboards"
+    },
+    "short": {
+     "zh": "独立榜单",
+     "en": "Independent leaderboards"
+    },
+    "tip": {
+     "zh": "第三方用同一套方法统一测，可以横向比，也可以和表 2-1 的同名列直接比。",
+     "en": "Measured by third parties with one method, so they compare across vendors and directly with the same columns in Table 2-1."
+    },
+    "cols": [
+     "aa",
+     "vals",
+     "tb4_vals"
+    ]
+   },
+   {
+    "key": "shared",
+    "label": {
+     "zh": "厂商自报 · 与前沿同列",
+     "en": "Vendor-reported · Shared with frontier"
+    },
+    "short": {
+     "zh": "与前沿同列",
+     "en": "Shared with frontier"
+    },
+    "tip": {
+     "zh": "和表 2-1 用同一个测试、同一版本、同一单位和子集的列。不一致的分数不填，写在模型名的悬停说明里。",
+     "en": "Columns that match Table 2-1 on test, version, unit and subset. Mismatched scores are left out and listed in the model-name tooltip."
+    },
+    "cols": [
+     "tb4_vendor",
+     "ale",
+     "auto",
+     "chart",
+     "osw",
+     "tbsci",
+     "fc2"
+    ]
+   },
+   {
+    "key": "ext",
+    "label": {
+     "zh": "厂商自报 · 本章新增",
+     "en": "Vendor-reported · New in this chapter"
+    },
+    "short": {
+     "zh": "本章新增",
+     "en": "New in this chapter"
+    },
+    "tip": {
+     "zh": "大厂和开源厂商常报、前沿三家表里少见的测试。各家条件不同，只能看大致位置。",
+     "en": "Tests that Big Tech and open-weight labs often report but the frontier tables rarely do. Conditions differ, so read them as rough positions."
+    },
+    "cols": [
+     "deepswe",
+     "progb",
+     "swem",
+     "hle",
+     "gdpval",
+     "cygym"
+    ]
+   }
+  ],
+  "basic": {
+   "release": {
+    "label": {
+     "zh": "发布",
+     "en": "Release"
+    },
+    "tip": {
+     "zh": "对外可用的日期，都在 2026 年。先宣布、后开放的标 *，悬停看两个日期。色条越长越新。〔高〕",
+     "en": "Date of general availability, all in 2026. * marks models announced before they opened; hover for both dates. Longer bar = newer. [high]"
+    }
+   },
+   "price_in": {
+    "label": {
+     "zh": "输入",
+     "en": "Input"
+    },
+    "tip": {
+     "zh": "API 标准价，美元 / 每百万输入 token。开源模型取厂商自家 API 的高峰价。色条按 0 到 {max}（本表公开模型最高价）画，越长越贵。〔高〕",
+     "en": "Standard API price, USD per million input tokens; open-weight models use the vendor's own API at peak rates. Bar runs from 0 to {max} (highest public-model price in this table); longer = pricier. [high]"
+    }
+   },
+   "price_out": {
+    "label": {
+     "zh": "输出",
+     "en": "Output"
+    },
+    "tip": {
+     "zh": "API 标准价，美元 / 每百万输出 token。色条按 0 到 {max}（本表公开模型最高价）画，越长越贵。〔高〕",
+     "en": "Standard API price, USD per million output tokens. Bar runs from 0 to {max} (highest public-model price in this table); longer = pricier. [high]"
+    }
+   },
+   "license": {
+    "label": {
+     "zh": "开放权重",
+     "en": "Weights"
+    },
+    "tip": {
+     "zh": "权重能不能下载、用什么许可证：MIT、Modified MIT（修改版 MIT）、自定义（厂商自己写的许可证，通常对大客户另有条件）、否（不开放）。悬停看许可证要点。",
+     "en": "Whether the weights can be downloaded, and under what license: MIT, Modified MIT, Custom (the vendor's own license, usually with extra terms for large users) or No (closed). Hover for the key terms."
+    }
+   },
+   "params": {
+    "label": {
+     "zh": "参数",
+     "en": "Params"
+    },
+    "tip": {
+     "zh": "总参数 / 激活参数（混合专家模型每个 token 只用一部分参数）。T＝万亿，B＝十亿。悬停看出处。",
+     "en": "Total / active parameters (a mixture-of-experts model uses only part of its parameters per token). T = trillion, B = billion. Hover for the source."
+    }
+   }
+  },
+  "hints": [
+   {
+    "label": {
+     "zh": "怎么读",
+     "en": "How to read"
+    },
+    "tip": {
+     "zh": "<b>怎么读这张表</b>{n_models} 个模型：大厂 xAI、Meta，开源 DeepSeek、Moonshot、智谱。组内按发布日从新到旧。<br>分数 {n_bench} 列，分{n_groups_zh}组：{group_names}。<br>每列前三名加深；名次只在本表里排。<br>「—」是没有公开分数，或者分数口径和这一列不一致（悬停模型名看是哪些）。<br>悬停任何数字可看出处、测试条件和可信度。",
+     "en": "<b>How to read this table</b>{n_models} models: Big Tech xAI and Meta; open-weight DeepSeek, Moonshot and Zhipu. Within each vendor, newest first.<br>{n_bench} score columns in {n_groups_zh} groups: {group_names}.<br>The top three in each column are shaded darker; ranks are within this table only.<br>\"—\" means no public score, or a score that does not match this column (hover the model name to see which).<br>Hover any number for its source, test conditions and confidence."
+    }
+   },
+   {
+    "label": {
+     "zh": "色条",
+     "en": "Bars"
+    },
+    "tip": {
+     "zh": "<b>格内色条</b>规则和表 2-1 一样：分数列从本列最低画到最高；有分数的模型少于 5 个时从 0 画起。颜色跟厂商。<br>价格列：灰色，从 0 画到本表公开模型最高价（输入 {price_in_max}，输出 {price_out_max}）。",
+     "en": "<b>In-cell bars</b>Same rules as Table 2-1: score columns run from the lowest to the highest score in the column; with fewer than 5 scored models, bars start at 0. Bar color follows the vendor.<br>Price columns: gray, from 0 to the highest public-model price in this table (input {price_in_max}, output {price_out_max})."
+    }
+   },
+   {
+    "label": {
+     "zh": "AA 角标",
+     "en": "AA marker"
+    },
+    "tip": {
+     "zh": "<b>AA 角标</b>FrontierCode 2.0 这一列里带「AA」的，是 Artificial Analysis 自己测的 FrontierCode-AA 2.0（132 题私有集），不是厂商自报；和表 2-1 那列只能看大致位置。",
+     "en": "<b>AA marker</b>In the FrontierCode 2.0 column, cells marked \"AA\" are Artificial Analysis's own FrontierCode-AA 2.0 runs (132-task private set), not vendor reports; compare them with Table 2-1 only roughly."
+    }
+   },
+   {
+    "label": {
+     "zh": "少了哪列",
+     "en": "Missing column"
+    },
+    "tip": {
+     "zh": "<b>为什么没有 OSWorld 2.1 列</b>表 2-1 的 OSWorld 2.1 是离线子集。本章各家报的要么是 108 题全集（Meta），要么没说是不是离线子集（Moonshot），要么是 OSWorld-Verified / 2.0，都不能填。一列都没有分数时整列不出。",
+     "en": "<b>Why there is no OSWorld 2.1 column</b>Table 2-1's OSWorld 2.1 is the offline subset. What this chapter's vendors report is either the full 108-task set (Meta), unclear on the subset (Moonshot), or OSWorld-Verified / 2.0, so none can go in. A column with no scores at all is not shown."
+    }
+   }
+  ]
+ },
+ "sources_ch3": {
+  "note": {
+   "zh": "出自 research/2026-11-22-bigtech.json 与 research/2026-11-22-open.json，去重，已在上面列过的链接不重复。",
+   "en": "From research/2026-11-22-bigtech.json and research/2026-11-22-open.json, de-duplicated; links already listed above are not repeated."
+  },
+  "accessed": {
+   "zh": "访问于 {date}",
+   "en": "accessed {date}"
+  },
+  "groups": [
+   {
+    "group": "bigtech",
+    "label": {
+     "zh": "大厂与开源模型：大厂（xAI、Meta）",
+     "en": "Big Tech and open-weight models: Big Tech (xAI, Meta)"
+    },
+    "items": [
+     {
+      "title": "xAI API Release Notes",
+      "url": "https://docs.x.ai/release-notes",
+      "date": "2026-11-19",
+      "accessed": false
+     },
+     {
+      "title": "SpaceXSI News index",
+      "url": "https://x.ai/news",
+      "date": "2026-11-22",
+      "accessed": true
+     },
+     {
+      "title": "Introducing Grok 4.7 (SpaceXSI news, 2026-09-21)",
+      "url": "https://x.ai/news/grok-4-7",
+      "date": "2026-09-21",
+      "accessed": false
+     },
+     {
+      "title": "Introducing Grok 4.6 (SpaceXSI news, 2026-08-12)",
+      "url": "https://x.ai/news/grok-4-6",
+      "date": "2026-08-12",
+      "accessed": false
+     },
+     {
+      "title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+      "url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+      "date": "2026-08-17",
+      "accessed": false
+     },
+     {
+      "title": "Introducing Grok 4.5 (SpaceXSI news, 2026-07-16)",
+      "url": "https://x.ai/news/grok-4-5",
+      "date": "2026-07-16",
+      "accessed": false
+     },
+     {
+      "title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+      "url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+      "date": "2026-07-20",
+      "accessed": false
+     },
+     {
+      "title": "AA: Benchmarking Grok 4.7",
+      "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
+      "date": "2026-09-21",
+      "accessed": false
+     },
+     {
+      "title": "Decrypt: xAI Launches Grok 4.7 (2.1T parameters)",
+      "url": "https://decrypt.co/378824",
+      "date": "2026-09-21",
+      "accessed": false
+     },
+     {
+      "title": "Epoch AI: Grok 4.7",
+      "url": "https://epoch.ai/models/grok-4-7",
+      "date": "2026-11-22",
+      "accessed": true
+     },
+     {
+      "title": "Muse Wonder: A Frontier Model For Personal & Professional AI Agents (Meta, 2026-10-12)",
+      "url": "https://research.meta.ai/blog/muse-wonder",
+      "date": "2026-10-12",
+      "accessed": false
+     },
+     {
+      "title": "Muse Wonder Model Card (PDF, 2026-10-12; ExploitGym updated 2026-10-23)",
+      "url": "https://research.meta.ai/static/muse-wonder-model-card",
+      "date": "2026-10-23",
+      "accessed": false
+     },
+     {
+      "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember (Meta, 2026-11-09)",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "date": "2026-11-09",
+      "accessed": false
+     },
+     {
+      "title": "Muse Ember Evaluation Methodology (PDF, Nov 2026)",
+      "url": "https://research.meta.ai/static/muse-ember-evaluation-report",
+      "date": "2026-11",
+      "accessed": false
+     },
+     {
+      "title": "Introducing Muse Spark Open (Meta, 2026-10-15)",
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "date": "2026-10-15",
+      "accessed": false
+     },
+     {
+      "title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+      "date": "2026-10-15",
+      "accessed": false
+     },
+     {
+      "title": "Muse Spark Open Evaluation Methodology",
+      "url": "https://research.meta.ai/static/muse-spark-open-evaluation-methodology",
+      "date": "2026-10",
+      "accessed": false
+     },
+     {
+      "title": "Meta Model API — Models",
+      "url": "https://ai.developer.meta.com/docs/models/",
+      "date": "2026-11-22",
+      "accessed": true
+     },
+     {
+      "title": "Meta Model API — Pricing and rate limits",
+      "url": "https://ai.developer.meta.com/docs/pricing-rate-limits",
+      "date": "2026-11-22",
+      "accessed": true
+     },
+     {
+      "title": "Meta Model API — Muse Wonder",
+      "url": "https://ai.developer.meta.com/docs/muse-wonder",
+      "date": "2026-11-22",
+      "accessed": true
+     },
+     {
+      "title": "Artificial Analysis model pages (grok-4-7, grok-4-6, grok-4-5, muse-wonder-full, muse-wonder, muse-ember, muse-spark-open, muse-spark-1-3)",
+      "url": "https://artificialanalysis.ai/models/grok-4-7",
+      "date": "2026-11-22",
+      "accessed": true
+     },
+     {
+      "title": "Vals model pages (grok_grok-4.7, grok_grok-4.6, meta_muse-wonder, meta_muse-wonder-full, meta_muse-ember, meta_muse-spark-open)",
+      "url": "https://www.vals.ai/models/grok_grok-4.7",
+      "date": "2026-11-22",
+      "accessed": true
+     }
+    ]
+   },
+   {
+    "group": "open",
+    "label": {
+     "zh": "大厂与开源模型：开源（DeepSeek、Moonshot、智谱）",
+     "en": "Big Tech and open-weight models: open-weight (DeepSeek, Moonshot, Zhipu)"
+    },
+    "items": [
+     {
+      "title": "DeepSeek-V4.1-Flash-1017 model card (Hugging Face README)",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "date": "2026-10-17",
+      "accessed": false
+     },
+     {
+      "title": "DeepSeek API News: DeepSeek-V4.1-Flash-1017 (2026/10/17)",
+      "url": "https://api-docs.deepseek.com/news/news261017",
+      "date": "2026-10-17",
+      "accessed": false
+     },
+     {
+      "title": "DeepSeek-V4.1-Flash model card (Hugging Face README)",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "date": "2026-09-10",
+      "accessed": false
+     },
+     {
+      "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression (tech report PDF)",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf",
+      "date": "2026-09-10",
+      "accessed": false
+     },
+     {
+      "title": "DeepSeek API News: DeepSeek-V4.1-Flash (2026/09/10)",
+      "url": "https://api-docs.deepseek.com/news/news260910",
+      "date": "2026-09-10",
+      "accessed": false
+     },
+     {
+      "title": "DeepSeek-V4-Pro-0813 model card (Hugging Face README)",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+      "date": "2026-08-13",
+      "accessed": false
+     },
+     {
+      "title": "DeepSeek API News: DeepSeek-V4-Pro GA Release",
+      "url": "https://api-docs.deepseek.com/news/news260813",
+      "date": "2026-08-13",
+      "accessed": false
+     },
+     {
+      "title": "DeepSeek API: Models & Pricing (EN, USD)",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "date": "2026-11-22",
+      "accessed": false
+     },
+     {
+      "title": {
+       "zh": "DeepSeek API：模型 & 价格（中文，人民币）",
+       "en": "DeepSeek API: Models & Pricing (Chinese page, CNY)"
+      },
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+      "date": "2026-11-22",
+      "accessed": false
+     },
+     {
+      "title": "Kimi K3.1 Pro model card (Hugging Face README)",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "date": "2026-11-04",
+      "accessed": false
+     },
+     {
+      "title": "Kimi K3.1 Pro Tech Blog: Advancing Open Intelligence",
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "date": "2026-10-24",
+      "accessed": false
+     },
+     {
+      "title": "Kimi K3 model card (Hugging Face README)",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3",
+      "date": "2026-07-27",
+      "accessed": false
+     },
+     {
+      "title": "Kimi K3 Tech Blog: Open Frontier Intelligence",
+      "url": "https://www.kimi.com/blog/kimi-k3",
+      "date": "2026-07-17",
+      "accessed": false
+     },
+     {
+      "title": "Kimi K3 technical report (PDF, GitHub)",
+      "url": "https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf",
+      "date": "2026-07",
+      "accessed": false
+     },
+     {
+      "title": "Kimi K2.7 Code model card (Hugging Face README)",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+      "date": "2026-06-12",
+      "accessed": false
+     },
+     {
+      "title": "Kimi API Platform: Model Inference Pricing",
+      "url": "https://platform.kimi.ai/docs/pricing/chat",
+      "date": "2026-11-12",
+      "accessed": false
+     },
+     {
+      "title": "GLM-5.3 model card (Hugging Face README)",
+      "url": "https://huggingface.co/zai-org/GLM-5.3",
+      "date": "2026-08-25",
+      "accessed": false
+     },
+     {
+      "title": "Z.ai blog: GLM-5.3",
+      "url": "https://z.ai/blog/glm-5.3",
+      "date": "2026-08-14",
+      "accessed": false
+     },
+     {
+      "title": "Z.ai docs: GLM-5.3 guide",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "date": "2026-08-18",
+      "accessed": false
+     },
+     {
+      "title": "Z.ai blog: GLM-5.3-Flash: Frontier Intelligence, Flash Cost",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "date": "2026-08-26",
+      "accessed": false
+     },
+     {
+      "title": "GLM-5.3-Flash model card (Hugging Face README)",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "date": "2026-08-26",
+      "accessed": false
+     },
+     {
+      "title": "Z.ai blog: GLM-5.2",
+      "url": "https://z.ai/blog/glm-5.2",
+      "date": "2026-06-16",
+      "accessed": false
+     },
+     {
+      "title": "GLM-5.2 model card (Hugging Face README)",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "date": "2026-06-16",
+      "accessed": false
+     },
+     {
+      "title": "Z.ai docs: New Released (release notes)",
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "date": "2026-11-22",
+      "accessed": false
+     },
+     {
+      "title": "Z.ai docs: Pricing",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "date": "2026-11-22",
+      "accessed": false
+     },
+     {
+      "title": "Artificial Analysis: Intelligence Index v5 announcement",
+      "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5",
+      "date": "2026-10-27",
+      "accessed": false
+     },
+     {
+      "title": "LMArena (arena.ai) text leaderboard: Kimi K3.1 Pro (max)",
+      "url": "https://arena.ai/leaderboard/chat/text/models/kimi-k3.1-pro-max-0s1y",
+      "date": "2026-11-11",
+      "accessed": false
+     },
+     {
+      "title": "LMArena (arena.ai) text leaderboard overall",
+      "url": "https://arena.ai/leaderboard/text/overall",
+      "date": "2026-11-22",
+      "accessed": false
+     },
+     {
+      "title": "CAISI (NIST): Assessment of Z.ai's GLM-5.2",
+      "url": "https://www.nist.gov/document/caisi-assessment-zais-glm-52",
+      "date": "2026-07-08",
+      "accessed": false
+     },
+     {
+      "title": "Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks (Fangcun AI, arXiv)",
+      "url": "https://arxiv.org/abs/2610.35671",
+      "date": "2026-10-26",
+      "accessed": false
+     },
+     {
+      "title": "The Next Web: DeepSeek launches V4.1-Flash and retires V4-Pro",
+      "url": "https://thenextweb.com/news/deepseek-v4-1-flash-launch-v4-pro-retired-price-cut",
+      "date": "2026-09-10",
+      "accessed": false
+     },
+     {
+      "title": "PricingSaaS: DeepSeek quietly retires V4 Pro again days after reversing course",
+      "url": "https://pricingsaas.com/news/article/deepseek-quietly-retires-v4-pro-again-days-after-reversing-course",
+      "date": "2026-09-20",
+      "accessed": false
+     },
+     {
+      "title": "NYU Shanghai RITS: DeepSeek V4-Pro Leaves Preview as API Prices Rise",
+      "url": "https://rits.shanghai.nyu.edu/ai/deepseek-v4-pro-0813-ships-as-api-prices-rise/",
+      "date": "2026-08",
+      "accessed": false
+     },
+     {
+      "title": "China Daily HK: Moonshot launches Kimi K3.1 Pro",
+      "url": "https://www.chinadailyhk.com/article/641775",
+      "date": "2026-10-27",
+      "accessed": false
+     },
+     {
+      "title": "TechNode: Moonshot AI releases Kimi K3.1 Pro model weights",
+      "url": "https://technode.com/2026/11/05/moonshot-ai-releases-kimi-k3-1-pro-model-weights/",
+      "date": "2026-11-05",
+      "accessed": false
+     },
+     {
+      "title": "Simon Willison: Kimi K3 weights",
+      "url": "https://simonwillison.net/2026/Jul/27/kimi-k3/",
+      "date": "2026-07-27",
+      "accessed": false
+     },
+     {
+      "title": "Caixin Global: Z.ai pushes AI model with coding edge to rival Anthropic, OpenAI",
+      "url": "https://www.caixinglobal.com/2026-08-14/zai-pushes-ai-model-with-coding-edge-to-rival-anthropic-open-ai-102474194.html",
+      "date": "2026-08-14",
+      "accessed": false
+     },
+     {
+      "title": "TechNode: Z.ai launches GLM-5.3 with claimed 50% gain on coding benchmark",
+      "url": "https://technode.com/2026/08/17/z-ai-launches-glm-5-3-with-claimed-50-gain-on-coding-benchmark/",
+      "date": "2026-08-17",
+      "accessed": false
+     },
+     {
+      "title": "llm-stats: Kimi K2.7 Code (released Jun 12, 2026)",
+      "url": "https://llm-stats.com/models/kimi-k2.7-code",
+      "date": "2026-06-12",
+      "accessed": false
+     },
+     {
+      "title": "Artificial Analysis model page: deepseek-v4-1-flash",
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash",
+      "date": "2026-11-22",
+      "accessed": false
+     },
+     {
+      "title": "Artificial Analysis model page: deepseek-v4-1-flash-1017",
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017",
+      "date": "2026-11-22",
+      "accessed": false
+     },
+     {
+      "title": "Artificial Analysis model page: deepseek-v4-pro",
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-pro",
+      "date": "2026-11-22",
+      "accessed": false
+     },
+     {
+      "title": "Artificial Analysis model page: glm-5-2",
+      "url": "https://artificialanalysis.ai/models/glm-5-2",
+      "date": "2026-11-22",
+      "accessed": false
+     },
+     {
+      "title": "Artificial Analysis model page: glm-5-3",
+      "url": "https://artificialanalysis.ai/models/glm-5-3",
+      "date": "2026-11-22",
+      "accessed": false
+     },
+     {
+      "title": "Artificial Analysis model page: glm-5-3-flash",
+      "url": "https://artificialanalysis.ai/models/glm-5-3-flash",
+      "date": "2026-11-22",
+      "accessed": false
+     },
+     {
+      "title": "Artificial Analysis model page: kimi-k2-7-code",
+      "url": "https://artificialanalysis.ai/models/kimi-k2-7-code",
+      "date": "2026-11-22",
+      "accessed": false
+     },
+     {
+      "title": "Artificial Analysis model page: kimi-k3",
+      "url": "https://artificialanalysis.ai/models/kimi-k3",
+      "date": "2026-11-22",
+      "accessed": false
+     },
+     {
+      "title": "Artificial Analysis model page: kimi-k3-1-pro",
+      "url": "https://artificialanalysis.ai/models/kimi-k3-1-pro",
+      "date": "2026-11-22",
+      "accessed": false
+     },
+     {
+      "title": "Vals AI model page: deepseek_deepseek-v4-pro-0813",
+      "url": "https://www.vals.ai/models/deepseek_deepseek-v4-pro-0813",
+      "date": "2026-11-19",
+      "accessed": false
+     },
+     {
+      "title": "Vals AI model page: deepseek_deepseek-v4.1-flash",
+      "url": "https://www.vals.ai/models/deepseek_deepseek-v4.1-flash",
+      "date": "2026-11-19",
+      "accessed": false
+     },
+     {
+      "title": "Vals AI model page: deepseek_deepseek-v4.1-flash-1017",
+      "url": "https://www.vals.ai/models/deepseek_deepseek-v4.1-flash-1017",
+      "date": "2026-11-19",
+      "accessed": false
+     },
+     {
+      "title": "Vals AI model page: kimi_kimi-k3",
+      "url": "https://www.vals.ai/models/kimi_kimi-k3",
+      "date": "2026-11-19",
+      "accessed": false
+     },
+     {
+      "title": "Vals AI model page: kimi_kimi-k3.1-pro",
+      "url": "https://www.vals.ai/models/kimi_kimi-k3.1-pro",
+      "date": "2026-11-19",
+      "accessed": false
+     },
+     {
+      "title": "Vals AI model page: zai_glm-5.3",
+      "url": "https://www.vals.ai/models/zai_glm-5.3",
+      "date": "2026-11-19",
+      "accessed": false
+     },
+     {
+      "title": "Vals AI model page: zai_glm-5.3-flash",
+      "url": "https://www.vals.ai/models/zai_glm-5.3-flash",
+      "date": "2026-11-19",
+      "accessed": false
+     }
+    ]
+   }
+  ]
+ },
+ "f32": {
+  "toc": {
+   "zh": "图 3-2 大厂与开源发布时间轴",
+   "en": "Fig 3-2 Big Tech and open-weight release timeline"
+  },
+  "caption": {
+   "zh": "图 3-2　大厂与开源模型发布时间轴（横轴按天等距）",
+   "en": "Fig 3-2 Big Tech and open-weight release timeline (linear time scale)"
+  },
+  "l_solid": {
+   "zh": "实心：发布或放出权重",
+   "en": "Solid: released or weights out"
+  },
+  "l_hollow": {
+   "zh": "空心：只是宣布",
+   "en": "Hollow: announced only"
+  },
+  "l_snap": {
+   "zh": "竖虚线：快照日",
+   "en": "Dashed line: snapshot date"
+  },
+  "hints": [
+   {
+    "label": {
+     "zh": "怎么读",
+     "en": "How to read"
+    },
+    "tip": {
+     "zh": "<b>怎么读</b>方块的左右位置就是日期；上下错开只是为了不重叠。横轴和图 2-1 用同一套算法：快照月往前 5 个月。<br>鼠标在图上移动，顶部刻度行读出日期；离节点 5 像素以内时，竖线和日期吸到节点上。<br>开源模型常常先上 API、晚几天放权重，放权重单独画一个节点。<br>早于横轴起点的旗舰写在泳道名下面（←）。<br>快照 {snapshot}。",
+     "en": "<b>How to read</b>A marker's horizontal position is its date; vertical offsets only keep labels from overlapping. The axis uses the same rule as Fig 2-1: five months back from the snapshot month.<br>Move the pointer across the chart and the sticky scale at the top reads out the date; within 5 px of a node, the line and date snap to it.<br>Open-weight models often reach the API a few days before the weights, so a weights release gets its own node.<br>Flagships released before the axis starts are listed under the lane name (←).<br>Snapshot {snapshot}."
+    }
+   }
+  ]
  }
 }

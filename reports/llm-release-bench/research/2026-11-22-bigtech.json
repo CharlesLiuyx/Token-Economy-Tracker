@@ -1,0 +1,2010 @@
+{
+ "meta": {
+  "snapshot": "2026-11-22",
+  "scope": "xAI (Grok) & Meta (Muse), models released 2026-06-01 → 2026-11-22 plus current flagships",
+  "notes_zh": "AA = Artificial Analysis Intelligence Index v5.0.1；Vals = Vals Index v2.2；TB4 = Vals 独立测 Terminal-Bench 4.0（mini-swe-agent）。cost_per_task 单位均为 USD。LMArena 全部未取到。",
+  "notes_en": "AA = Artificial Analysis Intelligence Index v5.0.1; Vals = Vals Index v2.2; TB4 = Vals' independent Terminal-Bench 4.0 (mini-swe-agent). All cost_per_task values are USD. LMArena could not be retrieved."
+ },
+ "vendors": [
+  {
+   "key": "xai",
+   "name": "xAI / SpaceXSI",
+   "notes": {
+    "zh": "xAI 已更名经营：官网署名 SpaceX Super Intelligence LLC（SpaceXSI），Model Card 说 SpaceXAI 是 XAI LLC 的 DBA 名，AA 标作 SpaceXAI。2026-06-01 至今的文本模型：Grok 4.5（7-08 API / 7-16 博文）、Grok 4.6（8-12）、Grok 4.7（9-21，当前旗舰）；Grok 4.7 Fast 只在 Cursor / Grok Build。没有 Grok 5。专用型号：Grok Voice 2.0（7-29）→ Voice 3.0（10-14）、Voice Transcribe 2.0（9-17）、Imagine Image 2.0（8-07）/ 2.0 Low（11-02）、Imagine Video 1.5（6-16）、Composer 2.5（6-01）；未单列。Google / OpenAI / Anthropic 的发布表里没找到 Grok 对照分。",
+    "en": "xAI now operates as SpaceX Super Intelligence LLC (SpaceXSI); its model cards call SpaceXAI a DBA of XAI LLC, and AA lists it as SpaceXAI. Text models since 2026-06-01: Grok 4.5 (API Jul 8 / post Jul 16), Grok 4.6 (Aug 12), Grok 4.7 (Sep 21, current flagship); Grok 4.7 Fast is Cursor / Grok Build only. No Grok 5. Specialized models (Grok Voice 2.0 → 3.0, Voice Transcribe 2.0, Imagine Image 2.0 / 2.0 Low, Imagine Video 1.5, Composer 2.5) are not listed separately. No Grok scores found in Google / OpenAI / Anthropic launch tables."
+   }
+  },
+  {
+   "key": "meta",
+   "name": "Meta (Meta Superintelligence Labs)",
+   "notes": {
+    "zh": "Muse 产品线：Muse Spark（2026-04-08）→ 1.1 / 1.2 / 1.3（1.3 于 9-02，$1.25/$4.25，AA v5.0.1 36.6、$2.39/题；未单列，因每家上限 4 个）；Muse Glimmer（8-10，30B 开放权重 Apache 2.0，AA 6.3）；Muse Wonder 与 Wonder Full（10-12）；Muse Spark Open（10-15）；Muse Ember（11-09）。Meta 发布表的对照对象是 GPT-6 Astra、Claude Fable 5.1、Claude Opus 5.5（Wonder）和 Claude Haiku 5.5、GPT-6 Luna（Ember）；没在其他厂商发布表里找到 Muse 的对照分。",
+    "en": "Muse lineup: Muse Spark (2026-04-08) → 1.1 / 1.2 / 1.3 (1.3 on Sep 2, $1.25/$4.25, AA v5.0.1 36.6, $2.39/task; not listed separately because of the 4-model cap); Muse Glimmer (Aug 10, 30B open weights under Apache 2.0, AA 6.3); Muse Wonder and Wonder Full (Oct 12); Muse Spark Open (Oct 15); Muse Ember (Nov 9). Meta's launch tables compare against GPT-6 Astra, Claude Fable 5.1 and Claude Opus 5.5 (Wonder), and Claude Haiku 5.5 and GPT-6 Luna (Ember). No Muse scores found in other vendors' launch tables."
+   }
+  }
+ ],
+ "models": [
+  {
+   "id": "grok-4-7",
+   "name": "Grok 4.7",
+   "short": "Grok 4.7",
+   "vendor": "xai",
+   "release": "2026-09-21",
+   "status": "public",
+   "price": {
+    "in": 2,
+    "out": 6,
+    "note_zh": "标准价（≤200K 提示 token）：输入 $2、缓存输入 $0.50、输出 $6；>200K：$4 / $1 / $12。另有 Grok 4.7 Fast（同一模型、输出速度 2 倍、价格 2 倍；长上下文 1.5 倍），只在 Cursor 和 Grok Build 里提供，公开 API 没有。API 型号 grok-4.7，Responses API 总是返回 reasoning.encrypted_content。",
+    "note_en": "Standard (prompts ≤200K tokens): $2 input, $0.50 cached input, $6 output; above 200K: $4 / $1 / $12. Grok 4.7 Fast (same model, 2x output speed at 2x the price; 1.5x for long context) is only offered in Cursor and Grok Build, not on the public API. API ID grok-4.7; the Responses API always returns reasoning.encrypted_content."
+   },
+   "open_weights": false,
+   "license": "Proprietary",
+   "params_total": "~2.1T（Decrypt / Epoch AI 引用，xAI 官方文档未写）",
+   "params_active": null,
+   "context": 500000,
+   "independent": {
+    "aa": {
+     "v": 35,
+     "setting": "xhigh（另：high 35.21、low 31.13）",
+     "exact": 35.49,
+     "cost_per_task": 7.77,
+     "note_zh": "v5.0.1。每题约 $7.77（xhigh）；跑分用 148M 输出 token，每题约 24.4 分钟。发布当天 AA 文章用的旧版指数是 46。",
+     "note_en": "v5.0.1. About $7.77 per task (xhigh); 148M output tokens over the index, ~24.4 min per task. AA's launch-day article used the older index version, where it scored 46.",
+     "url": "https://artificialanalysis.ai/models/grok-4-7"
+    },
+    "vals": {
+     "v": 58.62,
+     "cost_per_task": 11.63,
+     "rank": "23/43",
+     "setting": "reasoning xhigh, temp 0.7",
+     "note_zh": "Vals Index v2.2（2026-11-19 更新）。发布当日 Vals 用旧版指数测得 60.22%（$11.92/题）。",
+     "note_en": "Vals Index v2.2 (updated 2026-11-19). On launch day Vals measured 60.22% ($11.92/test) on the older index version.",
+     "url": "https://www.vals.ai/models/grok_grok-4.7"
+    },
+    "tb4_vals": {
+     "v": 28.79,
+     "cost_per_task": 18.01,
+     "rank": "32/70",
+     "harness": "mini-swe-agent",
+     "url": "https://www.vals.ai/benchmarks/terminal-bench-4"
+    },
+    "lmarena": {
+     "v": null,
+     "rank": null,
+     "note_zh": "未取到：arena.ai / lmarena.ai 对脚本返回 403，WebFetch 也未获授权。",
+     "note_en": "Not retrieved: arena.ai / lmarena.ai returned 403 to scripted requests; WebFetch was not authorized.",
+     "url": "https://arena.ai/leaderboard/text"
+    }
+   },
+   "vendor_benches": [
+    {
+     "bench": "CursorBench",
+     "version": "4.0",
+     "value": 46.3,
+     "unit": "%",
+     "conditions": "xhigh；工具链未注明",
+     "source_title": "Introducing Grok 4.7 (SpaceXSI news, 2026-09-21)",
+     "source_url": "https://x.ai/news/grok-4-7",
+     "section": "Benchmarks table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "DeepSWE",
+     "version": "v1.1",
+     "value": 71.0,
+     "unit": "%",
+     "conditions": "high（表中星号）",
+     "source_title": "Introducing Grok 4.7 (SpaceXSI news, 2026-09-21)",
+     "source_url": "https://x.ai/news/grok-4-7",
+     "section": "Benchmarks table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "EEBench",
+     "version": null,
+     "value": 64.0,
+     "unit": "%",
+     "conditions": "xhigh",
+     "source_title": "Introducing Grok 4.7 (SpaceXSI news, 2026-09-21)",
+     "source_url": "https://x.ai/news/grok-4-7",
+     "section": "Benchmarks table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "AA-Briefcase",
+     "version": "v1.1",
+     "value": 1657,
+     "unit": "Elo",
+     "conditions": "xhigh；AA 测",
+     "source_title": "Introducing Grok 4.7 (SpaceXSI news, 2026-09-21)",
+     "source_url": "https://x.ai/news/grok-4-7",
+     "section": "Benchmarks table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Terminal-Bench",
+     "version": "4.0",
+     "value": 37.6,
+     "unit": "%",
+     "conditions": "xhigh；harness 未注明（AA 在 Grok Build 里测为 33%，Vals mini-swe-agent 为 28.79%）",
+     "source_title": "Introducing Grok 4.7 (SpaceXSI news, 2026-09-21)",
+     "source_url": "https://x.ai/news/grok-4-7",
+     "section": "Benchmarks table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Harvey Legal Agent Benchmark (LAB)",
+     "version": null,
+     "value": 19.6,
+     "unit": "%",
+     "conditions": "xhigh",
+     "source_title": "Introducing Grok 4.7 (SpaceXSI news, 2026-09-21)",
+     "source_url": "https://x.ai/news/grok-4-7",
+     "section": "Benchmarks table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "HealthBench Professional",
+     "version": null,
+     "value": 56.7,
+     "unit": "%",
+     "conditions": "xhigh",
+     "source_title": "Introducing Grok 4.7 (SpaceXSI news, 2026-09-21)",
+     "source_url": "https://x.ai/news/grok-4-7",
+     "section": "Benchmarks table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "GDPval (AA)",
+     "version": null,
+     "value": 1695,
+     "unit": "Elo",
+     "conditions": "xhigh",
+     "source_title": "Introducing Grok 4.7 (SpaceXSI news, 2026-09-21)",
+     "source_url": "https://x.ai/news/grok-4-7",
+     "section": "GDPval chart",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "LatchBio biosafety benchmark",
+     "version": null,
+     "value": 62.4,
+     "unit": "%",
+     "conditions": "未注明",
+     "source_title": "Introducing Grok 4.7 (SpaceXSI news, 2026-09-21)",
+     "source_url": "https://x.ai/news/grok-4-7",
+     "section": "Safety & Cybersecurity",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "HackerBench",
+     "version": "v0.3",
+     "value": 3.3,
+     "unit": "% risky dual-use prompts let through (lower is better)",
+     "conditions": "带防护",
+     "source_title": "Introducing Grok 4.7 (SpaceXSI news, 2026-09-21)",
+     "source_url": "https://x.ai/news/grok-4-7",
+     "section": "Safety & Cybersecurity",
+     "reported_by": "vendor_self_report"
+    }
+   ],
+   "cross_reported": [],
+   "system_card": {
+    "title": null,
+    "url": null,
+    "date": null,
+    "note_zh": "未找到 Grok 4.7 的 Model Card：发布页只链接 docs.x.ai；Epoch AI 与 Decrypt 也说没有。4.5 / 4.6 都有。",
+    "note_en": "No Grok 4.7 model card found: the launch post links only to docs.x.ai, and Epoch AI and Decrypt also list none. Grok 4.5 and 4.6 both have one."
+   },
+   "caveats": [
+    "参数量 2.1T 来自媒体与 Epoch，非 xAI 文档〔低〕",
+    "DeepSWE 71.0% 是 high 档，其余为 xhigh"
+   ],
+   "summary_zh": "SpaceXSI（原 xAI）当前旗舰，主打编码和知识工作。换了更大的新基座（媒体称约 2.1T 参数），强化学习跑得更长、偏重耗时数小时的任务。价格与 Grok 4.6 相同（$2/$6）；厂商自测 Terminal-Bench 4.0 从 20.3% 升到 37.6%。",
+   "summary_en": "SpaceXSI's (formerly xAI) current flagship, aimed at coding and knowledge work. It moves to a larger new base model (reportedly ~2.1T parameters) with a longer RL run weighted toward multi-hour tasks. Pricing is unchanged from Grok 4.6 at $2/$6, while self-reported Terminal-Bench 4.0 jumps from 20.3% to 37.6%."
+  },
+  {
+   "id": "grok-4-6",
+   "name": "Grok 4.6",
+   "short": "Grok 4.6",
+   "vendor": "xai",
+   "release": "2026-08-12",
+   "status": "public",
+   "price": {
+    "in": 2,
+    "out": 6,
+    "note_zh": "≤200K 提示：$2 / 缓存 $0.50 / $6；>200K：$4 / $1 / $12。另有 fast 版，价格 2 倍。上线 Cursor、Grok Build、API，及 OpenRouter、Vercel、Cloudflare、Bedrock（8-19）、GitHub Copilot（8-14）、Microsoft Foundry（8-26）、Gemini Enterprise Agent Platform（8-21）。",
+    "note_en": "≤200K prompt tokens: $2 / $0.50 cached / $6; above 200K: $4 / $1 / $12. A fast variant costs 2x. Available in Cursor, Grok Build and the API, plus OpenRouter, Vercel, Cloudflare, Bedrock (Aug 19), GitHub Copilot (Aug 14), Microsoft Foundry (Aug 26) and Gemini Enterprise Agent Platform (Aug 21)."
+   },
+   "open_weights": false,
+   "license": "Proprietary",
+   "params_total": "~1.5T（Model Card：'1.5T-scale model family'）",
+   "params_active": null,
+   "context": 500000,
+   "independent": {
+    "aa": {
+     "v": 31,
+     "setting": "xhigh",
+     "exact": 31.03,
+     "cost_per_task": 4.68,
+     "note_zh": "v5.0.1；每题约 $4.68，输出 79.9M token。xAI 发布时引用的是旧版 AA 指数 61。",
+     "note_en": "v5.0.1; about $4.68 per task, 79.9M output tokens. xAI's launch post cited 61 on an older AA index version.",
+     "url": "https://artificialanalysis.ai/models/grok-4-6"
+    },
+    "vals": {
+     "v": null,
+     "cost_per_task": null,
+     "rank": null,
+     "setting": "reasoning high, temp 0.7",
+     "note_zh": "不在 Vals Index v2.2 榜上。Vals 9-21 的 Grok 4.7 更新里引用旧版指数 59.17%。",
+     "note_en": "Not on the Vals Index v2.2 board. Vals' Sep 21 Grok 4.7 update cites 59.17% on the older index version.",
+     "url": "https://www.vals.ai/models/grok_grok-4.6"
+    },
+    "tb4_vals": {
+     "v": 17.17,
+     "cost_per_task": 5.06,
+     "rank": "44/70",
+     "harness": "mini-swe-agent",
+     "url": "https://www.vals.ai/benchmarks/terminal-bench-4"
+    },
+    "lmarena": {
+     "v": null,
+     "rank": null,
+     "note_zh": "未取到：arena.ai / lmarena.ai 对脚本返回 403，WebFetch 也未获授权。",
+     "note_en": "Not retrieved: arena.ai / lmarena.ai returned 403 to scripted requests; WebFetch was not authorized.",
+     "url": "https://arena.ai/leaderboard/text"
+    }
+   },
+   "vendor_benches": [
+    {
+     "bench": "AA Intelligence Index",
+     "version": "发布时版本（非 v5.0.1）",
+     "value": 61,
+     "unit": "",
+     "conditions": "high",
+     "source_title": "Introducing Grok 4.6 (SpaceXSI news, 2026-08-12)",
+     "source_url": "https://x.ai/news/grok-4-6",
+     "section": "Evals table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "GDPval-AA",
+     "version": "v2",
+     "value": 1753,
+     "unit": "Elo",
+     "conditions": "high；AA 测",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§3.1",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "CursorBench",
+     "version": "3.2",
+     "value": 69.9,
+     "unit": "%",
+     "conditions": "high；xhigh 为 70.8%；Cursor 测",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§2.1",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "APEX-SWE",
+     "version": null,
+     "value": 56.4,
+     "unit": "%",
+     "conditions": "high；Terminus-2；Mercor 测；pass@1",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§2.2",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "FrontierCode",
+     "version": "v1.1 (Extended, 150 题)",
+     "value": 61.3,
+     "unit": "%",
+     "conditions": "high；Grok Build；Cognition 测",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§2.3",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "DeepSWE",
+     "version": "v1.1",
+     "value": 65.9,
+     "unit": "%",
+     "conditions": "high；xhigh 67.0%；mini-swe-agent；Datacurve 测；pass@1",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§2.4",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "SWE-Marathon",
+     "version": "v1.1",
+     "value": 31.9,
+     "unit": "%",
+     "conditions": "high；Grok Build；Abundant AI 测",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§2.5",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Terminal-Bench",
+     "version": "3.0",
+     "value": 26.0,
+     "unit": "%",
+     "conditions": "high；Grok Build；Harbor 测",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§2.6",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "AA-Briefcase",
+     "version": null,
+     "value": 1577,
+     "unit": "Elo",
+     "conditions": "high；AA 测",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§3.2",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "APEX-Agents",
+     "version": null,
+     "value": 57.5,
+     "unit": "%",
+     "conditions": "high；Mercor 测；pass@1",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§3.3",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "OfficeQA Pro",
+     "version": null,
+     "value": 63.2,
+     "unit": "%",
+     "conditions": "high；Databricks 测",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§3.4",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Harvey LAB (Vals)",
+     "version": null,
+     "value": 15.8,
+     "unit": "%",
+     "conditions": "high；Vals Valkyrie harness",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§3.5",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "EEBench",
+     "version": null,
+     "value": 53.0,
+     "unit": "%",
+     "conditions": "high；xhigh 60.0%；Atopile 测",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§4.1",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "3DCodeBench",
+     "version": null,
+     "value": 54.0,
+     "unit": "%",
+     "conditions": "high",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§4.2",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "PartBench",
+     "version": null,
+     "value": 58.5,
+     "unit": "%",
+     "conditions": "xhigh",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§4.3",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "CADGenBench",
+     "version": null,
+     "value": 40.9,
+     "unit": "%",
+     "conditions": "high；Mecado 测",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§4.4",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "CADBench",
+     "version": null,
+     "value": 87.8,
+     "unit": "%",
+     "conditions": "high；xhigh 88.4%；gNucleus 测",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§4.5",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "SpaceXAI MTS Eval (internal)",
+     "version": null,
+     "value": 61.1,
+     "unit": "%",
+     "conditions": "high",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§5.1",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "InferenceEval (internal)",
+     "version": null,
+     "value": 46.9,
+     "unit": "%",
+     "conditions": "high",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§5.2",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "KernelBenchInternal",
+     "version": "v1.1",
+     "value": 37.2,
+     "unit": "%",
+     "conditions": "high",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§5.3",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Factuality hallucination rate (internal)",
+     "version": null,
+     "value": 1.7,
+     "unit": "% (lower is better)",
+     "conditions": "high",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§6.1",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "DeepSearchQA",
+     "version": null,
+     "value": 81.6,
+     "unit": "%",
+     "conditions": "high",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§6.2",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "CyberGym",
+     "version": null,
+     "value": 79.7,
+     "unit": "% mean reproduced",
+     "conditions": "high；不带防护",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§7.1",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "CVE-Bench",
+     "version": null,
+     "value": 39.8,
+     "unit": "%",
+     "conditions": "high；不带防护（不是 Anthropic 的 CVE Rediscovery）",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§7.2",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "SecureCodeReview",
+     "version": null,
+     "value": 58.7,
+     "unit": "%",
+     "conditions": "high",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§7.3",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Virology Capabilities Test (VCT)",
+     "version": null,
+     "value": 67.4,
+     "unit": "% accuracy",
+     "conditions": "high（Grok 4.5 为 65.5%）",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§8.1",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Terminal-Bench",
+     "version": "4.0",
+     "value": 20.3,
+     "unit": "%",
+     "conditions": "high；xAI 在 Grok 4.7 发布表里报的 Grok 4.6 成绩",
+     "source_title": "Introducing Grok 4.7 (SpaceXSI news, 2026-09-21)",
+     "source_url": "https://x.ai/news/grok-4-7",
+     "section": "Benchmarks table",
+     "reported_by": "vendor_self_report"
+    }
+   ],
+   "cross_reported": [],
+   "system_card": {
+    "title": "Grok 4.6 Model Card",
+    "url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+    "date": "2026-08-12（修订 2026-08-17）"
+   },
+   "caveats": [
+    "Grok 4.7 发布表里 Grok 4.6 的 DeepSWE 写 65.2%，Model Card 写 65.9%"
+   ],
+   "summary_zh": "在 Grok 4.5 基础上加长补充训练、重做 SFT 轨迹，主攻长时间运行的智能体和交互/视觉类项目。属于 xAI 约 1.5T 级模型家族；价格不变，上下文 500K。",
+   "summary_en": "Builds on Grok 4.5 with a longer supplemental training run and regenerated SFT trajectories, targeting long-running agents and interactive, visual work. Part of xAI's ~1.5T-scale family; same price, 500K context."
+  },
+  {
+   "id": "grok-4-5",
+   "name": "Grok 4.5",
+   "short": "Grok 4.5",
+   "vendor": "xai",
+   "release": "2026-07-08",
+   "status": "public",
+   "price": {
+    "in": 2,
+    "out": 6,
+    "note_zh": "$2 / $6。AA 页显示缓存折扣 85%（约 $0.30），xAI 文档未单列。7-08 先上 API（发布说明），7-16 发正式博文，7-22 上消费端 App；欧盟 API 7-17 起可用。",
+    "note_en": "$2 / $6. AA lists an 85% cache discount (~$0.30); xAI docs don't break it out. API came first on Jul 8 per the release notes, the launch post on Jul 16, consumer apps on Jul 22; EU API access from Jul 17."
+   },
+   "open_weights": false,
+   "license": "Proprietary",
+   "params_total": "~1.5T 级（Grok 4.6 Model Card 称同一 1.5T 级家族）",
+   "params_active": null,
+   "context": 500000,
+   "independent": {
+    "aa": {
+     "v": null,
+     "setting": "high",
+     "exact": null,
+     "cost_per_task": null,
+     "note_zh": "AA v5.0.1 没有给它打分（页面显示 N/A）。xAI 在 Grok 4.6 发布表里引用旧版 AA 指数 56。",
+     "note_en": "AA has no v5.0.1 score for it (page shows N/A). xAI's Grok 4.6 launch table cites 56 on an older AA index version.",
+     "url": "https://artificialanalysis.ai/models/grok-4-5"
+    },
+    "vals": {
+     "v": null,
+     "cost_per_task": null,
+     "rank": null,
+     "setting": null,
+     "note_zh": "不在 Vals Index v2.2 榜上；Vals 9-21 更新引用旧版指数 51.53%。模型页对脚本返回 403。",
+     "note_en": "Not on the Vals Index v2.2 board; Vals' Sep 21 update cites 51.53% on the older version. The model page returned 403 to scripts.",
+     "url": "https://www.vals.ai/models/grok_grok-4.5"
+    },
+    "tb4_vals": {
+     "v": 8.59,
+     "cost_per_task": 5.52,
+     "rank": "55/70",
+     "harness": "mini-swe-agent",
+     "url": "https://www.vals.ai/benchmarks/terminal-bench-4"
+    },
+    "lmarena": {
+     "v": null,
+     "rank": null,
+     "note_zh": "未取到：arena.ai / lmarena.ai 对脚本返回 403，WebFetch 也未获授权。",
+     "note_en": "Not retrieved: arena.ai / lmarena.ai returned 403 to scripted requests; WebFetch was not authorized.",
+     "url": "https://arena.ai/leaderboard/text"
+    }
+   },
+   "vendor_benches": [
+    {
+     "bench": "DeepSWE",
+     "version": "v1.0",
+     "value": 62.0,
+     "unit": "%",
+     "conditions": "high；AA 用各家 harness 跑；pass@1",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§2.1",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "DeepSWE",
+     "version": "v1.1",
+     "value": 53.0,
+     "unit": "%",
+     "conditions": "high；mini-swe-agent；Datacurve 测（4.6 卡里写 54.0%）",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§2.2",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "APEX-SWE",
+     "version": null,
+     "value": 51.2,
+     "unit": "%",
+     "conditions": "high（4.6 卡里写 53.6%）",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§2.3",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "SWE-bench Pro",
+     "version": null,
+     "value": 64.7,
+     "unit": "% resolve",
+     "conditions": "high",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§2.4",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "SWE-bench Multilingual",
+     "version": null,
+     "value": 78.0,
+     "unit": "% resolve",
+     "conditions": "high",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§2.5",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "SWE-Marathon",
+     "version": null,
+     "value": 29.0,
+     "unit": "%",
+     "conditions": "high；pass@1",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§2.6",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "FrontierSWE",
+     "version": null,
+     "value": 78,
+     "unit": "% dominance",
+     "conditions": "Grok CLI；公开榜数据",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§2.7",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "ProgramBench",
+     "version": null,
+     "value": 57.2,
+     "unit": "% tests passed",
+     "conditions": "high",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§2.8",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Terminal-Bench",
+     "version": "2.1",
+     "value": 83.3,
+     "unit": "%",
+     "conditions": "high",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§2.9",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "SWE-Atlas-QnA",
+     "version": null,
+     "value": 84.0,
+     "unit": "%",
+     "conditions": "high",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§2.10",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "FalseClaimBench (internal)",
+     "version": null,
+     "value": 84.0,
+     "unit": "%",
+     "conditions": "high",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§2.11",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "3DCodeBench",
+     "version": null,
+     "value": 49.8,
+     "unit": "%",
+     "conditions": "high",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§3.2",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "CAD-Bench",
+     "version": null,
+     "value": 88.1,
+     "unit": "%",
+     "conditions": "high",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§3.3",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "GDPval-AA",
+     "version": "v2",
+     "value": 1535,
+     "unit": "Elo",
+     "conditions": "high；AA 测（4.6 卡里写 1526）",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§4.1",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "τ³-banking (AA, τ-bench derived)",
+     "version": null,
+     "value": 32.6,
+     "unit": "%",
+     "conditions": "high；AA 测",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§4.2",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "RelBench",
+     "version": null,
+     "value": 38.4,
+     "unit": "%",
+     "conditions": "high",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§5.2",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Factuality hallucination rate (internal)",
+     "version": null,
+     "value": 0.98,
+     "unit": "% (lower is better)",
+     "conditions": "high",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§6.1",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "DeepSearchQA",
+     "version": null,
+     "value": 38.4,
+     "unit": "%",
+     "conditions": "high；内部实现",
+     "source_title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+     "source_url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+     "section": "§6.2",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "CyberGym",
+     "version": null,
+     "value": 79.0,
+     "unit": "% mean reproduced",
+     "conditions": "high；不带防护（数据见 4.6 卡）",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§7.1",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Virology Capabilities Test (VCT)",
+     "version": null,
+     "value": 65.5,
+     "unit": "% accuracy",
+     "conditions": "high（数据见 4.6 卡）",
+     "source_title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+     "source_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+     "section": "§8.1",
+     "reported_by": "vendor_self_report"
+    }
+   ],
+   "cross_reported": [],
+   "system_card": {
+    "title": "Grok 4.5 Model Card",
+    "url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+    "date": "2026-07-14（修订 2026-07-20）"
+   },
+   "caveats": [
+    "发布日有 7-08（API / 发布说明 / AA）和 7-16（官方博文）两个说法，这里取 API 可用日"
+   ],
+   "summary_zh": "SpaceXSI 与 Cursor 合训的新一代模型家族的首个版本，主打编码、智能体和办公。在数万张 GB300 上训练，强调每 token 智能和省 token（SWE-Bench Pro 平均输出 token 约为 Opus 4.8 的 1/4.2）。",
+   "summary_en": "The first release of a new model family trained with Cursor, aimed at coding, agentic tasks and office work. Trained on tens of thousands of GB300s with a focus on per-token intelligence; on SWE-Bench Pro it uses about 4.2x fewer output tokens than Opus 4.8."
+  },
+  {
+   "id": "muse-wonder-full",
+   "name": "Muse Wonder Full",
+   "short": "Wonder Full",
+   "vendor": "meta",
+   "release": "2026-10-12",
+   "status": "restricted",
+   "price": {
+    "in": null,
+    "out": null,
+    "note_zh": "不在 Meta Model API 上，只在 Muse Code 的 Power Usage / Maximum Usage 订阅里提供；API 把 muse-wonder-1.0 调到 max 也不会切到 Full。Vals 页按 $4/$20 标价（与 Muse Wonder 同），AA 无价格。韩国不可用。",
+    "note_en": "Not on the Meta Model API; only in Muse Code on the Power Usage / Maximum Usage plans. Setting muse-wonder-1.0 to max on the API does not select Full. Vals lists it at $4/$20 (same as Muse Wonder); AA shows no price. Not available in South Korea."
+   },
+   "open_weights": false,
+   "license": "Proprietary",
+   "params_total": null,
+   "params_active": null,
+   "context": 1000000,
+   "independent": {
+    "aa": {
+     "v": 50,
+     "setting": "max",
+     "exact": 50.08,
+     "cost_per_task": null,
+     "note_zh": "v5.0.1；无 API 价格所以没有每题成本；输出 112M token。",
+     "note_en": "v5.0.1; no API price, so no cost per task; 112M output tokens.",
+     "url": "https://artificialanalysis.ai/models/muse-wonder-full"
+    },
+    "vals": {
+     "v": 66.79,
+     "cost_per_task": 6.81,
+     "rank": "9/43",
+     "setting": "reasoning max, temp 1",
+     "note_zh": "Vals Index v2.2。发布当日旧版指数为 64.57%（$8.56/题）。",
+     "note_en": "Vals Index v2.2. On launch day it scored 64.57% ($8.56/test) on the older version.",
+     "url": "https://www.vals.ai/models/meta_muse-wonder-full"
+    },
+    "tb4_vals": {
+     "v": 58.08,
+     "cost_per_task": 10.53,
+     "rank": "11/70",
+     "harness": "mini-swe-agent",
+     "url": "https://www.vals.ai/benchmarks/terminal-bench-4"
+    },
+    "lmarena": {
+     "v": null,
+     "rank": null,
+     "note_zh": "未取到：arena.ai / lmarena.ai 对脚本返回 403，WebFetch 也未获授权。",
+     "note_en": "Not retrieved: arena.ai / lmarena.ai returned 403 to scripted requests; WebFetch was not authorized.",
+     "url": "https://arena.ai/leaderboard/text"
+    }
+   },
+   "vendor_benches": [
+    {
+     "bench": "Personal Superintelligence Index (internal composite)",
+     "version": null,
+     "value": 59.1,
+     "unit": "",
+     "conditions": "max",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Harvey LAB-AA",
+     "version": "v1.1",
+     "value": 13.1,
+     "unit": "%",
+     "conditions": "max；AA 测，全部标准通过且无幻觉",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table / Model Card §3",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Vals Finance Agent",
+     "version": "V2",
+     "value": 59.1,
+     "unit": "%",
+     "conditions": "max；Vals 测",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "HealthBench Pro",
+     "version": null,
+     "value": 62.3,
+     "unit": "%",
+     "conditions": "max；无工具；GPT-5.4 评分",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "AutomationBench-AA",
+     "version": null,
+     "value": 45.4,
+     "unit": "%",
+     "conditions": "max；AA 测；strict pass@1",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "GDP.pdf",
+     "version": null,
+     "value": 33.2,
+     "unit": "%",
+     "conditions": "max；Surge 测",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "JobBench",
+     "version": null,
+     "value": 75.3,
+     "unit": "%",
+     "conditions": "max",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "OSWorld",
+     "version": "V2.1",
+     "value": 78.4,
+     "unit": "% partial",
+     "conditions": "max；108 题全集、Meta 内部框架；binary 39.4%（不是离线子集）",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table / Model Card §3",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "MemoryBench (internal)",
+     "version": null,
+     "value": 85.5,
+     "unit": "%",
+     "conditions": "max",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Terminal-Bench",
+     "version": "4.0 (AA)",
+     "value": 57.1,
+     "unit": "%",
+     "conditions": "max；成绩来源 AA",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "DeepSWE",
+     "version": "1.1",
+     "value": 79.0,
+     "unit": "%",
+     "conditions": "max；Datacurve 测；pass@1",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "SWE-Marathon",
+     "version": null,
+     "value": 57.5,
+     "unit": "%",
+     "conditions": "xhigh；Abundant AI 测",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "ProgramBench",
+     "version": null,
+     "value": 59.0,
+     "unit": "%",
+     "conditions": "max；mini-swe-agent；≥95% 测试通过的 rollout 占比",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "AA Intelligence Index",
+     "version": "v4.3",
+     "value": 56,
+     "unit": "",
+     "conditions": "max",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "CyberGym",
+     "version": null,
+     "value": 88.4,
+     "unit": "%",
+     "conditions": "不带防护",
+     "source_title": "Muse Wonder Model Card (PDF, 2026-10-12; ExploitGym updated 2026-10-23)",
+     "source_url": "https://research.meta.ai/static/muse-wonder-model-card",
+     "section": "§4 Cyber Capability",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "ExploitBench",
+     "version": null,
+     "value": 58.9,
+     "unit": "%",
+     "conditions": "不带防护",
+     "source_title": "Muse Wonder Model Card (PDF, 2026-10-12; ExploitGym updated 2026-10-23)",
+     "source_url": "https://research.meta.ai/static/muse-wonder-model-card",
+     "section": "§4 Cyber Capability",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "ExploitGym",
+     "version": null,
+     "value": 20,
+     "unit": "intended flags (count)",
+     "conditions": "10-23 修正 harness 后重跑；原报 92 个总 flag / 21 个目标 flag",
+     "source_title": "Muse Wonder Model Card (PDF, 2026-10-12; ExploitGym updated 2026-10-23)",
+     "source_url": "https://research.meta.ai/static/muse-wonder-model-card",
+     "section": "§4 Cyber Capability",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "SecureBio VCT",
+     "version": null,
+     "value": 55.9,
+     "unit": "%",
+     "conditions": "无防护能力评估",
+     "source_title": "Muse Wonder Model Card (PDF, 2026-10-12; ExploitGym updated 2026-10-23)",
+     "source_url": "https://research.meta.ai/static/muse-wonder-model-card",
+     "section": "§4 CBRN",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "SecureBio MBCT / HPCT",
+     "version": null,
+     "value": "59.6 / 66.5",
+     "unit": "%",
+     "conditions": "",
+     "source_title": "Muse Wonder Model Card (PDF, 2026-10-12; ExploitGym updated 2026-10-23)",
+     "source_url": "https://research.meta.ai/static/muse-wonder-model-card",
+     "section": "§4 CBRN",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "LAB-Bench ProtocolQA / SeqQA+tools",
+     "version": "v1",
+     "value": "89.0 / 95.6",
+     "unit": "%",
+     "conditions": "",
+     "source_title": "Muse Wonder Model Card (PDF, 2026-10-12; ExploitGym updated 2026-10-23)",
+     "source_url": "https://research.meta.ai/static/muse-wonder-model-card",
+     "section": "§4 CBRN",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "MASK",
+     "version": null,
+     "value": 87.3,
+     "unit": "%",
+     "conditions": "越高越诚实",
+     "source_title": "Muse Wonder Model Card (PDF, 2026-10-12; ExploitGym updated 2026-10-23)",
+     "source_url": "https://research.meta.ai/static/muse-wonder-model-card",
+     "section": "§4 Loss of Control",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Agentic Misalignment",
+     "version": null,
+     "value": 0,
+     "unit": "% harmful action",
+     "conditions": "越低越好",
+     "source_title": "Muse Wonder Model Card (PDF, 2026-10-12; ExploitGym updated 2026-10-23)",
+     "source_url": "https://research.meta.ai/static/muse-wonder-model-card",
+     "section": "§4 Loss of Control",
+     "reported_by": "vendor_self_report"
+    }
+   ],
+   "cross_reported": [],
+   "system_card": {
+    "title": "Muse Wonder Model Card",
+    "url": "https://research.meta.ai/static/muse-wonder-model-card",
+    "date": "2026-10-12（ExploitGym 2026-10-23 更新）",
+    "note_zh": "博文说完整安全报告「即将发布」，截至 2026-11-22 未找到。",
+    "note_en": "The blog says a full safety report is 'coming soon'; none found as of 2026-11-22."
+   },
+   "caveats": [
+    "OSWorld V2.1 是 108 题全集的内部跑分，和报告「离线子集」列口径不同",
+    "ExploitGym 单位是 flag 个数，不是 %"
+   ],
+   "summary_zh": "Meta 目前最强的模型，Muse Wonder 系列的高算力档，在 Prometheus 吉瓦级集群上训练，主打个人与职业智能体、记忆和长程编码。只给 Muse Code 高档订阅用，不开 API；AA 50 分是 Meta 迄今最高。",
+   "summary_en": "Meta's most capable model, the high-compute tier of the Muse Wonder series, trained on the gigawatt-scale Prometheus cluster for personal and professional agents, memory and long-horizon coding. It's limited to top-tier Muse Code plans with no API access; its AA score of 50 is Meta's highest yet."
+  },
+  {
+   "id": "muse-wonder",
+   "name": "Muse Wonder",
+   "short": "Muse Wonder",
+   "vendor": "meta",
+   "release": "2026-10-12",
+   "status": "public",
+   "price": {
+    "in": 4,
+    "out": 20,
+    "note_zh": "muse-wonder-1.0，Standard 模式：输入 $4、缓存输入 $0.20、输出 $20；不收长上下文溢价；没有 Contributor 折扣档。API 标「preview」。推理强度 minimal–max，默认 max。也在 Google Cloud、Oracle Cloud 上。",
+    "note_en": "muse-wonder-1.0, Standard mode: $4 input, $0.20 cached input, $20 output; no long-context premium and no Contributor-mode discount. Marked 'preview' on the API. Reasoning effort minimal–max, default max. Also on Google Cloud and Oracle Cloud."
+   },
+   "open_weights": false,
+   "license": "Proprietary",
+   "params_total": null,
+   "params_active": null,
+   "context": 1048576,
+   "independent": {
+    "aa": {
+     "v": 44,
+     "setting": "max",
+     "exact": 43.57,
+     "cost_per_task": 6.95,
+     "note_zh": "v5.0.1；每题约 $6.95；输出 113M token。",
+     "note_en": "v5.0.1; about $6.95 per task; 113M output tokens.",
+     "url": "https://artificialanalysis.ai/models/muse-wonder"
+    },
+    "vals": {
+     "v": 64.88,
+     "cost_per_task": 10.65,
+     "rank": "12/43",
+     "setting": "reasoning max, temp 1",
+     "note_zh": "Vals Index v2.2。发布当日旧版指数为 61.06%。CyberBench v1.1 第 1。",
+     "note_en": "Vals Index v2.2. 61.06% on the older version at launch. #1 on CyberBench v1.1.",
+     "url": "https://www.vals.ai/models/meta_muse-wonder"
+    },
+    "tb4_vals": {
+     "v": 49.49,
+     "cost_per_task": 14.66,
+     "rank": "17/70",
+     "harness": "mini-swe-agent",
+     "url": "https://www.vals.ai/benchmarks/terminal-bench-4"
+    },
+    "lmarena": {
+     "v": null,
+     "rank": null,
+     "note_zh": "未取到：arena.ai / lmarena.ai 对脚本返回 403，WebFetch 也未获授权。",
+     "note_en": "Not retrieved: arena.ai / lmarena.ai returned 403 to scripted requests; WebFetch was not authorized.",
+     "url": "https://arena.ai/leaderboard/text"
+    }
+   },
+   "vendor_benches": [
+    {
+     "bench": "Personal Superintelligence Index (internal composite)",
+     "version": null,
+     "value": 54.3,
+     "unit": "",
+     "conditions": "max",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Harvey LAB-AA",
+     "version": "v1.1",
+     "value": 10.0,
+     "unit": "%",
+     "conditions": "max；AA 测",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Vals Finance Agent",
+     "version": "V2",
+     "value": 56.6,
+     "unit": "%",
+     "conditions": "max；Vals 测",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "HealthBench Pro",
+     "version": null,
+     "value": 60.5,
+     "unit": "%",
+     "conditions": "max；无工具",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "AutomationBench-AA",
+     "version": null,
+     "value": 39.1,
+     "unit": "%",
+     "conditions": "max；AA 测；strict pass@1",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "GDP.pdf",
+     "version": null,
+     "value": 30.8,
+     "unit": "%",
+     "conditions": "max；Surge 测",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "JobBench",
+     "version": null,
+     "value": 70.5,
+     "unit": "%",
+     "conditions": "max",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "OSWorld",
+     "version": "V2.1",
+     "value": 72.6,
+     "unit": "% partial",
+     "conditions": "max；108 题全集；binary 34.3%",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "MemoryBench (internal)",
+     "version": null,
+     "value": 85.6,
+     "unit": "%",
+     "conditions": "max",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Terminal-Bench",
+     "version": "4.0 (AA)",
+     "value": 52.0,
+     "unit": "%",
+     "conditions": "max；成绩来源 AA",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "DeepSWE",
+     "version": "1.1",
+     "value": 78.8,
+     "unit": "%",
+     "conditions": "max；Datacurve 测",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "SWE-Marathon",
+     "version": null,
+     "value": 53.1,
+     "unit": "%",
+     "conditions": "max；Abundant AI 测",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "ProgramBench",
+     "version": null,
+     "value": 50.0,
+     "unit": "%",
+     "conditions": "max；mini-swe-agent",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "AA Intelligence Index",
+     "version": "v4.3",
+     "value": 52,
+     "unit": "",
+     "conditions": "max",
+     "source_title": "Muse Wonder blog evaluation table (image muse-evaluation-table-light-v6)",
+     "source_url": "https://research.meta.ai/blog/muse-wonder",
+     "section": "Benchmark table",
+     "reported_by": "vendor_self_report"
+    }
+   ],
+   "cross_reported": [],
+   "system_card": {
+    "title": "Muse Wonder Model Card",
+    "url": "https://research.meta.ai/static/muse-wonder-model-card",
+    "date": "2026-10-12（与 Wonder Full 共用；风险评估按 Full 做）"
+   },
+   "caveats": [],
+   "summary_zh": "Muse Wonder 系列的 API 版，Meta 第一款按前沿定价（$4/$20）卖的模型，主打个人与职业智能体、主动记忆（Active Memory）和长程编码。比上一代 Muse Spark 1.3 用了更大更强的基座，AA v5.0.1 从约 37 升到 44。",
+   "summary_en": "The API tier of the Muse Wonder series and Meta's first model sold at frontier pricing ($4/$20), built for personal and professional agents, Active Memory and long-horizon coding. It sits on a larger, stronger base than Muse Spark 1.3, lifting its AA v5.0.1 score from about 37 to 44."
+  },
+  {
+   "id": "muse-ember",
+   "name": "Muse Ember",
+   "short": "Muse Ember",
+   "vendor": "meta",
+   "release": "2026-11-09",
+   "status": "public",
+   "price": {
+    "in": 0.1,
+    "out": 0.5,
+    "note_zh": "muse-ember-1.0，只有 Standard 模式。≤200K 输入：$0.10 / 缓存 $0.004 / 输出 $0.50；>200K 整单按 $0.30 / $0.012 / $1.50 计。最长输出 512K token。也在 Google Cloud、Oracle Cloud 上。",
+    "note_en": "muse-ember-1.0, Standard mode only. ≤200K input: $0.10 / $0.004 cached / $0.50 output; above 200K the whole request bills at $0.30 / $0.012 / $1.50. Up to 512K output tokens. Also on Google Cloud and Oracle Cloud."
+   },
+   "open_weights": false,
+   "license": "Proprietary",
+   "params_total": null,
+   "params_active": null,
+   "context": 1048576,
+   "independent": {
+    "aa": {
+     "v": 36,
+     "setting": "max（xhigh 34.11）",
+     "exact": 36.02,
+     "cost_per_task": 0.14,
+     "note_zh": "v5.0.1；每题约 $0.14；输出 115M token；AA 称其处在「智能-每题成本」效率前沿。",
+     "note_en": "v5.0.1; about $0.14 per task; 115M output tokens; AA places it on the intelligence-vs-cost-per-task frontier.",
+     "url": "https://artificialanalysis.ai/models/muse-ember"
+    },
+    "vals": {
+     "v": 60.48,
+     "cost_per_task": 0.153,
+     "rank": "18/43",
+     "setting": "reasoning max",
+     "note_zh": "Vals Index v2.2；Vals 称是榜上每题成本最低的模型。",
+     "note_en": "Vals Index v2.2; Vals calls it the lowest cost per test on the index.",
+     "url": "https://www.vals.ai/models/meta_muse-ember"
+    },
+    "tb4_vals": {
+     "v": 39.39,
+     "cost_per_task": 0.22,
+     "rank": "21/70",
+     "harness": "mini-swe-agent",
+     "url": "https://www.vals.ai/benchmarks/terminal-bench-4"
+    },
+    "lmarena": {
+     "v": null,
+     "rank": null,
+     "note_zh": "未取到：arena.ai / lmarena.ai 对脚本返回 403，WebFetch 也未获授权。",
+     "note_en": "Not retrieved: arena.ai / lmarena.ai returned 403 to scripted requests; WebFetch was not authorized.",
+     "url": "https://arena.ai/leaderboard/text"
+    }
+   },
+   "vendor_benches": [
+    {
+     "bench": "AutomationBench-AA",
+     "version": null,
+     "value": 37.8,
+     "unit": "%",
+     "conditions": "max；AA 测；strict pass@1",
+     "source_title": "Introducing Our Smallest, Most Efficient Model: Muse Ember (Meta, 2026-11-09)",
+     "source_url": "https://research.meta.ai/blog/muse-ember",
+     "section": "Evaluation results",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Agents' Last Exam",
+     "version": "v1.0（Linux 子集，105 题去掉 5 题）",
+     "value": 61.6,
+     "unit": "%",
+     "conditions": "max；Meta 内部 agent loop；部分分；不是报告列的 v1.1",
+     "source_title": "Muse Ember Evaluation Methodology (PDF, Nov 2026)",
+     "source_url": "https://research.meta.ai/static/muse-ember-evaluation-report",
+     "section": "Agents / ALE",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Personal Superintelligence Index (internal, 8 evals)",
+     "version": null,
+     "value": 46.8,
+     "unit": "",
+     "conditions": "max",
+     "source_title": "Introducing Our Smallest, Most Efficient Model: Muse Ember (Meta, 2026-11-09)",
+     "source_url": "https://research.meta.ai/blog/muse-ember",
+     "section": "Evaluation results",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Terminal-Bench",
+     "version": "4.0",
+     "value": 40.9,
+     "unit": "%",
+     "conditions": "max；AA 在 mini-swe-agent 里测",
+     "source_title": "Muse Ember Evaluation Methodology (PDF, Nov 2026)",
+     "source_url": "https://research.meta.ai/static/muse-ember-evaluation-report",
+     "section": "Coding / TB 4.0",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Coding Agent Index-AA",
+     "version": "v2.0",
+     "value": 46,
+     "unit": "",
+     "conditions": "max；在 Muse Code 里跑；AA 测",
+     "source_title": "Introducing Our Smallest, Most Efficient Model: Muse Ember (Meta, 2026-11-09)",
+     "source_url": "https://research.meta.ai/blog/muse-ember",
+     "section": "Evaluation results",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "FrontierCode",
+     "version": "2.0 (AA, 132 题私有集)",
+     "value": 27.2,
+     "unit": "%",
+     "conditions": "max；AA 测",
+     "source_title": "Introducing Our Smallest, Most Efficient Model: Muse Ember (Meta, 2026-11-09)",
+     "source_url": "https://research.meta.ai/blog/muse-ember",
+     "section": "Evaluation results",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "GDP.pdf-AA",
+     "version": null,
+     "value": 22.8,
+     "unit": "%",
+     "conditions": "max；AA 测；all-pass",
+     "source_title": "Introducing Our Smallest, Most Efficient Model: Muse Ember (Meta, 2026-11-09)",
+     "source_url": "https://research.meta.ai/blog/muse-ember",
+     "section": "Evaluation results",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "OSWorld",
+     "version": "2.1",
+     "value": 69.5,
+     "unit": "% partial",
+     "conditions": "max；108 题全集、内部框架；binary 33.8%",
+     "source_title": "Muse Ember Evaluation Methodology (PDF, Nov 2026)",
+     "source_url": "https://research.meta.ai/static/muse-ember-evaluation-report",
+     "section": "Multimodal / OSWorld",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "PerceptionBench (w/ tools)",
+     "version": null,
+     "value": 80.6,
+     "unit": "%",
+     "conditions": "max；带 bash 沙箱看图",
+     "source_title": "Introducing Our Smallest, Most Efficient Model: Muse Ember (Meta, 2026-11-09)",
+     "source_url": "https://research.meta.ai/blog/muse-ember",
+     "section": "Evaluation results",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "AA Intelligence Index",
+     "version": "v5（2026-11-09）",
+     "value": 36,
+     "unit": "",
+     "conditions": "max",
+     "source_title": "Introducing Our Smallest, Most Efficient Model: Muse Ember (Meta, 2026-11-09)",
+     "source_url": "https://research.meta.ai/blog/muse-ember",
+     "section": "Evaluation results / footnote 1",
+     "reported_by": "vendor_self_report"
+    }
+   ],
+   "cross_reported": [],
+   "system_card": {
+    "title": "Muse Ember Evaluation Methodology（只有评测方法 PDF，无独立 Model Card）",
+    "url": "https://research.meta.ai/static/muse-ember-evaluation-report",
+    "date": "2026-11",
+    "note_zh": "安全只在博文 Safety 节概述：按 Meta Superintelligence Scaling Framework 评估，低于高风险阈值。",
+    "note_en": "Safety is only summarized in the blog's Safety section: assessed under the Meta Superintelligence Scaling Framework and found below high-risk thresholds."
+   },
+   "caveats": [
+    "ALE 用的是 v1.0，报告列是 v1.1，不能直接填",
+    "OSWorld 2.1 是 108 题全集的内部跑分"
+   ],
+   "summary_zh": "Meta 最小、最省的执行模型，第一款用 Muse Wonder Full 训出来的专用模型，负责智能体里大量重复的子任务（工具调用、编码子任务、抽取、长文档）。价格只有 $0.10/$0.50，AA 36 分与 Muse Spark 1.3 相当，每题成本从 $2.39 降到约 $0.14。",
+   "summary_en": "Meta's smallest, most efficient execution model and the first trained using Muse Wonder Full, built for the repetitive sub-tasks agents run all day: tool calls, coding subtasks, extraction and long documents. At $0.10/$0.50 it roughly matches Muse Spark 1.3 on AA (36) while cutting cost per task from $2.39 to about $0.14."
+  },
+  {
+   "id": "muse-spark-open",
+   "name": "Muse Spark Open",
+   "short": "Spark Open",
+   "vendor": "meta",
+   "release": "2026-10-15",
+   "status": "public",
+   "price": {
+    "in": 1.25,
+    "out": 4.25,
+    "note_zh": "开放权重，Meta 自家 API 不托管；价格取 AA / Vals 列的第三方托管价（Baseten、Fireworks、Groq、Modal、Nebius、OpenRouter、Together AI 等），各家可能不同。与 Muse Spark 1.3 的 API 价相同。",
+    "note_en": "Open weights; not hosted on Meta's own API. Price is the third-party hosted rate listed by AA / Vals (Baseten, Fireworks, Groq, Modal, Nebius, OpenRouter, Together AI and others) and may vary by provider. Matches Muse Spark 1.3's API price."
+   },
+   "open_weights": true,
+   "license": "Muse Model License（有限商用条款；HF 仓库需人工审批下载）",
+   "params_total": "816B",
+   "params_active": "42B",
+   "context": 1048576,
+   "independent": {
+    "aa": {
+     "v": 25,
+     "setting": "xhigh",
+     "exact": 24.88,
+     "cost_per_task": 2.02,
+     "note_zh": "v5.0.1；每题约 $2.02；输出 90.6M token。Meta 发布时引用旧版 AA v4.3 为 39。",
+     "note_en": "v5.0.1; about $2.02 per task; 90.6M output tokens. Meta's launch cited 39 on the older AA v4.3.",
+     "url": "https://artificialanalysis.ai/models/muse-spark-open"
+    },
+    "vals": {
+     "v": 48.57,
+     "cost_per_task": 4.72,
+     "rank": "37/43",
+     "setting": "reasoning xhigh, temp 1, top_p 1",
+     "note_zh": "Vals Index v2.2。",
+     "note_en": "Vals Index v2.2.",
+     "url": "https://www.vals.ai/models/meta_muse-spark-open"
+    },
+    "tb4_vals": {
+     "v": 6.57,
+     "cost_per_task": 7.26,
+     "rank": "58/70",
+     "harness": "mini-swe-agent",
+     "note_zh": "明显偏低（Ember 39.39%），可能与第三方托管或 harness 适配有关，待核。",
+     "note_en": "Unusually low (Ember scores 39.39%); possibly a hosting or harness issue. Needs checking.",
+     "url": "https://www.vals.ai/benchmarks/terminal-bench-4"
+    },
+    "lmarena": {
+     "v": null,
+     "rank": null,
+     "note_zh": "未取到：arena.ai / lmarena.ai 对脚本返回 403，WebFetch 也未获授权。",
+     "note_en": "Not retrieved: arena.ai / lmarena.ai returned 403 to scripted requests; WebFetch was not authorized.",
+     "url": "https://arena.ai/leaderboard/text"
+    }
+   },
+   "vendor_benches": [
+    {
+     "bench": "AA Intelligence Index",
+     "version": "v4.3（2026-10-07 取数）",
+     "value": 39,
+     "unit": "",
+     "conditions": "xhigh",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "JobBench",
+     "version": null,
+     "value": 61.8,
+     "unit": "%",
+     "conditions": "xhigh；官方榜",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "MCP-Atlas",
+     "version": null,
+     "value": 89.2,
+     "unit": "% pass rate",
+     "conditions": "xhigh；Scale AI 测",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "GDPval-AA",
+     "version": "v2",
+     "value": 1401,
+     "unit": "Elo",
+     "conditions": "xhigh；AA 测",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "OSWorld-Verified",
+     "version": null,
+     "value": 80.4,
+     "unit": "%",
+     "conditions": "xhigh；361 题（去 Google Drive 题）；纯 GUI；4 次平均",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Toolathlon-Verified",
+     "version": null,
+     "value": 72.8,
+     "unit": "%",
+     "conditions": "xhigh；官方评测服务",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "HLE-Diamond (no tools)",
+     "version": null,
+     "value": 26.1,
+     "unit": "%",
+     "conditions": "xhigh",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Humanity's Last Exam (w/ tools)",
+     "version": null,
+     "value": 61.0,
+     "unit": "%",
+     "conditions": "xhigh",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "GPQA Diamond",
+     "version": null,
+     "value": 89.0,
+     "unit": "%",
+     "conditions": "xhigh",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "AA-Omniscience",
+     "version": null,
+     "value": 25,
+     "unit": "index",
+     "conditions": "xhigh；AA 测",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "SciCode",
+     "version": null,
+     "value": 58.5,
+     "unit": "%",
+     "conditions": "xhigh",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "DeepSWE",
+     "version": "1.1",
+     "value": 60,
+     "unit": "%",
+     "conditions": "Muse Code harness；成绩来源 AA",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "SWE-Atlas-QnA",
+     "version": null,
+     "value": 58,
+     "unit": "%",
+     "conditions": "preferred harness",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "Terminal-Bench",
+     "version": "2.1",
+     "value": 76.4,
+     "unit": "%",
+     "conditions": "Terminus 2 agent",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "ZeroBench (w/ tools)",
+     "version": null,
+     "value": 50.0,
+     "unit": "%",
+     "conditions": "xhigh",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "BabyVision (w/ tools)",
+     "version": null,
+     "value": 80.2,
+     "unit": "%",
+     "conditions": "xhigh",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "SimpleVQA (w/ tools)",
+     "version": null,
+     "value": 73.6,
+     "unit": "%",
+     "conditions": "xhigh",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "WorldVQA (w/ tools)",
+     "version": null,
+     "value": 49.4,
+     "unit": "%",
+     "conditions": "xhigh",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "IntPhys2",
+     "version": null,
+     "value": 68.3,
+     "unit": "%",
+     "conditions": "xhigh",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "VideoMME",
+     "version": "v2",
+     "value": 61.5,
+     "unit": "%",
+     "conditions": "xhigh",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "FORTRESS adversarial (static)",
+     "version": null,
+     "value": "ARS 5.8 / ORS 17.4",
+     "unit": "score (lower is better)",
+     "conditions": "",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks / Safety",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "StrongREJECT",
+     "version": "v2 (adaptive)",
+     "value": 0.5,
+     "unit": "(lower is better)",
+     "conditions": "",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Benchmarks / Safety",
+     "reported_by": "vendor_self_report"
+    },
+    {
+     "bench": "MASK",
+     "version": null,
+     "value": 98.1,
+     "unit": "% honesty",
+     "conditions": "",
+     "source_title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+     "source_url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "section": "Safety and Preparedness",
+     "reported_by": "vendor_self_report"
+    }
+   ],
+   "cross_reported": [],
+   "system_card": {
+    "title": "Muse Spark Open Model Card (Hugging Face)",
+    "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+    "date": "2026-10-15",
+    "note_zh": "完整评测报告博文称「即将发布」；另有评测方法 PDF：https://research.meta.ai/static/muse-spark-open-evaluation-methodology",
+    "note_en": "The blog says a full evaluation report is coming soon; an evaluation-methodology PDF is at https://research.meta.ai/static/muse-spark-open-evaluation-methodology"
+   },
+   "caveats": [
+    "AA v5.0.1 25 分与 Meta 引用的 v4.3 39 分差很大，版本不同",
+    "Vals TB 4.0 只有 6.57%，异常"
+   ],
+   "summary_zh": "Muse Spark 的开放权重版（816B 总参 / 42B 激活 MoE，1M 上下文，原生多模态），Meta 自称「美国迄今最强的开放权重模型」，两台 M5 Ultra Mac Studio 就能跑。这是 Meta 自 Llama 之后重新放出大模型权重，许可证改为有限商用的 Muse Model License。",
+   "summary_en": "The open-weight release of Muse Spark: an 816B-total / 42B-active MoE with a 1M context that's natively multimodal, billed by Meta as the most capable US open-weight model to date and able to run on two M5 Ultra Mac Studios. It marks Meta's return to releasing large model weights after Llama, now under the more restrictive Muse Model License."
+  }
+ ],
+ "sources": [
+  {
+   "title": "xAI API Release Notes",
+   "url": "https://docs.x.ai/release-notes",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "SpaceXSI News index",
+   "url": "https://x.ai/news",
+   "date": "2026-11-22 (accessed)"
+  },
+  {
+   "title": "Introducing Grok 4.7 (SpaceXSI news, 2026-09-21)",
+   "url": "https://x.ai/news/grok-4-7",
+   "date": "2026-09-21"
+  },
+  {
+   "title": "Introducing Grok 4.6 (SpaceXSI news, 2026-08-12)",
+   "url": "https://x.ai/news/grok-4-6",
+   "date": "2026-08-12"
+  },
+  {
+   "title": "Grok 4.6 Model Card (2026-08-12, rev. 2026-08-17)",
+   "url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+   "date": "2026-08-17"
+  },
+  {
+   "title": "Introducing Grok 4.5 (SpaceXSI news, 2026-07-16)",
+   "url": "https://x.ai/news/grok-4-5",
+   "date": "2026-07-16"
+  },
+  {
+   "title": "Grok 4.5 Model Card (2026-07-14, rev. 2026-07-20)",
+   "url": "https://media.x.ai/v1/website/4p5-5184fdf9.pdf",
+   "date": "2026-07-20"
+  },
+  {
+   "title": "AA: Benchmarking Grok 4.7",
+   "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
+   "date": "2026-09-21"
+  },
+  {
+   "title": "Decrypt: xAI Launches Grok 4.7 (2.1T parameters)",
+   "url": "https://decrypt.co/378824",
+   "date": "2026-09-21"
+  },
+  {
+   "title": "Epoch AI: Grok 4.7",
+   "url": "https://epoch.ai/models/grok-4-7",
+   "date": "2026-11-22 (accessed)"
+  },
+  {
+   "title": "Muse Wonder: A Frontier Model For Personal & Professional AI Agents (Meta, 2026-10-12)",
+   "url": "https://research.meta.ai/blog/muse-wonder",
+   "date": "2026-10-12"
+  },
+  {
+   "title": "Muse Wonder Model Card (PDF, 2026-10-12; ExploitGym updated 2026-10-23)",
+   "url": "https://research.meta.ai/static/muse-wonder-model-card",
+   "date": "2026-10-23"
+  },
+  {
+   "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember (Meta, 2026-11-09)",
+   "url": "https://research.meta.ai/blog/muse-ember",
+   "date": "2026-11-09"
+  },
+  {
+   "title": "Muse Ember Evaluation Methodology (PDF, Nov 2026)",
+   "url": "https://research.meta.ai/static/muse-ember-evaluation-report",
+   "date": "2026-11"
+  },
+  {
+   "title": "Introducing Muse Spark Open (Meta, 2026-10-15)",
+   "url": "https://research.meta.ai/blog/muse-spark-open",
+   "date": "2026-10-15"
+  },
+  {
+   "title": "Muse Spark Open Model Card (Hugging Face, 2026-10-15)",
+   "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+   "date": "2026-10-15"
+  },
+  {
+   "title": "Muse Spark Open Evaluation Methodology",
+   "url": "https://research.meta.ai/static/muse-spark-open-evaluation-methodology",
+   "date": "2026-10"
+  },
+  {
+   "title": "Meta Model API — Models",
+   "url": "https://ai.developer.meta.com/docs/models/",
+   "date": "2026-11-22 (accessed)"
+  },
+  {
+   "title": "Meta Model API — Pricing and rate limits",
+   "url": "https://ai.developer.meta.com/docs/pricing-rate-limits",
+   "date": "2026-11-22 (accessed)"
+  },
+  {
+   "title": "Meta Model API — Muse Wonder",
+   "url": "https://ai.developer.meta.com/docs/muse-wonder",
+   "date": "2026-11-22 (accessed)"
+  },
+  {
+   "title": "Artificial Analysis model pages (grok-4-7, grok-4-6, grok-4-5, muse-wonder-full, muse-wonder, muse-ember, muse-spark-open, muse-spark-1-3)",
+   "url": "https://artificialanalysis.ai/models/grok-4-7",
+   "date": "2026-11-22 (accessed)"
+  },
+  {
+   "title": "Vals Index v2.2 leaderboard",
+   "url": "https://www.vals.ai/benchmarks/vals_index",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Vals Terminal-Bench 4.0 leaderboard",
+   "url": "https://www.vals.ai/benchmarks/terminal-bench-4",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Vals model pages (grok_grok-4.7, grok_grok-4.6, meta_muse-wonder, meta_muse-wonder-full, meta_muse-ember, meta_muse-spark-open)",
+   "url": "https://www.vals.ai/models/grok_grok-4.7",
+   "date": "2026-11-22 (accessed)"
+  }
+ ]
+}
