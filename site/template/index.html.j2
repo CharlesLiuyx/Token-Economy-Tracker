@@ -20,7 +20,10 @@
   root.dataset.width = pick("width", ["normal", "wide", "full"], "wide");
   root.dataset.fs = pick("fs", ["s", "m", "l"], "m");
   root.dataset.terms = pick("terms", ["on", "off"], "on");
-  var l = pick("lang", ["zh", "en"], /^zh/i.test(navigator.language || "") ? "zh" : "en");
+  /* URL ?lang=zh|en（附属报告「← TET 主页」带过来）优先，并记住 */
+  var q = (location.search.match(/[?&]lang=(zh|en)\b/) || [])[1];
+  if (q) { try { ls.setItem("lang", q); } catch (e) {} }
+  var l = q || pick("lang", ["zh", "en"], /^zh/i.test(navigator.language || "") ? "zh" : "en");
   root.dataset.lang = l;
   if (l === "en") root.lang = "en";
 })();

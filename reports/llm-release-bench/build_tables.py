@@ -415,7 +415,10 @@ def f33():
     return ''.join(h)
 
 # ------------------------------------------------------------------ 顶栏 / 首屏 / 附录 / 新厂商 CSS
-def topbar(): return '<span class="tt">%s</span>' % TX(L('%s · %s %s', '%s · %s %s') % (D['meta']['title'], ui('snapshot'), SNAP))
+HOME_URL = 'https://charlesliuyx.github.io/Token-Economy-Tracker/'   # TET 主页；链接由页面 JS 按当前语言补 ?lang=zh|en
+def topbar():
+    home = '<a id="home" href="%s?lang=zh" data-base="%s"%s>%s</a>' % (HOME_URL, HOME_URL, att('data-tip', ui('home_tip')), TX(ui('home_label')))
+    return home + '<span class="tt">%s</span>' % TX(L('%s · %s %s', '%s · %s %s') % (D['meta']['title'], ui('snapshot'), SNAP))
 def h1(): return '<h1>%s</h1>' % TX(D['meta']['title'])
 def meta_line():
     npub = sum(1 for m in MODELS if m['status'] != 'internal')

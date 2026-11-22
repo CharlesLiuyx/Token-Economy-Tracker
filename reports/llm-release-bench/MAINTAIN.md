@@ -185,6 +185,7 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 - 报告随 Token-Economy-Tracker 的 GitHub Pages 一起发布：`make build` 会把本目录唯一的报告 .html 复制成 `site/llm-release-bench/index.html`（scripts/build.py 的 COMPANION_REPORTS，只搬运不改内容），线上地址 https://charlesliuyx.github.io/Token-Economy-Tracker/llm-release-bench/ 。改了这里的报告、推到 main 后 deploy.yml 会自动重新部署（paths 含 reports/**）。
 - 主看板顶栏有入口「模型发布 & Bench →」，链接带 `?lang=zh|en`。本页 head 里的首帧脚本按 URL ?lang= > 本页记忆 mdl-lang > 主看板的 lang > 中文 决定语言。改 head 脚本时保留这个顺序。
 - 本目录只能有一个报告 .html（否则复制会被跳过并打印 warn）。
+- 顶栏左上角「← TET 主页」：由 build_tables.py 的 topbar() 输出（HOME_URL 为绝对地址，本地打开或 html-review 上也能用），文字在 data/models.json 的 ui.home_label / ui.home_tip；页面 JS 在语言切换时把链接改成 `?lang=zh|en`，主看板按它定语言。
 
 ## 11. 本地副本
 

@@ -5016,6 +5016,14 @@
   "snap_short_tip": {
    "zh": "{date}：本报告的快照日期。",
    "en": "{date}: snapshot date of this report."
+  },
+  "home_label": {
+   "zh": "← TET 主页",
+   "en": "← TET Home"
+  },
+  "home_tip": {
+   "zh": "返回 Token Economy Tracker 主页（同一语言）",
+   "en": "Back to the Token Economy Tracker home page (same language)"
   }
  }
 }

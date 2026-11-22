@@ -38,6 +38,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /* top bar */
 #topbar{position:fixed;left:0;right:0;top:0;height:24px;z-index:30;display:flex;align-items:center;gap:10px;padding:0 10px;background:var(--soft);border-bottom:1px solid var(--line);font-size:12px;line-height:24px}
 #topbar .tt{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink2)}
+#home{flex:none;padding:0 10px 0 0;margin-right:-2px;border-right:1px solid var(--line);color:var(--accent);font-weight:600;white-space:nowrap;text-decoration:none}
+#home:hover{text-decoration:underline}
 #back{padding:0 8px;height:20px;line-height:18px;border:1px solid var(--accent);color:var(--accent);background:var(--bg)}
 #more{position:relative}
 #lang{display:inline-flex;flex:none;border:1px solid var(--line);height:18px;line-height:16px}
@@ -413,7 +415,7 @@ section.collapsed>h2::after{content:"已收起 · 点击展开"}
 </style><!--data:s-css:end--></head>
 <body>
 <div id="topbar">
-  <!--data:topbar:start--><span class="tt"><span class="lz">大模型发布和 Bench 跟进：前沿 Gemini Claude ChatGPT 大厂 Grok Muse 开源 DeepSeek Kimi GLM · 快照 2026-11-19</span><span class="le" lang="en">LLM Releases & Benchmarks: Frontier Gemini, Claude, ChatGPT · Big Tech Grok, Muse · Open-weight DeepSeek, Kimi, GLM · Snapshot 2026-11-19</span></span><!--data:topbar:end-->
+  <!--data:topbar:start--><a id="home" href="https://charlesliuyx.github.io/Token-Economy-Tracker/?lang=zh" data-base="https://charlesliuyx.github.io/Token-Economy-Tracker/" data-tip="返回 Token Economy Tracker 主页（同一语言）" data-tip-en="Back to the Token Economy Tracker home page (same language)"><span class="lz">← TET 主页</span><span class="le" lang="en">← TET Home</span></a><span class="tt"><span class="lz">大模型发布和 Bench 跟进：前沿 Gemini Claude ChatGPT 大厂 Grok Muse 开源 DeepSeek Kimi GLM · 快照 2026-11-19</span><span class="le" lang="en">LLM Releases & Benchmarks: Frontier Gemini, Claude, ChatGPT · Big Tech Grok, Muse · Open-weight DeepSeek, Kimi, GLM · Snapshot 2026-11-19</span></span><!--data:topbar:end-->
   <!--data:s-chrome:start--><button id="back" hidden><span class="lz">返回</span><span class="le" lang="en">Back</span> ×0</button>
   <span id="lang" role="group" data-i18n-skip aria-label="语言" data-aria-en="Language" data-tip="切换语言" data-tip-en="Switch language"><button data-set="lang:zh" lang="zh-CN">中文</button><button data-set="lang:en" lang="en">EN</button></span>
   <div id="more"><button id="moreBtn"><span class="lz">更多</span><span class="le" lang="en">More</span> ▾</button>
@@ -564,7 +566,7 @@ function setPref(k,v,init){
   R.setAttribute('data-'+k,v);
   if(!init){try{localStorage.setItem('mdl-'+k,v)}catch(e){}}
   $$('[data-set^="'+k+':"]').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-set')===k+':'+v)});
-  if(k==='lang')langText();
+  if(k==='lang'){langText();var hm=document.getElementById('home');if(hm)hm.href=hm.getAttribute('data-base')+'?lang='+v}
 }
 /* language switch: html lang, document title, aria labels; data-tip* and TERMS are read per language at hover time */
 function langText(){
