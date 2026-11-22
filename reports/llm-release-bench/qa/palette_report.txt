@@ -1,58 +1,82 @@
 ==== light（底色 #ffffff）
-A. 厂商顺序相邻对：google #2a78d6 → anthropic #eb6834 → openai #1baf7a → xai #eda100 → meta #e87ba4 → deepseek #0eabd8 → moonshot #6250d6 → zhipu #e34948
+A. 厂商顺序相邻对：google #2a78d6 → anthropic #eb6834 → openai #1baf7a → xai #817376 → meta #6f3b72 → deepseek #5eb7e3 → moonshot #9d80f6 → zhipu #a72725
    [pass] Lightness band：all 8 inside L 0.43–0.77
-   [pass] Chroma floor：all 8 >= 0.1
-   [pass] CVD separation：worst adjacent #0eabd8↔#e87ba4 ΔE 8.7 (protan) · tritan 5.8
-   [pass] Normal-vision floor：worst adjacent #e87ba4↔#eda100 ΔE 19.6 (normal)
-   [relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#1baf7a",2.82],["#eda100",2.17],["#e87ba4",2.69],["#0eabd8",2.68]]
+   [FAIL] Chroma floor：below floor (reads gray): [["#817376",0.018]]
+   [pass] CVD separation：worst adjacent #1baf7a↔#eb6834 ΔE 9.2 (deutan) · tritan 13.2
+   [pass] Normal-vision floor：worst adjacent #6f3b72↔#817376 ΔE 16.0 (normal)
+   [relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#1baf7a",2.82],["#5eb7e3",2.24]]
 B. 图 2-1 泳道顺序相邻对：
    google    #2a78d6 ↔ anthropic #eb6834  CVD 24.7  正常 33.6  pass
    anthropic #eb6834 ↔ openai    #1baf7a  CVD 9.2  正常 27.6  pass
-   openai    #1baf7a ↔ xai       #eda100  CVD 9.1  正常 22.9  pass
-   xai       #eda100 ↔ meta      #e87ba4  CVD 16.3  正常 19.6  pass
-   meta      #e87ba4 ↔ deepseek  #0eabd8  CVD 8.7  正常 24.9  pass
-   deepseek  #0eabd8 ↔ moonshot  #6250d6  CVD 18.7  正常 23.5  pass
-   moonshot  #6250d6 ↔ zhipu     #e34948  CVD 24.3  正常 31.5  pass
-   zhipu     #e34948 ↔ nvidia    #494845  CVD 13.5  正常 29.1  pass
+   openai    #1baf7a ↔ xai       #817376  CVD 10.4  正常 18.7  pass
+   xai       #817376 ↔ meta      #6f3b72  CVD 14.5  正常 16.0  pass
+   meta      #6f3b72 ↔ deepseek  #5eb7e3  CVD 29.8  正常 34.0  pass
+   deepseek  #5eb7e3 ↔ moonshot  #9d80f6  CVD 9.6  正常 16.2  pass
+   moonshot  #9d80f6 ↔ zhipu     #a72725  CVD 29.5  正常 31.5  pass
+   zhipu     #a72725 ↔ nvidia    #494845  CVD 4.9  正常 18.1  FAIL
    nvidia    #494845 ↔ tpu       #2a78d6  CVD 23.3  正常 24.1  pass
    tpu       #2a78d6 ↔ other     #a8418b  CVD 13.0  正常 22.0  pass
 C. 全部两两对（10 色，45 对）里低于门槛的：
-   google    ↔ moonshot  CVD 4.5  正常 10.5  新厂商相关
-   anthropic ↔ zhipu     CVD 5.6  正常 7.1  新厂商相关
-   openai    ↔ meta      CVD 6.1  正常 28.3  新厂商相关
-   openai    ↔ zhipu     CVD 6.9  正常 31.3  新厂商相关
-   anthropic ↔ xai       CVD 9.7  正常 13.7  新厂商相关
-   meta      ↔ zhipu     CVD 12.3  正常 13.2  新厂商相关
-   anthropic ↔ meta      CVD 12.5  正常 12.9  新厂商相关
-   openai    ↔ deepseek  CVD 13.6  正常 14.4  新厂商相关
-   google    ↔ deepseek  CVD 14.2  正常 14.1  新厂商相关
+   zhipu     ↔ nvidia    CVD 4.9  正常 18.1  新厂商相关
+   xai       ↔ other     CVD 5.3  正常 14.7  新厂商相关
+   meta      ↔ nvidia    CVD 6.9  正常 11.6  新厂商相关
+   google    ↔ moonshot  CVD 7.1  正常 14.8  新厂商相关
+   meta      ↔ other     CVD 7.2  正常 11.9  新厂商相关
+   zhipu     ↔ other     CVD 13.7  正常 14.1  新厂商相关
 ==== dark（底色 #1a1a19）
-A. 厂商顺序相邻对：google #3987e5 → anthropic #d95926 → openai #199e70 → xai #c98500 → meta #d55181 → deepseek #2b98b0 → moonshot #9085e9 → zhipu #e66767
+A. 厂商顺序相邻对：google #3987e5 → anthropic #d95926 → openai #199e70 → xai #796a6e → meta #b37bb6 → deepseek #00739c → moonshot #6745b6 → zhipu #aa2b28
    [pass] Lightness band：all 8 inside L 0.48–0.67
-   [pass] Chroma floor：all 8 >= 0.1
-   [pass] CVD separation：worst adjacent #9085e9↔#2b98b0 ΔE 8.2 (deutan) · tritan 8.3
-   [pass] Normal-vision floor：worst adjacent #9085e9↔#2b98b0 ΔE 15.2 (normal)
-   [pass] Contrast vs surface：all 8 >= 3:1
+   [FAIL] Chroma floor：below floor (reads gray): [["#796a6e",0.02]]
+   [pass] CVD separation：worst adjacent #6745b6↔#00739c ΔE 8.1 (deutan) · tritan 9.9
+   [pass] Normal-vision floor：worst adjacent #b37bb6↔#796a6e ΔE 15.0 (normal)
+   [relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#6745b6",2.57],["#aa2b28",2.56]]
 B. 图 2-1 泳道顺序相邻对：
    google    #3987e5 ↔ anthropic #d95926  CVD 26.8  正常 31.8  pass
    anthropic #d95926 ↔ openai    #199e70  CVD 9.4  正常 26.5  pass
-   openai    #199e70 ↔ xai       #c98500  CVD 8.4  正常 19.8  pass
-   xai       #c98500 ↔ meta      #d55181  CVD 13.2  正常 19.3  pass
-   meta      #d55181 ↔ deepseek  #2b98b0  CVD 8.4  正常 26.0  pass
-   deepseek  #2b98b0 ↔ moonshot  #9085e9  CVD 8.2  正常 15.2  pass
-   moonshot  #9085e9 ↔ zhipu     #e66767  CVD 19.5  正常 22.5  pass
-   zhipu     #e66767 ↔ nvidia    #b8b7b4  CVD 12.0  正常 19.2  pass
+   openai    #199e70 ↔ xai       #796a6e  CVD 8.5  正常 16.8  pass
+   xai       #796a6e ↔ meta      #b37bb6  CVD 12.5  正常 15.0  pass
+   meta      #b37bb6 ↔ deepseek  #00739c  CVD 8.2  正常 20.7  pass
+   deepseek  #00739c ↔ moonshot  #6745b6  CVD 8.1  正常 15.4  pass
+   moonshot  #6745b6 ↔ zhipu     #aa2b28  CVD 23.0  正常 24.4  pass
+   zhipu     #aa2b28 ↔ nvidia    #b8b7b4  CVD 28.8  正常 33.2  pass
    nvidia    #b8b7b4 ↔ tpu       #3987e5  CVD 19.6  正常 22.8  pass
    tpu       #3987e5 ↔ other     #a8418b  CVD 14.0  正常 23.2  pass
 C. 全部两两对（10 色，45 对）里低于门槛的：
-   openai    ↔ meta      CVD 1.6  正常 29.6  新厂商相关
-   google    ↔ moonshot  CVD 1.9  正常 9.8  新厂商相关
-   anthropic ↔ xai       CVD 4.8  正常 10.6  新厂商相关
-   openai    ↔ zhipu     CVD 6.5  正常 27.5  新厂商相关
-   anthropic ↔ zhipu     CVD 6.6  正常 7.1  新厂商相关
-   xai       ↔ zhipu     CVD 6.7  正常 13.0  新厂商相关
-   meta      ↔ zhipu     CVD 7.5  正常 7.8  新厂商相关
-   meta      ↔ other     CVD 8.1  正常 10.2  新厂商相关
-   openai    ↔ deepseek  CVD 9.5  正常 10.6  新厂商相关
-   google    ↔ deepseek  CVD 10.1  正常 10.5  新厂商相关
-   anthropic ↔ meta      CVD 10.5  正常 11.6  新厂商相关
+   xai       ↔ other     CVD 4.4  正常 14.1  新厂商相关
+   deepseek  ↔ other     CVD 5.8  正常 21.9  新厂商相关
+   xai       ↔ deepseek  CVD 7.3  正常 12.1  新厂商相关
+   google    ↔ meta      CVD 7.6  正常 16.4  新厂商相关
+   moonshot  ↔ other     CVD 8.4  正常 14.2  新厂商相关
+   meta      ↔ other     CVD 11.7  正常 13.6  新厂商相关
+   google    ↔ deepseek  CVD 11.9  正常 12.5  新厂商相关
+   zhipu     ↔ other     CVD 13.4  正常 13.7  新厂商相关
+   anthropic ↔ zhipu     CVD 13.8  正常 13.8  新厂商相关
+D. light：8 家两两全部 28 对，目标正常 ≥12、CVD ≥6：全部达标；最差 8 对：
+   google    ↔ moonshot  CVD 7.1  正常 14.8  pass
+   meta      ↔ zhipu     CVD 12.9  正常 15.3  pass
+   xai       ↔ meta      CVD 14.5  正常 16.0  pass
+   openai    ↔ deepseek  CVD 14.0  正常 16.2  pass
+   deepseek  ↔ moonshot  CVD 9.6  正常 16.2  pass
+   google    ↔ xai       CVD 15.4  正常 16.9  pass
+   xai       ↔ zhipu     CVD 11.3  正常 17.3  pass
+   google    ↔ deepseek  CVD 18.6  正常 18.4  pass
+   [all-pairs pass] Lightness band：all 8 inside L 0.43–0.77
+   [all-pairs FAIL] Chroma floor：below floor (reads gray): [["#817376",0.018]]
+   [all-pairs floor] CVD separation：worst all-pairs #9d80f6↔#2a78d6 ΔE 7.1 (protan) · tritan 6.9
+   [all-pairs fail] Normal-vision floor：worst all-pairs #9d80f6↔#2a78d6 ΔE 14.8 (normal) — below 15, hard to tell apart even with full color vision
+   [all-pairs relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#1baf7a",2.82],["#5eb7e3",2.24]]
+D. dark：8 家两两全部 28 对，目标正常 ≥12、CVD ≥6：全部达标；最差 8 对：
+   xai       ↔ deepseek  CVD 7.3  正常 12.1  pass
+   google    ↔ deepseek  CVD 11.9  正常 12.5  pass
+   anthropic ↔ zhipu     CVD 13.8  正常 13.8  pass
+   xai       ↔ meta      CVD 12.5  正常 15.0  pass
+   google    ↔ meta      CVD 7.6  正常 16.4  pass
+   deepseek  ↔ moonshot  CVD 8.1  正常 15.4  pass
+   xai       ↔ zhipu     CVD 9.2  正常 15.5  pass
+   meta      ↔ deepseek  CVD 8.2  正常 20.7  pass
+   [all-pairs pass] Lightness band：all 8 inside L 0.48–0.67
+   [all-pairs FAIL] Chroma floor：below floor (reads gray): [["#796a6e",0.02]]
+   [all-pairs floor] CVD separation：worst all-pairs #00739c↔#796a6e ΔE 7.3 (protan) · tritan 4.0
+   [all-pairs fail] Normal-vision floor：worst all-pairs #00739c↔#796a6e ΔE 12.1 (normal) — below 15, hard to tell apart even with full color vision
+   [all-pairs relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#6745b6",2.57],["#aa2b28",2.56]]
+说明：dataviz 的 all-pairs 正常视力门槛是 15、彩度下限 0.10；本报告按主控裁定用 12 / 6 作为两两目标，xAI 的石墨灰故意低于彩度下限。

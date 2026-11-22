@@ -61,13 +61,13 @@
   · mark＝bar：条长＝v / 轴最大值；mark＝dot：点位置＝（v − 轴最小值）/（轴最大 − 轴最小）。数值保留 2 位小数并去掉末尾 0。
     轴：figures.*.axis 的 min / max / step；数据超出时自动按 step 外扩并打印提示。刻度类 dN＝（max − min）/ step。
   · xcol＝price：第 4 列＝输出价；xcol＝cost：第 4 列＝note 里「每题成本 $X」的 $X（Vals 两列的 note 必须写这一句，中英一致）。
-  · 行名用 fig（可选的短名）否则 name。
+  · 行名一律用完整的 name（不自造缩写）；名字长的在窄屏折成两行，不截断。
 图 4-4（散点，2026-11-22 新增）
   · 横轴＝输出价（对数，figures.f44.xaxis 的 min / max / ticks），纵轴＝AA（yaxis，超出自动外扩）。有 AA 但没有 price 的模型不画，列进图注。
   · 实心＝不开放权重，空心（.spt.ow）＝开放权重（license 不是「否」）。价格与 AA 都相同的点左右错开 12px（--dx）。
   · 点按 AA 从高到低排在 DOM 里，页面 JS fitScatter 依次给标签找位置（右、左、上、下、四角…），放不下就隐藏标签（悬停仍有提示）。
 图 4-5（原图 3-3）
-  · 每个 panel 一个 bench，规则同 4-1，横轴 0–100；没有分数的模型不画，整个 panel 没有分数时不出。行名用 short。
+  · 每个 panel 一个 bench，规则同 4-1，横轴 0–100；没有分数的模型不画，整个 panel 没有分数时不出。行名用完整 name，放不下折两行。
 图例（图 4-x）：只列这张图里出现的厂商，按 vendors.json 的 groups 分组（组名在前），组内按 vendors.json 顺序。
 计数：首屏「前沿 N 个 + 大厂与开源 M 个已发布模型」＝第 2 章 / 第 3 章里 status≠internal 的模型数；内部代号模型单独计。
 第 1 章后 3 条结论：check_ch1() 用数据重算关键数字，与 i18n/static.json 的 blocks.ch1 对不上就构建失败。
@@ -430,7 +430,7 @@ def t31():
         else:
             b = BK[k]
             h.append('<th class="num%s"%s>%s</th>' % (gs, att('data-tip', bi(b['desc']) + ui('count_suffix', n=len(colv[k]))), TX(b['label'])))
-            if est_bi(b['label'], 0.93) > L_['bench']: warn('表 3-1 列「%s」表头可能放不下（估 %.2fem > %.3fem）' % (bi(b['label']).zh, est_bi(b['label'], .93), L_['bench']))
+            if est_bi(b['label'], 0.93) > L_.get(k, L_['bench']): warn('表 3-1 列「%s」表头可能放不下（估 %.2fem > %.3fem）' % (bi(b['label']).zh, est_bi(b['label'], .93), L_.get(k, L_['bench'])))
     h.append('</tr></thead><tbody>')
     for vk, ms in ROWS3:
         v = VK[vk]; g = GK[v['group']]
@@ -538,7 +538,7 @@ def fig_head(fid, F, a=None):
     if a: mp.update({'min': t2(a['min']), 'max': t2(a['max'])})
     return '<figure id="%s"%s><figcaption>%s<span class="hint"%s>%s<i>?</i></span></figcaption>' % (
         fid, att('data-toc', F['toc']), TX(F['caption']), att('data-tiph', subst(F['source_tip'], mp)), TX(ui('source')))
-def fname(m): return m.get('fig', m['name'])
+def fname(m): return m['name']                                   # 图里一律用完整模型名，不自造缩写
 def cost_of(m, k, fig):
     note = bi(m['scores'][k]['note'])
     cm = re.search(bi(UI['cost_re']).zh, note.zh); cme = re.search(bi(UI['cost_re']).en, note.en)
@@ -577,7 +577,7 @@ def f45():
             c = m['scores'][k]
             tip = L('%s：%s %s%s。%s', '%s: %s %s%s. %s') % (m['name'], p['title'], dplain(c['d']), BK[k]['unit'], c['note'])   # 用面板标题，不用 bench.name
             h.append('<div class="row c3" data-key="%s"%s><span class="nm noterm">%s</span><span class="track d%d"><span class="mark bar" style="width:%s%%"></span></span><span class="v">%s</span></div>' % (
-                m['vendor'], att('data-tip', tip), TX(m['short']), a['n'], t2((c['v'] - a['min']) / (a['max'] - a['min']) * 100), TX(c['d'])))
+                m['vendor'], att('data-tip', tip), TX(fname(m)), a['n'], t2((c['v'] - a['min']) / (a['max'] - a['min']) * 100), TX(c['d'])))
         h.append('<div class="row ax c3">%s</div></div>' % ticks(a, 1))
     h.append('</div></figure>')
     return ''.join(h)
@@ -610,7 +610,7 @@ def f44():
         tip = subst(F['tip'], {'name': m['name'], 'pout': po, 'pin': pi, 'aa': dplain(c['d']),
                                'ow': subst(F['ow_yes'], {'lic': m['license']['d']}) if ow else F['ow_no']})
         dots.append('<span class="spt%s" data-key="%s" style="left:%s%%;bottom:%s%%%s"%s><i class="mark"></i><span class="pl noterm">%s</span></span>' % (
-            ' ow' if ow else '', m['vendor'], f3(px(m['price']['out'])), f3(py(c['v'])), dx, att('data-tip', tip), TX(m['short'] if len(bi(fname(m)).en) > 18 else fname(m))))
+            ' ow' if ow else '', m['vendor'], f3(px(m['price']['out'])), f3(py(c['v'])), dx, att('data-tip', tip), TX(fname(m))))
     extra = ('<span class="li2"><i class="ptl"></i>%s</span><span class="li2"><i class="ptl ow"></i>%s</span>' % (TX(F['legend_solid']), TX(F['legend_hollow'])))
     h = [fig_head('f44', F), legend({m['vendor'] for m in pts}, extra),
          '<div class="sc"><div class="sc-yl">%s</div><div class="sc-plot">%s%s</div><div class="sc-xl">%s</div></div>' % (TX(F['ylabel']), grid, ''.join(dots), TX(F['xlabel']))]
@@ -671,7 +671,13 @@ def vendor_css():
 
 # ------------------------------------------------------------------ 第 3、4 章的样式与页面脚本（表 3-1、图 3-2、分组图例、图 4-4 散点）
 C34_CSS = """tr.grp .gk{font-weight:400;color:var(--ink3);font-size:.9em;margin-left:8px;cursor:help}
-.hl-lab small.pre{font-weight:400;color:var(--ink3);overflow:hidden;text-overflow:ellipsis;max-width:100%;cursor:help}
+.hl-lab small.pre{font-weight:400;color:var(--ink3);white-space:normal;line-height:1.25;cursor:help}
+#s4 .row{height:auto;min-height:26px;padding-top:2px;padding-bottom:2px}
+#s4 .row.hd{min-height:22px}#s4 .row.ax{min-height:18px;padding-top:0;padding-bottom:0}
+#s4 .row .nm{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.2}
+#s4 .row.c4{grid-template-columns:190px minmax(120px,1fr) 46px 124px}
+#s4 .row.c3{grid-template-columns:minmax(0,170px) minmax(90px,1fr) 50px;min-height:25px}
+@media (max-width:860px){#s4 .row.c4{grid-template-columns:132px minmax(90px,1fr) 44px 108px}}
 .legend .lgg{display:inline-flex;align-items:center;flex-wrap:wrap;gap:0 6px}
 .legend .lgn{color:var(--ink3);font-size:12px;cursor:help;padding-right:2px}
 .legend .ptl{display:inline-block;width:10px;height:10px;margin-right:6px;background:var(--ink3)}

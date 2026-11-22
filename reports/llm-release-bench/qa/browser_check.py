@@ -39,6 +39,8 @@ JS = r'''() => {
      if(a.left<pr.left||a.right>pr.right||a.top<pr.top||a.bottom>pr.bottom) R.push('散点标签出绘图区 '+l.textContent);
      D.forEach((d,j)=>{ if(j!==i&&ov(a,d,0.5)) R.push('散点标签压到别的点 '+l.textContent+' / '+Lb[j].textContent); });
      Lb.forEach((m,j)=>{ if(j>i&&!m.classList.contains('hid')&&ov(a,tr(m),0.5)) R.push('散点标签重叠 '+l.textContent+' / '+m.textContent); }); });}
+ /* 第 4 章：模型名不截断（允许折行） */
+ q('#s4 .row .nm').forEach(e=>{ if(e.scrollWidth>e.clientWidth+1) R.push('图 4-x 模型名被截断 '+e.textContent); });
  /* 目录、提示框里的语言 */
  const en=document.documentElement.getAttribute('data-lang')==='en';
  if((document.documentElement.lang==='en')!==en) R.push('<html lang> 与 data-lang 不一致');

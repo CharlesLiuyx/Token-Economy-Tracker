@@ -98,7 +98,7 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 | `benches[]` | 每个 Bench 一列，顺序＝表 2-1 的列序；`group` 不在 `t21.groups` 里的（现在是 `ext`）只出现在表 3-1。`key`、`label`、`name`、`unit`（`%`、` 个` / ` hijacks`、空）、`group`、`direction`（`higher` / `lower`）、`bar`（`auto` / `zero` / `minmax`，见 build_tables.py 开头）、`desc`（表头提示；脚本会自动接上「有分数的模型：N 个。」） |
 | `models[]` | 每个模型一行。`id`、`name`、`short`、`vendor`、`status`（`public` / `restricted` / `internal`）、`tag`（`text`、`tip`）、`release`、`release_star` + `release_tip`、`trained`（`label`、`tip`、`end`）、`price`（`in`、`out`、可选 `in_next` / `out_next`、`tip`）、`scores`、`blank` |
 | `models[].scores.<bench>` | `d` 显示文本（照来源写；可带角标 `<sup>AA</sup>`）、`v` 数值、`note`（格子提示里「名次」之后的全部文字：出处＋测试条件＋可信度〔高/中/低〕）、`src`、`cf`（可信度 高 / 中 / 低） |
-| `models[]` 第 3 章另有 | `license`（`{d, tip}`，d＝MIT / Modified MIT / 自定义 / 否，tip 写许可证要点）、`params`（`{d, tip}`，d＝「总 / 激活」，tip 写出处与可信度）、`row_tip`（模型名悬停：一句简介＋没填进表的分数和原因）、可选 `fig`（图 4-x 里用的短名）、`blank.price_in/price_out`（没有 API 价时的说明） |
+| `models[]` 第 3 章另有 | `license`（`{d, tip}`，d＝MIT / Modified MIT / 自定义 / 否，tip 写许可证要点）、`params`（`{d, tip}`，d＝「总 / 激活」，tip 写出处与可信度）、`row_tip`（模型名悬停：一句简介＋没填进表的分数和原因）、`blank.price_in/price_out`（没有 API 价时的说明） |
 | `models[].blank.<bench>` | 没有分数但要写说明的格子：`d`（如「同上」/ ditto、「—」）、`tip` |
 | `timeline_events[]` | 图 2-1 模型泳道的节点：`lane`、`date`、可选 `end`、`hollow`、`label`、`tag`、`tip`（脚本自动在前面加「YYYY-MM-DD：」/「YYYY-MM-DD: 」，区间节点不加） |
 | `t22` | 表 2-2：`columns[]`、`sections[].rows[]`、`hints`（占位 `{n_rows}` `{n_cmp}` `{n_cmp_scores}`） |
@@ -230,7 +230,8 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 `models.json → t31.groups[]` 每组一个 `cols` 列表，列名两种：
 - 基本列：`release`、`price_in`、`price_out`、`license`、`params`（表头文字与提示在 `t31.basic`）。
 - Bench 列：`benches[].key`。和表 2-1 共用同一个 key（同一个测试、同一版本、同一单位和子集）才能放进「与前沿同列」组；口径不同就新建一个 bench。
-- 本章一个分数都没有的 bench 列自动不出（构建时打印「不出」），以后有了分数自动出现——现在 OSWorld 2.1 就是这样。
+- 本章一个分数都没有的 bench 列自动不出（构建时打印「不出」），以后有了分数自动出现——现在 OSWorld 2.1 和 Chartography 就是这样（Chartography 第 3 章报的都是带工具 / Python 沙箱的分数，从严不填，写进各模型的 `row_tip`）。
+- 图 4-x 和表里一律用完整模型名（`name`），不自造缩写；名字长的在窄屏折两行，`qa/browser_check.py` 断言第 4 章模型名不被截断。
 - 组的分组线、前三名、色条与表 2-1 同规则；名次只在表 3-1 的模型里排。
 
 ### 13.3 第 3 章新增列的含义（`group: ext`）
@@ -253,6 +254,6 @@ FrontierCode 2.0 列里带 `<sup>AA</sup>` 角标的是 Artificial Analysis 自�
 ### 13.5 以后加新厂商
 1. `vendors.json → vendors[]` 加一条：`group` 选 `frontier` / `bigtech` / `open`（决定进第 2 章还是第 3 章）；`css_var` 取一个没用过的（如 `--tv`）；`light` / `dark` 两个颜色；`legend_tip`；`t22_class`；`builtin_css: false`。位置决定它在表格分组和图例里的顺序。
 2. `timeline_lanes[]` 加一条泳道（`lane`、`vendor`），时间轴节点写进 `models.json → timeline_events`。
-3. 颜色校验：`python3 qa/palette_check.py <dataviz 的 scripts 目录>`，看 A（相邻对）两种主题都 pass；不过就换颜色（前沿三家原色不动），结果写进 `qa/palette_report.txt` 一起提交。新厂商 CSS（色块、条、泳道节点、散点空心描边、图例聚光）由构建自动生成。
+3. 颜色校验：`python3 qa/palette_check.py <dataviz 的 scripts 目录>`。要求两种主题都满足：A（按厂商顺序的相邻对）正常视力 ≥15、CVD ≥8；D（所有厂商两两全部，图 4-1、4-4 里任意两家都可能挨着）正常视力 ΔE ≥12、CVD ΔE ≥6；和算力泳道三色（Nvidia 灰、TPU 蓝、其他品红）正常视力 ≥10。不过就换颜色（前沿三家原色不动）；可以用石墨灰、深棕、深洋红这类色相或拉开明度。现在 xAI 是石墨灰，故意低于 dataviz 的彩度下限（报告里那一行 FAIL 是预期的）。结果写进 `qa/palette_report.txt` 一起提交，并更新 vendors.json 的 `_readme`。新厂商 CSS（色块、条、泳道节点、散点空心描边、图例聚光）由构建自动生成。
 4. 跑第 3 节全部命令，外加 `python3 qa/rehearsal.py`（演练里就有一个虚构的新开源厂商 TestLab）。
 

@@ -1,7 +1,7 @@
 {
  "_readme": {
-  "zh": "厂商表：顺序＝表 2-1 / 表 3-1 分组顺序＝图 4-x 图例顺序。group 取 groups[].key，groups[].chapter 决定厂商的模型进哪一章（2＝前沿：表 2-1、图 2-1；3＝表 3-1、图 3-2；第 4 章取全部）。builtin_css=true 的三家颜色写在报告原 CSS 里；其余由 build_tables.py 生成 <style id=\"data-css\">（只在该厂商有模型或时间轴事件时才生成）。改颜色后跑 qa/palette_check.py。",
-  "en": "Vendor table: order = Table 2-1 / 3-1 group order = Fig 4-x legend order. group is a groups[].key; groups[].chapter decides which chapter a vendor's models go to (2 = frontier: Table 2-1, Fig 2-1; 3 = Table 3-1, Fig 3-2; chapter 4 takes everything). The three builtin_css=true vendors have colors in the report's own CSS; the rest get <style id=\"data-css\"> from build_tables.py (only when that vendor has a model or timeline event). Run qa/palette_check.py after changing colors."
+  "zh": "厂商表：顺序＝表 2-1 / 表 3-1 分组顺序＝图 4-x 图例顺序。group 取 groups[].key，groups[].chapter 决定厂商的模型进哪一章（2＝前沿：表 2-1、图 2-1；3＝表 3-1、图 3-2；第 4 章取全部）。builtin_css=true 的三家颜色写在报告原 CSS 里；其余由 build_tables.py 生成 <style id=\"data-css\">（只在该厂商有模型或时间轴事件时才生成）。改颜色后跑 qa/palette_check.py。 配色（2026-11-22 第二版）：前沿三家原色不动；其余五家为 xAI 石墨灰、Meta 深洋红、DeepSeek 天蓝（深色主题里是深青）、Moonshot 紫、智谱深砖红，用 dataviz 校验器做 8 家两两校验（深浅两种主题）：正常视力 ΔE 全部 ≥12、CVD ΔE 全部 ≥6，按 vendors 顺序的相邻对正常视力 ≥15、CVD ≥8；与算力泳道三色（Nvidia 灰、TPU 蓝、其他品红）正常视力 ΔE ≥10。xAI 的灰色故意低于 dataviz 的彩度下限 0.10（石墨灰，和 Nvidia 灰相差 ΔE 17 / 24）。结果见 qa/palette_report.txt。",
+  "en": "Vendor table: order = Table 2-1 / 3-1 group order = Fig 4-x legend order. group is a groups[].key; groups[].chapter decides which chapter a vendor's models go to (2 = frontier: Table 2-1, Fig 2-1; 3 = Table 3-1, Fig 3-2; chapter 4 takes everything). The three builtin_css=true vendors have colors in the report's own CSS; the rest get <style id=\"data-css\"> from build_tables.py (only when that vendor has a model or timeline event). Run qa/palette_check.py after changing colors. Palette (second version, 2026-11-22): the three frontier colors are unchanged; the other five are xAI graphite, Meta deep magenta, DeepSeek sky blue (deep teal in dark mode), Moonshot violet and Zhipu deep brick red, checked across all 8 vendors pairwise with the dataviz validator in both themes: normal-vision ΔE ≥12 and CVD ΔE ≥6 for every pair, adjacent pairs in vendor order ≥15 / ≥8, and normal-vision ΔE ≥10 against the three compute-row colors (Nvidia gray, TPU blue, other magenta). xAI's graphite is deliberately below the dataviz chroma floor of 0.10 (ΔE 17 / 24 from the Nvidia gray). See qa/palette_report.txt."
  },
  "groups": [
   {
@@ -93,8 +93,8 @@
    "product": "Grok",
    "group": "bigtech",
    "css_var": "--xa",
-   "light": "#eda100",
-   "dark": "#c98500",
+   "light": "#817376",
+   "dark": "#796a6e",
    "legend_tip": {
     "zh": "xAI Grok 系列。悬停只看这一家。",
     "en": "xAI Grok family. Hover to show this vendor only."
@@ -108,8 +108,8 @@
    "product": "Muse",
    "group": "bigtech",
    "css_var": "--me",
-   "light": "#e87ba4",
-   "dark": "#d55181",
+   "light": "#6f3b72",
+   "dark": "#b37bb6",
    "legend_tip": {
     "zh": "Meta Muse 系列。悬停只看这一家。",
     "en": "Meta Muse family. Hover to show this vendor only."
@@ -123,8 +123,8 @@
    "product": "DeepSeek",
    "group": "open",
    "css_var": "--ds",
-   "light": "#0eabd8",
-   "dark": "#2b98b0",
+   "light": "#5eb7e3",
+   "dark": "#00739c",
    "legend_tip": {
     "zh": "DeepSeek 系列。悬停只看这一家。",
     "en": "DeepSeek family. Hover to show this vendor only."
@@ -138,8 +138,8 @@
    "product": "Kimi",
    "group": "open",
    "css_var": "--ms",
-   "light": "#6250d6",
-   "dark": "#9085e9",
+   "light": "#9d80f6",
+   "dark": "#6745b6",
    "legend_tip": {
     "zh": "Moonshot Kimi 系列。悬停只看这一家。",
     "en": "Moonshot Kimi family. Hover to show this vendor only."
@@ -153,8 +153,8 @@
    "product": "GLM",
    "group": "open",
    "css_var": "--zp",
-   "light": "#e34948",
-   "dark": "#e66767",
+   "light": "#a72725",
+   "dark": "#aa2b28",
    "legend_tip": {
     "zh": "智谱 GLM 系列。悬停只看这一家。",
     "en": "Zhipu GLM family. Hover to show this vendor only."

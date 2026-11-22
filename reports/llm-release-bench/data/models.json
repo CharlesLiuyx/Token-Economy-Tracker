@@ -56,7 +56,9 @@
    "price_out": 5.891,
    "license": 7.7,
    "params": 7.8,
-   "bench": 5.27135
+   "bench": 5.27135,
+   "progb": 7.3,
+   "swem": 7.3
   }
  },
  "t21": {
@@ -834,8 +836,8 @@
   {
    "key": "progb",
    "label": {
-    "zh": "ProgB",
-    "en": "ProgB"
+    "zh": "ProgramBench",
+    "en": "ProgramBench"
    },
    "name": {
     "zh": "ProgramBench",
@@ -856,8 +858,8 @@
   {
    "key": "swem",
    "label": {
-    "zh": "Marathon",
-    "en": "Marathon"
+    "zh": "SWE-Marathon",
+    "en": "SWE-Marathon"
    },
    "name": {
     "zh": "SWE-Marathon v1.1",
@@ -3986,7 +3988,6 @@
    "id": "deepseek-v4-1-flash-1017",
    "name": "DeepSeek-V4.1-Flash-1017",
    "short": "V4.1-Flash-1017",
-   "fig": "DS V4.1-Flash-1017",
    "vendor": "deepseek",
    "status": "public",
    "release": "2026-10-17",
@@ -4016,8 +4017,8 @@
     }
    },
    "row_tip": {
-    "zh": "DeepSeek 现役模型，权重和 API 同一天放出。不少对照分数出自 Moonshot 的 Kimi K3.1 Pro 模型卡（多数是 Moonshot 用 Claude Code 跑的）。没填进表的：OSWorld V2.1 69.3%（Moonshot 的表，没写是不是离线子集）、HLE 不带工具 42.6%。",
-    "en": "DeepSeek's current model; weights and API shipped the same day. Many comparison scores come from Moonshot's Kimi K3.1 Pro model card (mostly Moonshot's own runs in Claude Code). Not in the table: OSWorld V2.1 69.3% (Moonshot's table; offline subset not stated) and HLE without tools at 42.6%."
+    "zh": "DeepSeek 现役模型，权重和 API 同一天放出。不少对照分数出自 Moonshot 的 Kimi K3.1 Pro 模型卡（多数是 Moonshot 用 Claude Code 跑的）。没填进表的：OSWorld V2.1 69.3%（Moonshot 的表，没写是不是离线子集）、HLE 不带工具 42.6%。另外 Chartography 83.0%（DeepSeek 模型卡，带工具 / Python 沙箱测的；表 2-1 那列不按带工具算，从严不填）。",
+    "en": "DeepSeek's current model; weights and API shipped the same day. Many comparison scores come from Moonshot's Kimi K3.1 Pro model card (mostly Moonshot's own runs in Claude Code). Not in the table: OSWorld V2.1 69.3% (Moonshot's table; offline subset not stated) and HLE without tools at 42.6%. Also left out: Chartography 83.0% (DeepSeek's model card, run with tools / a Python sandbox; the Table 2-1 column is not a with-tools measure, so it stays out)."
    },
    "scores": {
     "aa": {
@@ -4078,16 +4079,6 @@
      "note": {
       "zh": "DeepSeek 模型卡，AutomationBench v1.0.6；没写推理强度（V4.1 的卡全部按 max 报）。〔中〕",
       "en": "DeepSeek's model card, AutomationBench v1.0.6; reasoning effort not stated (the V4.1 card reports everything at max). [medium]"
-     }
-    },
-    "chart": {
-     "d": "83.0",
-     "v": 83.0,
-     "src": "release_table",
-     "cf": "中",
-     "note": {
-      "zh": "DeepSeek 模型卡，带工具。Moonshot 的表里同为 83.0%。〔中〕",
-      "en": "DeepSeek's model card, with tools. Moonshot's table gives the same 83.0%. [medium]"
      }
     },
     "tbsci": {
@@ -4166,7 +4157,6 @@
    "id": "deepseek-v4-1-flash",
    "name": "DeepSeek-V4.1-Flash",
    "short": "V4.1-Flash",
-   "fig": "DS V4.1-Flash",
    "vendor": "deepseek",
    "status": "public",
    "release": "2026-09-10",
@@ -4206,8 +4196,8 @@
     }
    },
    "row_tip": {
-    "zh": "1017 的前一版，权重和 API 同一天放出。没填进表的：Agents' Last Exam 31.8%（没写版本）、HLE 不带工具 36.8%。",
-    "en": "The version before -1017; weights and API shipped the same day. Not in the table: Agents' Last Exam 31.8% (version not stated) and HLE without tools at 36.8%."
+    "zh": "1017 的前一版，权重和 API 同一天放出。没填进表的：Agents' Last Exam 31.8%（没写版本）、HLE 不带工具 36.8%。另外 Chartography 78.9%（DeepSeek 模型卡，带工具 / Python 沙箱测的；表 2-1 那列不按带工具算，从严不填）。",
+    "en": "The version before -1017; weights and API shipped the same day. Not in the table: Agents' Last Exam 31.8% (version not stated) and HLE without tools at 36.8%. Also left out: Chartography 78.9% (DeepSeek's model card, run with tools / a Python sandbox; the Table 2-1 column is not a with-tools measure, so it stays out)."
    },
    "scores": {
     "tb4_vals": {
@@ -4238,16 +4228,6 @@
      "note": {
       "zh": "DeepSeek 模型卡，max 档，官方脚手架；1017 的卡里标的是 v1.0.6。〔中〕",
       "en": "DeepSeek's model card, max setting, official scaffold; the -1017 card labels it v1.0.6. [medium]"
-     }
-    },
-    "chart": {
-     "d": "78.9",
-     "v": 78.9,
-     "src": "release_table",
-     "cf": "中",
-     "note": {
-      "zh": "DeepSeek 模型卡，带工具，max 档，Claude Code，512K 上下文。〔中〕",
-      "en": "DeepSeek's model card, with tools, max setting, Claude Code, 512K context. [medium]"
      }
     },
     "tbsci": {
@@ -4328,7 +4308,6 @@
    "id": "deepseek-v4-pro-0813",
    "name": "DeepSeek-V4-Pro-0813",
    "short": "V4-Pro-0813",
-   "fig": "DS V4-Pro-0813",
    "vendor": "deepseek",
    "status": "public",
    "release": "2026-08-13",
@@ -4511,8 +4490,8 @@
     }
    },
    "row_tip": {
-    "zh": "开放权重里 AA 第一，Vals 测的 Terminal-Bench 4.0 排第 4。没填进表的：OSWorld V2.1 79.6%（模型卡没说是不是离线子集）、AutomationBench-AA 73.3%（AA 的部分分口径，不是 v1.0.6）。",
-    "en": "Top open-weight model on the AA Index, and fourth on Vals' Terminal-Bench 4.0. Not in the table: OSWorld V2.1 79.6% (the card does not say whether it is the offline subset) and AutomationBench-AA 73.3% (AA's partial-credit variant, not v1.0.6)."
+    "zh": "开放权重里 AA 第一，Vals 测的 Terminal-Bench 4.0 排第 4。没填进表的：OSWorld V2.1 79.6%（模型卡没说是不是离线子集）、AutomationBench-AA 73.3%（AA 的部分分口径，不是 v1.0.6）。另外 Chartography 90.2%（Moonshot 模型卡，带工具 / Python 沙箱测的；表 2-1 那列不按带工具算，从严不填）。",
+    "en": "Top open-weight model on the AA Index, and fourth on Vals' Terminal-Bench 4.0. Not in the table: OSWorld V2.1 79.6% (the card does not say whether it is the offline subset) and AutomationBench-AA 73.3% (AA's partial-credit variant, not v1.0.6). Also left out: Chartography 90.2% (Moonshot's model card, run with tools / a Python sandbox; the Table 2-1 column is not a with-tools measure, so it stays out)."
    },
    "scores": {
     "aa": {
@@ -4563,16 +4542,6 @@
      "note": {
       "zh": "Moonshot 模型卡，v1.1 正式版全部 122 题，Kimi Code 工具。〔中〕",
       "en": "Moonshot's model card, the official v1.1 release, all 122 tasks, Kimi Code harness. [medium]"
-     }
-    },
-    "chart": {
-     "d": "90.2",
-     "v": 90.2,
-     "src": "release_table",
-     "cf": "中",
-     "note": {
-      "zh": "Moonshot 模型卡，带 Python 沙箱，5 次平均。〔中〕",
-      "en": "Moonshot's model card, with a Python sandbox, averaged over 5 runs. [medium]"
      }
     },
     "tbsci": {
@@ -4684,8 +4653,8 @@
     }
    },
    "row_tip": {
-    "zh": "K3.1 Pro 的上一代。没填进表的：Agents' Last Exam 28.3%（没写版本）、OSWorld-Verified 84.8% 和 OSWorld 2.0 58.3%（都不是 2.1 离线子集）。Moonshot 自己报的 ProgramBench 77.8% 是部分分口径，AutomationBench 30.8% 是 600 题公开子集，SWE-Marathon 42.0% 用的是 v1.1 定稿前的题，所以表里用了别家表格里口径一致的数。",
-    "en": "The generation before K3.1 Pro. Not in the table: Agents' Last Exam 28.3% (version not stated), OSWorld-Verified 84.8% and OSWorld 2.0 58.3% (neither is the 2.1 offline subset). Moonshot's own ProgramBench 77.8% is partial credit, its AutomationBench 30.8% is the 600-task public subset and its SWE-Marathon 42.0% predates the final v1.1 tasks, so the table uses like-for-like numbers from other vendors' tables."
+    "zh": "K3.1 Pro 的上一代。没填进表的：Agents' Last Exam 28.3%（没写版本）、OSWorld-Verified 84.8% 和 OSWorld 2.0 58.3%（都不是 2.1 离线子集）。Moonshot 自己报的 ProgramBench 77.8% 是部分分口径，AutomationBench 30.8% 是 600 题公开子集，SWE-Marathon 42.0% 用的是 v1.1 定稿前的题，所以表里用了别家表格里口径一致的数。另外 Chartography 68.1%（DeepSeek 的表，带工具 / Python 沙箱测的；表 2-1 那列不按带工具算，从严不填）。",
+    "en": "The generation before K3.1 Pro. Not in the table: Agents' Last Exam 28.3% (version not stated), OSWorld-Verified 84.8% and OSWorld 2.0 58.3% (neither is the 2.1 offline subset). Moonshot's own ProgramBench 77.8% is partial credit, its AutomationBench 30.8% is the 600-task public subset and its SWE-Marathon 42.0% predates the final v1.1 tasks, so the table uses like-for-like numbers from other vendors' tables. Also left out: Chartography 68.1% (DeepSeek's table, run with tools / a Python sandbox; the Table 2-1 column is not a with-tools measure, so it stays out)."
    },
    "scores": {
     "vals": {
@@ -4726,16 +4695,6 @@
      "note": {
       "zh": "DeepSeek 和 Z.ai 的表里都给 46.7%（v1.0.6）。〔中〕",
       "en": "Both DeepSeek's and Z.ai's tables give 46.7% (v1.0.6). [medium]"
-     }
-    },
-    "chart": {
-     "d": "68.1",
-     "v": 68.1,
-     "src": "release_table",
-     "cf": "中",
-     "note": {
-      "zh": "DeepSeek 在 V4.1-Flash 模型卡里给的对照分数，带工具。〔中〕",
-      "en": "Comparison score in DeepSeek's V4.1-Flash model card, with tools. [medium]"
      }
     },
     "deepswe": {
@@ -5109,8 +5068,8 @@
     }
    },
    "row_tip": {
-    "zh": "GLM-5.3 的小号，MIT 许可，权重和 API 同时放出。没填进表的：Agents' Last Exam 26.3%（没写版本）、OSWorld 2.0 59.1%（不是 2.1）。",
-    "en": "The small sibling of GLM-5.3, MIT-licensed, with weights and API at launch. Not in the table: Agents' Last Exam 26.3% (version not stated) and OSWorld 2.0 59.1% (not 2.1)."
+    "zh": "GLM-5.3 的小号，MIT 许可，权重和 API 同时放出。没填进表的：Agents' Last Exam 26.3%（没写版本）、OSWorld 2.0 59.1%（不是 2.1）。另外 Chartography 78%（Z.ai 发布博文，带工具 / Python 沙箱测的；表 2-1 那列不按带工具算，从严不填）。",
+    "en": "The small sibling of GLM-5.3, MIT-licensed, with weights and API at launch. Not in the table: Agents' Last Exam 26.3% (version not stated) and OSWorld 2.0 59.1% (not 2.1). Also left out: Chartography 78% (Z.ai's launch blog, run with tools / a Python sandbox; the Table 2-1 column is not a with-tools measure, so it stays out)."
    },
    "scores": {
     "aa": {
@@ -5151,16 +5110,6 @@
      "note": {
       "zh": "Z.ai 发布博文，v1.0.6。〔中〕",
       "en": "Z.ai's launch blog, v1.0.6. [medium]"
-     }
-    },
-    "chart": {
-     "d": "78",
-     "v": 78,
-     "src": "release_table",
-     "cf": "中",
-     "note": {
-      "zh": "Z.ai 发布博文，带工具。〔中〕",
-      "en": "Z.ai's launch blog, with tools. [medium]"
      }
     },
     "fc2": {
@@ -5678,8 +5627,8 @@
    "lane": "meta",
    "date": "2026-04-08",
    "label": {
-    "zh": "Spark",
-    "en": "Spark"
+    "zh": "Muse Spark",
+    "en": "Muse Spark"
    },
    "tip": {
     "zh": "Muse Spark 首发（早于横轴起点）。之后有 1.1 / 1.2 / 1.3，1.3 在 9 月 2 日。",
@@ -7861,12 +7810,12 @@
    },
    {
     "label": {
-     "zh": "少了哪列",
-     "en": "Missing column"
+     "zh": "少了哪两列",
+     "en": "Missing columns"
     },
     "tip": {
-     "zh": "<b>为什么没有 OSWorld 2.1 列</b>表 2-1 的 OSWorld 2.1 是离线子集。本章各家报的要么是 108 题全集（Meta），要么没说是不是离线子集（Moonshot），要么是 OSWorld-Verified / 2.0，都不能填。一列都没有分数时整列不出。",
-     "en": "<b>Why there is no OSWorld 2.1 column</b>Table 2-1's OSWorld 2.1 is the offline subset. What this chapter's vendors report is either the full 108-task set (Meta), unclear on the subset (Moonshot), or OSWorld-Verified / 2.0, so none can go in. A column with no scores at all is not shown."
+     "zh": "<b>为什么没有 OSWorld 2.1 和 Chartography 两列</b>表 2-1 的 OSWorld 2.1 是离线子集。本章各家报的要么是 108 题全集（Meta），要么没说是不是离线子集（Moonshot），要么是 OSWorld-Verified / 2.0，都不能填。<br>Chartography：本章 5 个分数都是带工具（Python 沙箱）测的，表 2-1 那列不按带工具算，从严不填，写在各模型名的悬停说明里。<br>一列都没有分数时整列不出。",
+     "en": "<b>Why there are no OSWorld 2.1 and Chartography columns</b>Table 2-1's OSWorld 2.1 is the offline subset. What this chapter's vendors report is either the full 108-task set (Meta), unclear on the subset (Moonshot), or OSWorld-Verified / 2.0, so none can go in.<br>Chartography: all five chapter 3 scores were run with tools (a Python sandbox), which the Table 2-1 column does not use, so to stay strict they are left out and listed in each model-name tooltip.<br>A column with no scores at all is not shown."
     }
    }
   ]
