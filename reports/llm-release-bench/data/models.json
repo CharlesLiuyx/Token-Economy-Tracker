@@ -30,8 +30,8 @@
      "open"
     ],
     "label": {
-     "zh": "快照 {snapshot} · 大厂 xAI、Meta · 开源 DeepSeek、Moonshot、智谱 · {n} 个模型",
-     "en": "Snapshot {snapshot} · Big Tech xAI, Meta · Open-weight DeepSeek, Moonshot, Zhipu · {n} models"
+     "zh": "快照 {snapshot} · 大厂 xAI、Meta · 开源 DeepSeek、Moonshot、智谱、Thinking Machines · {n} 个模型",
+     "en": "Snapshot {snapshot} · Big Tech xAI, Meta · Open-weight DeepSeek, Moonshot, Zhipu, Thinking Machines · {n} models"
     }
    }
   }
@@ -5427,6 +5427,275 @@
      }
     }
    }
+  },
+  {
+   "id": "inkling-2-small",
+   "name": "Inkling 2 Small",
+   "short": "Inkling 2 Small",
+   "vendor": "thinkingmachines",
+   "status": "public",
+   "open_weights": true,
+   "release": "2026-11-05",
+   "release_star": true,
+   "release_tip": {
+    "zh": "11 月 5 日发布，先只在 Tinker 上用、权重不公开；11 月 12 日在 Hugging Face 放出权重（Apache 2.0），同时上了 Together、Baseten 等托管平台。",
+    "en": "Released Nov 5 on Tinker only, with closed weights at first; weights went up on Hugging Face on Nov 12 (Apache 2.0), along with hosts such as Together and Baseten."
+   },
+   "price": {
+    "in": 0.3,
+    "out": 1.0,
+    "tip": {
+     "zh": "Thinking Machines 自家 Tinker 价：输入 $0.30、输出 $1.00，缓存命中 $0.03（AA、OpenRouter 都按这个记第一方价）。Together、Nebius、Cloudflare 同价，DeepInfra $0.285 / $0.95。〔高〕",
+     "en": "Thinking Machines' own Tinker price: $0.30 input, $1.00 output, cached input $0.03 (AA and OpenRouter list this as the first-party price). Together, Nebius and Cloudflare charge the same; DeepInfra $0.285 / $0.95. [high]"
+    }
+   },
+   "license": {
+    "d": "Apache 2.0",
+    "tip": {
+     "zh": "Apache 2.0：可商用、可改，没有收入门槛。权重晚于发布一周，外部安全测试和红队做完才放。〔高〕",
+     "en": "Apache 2.0: commercial use and modification allowed, no revenue threshold. Weights followed the launch by a week, after external safety testing and red-teaming. [high]"
+    }
+   },
+   "params": {
+    "d": "594B / 17B",
+    "tip": {
+     "zh": "Thinking Machines 发布博客：MoE，总参数 594B、激活 17B；另有 292M 参数的视觉编码器，支持图像输入。〔高〕",
+     "en": "Thinking Machines' launch post: MoE, 594B total and 17B active; plus a 292M-parameter vision encoder for image input. [high]"
+    }
+   },
+   "row_tip": {
+    "zh": "Thinking Machines Lab 的第二代 Inkling 中型号，支持图像输入和可调推理强度。没填进表的：HLE 只报了 HLE-Diamond 28.7%（不是全集带工具）；Chartography 带 Python 是 82.1%（表里只填不带工具的 36.7%）；SWE-bench Pro v2 Hard 86.3%、ARC-AGI v2 81.7%、BrowseComp 90.2% 本表没有这几列。",
+    "en": "The second-generation mid-size Inkling from Thinking Machines Lab, with image input and adjustable reasoning effort. Not in the table: on HLE it reports only HLE-Diamond, 28.7% (not the full set with tools); Chartography with Python is 82.1% (the table takes the no-tools 36.7%); SWE-bench Pro v2 Hard 86.3%, ARC-AGI v2 81.7% and BrowseComp 90.2% have no column here."
+   },
+   "scores": {
+    "deepswe": {
+     "d": "72.1",
+     "v": 72.1,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Thinking Machines 发布博客，v1.1，mini-swe-agent v2.4.6。同表 DeepSeek-V4.1-Flash-1017 是 77.0%，和它自家模型卡一致。〔中〕",
+      "en": "Thinking Machines' launch post, v1.1, mini-swe-agent v2.4.6. The same table gives DeepSeek-V4.1-Flash-1017 77.0%, matching DeepSeek's own card. [medium]"
+     }
+    },
+    "tbsci": {
+     "d": "5.7",
+     "v": 5.7,
+     "src": "release_table",
+     "cf": "低",
+     "note": {
+      "zh": "Thinking Machines 发布博客，v0.1，mini-swe-agent v2.4.6。同表 DeepSeek-V4.1-Flash-1017 是 12.9%，和本表那格（9.3%，Moonshot 测）不一样，harness 不同。〔低〕",
+      "en": "Thinking Machines' launch post, v0.1, mini-swe-agent v2.4.6. The same table gives DeepSeek-V4.1-Flash-1017 12.9%, unlike that model's cell here (9.3%, run by Moonshot); the harnesses differ. [low]"
+     }
+    },
+    "chart": {
+     "d": "36.7",
+     "v": 36.7,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Thinking Machines 发布博客，不带工具（original）。带 Python 是 82.1%，没填。〔中〕",
+      "en": "Thinking Machines' launch post, without tools (original). With Python it is 82.1%, not used. [medium]"
+     }
+    },
+    "aa": {
+     "d": "31",
+     "v": 31,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，精确值 30.63；AA 只列一个档位（Thinking Machines 自己的评测用 xhigh）。跑完整个指数每题约 $1.18。厂商博客引的 v5.0 是 30.6。〔高〕",
+      "en": "Artificial Analysis v5.0.1, exact 30.63; AA lists a single setting (Thinking Machines ran its own evals at xhigh). About $1.18 per task over the full index. The vendor post cites 30.6 on v5.0. [high]"
+     }
+    },
+    "vals": {
+     "d": "56.08",
+     "v": 56.08,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 26。每题成本 $3.51。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #26 of 43 on the full Vals leaderboard. Cost per task $3.51. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "12.63",
+     "v": 12.63,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 49。每题成本 $8.22。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #49 of 70 on the full Vals leaderboard. Cost per task $8.22. [high]"
+     }
+    },
+    "tb4_vendor": {
+     "d": "13.1",
+     "v": 13.1,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Thinking Machines 模型卡，mini-swe-agent v2.4.6，xhigh。AA 测也是 13.1%；官方榜 tbench.ai 记 13.0%（mini-swe-agent）。〔中〕",
+      "en": "Thinking Machines model card, mini-swe-agent v2.4.6, xhigh. AA also measured 13.1%; the official tbench.ai leaderboard shows 13.0% (mini-swe-agent). [medium]"
+     }
+    },
+    "fc2": {
+     "d": "25.4<sup>AA</sup>",
+     "v": 25.4,
+     "src": "artificial_analysis",
+     "cf": "中",
+     "note": {
+      "zh": "Artificial Analysis 模型页的分项成绩（FrontierCode-AA 2.0，132 题私有集）。厂商发布表里的 25.4%（stirrup v0.2.1）就是这个数。〔中〕",
+      "en": "Component result on the Artificial Analysis model page (FrontierCode-AA 2.0, 132-task private set). The 25.4% in the vendor launch table (stirrup v0.2.1) is this same figure. [medium]"
+     }
+    },
+    "swem": {
+     "d": "38.8",
+     "v": 38.8,
+     "src": "model_card",
+     "cf": "中",
+     "note": {
+      "zh": "Thinking Machines 模型卡，v1.1，Claude Code，分数由 Abundant 提供。〔中〕",
+      "en": "Thinking Machines model card, v1.1, Claude Code, score provided by Abundant. [medium]"
+     }
+    },
+    "gdpval": {
+     "d": "1630",
+     "v": 1630,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Thinking Machines 发布博客。AA 模型页 1630.2，AA 现在把这项标作 v2.1（本列其他模型的分数也来自同一个 AA 榜，例如 DeepSeek-V4.1-Flash-1017 两边都是 1746）。〔中〕",
+      "en": "Thinking Machines launch post. The AA model page shows 1630.2; AA now labels this v2.1 (the other scores in this column come from the same AA leaderboard, e.g. DeepSeek-V4.1-Flash-1017 is 1746 in both). [medium]"
+     }
+    }
+   }
+  },
+  {
+   "id": "inkling-2-mini",
+   "name": "Inkling 2 Mini",
+   "short": "Inkling 2 Mini",
+   "vendor": "thinkingmachines",
+   "status": "public",
+   "open_weights": true,
+   "release": "2026-11-20",
+   "price": {
+    "in": 0.15,
+    "out": 0.5,
+    "tip": {
+     "zh": "Thinking Machines 自家 Tinker 价：输入 $0.15、输出 $0.50，缓存命中 $0.015（AA 按这个记第一方价）。OpenRouter 上 PrimeIntellect 更便宜，最低 $0.0375 / $0.15。〔高〕",
+     "en": "Thinking Machines' own Tinker price: $0.15 input, $0.50 output, cached input $0.015 (AA lists this as the first-party price). PrimeIntellect on OpenRouter is cheaper, down to $0.0375 / $0.15. [high]"
+    }
+   },
+   "license": {
+    "d": "Apache 2.0",
+    "tip": {
+     "zh": "Apache 2.0：可商用、可改，没有收入门槛。权重和发布同一天（Hugging Face 模型卡写 2026-11-20）。〔高〕",
+     "en": "Apache 2.0: commercial use and modification allowed, no revenue threshold. Weights out on launch day (the Hugging Face model card says 2026-11-20). [high]"
+    }
+   },
+   "params": {
+    "d": "26.4B / 3.4B",
+    "tip": {
+     "zh": "Hugging Face 模型卡：MoE，总参数 26.4B、激活 3.4B；循环结构每多跑一遍约多 1.0B 有效激活，三遍合计约 5.4B（发布表里写的是 5.4B）。约 20GB，32GB 以上内存的 Apple 芯片能跑。〔高〕",
+     "en": "Hugging Face model card: MoE, 26.4B total and 3.4B active; each looped pass adds about 1.0B effective active parameters, about 5.4B over three passes (the figure in the launch table). About 20 GB; runs on Apple silicon with 32 GB or more. [high]"
+    }
+   },
+   "row_tip": {
+    "zh": "Thinking Machines Lab 的第二代 Inkling 小模型，能在本地跑。没填进表的：HLE 只报了 HLE-Diamond 15.2%；Chartography 带 Python 是 72.5%（表里只填不带工具的 22.1%）；Terminal-Bench 2.1 71.6%、SWE-bench Verified 79.2%、BrowseComp 79.0% 本表没有这几列。",
+    "en": "The second-generation small Inkling from Thinking Machines Lab; it runs locally. Not in the table: on HLE it reports only HLE-Diamond, 15.2%; Chartography with Python is 72.5% (the table takes the no-tools 22.1%); Terminal-Bench 2.1 71.6%, SWE-bench Verified 79.2% and BrowseComp 79.0% have no column here."
+   },
+   "scores": {
+    "deepswe": {
+     "d": "48.2",
+     "v": 48.2,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Thinking Machines 发布博客与 Hugging Face 模型卡，v1.1，mini-swe-agent v2.4.6。〔中〕",
+      "en": "Thinking Machines' launch post and Hugging Face model card, v1.1, mini-swe-agent v2.4.6. [medium]"
+     }
+    },
+    "tb4_vendor": {
+     "d": "5.6",
+     "v": 5.6,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Thinking Machines 发布博客，mini-swe-agent v2.4.6。同表 Qwen3.8-27B 也是 5.6%、Gemma 4 31B 0.0%。〔中〕",
+      "en": "Thinking Machines' launch post, mini-swe-agent v2.4.6. The same table gives Qwen3.8-27B 5.6% too and Gemma 4 31B 0.0%. [medium]"
+     }
+    },
+    "auto": {
+     "d": "41.8",
+     "v": 41.8,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Thinking Machines 发布博客，AutomationBench-AA v1.0.6（Artificial Analysis 测）。〔中〕",
+      "en": "Thinking Machines' launch post, AutomationBench-AA v1.0.6 (run by Artificial Analysis). [medium]"
+     }
+    },
+    "chart": {
+     "d": "22.1",
+     "v": 22.1,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Thinking Machines 发布博客，不带工具（original）。带 Python 是 72.5%，没填。〔中〕",
+      "en": "Thinking Machines' launch post, without tools (original). With Python it is 72.5%, not used. [medium]"
+     }
+    },
+    "aa": {
+     "d": "20",
+     "v": 20,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，精确值 20.13；AA 只列一个档位。跑完整个指数每题约 $0.59。〔高〕",
+      "en": "Artificial Analysis v5.0.1, exact 20.13; AA lists a single setting. About $0.59 per task over the full index. [high]"
+     }
+    },
+    "vals": {
+     "d": "46.46",
+     "v": 46.46,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 38。每题成本 $3.20。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #38 of 43 on the full Vals leaderboard. Cost per task $3.20. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "6.57",
+     "v": 6.57,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 57。每题成本 $3.46。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #57 of 70 on the full Vals leaderboard. Cost per task $3.46. [high]"
+     }
+    },
+    "fc2": {
+     "d": "15.1<sup>AA</sup>",
+     "v": 15.1,
+     "src": "artificial_analysis",
+     "cf": "中",
+     "note": {
+      "zh": "Artificial Analysis 模型页的分项成绩（FrontierCode-AA 2.0，132 题私有集）。厂商发布表里的 15.1% 就是这个数。〔中〕",
+      "en": "Component result on the Artificial Analysis model page (FrontierCode-AA 2.0, 132-task private set). The 15.1% in the vendor launch table is this same figure. [medium]"
+     }
+    },
+    "gdpval": {
+     "d": "1319",
+     "v": 1319,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Thinking Machines 发布博客。AA 模型页 1318.5，AA 现在把这项标作 v2.1（和本列其他模型同一个 AA 榜）。〔中〕",
+      "en": "Thinking Machines launch post. The AA model page shows 1318.5; AA now labels this v2.1 (the same AA leaderboard as the rest of this column). [medium]"
+     }
+    }
+   }
   }
  ],
  "timeline_events": [
@@ -6039,6 +6308,45 @@
     "zh": "GLM-5.4 宣布，先给 Coding Plan 用户；API 和权重都等安全评估后，没给日期。",
     "en": "GLM-5.4 announced, Coding Plan users first; the API and weights wait on safety reviews, with no date."
    }
+  },
+  {
+   "lane": "thinkingmachines",
+   "date": "2026-11-05",
+   "label": {
+    "zh": "Inkling 2 Small",
+    "en": "Inkling 2 Small"
+   },
+   "tip": {
+    "zh": "Inkling 2 Small 发布，先只在 Tinker 上用，权重暂不公开。",
+    "en": "Inkling 2 Small launches on Tinker only, weights held back at first."
+   },
+   "open_weights": true
+  },
+  {
+   "lane": "thinkingmachines",
+   "date": "2026-11-12",
+   "label": {
+    "zh": "Small 权重",
+    "en": "Small weights"
+   },
+   "tip": {
+    "zh": "Inkling 2 Small 权重在 Hugging Face 放出，Apache 2.0；Together、Baseten、Nebius、Cloudflare 等同时上线。",
+    "en": "Inkling 2 Small weights released on Hugging Face under Apache 2.0; Together, Baseten, Nebius, Cloudflare and others go live at the same time."
+   },
+   "open_weights": true
+  },
+  {
+   "lane": "thinkingmachines",
+   "date": "2026-11-20",
+   "label": {
+    "zh": "Inkling 2 Mini",
+    "en": "Inkling 2 Mini"
+   },
+   "tip": {
+    "zh": "Inkling 2 Mini，权重和 Tinker 同日，Apache 2.0。26.4B 总参数，能在本地跑。",
+    "en": "Inkling 2 Mini, weights and Tinker the same day, Apache 2.0. 26.4B total parameters; runs locally."
+   },
+   "open_weights": true
   }
  ],
  "t22": {
@@ -7601,7 +7909,7 @@
     "max": 60
    },
    "yaxis": {
-    "min": 20,
+    "min": 10,
     "max": 70,
     "step": 10
    },
@@ -8199,8 +8507,8 @@
    {
     "group": "open",
     "label": {
-     "zh": "大厂与开源模型：开源（DeepSeek、Moonshot、智谱）",
-     "en": "Big Tech and open-weight models: open-weight (DeepSeek, Moonshot, Zhipu)"
+     "zh": "大厂与开源模型：开源（DeepSeek、Moonshot、智谱、Thinking Machines）",
+     "en": "Big Tech and open-weight models: open-weight (DeepSeek, Moonshot, Zhipu, Thinking Machines)"
     },
     "items": [
      {
@@ -8559,6 +8867,48 @@
       "url": "https://www.vals.ai/models/zai_glm-5.3-flash",
       "date": "2026-11-19",
       "accessed": false
+     },
+     {
+      "title": "Thinking Machines: Inkling 2 Small (launch post, Nov 12 weights update)",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "date": "2026-11-05",
+      "accessed": false
+     },
+     {
+      "title": "Inkling 2 Small model card",
+      "url": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+      "date": "2026-11-12",
+      "accessed": false
+     },
+     {
+      "title": "Thinking Machines: Inkling 2 Mini (launch post)",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "date": "2026-11-20",
+      "accessed": false
+     },
+     {
+      "title": "Inkling-2-Mini model card (Hugging Face README)",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+      "date": "2026-11-20",
+      "accessed": false
+     },
+     {
+      "title": "Tinker: Models & Pricing",
+      "url": "https://tinker-docs.thinkingmachines.ai/tinker/models/models_and_pricing/",
+      "date": "2026-11-24",
+      "accessed": true
+     },
+     {
+      "title": "Artificial Analysis: Inkling 2 Small",
+      "url": "https://artificialanalysis.ai/models/inkling-2-small",
+      "date": "2026-11-24",
+      "accessed": true
+     },
+     {
+      "title": "Artificial Analysis: Inkling 2 Mini",
+      "url": "https://artificialanalysis.ai/models/inkling-2-mini",
+      "date": "2026-11-24",
+      "accessed": true
      }
     ]
    }

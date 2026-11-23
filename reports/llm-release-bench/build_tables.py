@@ -737,6 +737,8 @@ C34_CSS = """.tag.ow-o{border-color:var(--ink3);color:var(--ink2)}
 .tag.ow-c{border-color:transparent;background:var(--soft);color:var(--ink3)}
 tr.grp .gk{font-weight:400;color:var(--ink3);font-size:.9em;margin-left:8px;cursor:help}
 .hl-lab small.pre{font-weight:400;color:var(--ink3);white-space:normal;line-height:1.25;cursor:help}
+#f32 .hl-lab:not(.ax){display:block;white-space:normal;line-height:1.25}
+#f32 .hl-lab small{display:block}
 #s4 .row{height:auto;min-height:26px;padding-top:2px;padding-bottom:2px}
 #s4 .row.hd{min-height:22px}#s4 .row.ax{min-height:18px;padding-top:0;padding-bottom:0}
 #s4 .row .nm{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.2;display:flex;align-items:baseline}

@@ -36,8 +36,8 @@
    },
    "chapter": 3,
    "tip": {
-    "zh": "主力模型放出权重的公司：DeepSeek、Moonshot、智谱。第 3 章。",
-    "en": "Labs that release weights for their main models: DeepSeek, Moonshot, Zhipu. Chapter 3."
+    "zh": "主力模型放出权重的公司：DeepSeek、Moonshot、智谱、Thinking Machines。第 3 章。",
+    "en": "Labs that release weights for their main models: DeepSeek, Moonshot, Zhipu, Thinking Machines. Chapter 3."
    }
   }
  ],
@@ -249,6 +249,32 @@
     }
    },
    "derived": true
+  },
+  {
+   "key": "thinkingmachines",
+   "name": "Thinking Machines",
+   "product": "Inkling",
+   "group": "open",
+   "css_var": "--tm",
+   "light": "#9CC355",
+   "dark": "#9CC355",
+   "legend_tip": {
+    "zh": "Thinking Machines Lab 的 Inkling 系列。悬停只看这一家。",
+    "en": "Thinking Machines Lab Inkling family. Hover to show this vendor only."
+   },
+   "t22_class": "vi",
+   "builtin_css": false,
+   "color_src": {
+    "light": {
+     "zh": "官方辅色（thinkingmachines.ai 站点 CSS 的 --brand-lime）。官方主色是黑白灰（与 OpenAI、xAI、智谱撞色），蓝色 --brand-cobalt / --brand-azure 与 Google、Meta 撞色，--brand-emerald 在色盲模拟下与 Anthropic 撞色",
+     "en": "Official secondary color (--brand-lime in the thinkingmachines.ai site CSS). The primary colors are black, white and grays (colliding with OpenAI, xAI and Zhipu), the blues --brand-cobalt / --brand-azure collide with Google and Meta, and --brand-emerald collides with Anthropic under color-blindness simulation"
+    },
+    "dark": {
+     "zh": "官方辅色（thinkingmachines.ai 站点 CSS 的 --brand-lime）。官方主色是黑白灰（与 OpenAI、xAI、智谱撞色），蓝色 --brand-cobalt / --brand-azure 与 Google、Meta 撞色，--brand-emerald 在色盲模拟下与 Anthropic 撞色",
+     "en": "Official secondary color (--brand-lime in the thinkingmachines.ai site CSS). The primary colors are black, white and grays (colliding with OpenAI, xAI and Zhipu), the blues --brand-cobalt / --brand-azure collide with Google and Meta, and --brand-emerald collides with Anthropic under color-blindness simulation"
+    }
+   },
+   "derived": false
   }
  ],
  "timeline_lanes": [
@@ -292,6 +318,10 @@
   {
    "lane": "zhipu",
    "vendor": "zhipu"
+  },
+  {
+   "lane": "thinkingmachines",
+   "vendor": "thinkingmachines"
   }
  ],
  "reference_colors": [

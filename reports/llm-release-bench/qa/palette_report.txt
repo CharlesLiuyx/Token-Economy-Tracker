@@ -1,6 +1,6 @@
 规则：官方色优先，撞了取官方辅色，最后才派生（research/2026-11-22-brand-colors.json）。撞色判定：正常视力 ΔE <12 或 CVD ΔE <6。
 
-1 最终 8 色
+1 最终 9 色
    厂商        浅色        深色        出处（浅 / 深）
    google    #4285F4   #4285F4   ［官方］官方公司主色（Google 蓝，Gemini 同色）
    anthropic #D97757   #D97757   ［官方］官方公司主色（clay）
@@ -10,19 +10,20 @@
    deepseek  #73A3D2   #73A3D2   ［官方］官方辅色（--ds-color-brand-light-reverse）。主色 #4D6BFE 和 Google 蓝撞色
    moonshot  #002F5B   #00F6FF   ［官方］官方产品辅色（Kimi 品牌手册的深海军蓝）。产品主色 #007CFF 和 Google、Meta 撞色 ／ 深色：官方产品辅色（Kimi 青 #00F6FF）：深色底上海军蓝看不清，取同一份手册里更亮的
    zhipu     #747474   #525252   ［派生］非官方，派生：把官方主色 #141618（近黑）提亮成石墨灰。原色与 OpenAI 撞色；另一个官方色 #0B7FFF 与 Google 等蓝色撞色；灰度和 xAI、Nvidia 算力灰都拉开
+   thinkingmachines #9CC355   #9CC355   ［官方］官方辅色（thinkingmachines.ai 站点 CSS 的 --brand-lime）。官方主色是黑白灰（与 OpenAI、xAI、智谱撞色），蓝色 --brand-cobalt / --brand-azure 与 Google、Meta 撞色，--brand-emerald 在色盲模拟下与 Anthropic 撞色
 
 ==== light（底色 #ffffff）
-2 8 家两两全部 28 对；撞色 3 对（靠「品牌色小方块 + 名字」区分）。最差 10 对：
+2 9 家两两全部 36 对；撞色 3 对（靠「品牌色小方块 + 名字」区分）。最差 10 对：
    google    ↔ meta      正常  10.0  CVD   8.5  撞色
    xai       ↔ deepseek  正常  11.8  CVD   9.4  撞色
    google    ↔ deepseek  正常  11.9  CVD  11.5  撞色
+   xai       ↔ thinkingmachines 正常  14.6  CVD  11.2  ok
    deepseek  ↔ zhipu     正常  16.5  CVD  15.7  ok
    anthropic ↔ xai       正常  16.9  CVD  13.2  ok
    anthropic ↔ zhipu     正常  17.3  CVD   8.8  ok
+   anthropic ↔ thinkingmachines 正常  21.2  CVD   9.0  ok
    google    ↔ zhipu     正常  19.4  CVD  19.7  ok
    meta      ↔ deepseek  正常  20.5  CVD  19.3  ok
-   meta      ↔ zhipu     正常  20.6  CVD  19.2  ok
-   anthropic ↔ deepseek  正常  21.2  CVD  17.5  ok
 3 与算力泳道三色的正常视力 ΔE（低于 10 的列出）：
    无（TPU 与 Google 同色是有意的：同一家）
 4 dataviz 校验器（参考）：
@@ -30,34 +31,34 @@
    [adjacent FAIL] Chroma floor：below floor (reads gray): [["#000000",0],["#B7B7B7",0],["#73A3D2",0.087],["#002F5B",0.092],["#747474",0]]
    [adjacent pass] CVD separation：worst adjacent #73A3D2↔#0064E0 ΔE 19.3 (protan) · tritan 13.5
    [adjacent pass] Normal-vision floor：worst adjacent #73A3D2↔#0064E0 ΔE 20.5 (normal)
-   [adjacent relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#B7B7B7",2.01],["#73A3D2",2.66]]
+   [adjacent relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#B7B7B7",2.01],["#73A3D2",2.66],["#9CC355",2.03]]
    [all FAIL] Lightness band：outside band: [["#000000",0],["#B7B7B7",0.779],["#002F5B",0.304]]
    [all FAIL] Chroma floor：below floor (reads gray): [["#000000",0],["#B7B7B7",0],["#73A3D2",0.087],["#002F5B",0.092],["#747474",0]]
-   [all pass] CVD separation：worst all-pairs #0064E0↔#4285F4 ΔE 8.5 (deutan) · tritan 5.7
+   [all pass] CVD separation：worst all-pairs #0064E0↔#4285F4 ΔE 8.5 (deutan) · tritan 3.7
    [all fail] Normal-vision floor：worst all-pairs #0064E0↔#4285F4 ΔE 10.0 (normal) — below 15, hard to tell apart even with full color vision
-   [all relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#B7B7B7",2.01],["#73A3D2",2.66]]
+   [all relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#B7B7B7",2.01],["#73A3D2",2.66],["#9CC355",2.03]]
 
 ==== dark（底色 #1a1a19）
-2 8 家两两全部 28 对；撞色 2 对（靠「品牌色小方块 + 名字」区分）。最差 10 对：
+2 9 家两两全部 36 对；撞色 2 对（靠「品牌色小方块 + 名字」区分）。最差 10 对：
    google    ↔ meta      正常  10.0  CVD   8.5  撞色
    google    ↔ deepseek  正常  11.9  CVD  11.5  撞色
    openai    ↔ moonshot  正常  19.0  CVD   6.9  ok
    xai       ↔ zhipu     正常  14.1  CVD  14.1  ok
    xai       ↔ deepseek  正常  14.8  CVD  14.0  ok
    anthropic ↔ xai       正常  16.0  CVD   7.7  ok
+   anthropic ↔ thinkingmachines 正常  21.2  CVD   9.0  ok
    google    ↔ xai       正常  18.7  CVD  18.8  ok
    meta      ↔ deepseek  正常  20.5  CVD  19.3  ok
    xai       ↔ meta      正常  21.0  CVD  19.2  ok
-   anthropic ↔ deepseek  正常  21.2  CVD  17.5  ok
 3 与算力泳道三色的正常视力 ΔE（低于 10 的列出）：
    无（TPU 与 Google 同色是有意的：同一家）
 4 dataviz 校验器（参考）：
-   [adjacent FAIL] Lightness band：outside band: [["#D97757",0.672],["#FFFFFF",1],["#73A3D2",0.7],["#00F6FF",0.884],["#525252",0.439]]
+   [adjacent FAIL] Lightness band：outside band: [["#D97757",0.672],["#FFFFFF",1],["#73A3D2",0.7],["#00F6FF",0.884],["#525252",0.439],["#9CC355",0.766]]
    [adjacent FAIL] Chroma floor：below floor (reads gray): [["#FFFFFF",0],["#7A7A7A",0],["#73A3D2",0.087],["#525252",0]]
    [adjacent pass] CVD separation：worst adjacent #00F6FF↔#73A3D2 ΔE 18.6 (deutan) · tritan 10.0
    [adjacent pass] Normal-vision floor：worst adjacent #73A3D2↔#0064E0 ΔE 20.5 (normal)
    [adjacent relief] Contrast vs surface：below 3:1 — relief required (visible labels or table view): [["#525252",2.23]]
-   [all FAIL] Lightness band：outside band: [["#D97757",0.672],["#FFFFFF",1],["#73A3D2",0.7],["#00F6FF",0.884],["#525252",0.439]]
+   [all FAIL] Lightness band：outside band: [["#D97757",0.672],["#FFFFFF",1],["#73A3D2",0.7],["#00F6FF",0.884],["#525252",0.439],["#9CC355",0.766]]
    [all FAIL] Chroma floor：below floor (reads gray): [["#FFFFFF",0],["#7A7A7A",0],["#73A3D2",0.087],["#525252",0]]
    [all floor] CVD separation：worst all-pairs #00F6FF↔#FFFFFF ΔE 6.9 (protan) · tritan 5.7
    [all fail] Normal-vision floor：worst all-pairs #0064E0↔#4285F4 ΔE 10.0 (normal) — below 15, hard to tell apart even with full color vision

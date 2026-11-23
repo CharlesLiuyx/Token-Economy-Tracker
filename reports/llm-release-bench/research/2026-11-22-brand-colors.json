@@ -97,6 +97,18 @@
       "source_url": "https://docs.z.ai",
       "confidence": "低",
       "note": "No brand guide found. Z.ai presents as near-black/white with a blue UI accent #0B7FFF (not a logo color). Legacy Zhipu/ChatGLM CN products use a lighter blue #49B3FC (chatglm.cn) and bigmodel.cn uses #007AFF (Swiper default, likely not brand). If a single hue is needed, #0B7FFF is the best Z.ai blue but is medium-low evidence."
+    },
+    {
+      "key": "thinkingmachines",
+      "company_primary": "#282828",
+      "company_secondary": ["#FFFFFF", "#F3F3F2", "#969696", "#676767", "#000000", "#0155BF", "#0387E7", "#0E9972", "#9CC355", "#FFCE52", "#F7A224", "#EF402C"],
+      "product": "Inkling",
+      "product_primary": "#0387E7",
+      "product_secondary": [],
+      "source_title": "thinkingmachines.ai inline <style> :root brand palette (--brand-white/off-white/light-gray/gray/dark-gray/black/cobalt #0155BF/azure #0387E7/emerald #0E9972/lime #9CC355/yellow #FFCE52/amber #F7A224/red #EF402C); body text --fg #282828; Inkling 2 Small post leaderboard highlight --leaderboard-highlight: var(--brand-azure). Read 2026-11-24.",
+      "source_url": "https://thinkingmachines.ai",
+      "confidence": "高",
+      "note": "No public brand kit (/brand, /press, /media-kit/ 404). The site itself is monochrome; blues collide with Google/Meta, emerald collides with Anthropic under CVD (ΔE 3.9), amber sits close to Anthropic clay; lime #9CC355 is the official color with the best worst-pair distance in both themes (added 2026-11-24)."
     }
   ],
   "lookalike_groups": [

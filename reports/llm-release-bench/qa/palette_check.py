@@ -16,7 +16,7 @@ VJ = json.load(open(os.path.join(HERE, '..', 'data', 'vendors.json'), encoding='
 VEN = VJ['vendors']; REF = {r['key']: r for r in VJ['reference_colors']}; SURF = VJ['surfaces']
 def cvd(a, b): return min(V.deltaE(a, b, 'protan'), V.deltaE(a, b, 'deutan'))
 out = ['规则：官方色优先，撞了取官方辅色，最后才派生（research/2026-11-22-brand-colors.json）。撞色判定：正常视力 ΔE <12 或 CVD ΔE <6。', '']
-out.append('1 最终 8 色')
+out.append('1 最终 %d 色' % len(VEN))
 out.append('   %-9s %-9s %-9s %s' % ('厂商', '浅色', '深色', '出处（浅 / 深）'))
 for v in VEN:
     s = v.get('color_src', {})
@@ -29,7 +29,7 @@ for mode in ('light', 'dark'):
         n, c = V.deltaE(a[mode], b[mode]), cvd(a[mode], b[mode]); rs.append((min(n / 12, c / 6), a['key'], b['key'], n, c))
     rs.sort()
     bad = [r for r in rs if r[3] < 12 or r[4] < 6]
-    out.append('2 8 家两两全部 %d 对；撞色 %d 对（靠「品牌色小方块 + 名字」区分）。最差 10 对：' % (len(rs), len(bad)))
+    out.append('2 %d 家两两全部 %d 对；撞色 %d 对（靠「品牌色小方块 + 名字」区分）。最差 10 对：' % (len(VEN), len(rs), len(bad)))
     for _, ka, kb, n, c in rs[:10]:
         out.append('   %-9s ↔ %-9s 正常 %5.1f  CVD %5.1f  %s' % (ka, kb, n, c, '撞色' if (n < 12 or c < 6) else 'ok'))
     out.append('3 与算力泳道三色的正常视力 ΔE（低于 10 的列出）：')

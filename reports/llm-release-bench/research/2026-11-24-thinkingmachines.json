@@ -1,0 +1,223 @@
+{
+ "_meta": {
+  "snapshot": "2026-11-24",
+  "scope": "Thinking Machines Lab Inkling 2 Small (2026-11-05, weights 2026-11-12) and Inkling 2 Mini (2026-11-20), added to chapter 3 as a new open-weight vendor.",
+  "notes": "Vendor numbers from the launch posts, official model cards and the Hugging Face README. Independent numbers from the Artificial Analysis model pages (RSC data, v5.0.1) and Vals leaderboards (Vals Index v2.2, Terminal-Bench 4.0, both updated 2026-11-19). Prices from the Tinker models.json (prefill = input, sample = output) cross-checked with AA, OpenRouter, Together and Cloudflare. Not found anywhere: HLE full set with tools, CyberGym, OSWorld 2.1, Agents' Last Exam v1.1, ProgramBench 'almost solved' (Vals lists only 0.50% resolved for both)."
+ },
+ "caveats": [
+  "AA labels GDPval-AA as v2.1 (legacy, not in Index v5.0.1); its values equal the 'v2' scores already in this column (DeepSeek-V4.1-Flash-1017 1745.8 on both), so Inkling's 1630 / 1319 go in the same column with that note.",
+  "FrontierCode v2.0 in Thinking Machines' table (stirrup v0.2.1) is AA's FrontierCode-AA 2.0: AA's page gives 25.35 / 15.10 and the comparison values match AA (DeepSeek 28.5, GLM-5.3-Flash 17.6).",
+  "Mini active parameters: HF says 3.4B active, 5.4B effective active per token over three looped passes; Tinker, AA and the vendor table use 5.4B. The table shows 3.4B and explains 5.4B in the tip.",
+  "AA lists one setting per model with no effort suffix; Thinking Machines ran its own Small evals at effort 0.99 (xhigh), temperature 1.0.",
+  "Tinker's Inkling 2 prices sit in the Training table; the Serverless Inference (Beta) table lists only Inkling and Inkling-Small. AA and OpenRouter treat $0.30/$1.00 and $0.15/$0.50 as the first-party API price.",
+  "Chartography: the table takes the no-tools ('original') score; with-Python scores (82.1 / 72.5) are not used, consistent with chapter 3's rule."
+ ],
+ "models": {
+  "inkling-2-small": {
+   "price": {
+    "in": 0.3,
+    "out": 1.0,
+    "tip": {
+     "zh": "Thinking Machines 自家 Tinker 价：输入 $0.30、输出 $1.00，缓存命中 $0.03（AA、OpenRouter 都按这个记第一方价）。Together、Nebius、Cloudflare 同价，DeepInfra $0.285 / $0.95。〔高〕",
+     "en": "Thinking Machines' own Tinker price: $0.30 input, $1.00 output, cached input $0.03 (AA and OpenRouter list this as the first-party price). Together, Nebius and Cloudflare charge the same; DeepInfra $0.285 / $0.95. [high]"
+    }
+   },
+   "scores": {
+    "aa": {
+     "d": "31",
+     "v": 31,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，精确值 30.63；AA 只列一个档位（Thinking Machines 自己的评测用 xhigh）。跑完整个指数每题约 $1.18。厂商博客引的 v5.0 是 30.6。〔高〕",
+      "en": "Artificial Analysis v5.0.1, exact 30.63; AA lists a single setting (Thinking Machines ran its own evals at xhigh). About $1.18 per task over the full index. The vendor post cites 30.6 on v5.0. [high]"
+     }
+    },
+    "vals": {
+     "d": "56.08",
+     "v": 56.08,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 26。每题成本 $3.51。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #26 of 43 on the full Vals leaderboard. Cost per task $3.51. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "12.63",
+     "v": 12.63,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 49。每题成本 $8.22。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #49 of 70 on the full Vals leaderboard. Cost per task $8.22. [high]"
+     }
+    },
+    "tb4_vendor": {
+     "d": "13.1",
+     "v": 13.1,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Thinking Machines 模型卡，mini-swe-agent v2.4.6，xhigh。AA 测也是 13.1%；官方榜 tbench.ai 记 13.0%（mini-swe-agent）。〔中〕",
+      "en": "Thinking Machines model card, mini-swe-agent v2.4.6, xhigh. AA also measured 13.1%; the official tbench.ai leaderboard shows 13.0% (mini-swe-agent). [medium]"
+     }
+    },
+    "fc2": {
+     "d": "25.4<sup>AA</sup>",
+     "v": 25.4,
+     "src": "artificial_analysis",
+     "cf": "中",
+     "note": {
+      "zh": "Artificial Analysis 模型页的分项成绩（FrontierCode-AA 2.0，132 题私有集）。厂商发布表里的 25.4%（stirrup v0.2.1）就是这个数。〔中〕",
+      "en": "Component result on the Artificial Analysis model page (FrontierCode-AA 2.0, 132-task private set). The 25.4% in the vendor launch table (stirrup v0.2.1) is this same figure. [medium]"
+     }
+    },
+    "swem": {
+     "d": "38.8",
+     "v": 38.8,
+     "src": "model_card",
+     "cf": "中",
+     "note": {
+      "zh": "Thinking Machines 模型卡，v1.1，Claude Code，分数由 Abundant 提供。〔中〕",
+      "en": "Thinking Machines model card, v1.1, Claude Code, score provided by Abundant. [medium]"
+     }
+    },
+    "gdpval": {
+     "d": "1630",
+     "v": 1630,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Thinking Machines 发布博客。AA 模型页 1630.2，AA 现在把这项标作 v2.1（本列其他模型的分数也来自同一个 AA 榜，例如 DeepSeek-V4.1-Flash-1017 两边都是 1746）。〔中〕",
+      "en": "Thinking Machines launch post. The AA model page shows 1630.2; AA now labels this v2.1 (the other scores in this column come from the same AA leaderboard, e.g. DeepSeek-V4.1-Flash-1017 is 1746 in both). [medium]"
+     }
+    }
+   }
+  },
+  "inkling-2-mini": {
+   "price": {
+    "in": 0.15,
+    "out": 0.5,
+    "tip": {
+     "zh": "Thinking Machines 自家 Tinker 价：输入 $0.15、输出 $0.50，缓存命中 $0.015（AA 按这个记第一方价）。OpenRouter 上 PrimeIntellect 更便宜，最低 $0.0375 / $0.15。〔高〕",
+     "en": "Thinking Machines' own Tinker price: $0.15 input, $0.50 output, cached input $0.015 (AA lists this as the first-party price). PrimeIntellect on OpenRouter is cheaper, down to $0.0375 / $0.15. [high]"
+    }
+   },
+   "scores": {
+    "aa": {
+     "d": "20",
+     "v": 20,
+     "src": "artificial_analysis",
+     "cf": "高",
+     "note": {
+      "zh": "Artificial Analysis v5.0.1，精确值 20.13；AA 只列一个档位。跑完整个指数每题约 $0.59。〔高〕",
+      "en": "Artificial Analysis v5.0.1, exact 20.13; AA lists a single setting. About $0.59 per task over the full index. [high]"
+     }
+    },
+    "vals": {
+     "d": "46.46",
+     "v": 46.46,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 38。每题成本 $3.20。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-19), #38 of 43 on the full Vals leaderboard. Cost per task $3.20. [high]"
+     }
+    },
+    "tb4_vals": {
+     "d": "6.57",
+     "v": 6.57,
+     "src": "vals_ai",
+     "cf": "高",
+     "note": {
+      "zh": "Vals 用 mini-SWE-agent 统一测（2026-11-19 更新），Vals 全榜 70 个模型里排第 57。每题成本 $3.46。〔高〕",
+      "en": "Run by Vals with mini-SWE-agent (updated 2026-11-19), #57 of 70 on the full Vals leaderboard. Cost per task $3.46. [high]"
+     }
+    },
+    "fc2": {
+     "d": "15.1<sup>AA</sup>",
+     "v": 15.1,
+     "src": "artificial_analysis",
+     "cf": "中",
+     "note": {
+      "zh": "Artificial Analysis 模型页的分项成绩（FrontierCode-AA 2.0，132 题私有集）。厂商发布表里的 15.1% 就是这个数。〔中〕",
+      "en": "Component result on the Artificial Analysis model page (FrontierCode-AA 2.0, 132-task private set). The 15.1% in the vendor launch table is this same figure. [medium]"
+     }
+    },
+    "gdpval": {
+     "d": "1319",
+     "v": 1319,
+     "src": "release_table",
+     "cf": "中",
+     "note": {
+      "zh": "Thinking Machines 发布博客。AA 模型页 1318.5，AA 现在把这项标作 v2.1（和本列其他模型同一个 AA 榜）。〔中〕",
+      "en": "Thinking Machines launch post. The AA model page shows 1318.5; AA now labels this v2.1 (the same AA leaderboard as the rest of this column). [medium]"
+     }
+    }
+   }
+  }
+ },
+ "sources": [
+  {
+   "title": "Thinking Machines: Inkling 2 Small (launch post, Nov 12 weights update)",
+   "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+   "date": "2026-11-05",
+   "accessed": false
+  },
+  {
+   "title": "Inkling 2 Small model card",
+   "url": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+   "date": "2026-11-12",
+   "accessed": false
+  },
+  {
+   "title": "Thinking Machines: Inkling 2 Mini (launch post)",
+   "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+   "date": "2026-11-20",
+   "accessed": false
+  },
+  {
+   "title": "Inkling-2-Mini model card (Hugging Face README)",
+   "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+   "date": "2026-11-20",
+   "accessed": false
+  },
+  {
+   "title": "Tinker: Models & Pricing",
+   "url": "https://tinker-docs.thinkingmachines.ai/tinker/models/models_and_pricing/",
+   "date": "2026-11-24",
+   "accessed": true
+  },
+  {
+   "title": "Artificial Analysis: Inkling 2 Small",
+   "url": "https://artificialanalysis.ai/models/inkling-2-small",
+   "date": "2026-11-24",
+   "accessed": true
+  },
+  {
+   "title": "Artificial Analysis: Inkling 2 Mini",
+   "url": "https://artificialanalysis.ai/models/inkling-2-mini",
+   "date": "2026-11-24",
+   "accessed": true
+  },
+  {
+   "title": "Vals Index v2.2",
+   "url": "https://www.vals.ai/benchmarks/vals_index",
+   "date": "2026-11-24",
+   "accessed": true
+  },
+  {
+   "title": "Vals Terminal-Bench 4.0",
+   "url": "https://www.vals.ai/benchmarks/terminal-bench-4",
+   "date": "2026-11-24",
+   "accessed": true
+  },
+  {
+   "title": "tbench.ai leaderboard (Terminal-Bench 4.1 now shown; Inkling Small 2 13.0%)",
+   "url": "https://www.tbench.ai/",
+   "date": "2026-11-24",
+   "accessed": true
+  }
+ ]
+}
