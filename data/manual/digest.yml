@@ -4,6 +4,28 @@
 # 本站自有数据写站内锚点如 "#p-gpu_table"）。
 # 收录门槛：今天才知道的增量信息；数字必须在来源里能核对到；没有新信息就不写当天条目。
 digest:
+  - date: 2026-11-23
+    items:
+      - tag: ARR
+        text:
+          zh: Anthropic 11-19 提交终版招股书（424B4）：IPO 定价每股 83 美元，发行 9.8 亿股 A 类股（公司新发 9.56 亿、老股东 0.24 亿），按发行价约 813 亿美元；另有 Google、NVIDIA 等按同价认购 260 亿美元定向增发。纳斯达克代码 ANT。终版仍沿用 10-31 约 810 亿的运行率，没有新数字。
+          en: "Anthropic filed its final prospectus (424B4) on Nov 19: the IPO priced at $83 per share for 980M Class A shares (956M new, 24M from selling holders), about $81.3B at the offer price, plus a $26.0B concurrent private placement at the same price from Google, NVIDIA and others. Nasdaq ticker ANT. The final filing keeps the ~$81B run-rate as of Oct 31; no new figure."
+        source_url: https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm
+      - tag: ARR
+        text:
+          zh: 据 Bloomberg 援引知情人士，OpenAI Q3 收入首次超过 100 亿美元，比 Q2 的约 67 亿多近 50%；调整后营业利润率从 Q2 的 −150% 收窄到 −109%。同文称运行率 500 亿，但未给时点，本站不更新锚点。
+          en: "Citing people familiar, Bloomberg reports OpenAI's Q3 revenue topped $10B for the first time, up almost 50% from about $6.7B in Q2; adjusted operating margin narrowed from -150% to -109%. The same report puts the run-rate at $50B without an as-of date, so this site's anchor is unchanged."
+        source_url: https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/
+      - tag: Token
+        text:
+          zh: OpenRouter 上 gemini-4-carbon 滚动 7 天用量 2.43 万亿 token，是 7 天前（6630 亿）的 3.7 倍，超过 gemini-3.8-flash（1.65 万亿），成为该平台用量最大的 Google 模型；同代 gemini-4-argon 同期从 9170 亿降到 6880 亿。
+          en: "On OpenRouter, gemini-4-carbon's rolling 7-day usage reached 2.43T tokens, 3.7x the 663B of seven days earlier, overtaking gemini-3.8-flash (1.65T) as the platform's most-used Google model; sibling gemini-4-argon fell from 917B to 688B over the same week."
+        source_url: "#p-or_tracked"
+      - tag: DC
+        text:
+          zh: TensorWave 与 OpenAI 签下 6 年 457 MW 专属算力协议，基于 AMD Helios 机架，分布在美国多个站点，2027 年初开始上线、2028 年初全部部署；是 OpenAI–AMD 6 GW 协议中首家公开的新云供应商。
+          en: "TensorWave signed a six-year deal to provide OpenAI with 457 MW of dedicated capacity on AMD Helios racks across multiple US sites, coming online from early 2027 with full deployment by early 2028 - the first neocloud publicly named under the OpenAI-AMD 6 GW agreement."
+        source_url: https://w.media/tensorwave-signs-457-mw-deal-to-support-openais-amd-buildout/
   - date: 2026-11-22
     items:
       - tag: ARR
