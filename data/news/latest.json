@@ -1,13 +1,27 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-11-22",
- "fetched_at": "2026-11-22T02:18:21+00:00",
+ "snapshot_date": "2026-11-23",
+ "fetched_at": "2026-11-23T02:53:22+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "Trump’s AI Chip Crackdown Inflicts Collateral Damage Across Asia - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdXp0ODZqcDNzanpGNkNMTmsxMk93OXpvU2IzU1NKcFkteXdZcXdSM3dKM0lZc3Z0T3lSMXR4UGJ3enY5LWZVdnR6NlBGZENCcDNJYngxMkxKdFVzajN4VlZvMTg3X09vUHlNSFZEZEJ0M0NvSngxdlVjNDQ2OEhyaXYtenB5SVJ3T2tjemlPZjI0WjBTVC1RR0tRY0t3cDZuUDlZal85OVQxRjhiUlg2LV9uZV9yZWN1cng4dkZxNWxkM2F3ZlhpbA?oc=5",
+    "source_name": "Bloomberg.com",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-11-22T22:00:13+00:00"
+   },
+   {
+    "title": "How Amazon Plays the Long, Expensive Data Center Game That Neoclouds Can’t - The Information",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORkt3LUxXYjZSOEgweWR3SHowTnJQd19PNVE3NnRVaHhhcDBQNC1vaXVibjRKRDBUVF84dEhJcDN1MTlsX1A4Q0hZelo3RmtMelhhM3lhbmtOZUNSc3VfWGRNdDNfRVQ5LXRwN01nc1lsVVNxdk9GQXYxUTNJY2EtSUFrTnpuekItcEowd0Jod3lkODNQS04wQWgwVUszd1ppem8yelZydTdKSFozamdVaGY2V0FhQQ?oc=5",
+    "source_name": "The Information",
+    "source_url": "https://www.theinformation.com",
+    "published": "2026-11-22T18:18:00+00:00"
+   },
    {
     "title": "The county at the heart of America's data center boom hits pause on new projects - Business Insider",
     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSGo4NFNseHFSSXcxcER3M2xqWDlsWmJBelNUcVc1TVBfOGlQZnNkTFZPQUcwb2ZzUzBnWEtEZVZmZUcxSm1WX29QcnBYVVRUY2kzaE0zam44eWxYMjZfbEdaX1h1cWJybk1iejNmZGR2OG1YYlRabVpJcFNLTlVqV0FIQklNMXY5YXdxdVlyQ09uZFoyQlJzLW05WQ?oc=5",
@@ -2093,20 +2107,6 @@
     "source_name": "The Washington Post",
     "source_url": "https://www.washingtonpost.com",
     "published": "2026-11-02T16:03:44+00:00"
-   },
-   {
-    "title": "AVK Capital: Transforming data center development processes - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNcmFUUmVvcHlYUHJudnJXc1RfSDNyOVY1VkdNaF9uSkNldHY3SG9PbnFaRjlzNk1OMXotV0h4dmE0OE9SWXgzRXVZSHkwbkRZNEtYTUtobTlXWllUZ1lYS0tNNXBrRDd6SkhUSE8tRVBVTUtLZnM1NHFWRHpJcjhzS0E0V1luQ2oyQ3M1bzJUMVczajVWeFY1eGpLcHNhQVd6ZlhXTjNua3lfdw?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-11-02T16:02:09+00:00"
-   },
-   {
-    "title": "Nvidia in talks to backstop Nscale's Monarch Compute Campus project for Anthropic - report - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSVpxWkVxak0tMW1tLVR0RVNTc01lSGszTmRUUnZLREt2SkE3UnpZTHpYc3B1eXNEZ251QkkxSElWZmFpSEplb2YwYS1fdzR4Z2hYT0xwZ3ptZWpteGRMLU9MVDQzMWxZUmFzVU5wVXVQakF6NkRmVFV3V0tTZ2R4R1hBTXFDMXQ2eW9qdi1jV1l5S3JtZTZVcFhONE41SXRQR0tpTGNMek5qS01fRk5NMXFGb201M2JkSlZ5bDFabkdiTTJ6b2RYSTNOWQ?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-11-02T15:07:00+00:00"
    }
   ],
   "queries": [
