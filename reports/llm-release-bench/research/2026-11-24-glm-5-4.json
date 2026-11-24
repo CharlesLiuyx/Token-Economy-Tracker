@@ -1,0 +1,37 @@
+{
+ "_readme": "2026-11-24 每日跟进：GLM-5.4 调研底稿（构建不读）。另记本周查过但不进表的项。",
+ "checked_window": "2026-11-17 至 2026-11-24",
+ "glm-5-4": {
+  "vendor": "zhipu",
+  "announced": {"date": "2026-11-23", "detail": "Z.ai 负责人 X 帖：GLM-5.4 now available to all GLM Coding Plan users（约 04:18 UTC）", "src": "CellCog（引 X 帖）、DataCamp、Let's Data Science、Kingy AI", "cf": "高"},
+  "api": {"status": "未开放；Z.ai 称安全评估后开放，无日期", "list_price": null, "cf": "中",
+          "caveats": "Kingy 列了 AIHubMix 转售价（免费文本通道；付费 $0.06 / $0.22，缓存 $0.015），只有一个来源且不是官方价，不进表。OpenRouter 11-23/11-24 查无。"},
+  "coding_plan": {"lite_usd_mo": 18, "pro_usd_mo": 80, "max_usd_mo": 168, "src": "Kingy AI（ZCode / Z.ai 页面）", "cf": "中",
+                  "note": "同样未缓存 token，GLM-5.4 消耗 GLM-5.3 的 2/3 点数；周额度比 GLM-5.3 高 50%（Z.ai 负责人）"},
+  "weights": {"status": "未放出；安全加固后放，无日期", "hf_checked": ["2026-11-23 07:04 UTC（CellCog）", "2026-11-24 00:50 UTC（Kingy）"], "license": null, "cf": "中"},
+  "params": {"total": "750B 级（Z.ai 说法，无精确值）", "active": null, "arch": "Loop Transformer：GLM-5 底座 28 层每次前向跑两遍，权重共享；从 GLM-5 底座继续训练", "cf": "低"},
+  "context": {"value": "1M（Kingy、DataCamp 引 Z.ai / BigModel 指南）", "caveats": "CellCog 称 Z.ai 没有书面写明，只有 [1m] 后缀；不进表", "cf": "低"},
+  "official_scores": "无：发布时没有分数表或模型卡，Z.ai 团队成员称之后补（DataCamp、CellCog、LDS 一致）",
+  "not_in_table": [
+   {"what": "智谱 200 个真实编码场景对比（胜 / 平 / 负）", "vs_glm_5_3": "51.1 / 25.7 / 23.1", "vs_kimi_k3_1_pro": "41.8 / 26.9 / 31.3", "vs_deepseek_v4_1_flash_1017": "36.6 / 30.2 / 33.2", "src": "Kingy AI 转述 BigModel 中文指南", "cf": "低", "why": "厂商内部对比，无框架、无推理设置，不对应任何列"},
+   {"what": "KingBench 4（AICodeKing，第三方私有榜）", "score": "33.2 / 60，Max 档，19 个模型第 7、开放权重类第 1；Gemini 4 Neon 37.9，GLM-5.3 27.5", "src": "Kingy AI、DataCamp", "cf": "低", "why": "私有榜；推理档与框架在 X 上有争议"},
+   {"what": "AI All-Round Bench", "score": "27.1，27 个并列第 16（ZCode High，11-22 跑）", "src": "Kingy AI", "cf": "低"},
+   {"what": "ModelDial 私有编码集", "score": "47.6 / 100（GLM-5.3 47.2）", "src": "Kingy AI", "cf": "低"},
+   {"what": "Z.ai 30B 消融（循环 vs 基线，不是旗舰）", "score": "AIME25 19.17→30.42；GPQA Diamond 47.58→56.26；AA-LCR 40.33→47.67；MMLU-Pro 71.65→75.05；IFBench 50.20→53.47", "src": "Z.ai 博客（经 Kingy 转录）", "cf": "中"}
+  ],
+  "independent": {"artificial_analysis": "无结果（Kingy 11-22 查；本次搜索也未见模型页）", "vals_ai": "不在榜上"},
+  "sources": [
+   "https://www.datacamp.com/blog/glm-5-4",
+   "https://kingy.ai/blog/glm-5-4-launch/",
+   "https://cellcog.ai/blog/glm-5-4/",
+   "https://letsdatascience.com/news/zai-launches-glm-54-its-first-loop-transformer-flagship-7b50e4c7"
+  ],
+  "not_fetched": ["z.ai/blog/glm-5.4（官方原文，本次未直接读到）", "docs.z.ai/guides/llm/glm-5.4"]
+ },
+ "checked_no_change": [
+  {"item": "Kimi K3.1 Pro Prime（2026-11-20）", "finding": "不是新模型：阿里云百炼上的 Prime 档，与 K3.1 Pro 同一权重，价格翻倍（新加坡 $4 / $20，缓存 $0.20），和 Moonshot 自己的 Highspeed 版同价；表里 K3.1 Pro 的价格提示已写 Highspeed $4 / $20", "src": "github.com/theopenco/llmgateway/pull/5174、wiro.ai", "cf": "中"},
+  {"item": "前沿三家 11-17 后", "finding": "GPT-6.2 Astra / Sol（11-17）与 Gemini 4 Neon（11-18）已在表里；Anthropic 11-09 之后无新模型。第三方表转录的 AA 值（Astra 62.1、Sol 57.3、Neon 61.4、Carbon 60.0、Fable 5.2 64.6、Opus 5.5 59.1）与表内取整值一致"},
+  {"item": "xAI", "finding": "Grok 4.7（09-21）仍是最新；Grok 4.8 只有 9 月 Musk 的训练帖，未发布"},
+  {"item": "Meta、DeepSeek", "finding": "Muse Ember（11-09）、V4.1-Flash-1017（10-17）之后无新模型；DeepSeek 11-13 更新的是内置工具的安全审查要求，不是模型"}
+ ]
+}

@@ -1,7 +1,7 @@
 {
  "_readme": "表 2-1、表 2-2、图 2-1 模型泳道、图 3-1~3-3、顶栏快照与模型计数的唯一数据源。改完跑 build_tables.py。字段说明见 ../MAINTAIN.md。",
  "meta": {
-  "snapshot": "2026-11-19",
+  "snapshot": "2026-11-24",
   "title": {
    "zh": "大模型发布和 Bench 跟进：前沿 Gemini Claude ChatGPT 大厂 Grok Muse 开源 DeepSeek Kimi GLM",
    "en": "LLM Releases & Benchmarks: Frontier Gemini, Claude, ChatGPT · Big Tech Grok, Muse · Open-weight DeepSeek, Kimi, GLM"
@@ -24,7 +24,7 @@
   ],
   "chapters": {
    "ch3": {
-    "snapshot": "2026-11-22",
+    "snapshot": "2026-11-24",
     "groups": [
      "bigtech",
      "open"
@@ -4884,6 +4884,104 @@
    }
   },
   {
+   "id": "glm-5-4",
+   "name": "GLM-5.4",
+   "short": "GLM-5.4",
+   "vendor": "zhipu",
+   "status": "restricted",
+   "open_weights": false,
+   "release": "2026-11-23",
+   "release_star": true,
+   "release_tip": {
+    "zh": "11 月 23 日宣布，同日开放给所有 GLM Coding Plan 用户。Z.ai API 要等安全评估后开放，权重要等安全加固后放出，都没给日期。〔中〕",
+    "en": "Announced Nov 23 and opened to all GLM Coding Plan users the same day. The Z.ai API opens after a safety evaluation and the weights after safety hardening, with no date for either. [medium]"
+   },
+   "tag": {
+    "text": {
+     "zh": "仅订阅",
+     "en": "Plan only"
+    },
+    "tip": {
+     "zh": "没有 API，只在 Z.ai 的 GLM Coding Plan（Lite / Pro / Max）里能用。",
+     "en": "No API; available only inside Z.ai's GLM Coding Plan (Lite, Pro and Max)."
+    }
+   },
+   "license": {
+    "d": {
+     "zh": "未放出",
+     "en": "Not yet"
+    },
+    "tip": {
+     "zh": "权重还没放出：Z.ai 说安全加固后再放，没给日期；11 月 24 日 Hugging Face 上最新的仍是 GLM-5.3。许可证未公布。〔中〕",
+     "en": "Weights not released yet: Z.ai says they will follow safety hardening, with no date; as of Nov 24 the newest checkpoint on Hugging Face is still GLM-5.3. No license published. [medium]"
+    }
+   },
+   "params": {
+    "d": "~750B / —",
+    "tip": {
+     "zh": "Z.ai 说是「750B 级」，没给精确值，也没公布激活参数。结构：GLM-5 底座的 28 层在一次前向里跑两遍，权重共享（Loop Transformer）。〔低〕",
+     "en": "Z.ai calls it \"750B-scale\" without an exact figure and does not state active parameters. Design: the 28 layers of the GLM-5 base run twice per forward pass with shared weights (a Loop Transformer). [low]"
+    }
+   },
+   "row_tip": {
+    "zh": "智谱的新旗舰，也是它第一个 Loop Transformer。Z.ai 称能力相当 2T–3T 参数的模型，这是厂商说法。发布时没有分数表，Z.ai 说之后补，所以表里全是「—」。没填进表的：智谱 200 个真实编码场景对比，对 Kimi K3.1 Pro 胜 41.8% / 平 26.9% / 负 31.3%（经 Kingy AI 转述，〔低〕）；第三方 KingBench 4 得 33.2 / 60，开放权重类第一（私有榜，口径和任何一列都不一致）。",
+    "en": "Zhipu's new flagship and its first Loop Transformer. Z.ai claims it matches models with 2T–3T parameters; that is the vendor's claim. No benchmark table shipped at launch and Z.ai says scores will follow, so every cell shows \"—\". Not in the table: Zhipu's head-to-head on 200 real coding scenarios, 41.8% win / 26.9% tie / 31.3% loss against Kimi K3.1 Pro (via Kingy AI's write-up, [low]); and 33.2 / 60 on the third-party KingBench 4, first among open-weight vendors (a private suite that matches no column)."
+   },
+   "scores": {},
+   "blank": {
+    "price_in": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "没有 API：11 月 23 日起只在 Z.ai 的 GLM Coding Plan 里提供。Z.ai 说安全评估后再开 API，没给日期，也没公布 API 价。只有第三方转售价，不算官方价，不填。〔中〕",
+      "en": "No API: offered only in Z.ai's GLM Coding Plan since Nov 23. Z.ai says the API opens after a safety evaluation, with no date and no published API price. Only third-party resale prices exist, which are not list prices, so the cell stays blank. [medium]"
+     }
+    },
+    "price_out": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "没有 API：11 月 23 日起只在 Z.ai 的 GLM Coding Plan 里提供。Z.ai 说安全评估后再开 API，没给日期，也没公布 API 价。只有第三方转售价，不算官方价，不填。〔中〕",
+      "en": "No API: offered only in Z.ai's GLM Coding Plan since Nov 23. Z.ai says the API opens after a safety evaluation, with no date and no published API price. Only third-party resale prices exist, which are not list prices, so the cell stays blank. [medium]"
+     }
+    },
+    "aa": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "Artificial Analysis 还没有 GLM-5.4 的结果（11 月 22–24 日查）。",
+      "en": "No Artificial Analysis result for GLM-5.4 yet (checked Nov 22–24)."
+     }
+    },
+    "vals": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "不在 Vals Index v2.2 榜上。",
+      "en": "Not on the Vals Index v2.2 leaderboard."
+     }
+    },
+    "tb4_vals": {
+     "d": {
+      "zh": "—",
+      "en": "—"
+     },
+     "tip": {
+      "zh": "不在 Vals 的 Terminal-Bench 4.0 榜上。",
+      "en": "Not on Vals' Terminal-Bench 4.0 leaderboard."
+     }
+    }
+   }
+  },
+  {
    "id": "glm-5-3",
    "name": "GLM-5.3",
    "short": "GLM-5.3",
@@ -4922,8 +5020,8 @@
     }
    },
    "row_tip": {
-    "zh": "智谱现在的旗舰。Z.ai 自己没报 Terminal-Bench 4.0，表里那格用的是 Moonshot 的数。Z.ai 自己报的 Agents' Last Exam 28.5% 是 CLI 子集、没写版本，表里用 Moonshot 给的 v1.1 全集分数。",
-    "en": "Zhipu's current flagship. Z.ai did not report Terminal-Bench 4.0 itself, so that cell uses Moonshot's number. Z.ai's own Agents' Last Exam figure, 28.5%, is the CLI subset with no version stated; the table uses Moonshot's full-set v1.1 score."
+    "zh": "智谱 API 上现在的旗舰（GLM-5.4 只在 Coding Plan 里）。Z.ai 自己没报 Terminal-Bench 4.0，表里那格用的是 Moonshot 的数。Z.ai 自己报的 Agents' Last Exam 28.5% 是 CLI 子集、没写版本，表里用 Moonshot 给的 v1.1 全集分数。",
+    "en": "Zhipu's current flagship on the API (GLM-5.4 is Coding Plan only). Z.ai did not report Terminal-Bench 4.0 itself, so that cell uses Moonshot's number. Z.ai's own Agents' Last Exam figure, 28.5%, is the CLI subset with no version stated; the table uses Moonshot's full-set v1.1 score."
    },
    "scores": {
     "aa": {
@@ -5928,6 +6026,19 @@
     "en": "GLM-5.3-Flash, weights and API together, MIT. $0.15 / $0.50."
    },
    "open_weights": true
+  },
+  {
+   "lane": "zhipu",
+   "date": "2026-11-23",
+   "hollow": true,
+   "label": {
+    "zh": "GLM-5.4 宣布",
+    "en": "GLM-5.4 announced"
+   },
+   "tip": {
+    "zh": "GLM-5.4 宣布，先给 Coding Plan 用户；API 和权重都等安全评估后，没给日期。",
+    "en": "GLM-5.4 announced, Coding Plan users first; the API and weights wait on safety reviews, with no date."
+   }
   }
  ],
  "t22": {
@@ -8189,6 +8300,30 @@
       "title": "Kimi API Platform: Model Inference Pricing",
       "url": "https://platform.kimi.ai/docs/pricing/chat",
       "date": "2026-11-12",
+      "accessed": false
+     },
+     {
+      "title": "DataCamp: GLM-5.4: Z.ai's First Loop Transformer and the Push Toward Generalized Coding",
+      "url": "https://www.datacamp.com/blog/glm-5-4",
+      "date": "2026-11-23",
+      "accessed": false
+     },
+     {
+      "title": "Kingy AI: GLM-5.4 launch: How to use it, pricing and API status",
+      "url": "https://kingy.ai/blog/glm-5-4-launch/",
+      "date": "2026-11-24",
+      "accessed": false
+     },
+     {
+      "title": "CellCog: GLM-5.4 Is Out on Z.ai's Coding Plan: What Is Confirmed",
+      "url": "https://cellcog.ai/blog/glm-5-4/",
+      "date": "2026-11-23",
+      "accessed": false
+     },
+     {
+      "title": "Let's Data Science: Z.ai Launches GLM-5.4, Its First Loop Transformer Flagship",
+      "url": "https://letsdatascience.com/news/zai-launches-glm-54-its-first-loop-transformer-flagship-7b50e4c7",
+      "date": "2026-11-23",
       "accessed": false
      },
      {
