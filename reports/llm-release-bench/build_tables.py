@@ -9,6 +9,7 @@
   每个表行、组标题行、时间轴泳道、图 3-x 的行 / 点 / 图例项都带 data-tags="…"（按 groups 顺序、空格分隔）；
   顶栏筛选把关掉的标签写进 <html data-off="…">，flt_css() 生成的规则隐藏「全部标签都被关掉」的元素（标签之间是「或」）。
   表 2-1 的列跟着筛选动态隐藏：可见行里全是 .na 格的列整列隐藏（页面 JS fitCols）。
+  模型列宽＝当前语言与筛选下可见模型名的最宽内容（fitCols.c0，layout.t21.model 只是初值）。
   表 2-2 与 2.3 节算力不带标签、不受筛选影响。名次与色条按全部模型算，不随筛选变。
 算力三条泳道、图 2-2 / 2-3、表 2-3 归 compute/build.py 管（标记 <!--compute:…-->），本脚本只认 <!--data:…-->，互不覆盖。
 
@@ -642,6 +643,7 @@ tr.grp .gk{font-weight:400;color:var(--ink3);font-size:.9em;margin-left:8px;curs
 #f21 .hl-lab.li{display:block;white-space:normal;line-height:1.25}
 #f21 .hl-lab.li small{display:block}
 #t21 .xc{display:none}
+#t21 td.c0,#t21 th.c0{white-space:nowrap}
 #flt{display:inline-flex;flex:none;border:1px solid var(--line);height:18px;line-height:16px;margin-right:6px}
 #flt button{padding:0 6px;color:var(--ink2)}
 #flt button+button{border-left:1px solid var(--line)}
@@ -717,9 +719,11 @@ relayout=function(){relayout1();fitScatter()};
 
 /* ---- table 2-1: hide every column that has no data (only .na cells: —, No, ditto…) in the rows the tag filter leaves visible.
    A hidden column's <col> is detached (fixed layout keeps cells and cols aligned), its cells get .xc, group headers shrink their colspan,
-   the first visible column of each group carries the .gs divider, the table width is the sum of visible <col> widths. Same for the sticky header clone. ---- */
+   the first visible column of each group carries the .gs divider, the table width is the sum of visible <col> widths. Same for the sticky header clone.
+   fitCols.c0() (run at the start of every relayout): the model column is as wide as its widest visible cell in the current language
+   (names never wrap; measured with a Range, cached per language + filter + font size). ---- */
 var fitCols=(function(){
-  var tb=$('#t21 table');if(!tb)return function(){};
+  var tb=$('#t21 table');if(!tb){var nf=function(){};nf.c0=nf;return nf}
   var cl=null;wides.forEach(function(o){if(o.tb===tb)cl=o.ct});
   function side(t){
     var cg=$('colgroup',t),cols=$$('col',cg),h2=$$('thead tr.h2>th',t),gh=$$('thead th.gh',t);
@@ -730,8 +734,21 @@ var fitCols=(function(){
   var rows=$$('tbody>tr',tb).filter(function(r){return !r.classList.contains('grp')}).map(function(r){
     return {tags:(r.getAttribute('data-tags')||'').split(' '),td:Array.prototype.slice.call(r.children,1)};
   });
-  var grc=$$('tbody>tr.grp>td',tb);
-  return function(off){
+  var grc=$$('tbody>tr.grp>td',tb),c0s=$$('tbody>tr>td.c0',tb),hc0=$('thead th.c0',tb),show0=null,key0='',rng=D.createRange();
+  function width(){
+    var w=S[0].em[0];if(show0)for(var j=0;j<n;j++)if(show0[j])w+=S[0].em[j+1];
+    S.forEach(function(x){x.em[0]=S[0].em[0];x.cols[0].style.width=S[0].em[0].toFixed(3)+'em';x.t.style.width=w.toFixed(3)+'em'});
+  }
+  function c0(){
+    var fs=parseFloat(getComputedStyle(tb).fontSize),k=(R.getAttribute('data-lang')||'')+'|'+(R.getAttribute('data-off')||'')+'|'+fs;
+    if(k===key0||!fs||!tb.getClientRects().length)return;key0=k;
+    var px=0;c0s.concat([hc0]).forEach(function(c){
+      if(!c.getClientRects().length)return;rng.selectNodeContents(c);var cs=getComputedStyle(c);
+      px=Math.max(px,rng.getBoundingClientRect().width+parseFloat(cs.paddingLeft)+parseFloat(cs.paddingRight)+2);
+    });
+    if(px){S[0].em[0]=Math.ceil(px/fs*100)/100;width()}
+  }
+  var f=function(off){
     var vis=rows.filter(function(r){return r.tags.some(function(t){return off.indexOf(t)<0})});
     var show=[];for(var j=0;j<n;j++)show[j]=vis.some(function(r){var c=r.td[j];return c&&!c.classList.contains('na')});
     var seen={},gs=[],cnt=S[0].gh.map(function(){return 0});
@@ -740,16 +757,19 @@ var fitCols=(function(){
     rows.forEach(function(r){r.td.forEach(function(c,j){c.classList.toggle('xc',!show[j]);c.classList.toggle('gs',gs[j])})});
     grc.forEach(function(c){c.setAttribute('colspan',nv+1)});
     S.forEach(function(x){
-      var w=x.em[0];x.cg.textContent='';x.cg.appendChild(x.cols[0]);
+      x.cg.textContent='';x.cg.appendChild(x.cols[0]);
       for(var j=0;j<n;j++){
         x.h2[j].classList.toggle('xc',!show[j]);x.h2[j].classList.toggle('gs',gs[j]);
-        if(show[j]){x.cg.appendChild(x.cols[j+1]);w+=x.em[j+1]}
+        if(show[j])x.cg.appendChild(x.cols[j+1]);
       }
       x.gh.forEach(function(g,gi){g.classList.toggle('xc',!cnt[gi]);if(cnt[gi])g.setAttribute('colspan',cnt[gi])});
-      x.t.style.width=w.toFixed(3)+'em';
     });
+    show0=show;width();
   };
+  f.c0=c0;return f;
 })();
+var relayout2=relayout;
+relayout=function(){fitCols.c0();relayout2()};
 
 /* ---- top-bar tag filter (Frontier / Big Tech / Open-weight): tags that are off go into <html data-off>; CSS hides every [data-tags] whose tags are all off.
    Click toggles one tag, Shift-click keeps only that tag; at least one tag stays on. Saved as mdl-off. ---- */
