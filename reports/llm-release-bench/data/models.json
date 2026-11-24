@@ -256,8 +256,8 @@
      "en": "How to read"
     },
     "tip": {
-     "zh": "<b>怎么读这张表</b>{n_models} 个模型，按厂商分组：前沿 Google、Anthropic、OpenAI；大厂 xAI、Meta（Google 也算大厂）；开源 DeepSeek、Moonshot、智谱、Thinking Machines。组内按发布日从新到旧。<br>顶栏「前沿 / 大厂 / 开源」筛选全页的表和图。<br>价格是 API 标准价，美元 / 每百万 token。<br>分数 {n_bench} 列，分{n_groups_zh}组：{group_names}。<br>每列前三名加深，名次越靠前越深；名次在全部模型里排，不随筛选变。<br>「—」是没有公开分数，或者分数口径和这一列不一致（悬停模型名看是哪些）。<br>悬停任何数字可看出处、测试条件和可信度。",
-     "en": "<b>How to read this table</b>{n_models} models grouped by vendor: frontier Google, Anthropic, OpenAI; Big Tech xAI and Meta (Google counts as Big Tech too); open-weight DeepSeek, Moonshot, Zhipu, Thinking Machines. Within each vendor, newest first.<br>The Frontier / Big Tech / Open-weight filter in the top bar applies to every table and chart on the page.<br>Prices are standard API list prices, USD per million tokens.<br>{n_bench} score columns in {n_groups_zh} groups: {group_names}.<br>The top three in each column are shaded darker, darkest for first; ranks are across all models and do not change with the filter.<br>\"—\" means no public score, or a score that does not match the column (hover the model name to see which).<br>Hover any number for its source, test conditions and confidence."
+     "zh": "<b>怎么读这张表</b>{n_models} 个模型，按厂商分组：前沿 Google、Anthropic、OpenAI；大厂 xAI、Meta（Google 也算大厂）；开源 DeepSeek、Moonshot、智谱、Thinking Machines。组内按发布日从新到旧。<br>顶栏「前沿 / 大厂 / 开源」筛选全页的表和图；筛选后没有数据的列（只剩「—」「否」）自动隐藏。<br>价格是 API 标准价，美元 / 每百万 token。<br>分数 {n_bench} 列，分{n_groups_zh}组：{group_names}。<br>每列前三名加深，名次越靠前越深；名次在全部模型里排，不随筛选变。<br>「—」是没有公开分数，或者分数口径和这一列不一致（悬停模型名看是哪些）。<br>悬停任何数字可看出处、测试条件和可信度。",
+     "en": "<b>How to read this table</b>{n_models} models grouped by vendor: frontier Google, Anthropic, OpenAI; Big Tech xAI and Meta (Google counts as Big Tech too); open-weight DeepSeek, Moonshot, Zhipu, Thinking Machines. Within each vendor, newest first.<br>The Frontier / Big Tech / Open-weight filter in the top bar applies to every table and chart on the page; columns left with no data after filtering (only \"—\" or \"No\") are hidden.<br>Prices are standard API list prices, USD per million tokens.<br>{n_bench} score columns in {n_groups_zh} groups: {group_names}.<br>The top three in each column are shaded darker, darkest for first; ranks are across all models and do not change with the filter.<br>\"—\" means no public score, or a score that does not match the column (hover the model name to see which).<br>Hover any number for its source, test conditions and confidence."
     }
    },
    {
@@ -8240,8 +8240,8 @@
    "en": "Parameter count not disclosed."
   },
   "flt_tip": {
-   "zh": "<b>按标签筛选全页</b>点一下开 / 关一个标签；Shift 点击只看这一个。<br>一家可以有多个标签：Google 既是前沿也是大厂。<br>筛选作用于表 2-1、图 2-1 的模型泳道和第 3 章的全部图；表 2-2 和 2.3 节算力不受影响。名次、色条按全部模型算，不随筛选变。",
-   "en": "<b>Filter the whole page by tag</b>Click to toggle a tag; Shift-click to show only that one.<br>A vendor can carry several tags: Google is both frontier and Big Tech.<br>Applies to Table 2-1, the model lanes in Fig 2-1 and every chart in chapter 3; Table 2-2 and the compute section 2.3 are unaffected. Ranks and bars are computed over all models and do not change with the filter."
+   "zh": "<b>按标签筛选全页</b>点一下开 / 关一个标签；Shift 点击只看这一个。<br>一家可以有多个标签：Google 既是前沿也是大厂。<br>筛选作用于表 2-1、图 2-1 的模型泳道和第 3 章的全部图；表 2-1 里筛选后没有数据的列自动隐藏；表 2-2 和 2.3 节算力不受影响。名次、色条按全部模型算，不随筛选变。",
+   "en": "<b>Filter the whole page by tag</b>Click to toggle a tag; Shift-click to show only that one.<br>A vendor can carry several tags: Google is both frontier and Big Tech.<br>Applies to Table 2-1, the model lanes in Fig 2-1 and every chart in chapter 3; Table 2-1 hides columns left with no data; Table 2-2 and the compute section 2.3 are unaffected. Ranks and bars are computed over all models and do not change with the filter."
   },
   "flt_empty": {
    "zh": "当前筛选下没有模型。",

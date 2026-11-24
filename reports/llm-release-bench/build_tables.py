@@ -8,6 +8,7 @@
 标签：vendors.json 的 vendors[].tags（一家可多个，Google＝前沿＋大厂），group＝主分组（图例按它分组）。
   每个表行、组标题行、时间轴泳道、图 3-x 的行 / 点 / 图例项都带 data-tags="…"（按 groups 顺序、空格分隔）；
   顶栏筛选把关掉的标签写进 <html data-off="…">，flt_css() 生成的规则隐藏「全部标签都被关掉」的元素（标签之间是「或」）。
+  表 2-1 的列跟着筛选动态隐藏：可见行里全是 .na 格的列整列隐藏（页面 JS fitCols）。
   表 2-2 与 2.3 节算力不带标签、不受筛选影响。名次与色条按全部模型算，不随筛选变。
 算力三条泳道、图 2-2 / 2-3、表 2-3 归 compute/build.py 管（标记 <!--compute:…-->），本脚本只认 <!--data:…-->，互不覆盖。
 
@@ -640,6 +641,7 @@ tr.grp .gk{font-weight:400;color:var(--ink3);font-size:.9em;margin-left:8px;curs
 .hl-lab small.pre{font-weight:400;color:var(--ink3);white-space:normal;line-height:1.25;cursor:help}
 #f21 .hl-lab.li{display:block;white-space:normal;line-height:1.25}
 #f21 .hl-lab.li small{display:block}
+#t21 .xc{display:none}
 #flt{display:inline-flex;flex:none;border:1px solid var(--line);height:18px;line-height:16px;margin-right:6px}
 #flt button{padding:0 6px;color:var(--ink2)}
 #flt button+button{border-left:1px solid var(--line)}
@@ -713,6 +715,42 @@ function fitScatter(){
 var relayout1=relayout;
 relayout=function(){relayout1();fitScatter()};
 
+/* ---- table 2-1: hide every column that has no data (only .na cells: —, No, ditto…) in the rows the tag filter leaves visible.
+   A hidden column's <col> is detached (fixed layout keeps cells and cols aligned), its cells get .xc, group headers shrink their colspan,
+   the first visible column of each group carries the .gs divider, the table width is the sum of visible <col> widths. Same for the sticky header clone. ---- */
+var fitCols=(function(){
+  var tb=$('#t21 table');if(!tb)return function(){};
+  var cl=null;wides.forEach(function(o){if(o.tb===tb)cl=o.ct});
+  function side(t){
+    var cg=$('colgroup',t),cols=$$('col',cg),h2=$$('thead tr.h2>th',t),gh=$$('thead th.gh',t);
+    return {t:t,cg:cg,cols:cols,h2:h2,gh:gh,em:cols.map(function(c){return parseFloat(c.style.width)||0})};
+  }
+  var S=[side(tb)].concat(cl?[side(cl)]:[]),n=S[0].h2.length;
+  var grp=[],s=0;S[0].gh.forEach(function(g,gi){var k=+g.getAttribute('colspan')||1;for(var i=0;i<k;i++)grp[s+i]=gi;s+=k});
+  var rows=$$('tbody>tr',tb).filter(function(r){return !r.classList.contains('grp')}).map(function(r){
+    return {tags:(r.getAttribute('data-tags')||'').split(' '),td:Array.prototype.slice.call(r.children,1)};
+  });
+  var grc=$$('tbody>tr.grp>td',tb);
+  return function(off){
+    var vis=rows.filter(function(r){return r.tags.some(function(t){return off.indexOf(t)<0})});
+    var show=[];for(var j=0;j<n;j++)show[j]=vis.some(function(r){var c=r.td[j];return c&&!c.classList.contains('na')});
+    var seen={},gs=[],cnt=S[0].gh.map(function(){return 0});
+    for(j=0;j<n;j++){gs[j]=show[j]&&!seen[grp[j]];if(show[j]){seen[grp[j]]=1;cnt[grp[j]]++}}
+    var nv=show.filter(Boolean).length;
+    rows.forEach(function(r){r.td.forEach(function(c,j){c.classList.toggle('xc',!show[j]);c.classList.toggle('gs',gs[j])})});
+    grc.forEach(function(c){c.setAttribute('colspan',nv+1)});
+    S.forEach(function(x){
+      var w=x.em[0];x.cg.textContent='';x.cg.appendChild(x.cols[0]);
+      for(var j=0;j<n;j++){
+        x.h2[j].classList.toggle('xc',!show[j]);x.h2[j].classList.toggle('gs',gs[j]);
+        if(show[j]){x.cg.appendChild(x.cols[j+1]);w+=x.em[j+1]}
+      }
+      x.gh.forEach(function(g,gi){g.classList.toggle('xc',!cnt[gi]);if(cnt[gi])g.setAttribute('colspan',cnt[gi])});
+      x.t.style.width=w.toFixed(3)+'em';
+    });
+  };
+})();
+
 /* ---- top-bar tag filter (Frontier / Big Tech / Open-weight): tags that are off go into <html data-off>; CSS hides every [data-tags] whose tags are all off.
    Click toggles one tag, Shift-click keeps only that tag; at least one tag stays on. Saved as mdl-off. ---- */
 (function(){
@@ -721,6 +759,7 @@ relayout=function(){relayout1();fitScatter()};
   function cur(){return (R.getAttribute('data-off')||'').split(' ').filter(function(k){return ALL.indexOf(k)>=0})}
   function apply(off,init){
     if(off.length)R.setAttribute('data-off',off.join(' '));else R.removeAttribute('data-off');
+    fitCols(off);
     $$('[data-flt]',box).forEach(function(b){var on=off.indexOf(b.getAttribute('data-flt'))<0;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false')});
     if(!init){try{localStorage.setItem('mdl-off',off.join(' '))}catch(e){}hideTip();relayout()}
   }
