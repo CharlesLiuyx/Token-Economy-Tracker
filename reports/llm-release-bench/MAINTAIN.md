@@ -190,7 +190,7 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 
 ## 10. 同步到 html-review（线上评审页）
 
-报告的 review id 是 `-ql-69iE_Lz3`（写在报告 `<head>` 的注释和 meta 里，沿用，不新建）。每次 commit 之后在云端会话里同步：
+报告的 review id 是 `-ql-69iE_Lz3`（写在报告 `<head>` 的注释和 meta 里，沿用，不新建）。每次 commit 并推送之后同步（本机会话用已登录的 CLI 凭证，云端会话用下面第 2 步的 HTML_REVIEW_TOKEN）：
 
 1. 安装 CLI（来自私有仓库 `one2x-ai/html-review`，需要用户授权该仓库的访问；已装过就跳过，`command -v html-review`）：
    ```bash
