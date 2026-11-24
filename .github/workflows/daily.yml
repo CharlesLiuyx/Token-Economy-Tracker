@@ -69,16 +69,12 @@ jobs:
               await github.rest.issues.create({...context.repo, title, body, labels: ["pipeline-failure"]});
             }
 
-  deploy-pages:
+  # 上传和部署分成两个 job（原因见 deploy.yml）：同一 job 里 deploy-pages 紧跟上传，
+  # 常查不到刚传的 artifact（"Found 0 artifact(s)"）。
+  upload-pages:
     needs: update
     if: success()
     runs-on: ubuntu-latest
-    # 与 deploy-on-push 共用 Pages 部署锁，避免两个 workflow 同时 deploy 冲突
-    concurrency:
-      group: pages-deploy
-      cancel-in-progress: false
-    environment:
-      name: github-pages
     steps:
       - uses: actions/checkout@v7
         with:
@@ -87,11 +83,23 @@ jobs:
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site
+
+  deploy-pages:
+    needs: upload-pages
+    runs-on: ubuntu-latest
+    # 与 deploy-on-push 共用 Pages 部署锁，避免两个 workflow 同时 deploy 冲突
+    concurrency:
+      group: pages-deploy
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
       - uses: actions/deploy-pages@v5
         id: deploy
-      # deploy-pages 偶发查不到刚上传的 artifact（"Found 0 artifact(s)"，11-13/11-20 两次）。
-      # 不能 rerun（会多出同名 artifact 再失败），改为 dispatch deploy.yml 从已提交数据重建部署。
-      # 它与本 job 共用 pages-deploy 锁，会排队到本 job 结束后再跑；本 job 仍标红以保留可见性。
+      # 拆 job 后仍偶发失败时的兜底：不能 rerun 上传 job（会多出同名 artifact 再失败），
+      # 改为 dispatch deploy.yml 从已提交数据重建部署。它与本 job 共用 pages-deploy 锁，
+      # 会排队到本 job 结束后再跑；本 job 仍标红以保留可见性。
       - name: Fallback deploy via deploy.yml
         if: failure() && steps.deploy.outcome == 'failure'
         env:

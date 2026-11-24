@@ -41,7 +41,8 @@ push 到 main（deploy.yml）：只 build + 部署，不抓数、不提交
 - **新鲜度**：build 由 `_status.json` 算 ok / warn(>48h) / stale(>7d)；人工维护源以最近一条
   每日速读的日期为准（>2 天 warn，>7 天 stale）。
 - **两条部署通路共用 `pages-deploy` 锁**：daily.yml 的 deploy 失败时自动 dispatch deploy.yml
-  兜底（细节与排障见 runbook.md）。
+  兜底（细节与排障见 runbook.md）。两条通路都把上传 Pages artifact 和 deploy-pages 分在两个 job，
+  避免同一 job 里部署查不到刚上传的 artifact。
 
 ## 运行方式
 

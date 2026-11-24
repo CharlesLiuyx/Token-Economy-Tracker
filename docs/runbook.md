@@ -43,9 +43,11 @@ make fetch-news          # 单跑一个源调试（fetch-<source>）
 - 本地救场：`make update && make build`，人工 commit `data: YYYY-MM-DD` 推上去即可，
   与 CI 产物完全等价。
 - **Pages 部署失败但数据已提交**（update job 绿、deploy-pages 红，常见报错
-  `Found 0 artifact(s)`）：**不要 `gh run rerun --failed`**——重跑会再传一份同名
-  artifact，deploy-pages 转报 `Multiple artifacts named github-pages`。daily.yml 已在
-  deploy 失败时自动 dispatch `deploy.yml` 兜底；若兜底也没跑，手动 `gh workflow run deploy.yml`。
+  `Found 0 artifact(s)`）：根因是 deploy-pages 在上传后立刻查 artifact、GitHub 还查不到。
+  2026-11-24 起两个 workflow 都把「上传」和「部署」拆成两个 job（`needs` 串联），
+  中间隔一次 runner 分配，这个报错应基本消失。仍然出现时：**不要 `gh run rerun --failed`**
+  ——若重跑到上传 job 会再传一份同名 artifact，deploy-pages 转报 `Multiple artifacts named github-pages`。
+  daily.yml 已在 deploy 失败时自动 dispatch `deploy.yml` 兜底；若兜底也没跑，手动 `gh workflow run deploy.yml`。
 
 ## 每日更新任务（内容侧）
 
