@@ -4,6 +4,28 @@
 # 本站自有数据写站内锚点如 "#p-gpu_table"）。
 # 收录门槛：今天才知道的增量信息；数字必须在来源里能核对到；没有新信息就不写当天条目。
 digest:
+  - date: 2026-11-24
+    items:
+      - tag: GPU
+        text:
+          zh: NVIDIA 11-17 发布 2027 财年 Q3（截至 10-25）财报：收入 1158 亿美元，同比 +103%、环比 +20%；数据中心收入 1076 亿，同比 +110%、环比 +21%。Q4 指引 1300 亿 ±3%（该季多一周），不计任何来自中国的数据中心算力收入。
+          en: "NVIDIA reported fiscal 2027 Q3 (ended Oct 25) on Nov 17: revenue $115.8B, up 103% year over year and 20% quarter over quarter; Data Center revenue $107.6B, up 110% YoY and 21% QoQ. Q4 guidance is $130.0B plus or minus 3% (the quarter has an extra week), assuming no Data Center compute revenue from China."
+        source_url: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx
+      - tag: ARR
+        text:
+          zh: Anthropic 11-19 在纳斯达克上市（ANT）：开盘 111.50 美元，比 83 美元发行价高 34%；收盘 97.17 美元，较发行价 +17%，按完全稀释口径市值约 1.8 万亿美元。同日纳斯达克综合指数跌超 2%。
+          en: "Anthropic began trading on Nasdaq (ANT) on Nov 19: it opened at $111.50, 34% above the $83 offer price, and closed at $97.17, up 17%, for a fully diluted market cap of about $1.8T. The Nasdaq Composite fell more than 2% the same day."
+        source_url: https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html
+      - tag: Model
+        text:
+          zh: OpenAI 推出 GPT-6.2 Astra 与 Sol。Astra API 定价每百万 token 输入 8 美元、缓存输入 0.40、输出 40；Sol 维持 2 / 0.10 / 10。截至 11-23 两者尚未进入 OpenRouter 周榜，本站重点模型名单暂不换代。
+          en: "OpenAI launched GPT-6.2 Astra and Sol. Astra's API price is $8 input, $0.40 cached input and $40 output per million tokens; Sol stays at $2 / $0.10 / $10. As of Nov 23 neither appears in OpenRouter's weekly ranking, so this site's tracked-model list is unchanged."
+        source_url: https://openai.com/index/introducing-gpt-6-2-astra-sol
+      - tag: Token
+        text:
+          zh: Vercel AI Gateway 11-22 单日 token 份额：DeepSeek V4.1 Flash 升到 30.0%（11-15 为 17.6%），超过 Beam 1.0（16.1%，11-15 为 26.4%）成为第一。
+          en: "On Vercel AI Gateway, DeepSeek V4.1 Flash took 30.0% of daily tokens on Nov 22 (17.6% on Nov 15), passing Beam 1.0 (16.1%, down from 26.4%) for first place."
+        source_url: "#p-vercel_tokens"
   - date: 2026-11-23
     items:
       - tag: ARR

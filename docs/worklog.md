@@ -60,3 +60,4 @@
 2026-11-22 | Claude Code（云端会话） | llm-release-bench：图 4-4 散点标签去掉品牌小方块（与数据点同形同色，像两个点），只留文字；其他图不动 | 下一步：无。
 2026-11-22 | Claude Code（云端会话） | llm-release-bench：格内色条按厂商与主题算深浅上限（与正文色对比度 ≥6，检查门槛 4.5），名次分档同比缩小，色条格里的角标/小字改正文色；新增 qa/contrast_check.py（深浅 × 中英，525 段全过）；每个模型名后加「开源/闭源」小标签（models.json open_weights，新模型必填），时间轴与表 2-2 列头只在悬停写明；表 2-1/3-1 模型列加宽；ch2_equiv 默认忽略颜色、开源/闭源标签与表 2-1 模型列宽 | 下一步：无。
 2026-11-23 | routine | 管道全绿；无新 ARR 锚点（424B4 沿用 10-31 的 81B，OpenAI 500 亿无时点）；速读 4 条：Anthropic IPO 定价 $83、OpenAI Q3 收入破 100 亿（Bloomberg 转述）、gemini-4-carbon 一周 3.7 倍、TensorWave–OpenAI 457 MW | 下一步：OpenAI 最近披露已 54 天，盯年末 700 亿目标或新运行率；Anthropic 上市后首份 10-Q / 财报。
+2026-11-24 | routine | 管道全绿（11-24 定时抓取尚未触发，GH 调度滞后）；无新 ARR 锚点；速读 4 条：NVIDIA Q3 FY27 数据中心 1076 亿、Anthropic 上市首日收 97.17、GPT-6.2 Astra 定价、Vercel 上 DeepSeek V4.1 Flash 份额 30% | 下一步：OpenAI 最近披露已 55 天，盯年末 700 亿目标；GPT-6.2 / Gemini 4 Neon 进 OpenRouter 周榜后按判据评估换代；Anthropic 首份 10-Q。
