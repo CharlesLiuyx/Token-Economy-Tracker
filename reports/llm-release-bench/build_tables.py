@@ -1,16 +1,20 @@
 #!/usr/bin/env python3
 """把 data/models.json + data/vendors.json 写进报告 HTML：
-  顶栏与首屏的快照日期 / 分组模型计数、第 2 章（前沿）的表 2-1、表 2-2、图 2-1 的模型泳道、
-  第 3 章（大厂与开源）的章首快照行、表 3-1、图 3-2、第 4 章（全部模型）的图 4-1…4-5、附录「核对方式」与第 3 章来源、
-  新厂商的配色 CSS、第 3/4 章的样式块（c34css）与散点标签避让脚本（c34js）。
-模型进哪一章由 vendors.json 的 groups[].chapter 决定：2＝前沿（表 2-1、图 2-1），3＝大厂与开源（表 3-1、图 3-2）；第 4 章取全部。
+  顶栏（含「前沿 / 大厂 / 开源」标签筛选器）与首屏的快照日期 / 分组模型计数、第 2 章的表 2-1（全部模型）、表 2-2、
+  图 2-1 的模型泳道（全部厂商）、第 3 章（全部模型）的图 3-1…3-5、附录「核对方式」与大厂 / 开源来源、
+  新厂商的配色 CSS、样式块（c34css，含筛选 CSS）与页面脚本（c34js：散点标签避让、标签筛选）。
+2026-11-24：原第 2 章（前沿）和第 3 章（大厂与开源）合并成第 2 章；原第 4、5 章改为第 3、4 章。
+  HTML 里的 id 沿用旧名（section s4 / s5、h41…h45、f41…f45），只改可见编号，免得 compute 与 qa 的选择器跟着变。
+标签：vendors.json 的 vendors[].tags（一家可多个，Google＝前沿＋大厂），group＝主分组（图例按它分组）。
+  每个表行、组标题行、时间轴泳道、图 3-x 的行 / 点 / 图例项都带 data-tags="…"（按 groups 顺序、空格分隔）；
+  顶栏筛选把关掉的标签写进 <html data-off="…">，flt_css() 生成的规则隐藏「全部标签都被关掉」的元素（标签之间是「或」）。
+  表 2-2 与 2.3 节算力不带标签、不受筛选影响。名次与色条按全部模型算，不随筛选变。
 算力三条泳道、图 2-2 / 2-3、表 2-3 归 compute/build.py 管（标记 <!--compute:…-->），本脚本只认 <!--data:…-->，互不覆盖。
 
-幂等：每块包在 <!--data:NAME:start--> … <!--data:NAME:end--> 里。第一次运行按原文锚点找到原块并包上标记；
-之后只替换标记之间的内容。重复跑结果逐字节一致。
+幂等：每块包在 <!--data:NAME:start--> … <!--data:NAME:end--> 里，只替换标记之间的内容。重复跑结果逐字节一致。
 
 另外输出 i18n/static.json 里的固定文字块（<!--data:s-NAME:…-->：顶栏控件与目录头、各章标题、第 1 章结论、
-第 5 章、附录手写来源、图 2-1 图注与图例、TERMS 术语表与页面 JS 的界面字），以及 h1、图 2-1 的 <div class="hl">（横轴）。
+第 4 章（怎么读）、附录手写来源、图 2-1 图注与图例、TERMS 术语表与页面 JS 的界面字），以及 h1、图 2-1 的 <div class="hl">（横轴）。
 所有文字都输出中英两份（见 bilingual.py 开头的约定），页面按 :root[data-lang] 显示其一。
 
 用法：python3 build_tables.py [报告路径] [--data 数据目录] [--check] [--no-ch1-check]
@@ -18,27 +22,30 @@
   --no-ch1-check 跳过第 1 章新增结论的数字核对（只给 qa/rehearsal.py 这类虚构数据的演练用）。
 只用 Python 标准库。
 
-====================================================================== 规则（全部从 2026-11-22 前的手写版反推，并已逐字节回归）
-表 2-1
+====================================================================== 规则
+表 2-1（全部模型；2026-11-24 由原表 2-1 与表 3-1 合并）
   · 行序：厂商按 vendors.json 的顺序分组（没有模型的厂商不出组标题行）；组内先放已发布与受限模型，按发布日从新到旧，
-    同日按 JSON 里的先后；再放内部代号模型，按训练完成日从新到旧。
-  · 列序：基本 3 列（发布 / 输入 / 输出）→ benches 按 JSON 顺序；分组表头＝按 group 连续合并，组的第一列加 gs（分组线）。
-    组里没有任何列时整组不出。
-  · 前三名 r1/r2/r3：每列按 v 去重后从高到低排（「密集名次」：并列同名次，下一名紧接），只给前三个不同的值。
+    同日按 JSON 里的先后；再放内部代号模型，按训练完成日从新到旧（发布列写训练完成时间）。
+    组标题行在厂商名后列出它的全部标签（前沿 / 大厂 / 开源）。
+  · 列＝t21.groups[].cols 点名的列：基本列 release / price_in / price_out / license / params，其余是 benches 的 key；
+    每个 bench 都必须在某组的 cols 里。一个分数都没有的 bench 列不出（打印提示），组里没有列时整组不出。
+    分组表头＝每组一格，组的第一列加 gs（分组线）。列宽：layout.t21（模型列、各基本列；bench 列默认同宽，可按 key 单独设）。
+  · 前三名 r1/r2/r3：每列按 v 去重后从高到低排（「密集名次」：并列同名次，下一名紧接），只给前三个不同的值；全部模型一起排。
     direction=lower 的列反过来排。名次写进格子 data-tip：「{测试名}：{显示值}{单位}。本列第 N 名。{note}」。
   · 分数色条 --w：bar=auto 时，本列有分数的模型 ≥5 个→ 8 + 92 ×（v − 最低）/（最高 − 最低）；<5 个→ v / 最高 × 100。
     bar=zero 总是从 0 画；bar=minmax 总是最低到最高。保留 1 位小数。
   · 发布列色条：8 + 92 ×（发布日 − 最早发布日）/（最晚 − 最早），按天算，所有有发布日的模型一起比。
   · 价格色条：价格 / 公开模型（status=public）里的最高价 × 100，最短 1.5%，1 位小数；受限模型价格超过这个最高价时不画长度，加 over（斜纹）。
     显示：整数 $3，非整数 $1.50；有 in_next / out_next 时写成 $2<small>→$4</small>。
-  · 表头 data-tip：desc + 「 有分数的模型：N 个。」。
-  · colgroup：模型列、发布、输入、输出、每个 bench 列的宽度来自 layout.t21（bench 列同宽）；table 的 width＝各列之和，3 位小数。
+  · 开放权重 / 参数：模型的 license / params（{d, tip}）；没写的闭源模型（前沿三家）显示「否」/「—」（ui.license_closed / params_na_tip）。
+  · 模型名格子挂 row_tip（简介＋没填进表的分数）；格子显示值可带角标（<sup>AA</sup>），提示文字里去掉角标。
+  · 表头 data-tip：desc + 「 有分数的模型：N 个。」。table 的 width＝各列之和，3 位小数。
 表 2-2
   · 列＝t22.columns，按 vendor 连续合并成分组表头；每个分组第一列加 gs。行＝sections → rows。
   · 每行单独算：色条 v / 本行最高 × 100（1 位小数）；本行前三名同表 2-1 的密集名次。
   · 格子 data-tip：「{列名} · {测试名}：{显示值}{单位}。本行第 N 名。{note}」；dagger=true 时显示值后加 <sup>†</sup>。
   · 单元格厂商类：vendors.json 的 t22_class（va / vo / vg …）。
-图 2-1（模型泳道）
+图 2-1（模型泳道，全部厂商；算力泳道归 compute）
   · 横轴由快照日推导（bilingual.axis）：快照日所在月往前 5 个月的月初 t0 → 快照月最后一天（落在 100%），span＝两者相差的天数。
     compute/build.py 用同一个函数，所以两边永远一致。
   · 泳道顺序＝vendors.json 的 timeline_lanes；没有（落在横轴内的）事件的泳道不出。left＝（日期 − t0）/ span × 100，3 位小数。
@@ -46,33 +53,24 @@
     区间节点：left 取 date，width＝（end − date）/ span × 100。
   · 每条泳道的竖线：每月 1 日（不含 t0）一条 ml；快照日一条 vl。泳道内节点按 date 排序（同日按 JSON 先后）。
   · 节点 data-tip：「YYYY-MM-DD：{tip}」；区间节点直接用 tip。hollow=true → 空心（mu，只是宣布）。
-表 3-1（2026-11-22 新增）
-  · 行＝第 3 章的模型，分组与组内排序同表 2-1；组标题行在厂商名后加分组名（大厂 / 开源）。
-  · 列＝t31.groups[].cols 点名的列：基本列 release / price_in / price_out / license / params，其余是 benches 的 key。
-    本章一个分数都没有的 bench 列不出（打印提示），组里没有列时整组不出。列宽：layout.t31（模型列、各基本列；bench 列同宽）。
-  · 前三名、色条、表头提示的规则同表 2-1，但名次和色条只在本表的模型里算；价格色条的最高价＝本表公开模型的最高价。
-  · 模型名格子挂 row_tip（简介＋没填进表的分数）；license / params 是 {d, tip}，license 为「否」时灰字。
-  · 格子显示值可带角标（<sup>AA</sup>），提示文字里去掉角标。
-图 3-2（2026-11-22 新增）
-  · 与图 2-1 同一套组件（同一个 lanes_html / axis_html）：横轴由第 3 章快照 meta.chapters.ch3.snapshot 推导，泳道＝group 属于第 3 章的厂商，不含算力泳道。
   · 事件 before=true 且早于横轴起点：不画节点，写在泳道名下的小字（← M/D 名称，悬停看全文）。
-图 4-1 / 4-2 / 4-3（原图 3-1 / 3-2，加 4-3）
-  · 取对应 bench 有分数的全部模型（第 2 章 + 第 3 章），按 v 从高到低；同分按 表 2-1 → 表 3-1 的行序。
+图 3-1 / 3-2 / 3-3（id f41 / f42 / f43）
+  · 取对应 bench 有分数的全部模型，按 v 从高到低；同分按表 2-1 的行序。
   · mark＝bar：条长＝v / 轴最大值；mark＝dot：点位置＝（v − 轴最小值）/（轴最大 − 轴最小）。数值保留 2 位小数并去掉末尾 0。
     轴：figures.*.axis 的 min / max / step；数据超出时自动按 step 外扩并打印提示。刻度类 dN＝（max − min）/ step。
   · xcol＝price：第 4 列＝输出价；xcol＝cost：第 4 列＝note 里「每题成本 $X」的 $X（Vals 两列的 note 必须写这一句，中英一致）。
   · 行名一律用完整的 name（不自造缩写）；名字长的在窄屏折成两行，不截断。
-图 4-4（散点，2026-11-22 新增）
+图 3-4（散点，id f44）
   · 横轴＝输出价（对数，figures.f44.xaxis 的 min / max / ticks），纵轴＝AA（yaxis，超出自动外扩）。有 AA 但没有 price 的模型不画，列进图注。
   · 实心＝不开放权重，空心（.spt.ow）＝开放权重（license 不是「否」）。价格与 AA 都相同的点左右错开 12px（--dx）。
   · 点按 AA 从高到低排在 DOM 里，页面 JS fitScatter 依次给标签找位置（右、左、上、下、四角…），放不下就隐藏标签（悬停仍有提示）。
-图 4-5（原图 3-3）
-  · 每个 panel 一个 bench，规则同 4-1，横轴 0–100；没有分数的模型不画，整个 panel 没有分数时不出。行名用完整 name，放不下折两行。
-图例（图 4-x）：只列这张图里出现的厂商，按 vendors.json 的 groups 分组（组名在前），组内按 vendors.json 顺序。
-计数：首屏「前沿 N 个 + 大厂与开源 M 个已发布模型」＝第 2 章 / 第 3 章里 status≠internal 的模型数；内部代号模型单独计。
+图 3-5（id f45）
+  · 每个 panel 一个 bench，规则同 3-1，横轴 0–100；没有分数的模型不画，整个 panel 没有分数时不出。行名用完整 name，放不下折两行。
+图例（图 3-x）：只列这张图里出现的厂商，按 vendors.json 的 groups（主分组）分组（组名在前），组内按 vendors.json 顺序。
+计数：首屏「前沿 N 个 + 大厂与开源 M 个已发布模型」＝带 / 不带「前沿」标签的厂商里 status≠internal 的模型数；内部代号模型单独计。
 第 1 章后 3 条结论：check_ch1() 用数据重算关键数字，与 i18n/static.json 的 blocks.ch1 对不上就构建失败。
 """
-import datetime as dt, html, json, math, os, re, sys
+import datetime as dt, html, itertools, json, math, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -114,16 +112,20 @@ def subst(x, mp):
 VEN = VJ['vendors']; VK = {v['key']: v for v in VEN}; VORD = [v['key'] for v in VEN]
 VGROUPS = VJ['groups']; GK = {g['key']: g for g in VGROUPS}
 for v in VEN: assert v['group'] in GK, ('vendors.json：厂商的 group 不在 groups 里', v['key'], v['group'])
-def chapter_of(vk): return GK[VK[vk]['group']]['chapter']
+TAGS = [g['key'] for g in VGROUPS]                                 # 顶栏筛选器的标签＝groups 的 key（前沿 / 大厂 / 开源）
+for v in VEN:
+    v.setdefault('tags', [v['group']])
+    assert v['group'] in v['tags'] and all(t in GK for t in v['tags']), ('vendors.json：tags 必须含 group，且都在 groups 里', v['key'], v['tags'])
+def tags_of(vk): return ' '.join(t for t in TAGS if t in VK[vk]['tags'])   # 按 groups 顺序，空格分隔（CSS 选择器用整串比较）
+def dtags(vk): return ' data-tags="%s"' % tags_of(vk)
+def is_frontier(vk): return 'frontier' in VK[vk]['tags']
 BEN = D['benches']; BK = {b['key']: b for b in BEN}
 ALLM = D['models']                                                # 全部模型（第 4 章）
 for m in ALLM:
     assert m['vendor'] in VK, ('vendors.json 里没有这个厂商', m['vendor'], m['name'])
     for k in m.get('scores', {}): assert k in BK, ('models.json 里没有这个 bench', k, m['name'])
-MODELS = [m for m in ALLM if chapter_of(m['vendor']) == 2]       # 第 2 章（前沿）：表 2-1、图 2-1、首屏计数
-M3 = [m for m in ALLM if chapter_of(m['vendor']) == 3]           # 第 3 章（大厂与开源）：表 3-1、图 3-2
-CH3 = D['meta']['chapters']['ch3']
-SNAP3 = CH3['snapshot']
+MODELS = [m for m in ALLM if is_frontier(m['vendor'])]           # 带「前沿」标签的厂商：首屏计数、第 1 章核对
+M3 = [m for m in ALLM if not is_frontier(m['vendor'])]           # 其余（大厂与开源）：首屏计数、第 1 章核对
 SNAP = D['meta']['snapshot']
 UI = D['ui']
 def ui(k, **kw): return subst(UI[k], kw)
@@ -144,11 +146,8 @@ def row_order(models):
         inn.sort(key=lambda m: -day(m['trained']['end']).toordinal())
         if pub or inn: out.append((vk, pub + inn))
     return out
-ROWS = row_order(MODELS)
-FLAT = [m for _, ms in ROWS for m in ms]
-ROWS3 = row_order(M3)
-FLAT3 = [m for _, ms in ROWS3 for m in ms]
-FLAT_ALL = FLAT + FLAT3                                            # 第 4 章：同分时按 表 2-1 → 表 3-1 的行序
+ROWS = row_order(ALLM)                                            # 表 2-1：全部模型，按厂商分组
+FLAT_ALL = [m for _, ms in ROWS for m in ms]                      # 第 3 章（图 3-x）：同分时按表 2-1 的行序
 
 def dense_rank(vals, lower=False):
     u = sorted(set(vals), reverse=not lower)[:3]
@@ -160,24 +159,13 @@ def price_txt(p, nxt):
 def price_plain(p):
     return ('$%d' % p) if float(p) == int(p) else ('$%.2f' % p)
 
-def bench_groups():
-    """表 2-1 的列：benches 里 group 属于 t21.groups 的（按 JSON 顺序）。其余 bench 只给表 3-1 用（t31.groups[].cols 点名）。"""
-    gs = []
-    for g in D['t21']['groups']:
-        if g['key'] == 'basic': gs.append((g, ['release', 'price_in', 'price_out'])); continue
-        ks = [b['key'] for b in BEN if b['group'] == g['key']]
-        if ks: gs.append((g, ks))
-    return gs
-GROUPS = bench_groups()
-BENCH_ORDER = [k for g, ks in GROUPS if g['key'] != 'basic' for k in ks]
-T31_BASIC = ('release', 'price_in', 'price_out', 'license', 'params')
-T31_COLS = [k for g in D['t31']['groups'] for k in g['cols']]
-for k in T31_COLS: assert k in T31_BASIC or k in BK, ('t31.groups[].cols 里有不认识的列', k)
-for b in BEN:
-    assert b['key'] in BENCH_ORDER or b['key'] in T31_COLS, ('bench 既不在 t21.groups 的组里，也不在 t31 的列配置里', b['key'], b['group'])
+T21_BASIC = ('release', 'price_in', 'price_out', 'license', 'params')
+T21_COLS = [k for g in D['t21']['groups'] for k in g['cols']]
+for k in T21_COLS: assert k in T21_BASIC or k in BK, ('t21.groups[].cols 里有不认识的列', k)
+for b in BEN: assert b['key'] in T21_COLS, ('bench 不在 t21.groups[].cols 里（表 2-1 不出这一列）', b['key'])
 
 def price_max(side, models=None):
-    v = [m['price'][side] for m in (MODELS if models is None else models) if m['status'] == 'public' and 'price' in m]
+    v = [m['price'][side] for m in (ALLM if models is None else models) if m['status'] == 'public' and 'price' in m]
     return max(v)
 
 
@@ -203,85 +191,6 @@ def ow_suffix(x):
     if 'open_weights' not in x: return ''
     return ui('ow_tip_open' if x['open_weights'] else 'ow_tip_closed')
 
-# ------------------------------------------------------------------ 表 2-1
-def t21():
-    L_ = D['layout']['t21']
-    pin_max, pout_max = price_max('in'), price_max('out')
-    rel = [day(m['release']) for m in MODELS if 'release' in m]
-    rmin, rmax = min(rel), max(rel)
-    colv = {k: [m['scores'][k]['v'] for m in FLAT if k in m.get('scores', {})] for k in BENCH_ORDER}
-    ranks = {k: dense_rank(colv[k], BK[k]['direction'] == 'lower') for k in BENCH_ORDER}
-    first = set(ks[0] for g, ks in GROUPS)
-    widths = [L_['model'], L_['release'], L_['price_in'], L_['price_out']] + [L_['bench']] * len(BENCH_ORDER)
-    ncol = len(widths)
-    h = ['<div class="tblwrap wide" id="t21"%s><table style="width:%sem"><colgroup>' % (att('data-toc', D['t21']['toc']), f3(sum(widths)))]
-    h += ['<col style="width:%sem">' % f3(w) for w in widths]
-    c0 = D['t21']['c0']
-    h.append('</colgroup><thead><tr><th rowspan="2" class="c0"%s>%s</th>' % (att('data-tip', c0['tip']), TX(c0['label'])))
-    for g, ks in GROUPS:
-        h.append('<th colspan="%d" class="gh gs"%s>%s</th>' % (len(ks), att('data-tip', g['tip']), TX(g['label'])))
-    h.append('</tr><tr class="h2">')
-    bs = D['t21']['basic']
-    h.append('<th class="num gs"%s>%s</th>' % (att('data-tip', bs['release']['tip']), TX(bs['release']['label'])))
-    h.append('<th class="num"%s>%s</th>' % (att('data-tip', subst(bs['price_in']['tip'], {'max': price_plain(pin_max)})), TX(bs['price_in']['label'])))
-    h.append('<th class="num"%s>%s</th>' % (att('data-tip', subst(bs['price_out']['tip'], {'max': price_plain(pout_max)})), TX(bs['price_out']['label'])))
-    for k in BENCH_ORDER:
-        b = BK[k]
-        h.append('<th class="num%s"%s>%s</th>' % (' gs' if k in first else '', att('data-tip', bi(b['desc']) + ui('count_suffix', n=len(colv[k]))), TX(b['label'])))
-        if est_bi(b['label'], 0.93) > L_['bench']: warn('表 2-1 列「%s」表头可能放不下（估 %.2fem > %.3fem）' % (bi(b['label']).zh, est_bi(b['label'], .93), L_['bench']))
-    h.append('</tr></thead><tbody>')
-    for vk, ms in ROWS:
-        v = VK[vk]
-        h.append('<tr class="grp"><td colspan="%d"><span class="gl"><span class="sw k-%s"></span>%s</span></td></tr>' % (ncol, vk, TX(v['name'])))
-        for m in ms:
-            tag = m.get('tag')
-            nm = TX(m['name']) + ('<span class="tag"%s>%s</span>' % (att('data-tip', tag['tip']), TX(tag['text'])) if tag else '') + ow_tag(m)
-            if max(est_em(bi(m['name']).get(l)) + (est_em(bi(tag['text']).get(l), 0.78) if tag else 0) + (est_em(bi(ui('ow_closed')).get(l), 0.78) if ow_of(m) is not None else 0) for l in ('zh', 'en'))  + 0.4 > L_['model']: warn(   # 小标字号 .78em
-                '表 2-1 模型名「%s」可能放不下模型列' % bi(m['name']).zh)
-            h.append('<tr class="v-%s"><td class="mn c0 noterm"><span class="sw k-%s"></span>%s</td>' % (vk, vk, nm))
-            if 'release' in m:
-                d = day(m['release']); w = 8 + 92 * (d - rmin).days / ((rmax - rmin).days or 1)
-                tip = att('data-tip', m['release_tip']) if m.get('release_tip') else ''
-                h.append('<td class="num cb nb gs"%s style="--w:%s%%">%s%s</td>' % (tip, f1(w), m['release'][5:], '<sup>*</sup>' if m.get('release_star') else ''))
-            else:
-                tr = m['trained']
-                h.append('<td class="num na gs"%s>%s</td>' % (att('data-tip', tr['tip']), TX(tr['label'])))
-            p = m.get('price')
-            for side, mx in (('in', pin_max), ('out', pout_max)):
-                if not p:
-                    bl = m.get('blank', {}).get('price_' + side)
-                    h.append('<td class="num na"%s>%s</td>' % (att('data-tip', bl['tip']) if bl and bl.get('tip') else '', TX(bl['d']) if bl else '—'))
-                    continue
-                tip = att('data-tip', p['tip']) if p.get('tip') else ''
-                txt = price_txt(p[side], p.get(side + '_next'))
-                if p[side] > mx:
-                    if m['status'] == 'public': warn('公开模型 %s 的价格超过最高价？' % bi(m['name']).zh)
-                    h.append('<td class="num cb nb over"%s>%s</td>' % (tip, txt))
-                else:
-                    h.append('<td class="num cb nb"%s style="--w:%s%%">%s</td>' % (tip, f1(max(1.5, p[side] / mx * 100)), txt))   # 最短 1.5%，免得 $0.10 看不见
-            for k in BENCH_ORDER:
-                b = BK[k]; gs = ' gs' if k in first else ''
-                c = m.get('scores', {}).get(k)
-                if c is None:
-                    bl = m.get('blank', {}).get(k)
-                    if bl:
-                        h.append('<td class="num na%s"%s>%s</td>' % (gs, att('data-tip', bl['tip']) if bl.get('tip') else '', TX(bl['d'])))
-                    else:
-                        h.append('<td class="num na%s">—</td>' % gs)
-                    continue
-                vals = colv[k]; lo, hi = min(vals), max(vals)
-                mode = b.get('bar', 'auto')
-                if mode == 'zero' or (mode == 'auto' and len(vals) < 5): w = c['v'] / hi * 100 if hi else 0
-                else: w = 8 + 92 * (c['v'] - lo) / (hi - lo) if hi > lo else 100
-                if b['direction'] == 'lower':   # 越低越好：色条反过来
-                    w = (lo / c['v'] * 100 if c['v'] else 100) if (mode == 'zero' or (mode == 'auto' and len(vals) < 5)) else (8 + 92 * (hi - c['v']) / (hi - lo) if hi > lo else 100)
-                r = ranks[k].get(c['v'])
-                tip = L('%s：%s%s。%s%s', '%s: %s%s. %s%s') % (b['name'], c['d'], b['unit'], ui('rank_col', n=r) if r else '', c['note'])
-                h.append('<td class="num cb%s%s" style="--w:%s%%"%s>%s</td>' % ((' r%d' % r) if r else '', gs, f1(w), att('data-tip', tip), TX(c['d'])))
-            h.append('</tr>')
-    h.append('</tbody></table></div>')
-    return ''.join(h)
-
 def hints(items, mp):
     out = ['<div class="hints">']
     for it in items:
@@ -289,11 +198,6 @@ def hints(items, mp):
         else: out.append('<span class="hint"%s>%s<i>?</i></span>' % (att('data-tiph', subst(it['tip'], mp)), TX(it['label'])))
     out.append('</div>')
     return ''.join(out)
-
-def t21_hints():
-    names = [bi(g['short']) for g, ks in GROUPS if g['key'] != 'basic']
-    return hints(D['t21']['hints'], {'n_bench': len(BENCH_ORDER), 'n_groups_zh': ndigit(len(names)), 'group_names': join(L('、', ', '), names),
-                                     'price_in_max': price_plain(price_max('in')), 'price_out_max': price_plain(price_max('out'))})
 
 # ------------------------------------------------------------------ 表 2-2
 def t22():
@@ -343,8 +247,9 @@ def t22_hints():
 def pos(d): return (day(d) - T0).days / SPAN * 100
 def f21_hl():
     return '<div class="hl" data-t0="%s" data-span="%d">' % (T0.isoformat(), SPAN)
-def lanes_html(chapter, snap, fig):
-    """chapter＝只画 vendors.json 里 group 属于这一章的泳道；snap＝该图的快照日（横轴、快照竖线都由它推导）。"""
+def lanes_html(snap, fig):
+    """全部模型泳道（vendors.json 的 timeline_lanes 顺序）；snap＝该图的快照日（横轴、快照竖线都由它推导）。
+    泳道名与轨道都带 data-tags（厂商标签），顶栏筛选器按它隐藏。"""
     t0, span, months = axis(snap)
     def ps(d): return (day(d) - t0).days / span * 100
     lines = ''.join('<i class="ml" style="left:%s%%"></i>' % f3((d - t0).days / span * 100) for d in months[1:])
@@ -353,7 +258,7 @@ def lanes_html(chapter, snap, fig):
     evs = D['timeline_events']
     for e in evs:
         assert any(l['lane'] == e['lane'] for l in VJ['timeline_lanes']), ('vendors.json 的 timeline_lanes 里没有这条泳道', e['lane'])
-    lanes = [ln for ln in VJ['timeline_lanes'] if chapter_of(ln['vendor']) == chapter]
+    lanes = VJ['timeline_lanes']
     lk = {ln['lane'] for ln in lanes}
     def visible(e):
         if 'end' in e: return ps(e['end']) >= 0 and ps(e['date']) <= 100
@@ -370,8 +275,8 @@ def lanes_html(chapter, snap, fig):
         sw = ('<span class="sw ho-%s"></span>' if ln.get('hollow_swatch') else '<span class="sw k-%s"></span>') % vk
         small = ''.join('<small class="pre noterm"%s>← %d/%d %s</small>' % (att('data-tip', L('%s：%s', '%s: %s') % (e['date'], e['tip']) + ow_suffix(e)), day(e['date']).month, day(e['date']).day, TX(e['label']))
                         for e in sorted(pre, key=lambda e: e['date']))
-        out.append('<div class="hl-lab li" data-key="%s"%s>%s%s%s</div>' % (vk, att('data-tip', ui('lane_tip', name=v['name'])), sw, TX(ln.get('label', v['name'])), small))
-        out.append('<div class="hl-track" data-lane="%s">%s' % (ln['lane'], lines))
+        out.append('<div class="hl-lab li" data-key="%s"%s%s>%s%s%s</div>' % (vk, dtags(vk), att('data-tip', ui('lane_tip', name=v['name'])), sw, TX(ln.get('label', v['name'])), small))
+        out.append('<div class="hl-track" data-lane="%s"%s>%s' % (ln['lane'], dtags(vk), lines))
         for e in es:
             if 'end' in e:
                 a, b = max(0.0, ps(e['date'])), min(100.0, ps(e['end']))   # 区间节点裁到横轴内
@@ -384,7 +289,7 @@ def lanes_html(chapter, snap, fig):
                     ('<span class="tag">%s</span>' % TX(e['tag'])) if e.get('tag') else ''))
         out.append('</div>')
     return ''.join(out)
-def f21_lanes(): return lanes_html(2, SNAP, '图 2-1')
+def f21_lanes(): return lanes_html(SNAP, '图 2-1')
 
 def axis_html(snap, tip='snap_tip', short_tip='snap_short_tip'):
     """时间轴底部刻度行：每月 1 日一个刻度（含 t0），快照日一个「M/D 快照」标签。
@@ -401,65 +306,68 @@ def axis_html(snap, tip='snap_tip', short_tip='snap_short_tip'):
     return ''.join(out)
 def f21_axis(): return axis_html(SNAP)
 
-# ------------------------------------------------------------------ 第 3 章：表 3-1、图 3-2、章首快照行
+# ------------------------------------------------------------------ 表 2-1（全部模型；2026-11-24 由原表 2-1、表 3-1 合并）
 def dplain(d):
     """格子显示值去掉角标（<sup>AA</sup> 等），给提示文字用。"""
     return bi(d).map(lambda x: re.sub(r'<sup>.*?</sup>', '', x))
-def t31_layout():
-    """表 3-1 实际出的列：配置里点名的列，去掉本章一个分数都没有的 bench 列；组里没有列时整组不出。"""
-    T = D['t31']; gs = []
+def t21_layout():
+    """表 2-1 实际出的列：配置里点名的列，去掉一个分数都没有的 bench 列；组里没有列时整组不出。"""
+    T = D['t21']; gs = []
     for g in T['groups']:
         ks = []
         for k in g['cols']:
-            if k in T31_BASIC: ks.append(k); continue
-            if not any(k in m.get('scores', {}) for m in FLAT3):
-                warn('表 3-1 列「%s」本章没有任何分数，不出（数据里有了分数会自动出现）' % bi(BK[k]['name']).zh); continue
+            if k in T21_BASIC: ks.append(k); continue
+            if not any(k in m.get('scores', {}) for m in FLAT_ALL):
+                warn('表 2-1 列「%s」没有任何分数，不出（数据里有了分数会自动出现）' % bi(BK[k]['name']).zh); continue
             ks.append(k)
         if ks: gs.append((g, ks))
     return gs
-G31 = t31_layout()
-B31 = [k for g, ks in G31 for k in ks if k not in T31_BASIC]
-def t31():
-    T = D['t31']; L_ = D['layout']['t31']
-    pin_max, pout_max = price_max('in', M3), price_max('out', M3)
-    rel = [day(m['release']) for m in M3 if 'release' in m]
+GROUPS = t21_layout()
+BENCH_ORDER = [k for g, ks in GROUPS for k in ks if k not in T21_BASIC]
+def t21():
+    T = D['t21']; L_ = D['layout']['t21']
+    pin_max, pout_max = price_max('in'), price_max('out')
+    rel = [day(m['release']) for m in ALLM if 'release' in m]
     rmin, rmax = min(rel), max(rel)
-    colv = {k: [m['scores'][k]['v'] for m in FLAT3 if k in m.get('scores', {})] for k in B31}
-    ranks = {k: dense_rank(colv[k], BK[k]['direction'] == 'lower') for k in B31}
-    first = set(ks[0] for g, ks in G31)
-    order = [k for g, ks in G31 for k in ks]
+    colv = {k: [m['scores'][k]['v'] for m in FLAT_ALL if k in m.get('scores', {})] for k in BENCH_ORDER}
+    ranks = {k: dense_rank(colv[k], BK[k]['direction'] == 'lower') for k in BENCH_ORDER}
+    first = set(ks[0] for g, ks in GROUPS)
+    order = [k for g, ks in GROUPS for k in ks]
     widths = [L_['model']] + [L_.get(k, L_['bench']) for k in order]
     ncol = len(widths)
-    h = ['<div class="tblwrap wide" id="t31"%s><table style="width:%sem"><colgroup>' % (att('data-toc', T['toc']), f3(sum(widths)))]
+    h = ['<div class="tblwrap wide" id="t21"%s><table style="width:%sem"><colgroup>' % (att('data-toc', T['toc']), f3(sum(widths)))]
     h += ['<col style="width:%sem">' % f3(w) for w in widths]
     h.append('</colgroup><thead><tr><th rowspan="2" class="c0"%s>%s</th>' % (att('data-tip', T['c0']['tip']), TX(T['c0']['label'])))
-    for g, ks in G31:
+    for g, ks in GROUPS:
         h.append('<th colspan="%d" class="gh gs"%s>%s</th>' % (len(ks), att('data-tip', g['tip']), TX(g['label'])))
     h.append('</tr><tr class="h2">')
     bs = T['basic']
     for k in order:
         gs = ' gs' if k in first else ''
-        if k in T31_BASIC:
+        if k in T21_BASIC:
             tip = subst(bs[k]['tip'], {'max': price_plain(pin_max if k == 'price_in' else pout_max)})
             h.append('<th class="num%s"%s>%s</th>' % (gs, att('data-tip', tip), TX(bs[k]['label'])))
         else:
             b = BK[k]
             h.append('<th class="num%s"%s>%s</th>' % (gs, att('data-tip', bi(b['desc']) + ui('count_suffix', n=len(colv[k]))), TX(b['label'])))
-            if est_bi(b['label'], 0.93) > L_.get(k, L_['bench']): warn('表 3-1 列「%s」表头可能放不下（估 %.2fem > %.3fem）' % (bi(b['label']).zh, est_bi(b['label'], .93), L_.get(k, L_['bench'])))
+            if est_bi(b['label'], 0.93) > L_.get(k, L_['bench']): warn('表 2-1 列「%s」表头可能放不下（估 %.2fem > %.3fem）' % (bi(b['label']).zh, est_bi(b['label'], .93), L_.get(k, L_['bench'])))
     h.append('</tr></thead><tbody>')
-    for vk, ms in ROWS3:
-        v = VK[vk]; g = GK[v['group']]
-        h.append('<tr class="grp"><td colspan="%d"><span class="gl"><span class="sw k-%s"></span>%s<small class="gk"%s>%s</small></span></td></tr>' % (
-            ncol, vk, TX(v['name']), att('data-tip', g['tip']), TX(g['label'])))
+    for vk, ms in ROWS:
+        v = VK[vk]
+        gk = ''.join('<small class="gk"%s>%s</small>' % (att('data-tip', GK[tg]['tip']), TX(GK[tg]['label'])) for tg in tags_of(vk).split())
+        h.append('<tr class="grp"%s><td colspan="%d"><span class="gl"><span class="sw k-%s"></span>%s%s</span></td></tr>' % (dtags(vk), ncol, vk, TX(v['name']), gk))
         for m in ms:
             tag = m.get('tag')
             nm = TX(m['name']) + ('<span class="tag"%s>%s</span>' % (att('data-tip', tag['tip']), TX(tag['text'])) if tag else '') + ow_tag(m)
             if max(est_em(bi(m['name']).get(l)) + (est_em(bi(tag['text']).get(l), 0.78) if tag else 0) + (est_em(bi(ui('ow_closed')).get(l), 0.78) if ow_of(m) is not None else 0) for l in ('zh', 'en')) + 0.4 > L_['model']:
-                warn('表 3-1 模型名「%s」可能放不下模型列' % bi(m['name']).zh)
-            h.append('<tr class="v-%s"><td class="mn c0 noterm"%s><span class="sw k-%s"></span>%s</td>' % (vk, att('data-tip', m['row_tip']) if m.get('row_tip') else '', vk, nm))
+                warn('表 2-1 模型名「%s」可能放不下模型列' % bi(m['name']).zh)
+            h.append('<tr class="v-%s"%s><td class="mn c0 noterm"%s><span class="sw k-%s"></span>%s</td>' % (vk, dtags(vk), att('data-tip', m['row_tip']) if m.get('row_tip') else '', vk, nm))
             for k in order:
                 gs = ' gs' if k in first else ''
-                if k == 'release':
+                if k == 'release' and 'release' not in m:          # 内部代号模型：发布列写训练完成时间
+                    tr = m['trained']
+                    h.append('<td class="num na%s"%s>%s</td>' % (gs, att('data-tip', tr['tip']), TX(tr['label'])))
+                elif k == 'release':
                     d = day(m['release']); w = 8 + 92 * (d - rmin).days / ((rmax - rmin).days or 1)
                     tip = att('data-tip', m['release_tip']) if m.get('release_tip') else ''
                     h.append('<td class="num cb nb%s"%s style="--w:%s%%">%s%s</td>' % (gs, tip, f1(w), m['release'][5:], '<sup>*</sup>' if m.get('release_star') else ''))
@@ -471,14 +379,19 @@ def t31():
                         continue
                     tip = att('data-tip', p['tip']) if p.get('tip') else ''
                     txt = price_txt(p[side], p.get(side + '_next'))
-                    if p[side] > mx: h.append('<td class="num cb nb over%s"%s>%s</td>' % (gs, tip, txt))
+                    if p[side] > mx:
+                        if m['status'] == 'public': warn('公开模型 %s 的价格超过最高价？' % bi(m['name']).zh)
+                        h.append('<td class="num cb nb over%s"%s>%s</td>' % (gs, tip, txt))
                     else: h.append('<td class="num cb nb%s"%s style="--w:%s%%">%s</td>' % (gs, tip, f1(max(1.5, p[side] / mx * 100)), txt))
                 elif k in ('license', 'params'):
                     x = m.get(k)
+                    if not x and m['status'] != 'internal':      # 没写 license / params 的闭源模型（前沿三家）：否 / 未公开
+                        if k == 'license' and ow_of(m) is False: x = {'d': UI['license_closed'], 'tip': UI['license_closed_tip']}
+                        elif k == 'params': h.append('<td class="num na%s"%s>—</td>' % (gs, att('data-tip', UI['params_na_tip']))); continue
                     if not x: h.append('<td class="num na%s">—</td>' % gs); continue
-                    na = ' na' if (k == 'license' and m.get('license') and bi(x['d']).en == 'No') or bi(x['d']).zh == '—' else ''
+                    na = ' na' if (k == 'license' and bi(x['d']).en == 'No') or bi(x['d']).zh == '—' else ''
                     h.append('<td class="num%s%s"%s>%s</td>' % (na, gs, att('data-tip', x['tip']), TX(x['d'])))
-                    if est_bi(x['d'], 1.0) > L_[k]: warn('表 3-1「%s」的%s「%s」可能放不下' % (bi(m['name']).zh, k, bi(x['d']).en))
+                    if est_bi(x['d'], 1.0) > L_[k]: warn('表 2-1「%s」的%s「%s」可能放不下' % (bi(m['name']).zh, k, bi(x['d']).en))
                 else:
                     b = BK[k]; c = m.get('scores', {}).get(k)
                     if c is None:
@@ -498,23 +411,10 @@ def t31():
             h.append('</tr>')
     h.append('</tbody></table></div>')
     return ''.join(h)
-def t31_hints():
-    names = [bi(g['short']) for g, ks in G31 if g['key'] != 'basic']
-    return hints(D['t31']['hints'], {'n_models': len(FLAT3), 'n_bench': len(B31), 'n_groups_zh': ndigit(len(names)), 'group_names': join(L('、', ', '), names),
-                                     'price_in_max': price_plain(price_max('in', M3)), 'price_out_max': price_plain(price_max('out', M3))})
-def ch3_meta():
-    return '<p class="meta">%s</p>' % TX(subst(CH3['label'], {'snapshot': SNAP3, 'n': len(FLAT3)}))
-def f32():
-    F = D['f32']; t0, span, months = axis(SNAP3)
-    top = ''.join('<i class="mt" style="left:%s%%">%s</i>' % (f3((d - t0).days / span * 100), TX(ui('month', m=d.month, mon=MONTH_EN[d.month - 1]))) for d in months)
-    leg = ('<div class="legend"><span class="li2"><i class="pd lg"></i>%s</span><span class="li2"><i class="pd lg ho"></i>%s</span><span class="li2"><i class="vd"></i>%s</span></div>' % (
-        TX(F['l_solid']), TX(F['l_hollow']), TX(F['l_snap'])))
-    return ('<figure id="f32" class="bleedw"%s><figcaption>%s%s</figcaption>%s<div class="hl" data-t0="%s" data-span="%d">'
-            '<div class="hl-lab ax top"></div><div class="hl-axis top">%s<b class="hl-date" aria-hidden="true"></b></div>%s'
-            '<div class="hl-lab ax"></div>%s<i class="hl-cur"><b></b></i></div></figure>') % (
-        att('data-toc', F['toc']), TX(F['caption']), ''.join('<span class="hint"%s>%s<i>?</i></span>' % (att('data-tiph', subst(x['tip'], {'snapshot': SNAP3})), TX(x['label'])) for x in F['hints']),
-        leg, t0.isoformat(), span, top, lanes_html(3, SNAP3, '图 3-2'), axis_html(SNAP3, 'snap3_tip', 'snap3_short_tip'))
-
+def t21_hints():
+    names = [bi(g['short']) for g, ks in GROUPS if g['key'] != 'basic']
+    return hints(D['t21']['hints'], {'n_models': len(FLAT_ALL), 'n_bench': len(BENCH_ORDER), 'n_groups_zh': ndigit(len(names)), 'group_names': join(L('、', ', '), names),
+                                     'price_in_max': price_plain(price_max('in')), 'price_out_max': price_plain(price_max('out'))})
 # ------------------------------------------------------------------ 第 4 章：图 4-1…4-5（全部模型）
 def legend(keys, extra=''):
     """图例按厂商分组（vendors.json 的 groups 顺序）：组名 + 组内厂商色块。只列这张图里出现的厂商。"""
@@ -522,8 +422,9 @@ def legend(keys, extra=''):
     for g in VGROUPS:
         ks = [k for k in VORD if k in keys and VK[k]['group'] == g['key']]
         if not ks: continue
-        parts.append('<span class="lgg"><span class="lgn"%s>%s</span>%s</span>' % (att('data-tip', g['tip']), TX(g['label']), ''.join(
-            '<span class="li" data-key="%s"%s><i class="sw k-%s"></i>%s</span>' % (k, att('data-tip', VK[k]['legend_tip']), k, TX(VK[k]['name'])) for k in ks)))
+        gt = ' '.join(t for t in TAGS if any(t in VK[k]['tags'] for k in ks))    # 组内全部厂商都被筛掉时整组隐藏
+        parts.append('<span class="lgg" data-tags="%s"><span class="lgn"%s>%s</span>%s</span>' % (gt, att('data-tip', g['tip']), TX(g['label']), ''.join(
+            '<span class="li" data-key="%s"%s%s><i class="sw k-%s"></i>%s</span>' % (k, dtags(k), att('data-tip', VK[k]['legend_tip']), k, TX(VK[k]['name'])) for k in ks)))
     return '<div class="legend">' + ''.join(parts) + extra + '</div>'
 def axis_of(F, vals, name):
     a = dict(F['axis'])
@@ -549,7 +450,7 @@ def price_pair(p):
     po = price_plain(p['out']) + (' → %s' % price_plain(p['out_next']) if 'out_next' in p else '')
     return pi, po
 def fig_head(fid, F, a=None):
-    mp = {'snapshot': SNAP, 'snapshot3': SNAP3}
+    mp = {'snapshot': SNAP}
     if a: mp.update({'min': t2(a['min']), 'max': t2(a['max'])})
     return '<figure id="%s"%s><figcaption>%s<span class="hint"%s>%s<i>?</i></span></figcaption>' % (
         fid, att('data-toc', F['toc']), TX(F['caption']), att('data-tiph', subst(F['source_tip'], mp)), TX(ui('source')))
@@ -576,8 +477,8 @@ def rank_fig(fid):
             tip = tip + ui('api_price', pin=pi, pout=po)
         else: x = cost_of(m, k, fig)
         mark = '<span class="mark dot" style="left:%s%%"></span>' % pct if F['mark'] == 'dot' else '<span class="mark bar" style="width:%s%%"></span>' % pct
-        h.append('<div class="row c4" data-key="%s"%s><span class="nm noterm"><i class="sw k-%s"></i><span>%s%s</span></span><span class="track d%d">%s</span><span class="v">%s</span><span class="x">%s</span></div>' % (
-            m['vendor'], att('data-tip', tip + ow_suffix(m)), m['vendor'], TX(fname(m)), ow_tag(m), a['n'], mark, TX(c['d']), x))
+        h.append('<div class="row c4" data-key="%s"%s%s><span class="nm noterm"><i class="sw k-%s"></i><span>%s%s</span></span><span class="track d%d">%s</span><span class="v">%s</span><span class="x">%s</span></div>' % (
+            m['vendor'], dtags(m['vendor']), att('data-tip', tip + ow_suffix(m)), m['vendor'], TX(fname(m)), ow_tag(m), a['n'], mark, TX(c['d']), x))
     h.append('<div class="row ax c4">%s</div></figure>' % ticks(a, 2))
     return ''.join(h)
 def f45():
@@ -591,8 +492,8 @@ def f45():
         for m in rows:
             c = m['scores'][k]
             tip = L('%s：%s %s%s。%s', '%s: %s %s%s. %s') % (m['name'], p['title'], dplain(c['d']), BK[k]['unit'], c['note'])   # 用面板标题，不用 bench.name
-            h.append('<div class="row c3" data-key="%s"%s><span class="nm noterm"><i class="sw k-%s"></i><span>%s%s</span></span><span class="track d%d"><span class="mark bar" style="width:%s%%"></span></span><span class="v">%s</span></div>' % (
-                m['vendor'], att('data-tip', tip + ow_suffix(m)), m['vendor'], TX(fname(m)), ow_tag(m), a['n'], t2((c['v'] - a['min']) / (a['max'] - a['min']) * 100), TX(c['d'])))
+            h.append('<div class="row c3" data-key="%s"%s%s><span class="nm noterm"><i class="sw k-%s"></i><span>%s%s</span></span><span class="track d%d"><span class="mark bar" style="width:%s%%"></span></span><span class="v">%s</span></div>' % (
+                m['vendor'], dtags(m['vendor']), att('data-tip', tip + ow_suffix(m)), m['vendor'], TX(fname(m)), ow_tag(m), a['n'], t2((c['v'] - a['min']) / (a['max'] - a['min']) * 100), TX(c['d'])))
         h.append('<div class="row ax c3">%s</div></div>' % ticks(a, 1))
     h.append('</div></figure>')
     return ''.join(h)
@@ -624,8 +525,8 @@ def f44():
         pi, po = price_pair(m['price'])
         tip = subst(F['tip'], {'name': m['name'], 'pout': po, 'pin': pi, 'aa': dplain(c['d']),
                                'ow': subst(F['ow_yes'], {'lic': m['license']['d']}) if ow else F['ow_no']})
-        dots.append('<span class="spt%s" data-key="%s" style="left:%s%%;bottom:%s%%%s"%s><i class="mark"></i><span class="pl noterm">%s</span></span>' % (
-            ' ow' if ow else '', m['vendor'], f3(px(m['price']['out'])), f3(py(c['v'])), dx, att('data-tip', tip), TX(fname(m))))   # 标签只留文字：点本身就是同色方块
+        dots.append('<span class="spt%s" data-key="%s"%s style="left:%s%%;bottom:%s%%%s"%s><i class="mark"></i><span class="pl noterm">%s</span></span>' % (
+            ' ow' if ow else '', m['vendor'], dtags(m['vendor']), f3(px(m['price']['out'])), f3(py(c['v'])), dx, att('data-tip', tip), TX(fname(m))))   # 标签只留文字：点本身就是同色方块
     extra = ('<span class="li2"><i class="ptl"></i>%s</span><span class="li2"><i class="ptl ow"></i>%s</span>' % (TX(F['legend_solid']), TX(F['legend_hollow'])))
     h = [fig_head('f44', F), legend({m['vendor'] for m in pts}, extra),
          '<div class="sc"><div class="sc-yl">%s</div><div class="sc-plot">%s%s</div><div class="sc-xl">%s</div></div>' % (TX(F['ylabel']), grid, ''.join(dots), TX(F['xlabel']))]
@@ -737,8 +638,14 @@ C34_CSS = """.tag.ow-o{border-color:var(--ink3);color:var(--ink2)}
 .tag.ow-c{border-color:transparent;background:var(--soft);color:var(--ink3)}
 tr.grp .gk{font-weight:400;color:var(--ink3);font-size:.9em;margin-left:8px;cursor:help}
 .hl-lab small.pre{font-weight:400;color:var(--ink3);white-space:normal;line-height:1.25;cursor:help}
-#f32 .hl-lab:not(.ax){display:block;white-space:normal;line-height:1.25}
-#f32 .hl-lab small{display:block}
+#f21 .hl-lab.li{display:block;white-space:normal;line-height:1.25}
+#f21 .hl-lab.li small{display:block}
+#flt{display:inline-flex;flex:none;border:1px solid var(--line);height:18px;line-height:16px;margin-right:6px}
+#flt button{padding:0 6px;color:var(--ink2)}
+#flt button+button{border-left:1px solid var(--line)}
+#flt button.on{background:var(--ink);color:var(--bg)}
+#flt button:not(.on){text-decoration:line-through;color:var(--ink3)}
+#flt button:not(.on):hover,#flt button.on:hover{background:var(--hover);color:var(--ink)}
 #s4 .row{height:auto;min-height:26px;padding-top:2px;padding-bottom:2px}
 #s4 .row.hd{min-height:22px}#s4 .row.ax{min-height:18px;padding-top:0;padding-bottom:0}
 #s4 .row .nm{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.2;display:flex;align-items:baseline}
@@ -769,9 +676,16 @@ tr.grp .gk{font-weight:400;color:var(--ink3);font-size:.9em;margin-left:8px;curs
 .sc .spt:hover .mark{outline:1px solid var(--ink);outline-offset:1px}
 .sc .spt:hover .pl{color:var(--ink);background:var(--bg)}
 figure p.note{margin-top:4px}"""
+def flt_css():
+    """顶栏筛选：<html data-off="关掉的标签…">。元素的 data-tags 里每个标签都被关掉时隐藏（标签之间是「或」）。"""
+    out = []
+    for n in range(1, len(TAGS) + 1):
+        for combo in itertools.combinations(TAGS, n):
+            out.append(':root%s [data-tags="%s"]' % (''.join('[data-off~=%s]' % t for t in combo), ' '.join(combo)))
+    return ',\n'.join(out) + '{display:none!important}'
 def c34_css():
     ks = ''.join('.sc .spt[data-key=%s]{--vc:var(%s)}' % (v['key'], v['css_var']) for v in VEN)
-    return '<style id="c34-css">\n/* build_tables.py 生成：第 3、4 章（表 3-1、图 3-2、图 4-x 分组图例、图 4-4 散点）的样式 */\n%s\n%s\n</style>' % (C34_CSS, ks)
+    return '<style id="c34-css">\n/* build_tables.py 生成：表 2-1 组标题标签、图 2-1 泳道小字、顶栏标签筛选、图 3-x 分组图例、图 3-4 散点的样式 */\n%s\n%s\n%s\n</style>' % (C34_CSS, ks, flt_css())
 C34_JS = r"""
 /* ---- fig 4-4 scatter: place point labels without overlaps (read everything, then write); a label with no free slot is hidden, the tooltip still has it ---- */
 function fitScatter(){
@@ -798,11 +712,43 @@ function fitScatter(){
 }
 var relayout1=relayout;
 relayout=function(){relayout1();fitScatter()};
+
+/* ---- top-bar tag filter (Frontier / Big Tech / Open-weight): tags that are off go into <html data-off>; CSS hides every [data-tags] whose tags are all off.
+   Click toggles one tag, Shift-click keeps only that tag; at least one tag stays on. Saved as mdl-off. ---- */
+(function(){
+  var box=$('#flt');if(!box)return;
+  var ALL=$$('[data-flt]',box).map(function(b){return b.getAttribute('data-flt')});
+  function cur(){return (R.getAttribute('data-off')||'').split(' ').filter(function(k){return ALL.indexOf(k)>=0})}
+  function apply(off,init){
+    if(off.length)R.setAttribute('data-off',off.join(' '));else R.removeAttribute('data-off');
+    $$('[data-flt]',box).forEach(function(b){var on=off.indexOf(b.getAttribute('data-flt'))<0;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false')});
+    if(!init){try{localStorage.setItem('mdl-off',off.join(' '))}catch(e){}hideTip();relayout()}
+  }
+  var off=[];try{off=(localStorage.getItem('mdl-off')||'').split(' ').filter(function(k){return ALL.indexOf(k)>=0})}catch(e){}
+  if(off.length>=ALL.length)off=[];
+  apply(off,true);if(off.length)relayout();
+  box.addEventListener('click',function(e){
+    var b=e.target.closest('[data-flt]');if(!b)return;
+    var k=b.getAttribute('data-flt'),c=cur(),nx;
+    if(e.shiftKey)nx=ALL.filter(function(x){return x!==k});
+    else nx=c.indexOf(k)>=0?c.filter(function(x){return x!==k}):c.concat([k]);
+    if(nx.length>=ALL.length)return;
+    apply(nx);
+  });
+})();
 """
 
 # ------------------------------------------------------------------ i18n/static.json 的固定文字块
 STR = SJ['strings']
 LANG_SWITCH = '<span id="lang" role="group" data-i18n-skip%s%s><button data-set="lang:zh" lang="zh-CN">中文</button><button data-set="lang:en" lang="en">EN</button></span>\n  '
+def flt_html():
+    """顶栏的标签筛选器：每个标签一个开关按钮（默认全开）。状态写在 <html data-off="…">，CSS 按它隐藏（c34css 的 flt_css）。"""
+    bs = ''.join('<button data-flt="%s" class="on" aria-pressed="true">%s</button>' % (g['key'], TX(g['label'])) for g in VGROUPS)
+    def who(l):
+        sep, colon = ('、', '：') if l == 'zh' else (', ', ': ')
+        return ''.join('<br><b>%s</b>%s%s' % (get(g['label'], l), colon, sep.join(get(v['name'], l) for v in VEN if g['key'] in v['tags'])) for g in VGROUPS)
+    tip = by(lambda l: get(UI['flt_tip'], l) + who(l))
+    return '<span id="flt" role="group"%s%s>%s</span>' % (att('aria-label', STR['flt_aria']), att('data-tiph', tip), bs)
 def render_tpl(name):
     t = SJ['templates'][name]
     def tx(m):
@@ -811,6 +757,7 @@ def render_tpl(name):
         k = m.group(2); assert k in STR, ('static.json strings 缺键', k); return att(m.group(1), STR[k])
     t = re.sub(r'\{\{t:([a-z0-9_]+)\}\}', tx, t)
     t = re.sub(r'\{\{a:([a-z-]+):([a-z0-9_]+)\}\}', at, t)
+    if '{{flt}}' in t: t = t.replace('{{flt}}', flt_html())
     if '{{lang}}' in t: t = t.replace('{{lang}}', LANG_SWITCH % (att('aria-label', STR['lang_aria']), att('data-tip', STR['lang_tip'])))
     assert '{{' not in t, (name, t[t.index('{{'):][:40])
     return t
@@ -905,10 +852,6 @@ src = put(src, 'f21axis', f21_axis())
 src = put(src, 't22hints', t22_hints())
 src = put(src, 't22', t22())
 src = put(src, 'c34css', c34_css())
-src = put(src, 'ch3meta', ch3_meta())
-src = put(src, 't31hints', t31_hints())
-src = put(src, 't31', t31())
-src = put(src, 'f32', f32())
 for fid in ('f41', 'f42', 'f43'): src = put(src, fid, rank_fig(fid))
 src = put(src, 'f44', f44())
 src = put(src, 'f45', f45())

@@ -1,7 +1,7 @@
 {
  "_readme": {
-  "zh": "厂商表：顺序＝表 2-1 / 表 3-1 分组顺序＝图 4-x 图例顺序。group 取 groups[].key，groups[].chapter 决定厂商的模型进哪一章（2＝前沿：表 2-1、图 2-1；3＝表 3-1、图 3-2；第 4 章取全部）。颜色（2026-11-22 第三版，官方品牌色系）：规则是「官方色优先，撞了取官方辅色，最后才派生」，每家只从 research/2026-11-22-brand-colors.json 里自己的官方色（公司主色 / 辅色 / 产品主色 / 产品辅色）选，组合搜索让 8 家两两最差的一对尽量大；color_src 写每个颜色的出处类型，derived=true 表示非官方派生色（现在是 xAI、智谱两家）。仍然撞色的对靠图里每行的「品牌色小方块 + 名字」区分，见 qa/palette_report.txt。全部 8 家的颜色都由 build_tables.py 写进 <style id=\"data-css\">（前沿三家同时也写在报告原 CSS 里，两处必须一致）。改颜色后跑 qa/palette_check.py。",
-  "en": "Vendor table: order = Table 2-1 / 3-1 group order = Fig 4-x legend order. group is a groups[].key; groups[].chapter decides which chapter a vendor's models go to (2 = frontier: Table 2-1, Fig 2-1; 3 = Table 3-1, Fig 3-2; chapter 4 takes everything). Colors (third version, 2026-11-22, official brand palettes): the rule is \"official colors first, an official secondary when they collide, a derived color only as a last resort\". Each vendor picks only from its own official colors in research/2026-11-22-brand-colors.json (company primary / secondary, product primary / secondary), and a combinatorial search maximizes the worst pair among the 8. color_src records where each color comes from; derived=true marks a non-official derived color (currently xAI and Zhipu). Pairs that still collide are told apart by the \"brand swatch + name\" on every row; see qa/palette_report.txt. build_tables.py writes all 8 vendors' colors into <style id=\"data-css\"> (the three frontier colors also sit in the report's own CSS; the two must match). Run qa/palette_check.py after changing colors."
+  "zh": "厂商表：顺序＝表 2-1 分组顺序＝图 3-x 图例顺序。group＝主分组（图例按它分组），tags＝筛选标签（顶栏「前沿 / 大厂 / 开源」筛选器；一家可以有多个，如 Google＝前沿＋大厂）。颜色（2026-11-22 第三版，官方品牌色系）：规则是「官方色优先，撞了取官方辅色，最后才派生」，每家只从 research/2026-11-22-brand-colors.json 里自己的官方色（公司主色 / 辅色 / 产品主色 / 产品辅色）选，组合搜索让 8 家两两最差的一对尽量大；color_src 写每个颜色的出处类型，derived=true 表示非官方派生色（现在是 xAI、智谱两家）。仍然撞色的对靠图里每行的「品牌色小方块 + 名字」区分，见 qa/palette_report.txt。全部 8 家的颜色都由 build_tables.py 写进 <style id=\"data-css\">（前沿三家同时也写在报告原 CSS 里，两处必须一致）。改颜色后跑 qa/palette_check.py。",
+  "en": "Vendor table: order = Table 2-1 group order = Fig 3-x legend order. group = primary group (legends group by it); tags = filter tags for the top-bar Frontier / Big Tech / Open-weight filter (a vendor can have several, e.g. Google = frontier + Big Tech). Colors (third version, 2026-11-22, official brand palettes): the rule is \"official colors first, an official secondary when they collide, a derived color only as a last resort\". Each vendor picks only from its own official colors in research/2026-11-22-brand-colors.json (company primary / secondary, product primary / secondary), and a combinatorial search maximizes the worst pair among the 8. color_src records where each color comes from; derived=true marks a non-official derived color (currently xAI and Zhipu). Pairs that still collide are told apart by the \"brand swatch + name\" on every row; see qa/palette_report.txt. build_tables.py writes all 8 vendors' colors into <style id=\"data-css\"> (the three frontier colors also sit in the report's own CSS; the two must match). Run qa/palette_check.py after changing colors."
  },
  "groups": [
   {
@@ -10,10 +10,9 @@
     "zh": "前沿",
     "en": "Frontier"
    },
-   "chapter": 2,
    "tip": {
-    "zh": "前沿三家：Google、Anthropic、OpenAI。第 2 章。",
-    "en": "The three frontier labs: Google, Anthropic, OpenAI. Chapter 2."
+    "zh": "前沿三家：Google（Gemini）、Anthropic（Claude）、OpenAI（ChatGPT）。",
+    "en": "The three frontier labs: Google (Gemini), Anthropic (Claude), OpenAI (ChatGPT)."
    }
   },
   {
@@ -22,10 +21,9 @@
     "zh": "大厂",
     "en": "Big Tech"
    },
-   "chapter": 3,
    "tip": {
-    "zh": "自研闭源大模型的大公司：xAI、Meta。第 3 章。",
-    "en": "Large companies with their own closed models: xAI, Meta. Chapter 3."
+    "zh": "自研大模型的大公司：Google、xAI、Meta。Google 同时是前沿。",
+    "en": "Large companies with their own models: Google, xAI, Meta. Google is also frontier."
    }
   },
   {
@@ -34,10 +32,9 @@
     "zh": "开源",
     "en": "Open-weight"
    },
-   "chapter": 3,
    "tip": {
-    "zh": "主力模型放出权重的公司：DeepSeek、Moonshot、智谱、Thinking Machines。第 3 章。",
-    "en": "Labs that release weights for their main models: DeepSeek, Moonshot, Zhipu, Thinking Machines. Chapter 3."
+    "zh": "主力模型放出权重的公司：DeepSeek、Moonshot、智谱、Thinking Machines。",
+    "en": "Labs that release weights for their main models: DeepSeek, Moonshot, Zhipu, Thinking Machines."
    }
   }
  ],
@@ -66,7 +63,11 @@
      "en": "Official company primary (Google blue, shared by Gemini)"
     }
    },
-   "derived": false
+   "derived": false,
+   "tags": [
+    "frontier",
+    "bigtech"
+   ]
   },
   {
    "key": "anthropic",
@@ -92,7 +93,10 @@
      "en": "Official company primary (clay)"
     }
    },
-   "derived": false
+   "derived": false,
+   "tags": [
+    "frontier"
+   ]
   },
   {
    "key": "openai",
@@ -118,7 +122,10 @@
      "en": "Official secondary (white): black is invisible on the dark background"
     }
    },
-   "derived": false
+   "derived": false,
+   "tags": [
+    "frontier"
+   ]
   },
   {
    "key": "xai",
@@ -144,7 +151,10 @@
      "en": "Not official, derived: a light neutral gray (mid gray in dark mode). The official colors are black and white (collide with OpenAI) and the UI blue #1084FE (collides with Google and the other blues); the gray level is kept apart from Zhipu and from the Nvidia compute gray"
     }
    },
-   "derived": true
+   "derived": true,
+   "tags": [
+    "bigtech"
+   ]
   },
   {
    "key": "meta",
@@ -170,7 +180,10 @@
      "en": "Official company primary (Meta blue). The secondary #0040DC would separate a little more from Google, but it comes only from a third-party icon, is unverified by Meta and has only 2.3:1 contrast on the dark background, so it is not used"
     }
    },
-   "derived": false
+   "derived": false,
+   "tags": [
+    "bigtech"
+   ]
   },
   {
    "key": "deepseek",
@@ -196,7 +209,10 @@
      "en": "Official secondary (--ds-color-brand-light-reverse). The primary #4D6BFE collides with Google blue"
     }
    },
-   "derived": false
+   "derived": false,
+   "tags": [
+    "open"
+   ]
   },
   {
    "key": "moonshot",
@@ -222,7 +238,10 @@
      "en": "Official product secondary (Kimi cyan #00F6FF): navy is unreadable on the dark background, so the brighter swatch from the same brand book is used"
     }
    },
-   "derived": false
+   "derived": false,
+   "tags": [
+    "open"
+   ]
   },
   {
    "key": "zhipu",
@@ -248,7 +267,10 @@
      "en": "Not official, derived: the official primary #141618 (near-black) lightened to graphite. The original collides with OpenAI; the other official color, #0B7FFF, collides with Google and the other blues; the gray level is kept apart from xAI and from the Nvidia compute gray"
     }
    },
-   "derived": true
+   "derived": true,
+   "tags": [
+    "open"
+   ]
   },
   {
    "key": "thinkingmachines",
@@ -274,7 +296,10 @@
      "en": "Official secondary color (--brand-lime in the thinkingmachines.ai site CSS). The primary colors are black, white and grays (colliding with OpenAI, xAI and Zhipu), the blues --brand-cobalt / --brand-azure collide with Google and Meta, and --brand-emerald collides with Anthropic under color-blindness simulation"
     }
    },
-   "derived": false
+   "derived": false,
+   "tags": [
+    "open"
+   ]
   }
  ],
  "timeline_lanes": [

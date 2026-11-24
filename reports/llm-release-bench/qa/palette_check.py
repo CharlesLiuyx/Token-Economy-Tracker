@@ -4,7 +4,7 @@
 输出（深浅两种主题）：
   1 最终 8 色与每个颜色的出处类型（vendors.json 的 color_src / derived）
   2 8 家两两全部 28 对的正常视力 ΔE 与 CVD ΔE（min(protan, deutan)），按最差排序；正常 <12 或 CVD <6 的标「撞色」——
-    这些对靠图里每行的「品牌色小方块 + 名字」区分（第 4 章图、散点标签、表 2-1 / 3-1、图例）
+    这些对靠图里每行的「品牌色小方块 + 名字」区分（第 3 章图、散点标签、表 2-1、图例）
   3 与算力泳道三色（Nvidia 灰、TPU＝Google 蓝、其他品红）的正常视力 ΔE（不同图，同一页）
   4 dataviz 校验器原样输出（相邻对 / 全部对），仅供参考：官方色多为黑白蓝，门槛不再作为硬要求
 用法：python3 qa/palette_check.py [validate_palette.py 所在目录]；结果写进 qa/palette_report.txt（要提交）。"""

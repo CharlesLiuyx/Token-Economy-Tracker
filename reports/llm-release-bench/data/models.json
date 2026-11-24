@@ -1,5 +1,5 @@
 {
- "_readme": "表 2-1、表 2-2、图 2-1 模型泳道、图 3-1~3-3、顶栏快照与模型计数的唯一数据源。改完跑 build_tables.py。字段说明见 ../MAINTAIN.md。",
+ "_readme": "表 2-1（全部模型）、表 2-2、图 2-1 模型泳道、图 3-1~3-5、顶栏快照与模型计数的唯一数据源。改完跑 build_tables.py。字段说明见 ../MAINTAIN.md。",
  "meta": {
   "snapshot": "2026-11-24",
   "title": {
@@ -21,35 +21,11 @@
      "en": "<b>How we checked</b>Snapshot date {snapshot}.<br>Release dates and prices are confirmed by at least two sources, except for restricted models."
     }
    }
-  ],
-  "chapters": {
-   "ch3": {
-    "snapshot": "2026-11-24",
-    "groups": [
-     "bigtech",
-     "open"
-    ],
-    "label": {
-     "zh": "快照 {snapshot} · 大厂 xAI、Meta · 开源 DeepSeek、Moonshot、智谱、Thinking Machines · {n} 个模型",
-     "en": "Snapshot {snapshot} · Big Tech xAI, Meta · Open-weight DeepSeek, Moonshot, Zhipu, Thinking Machines · {n} models"
-    }
-   }
-  }
+  ]
  },
  "layout": {
   "_readme": "列宽（em）。原表由浏览器实测得出；新增列沿用同组宽度。build_tables.py 会估算新内容所需宽度，超出时打印警告，需人工调大这里的值。",
   "t21": {
-   "model": 18.2,
-   "release": 4.34106,
-   "price_in": 4.496,
-   "price_out": 5.891,
-   "bench": 5.27135
-  },
-  "t22": {
-   "test": 14.574,
-   "model": 4.34106
-  },
-  "t31": {
    "model": 21.4,
    "release": 4.34106,
    "price_in": 4.496,
@@ -59,6 +35,10 @@
    "bench": 5.27135,
    "progb": 7.3,
    "swem": 7.3
+  },
+  "t22": {
+   "test": 14.574,
+   "model": 4.34106
   }
  },
  "t21": {
@@ -72,8 +52,8 @@
     "en": "Model"
    },
    "tip": {
-    "zh": "厂商色块 + 模型名。「受限」＝只对通过审核的机构开放。",
-    "en": "Vendor swatch + model name. \"Gated\" = available only to vetted organizations."
+    "zh": "厂商色块 + 模型名。悬停模型名看简介和没填进表的分数。小标签：受限（只对通过审核的机构开放）、仅订阅、已取代、将下线；开源 / 闭源。",
+    "en": "Vendor swatch + model name. Hover a name for a short profile and the scores left out of the table. Small tags: Gated (vetted organizations only), Plan only, Superseded, Retiring; Open / Closed."
    }
   },
   "groups": [
@@ -88,9 +68,16 @@
      "en": "Basics"
     },
     "tip": {
-     "zh": "发布日都在 2026 年。价格是 API 标准价，美元 / 每百万 token。",
-     "en": "All release dates are in 2026. Prices are standard API list prices, USD per million tokens."
-    }
+     "zh": "发布日都在 2026 年。价格是 API 标准价，美元 / 每百万 token。开放权重写许可证简称，参数写总参数 / 激活参数。",
+     "en": "All release dates are in 2026. Prices are standard API list prices, USD per million tokens. Open weights shows the license in short; parameters are total / active."
+    },
+    "cols": [
+     "release",
+     "price_in",
+     "price_out",
+     "license",
+     "params"
+    ]
    },
    {
     "key": "indep",
@@ -105,7 +92,12 @@
     "tip": {
      "zh": "第三方用同一套方法统一测，可以横向比。",
      "en": "Measured by third parties with one method, so they compare across vendors."
-    }
+    },
+    "cols": [
+     "aa",
+     "vals",
+     "tb4_vals"
+    ]
    },
    {
     "key": "general",
@@ -118,9 +110,42 @@
      "en": "General"
     },
     "tip": {
-     "zh": "各厂商自己测、自己报，测试条件不一样。",
-     "en": "Each vendor runs and reports its own tests; conditions differ."
-    }
+     "zh": "各厂商自己测、自己报，测试条件不一样。只填测试、版本、单位、子集都和这一列一致的分数；不一致的写在模型名的悬停说明里。",
+     "en": "Each vendor runs and reports its own tests; conditions differ. Only scores that match the column on test, version, unit and subset are filled in; the rest are listed in the model-name tooltip."
+    },
+    "cols": [
+     "fc2",
+     "ale",
+     "tbsci",
+     "osw",
+     "chart",
+     "auto",
+     "tb4_vendor",
+     "aeci"
+    ]
+   },
+   {
+    "key": "ext",
+    "label": {
+     "zh": "厂商自报 · 编码与知识",
+     "en": "Vendor-reported · Coding & knowledge"
+    },
+    "short": {
+     "zh": "编码与知识",
+     "en": "Coding & knowledge"
+    },
+    "tip": {
+     "zh": "大厂和开源厂商常报、前沿三家表里少见的测试。各家条件不同，只能看大致位置。",
+     "en": "Tests that Big Tech and open-weight labs often report but frontier launch tables rarely do. Conditions differ, so read them as rough positions."
+    },
+    "cols": [
+     "deepswe",
+     "progb",
+     "swem",
+     "hle",
+     "gdpval",
+     "cygym"
+    ]
    },
    {
     "key": "cyber",
@@ -135,7 +160,14 @@
     "tip": {
      "zh": "多数只有专门的安全模型或关掉防护后才测。",
      "en": "Mostly tested only on dedicated security models or with safeguards off."
-    }
+    },
+    "cols": [
+     "cve",
+     "cysb",
+     "binexp",
+     "exgym",
+     "exbench"
+    ]
    },
    {
     "key": "life",
@@ -150,7 +182,19 @@
     "tip": {
      "zh": "除 VCT 外，目前只有 Anthropic 公布这一组。",
      "en": "Apart from VCT, only Anthropic publishes this group for now."
-    }
+    },
+    "cols": [
+     "binder",
+     "protdes",
+     "scb",
+     "protoc",
+     "domain",
+     "mutattr",
+     "medchem",
+     "morph",
+     "bioimg",
+     "vct"
+    ]
    }
   ],
   "basic": {
@@ -160,8 +204,8 @@
      "en": "Release"
     },
     "tip": {
-     "zh": "对外可用的日期，都在 2026 年。先宣布、后开放的，悬停看两个日期。色条越长越新。〔高〕",
-     "en": "Date of general availability, all in 2026. For models announced before opening up, hover for both dates. Longer bar = newer. [high]"
+     "zh": "对外可用的日期，都在 2026 年。先宣布、后开放的标 *，悬停看两个日期。色条越长越新。〔高〕",
+     "en": "Date of general availability, all in 2026. * marks models announced before they opened; hover for both dates. Longer bar = newer. [high]"
     }
    },
    "price_in": {
@@ -170,8 +214,8 @@
      "en": "Input"
     },
     "tip": {
-     "zh": "API 标准价，美元 / 每百万输入 token。多个来源一致。色条按 0 到 {max}（公开模型最高价）画，越长越贵。〔高〕",
-     "en": "Standard API price, USD per million input tokens; sources agree. Bar runs from 0 to {max} (highest public-model price); longer = pricier. [high]"
+     "zh": "API 标准价，美元 / 每百万输入 token。开源模型取厂商自家 API 的高峰价。色条按 0 到 {max}（公开模型最高价）画，越长越贵。〔高〕",
+     "en": "Standard API price, USD per million input tokens; open-weight models use the vendor's own API at peak rates. Bar runs from 0 to {max} (highest public-model price); longer = pricier. [high]"
     }
    },
    "price_out": {
@@ -180,8 +224,28 @@
      "en": "Output"
     },
     "tip": {
-     "zh": "API 标准价，美元 / 每百万输出 token。多个来源一致。色条按 0 到 {max}（公开模型最高价）画，越长越贵。〔高〕",
-     "en": "Standard API price, USD per million output tokens; sources agree. Bar runs from 0 to {max} (highest public-model price); longer = pricier. [high]"
+     "zh": "API 标准价，美元 / 每百万输出 token。色条按 0 到 {max}（公开模型最高价）画，越长越贵。〔高〕",
+     "en": "Standard API price, USD per million output tokens. Bar runs from 0 to {max} (highest public-model price); longer = pricier. [high]"
+    }
+   },
+   "license": {
+    "label": {
+     "zh": "开放权重",
+     "en": "Weights"
+    },
+    "tip": {
+     "zh": "权重能不能下载、用什么许可证：MIT、Modified MIT（修改版 MIT）、自定义（厂商自己写的许可证，通常对大客户另有条件）、否（不开放）。悬停看许可证要点。",
+     "en": "Whether the weights can be downloaded, and under what license: MIT, Modified MIT, Custom (the vendor's own license, usually with extra terms for large users) or No (closed). Hover for the key terms."
+    }
+   },
+   "params": {
+    "label": {
+     "zh": "参数",
+     "en": "Params"
+    },
+    "tip": {
+     "zh": "总参数 / 激活参数（混合专家模型每个 token 只用一部分参数）。T＝万亿，B＝十亿。悬停看出处。",
+     "en": "Total / active parameters (a mixture-of-experts model uses only part of its parameters per token). T = trillion, B = billion. Hover for the source."
     }
    }
   },
@@ -192,8 +256,8 @@
      "en": "How to read"
     },
     "tip": {
-     "zh": "<b>怎么读这张表</b>价格是 API 标准价，美元 / 每百万 token。<br>分数 {n_bench} 列，分{n_groups_zh}组：{group_names}。<br>每列前三名加深，名次越靠前越深。<br>「—」是没有公开分数。<br>悬停任何数字可看出处和测试条件。",
-     "en": "<b>How to read this table</b>Prices are standard API list prices, USD per million tokens.<br>{n_bench} score columns in {n_groups_zh} groups: {group_names}.<br>The top three in each column are shaded darker, darkest for first.<br>\"—\" means no public score.<br>Hover any number for its source and test conditions."
+     "zh": "<b>怎么读这张表</b>{n_models} 个模型，按厂商分组：前沿 Google、Anthropic、OpenAI；大厂 xAI、Meta（Google 也算大厂）；开源 DeepSeek、Moonshot、智谱、Thinking Machines。组内按发布日从新到旧。<br>顶栏「前沿 / 大厂 / 开源」筛选全页的表和图。<br>价格是 API 标准价，美元 / 每百万 token。<br>分数 {n_bench} 列，分{n_groups_zh}组：{group_names}。<br>每列前三名加深，名次越靠前越深；名次在全部模型里排，不随筛选变。<br>「—」是没有公开分数，或者分数口径和这一列不一致（悬停模型名看是哪些）。<br>悬停任何数字可看出处、测试条件和可信度。",
+     "en": "<b>How to read this table</b>{n_models} models grouped by vendor: frontier Google, Anthropic, OpenAI; Big Tech xAI and Meta (Google counts as Big Tech too); open-weight DeepSeek, Moonshot, Zhipu, Thinking Machines. Within each vendor, newest first.<br>The Frontier / Big Tech / Open-weight filter in the top bar applies to every table and chart on the page.<br>Prices are standard API list prices, USD per million tokens.<br>{n_bench} score columns in {n_groups_zh} groups: {group_names}.<br>The top three in each column are shaded darker, darkest for first; ranks are across all models and do not change with the filter.<br>\"—\" means no public score, or a score that does not match the column (hover the model name to see which).<br>Hover any number for its source, test conditions and confidence."
     }
    },
    {
@@ -214,6 +278,26 @@
     "tip": {
      "zh": "<b>* 和 →</b>*：先宣布、后开放，表里写的是开放日。<br>→：Argon 和 Carbon 在 12 月 1 日调价。箭头前是现价，箭头后是新价。",
      "en": "<b>* and →</b>*: announced first, opened later; the table shows the date it opened.<br>→: Argon and Carbon reprice on December 1. Current price before the arrow, new price after."
+    }
+   },
+   {
+    "label": {
+     "zh": "AA 角标",
+     "en": "AA marker"
+    },
+    "tip": {
+     "zh": "<b>AA 角标</b>FrontierCode 2.0 这一列里带「AA」的，是 Artificial Analysis 自己测的 FrontierCode-AA 2.0（132 题私有集），不是厂商自报；和同列前沿三家的自报分数只能看大致位置。",
+     "en": "<b>AA marker</b>In the FrontierCode 2.0 column, cells marked \"AA\" are Artificial Analysis's own FrontierCode-AA 2.0 runs (132-task private set), not vendor reports; compare them with the frontier labs' self-reported scores in the same column only roughly."
+    }
+   },
+   {
+    "label": {
+     "zh": "OSWorld 与 Chartography",
+     "en": "OSWorld and Chartography"
+    },
+    "tip": {
+     "zh": "<b>OSWorld 2.1 和 Chartography 两列</b>OSWorld 2.1 只收离线子集。大厂和开源厂商报的要么是 108 题全集（Meta），要么没说是不是离线子集（Moonshot），要么是 OSWorld-Verified / 2.0，都没有填。<br>Chartography 只收不带工具的分数；带工具（Python 沙箱）测的从严不填，写在各模型名的悬停说明里。<br>一列都没有分数时整列不出。",
+     "en": "<b>The OSWorld 2.1 and Chartography columns</b>OSWorld 2.1 takes only the offline subset. Big Tech and open-weight labs report either the full 108-task set (Meta), an unspecified subset (Moonshot), or OSWorld-Verified / 2.0, so none are filled in.<br>Chartography takes only scores without tools; runs with tools (a Python sandbox) are left out to stay strict and listed in each model-name tooltip.<br>A column with no scores at all is not shown."
     }
    },
    {
@@ -6069,8 +6153,8 @@
     "en": "Glimmer"
    },
    "tip": {
-    "zh": "Muse Glimmer：30B 开放权重小模型，Apache 2.0。AA 6.3，没列进表 3-1。",
-    "en": "Muse Glimmer: a 30B open-weight small model under Apache 2.0. AA 6.3; not in Table 3-1."
+    "zh": "Muse Glimmer：30B 开放权重小模型，Apache 2.0。AA 6.3，没列进表 2-1。",
+    "en": "Muse Glimmer: a 30B open-weight small model under Apache 2.0. AA 6.3; not in Table 2-1."
    },
    "open_weights": true
   },
@@ -6082,8 +6166,8 @@
     "en": "Spark 1.3"
    },
    "tip": {
-    "zh": "Muse Spark 1.3。$1.25 / $4.25，AA 36.6。没列进表 3-1（每家最多 4 个）。",
-    "en": "Muse Spark 1.3. $1.25 / $4.25, AA 36.6. Not in Table 3-1 (four models per vendor at most)."
+    "zh": "Muse Spark 1.3。$1.25 / $4.25，AA 36.6。没列进表 2-1（每家最多 4 个）。",
+    "en": "Muse Spark 1.3. $1.25 / $4.25, AA 36.6. Not in Table 2-1 (four models per vendor at most)."
    },
    "open_weights": false
   },
@@ -6134,8 +6218,8 @@
     "en": "V4-Flash-0731"
    },
    "tip": {
-    "zh": "DeepSeek-V4-Flash-0731，现已下线，没列进表 3-1。",
-    "en": "DeepSeek-V4-Flash-0731, since retired; not in Table 3-1."
+    "zh": "DeepSeek-V4-Flash-0731，现已下线，没列进表 2-1。",
+    "en": "DeepSeek-V4-Flash-0731, since retired; not in Table 2-1."
    },
    "open_weights": true
   },
@@ -7751,12 +7835,12 @@
   "f41": {
    "bench": "aa",
    "caption": {
-    "zh": "图 4-1　AA 指数（独立，全部模型）",
-    "en": "Fig 4-1 AA Index (independent, all models)"
+    "zh": "图 3-1　AA 指数（独立，全部模型）",
+    "en": "Fig 3-1 AA Index (independent, all models)"
    },
    "source_tip": {
-    "zh": "<b>来源</b>Artificial Analysis 各模型页，v5.0.1。<br>各模型取最高推理强度。<br>前沿快照 {snapshot}，大厂与开源快照 {snapshot3}。〔高〕",
-    "en": "<b>Source</b>Artificial Analysis model pages, v5.0.1.<br>Each model at its highest reasoning effort.<br>Frontier snapshot {snapshot}; Big Tech and open-weight snapshot {snapshot3}. [high]"
+    "zh": "<b>来源</b>Artificial Analysis 各模型页，v5.0.1。<br>各模型取最高推理强度。<br>前沿快照 {snapshot}，大厂与开源快照 {snapshot}。〔高〕",
+    "en": "<b>Source</b>Artificial Analysis model pages, v5.0.1.<br>Each model at its highest reasoning effort.<br>Frontier snapshot {snapshot}; Big Tech and open-weight snapshot {snapshot}. [high]"
    },
    "label": {
     "zh": "AA 指数",
@@ -7787,16 +7871,16 @@
    ],
    "mark": "bar",
    "toc": {
-    "zh": "图 4-1 AA 指数排名",
-    "en": "Fig 4-1 AA Index ranking"
+    "zh": "图 3-1 AA 指数排名",
+    "en": "Fig 3-1 AA Index ranking"
    },
    "xcol": "price"
   },
   "f42": {
    "bench": "vals",
    "caption": {
-    "zh": "图 4-2　Vals Index（独立，全部模型）",
-    "en": "Fig 4-2 Vals Index (independent, all models)"
+    "zh": "图 3-2　Vals Index（独立，全部模型）",
+    "en": "Fig 3-2 Vals Index (independent, all models)"
    },
    "source_tip": {
     "zh": "<b>来源</b>Vals AI 榜单，v2.2：前沿取 2026-11-16 版（Neon 是 11-18 追加的），大厂与开源取 11-19 版。<br>横轴从 {min}% 起，所以用点不用条。〔高〕",
@@ -7831,16 +7915,16 @@
    ],
    "mark": "dot",
    "toc": {
-    "zh": "图 4-2 Vals Index 排名",
-    "en": "Fig 4-2 Vals Index ranking"
+    "zh": "图 3-2 Vals Index 排名",
+    "en": "Fig 3-2 Vals Index ranking"
    },
    "xcol": "cost"
   },
   "f43": {
    "bench": "tb4_vals",
    "caption": {
-    "zh": "图 4-3　Terminal-Bench 4.0（Vals 独立测，全部模型）",
-    "en": "Fig 4-3 Terminal-Bench 4.0 (independent, Vals; all models)"
+    "zh": "图 3-3　Terminal-Bench 4.0（Vals 独立测，全部模型）",
+    "en": "Fig 3-3 Terminal-Bench 4.0 (independent, Vals; all models)"
    },
    "source_tip": {
     "zh": "<b>来源</b>Vals AI 的 Terminal-Bench 4.0 榜，所有模型用同一个工具 mini-SWE-agent 测：前沿取 2026-11-18 版，大厂与开源取 11-19 版。<br>厂商自报的 TB 4.0 各用各的工具，不在这张图里。〔高〕",
@@ -7875,8 +7959,8 @@
    ],
    "mark": "bar",
    "toc": {
-    "zh": "图 4-3 Terminal-Bench 4.0 排名",
-    "en": "Fig 4-3 Terminal-Bench 4.0 ranking"
+    "zh": "图 3-3 Terminal-Bench 4.0 排名",
+    "en": "Fig 3-3 Terminal-Bench 4.0 ranking"
    },
    "xcol": "cost"
   },
@@ -7884,15 +7968,15 @@
    "x": "price_out",
    "y": "aa",
    "toc": {
-    "zh": "图 4-4 价格与 AA 指数",
-    "en": "Fig 4-4 Price vs. AA Index"
+    "zh": "图 3-4 价格与 AA 指数",
+    "en": "Fig 3-4 Price vs. AA Index"
    },
    "caption": {
-    "zh": "图 4-4　输出价与 AA 指数（横轴对数刻度）",
-    "en": "Fig 4-4 Output price vs. AA Index (log scale)"
+    "zh": "图 3-4　输出价与 AA 指数（横轴对数刻度）",
+    "en": "Fig 3-4 Output price vs. AA Index (log scale)"
    },
    "source_tip": {
-    "zh": "<b>来源</b>横轴：API 标准输出价，美元 / 每百万 token（同表 2-1、表 3-1）。纵轴：Artificial Analysis v5.0.1。<br>横轴是对数刻度：每格价格翻倍或更多。<br>实心点＝不开放权重，空心点＝开放权重。〔高〕",
+    "zh": "<b>来源</b>横轴：API 标准输出价，美元 / 每百万 token（同表 2-1、表 2-1）。纵轴：Artificial Analysis v5.0.1。<br>横轴是对数刻度：每格价格翻倍或更多。<br>实心点＝不开放权重，空心点＝开放权重。〔高〕",
     "en": "<b>Source</b>X axis: standard API output price, USD per million tokens (as in Tables 2-1 and 3-1). Y axis: Artificial Analysis v5.0.1.<br>The x axis is logarithmic: each step is a doubling or more.<br>Solid dot = closed weights; hollow dot = open weights. [high]"
    },
    "xaxis": {
@@ -7948,12 +8032,12 @@
   },
   "f45": {
    "caption": {
-    "zh": "图 4-5　厂商自报的六项测试（%，全部模型里口径一致的分数）",
-    "en": "Fig 4-5 Six vendor-reported tests (%, like-for-like scores from all models)"
+    "zh": "图 3-5　厂商自报的六项测试（%，全部模型里口径一致的分数）",
+    "en": "Fig 3-5 Six vendor-reported tests (%, like-for-like scores from all models)"
    },
    "source_tip": {
-    "zh": "<b>来源</b>各厂商的发布表（前沿三家，以及第 3 章大厂与开源厂商里版本、单位、子集一致的分数）。<br>同一模型在不同厂商的表里分数可能不同，悬停看是谁报的。<br>FrontierCode 里第 3 章的分数多是 AA 测的 FrontierCode-AA 2.0。<br>没有分数的模型不画。〔中〕",
-    "en": "<b>Source</b>Vendors' launch tables (the three frontier labs, plus chapter 3 scores that match on version, unit and subset).<br>The same model can score differently in different vendors' tables; hover to see who reported it.<br>Most chapter 3 FrontierCode scores are AA's own FrontierCode-AA 2.0 runs.<br>Models without a score are not drawn. [medium]"
+    "zh": "<b>来源</b>各厂商的发布表（前沿三家，以及大厂与开源厂商里版本、单位、子集一致的分数）。<br>同一模型在不同厂商的表里分数可能不同，悬停看是谁报的。<br>FrontierCode 里大厂与开源模型的分数多是 AA 测的 FrontierCode-AA 2.0。<br>没有分数的模型不画。〔中〕",
+    "en": "<b>Source</b>Vendors' launch tables (the three frontier labs, plus Big Tech and open-weight scores that match on version, unit and subset).<br>The same model can score differently in different vendors' tables; hover to see who reported it.<br>Most Big Tech and open-weight FrontierCode scores are AA's own FrontierCode-AA 2.0 runs.<br>Models without a score are not drawn. [medium]"
    },
    "axis": {
     "min": 0,
@@ -8029,8 +8113,8 @@
     }
    ],
    "toc": {
-    "zh": "图 4-5 厂商自报的六项测试",
-    "en": "Fig 4-5 Six vendor-reported tests"
+    "zh": "图 3-5 厂商自报的六项测试",
+    "en": "Fig 3-5 Six vendor-reported tests"
    }
   }
  },
@@ -8119,14 +8203,6 @@
    "zh": "前沿 {n_front} 个 + 大厂与开源 {n_other} 个已发布模型",
    "en": "{n_front} frontier + {n_other} Big Tech and open-weight released models"
   },
-  "snap3_tip": {
-   "zh": "第 3 章的快照日期（第 2 章是 {snap2}）。",
-   "en": "Snapshot date for chapter 3 (chapter 2 uses {snap2})."
-  },
-  "snap3_short_tip": {
-   "zh": "{date}：第 3 章的快照日期。",
-   "en": "{date}: snapshot date for chapter 3."
-  },
   "ow_open": {
    "zh": "开源",
    "en": "Open"
@@ -8136,8 +8212,8 @@
    "en": "Closed"
   },
   "ow_open_tip": {
-   "zh": "开源：开放权重，可以下载自己部署（许可证见表 3-1）。",
-   "en": "Open: weights released, can be downloaded and self-hosted (license in Table 3-1)."
+   "zh": "开源：开放权重，可以下载自己部署（许可证见表 2-1）。",
+   "en": "Open: weights released, can be downloaded and self-hosted (license in Table 2-1)."
   },
   "ow_closed_tip": {
    "zh": "闭源：不开放权重，只能通过 API 或厂商自家产品用。",
@@ -8150,208 +8226,27 @@
   "ow_tip_closed": {
    "zh": " 闭源（不开放权重）。",
    "en": " Closed weights."
+  },
+  "license_closed": {
+   "zh": "否",
+   "en": "No"
+  },
+  "license_closed_tip": {
+   "zh": "不开放权重，只能通过 API 或自家产品用。〔高〕",
+   "en": "Weights are not released; available only through the API or the vendor's own products. [high]"
+  },
+  "params_na_tip": {
+   "zh": "参数量没有公开。",
+   "en": "Parameter count not disclosed."
+  },
+  "flt_tip": {
+   "zh": "<b>按标签筛选全页</b>点一下开 / 关一个标签；Shift 点击只看这一个。<br>一家可以有多个标签：Google 既是前沿也是大厂。<br>筛选作用于表 2-1、图 2-1 的模型泳道和第 3 章的全部图；表 2-2 和 2.3 节算力不受影响。名次、色条按全部模型算，不随筛选变。",
+   "en": "<b>Filter the whole page by tag</b>Click to toggle a tag; Shift-click to show only that one.<br>A vendor can carry several tags: Google is both frontier and Big Tech.<br>Applies to Table 2-1, the model lanes in Fig 2-1 and every chart in chapter 3; Table 2-2 and the compute section 2.3 are unaffected. Ranks and bars are computed over all models and do not change with the filter."
+  },
+  "flt_empty": {
+   "zh": "当前筛选下没有模型。",
+   "en": "No models match the current filter."
   }
- },
- "t31": {
-  "toc": {
-   "zh": "表 3-1 大厂与开源模型总表",
-   "en": "Table 3-1 Big Tech and open-weight models"
-  },
-  "c0": {
-   "label": {
-    "zh": "模型",
-    "en": "Model"
-   },
-   "tip": {
-    "zh": "厂商色块 + 模型名。悬停模型名看简介和没填进表的分数；小标签：仅订阅、已取代、将下线。",
-    "en": "Vendor swatch + model name. Hover a name for a short profile and the scores left out of the table. Small tags: Plan only, Superseded, Retiring."
-   }
-  },
-  "groups": [
-   {
-    "key": "basic",
-    "label": {
-     "zh": "基本 · 2026 年 · $/百万 token",
-     "en": "Basics · 2026 · $/M tokens"
-    },
-    "short": {
-     "zh": "基本",
-     "en": "Basics"
-    },
-    "tip": {
-     "zh": "发布日都在 2026 年。价格是 API 标准价，美元 / 每百万 token。开放权重写许可证简称，参数写总参数 / 激活参数。",
-     "en": "All release dates are in 2026. Prices are standard API list prices, USD per million tokens. Open weights shows the license in short; parameters are total / active."
-    },
-    "cols": [
-     "release",
-     "price_in",
-     "price_out",
-     "license",
-     "params"
-    ]
-   },
-   {
-    "key": "indep",
-    "label": {
-     "zh": "独立榜单",
-     "en": "Independent leaderboards"
-    },
-    "short": {
-     "zh": "独立榜单",
-     "en": "Independent leaderboards"
-    },
-    "tip": {
-     "zh": "第三方用同一套方法统一测，可以横向比，也可以和表 2-1 的同名列直接比。",
-     "en": "Measured by third parties with one method, so they compare across vendors and directly with the same columns in Table 2-1."
-    },
-    "cols": [
-     "aa",
-     "vals",
-     "tb4_vals"
-    ]
-   },
-   {
-    "key": "shared",
-    "label": {
-     "zh": "厂商自报 · 与前沿同列",
-     "en": "Vendor-reported · Shared with frontier"
-    },
-    "short": {
-     "zh": "与前沿同列",
-     "en": "Shared with frontier"
-    },
-    "tip": {
-     "zh": "和表 2-1 用同一个测试、同一版本、同一单位和子集的列。不一致的分数不填，写在模型名的悬停说明里。",
-     "en": "Columns that match Table 2-1 on test, version, unit and subset. Mismatched scores are left out and listed in the model-name tooltip."
-    },
-    "cols": [
-     "tb4_vendor",
-     "ale",
-     "auto",
-     "chart",
-     "osw",
-     "tbsci",
-     "fc2"
-    ]
-   },
-   {
-    "key": "ext",
-    "label": {
-     "zh": "厂商自报 · 本章新增",
-     "en": "Vendor-reported · New in this chapter"
-    },
-    "short": {
-     "zh": "本章新增",
-     "en": "New in this chapter"
-    },
-    "tip": {
-     "zh": "大厂和开源厂商常报、前沿三家表里少见的测试。各家条件不同，只能看大致位置。",
-     "en": "Tests that Big Tech and open-weight labs often report but the frontier tables rarely do. Conditions differ, so read them as rough positions."
-    },
-    "cols": [
-     "deepswe",
-     "progb",
-     "swem",
-     "hle",
-     "gdpval",
-     "cygym"
-    ]
-   }
-  ],
-  "basic": {
-   "release": {
-    "label": {
-     "zh": "发布",
-     "en": "Release"
-    },
-    "tip": {
-     "zh": "对外可用的日期，都在 2026 年。先宣布、后开放的标 *，悬停看两个日期。色条越长越新。〔高〕",
-     "en": "Date of general availability, all in 2026. * marks models announced before they opened; hover for both dates. Longer bar = newer. [high]"
-    }
-   },
-   "price_in": {
-    "label": {
-     "zh": "输入",
-     "en": "Input"
-    },
-    "tip": {
-     "zh": "API 标准价，美元 / 每百万输入 token。开源模型取厂商自家 API 的高峰价。色条按 0 到 {max}（本表公开模型最高价）画，越长越贵。〔高〕",
-     "en": "Standard API price, USD per million input tokens; open-weight models use the vendor's own API at peak rates. Bar runs from 0 to {max} (highest public-model price in this table); longer = pricier. [high]"
-    }
-   },
-   "price_out": {
-    "label": {
-     "zh": "输出",
-     "en": "Output"
-    },
-    "tip": {
-     "zh": "API 标准价，美元 / 每百万输出 token。色条按 0 到 {max}（本表公开模型最高价）画，越长越贵。〔高〕",
-     "en": "Standard API price, USD per million output tokens. Bar runs from 0 to {max} (highest public-model price in this table); longer = pricier. [high]"
-    }
-   },
-   "license": {
-    "label": {
-     "zh": "开放权重",
-     "en": "Weights"
-    },
-    "tip": {
-     "zh": "权重能不能下载、用什么许可证：MIT、Modified MIT（修改版 MIT）、自定义（厂商自己写的许可证，通常对大客户另有条件）、否（不开放）。悬停看许可证要点。",
-     "en": "Whether the weights can be downloaded, and under what license: MIT, Modified MIT, Custom (the vendor's own license, usually with extra terms for large users) or No (closed). Hover for the key terms."
-    }
-   },
-   "params": {
-    "label": {
-     "zh": "参数",
-     "en": "Params"
-    },
-    "tip": {
-     "zh": "总参数 / 激活参数（混合专家模型每个 token 只用一部分参数）。T＝万亿，B＝十亿。悬停看出处。",
-     "en": "Total / active parameters (a mixture-of-experts model uses only part of its parameters per token). T = trillion, B = billion. Hover for the source."
-    }
-   }
-  },
-  "hints": [
-   {
-    "label": {
-     "zh": "怎么读",
-     "en": "How to read"
-    },
-    "tip": {
-     "zh": "<b>怎么读这张表</b>{n_models} 个模型：大厂 xAI、Meta，开源 DeepSeek、Moonshot、智谱。组内按发布日从新到旧。<br>分数 {n_bench} 列，分{n_groups_zh}组：{group_names}。<br>每列前三名加深；名次只在本表里排。<br>「—」是没有公开分数，或者分数口径和这一列不一致（悬停模型名看是哪些）。<br>悬停任何数字可看出处、测试条件和可信度。",
-     "en": "<b>How to read this table</b>{n_models} models: Big Tech xAI and Meta; open-weight DeepSeek, Moonshot and Zhipu. Within each vendor, newest first.<br>{n_bench} score columns in {n_groups_zh} groups: {group_names}.<br>The top three in each column are shaded darker; ranks are within this table only.<br>\"—\" means no public score, or a score that does not match this column (hover the model name to see which).<br>Hover any number for its source, test conditions and confidence."
-    }
-   },
-   {
-    "label": {
-     "zh": "色条",
-     "en": "Bars"
-    },
-    "tip": {
-     "zh": "<b>格内色条</b>规则和表 2-1 一样：分数列从本列最低画到最高；有分数的模型少于 5 个时从 0 画起。颜色跟厂商。<br>价格列：灰色，从 0 画到本表公开模型最高价（输入 {price_in_max}，输出 {price_out_max}）。",
-     "en": "<b>In-cell bars</b>Same rules as Table 2-1: score columns run from the lowest to the highest score in the column; with fewer than 5 scored models, bars start at 0. Bar color follows the vendor.<br>Price columns: gray, from 0 to the highest public-model price in this table (input {price_in_max}, output {price_out_max})."
-    }
-   },
-   {
-    "label": {
-     "zh": "AA 角标",
-     "en": "AA marker"
-    },
-    "tip": {
-     "zh": "<b>AA 角标</b>FrontierCode 2.0 这一列里带「AA」的，是 Artificial Analysis 自己测的 FrontierCode-AA 2.0（132 题私有集），不是厂商自报；和表 2-1 那列只能看大致位置。",
-     "en": "<b>AA marker</b>In the FrontierCode 2.0 column, cells marked \"AA\" are Artificial Analysis's own FrontierCode-AA 2.0 runs (132-task private set), not vendor reports; compare them with Table 2-1 only roughly."
-    }
-   },
-   {
-    "label": {
-     "zh": "少了哪两列",
-     "en": "Missing columns"
-    },
-    "tip": {
-     "zh": "<b>为什么没有 OSWorld 2.1 和 Chartography 两列</b>表 2-1 的 OSWorld 2.1 是离线子集。本章各家报的要么是 108 题全集（Meta），要么没说是不是离线子集（Moonshot），要么是 OSWorld-Verified / 2.0，都不能填。<br>Chartography：本章 5 个分数都是带工具（Python 沙箱）测的，表 2-1 那列不按带工具算，从严不填，写在各模型名的悬停说明里。<br>一列都没有分数时整列不出。",
-     "en": "<b>Why there are no OSWorld 2.1 and Chartography columns</b>Table 2-1's OSWorld 2.1 is the offline subset. What this chapter's vendors report is either the full 108-task set (Meta), unclear on the subset (Moonshot), or OSWorld-Verified / 2.0, so none can go in.<br>Chartography: all five chapter 3 scores were run with tools (a Python sandbox), which the Table 2-1 column does not use, so to stay strict they are left out and listed in each model-name tooltip.<br>A column with no scores at all is not shown."
-    }
-   }
-  ]
  },
  "sources_ch3": {
   "note": {
@@ -8911,40 +8806,6 @@
       "accessed": true
      }
     ]
-   }
-  ]
- },
- "f32": {
-  "toc": {
-   "zh": "图 3-2 大厂与开源发布时间轴",
-   "en": "Fig 3-2 Big Tech and open-weight release timeline"
-  },
-  "caption": {
-   "zh": "图 3-2　大厂与开源模型发布时间轴（横轴按天等距）",
-   "en": "Fig 3-2 Big Tech and open-weight release timeline (linear time scale)"
-  },
-  "l_solid": {
-   "zh": "实心：发布或放出权重",
-   "en": "Solid: released or weights out"
-  },
-  "l_hollow": {
-   "zh": "空心：只是宣布",
-   "en": "Hollow: announced only"
-  },
-  "l_snap": {
-   "zh": "竖虚线：快照日",
-   "en": "Dashed line: snapshot date"
-  },
-  "hints": [
-   {
-    "label": {
-     "zh": "怎么读",
-     "en": "How to read"
-    },
-    "tip": {
-     "zh": "<b>怎么读</b>方块的左右位置就是日期；上下错开只是为了不重叠。横轴和图 2-1 用同一套算法：快照月往前 5 个月。<br>鼠标在图上移动，顶部刻度行读出日期；离节点 5 像素以内时，竖线和日期吸到节点上。<br>开源模型常常先上 API、晚几天放权重，放权重单独画一个节点。<br>早于横轴起点的旗舰写在泳道名下面（←）。<br>快照 {snapshot}。",
-     "en": "<b>How to read</b>A marker's horizontal position is its date; vertical offsets only keep labels from overlapping. The axis uses the same rule as Fig 2-1: five months back from the snapshot month.<br>Move the pointer across the chart and the sticky scale at the top reads out the date; within 5 px of a node, the line and date snap to it.<br>Open-weight models often reach the API a few days before the weights, so a weights release gets its own node.<br>Flagships released before the axis starts are listed under the lane name (←).<br>Snapshot {snapshot}."
-    }
    }
   ]
  }

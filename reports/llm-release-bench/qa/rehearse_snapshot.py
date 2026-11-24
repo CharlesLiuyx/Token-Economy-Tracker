@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """换快照日演练（不碰正式文件）：把整个工程复制到临时目录，改副本 data/models.json 的 meta.snapshot，
 跑两个构建脚本两遍（第二遍必须 unchanged），再用无头 Chromium 检查图 2-1 并截图。
-检查：横轴第一个刻度＝快照月往前 5 个月、最后一根算力柱＝快照月；图 3-2 首个刻度同样、节点不越界不重叠；节点、柱子不越出泳道，节点互不重叠；快照竖线在快照日；底部快照标签不压月份；无 JS 报错。
+检查：横轴第一个刻度＝快照月往前 5 个月、最后一根算力柱＝快照月；节点、柱子不越出泳道，节点互不重叠；快照竖线在快照日；底部快照标签不压月份；无 JS 报错。
 用法：python3 qa/rehearse_snapshot.py 2026-12-05 截图目录 [chrome 路径]"""
 import json, os, re, shutil, subprocess, sys, tempfile
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
@@ -14,7 +14,6 @@ tmp = tempfile.mkdtemp(prefix='rehearse-')
 shutil.copytree(ROOT, os.path.join(tmp, 'r'), ignore=shutil.ignore_patterns('*.png', 'qa', '__pycache__', '.git'))
 W = os.path.join(tmp, 'r'); R = os.path.join(W, REPORT_NAME)
 D = json.load(open(os.path.join(W, 'data', 'models.json'), encoding='utf-8')); D['meta']['snapshot'] = SNAP
-D['meta']['chapters']['ch3']['snapshot'] = SNAP          # 第 3 章快照（图 3-2 横轴）一起换
 json.dump(D, open(os.path.join(W, 'data', 'models.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 py = sys.executable
 for rnd in (1, 2):
@@ -34,11 +33,6 @@ LAYOUT = r'''() => {
      ps.slice(j+1).forEach((b,k)=>{ if(a.left<b.right-1&&b.left<a.right-1&&a.top<b.bottom-1&&b.top<a.bottom-1) R.push('节点重叠 '+L.getAttribute('data-lane')); });});
    L.querySelectorAll('.mb').forEach((m,k)=>{const r=tr(m); if(r.left<lr.left-1||r.right>lr.right+1) R.push('柱越界 '+L.getAttribute('data-lane')+' '+k);});});
  const f=document.getElementById('f21'); if(f.scrollWidth>f.clientWidth+1) R.push('图 2-1 横向溢出');
- document.querySelectorAll('#f32 .hl-track').forEach(L=>{const lr=tr(L),ps=[...L.querySelectorAll('.pin')].map(tr);
-   ps.forEach((a,j)=>{ if(a.left<lr.left-2||a.right>lr.right+2) R.push('图 3-2 节点越界 '+L.getAttribute('data-lane'));
-     ps.slice(j+1).forEach(b=>{ if(a.left<b.right-1&&b.left<a.right-1&&a.top<b.bottom-1&&b.top<a.bottom-1) R.push('图 3-2 节点重叠 '+L.getAttribute('data-lane')); });});});
- const t32=[...document.querySelectorAll('#f32 .hl-axis.top .mt')].map(e=>e.innerText.trim());
- if(t32[0]!==([...document.querySelectorAll('#f21 .hl-axis.top .mt')].map(e=>e.innerText.trim())[0])) R.push('图 3-2 首个刻度与图 2-1 不同 '+t32[0]);
  const vm=document.querySelector('#f21 .hl-axis:not(.top) .mt.vm'),rg=document.createRange(),tb=e=>{rg.selectNodeContents(e);return rg.getBoundingClientRect()};
  if(vm){const a=tb(vm.previousElementSibling),b=tb(vm),c=vm.parentNode.getBoundingClientRect(); if(b.left<a.right+1||b.right>c.right+1) R.push('底部快照标签与月份重叠或越界');}
  const ticks=[...document.querySelectorAll('#f21 .hl-axis.top .mt')].map(e=>e.innerText.trim());

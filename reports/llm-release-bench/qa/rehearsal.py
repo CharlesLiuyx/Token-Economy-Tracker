@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """加模型 / 加 Bench / 加厂商演练（不碰正式文件）：
 复制 data/ 与报告到 qa/rehearsal/（不进 git），在副本里：
-  1 加虚构 Bench 列「TestB」（表 2-1 的「通用能力」组）并给两个前沿模型打分；
-  2 加虚构模型「TEST Model」（vendor=xai，大厂组 → 应进表 3-1、图 3-2、第 4 章，不进表 2-1、图 2-1）；
-  3 加虚构新厂商「TestLab」（vendors.json 新条目，group=open，带颜色和泳道）和它的模型「TEST Open」。
+  1 加虚构 Bench 列「TestB」（表 2-1 的「通用能力」组，t21.groups[].cols 点名）并给两个前沿模型打分；
+  2 加虚构模型「TEST Model」（vendor=xai，大厂 → 进表 2-1 的 xAI 组、图 2-1 的 xAI 泳道、第 3 章，带 data-tags="bigtech"）；
+  3 加虚构新厂商「TestLab」（vendors.json 新条目，group=open、tags=[open]，带颜色和泳道）和它的模型「TEST Open」。
 重建两遍（第二遍必须 unchanged），再把结构断言写到 qa/rehearsal/result.json。浏览器检查另跑 qa/browser_check.py qa/rehearsal/after.html。
 用法：python3 qa/rehearsal.py [正式报告路径]"""
 import json, os, re, shutil, subprocess, sys
@@ -21,6 +21,7 @@ V = json.load(open(os.path.join(DD, 'vendors.json'), encoding='utf-8'))
 i = max(j for j, b in enumerate(D['benches']) if b['group'] == 'general')
 D['benches'].insert(i + 1, {'key': 'testb', 'label': L('TestB'), 'name': L('TEST Bench 1.0'), 'unit': L('%'), 'group': 'general',
                             'direction': 'higher', 'bar': 'auto', 'desc': L('TEST Bench 1.0，单位 %。演练用的虚构测试列。分数来自各厂商自己的发布表。〔低〕')})
+next(g for g in D['t21']['groups'] if g['key'] == 'general')['cols'].append('testb')
 byname = {m['name']: m for m in D['models']}
 byname['Claude Fable 5.2']['scores']['testb'] = {'d': '80.0', 'v': 80.0, 'note': L('演练数据。Anthropic 发布表。'), 'src': 'release_table', 'cf': '低'}
 byname['GPT-6.2 Astra']['scores']['testb'] = {'d': '75.5', 'v': 75.5, 'note': L('演练数据。OpenAI 发布表。'), 'src': 'release_table', 'cf': '低'}
@@ -36,7 +37,7 @@ D['models'].append({'id': 'test-model', 'name': 'TEST Model', 'short': 'TEST Mod
         'deepswe': {'d': '88.0', 'v': 88.0, 'note': L('演练数据。xAI 发布表。'), 'src': 'release_table', 'cf': '低'}}})
 D['timeline_events'].append({'lane': 'xai', 'date': '2026-11-21', 'label': L('TEST Model'), 'tip': L('TEST Model（演练用虚构模型）。$5 / $25。')})
 # 3) 新厂商（开源组）
-V['vendors'].append({'key': 'testv', 'name': 'TestLab', 'product': 'Test', 'group': 'open', 'css_var': '--tv', 'light': '#6b8f00', 'dark': '#8fb31a',
+V['vendors'].append({'key': 'testv', 'name': 'TestLab', 'product': 'Test', 'group': 'open', 'tags': ['open'], 'css_var': '--tv', 'light': '#6b8f00', 'dark': '#8fb31a',
                      'legend_tip': L('TestLab 演练用虚构厂商。悬停只看这一家。'), 't22_class': 'vt', 'builtin_css': False})
 V['timeline_lanes'].append({'lane': 'testv', 'vendor': 'testv'})
 D['models'].append({'id': 'test-open', 'name': 'TEST Open', 'short': 'TEST Open', 'vendor': 'testv', 'status': 'public', 'open_weights': True,
@@ -67,31 +68,30 @@ B, A = open(before, encoding='utf-8').read(), open(after, encoding='utf-8').read
 def rows(x): return len(re.findall(r'<tr class="v-', x))
 def cols(x): return len(re.findall(r'<col ', x))
 def cell(x, model, idx):
-    tr = re.search(r'<tr class="v-[a-z]+"><td class="mn c0 noterm"[^>]*><span class="sw k-[a-z]+"></span>' + re.escape(model) + r'(?:<span|</td>).*?</tr>', x).group(0)
+    tr = re.search(r'<tr class="v-[a-z]+"[^>]*><td class="mn c0 noterm"[^>]*><span class="sw k-[a-z]+"></span>' + re.escape(model) + r'(?:<span|</td>).*?</tr>', x).group(0)
     return re.findall(r'<td[^>]*>.*?</td>', tr)[idx]
-t21b, t21a, t31a = tbl(B, 't21'), tbl(A, 't21'), tbl(A, 't31')
+t21b, t21a = tbl(B, 't21'), tbl(A, 't21')
 res = {
     'idempotent': idem,
     't21_rows': [rows(t21b), rows(t21a)], 't21_cols': [cols(t21b), cols(t21a)],
-    't21_has_xai_or_testv': ('k-xai' in t21a) or ('k-testv' in t21a),
+    't21_testv_group': '<tr class="grp" data-tags="open"><td colspan' in t21a and '<span class="sw k-testv"></span>TestLab<small class="gk"' in t21a,
+    't21_test_model_tags': re.search(r'<tr class="v-xai" data-tags="bigtech"><td class="mn c0 noterm"[^>]*><span class="sw k-xai"></span>TEST Model', t21a) is not None,
+    't21_test_model_aa': cell(t21a, 'TEST Model', 6),
     'testb_header': re.search(r'<th class="num"[^>]*>TestB</th>', t21a) is not None,
     'testb_cells': re.findall(r'<td class="num cb ?(r\d)?[^"]*" style="--w:([0-9.]+)%" data-tip="TEST Bench 1\.0：([0-9.]+)', t21a),
-    't31_rows': [rows(tbl(B, 't31')), rows(t31a)], 't31_testv_group': '<span class="sw k-testv"></span>TestLab<small class="gk"' in t31a,
-    't31_test_model_aa': cell(t31a, 'TEST Model', 6),
-    'f21_lanes_same': re.findall(r'data-lane="([a-z]+)"', fig(B, 'f21')) == re.findall(r'data-lane="([a-z]+)"', fig(A, 'f21')),
-    'f32_lanes': re.findall(r'<div class="hl-track" data-lane="([a-z]+)"', fig(A, 'f32')),
+    'f21_lanes': [re.findall(r'<div class="hl-track" data-lane="([a-z]+)"', fig(B, 'f21')), re.findall(r'<div class="hl-track" data-lane="([a-z]+)"', fig(A, 'f21'))],
     'testv_css': '--tv:#6b8f00' in A and '.sc .spt[data-key=testv]' in A,
-    'f41_legend_testv_in_open_group': re.search(r'<span class="lgg"><span class="lgn"[^>]*>(?:<span class="lz">开源</span>).*?data-key="testv"', fig(A, 'f41')) is not None,
+    'f41_legend_testv_in_open_group': re.search(r'<span class="lgg" data-tags="open"><span class="lgn"[^>]*>(?:<span class="lz">开源</span>).*?data-key="testv"', fig(A, 'f41')) is not None,
     'f41_axis': re.search(r'AA 指数（0–(\d+)）', fig(A, 'f41')).group(1),
     'f44_points': [len(re.findall(r'class="spt', fig(B, 'f44'))), len(re.findall(r'class="spt', fig(A, 'f44')))],
     'meta': re.search(r'<p class="meta">.*?</p>', A).group(0),
     'missing_open_weights': missing_ow,
-    'test_model_closed_tag': re.search(r'TEST Model<span class="tag ow-c"', t31a) is not None,
-    'test_open_open_tag': re.search(r'TEST Open<span class="tag ow-o"', t31a) is not None,
+    'test_model_closed_tag': re.search(r'TEST Model<span class="tag ow-c"', t21a) is not None,
+    'test_open_open_tag': re.search(r'TEST Open<span class="tag ow-o"', t21a) is not None,
 }
-ok = (idem and res['t21_rows'][1] == res['t21_rows'][0] and res['t21_cols'][1] == res['t21_cols'][0] + 1 and not res['t21_has_xai_or_testv'] and res['testb_header']
-      and len(res['testb_cells']) == 2 and res['t31_rows'][1] == res['t31_rows'][0] + 2 and res['t31_testv_group'] and '>72<' in res['t31_test_model_aa']
-      and res['f21_lanes_same'] and 'testv' in res['f32_lanes'] and res['testv_css'] and res['f41_legend_testv_in_open_group'] and res['f44_points'][1] == res['f44_points'][0] + 2
+ok = (idem and res['t21_rows'][1] == res['t21_rows'][0] + 2 and res['t21_cols'][1] == res['t21_cols'][0] + 1 and res['testb_header']
+      and len(res['testb_cells']) == 2 and res['t21_testv_group'] and res['t21_test_model_tags'] and '>72<' in res['t21_test_model_aa']
+      and res['f21_lanes'][1] == res['f21_lanes'][0] + ['testv'] and res['testv_css'] and res['f41_legend_testv_in_open_group'] and res['f44_points'][1] == res['f44_points'][0] + 2
       and not missing_ow and res['test_model_closed_tag'] and res['test_open_open_tag'])
 res['ok'] = ok
 json.dump(res, open(os.path.join(OUT, 'result.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
