@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-11-23",
- "fetched_at": "2026-11-23T02:53:00+00:00",
+ "snapshot_date": "2026-11-24",
+ "fetched_at": "2026-11-24T06:07:58+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -17,7 +17,8 @@
     "users": [
      "Anthropic",
      " Cursor",
-     " SpaceXAI"
+     " SpaceXAI",
+     " Reflection"
     ],
     "chip_types": [
      "B200",
