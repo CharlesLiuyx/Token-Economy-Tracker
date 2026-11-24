@@ -2,8 +2,8 @@
 """无头 Chromium 检查（playwright）：3 种窗口宽 × 深浅主题 × 中英两种语言，每种都断言并截图。
 断言：JS 报错、页面横向溢出、图内元素越出图框、宽表吸顶克隆与原表头逐列对齐（表 2-1 / 2-2 / 2-3）、
      时间轴（图 2-1）节点互不重叠且不越出泳道、图 3-4 散点标签互不重叠且不压别的点、不出绘图区、
-     语言切换后 <html lang> 正确、表 2-1 行列数、图 3-x 行数、顶栏标签筛选（只开「开源」后表 2-1 / 图 2-1 / 图 3-1 只剩开源厂商，恢复后行数还原）。
-截图：每种组合存 top（首屏，含顶栏、筛选器与语言按钮）、f21、t21（滚到表中间、表头吸顶）、f41、f44、f45、flt（只开「开源」时的表 2-1）。
+     语言切换后 <html lang> 正确、表 2-1 行列数、图 3-x 行数、标签筛选（只开「开源」后表 2-1 / 图 2-1 / 图 3-1 只剩开源厂商，恢复后行数还原）。
+截图：每种组合存 top（首屏，含顶栏与语言按钮）、f21、t21（滚到表中间、表头吸顶）、f41、f44、f45、flt（只开「开源」时的表 2-1）。
 用法：python3 qa/browser_check.py 报告.html 截图目录 [chrome 路径] [--widths 1440,1100,800]
 VM 里没有浏览器时：把报告 stage 到容器里跑（容器有 playwright + google-chrome）。"""
 import json, os, sys
@@ -78,12 +78,12 @@ with sync_playwright() as p:
                 r['sticky'] = {t: pg.evaluate(ALIGN, t) for t in ('t21', 't22', 't23')}
                 pg.evaluate(ALIGN, 't21'); pg.wait_for_timeout(80)
                 pg.screenshot(path=os.path.join(OUT, '%s-t21.png' % tag))
-                # 顶栏标签筛选：Shift 点「开源」＝只看开源；表 2-1、图 2-1 模型泳道、图 3-1 只剩开源厂商；再点「前沿」「大厂」恢复
-                pg.click('#flt [data-flt=open]', modifiers=['Shift']); pg.wait_for_timeout(150)
+                # 标签筛选：Shift 点「开源」＝只看开源；表 2-1、图 2-1 模型泳道、图 3-1 只剩开源厂商；再点「前沿」「大厂」恢复
+                pg.click('#t21 .flt [data-flt=open]', modifiers=['Shift']); pg.wait_for_timeout(150)
                 r['flt'] = pg.evaluate(FLT)
                 pg.evaluate(ALIGN, 't21'); pg.wait_for_timeout(80)
                 pg.screenshot(path=os.path.join(OUT, '%s-flt.png' % tag))
-                pg.click('#flt [data-flt=frontier]'); pg.click('#flt [data-flt=bigtech]'); pg.wait_for_timeout(150)
+                pg.click('#t21 .flt [data-flt=frontier]'); pg.click('#t21 .flt [data-flt=bigtech]'); pg.wait_for_timeout(150)
                 r['flt_back'] = pg.evaluate(FLT)
                 # 语言按钮：切到另一种语言再切回，<html lang> 跟着变、无报错
                 other = 'en' if lang == 'zh' else 'zh'

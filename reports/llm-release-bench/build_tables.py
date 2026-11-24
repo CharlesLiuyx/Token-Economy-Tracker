@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """把 data/models.json + data/vendors.json 写进报告 HTML：
-  顶栏（含「前沿 / 大厂 / 开源」标签筛选器）与首屏的快照日期 / 分组模型计数、第 2 章的表 2-1（全部模型）、表 2-2、
+  顶栏与首屏的快照日期 / 分组模型计数、第 2 章的表 2-1（全部模型）、表 2-2、
   图 2-1 的模型泳道（全部厂商）、第 3 章（全部模型）的图 3-1…3-5、附录「核对方式」与大厂 / 开源来源、
   新厂商的配色 CSS、样式块（c34css，含筛选 CSS）与页面脚本（c34js：散点标签避让、标签筛选）。
 2026-11-24：原第 2 章（前沿）和第 3 章（大厂与开源）合并成第 2 章；原第 4、5 章改为第 3、4 章。
   HTML 里的 id 沿用旧名（section s4 / s5、h41…h45、f41…f45），只改可见编号，免得 compute 与 qa 的选择器跟着变。
 标签：vendors.json 的 vendors[].tags（一家可多个，Google＝前沿＋大厂），group＝主分组（图例按它分组）。
   每个表行、组标题行、时间轴泳道、图 3-x 的行 / 点 / 图例项都带 data-tags="…"（按 groups 顺序、空格分隔）；
-  顶栏筛选把关掉的标签写进 <html data-off="…">，flt_css() 生成的规则隐藏「全部标签都被关掉」的元素（标签之间是「或」）。
+  表 2-1 模型列表头的筛选器把关掉的标签写进 <html data-off="…">，flt_css() 生成的规则隐藏「全部标签都被关掉」的元素（标签之间是「或」）。
   表 2-1 的列跟着筛选动态隐藏：可见行里全是 .na 格的列整列隐藏（页面 JS fitCols）。
   模型列宽＝当前语言与筛选下可见模型名的最宽内容（fitCols.c0，layout.t21.model 只是初值）。
   表 2-2 与 2.3 节算力不带标签、不受筛选影响。名次与色条按全部模型算，不随筛选变。
@@ -114,7 +114,7 @@ def subst(x, mp):
 VEN = VJ['vendors']; VK = {v['key']: v for v in VEN}; VORD = [v['key'] for v in VEN]
 VGROUPS = VJ['groups']; GK = {g['key']: g for g in VGROUPS}
 for v in VEN: assert v['group'] in GK, ('vendors.json：厂商的 group 不在 groups 里', v['key'], v['group'])
-TAGS = [g['key'] for g in VGROUPS]                                 # 顶栏筛选器的标签＝groups 的 key（前沿 / 大厂 / 开源）
+TAGS = [g['key'] for g in VGROUPS]                                 # 筛选器的标签＝groups 的 key（前沿 / 大厂 / 开源）
 for v in VEN:
     v.setdefault('tags', [v['group']])
     assert v['group'] in v['tags'] and all(t in GK for t in v['tags']), ('vendors.json：tags 必须含 group，且都在 groups 里', v['key'], v['tags'])
@@ -251,7 +251,7 @@ def f21_hl():
     return '<div class="hl" data-t0="%s" data-span="%d">' % (T0.isoformat(), SPAN)
 def lanes_html(snap, fig):
     """全部模型泳道（vendors.json 的 timeline_lanes 顺序）；snap＝该图的快照日（横轴、快照竖线都由它推导）。
-    泳道名与轨道都带 data-tags（厂商标签），顶栏筛选器按它隐藏。"""
+    泳道名与轨道都带 data-tags（厂商标签），标签筛选器按它隐藏。"""
     t0, span, months = axis(snap)
     def ps(d): return (day(d) - t0).days / span * 100
     lines = ''.join('<i class="ml" style="left:%s%%"></i>' % f3((d - t0).days / span * 100) for d in months[1:])
@@ -339,7 +339,7 @@ def t21():
     ncol = len(widths)
     h = ['<div class="tblwrap wide" id="t21"%s><table style="width:%sem"><colgroup>' % (att('data-toc', T['toc']), f3(sum(widths)))]
     h += ['<col style="width:%sem">' % f3(w) for w in widths]
-    h.append('</colgroup><thead><tr><th rowspan="2" class="c0"%s>%s</th>' % (att('data-tip', T['c0']['tip']), TX(T['c0']['label'])))
+    h.append('</colgroup><thead><tr><th rowspan="2" class="c0"%s>%s%s</th>' % (att('data-tip', T['c0']['tip']), TX(T['c0']['label']), flt_html()))
     for g, ks in GROUPS:
         h.append('<th colspan="%d" class="gh gs"%s>%s</th>' % (len(ks), att('data-tip', g['tip']), TX(g['label'])))
     h.append('</tr><tr class="h2">')
@@ -644,12 +644,12 @@ tr.grp .gk{font-weight:400;color:var(--ink3);font-size:.9em;margin-left:8px;curs
 #f21 .hl-lab.li small{display:block}
 #t21 .xc{display:none}
 #t21 td.c0,#t21 th.c0{white-space:nowrap}
-#flt{display:inline-flex;flex:none;border:1px solid var(--line);height:18px;line-height:16px;margin-right:6px}
-#flt button{padding:0 6px;color:var(--ink2)}
-#flt button+button{border-left:1px solid var(--line)}
-#flt button.on{background:var(--ink);color:var(--bg)}
-#flt button:not(.on){text-decoration:line-through;color:var(--ink3)}
-#flt button:not(.on):hover,#flt button.on:hover{background:var(--hover);color:var(--ink)}
+.flt{position:absolute;top:5px;right:6px;display:inline-flex;border:1px solid var(--line);height:18px;line-height:16px;font-weight:400;font-size:12px;background:var(--bg)}
+.flt button{padding:0 6px;color:var(--ink2)}
+.flt button+button{border-left:1px solid var(--line)}
+.flt button.on{background:var(--ink);color:var(--bg)}
+.flt button:not(.on){text-decoration:line-through;color:var(--ink3)}
+.flt button:not(.on):hover,.flt button.on:hover{background:var(--hover);color:var(--ink)}
 #s4 .row{height:auto;min-height:26px;padding-top:2px;padding-bottom:2px}
 #s4 .row.hd{min-height:22px}#s4 .row.ax{min-height:18px;padding-top:0;padding-bottom:0}
 #s4 .row .nm{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.2;display:flex;align-items:baseline}
@@ -681,7 +681,7 @@ tr.grp .gk{font-weight:400;color:var(--ink3);font-size:.9em;margin-left:8px;curs
 .sc .spt:hover .pl{color:var(--ink);background:var(--bg)}
 figure p.note{margin-top:4px}"""
 def flt_css():
-    """顶栏筛选：<html data-off="关掉的标签…">。元素的 data-tags 里每个标签都被关掉时隐藏（标签之间是「或」）。"""
+    """标签筛选：<html data-off="关掉的标签…">。元素的 data-tags 里每个标签都被关掉时隐藏（标签之间是「或」）。"""
     out = []
     for n in range(1, len(TAGS) + 1):
         for combo in itertools.combinations(TAGS, n):
@@ -689,7 +689,7 @@ def flt_css():
     return ',\n'.join(out) + '{display:none!important}'
 def c34_css():
     ks = ''.join('.sc .spt[data-key=%s]{--vc:var(%s)}' % (v['key'], v['css_var']) for v in VEN)
-    return '<style id="c34-css">\n/* build_tables.py 生成：表 2-1 组标题标签、图 2-1 泳道小字、顶栏标签筛选、图 3-x 分组图例、图 3-4 散点的样式 */\n%s\n%s\n%s\n</style>' % (C34_CSS, ks, flt_css())
+    return '<style id="c34-css">\n/* build_tables.py 生成：表 2-1 组标题标签、图 2-1 泳道小字、标签筛选器、图 3-x 分组图例、图 3-4 散点的样式 */\n%s\n%s\n%s\n</style>' % (C34_CSS, ks, flt_css())
 C34_JS = r"""
 /* ---- fig 4-4 scatter: place point labels without overlaps (read everything, then write); a label with no free slot is hidden, the tooltip still has it ---- */
 function fitScatter(){
@@ -721,7 +721,7 @@ relayout=function(){relayout1();fitScatter()};
    A hidden column's <col> is detached (fixed layout keeps cells and cols aligned), its cells get .xc, group headers shrink their colspan,
    the first visible column of each group carries the .gs divider, the table width is the sum of visible <col> widths. Same for the sticky header clone.
    fitCols.c0() (run at the start of every relayout): the model column is as wide as its widest visible cell in the current language
-   (names never wrap; measured with a Range, cached per language + filter + font size). ---- */
+   (names never wrap; measured with a Range, cached per language + filter + font size); the header cell needs its label + the tag filter + a gap. ---- */
 var fitCols=(function(){
   var tb=$('#t21 table');if(!tb){var nf=function(){};nf.c0=nf;return nf}
   var cl=null;wides.forEach(function(o){if(o.tb===tb)cl=o.ct});
@@ -742,10 +742,12 @@ var fitCols=(function(){
   function c0(){
     var fs=parseFloat(getComputedStyle(tb).fontSize),k=(R.getAttribute('data-lang')||'')+'|'+(R.getAttribute('data-off')||'')+'|'+fs;
     if(k===key0||!fs||!tb.getClientRects().length)return;key0=k;
-    var px=0;c0s.concat([hc0]).forEach(function(c){
+    var px=0;c0s.forEach(function(c){
       if(!c.getClientRects().length)return;rng.selectNodeContents(c);var cs=getComputedStyle(c);
       px=Math.max(px,rng.getBoundingClientRect().width+parseFloat(cs.paddingLeft)+parseFloat(cs.paddingRight)+2);
     });
+    var fl=$('.flt',hc0);if(fl){rng.setStartBefore(hc0.firstChild);rng.setEndBefore(fl);
+      px=Math.max(px,rng.getBoundingClientRect().width+fl.offsetWidth+parseFloat(getComputedStyle(hc0).paddingLeft)+(parseFloat(getComputedStyle(fl).right)||0)+12)}
     if(px){S[0].em[0]=Math.ceil(px/fs*100)/100;width()}
   }
   var f=function(off){
@@ -771,23 +773,24 @@ var fitCols=(function(){
 var relayout2=relayout;
 relayout=function(){fitCols.c0();relayout2()};
 
-/* ---- top-bar tag filter (Frontier / Big Tech / Open-weight): tags that are off go into <html data-off>; CSS hides every [data-tags] whose tags are all off.
-   Click toggles one tag, Shift-click keeps only that tag; at least one tag stays on. Saved as mdl-off. ---- */
+/* ---- tag filter (Frontier / Big Tech / Open-weight) in the model header cell of table 2-1 (and its sticky clone): tags that are off go into
+   <html data-off>; CSS hides every [data-tags] whose tags are all off, page-wide. Click toggles one tag, Shift-click keeps only that tag;
+   at least one tag stays on. Saved as mdl-off. ---- */
 (function(){
-  var box=$('#flt');if(!box)return;
+  var box=$('.flt');if(!box)return;
   var ALL=$$('[data-flt]',box).map(function(b){return b.getAttribute('data-flt')});
   function cur(){return (R.getAttribute('data-off')||'').split(' ').filter(function(k){return ALL.indexOf(k)>=0})}
   function apply(off,init){
     if(off.length)R.setAttribute('data-off',off.join(' '));else R.removeAttribute('data-off');
     fitCols(off);
-    $$('[data-flt]',box).forEach(function(b){var on=off.indexOf(b.getAttribute('data-flt'))<0;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false')});
+    $$('.flt [data-flt]').forEach(function(b){var on=off.indexOf(b.getAttribute('data-flt'))<0;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false')});
     if(!init){try{localStorage.setItem('mdl-off',off.join(' '))}catch(e){}hideTip();relayout()}
   }
   var off=[];try{off=(localStorage.getItem('mdl-off')||'').split(' ').filter(function(k){return ALL.indexOf(k)>=0})}catch(e){}
   if(off.length>=ALL.length)off=[];
   apply(off,true);if(off.length)relayout();
-  box.addEventListener('click',function(e){
-    var b=e.target.closest('[data-flt]');if(!b)return;
+  D.addEventListener('click',function(e){
+    var b=e.target.closest('.flt [data-flt]');if(!b)return;
     var k=b.getAttribute('data-flt'),c=cur(),nx;
     if(e.shiftKey)nx=ALL.filter(function(x){return x!==k});
     else nx=c.indexOf(k)>=0?c.filter(function(x){return x!==k}):c.concat([k]);
@@ -801,13 +804,13 @@ relayout=function(){fitCols.c0();relayout2()};
 STR = SJ['strings']
 LANG_SWITCH = '<span id="lang" role="group" data-i18n-skip%s%s><button data-set="lang:zh" lang="zh-CN">中文</button><button data-set="lang:en" lang="en">EN</button></span>\n  '
 def flt_html():
-    """顶栏的标签筛选器：每个标签一个开关按钮（默认全开）。状态写在 <html data-off="…">，CSS 按它隐藏（c34css 的 flt_css）。"""
+    """表 2-1 模型列表头右上角的标签筛选器（作用于全页）：每个标签一个开关按钮（默认全开）。状态写在 <html data-off="…">，CSS 按它隐藏（c34css 的 flt_css）。"""
     bs = ''.join('<button data-flt="%s" class="on" aria-pressed="true">%s</button>' % (g['key'], TX(g['label'])) for g in VGROUPS)
     def who(l):
         sep, colon = ('、', '：') if l == 'zh' else (', ', ': ')
         return ''.join('<br><b>%s</b>%s%s' % (get(g['label'], l), colon, sep.join(get(v['name'], l) for v in VEN if g['key'] in v['tags'])) for g in VGROUPS)
     tip = by(lambda l: get(UI['flt_tip'], l) + who(l))
-    return '<span id="flt" role="group"%s%s>%s</span>' % (att('aria-label', STR['flt_aria']), att('data-tiph', tip), bs)
+    return '<span class="flt" role="group"%s%s>%s</span>' % (att('aria-label', STR['flt_aria']), att('data-tiph', tip), bs)
 def render_tpl(name):
     t = SJ['templates'][name]
     def tx(m):

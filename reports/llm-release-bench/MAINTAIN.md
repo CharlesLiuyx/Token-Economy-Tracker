@@ -38,14 +38,14 @@
 ## 2. 两套构建，各管各的标记
 
 - `build_tables.py` 只改 `<!--data:NAME:start-->…<!--data:NAME:end-->`（JS 里写成 `/*<!--…-->*/`）：
-  - 数据块：`vcss`（新厂商配色）、`c34css`（表 2-1 组标题标签、图 2-1 泳道小字、顶栏筛选器与筛选规则、分组图例、散点）、`topbar`、`h1`、`meta`、
+  - 数据块：`vcss`（新厂商配色）、`c34css`（表 2-1 组标题标签、图 2-1 泳道小字、标签筛选器样式与筛选规则、分组图例、散点）、`topbar`、`h1`、`meta`、
     第 2 章 `t21hints`、`t21`（全部模型）、`f21hl`（图 2-1 的 `<div class="hl">`，带横轴起点和天数）、`f21lanes`（全部厂商泳道）、`f21axis`、`t22hints`、`t22`；
     第 3 章 `f41`…`f45`；附录 `appendix`、`src3`（大厂与开源来源）；
-    页面脚本 `c34js`（JS 里写成 `/*<!--data:c34js:…-->*/`：散点标签避让 fitScatter，接在 relayout 后面；顶栏标签筛选）。
-  - 固定文字块（来自 `i18n/static.json`，名字带 `s-` 前缀）：`s-chrome`（顶栏按钮、标签筛选器 `{{flt}}`、语言切换、更多菜单、目录头）、`s-hd-*`（各章标题：h1、h2、h4、h5、h6、h21/h22、h41–h45）、`s-ch1`、`s-ch5`、`s-src`、`s-f21cap` / `s-f21leg1` / `s-f21leg2`（图 2-1 图注与图例）、`s-css`（随语言变的 CSS 文字）、`s-terms`（TERMS / ALIAS / ALIAS_EN）、`s-ui`（I18N 界面字）。
+    页面脚本 `c34js`（JS 里写成 `/*<!--data:c34js:…-->*/`：散点标签避让 fitScatter，接在 relayout 后面；标签筛选）。
+  - 固定文字块（来自 `i18n/static.json`，名字带 `s-` 前缀）：`s-chrome`（顶栏按钮、语言切换、更多菜单、目录头）、`s-hd-*`（各章标题：h1、h2、h4、h5、h6、h21/h22、h41–h45）、`s-ch1`、`s-ch5`、`s-src`、`s-f21cap` / `s-f21leg1` / `s-f21leg2`（图 2-1 图注与图例）、`s-css`（随语言变的 CSS 文字）、`s-terms`（TERMS / ALIAS / ALIAS_EN）、`s-ui`（I18N 界面字）。
   - 章节（2026-11-24 起）：1 结论｜2 模型：前沿 · 大厂 · 开源（2.1 表 2-1 全部模型 / 图 2-1 全部厂商泳道 + 算力、2.2 表 2-2、2.3 算力）｜3 全部模型对比（3.1 AA、3.2 Vals、3.3 TB 4.0 Vals、3.4 价格与得分散点、3.5 厂商自报六项）｜4 怎么读这些数｜附录 来源。
   - **HTML id 沿用旧名**：第 3 章是 `section#s4`（标题 `h4`、`h41`…`h45`，图 `f41`…`f45`），第 4 章是 `section#s5`（`h5`、`s-ch5`）。只改了可见编号（`static.json` 的 `templates.hd-h4/hd-h5` 与 `strings.hd_h4x`），免得 compute 与 qa 的选择器跟着变。
-  - 顶栏标签筛选：见第 13.1 节。
+  - 标签筛选器（表 2-1 模型列表头右上角，由 `t21()` 输出）：见第 13.1 节。
 - `compute/build.py` 只改 `<!--compute:…-->`：图 2-1 顶部刻度、三条算力泳道、图 2-1 的算力图例和「怎么读」、2.3 节（含图 2-2 / 2-3、表 2-3）、算力来源、算力术语、相关 JS（其中时间轴指示线 / 磁吸和底部快照标签避让 fitSnap 对页面里所有 `.hl` 生效）。
 - 标记之外剩下的是页面骨架：`<head>` 里的 CSS 和 `<script>` 主体（目录、提示框、吸顶表头、语言切换等交互代码）。这些是代码不是文字，改它们直接改 HTML，改完同样跑第 3 节。**任何面向读者的文字都不要直接写进 HTML**，写进数据文件，否则下次构建不会出英文。
 
@@ -106,13 +106,13 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 | `figures.f44` | 图 3-4 散点：`x`（price_out）、`y`（aa）、`xaxis`（`min` / `max` / `ticks`，对数刻度）、`yaxis`、轴名、图例、`missing`（没有价格未画的图注）、`tip` / `ow_yes` / `ow_no`（悬停文字） |
 | `figures.f45` | 图 3-5：`panels[]`（`bench`、`title`、`sub`），轴 0–100 |
 | `sources_ch3` | 附录里大厂与开源的来源（键名沿用旧名）：`groups[]`（`group`、`label`、`items[]`：`title`（可为 `{zh,en}`）、`url`、`date`、`accessed`） |
-| `ui` | 脚本拼句用的固定字词。`count_groups`（首屏分组计数：带 / 不带「前沿」标签的厂商）、`flt_tip`（顶栏筛选器的悬停说明，脚本在后面接上每个标签有哪些厂商）、`license_closed` / `license_closed_tip` / `params_na_tip`（前沿三家的开放权重 / 参数格）。`month`（中文 `{m} 月`，英文 `{mon}`＝Jan…Dec）、`snap_label` / `snap_short` / `snap_short_tip`（图 2-1 底部快照标签：全称 / 放不下时的短称 / 短称时的提示）、`cost_re`（从 note 里抓「每题成本 $X」的正则，中英各一条，抓到的 $X 必须一致） |
+| `ui` | 脚本拼句用的固定字词。`count_groups`（首屏分组计数：带 / 不带「前沿」标签的厂商）、`flt_tip`（筛选器的悬停说明，脚本在后面接上每个标签有哪些厂商）、`license_closed` / `license_closed_tip` / `params_na_tip`（前沿三家的开放权重 / 参数格）。`month`（中文 `{m} 月`，英文 `{mon}`＝Jan…Dec）、`snap_label` / `snap_short` / `snap_short_tip`（图 2-1 底部快照标签：全称 / 放不下时的短称 / 短称时的提示）、`cost_re`（从 note 里抓「每题成本 $X」的正则，中英各一条，抓到的 $X 必须一致） |
 
 `src` 的取值：`artificial_analysis`、`vals_ai`、`system_card`、`model_card`、`release_table`、`leaderboard`、`vendor_self_report`、`lmarena`、`other`。
 
 ### vendors.json
 
-`groups[]`：`key`（frontier / bigtech / open）、`label`、`tip`。顺序＝顶栏筛选按钮的顺序＝图 3-x 图例里分组的顺序。
+`groups[]`：`key`（frontier / bigtech / open）、`label`、`tip`。顺序＝筛选按钮的顺序＝图 3-x 图例里分组的顺序。
 `vendors[]` 顺序＝表 2-1 分组顺序＝图 3-x 组内图例顺序。字段：`key`、`name`、`product`、`group`（主分组，取 `groups[].key`；图例按它分组）、**`tags`**（筛选标签，取 `groups[].key`，必须含 `group`；一家可以有多个，现在 Google＝`["frontier", "bigtech"]`）、`css_var`、`light` / `dark`、`legend_tip`、`t22_class`、`builtin_css`（true＝颜色写在报告原 CSS 里，只有 google / anthropic / openai）。
 `timeline_lanes[]`：图 2-1 模型泳道顺序（`lane`、`vendor`、可选 `label` 和 `hollow_swatch`）。没有事件的泳道不画，没有模型的厂商不出组标题行。
 `reference_colors`：compute 管的三条算力泳道颜色，只用于配色校验。
@@ -219,13 +219,13 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 
 ## 13. 标签与筛选、表 2-1 列配置、散点图、加新厂商（2026-11-22 建，2026-11-24 合章）
 
-### 13.1 标签与顶栏筛选（2026-11-24：原第 2、3 章合并）
+### 13.1 标签与筛选（2026-11-24：原第 2、3 章合并）
 - 原来按分组把模型拆进两章（前沿＝第 2 章，大厂与开源＝第 3 章）。2026-11-24 起合成一章：表 2-1 收全部模型，图 2-1 画全部厂商的泳道（加算力泳道），原表 3-1、图 3-2 删掉；原第 4、5 章改为第 3、4 章。
 - 每家厂商有筛选标签 `vendors.json → vendors[].tags`，取 `groups[].key`（frontier / bigtech / open），可以多个：现在 Google＝前沿＋大厂，其余各一个。`group` 是主分组，只决定图例里放在哪一组，必须包含在 `tags` 里。
-- 顶栏「前沿 / 大厂 / 开源」三个开关（`{{flt}}`，默认全开）：点一下开 / 关，Shift 点击只看这一个，至少留一个。关掉的标签写进 `<html data-off="…">`，存在 localStorage 的 `mdl-off`。
+- 表 2-1 模型列表头右上角「前沿 / 大厂 / 开源」三个开关（`flt_html()`，由 `t21()` 写进 `th.c0`，绝对定位在右上角；2026-11-24 从顶栏移来，吸顶表头克隆里也能点；默认全开，作用于全页）：点一下开 / 关，Shift 点击只看这一个，至少留一个。关掉的标签写进 `<html data-off="…">`，存在 localStorage 的 `mdl-off`。
 - 带 `data-tags` 的元素：表 2-1 的模型行和厂商组标题行、图 2-1 的模型泳道（名字和轨道）、图 3-1…3-5 的行、图 3-4 的点、图 3-x 的图例项和图例分组。`flt_css()` 生成的 CSS 隐藏「自己的标签全部被关掉」的元素（标签之间是「或」：只开「大厂」时 Google 仍在）。筛选后调 `relayout()`，时间轴打包、吸顶表头、散点标签都重算。
 - 表 2-1 的列也跟着筛选动态算（页面 JS `fitCols`，在 `c34js` 里）：按当前可见的模型行，某列全是 `.na` 格（「—」「否」「同上」等）就整列隐藏——摘掉它的 `<col>`、格子加 `.xc`，分组表头的 colspan 跟着缩、整组没列时隐藏，组内第一个可见列补分组线 `gs`，表宽＝可见列宽之和；吸顶表头克隆同步。全开时与构建出的列一致（构建本来就不出没分数的 bench 列）。
-- 模型列宽也跟着算（`fitCols.c0`，每次 relayout 先跑）：取当前语言、当前筛选下可见模型名格（含受限 / 闭源小标签）与表头的最宽内容（Range 实测，模型名不折行），按语言 + 筛选 + 字号缓存。`layout.t21.model` 只是无 JS 时的初值。
+- 模型列宽也跟着算（`fitCols.c0`，每次 relayout 先跑）：取当前语言、当前筛选下可见模型名格（含受限 / 闭源小标签）的最宽内容，和表头需要的宽度（「模型」+ 筛选器 + 间距）取大者（Range 实测，模型名不折行），按语言 + 筛选 + 字号缓存。`layout.t21.model` 只是无 JS 时的初值。
 - 不受筛选影响：表 2-2（Mythos 专项）、2.3 节算力、图 2-1 的算力泳道。名次、色条、价格色条的最高价都按全部模型算，不随筛选变（「怎么读」提示里写了）。
 - `qa/browser_check.py` 每种组合都 Shift 点「开源」，断言表 2-1、图 2-1、图 3-1 只剩开源厂商，恢复后行数还原，并存 `flt` 截图。
 - 首屏计数「前沿 N 个 + 大厂与开源 M 个」：带 / 不带「前沿」标签的厂商（Google 算前沿）。第 1 章 `check_ch1()` 同样按这个分。
