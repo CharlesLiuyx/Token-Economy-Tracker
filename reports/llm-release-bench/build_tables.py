@@ -874,17 +874,20 @@ def check_ch1():
     ow = sorted([m for m in has(M3) if m.get('license') and bi(m['license']['d']).en != 'No'], key=lambda m: -aa(m))
     mit = max([m for m in ow if bi(m['license']['d']).en == 'MIT'], key=aa)
     tier = [m for m in has(ALLM) if m.get('price') and (m['price']['in'], m['price']['out']) == (0.1, 0.5)]     # 最便宜一档 $0.10 / $0.50
-    cheap = sorted([m for m in tier if aa(m) == max(aa(x) for x in tier)], key=lambda m: m['name'])
+    cheap = sorted(tier, key=lambda m: (-aa(m), m['name']))[:2]                                          # 这一档 AA 最高的两个（2026-11-25 起 Haiku 37 > Ember 36，不再打平）
     need = [
         ('%s，AA %d' % (top3['name'], aa(top3)), '%s, AA %d' % (top3['name'], aa(top3))),
         ('%s（%d）低 %d' % (top2['name'].replace('Claude ', ''), aa(top2), aa(top2) - aa(top3)), '%d points behind the frontier leader, %s (%d)' % (aa(top2) - aa(top3), top2['name'].replace('Claude ', ''), aa(top2))),
         ('%s（%d），低 %d' % (api3['name'], aa(api3), aa(top2) - aa(api3)), '%s (%d), %d behind' % (api3['name'], aa(api3), aa(top2) - aa(api3))),
-        ('AA 都是 %d' % aa(cheap[0]), 'Both score %d on AA' % aa(cheap[0])),
+        (('AA 都是 %d' % aa(cheap[0]), 'Both score %d on AA' % aa(cheap[0])) if aa(cheap[0]) == aa(cheap[1]) else
+         ('AA 是 %d 对 %d' % (aa(cheap[0]), aa(cheap[1])), 'AA %d to %d' % (aa(cheap[0]), aa(cheap[1])))),
         ('%s，AA %d' % (ow[0]['name'], aa(ow[0])), '%s, AA %d' % (ow[0]['name'], aa(ow[0]))),
         ('%s（%d）高 %d' % (ow[1]['name'], aa(ow[1]), aa(ow[0]) - aa(ow[1])), '%d ahead of the runner-up, %s (%d)' % (aa(ow[0]) - aa(ow[1]), ow[1]['name'], aa(ow[1]))),
         ('MIT 许可里最强的是 %s' % mit['short'], 'strongest MIT-licensed model is %s' % mit['short']),
     ]
-    assert len(cheap) == 2 and all(aa(m) == aa(cheap[0]) for m in cheap), ('第 1 章第 10 条：最便宜一档的模型或 AA 变了', [(m['name'], aa(m)) for m in cheap])
+    assert len(cheap) == 2 and all('vals' in m['scores'] for m in cheap), ('第 1 章第 10 条：最便宜一档的前两名变了', [(m['name'], aa(m)) for m in cheap])
+    need.append((cheap[0]['name'].replace('Claude ', ''), cheap[0]['name'].replace('Claude ', '')))       # 两个名字都要出现在这一条里（近似：全文出现）
+    need.append((cheap[1]['name'].replace('Claude ', ''), cheap[1]['name'].replace('Claude ', '')))
     for m in cheap:
         v = m['scores']['vals']; c = re.search(bi(UI['cost_re']).zh, bi(v['note']).zh).group(1)
         need.append(('%s%%' % v['d'], '%s%%' % v['d']))

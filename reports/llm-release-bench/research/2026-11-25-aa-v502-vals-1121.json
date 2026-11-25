@@ -1,0 +1,227 @@
+{
+ "_readme": "2026-11-25 定时任务：前沿与大厂、开源过去 7 天查新。没有新模型；AA 指数 11-24 升到 v5.0.2、Vals Index 11-21 重算，两列分数整体更新。",
+ "checked_window": "2026-11-18 ~ 2026-11-25",
+ "aa_v5_0_2": {
+  "change": "AA changelog 2026-11-24：Intelligence Index v5.0.2，Terminal-Bench 换成 4.1（同样 66 题、换判分器），FrontierCode 2.0 换新版轨迹扫描。方法页标题已是 v5.0.2。",
+  "src": [
+   "https://artificialanalysis.ai/changelog",
+   "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
+   "https://artificialanalysis.ai/leaderboards/models",
+   "https://artificialanalysis.ai/models/releases"
+  ],
+  "changed": {
+   "gemini-4-neon": [
+    61,
+    62,
+    "模型页标 v5.0.2：xhigh 62 / high 60 / medium 55 / low 44",
+    "高"
+   ],
+   "claude-haiku-5-5": [
+    36,
+    37,
+    "模型页标 v5.0.2：max 37 / xhigh 35 / high 30 / medium 25 / low 19",
+    "高"
+   ],
+   "gemini-4-argon": [
+    50,
+    51,
+    "排行榜与 releases 页 51；模型页 11-25 仍标 v5.0.1、50",
+    "中"
+   ],
+   "kimi-k3-1-pro": [
+    46,
+    47,
+    "排行榜与 releases 页 47；模型页 11-25 仍标 v5.0.1、46",
+    "中"
+   ],
+   "deepseek-v4-1-flash-1017": [
+    33,
+    32,
+    "排行榜与 releases 页 32；模型页 11-25 仍标 v5.0.1、33",
+    "中"
+   ]
+  },
+  "unchanged_integer": "其余 19 个在新榜上的模型整数不变（Fable 5.2 模型页标 v5.0.2：max 65 / xhigh 62 / high 62 / medium 56 / low 54）",
+  "not_on_leaderboard": [
+   "claude-fable-5-1",
+   "gpt-6-1-sol",
+   "grok-4-6"
+  ],
+  "caveat": "所有页面只给整数；排行榜经模型抽取读取，可能漏行。Argon / Kimi / DeepSeek 模型页与排行榜不一致，以排行榜为准，可信度降为中。"
+ },
+ "vals_index_2026_11_21": {
+  "src": "https://www.vals.ai/benchmarks/vals_index（Updated 11/21/2026，Version 2.2，43 行全表原文）",
+  "note": "页面没写 11-21 改了什么；前十名分数普遍降 1–2 个百分点，每题成本除 Argon（$13.37→$10.58）、Hydrogen（$9.84→$7.75）外不变。Gemini 4 Neon、GPT-6.2 Sol、Inkling 2 Mini 的 Vals 更新帖里的数（70.87 / 66.06 / 46.46）是旧版，模型页已是新数。",
+  "rows": {
+   "claude-fable-5-2": [
+    70.06,
+    1,
+    17.94
+   ],
+   "claude-sonnet-5-5": [
+    69.45,
+    2,
+    16.18
+   ],
+   "gemini-4-neon": [
+    69.23,
+    3,
+    7.4
+   ],
+   "gemini-4-carbon": [
+    68.83,
+    4,
+    10.51
+   ],
+   "claude-opus-5-5": [
+    68.7,
+    5,
+    24.77
+   ],
+   "gemini-4-argon": [
+    67.37,
+    6,
+    10.58
+   ],
+   "gemini-4-hydrogen": [
+    67.07,
+    7,
+    7.75
+   ],
+   "gpt-6-2-astra": [
+    66.27,
+    8,
+    10.68
+   ],
+   "gpt-6-2-sol": [
+    65.07,
+    9,
+    3.18
+   ],
+   "muse-wonder-full": [
+    64.67,
+    10,
+    6.81
+   ],
+   "muse-wonder": [
+    62.92,
+    12,
+    10.65
+   ],
+   "gpt-6-1-sol": [
+    62.26,
+    13,
+    3.61
+   ],
+   "kimi-k3-1-pro": [
+    60.88,
+    15,
+    6.44
+   ],
+   "deepseek-v4-1-flash-1017": [
+    59.66,
+    16,
+    0.66
+   ],
+   "gpt-6-1-terra": [
+    59.5,
+    17,
+    2.94
+   ],
+   "glm-5-3": [
+    58.4,
+    18,
+    8.52
+   ],
+   "muse-ember": [
+    58.07,
+    19,
+    0.15
+   ],
+   "claude-haiku-5-5": [
+    57.04,
+    22,
+    3.17
+   ],
+   "grok-4-7": [
+    56.53,
+    23,
+    11.63
+   ],
+   "inkling-2-small": [
+    54.28,
+    26,
+    3.51
+   ],
+   "kimi-k3": [
+    50.95,
+    32,
+    7.17
+   ],
+   "deepseek-v4-pro-0813": [
+    50.81,
+    33,
+    2.5
+   ],
+   "gpt-6-luna": [
+    50.33,
+    34,
+    0.45
+   ],
+   "glm-5-3-flash": [
+    49.48,
+    35,
+    2.05
+   ],
+   "muse-spark-open": [
+    45.43,
+    37,
+    4.72
+   ],
+   "inkling-2-mini": [
+    44.03,
+    38,
+    3.2
+   ]
+  },
+  "cf": "高"
+ },
+ "checked_no_change": [
+  {
+   "item": "Google",
+   "finding": "Gemini 4 Neon（11-18）之后无新模型；11-24 的报道是 Neon 进付费 API / AI Pro、Ultra 的铺开，价格仍 $3 / $15；网络安全版只给 Fairwind 计划成员"
+  },
+  {
+   "item": "Anthropic",
+   "finding": "Fable 5.2 · Mythos 5.2（11-09）之后无新模型"
+  },
+  {
+   "item": "OpenAI",
+   "finding": "11-23 起 ChatGPT 聊天页换成对话调优的 GPT-6.2 Sol（Plus / Pro / Business / Enterprise），没有单独的 API 型号和价格；GPT-5.6 Sol / Terra 12-23 下线。不单列"
+  },
+  {
+   "item": "xAI",
+   "finding": "Grok 4.7（09-21）仍是最新；Grok 4.8 未发布"
+  },
+  {
+   "item": "Meta",
+   "finding": "Muse Ember（11-09）之后无新模型；11-06 的 Active Memory / Active Focus 是给 Muse / Meta AI 的专用版本，没有新型号"
+  },
+  {
+   "item": "DeepSeek / Moonshot",
+   "finding": "无新模型；Kimi K3.1 Pro Prime（11-20）是阿里云百炼的加价档，11-24 已核对"
+  },
+  {
+   "item": "Zhipu",
+   "finding": "GLM-5.4 仍只在 GLM Coding Plan，没有 API、没有官方分数表、权重未放出（11-25 查）"
+  },
+  {
+   "item": "Thinking Machines",
+   "finding": "Inkling 2 Mini（11-20）已在表里；Vals CyberBench v1.1 74.58%（与 Opus 5.5 CVP 并列）不是表里的列"
+  },
+  {
+   "item": "算力",
+   "finding": "Epoch AI Chip Sales 更新日志最新仍是 2026-09-30；Nvidia 11-17 财报已在 compute/decisions.md 里"
+  }
+ ]
+}

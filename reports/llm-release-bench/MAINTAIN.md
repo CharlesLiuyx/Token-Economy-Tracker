@@ -251,7 +251,7 @@ python3 compute/qa_browser.py "$R" /tmp/qa-c /usr/bin/google-chrome --lang en
 FrontierCode 2.0 列里带 `<sup>AA</sup>` 角标的是 Artificial Analysis 自己测的 FrontierCode-AA 2.0（132 题私有集），不是厂商自报。
 
 ### 13.4 散点图（图 3-4）规则
-- 横轴输出价（对数），纵轴 AA v5.0.1。只画同时有 AA 和 API 价的模型；有 AA 没价格的进图注（现在是 Muse Wonder Full）。
+- 横轴输出价（对数），纵轴 AA v5.0.2（2026-11-25 起；AA 新榜上没有的 Fable 5.1、GPT-6.1 Sol、Grok 4.6 仍是 v5.0.1，格子提示写明）。只画同时有 AA 和 API 价的模型；有 AA 没价格的进图注（现在是 Muse Wonder Full）。
 - 点色＝厂商色；实心＝不开放权重，空心＝开放权重（`license.d` 不是「否」）。完全重合的点左右错开 12px。
 - 标签：页面 JS `fitScatter` 按 AA 从高到低依次在 12 个候选位置里找不压点、不压别的标签、不出绘图区的位置；找不到就隐藏标签（悬停仍有完整提示）。`qa/browser_check.py` 断言可见标签互不重叠、不压点，并打印被隐藏的标签。
 - 横轴刻度在 `figures.f44.xaxis.ticks`；有模型的输出价超出 `min` / `max` 时构建打印提示，去改范围。

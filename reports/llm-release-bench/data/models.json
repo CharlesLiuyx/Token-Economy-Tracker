@@ -1,7 +1,7 @@
 {
  "_readme": "表 2-1（全部模型）、表 2-2、图 2-1 模型泳道、图 3-1~3-5、顶栏快照与模型计数的唯一数据源。改完跑 build_tables.py。字段说明见 ../MAINTAIN.md。",
  "meta": {
-  "snapshot": "2026-11-24",
+  "snapshot": "2026-11-25",
   "title": {
    "zh": "大模型发布和 Bench 跟进：前沿 Gemini Claude ChatGPT 大厂 Grok Muse 开源 DeepSeek Kimi GLM",
    "en": "LLM Releases & Benchmarks: Frontier Gemini, Claude, ChatGPT · Big Tech Grok, Muse · Open-weight DeepSeek, Kimi, GLM"
@@ -341,8 +341,8 @@
    "direction": "higher",
    "bar": "auto",
    "desc": {
-    "zh": "Artificial Analysis Intelligence Index v5.0.1。第三方机构用同一套 9 项测试统一打分，满分 100。可以横向比。〔高〕",
-    "en": "Artificial Analysis Intelligence Index v5.0.1. A third party scores every model on the same 9 tests, out of 100. Comparable across vendors. [high]"
+    "zh": "Artificial Analysis Intelligence Index v5.0.2（2026-11-24 起：Terminal-Bench 换成 4.1，同样 66 题、换了判分器；FrontierCode 2.0 换成新版轨迹扫描）。第三方机构用同一套 9 项测试统一打分，满分 100。可以横向比。AA 排行榜上已经没有的 3 个旧模型仍是 v5.0.1 的分数，格子提示里写明。〔高〕",
+    "en": "Artificial Analysis Intelligence Index v5.0.2 (from 2026-11-24: Terminal-Bench moved to 4.1, the same 66 tasks with updated verifiers, and FrontierCode 2.0 uses the newer trajectory scanner). A third party scores every model on the same 9 tests, out of 100. Comparable across vendors. Three older models no longer on the AA leaderboard keep their v5.0.1 scores, as their cell tooltips say. [high]"
    }
   },
   {
@@ -1047,21 +1047,21 @@
    },
    "scores": {
     "aa": {
-     "d": "61",
-     "v": 61,
+     "d": "62",
+     "v": 62,
      "note": {
-      "zh": "推理强度 xhigh。精确值 61.4。默认 high 档是 60。每题约 $6.44。",
-      "en": "Reasoning effort xhigh. Exact value 61.4. 60 at the default high setting. About $6.44 per task."
+      "zh": "Artificial Analysis v5.0.2（11 月 24 日起），推理强度 xhigh；high 档 60、medium 55、low 44。每题约 $6.44。v5.0.1 时是 61（精确值 61.4）。〔高〕",
+      "en": "Artificial Analysis v5.0.2 (from Nov 24), reasoning effort xhigh; 60 at high, 55 at medium, 44 at low. About $6.44 per task. It was 61 on v5.0.1 (exact 61.4). [high]"
      },
      "src": "artificial_analysis",
      "cf": "高"
     },
     "vals": {
-     "d": "70.87",
-     "v": 70.87,
+     "d": "69.23",
+     "v": 69.23,
      "note": {
-      "zh": "11 月 18 日加入，第 2 名。推理强度 xhigh；high 档 70.5%。每题成本 $7.40。",
-      "en": "Added Nov 18, ranked #2. Reasoning effort xhigh; 70.5% at high. Cost per task $7.40."
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 3。每题成本 $7.40。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #3 of 43 on the full Vals leaderboard. Cost per task $7.40. [high]"
      },
      "src": "vals_ai",
      "cf": "高"
@@ -1149,18 +1149,18 @@
      "d": "54",
      "v": 54,
      "note": {
-      "zh": "推理强度 xhigh。默认 high 档是 51。",
-      "en": "Reasoning effort xhigh. 51 at the default high setting."
+      "zh": "推理强度 xhigh。默认 high 档是 51。v5.0.2（11 月 24 日起）仍是 54。",
+      "en": "Reasoning effort xhigh. 51 at the default high setting. Unchanged at 54 on v5.0.2 (from Nov 24)."
      },
      "src": "artificial_analysis",
      "cf": "高"
     },
     "vals": {
-     "d": "68.49",
-     "v": 68.49,
+     "d": "67.07",
+     "v": 67.07,
      "note": {
-      "zh": "每题成本 $9.84。",
-      "en": "Cost per task $9.84."
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 7。每题成本 $7.75。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #7 of 43 on the full Vals leaderboard. Cost per task $7.75. [high]"
      },
      "src": "vals_ai",
      "cf": "高"
@@ -1245,18 +1245,18 @@
      "d": "60",
      "v": 60,
      "note": {
-      "zh": "推理强度 high。medium 档 58，low 档 54。",
-      "en": "Reasoning effort high. 58 at medium, 54 at low."
+      "zh": "推理强度 high。medium 档 58，low 档 54。v5.0.2（11 月 24 日起）仍是 60。",
+      "en": "Reasoning effort high. 58 at medium, 54 at low. Unchanged at 60 on v5.0.2 (from Nov 24)."
      },
      "src": "artificial_analysis",
      "cf": "高"
     },
     "vals": {
-     "d": "70.45",
-     "v": 70.45,
+     "d": "68.83",
+     "v": 68.83,
      "note": {
-      "zh": "每题成本 $10.51。",
-      "en": "Cost per task $10.51."
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 4。每题成本 $10.51。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #4 of 43 on the full Vals leaderboard. Cost per task $10.51. [high]"
      },
      "src": "vals_ai",
      "cf": "高"
@@ -1378,21 +1378,21 @@
    },
    "scores": {
     "aa": {
-     "d": "50",
-     "v": 50,
+     "d": "51",
+     "v": 51,
      "note": {
-      "zh": "推理强度 high。",
-      "en": "Reasoning effort high."
+      "zh": "Artificial Analysis v5.0.2 排行榜（11 月 24 日起），推理强度 high，每题约 $9.95。v5.0.1 是 50（medium 档 48）。11 月 25 日 AA 模型页仍标 v5.0.1、显示 50，排行榜已是 51。〔中〕",
+      "en": "Artificial Analysis v5.0.2 leaderboard (from Nov 24), reasoning effort high, about $9.95 per task. It was 50 on v5.0.1 (48 at medium). On Nov 25 the AA model page still showed 50 under a v5.0.1 label while the leaderboard showed 51. [medium]"
      },
      "src": "artificial_analysis",
-     "cf": "高"
+     "cf": "中"
     },
     "vals": {
-     "d": "69.39",
-     "v": 69.39,
+     "d": "67.37",
+     "v": 67.37,
      "note": {
-      "zh": "每题成本 $13.37。",
-      "en": "Cost per task $13.37."
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 6。每题成本 $10.58。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #6 of 43 on the full Vals leaderboard. Cost per task $10.58. [high]"
      },
      "src": "vals_ai",
      "cf": "高"
@@ -1490,18 +1490,18 @@
      "d": "65",
      "v": 65,
      "note": {
-      "zh": "推理强度 max。精确值 64.6。跑完整套测试每题约 $26.54。",
-      "en": "Reasoning effort max. Exact value 64.6. About $26.54 per task for a full run."
+      "zh": "推理强度 max。精确值 64.6。跑完整套测试每题约 $26.54。v5.0.2（11 月 24 日起）仍是 65。",
+      "en": "Reasoning effort max. Exact value 64.6. About $26.54 per task for a full run. Unchanged at 65 on v5.0.2 (from Nov 24)."
      },
      "src": "artificial_analysis",
      "cf": "高"
     },
     "vals": {
-     "d": "71.31",
-     "v": 71.31,
+     "d": "70.06",
+     "v": 70.06,
      "note": {
-      "zh": "第 1 名。每题成本 $17.94。",
-      "en": "Ranked #1. Cost per task $17.94."
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 1。每题成本 $17.94。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #1 of 43 on the full Vals leaderboard. Cost per task $17.94. [high]"
      },
      "src": "vals_ai",
      "cf": "高"
@@ -1827,21 +1827,21 @@
    },
    "scores": {
     "aa": {
-     "d": "36",
-     "v": 36,
+     "d": "37",
+     "v": 37,
      "note": {
-      "zh": "v5.0.1 的最高档分数。旧版指数（v4.3.2）上是 43，两版不能直接比。",
-      "en": "Top-setting score on v5.0.1. On the old index (v4.3.2) it was 43; the two versions are not directly comparable."
+      "zh": "Artificial Analysis v5.0.2（11 月 24 日起），max 档；xhigh 35、high 30、medium 25、low 19。每题约 $0.41。v5.0.1 是 36；更早的 v4.3.2 是 43，不能直接比。〔高〕",
+      "en": "Artificial Analysis v5.0.2 (from Nov 24), max setting; 35 at xhigh, 30 at high, 25 at medium, 19 at low. About $0.41 per task. It was 36 on v5.0.1 and 43 on the older v4.3.2, which is not comparable. [high]"
      },
      "src": "artificial_analysis",
      "cf": "高"
     },
     "vals": {
-     "d": "58.73",
-     "v": 58.73,
+     "d": "57.04",
+     "v": 57.04,
      "note": {
-      "zh": "每题成本 $3.17。",
-      "en": "Cost per task $3.17."
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 22。每题成本 $3.17。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #22 of 43 on the full Vals leaderboard. Cost per task $3.17. [high]"
      },
      "src": "vals_ai",
      "cf": "高"
@@ -1905,18 +1905,18 @@
      "d": "55",
      "v": 55,
      "note": {
-      "zh": "Artificial Analysis 模型页的最高档分数。",
-      "en": "Top-setting score from the Artificial Analysis model page."
+      "zh": "Artificial Analysis 模型页的最高档分数。v5.0.2（11 月 24 日起）仍是 55。",
+      "en": "Top-setting score from the Artificial Analysis model page. Unchanged at 55 on v5.0.2 (from Nov 24)."
      },
      "src": "artificial_analysis",
      "cf": "高"
     },
     "vals": {
-     "d": "70.85",
-     "v": 70.85,
+     "d": "69.45",
+     "v": 69.45,
      "note": {
-      "zh": "每题成本 $16.18。",
-      "en": "Cost per task $16.18."
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 2。每题成本 $16.18。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #2 of 43 on the full Vals leaderboard. Cost per task $16.18. [high]"
      },
      "src": "vals_ai",
      "cf": "高"
@@ -2100,18 +2100,18 @@
      "d": "59",
      "v": 59,
      "note": {
-      "zh": "推理强度 max。xhigh 档 57，high 档 52。",
-      "en": "Reasoning effort max. 57 at xhigh, 52 at high."
+      "zh": "推理强度 max。xhigh 档 57，high 档 52。v5.0.2（11 月 24 日起）仍是 59。",
+      "en": "Reasoning effort max. 57 at xhigh, 52 at high. Unchanged at 59 on v5.0.2 (from Nov 24)."
      },
      "src": "artificial_analysis",
      "cf": "高"
     },
     "vals": {
-     "d": "70.14",
-     "v": 70.14,
+     "d": "68.70",
+     "v": 68.7,
      "note": {
-      "zh": "每题成本 $24.77。",
-      "en": "Cost per task $24.77."
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 5。每题成本 $24.77。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #5 of 43 on the full Vals leaderboard. Cost per task $24.77. [high]"
      },
      "src": "vals_ai",
      "cf": "高"
@@ -2369,8 +2369,8 @@
      "d": "50",
      "v": 50,
      "note": {
-      "zh": "推理强度 xhigh。max 档 49，high 档 47。跑完整套测试每题约 $12.99（max 档）。发布时在旧版指数上是 66，不能和 v5 混用。",
-      "en": "Reasoning effort xhigh. 49 at max, 47 at high. About $12.99 per task for a full run (max). It scored 66 on the old index at launch; do not mix with v5."
+      "zh": "推理强度 xhigh。max 档 49，high 档 47。跑完整套测试每题约 $12.99（max 档）。发布时在旧版指数上是 66，不能和 v5 混用。AA 11 月 24 日换成 v5.0.2 后，排行榜上没有这个模型（11 月 25 日查），这里仍是 v5.0.1 的分数。",
+      "en": "Reasoning effort xhigh. 49 at max, 47 at high. About $12.99 per task for a full run (max). It scored 66 on the old index at launch; do not mix with v5. After AA moved to v5.0.2 on Nov 24, this model is not on the leaderboard (checked Nov 25), so this is still the v5.0.1 score."
      },
      "src": "artificial_analysis",
      "cf": "高"
@@ -2683,18 +2683,18 @@
      "d": "62",
      "v": 62,
      "note": {
-      "zh": "推理强度 max。精确值 62.1。每题约 $4.00。",
-      "en": "Reasoning effort max. Exact value 62.1. About $4.00 per task."
+      "zh": "推理强度 max。精确值 62.1。每题约 $4.00。v5.0.2（11 月 24 日起）仍是 62。",
+      "en": "Reasoning effort max. Exact value 62.1. About $4.00 per task. Unchanged at 62 on v5.0.2 (from Nov 24)."
      },
      "src": "artificial_analysis",
      "cf": "高"
     },
     "vals": {
-     "d": "67.66",
-     "v": 67.66,
+     "d": "66.27",
+     "v": 66.27,
      "note": {
-      "zh": "每题成本 $10.68。",
-      "en": "Cost per task $10.68."
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 8。每题成本 $10.68。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #8 of 43 on the full Vals leaderboard. Cost per task $10.68. [high]"
      },
      "src": "vals_ai",
      "cf": "高"
@@ -2802,18 +2802,18 @@
      "d": "57",
      "v": 57,
      "note": {
-      "zh": "推理强度 max。精确值 57.3。每题约 $1.01。",
-      "en": "Reasoning effort max. Exact value 57.3. About $1.01 per task."
+      "zh": "推理强度 max。精确值 57.3。每题约 $1.01。v5.0.2（11 月 24 日起）仍是 57。",
+      "en": "Reasoning effort max. Exact value 57.3. About $1.01 per task. Unchanged at 57 on v5.0.2 (from Nov 24)."
      },
      "src": "artificial_analysis",
      "cf": "高"
     },
     "vals": {
-     "d": "66.06",
-     "v": 66.06,
+     "d": "65.07",
+     "v": 65.07,
      "note": {
-      "zh": "每题成本 $3.18。",
-      "en": "Cost per task $3.18."
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 9。每题成本 $3.18。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #9 of 43 on the full Vals leaderboard. Cost per task $3.18. [high]"
      },
      "src": "vals_ai",
      "cf": "高"
@@ -3004,18 +3004,18 @@
      "d": "51",
      "v": 51,
      "note": {
-      "zh": "推理强度 max。xhigh 档 45，high 档 42。",
-      "en": "Reasoning effort max. 45 at xhigh, 42 at high."
+      "zh": "推理强度 max。xhigh 档 45，high 档 42。v5.0.2（11 月 24 日起）仍是 51。",
+      "en": "Reasoning effort max. 45 at xhigh, 42 at high. Unchanged at 51 on v5.0.2 (from Nov 24)."
      },
      "src": "artificial_analysis",
      "cf": "高"
     },
     "vals": {
-     "d": "60.54",
-     "v": 60.54,
+     "d": "59.50",
+     "v": 59.5,
      "note": {
-      "zh": "每题成本 $2.94。",
-      "en": "Cost per task $2.94."
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 17。每题成本 $2.94。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #17 of 43 on the full Vals leaderboard. Cost per task $2.94. [high]"
      },
      "src": "vals_ai",
      "cf": "高"
@@ -3109,18 +3109,18 @@
      "d": "55",
      "v": 55,
      "note": {
-      "zh": "推理强度 max。精确值 54.6。",
-      "en": "Reasoning effort max. Exact value 54.6."
+      "zh": "推理强度 max。精确值 54.6。AA 11 月 24 日换成 v5.0.2 后，排行榜上没有这个模型（11 月 25 日查），这里仍是 v5.0.1 的分数。",
+      "en": "Reasoning effort max. Exact value 54.6. After AA moved to v5.0.2 on Nov 24, this model is not on the leaderboard (checked Nov 25), so this is still the v5.0.1 score."
      },
      "src": "artificial_analysis",
      "cf": "高"
     },
     "vals": {
-     "d": "63.94",
-     "v": 63.94,
+     "d": "62.26",
+     "v": 62.26,
      "note": {
-      "zh": "每题成本 $3.61。",
-      "en": "Cost per task $3.61."
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 13。每题成本 $3.61。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #13 of 43 on the full Vals leaderboard. Cost per task $3.61. [high]"
      },
      "src": "vals_ai",
      "cf": "高"
@@ -3234,18 +3234,18 @@
      "d": "28",
      "v": 28,
      "note": {
-      "zh": "推理强度 max。",
-      "en": "Reasoning effort max."
+      "zh": "推理强度 max。v5.0.2（11 月 24 日起）仍是 28。",
+      "en": "Reasoning effort max. Unchanged at 28 on v5.0.2 (from Nov 24)."
      },
      "src": "artificial_analysis",
      "cf": "高"
     },
     "vals": {
-     "d": "52.32",
-     "v": 52.32,
+     "d": "50.33",
+     "v": 50.33,
      "note": {
-      "zh": "每题成本 $0.45。",
-      "en": "Cost per task $0.45."
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 34。每题成本 $0.45。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #34 of 43 on the full Vals leaderboard. Cost per task $0.45. [high]"
      },
      "src": "vals_ai",
      "cf": "高"
@@ -3395,18 +3395,18 @@
      "src": "artificial_analysis",
      "cf": "高",
      "note": {
-      "zh": "Artificial Analysis v5.0.1，xhigh 档（high 35.21、low 31.13），精确值 35.49。跑完整个指数每题约 $7.77。发布当天 AA 文章用的旧版指数是 46，不能混用。〔高〕",
-      "en": "Artificial Analysis v5.0.1, xhigh setting (high 35.21, low 31.13), exact 35.49. About $7.77 per task over the full index. AA's launch-day article used the older index, where it scored 46; do not mix. [high]"
+      "zh": "Artificial Analysis v5.0.1，xhigh 档（high 35.21、low 31.13），精确值 35.49。跑完整个指数每题约 $7.77。发布当天 AA 文章用的旧版指数是 46，不能混用。v5.0.2（11 月 24 日起）仍是 35。〔高〕",
+      "en": "Artificial Analysis v5.0.1, xhigh setting (high 35.21, low 31.13), exact 35.49. About $7.77 per task over the full index. AA's launch-day article used the older index, where it scored 46; do not mix. Unchanged at 35 on v5.0.2 (from Nov 24). [high]"
      }
     },
     "vals": {
-     "d": "58.62",
-     "v": 58.62,
+     "d": "56.53",
+     "v": 56.53,
      "src": "vals_ai",
      "cf": "高",
      "note": {
-      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 23。每题成本 $11.63。发布当天 Vals 在旧版指数上测得 60.22%。〔高〕",
-      "en": "Vals Index v2.2 (updated 2026-11-19), #23 of 43 on the full Vals leaderboard. Cost per task $11.63. On launch day Vals measured 60.22% on the older index. [high]"
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 23。每题成本 $11.63。发布当天 Vals 在旧版指数上测得 60.22%。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #23 of 43 on the full Vals leaderboard. Cost per task $11.63. On launch day Vals measured 60.22% on the older index. [high]"
      }
     },
     "tb4_vals": {
@@ -3485,8 +3485,8 @@
      "src": "artificial_analysis",
      "cf": "高",
      "note": {
-      "zh": "Artificial Analysis v5.0.1，xhigh 档，精确值 31.03。跑完整个指数每题约 $4.68。xAI 发布时引用的是旧版 AA 指数 61。〔高〕",
-      "en": "Artificial Analysis v5.0.1, xhigh setting, exact 31.03. About $4.68 per task over the full index. xAI's launch post cited 61 on an older AA index. [high]"
+      "zh": "Artificial Analysis v5.0.1，xhigh 档，精确值 31.03。跑完整个指数每题约 $4.68。xAI 发布时引用的是旧版 AA 指数 61。AA 11 月 24 日换成 v5.0.2 后，排行榜上没有这个模型（11 月 25 日查），这里仍是 v5.0.1 的分数。〔高〕",
+      "en": "Artificial Analysis v5.0.1, xhigh setting, exact 31.03. About $4.68 per task over the full index. xAI's launch post cited 61 on an older AA index. After AA moved to v5.0.2 on Nov 24, this model is not on the leaderboard (checked Nov 25), so this is still the v5.0.1 score. [high]"
      }
     },
     "tb4_vals": {
@@ -3716,18 +3716,18 @@
      "src": "artificial_analysis",
      "cf": "高",
      "note": {
-      "zh": "Artificial Analysis v5.0.1，max 档，精确值 50.08。没有 API 价格，所以 AA 没算每题成本。〔高〕",
-      "en": "Artificial Analysis v5.0.1, max setting, exact 50.08. No API price, so AA gives no cost per task. [high]"
+      "zh": "Artificial Analysis v5.0.1，max 档，精确值 50.08。没有 API 价格，所以 AA 没算每题成本。v5.0.2（11 月 24 日起）仍是 50。〔高〕",
+      "en": "Artificial Analysis v5.0.1, max setting, exact 50.08. No API price, so AA gives no cost per task. Unchanged at 50 on v5.0.2 (from Nov 24). [high]"
      }
     },
     "vals": {
-     "d": "66.79",
-     "v": 66.79,
+     "d": "64.67",
+     "v": 64.67,
      "src": "vals_ai",
      "cf": "高",
      "note": {
-      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 9。每题成本 $6.81。Vals 按 $4 / $20 算成本。〔高〕",
-      "en": "Vals Index v2.2 (updated 2026-11-19), #9 of 43 on the full Vals leaderboard. Cost per task $6.81. Vals prices it at $4 / $20. [high]"
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 10。每题成本 $6.81。Vals 按 $4 / $20 算成本。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #10 of 43 on the full Vals leaderboard. Cost per task $6.81. Vals prices it at $4 / $20. [high]"
      }
     },
     "tb4_vals": {
@@ -3848,18 +3848,18 @@
      "src": "artificial_analysis",
      "cf": "高",
      "note": {
-      "zh": "Artificial Analysis v5.0.1，max 档，精确值 43.57。跑完整个指数每题约 $6.95。〔高〕",
-      "en": "Artificial Analysis v5.0.1, max setting, exact 43.57. About $6.95 per task over the full index. [high]"
+      "zh": "Artificial Analysis v5.0.1，max 档，精确值 43.57。跑完整个指数每题约 $6.95。v5.0.2（11 月 24 日起）仍是 44。〔高〕",
+      "en": "Artificial Analysis v5.0.1, max setting, exact 43.57. About $6.95 per task over the full index. Unchanged at 44 on v5.0.2 (from Nov 24). [high]"
      }
     },
     "vals": {
-     "d": "64.88",
-     "v": 64.88,
+     "d": "62.92",
+     "v": 62.92,
      "src": "vals_ai",
      "cf": "高",
      "note": {
-      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 12。每题成本 $10.65。发布当天旧版指数是 61.06%。〔高〕",
-      "en": "Vals Index v2.2 (updated 2026-11-19), #12 of 43 on the full Vals leaderboard. Cost per task $10.65. 61.06% on the older index at launch. [high]"
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 12。每题成本 $10.65。发布当天旧版指数是 61.06%。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #12 of 43 on the full Vals leaderboard. Cost per task $10.65. 61.06% on the older index at launch. [high]"
      }
     },
     "tb4_vals": {
@@ -3948,18 +3948,18 @@
      "src": "artificial_analysis",
      "cf": "高",
      "note": {
-      "zh": "Artificial Analysis v5.0.1，max 档（xhigh 34.11），精确值 36.02。跑完整个指数每题约 $0.14。〔高〕",
-      "en": "Artificial Analysis v5.0.1, max setting (xhigh 34.11), exact 36.02. About $0.14 per task over the full index. [high]"
+      "zh": "Artificial Analysis v5.0.1，max 档（xhigh 34.11），精确值 36.02。跑完整个指数每题约 $0.14。v5.0.2（11 月 24 日起）仍是 36。〔高〕",
+      "en": "Artificial Analysis v5.0.1, max setting (xhigh 34.11), exact 36.02. About $0.14 per task over the full index. Unchanged at 36 on v5.0.2 (from Nov 24). [high]"
      }
     },
     "vals": {
-     "d": "60.48",
-     "v": 60.48,
+     "d": "58.07",
+     "v": 58.07,
      "src": "vals_ai",
      "cf": "高",
      "note": {
-      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 18。每题成本 $0.153。Vals 说它是榜上每题成本最低的模型。〔高〕",
-      "en": "Vals Index v2.2 (updated 2026-11-19), #18 of 43 on the full Vals leaderboard. Cost per task $0.153. Vals calls it the cheapest per test on the index. [high]"
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 19。每题成本 $0.15。11-19 版里它每题成本最低；11-21 版里更低的只有 Hy4 Flash（$0.07）。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #19 of 43 on the full Vals leaderboard. Cost per task $0.15. It was the cheapest per test in the Nov 19 release; in the Nov 21 release only Hy4 Flash ($0.07) is cheaper. [high]"
      }
     },
     "tb4_vals": {
@@ -4038,18 +4038,18 @@
      "src": "artificial_analysis",
      "cf": "高",
      "note": {
-      "zh": "Artificial Analysis v5.0.1，xhigh 档，精确值 24.88。跑完整个指数每题约 $2.02。Meta 发布时引用的旧版 v4.3 是 39，两版不能比。〔高〕",
-      "en": "Artificial Analysis v5.0.1, xhigh setting, exact 24.88. About $2.02 per task over the full index. Meta's launch cited 39 on the older v4.3; the two versions are not comparable. [high]"
+      "zh": "Artificial Analysis v5.0.1，xhigh 档，精确值 24.88。跑完整个指数每题约 $2.02。Meta 发布时引用的旧版 v4.3 是 39，两版不能比。v5.0.2（11 月 24 日起）仍是 25。〔高〕",
+      "en": "Artificial Analysis v5.0.1, xhigh setting, exact 24.88. About $2.02 per task over the full index. Meta's launch cited 39 on the older v4.3; the two versions are not comparable. Unchanged at 25 on v5.0.2 (from Nov 24). [high]"
      }
     },
     "vals": {
-     "d": "48.57",
-     "v": 48.57,
+     "d": "45.43",
+     "v": 45.43,
      "src": "vals_ai",
      "cf": "高",
      "note": {
-      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 37。每题成本 $4.72。〔高〕",
-      "en": "Vals Index v2.2 (updated 2026-11-19), #37 of 43 on the full Vals leaderboard. Cost per task $4.72. [high]"
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 37。每题成本 $4.72。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #37 of 43 on the full Vals leaderboard. Cost per task $4.72. [high]"
      }
     },
     "tb4_vals": {
@@ -4133,23 +4133,23 @@
    },
    "scores": {
     "aa": {
-     "d": "33",
-     "v": 33,
+     "d": "32",
+     "v": 32,
      "src": "artificial_analysis",
-     "cf": "高",
+     "cf": "中",
      "note": {
-      "zh": "Artificial Analysis v5.0.1，max 档（high 28.64），精确值 32.59。跑完整个指数每题约 $0.60。〔高〕",
-      "en": "Artificial Analysis v5.0.1, max setting (high 28.64), exact 32.59. About $0.60 per task over the full index. [high]"
+      "zh": "Artificial Analysis v5.0.2 排行榜（11 月 24 日起），max 档，每题约 $0.60。v5.0.1 精确值 32.59（high 档 28.64）；11 月 25 日 AA 模型页仍标 v5.0.1、显示 33。〔中〕",
+      "en": "Artificial Analysis v5.0.2 leaderboard (from Nov 24), max setting, about $0.60 per task. Exact 32.59 on v5.0.1 (28.64 at high); on Nov 25 the AA model page still showed 33 under a v5.0.1 label. [medium]"
      }
     },
     "vals": {
-     "d": "61.26",
-     "v": 61.26,
+     "d": "59.66",
+     "v": 59.66,
      "src": "vals_ai",
      "cf": "高",
      "note": {
-      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 16。每题成本 $0.66。〔高〕",
-      "en": "Vals Index v2.2 (updated 2026-11-19), #16 of 43 on the full Vals leaderboard. Cost per task $0.66. [high]"
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 16。每题成本 $0.66。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #16 of 43 on the full Vals leaderboard. Cost per task $0.66. [high]"
      }
     },
     "tb4_vals": {
@@ -4460,18 +4460,18 @@
      "src": "artificial_analysis",
      "cf": "高",
      "note": {
-      "zh": "Artificial Analysis v5.0.1，max 档（high 20.8），精确值 23.06。跑完整个指数每题约 $1.77。〔高〕",
-      "en": "Artificial Analysis v5.0.1, max setting (high 20.8), exact 23.06. About $1.77 per task over the full index. [high]"
+      "zh": "Artificial Analysis v5.0.1，max 档（high 20.8），精确值 23.06。跑完整个指数每题约 $1.77。v5.0.2（11 月 24 日起）仍是 23。〔高〕",
+      "en": "Artificial Analysis v5.0.1, max setting (high 20.8), exact 23.06. About $1.77 per task over the full index. Unchanged at 23 on v5.0.2 (from Nov 24). [high]"
      }
     },
     "vals": {
-     "d": "52.97",
-     "v": 52.97,
+     "d": "50.81",
+     "v": 50.81,
      "src": "vals_ai",
      "cf": "高",
      "note": {
-      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 32。每题成本 $2.50。〔高〕",
-      "en": "Vals Index v2.2 (updated 2026-11-19), #32 of 43 on the full Vals leaderboard. Cost per task $2.50. [high]"
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 33。每题成本 $2.50。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #33 of 43 on the full Vals leaderboard. Cost per task $2.50. [high]"
      }
     },
     "tb4_vals": {
@@ -4609,23 +4609,23 @@
    },
    "scores": {
     "aa": {
-     "d": "46",
-     "v": 46,
+     "d": "47",
+     "v": 47,
      "src": "artificial_analysis",
-     "cf": "高",
+     "cf": "中",
      "note": {
-      "zh": "Artificial Analysis v5.0.1，max 档，精确值 46.45。跑完整个指数每题约 $3.68。v5.0.1 上开放权重模型第一。〔高〕",
-      "en": "Artificial Analysis v5.0.1, max setting, exact 46.45. About $3.68 per task over the full index. The top open-weight model on v5.0.1. [high]"
+      "zh": "Artificial Analysis v5.0.2 排行榜（11 月 24 日起），只有一个档位（默认 max），每题约 $3.68。v5.0.1 精确值 46.45；11 月 25 日 AA 模型页仍标 v5.0.1、显示 46。开放权重模型第一。〔中〕",
+      "en": "Artificial Analysis v5.0.2 leaderboard (from Nov 24), single setting (default max), about $3.68 per task. Exact 46.45 on v5.0.1; on Nov 25 the AA model page still showed 46 under a v5.0.1 label. The top open-weight model. [medium]"
      }
     },
     "vals": {
-     "d": "62.52",
-     "v": 62.52,
+     "d": "60.88",
+     "v": 60.88,
      "src": "vals_ai",
      "cf": "高",
      "note": {
-      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 15。每题成本 $6.44。〔高〕",
-      "en": "Vals Index v2.2 (updated 2026-11-19), #15 of 43 on the full Vals leaderboard. Cost per task $6.44. [high]"
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 15。每题成本 $6.44。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #15 of 43 on the full Vals leaderboard. Cost per task $6.44. [high]"
      }
     },
     "tb4_vals": {
@@ -4773,13 +4773,13 @@
    },
    "scores": {
     "vals": {
-     "d": "52.95",
-     "v": 52.95,
+     "d": "50.95",
+     "v": 50.95,
      "src": "vals_ai",
      "cf": "高",
      "note": {
-      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 33。每题成本 $7.17。〔高〕",
-      "en": "Vals Index v2.2 (updated 2026-11-19), #33 of 43 on the full Vals leaderboard. Cost per task $7.17. [high]"
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 32。每题成本 $7.17。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #32 of 43 on the full Vals leaderboard. Cost per task $7.17. [high]"
      }
     },
     "tb4_vals": {
@@ -5114,18 +5114,18 @@
      "src": "artificial_analysis",
      "cf": "高",
      "note": {
-      "zh": "Artificial Analysis v5.0.1，max 档（low 23.11），精确值 31.65。跑完整个指数每题约 $5.01。〔高〕",
-      "en": "Artificial Analysis v5.0.1, max setting (low 23.11), exact 31.65. About $5.01 per task over the full index. [high]"
+      "zh": "Artificial Analysis v5.0.1，max 档（low 23.11），精确值 31.65。跑完整个指数每题约 $5.01。v5.0.2（11 月 24 日起）仍是 32。〔高〕",
+      "en": "Artificial Analysis v5.0.1, max setting (low 23.11), exact 31.65. About $5.01 per task over the full index. Unchanged at 32 on v5.0.2 (from Nov 24). [high]"
      }
     },
     "vals": {
-     "d": "59.85",
-     "v": 59.85,
+     "d": "58.40",
+     "v": 58.4,
      "src": "vals_ai",
      "cf": "高",
      "note": {
-      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 19。每题成本 $8.52。〔高〕",
-      "en": "Vals Index v2.2 (updated 2026-11-19), #19 of 43 on the full Vals leaderboard. Cost per task $8.52. [high]"
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 18。每题成本 $8.52。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #18 of 43 on the full Vals leaderboard. Cost per task $8.52. [high]"
      }
     },
     "tb4_vals": {
@@ -5294,18 +5294,18 @@
      "src": "artificial_analysis",
      "cf": "高",
      "note": {
-      "zh": "Artificial Analysis v5.0.1，max 档，精确值 27.8。跑完整个指数每题约 $0.58。〔高〕",
-      "en": "Artificial Analysis v5.0.1, max setting, exact 27.8. About $0.58 per task over the full index. [high]"
+      "zh": "Artificial Analysis v5.0.1，max 档，精确值 27.8。跑完整个指数每题约 $0.58。v5.0.2（11 月 24 日起）仍是 28。〔高〕",
+      "en": "Artificial Analysis v5.0.1, max setting, exact 27.8. About $0.58 per task over the full index. Unchanged at 28 on v5.0.2 (from Nov 24). [high]"
      }
     },
     "vals": {
-     "d": "50.86",
-     "v": 50.86,
+     "d": "49.48",
+     "v": 49.48,
      "src": "vals_ai",
      "cf": "高",
      "note": {
-      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 35。每题成本 $2.05。〔高〕",
-      "en": "Vals Index v2.2 (updated 2026-11-19), #35 of 43 on the full Vals leaderboard. Cost per task $2.05. [high]"
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 35。每题成本 $2.05。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #35 of 43 on the full Vals leaderboard. Cost per task $2.05. [high]"
      }
     },
     "tb4_vals": {
@@ -5588,18 +5588,18 @@
      "src": "artificial_analysis",
      "cf": "高",
      "note": {
-      "zh": "Artificial Analysis v5.0.1，精确值 30.63；AA 只列一个档位（Thinking Machines 自己的评测用 xhigh）。跑完整个指数每题约 $1.18。厂商博客引的 v5.0 是 30.6。〔高〕",
-      "en": "Artificial Analysis v5.0.1, exact 30.63; AA lists a single setting (Thinking Machines ran its own evals at xhigh). About $1.18 per task over the full index. The vendor post cites 30.6 on v5.0. [high]"
+      "zh": "Artificial Analysis v5.0.1，精确值 30.63；AA 只列一个档位（Thinking Machines 自己的评测用 xhigh）。跑完整个指数每题约 $1.18。厂商博客引的 v5.0 是 30.6。v5.0.2（11 月 24 日起）仍是 31。〔高〕",
+      "en": "Artificial Analysis v5.0.1, exact 30.63; AA lists a single setting (Thinking Machines ran its own evals at xhigh). About $1.18 per task over the full index. The vendor post cites 30.6 on v5.0. Unchanged at 31 on v5.0.2 (from Nov 24). [high]"
      }
     },
     "vals": {
-     "d": "56.08",
-     "v": 56.08,
+     "d": "54.28",
+     "v": 54.28,
      "src": "vals_ai",
      "cf": "高",
      "note": {
-      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 26。每题成本 $3.51。〔高〕",
-      "en": "Vals Index v2.2 (updated 2026-11-19), #26 of 43 on the full Vals leaderboard. Cost per task $3.51. [high]"
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 26。每题成本 $3.51。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #26 of 43 on the full Vals leaderboard. Cost per task $3.51. [high]"
      }
     },
     "tb4_vals": {
@@ -5735,18 +5735,18 @@
      "src": "artificial_analysis",
      "cf": "高",
      "note": {
-      "zh": "Artificial Analysis v5.0.1，精确值 20.13；AA 只列一个档位。跑完整个指数每题约 $0.59。〔高〕",
-      "en": "Artificial Analysis v5.0.1, exact 20.13; AA lists a single setting. About $0.59 per task over the full index. [high]"
+      "zh": "Artificial Analysis v5.0.1，精确值 20.13；AA 只列一个档位。跑完整个指数每题约 $0.59。v5.0.2（11 月 24 日起）仍是 20。〔高〕",
+      "en": "Artificial Analysis v5.0.1, exact 20.13; AA lists a single setting. About $0.59 per task over the full index. Unchanged at 20 on v5.0.2 (from Nov 24). [high]"
      }
     },
     "vals": {
-     "d": "46.46",
-     "v": 46.46,
+     "d": "44.03",
+     "v": 44.03,
      "src": "vals_ai",
      "cf": "高",
      "note": {
-      "zh": "Vals Index v2.2（2026-11-19 更新），Vals 全榜 43 个模型里排第 38。每题成本 $3.20。〔高〕",
-      "en": "Vals Index v2.2 (updated 2026-11-19), #38 of 43 on the full Vals leaderboard. Cost per task $3.20. [high]"
+      "zh": "Vals Index v2.2（2026-11-21 更新），Vals 全榜 43 个模型里排第 38。每题成本 $3.20。〔高〕",
+      "en": "Vals Index v2.2 (updated 2026-11-21), #38 of 43 on the full Vals leaderboard. Cost per task $3.20. [high]"
      }
     },
     "tb4_vals": {
@@ -7839,8 +7839,8 @@
     "en": "Fig 3-1 AA Index (independent, all models)"
    },
    "source_tip": {
-    "zh": "<b>来源</b>Artificial Analysis 各模型页，v5.0.1。<br>各模型取最高推理强度。<br>前沿快照 {snapshot}，大厂与开源快照 {snapshot}。〔高〕",
-    "en": "<b>Source</b>Artificial Analysis model pages, v5.0.1.<br>Each model at its highest reasoning effort.<br>Frontier snapshot {snapshot}; Big Tech and open-weight snapshot {snapshot}. [high]"
+    "zh": "<b>来源</b>Artificial Analysis 排行榜与各模型页，v5.0.2（11 月 24 日起；Fable 5.1、GPT-6.1 Sol、Grok 4.6 不在新榜上，仍是 v5.0.1）。<br>各模型取最高推理强度。<br>前沿快照 {snapshot}，大厂与开源快照 {snapshot}。〔高〕",
+    "en": "<b>Source</b>Artificial Analysis leaderboard and model pages, v5.0.2 (from Nov 24; Fable 5.1, GPT-6.1 Sol and Grok 4.6 are not on the new leaderboard and keep v5.0.1 scores).<br>Each model at its highest reasoning effort.<br>Frontier snapshot {snapshot}; Big Tech and open-weight snapshot {snapshot}. [high]"
    },
    "label": {
     "zh": "AA 指数",
@@ -7883,8 +7883,8 @@
     "en": "Fig 3-2 Vals Index (independent, all models)"
    },
    "source_tip": {
-    "zh": "<b>来源</b>Vals AI 榜单，v2.2：前沿取 2026-11-16 版（Neon 是 11-18 追加的），大厂与开源取 11-19 版。<br>横轴从 {min}% 起，所以用点不用条。〔高〕",
-    "en": "<b>Source</b>Vals AI leaderboard, v2.2: frontier models from the 2026-11-16 release (Neon added on 11-18), Big Tech and open-weight from the 11-19 release.<br>The axis starts at {min}%, so dots rather than bars. [high]"
+    "zh": "<b>来源</b>Vals AI 榜单，v2.2，全部模型取 2026-11-21 版。<br>横轴从 {min}% 起，所以用点不用条。〔高〕",
+    "en": "<b>Source</b>Vals AI leaderboard, v2.2; every model from the 2026-11-21 release.<br>The axis starts at {min}%, so dots rather than bars. [high]"
    },
    "label": {
     "zh": "Vals Index",
@@ -7976,8 +7976,8 @@
     "en": "Fig 3-4 Output price vs. AA Index (log scale)"
    },
    "source_tip": {
-    "zh": "<b>来源</b>横轴：API 标准输出价，美元 / 每百万 token（同表 2-1、表 2-1）。纵轴：Artificial Analysis v5.0.1。<br>横轴是对数刻度：每格价格翻倍或更多。<br>实心点＝不开放权重，空心点＝开放权重。〔高〕",
-    "en": "<b>Source</b>X axis: standard API output price, USD per million tokens (as in Tables 2-1 and 3-1). Y axis: Artificial Analysis v5.0.1.<br>The x axis is logarithmic: each step is a doubling or more.<br>Solid dot = closed weights; hollow dot = open weights. [high]"
+    "zh": "<b>来源</b>横轴：API 标准输出价，美元 / 每百万 token（同表 2-1）。纵轴：Artificial Analysis v5.0.2（3 个旧模型仍是 v5.0.1，见表 2-1 格子提示）。<br>横轴是对数刻度：每格价格翻倍或更多。<br>实心点＝不开放权重，空心点＝开放权重。〔高〕",
+    "en": "<b>Source</b>X axis: standard API output price, USD per million tokens (as in Table 2-1). Y axis: Artificial Analysis v5.0.2 (three older models keep v5.0.1 scores; see the Table 2-1 tooltips).<br>The x axis is logarithmic: each step is a doubling or more.<br>Solid dot = closed weights; hollow dot = open weights. [high]"
    },
    "xaxis": {
     "ticks": [
