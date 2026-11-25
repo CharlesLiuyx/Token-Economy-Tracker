@@ -4,6 +4,28 @@
 # 本站自有数据写站内锚点如 "#p-gpu_table"）。
 # 收录门槛：今天才知道的增量信息；数字必须在来源里能核对到；没有新信息就不写当天条目。
 digest:
+  - date: 2026-11-25
+    items:
+      - tag: Model
+        text:
+          zh: Google Gemini API 定价页已列出 Gemini 4 Neon：每百万 token 输入 3 美元、输出 15 美元（含思考 token）、缓存 0.15；Batch 半价 1.50 / 7.50；不提供免费额度。
+          en: "Google's Gemini API pricing page now lists Gemini 4 Neon at $3 input and $15 output (thinking tokens included) per million tokens, with cached input at $0.15; Batch is half price at $1.50 / $7.50, and there is no free tier."
+        source_url: https://aistudio.google.com/docs/pricing
+      - tag: Model
+        text:
+          zh: 同一定价页显示，Gemini 4 Carbon 与 Argon 的首发价 11-30 到期，12-01 起翻倍：输入 2→4 美元、输出 10→20 美元、缓存 0.10→0.20。Carbon 是 OpenRouter 上用量最大的 Google 模型（11-23 滚动 7 天 2.27 万亿 token）。
+          en: "The same pricing page shows Gemini 4 Carbon and Argon introductory rates expire on Nov 30 and double from Dec 1: input $2 to $4, output $10 to $20, cached input $0.10 to $0.20. Carbon is the most-used Google model on OpenRouter (2.27T tokens over the rolling 7 days to Nov 23)."
+        source_url: https://aistudio.google.com/docs/pricing
+      - tag: Token
+        text:
+          zh: OpenRouter 上 GPT-6.2 Sol 滚动 7 天用量 11-23 为 8980 亿 token（11-21 为 5780 亿），仍不到上一代 GPT-6.1 Sol（2.39 万亿）的四成；Gemini 4 Neon 同期从 3920 亿升到 6960 亿。两者都未反超旧款，重点模型名单不换代。
+          en: "On OpenRouter, GPT-6.2 Sol's rolling 7-day usage reached 898B tokens on Nov 23 (578B on Nov 21), still under 40% of the previous GPT-6.1 Sol (2.39T); Gemini 4 Neon rose from 392B to 696B over the same span. Neither has overtaken its predecessor, so the tracked-model list is unchanged."
+        source_url: "#p-or_tracked"
+      - tag: Token
+        text:
+          zh: OpenRouter 全平台周用量 11-24 为 220.7 万亿 token，比 7 天前多 3.2%，比 30 天前多 23%。
+          en: "OpenRouter's platform-wide weekly usage was 220.7T tokens on Nov 24, up 3.2% from seven days earlier and 23% from 30 days earlier."
+        source_url: "#p-or_weekly_total"
   - date: 2026-11-24
     items:
       - tag: GPU
