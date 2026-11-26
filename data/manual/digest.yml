@@ -4,6 +4,28 @@
 # 本站自有数据写站内锚点如 "#p-gpu_table"）。
 # 收录门槛：今天才知道的增量信息；数字必须在来源里能核对到；没有新信息就不写当天条目。
 digest:
+  - date: 2026-11-26
+    items:
+      - tag: DC
+        text:
+          zh: Applied Digital 11-23 与一家未具名的一线投资级超大云厂商签下 150 MW、18 年租约，基础期合同收入约 54 亿美元（含续约选项 33 年约 127 亿），预计 2028 年上半年开始交付；公司已签约基础期租赁收入累计超过 410 亿美元，合同 IT 负载超过 1.6 GW。
+          en: "On Nov 23 Applied Digital signed a 150 MW, 18-year lease with an unnamed tier-one investment-grade hyperscaler worth about $5.4B in base-term revenue (about $12.7B over 33 years with renewals), with delivery expected to start in 1H 2028. Its contracted base-term lease revenue now exceeds $41B across more than 1.6 GW of critical IT load."
+        source_url: https://ir.applieddigital.com/news-events/press-releases/detail/165/applied-digital-secures-new-150-mw-18-year-lease-with
+      - tag: Token
+        text:
+          zh: OpenRouter 上 Claude Opus 5.5 滚动 7 天用量 11-25 为 6.46 万亿 token，比 7 天前少 14%、比 30 天前少 22%；同期 Gemini 4 Carbon 升到 1.93 万亿，7 天 +32%（12-01 起涨价前）。
+          en: "On OpenRouter, Claude Opus 5.5 processed 6.46T tokens in the rolling 7 days to Nov 25, down 14% from a week earlier and 22% from 30 days earlier; over the same week Gemini 4 Carbon rose 32% to 1.93T, ahead of its Dec 1 price increase."
+        source_url: "#p-or_tracked"
+      - tag: Token
+        text:
+          zh: OpenRouter 全平台周用量 11-25 为 227.7 万亿 token，比 7 天前少 3.5%，比 30 天前多 21%。
+          en: "OpenRouter's platform-wide weekly volume was 227.7T tokens on Nov 25, 3.5% below a week earlier and 21% above 30 days earlier."
+        source_url: "#p-or_weekly_total"
+      - tag: Token
+        text:
+          zh: PyPI 周下载量 11-25：anthropic SDK 5190 万次，30 天 +17%；openai SDK 9390 万次，30 天 +12%。
+          en: "PyPI weekly downloads on Nov 25: the anthropic SDK at 51.9M, up 17% over 30 days; the openai SDK at 93.9M, up 12%."
+        source_url: "#p-sdk"
   - date: 2026-11-25
     items:
       - tag: Model
