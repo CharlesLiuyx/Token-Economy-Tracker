@@ -1,13 +1,48 @@
 {
  "schema_version": 1,
  "source": "news",
- "snapshot_date": "2026-11-25",
- "fetched_at": "2026-11-25T04:56:18+00:00",
+ "snapshot_date": "2026-11-26",
+ "fetched_at": "2026-11-26T04:12:04+00:00",
  "source_meta": {
   "kind": "unofficial-api"
  },
  "payload": {
   "items": [
+   {
+    "title": "5 Things You Didn't Know About BAAJA and Data Centers - Data Center Frontier",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWVE5bHhFM2FkS1MxVk9JakdfM09ZLWNpQ0hSel9GdmxiQVl6UjVZbzk3RGl0Und1d3JvZnI4WlBjNFRXbDk3T0ZGOUR1YkwxeGRWdDBNazZLejBDYUU4NlpqdVJuRXV1Uy1UZzhSVUM0clBRcmRYY19MSXkwdXo4ZU1sVS1TMWlHYnRSdmc2YnhlLWZVeFFoUkZRLU9ES0VOcEs0R2o1REZSVUwtbGc5Vg?oc=5",
+    "source_name": "Data Center Frontier",
+    "source_url": "https://www.datacenterfrontier.com",
+    "published": "2026-11-25T15:48:06+00:00"
+   },
+   {
+    "title": "South African gov't floats converting old power stations into data centers - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNT0dRNk9mOXU4UW1vd192aEN6NUFXajM3NE01eFdOYml1TE0wVFQ0OXBWSkVTX3hLazJvOFViUmt3NmktWkFtVFhJV0RfSHpYdGJiSE1aTVFsYTJXMWpFRFJaSzhfODN2VnYtNHdzeDB0Z2pXUUx1U0YtalBnR1NCOExqUzZNWHl6eXQtOUVRWTBIdTR4Vkg4QXJ1YWtxQ2N0dkNodmtmcHdScXdFRkM1NEw4YmpqblhW?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-11-25T14:03:58+00:00"
+   },
+   {
+    "title": "Cryptominer Sato Technologies secures neocloud Datum as customer for Canadian data center - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOclB4UXNBLVBkcWljOWhwd0Z6akRMUHpDSXJjUGcwbFBSQUFidW9XcmZtZzQtaFVMRUxKVGwxTERLWVNoOEtQVUUyNkp6OHE3LTBFTlZHcm9RSmlEa2RzSk5CVHo0WjVJb3FFN0R5M1RkenNyN01rQXRxSkU5RVdadkRtUzVfMVpvTVRTV3p1UUlPai04VlVpcmhnZC1LTXRaZmJEcEREUkhfSVo0RGtnMWJwN1VfTkFRU1BZTzRwYTZNNF91VVI5cmxHWFJ3QQ?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-11-25T12:38:08+00:00"
+   },
+   {
+    "title": "Applied Digital brings online 25MW data hall at Polaris Forge 2 data center in North Dakota - Data Center Dynamics",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOR3VkeldSNllRRkpLLV9RY0ltMUVtOHhVWV9MRktFY3VyUG5Pcjlnbl9BWk83MUwxbjYwLVY0dklyeXBIR09qbUJSeVBVQUdjYlk0akNKSDhRT2M1dUhPb3QtX0V0V2I3V2VRUy1ubFdQNmRUa25qWXdmVWtVWE5OYzk0M1Z3aWkzdk1CYzdEeTRlSVZPaVRFeTBqU01qRU1VZ0Y1LVBTLWhPMjgwWl84V2RET1U1LUg4bUZPRWw4Q2RtajJjVk5yWDh3V2pFSk16?oc=5",
+    "source_name": "Data Center Dynamics",
+    "source_url": "https://www.datacenterdynamics.com",
+    "published": "2026-11-25T11:58:35+00:00"
+   },
+   {
+    "title": "Asia Data Centers Sound Out US Clients to Replace China Demand - Bloomberg",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWlZpTGF4MUlIWWJYa2UwbE9KbkNZVUUxR1FWa2p0Q0dHR2RQclJ6QnlETUJwOC0zOXYxd3JfVm4wRk5ka251YURZX0xWWVlMc1BmQmpNVmRnSS1IZ25fN0x1Q09YUEx3NGVFUVNFNG9icVpDNVZDNC1Cb3gyNHpVVEhuOG1tWDBRTmY3T3dzTTZTbVNQNDFhUHNKXzJ1YXVNZG9IV2N5WGdfWElDNEF3OGliSQ?oc=5",
+    "source_name": "Bloomberg",
+    "source_url": "https://www.bloomberg.com",
+    "published": "2026-11-25T06:07:00+00:00"
+   },
    {
     "title": "Goldman says US data center boom through 2028 will lift power and gas demand - Reuters",
     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOc3FXeU1sR0Jwb3R5UUpxWTFidWtqTk9aUC1iNGd5Q1NWbDVxa010VmJOei1pQ2RTREJUTjYyMHZ3RFFJVTQzMkl2el9xUlhSZTRGWkpYOW9xZlB0SElCTFEwT2hPbUtGM0ItWUZ6SkdzeUw1SEs5Tk5ydk5iSWxuZWROSEVQNHg0TGk2TGtHbi1BNHlDUnQ0OFlSN0UwNDMydVF2R3Rmd18wWHFBaVJyeW1PdXAxU1NqaFliVG1ZRF8xQQ?oc=5",
@@ -2072,41 +2107,6 @@
     "source_name": "Reuters",
     "source_url": "https://www.reuters.com",
     "published": "2026-11-04T14:11:15+00:00"
-   },
-   {
-    "title": "AI data centers comprehensively defeated at US midterm elections — 45 measures put on the ballot as Americans overwhelmingly vote against developments - Tom's Hardware",
-    "link": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQTHcxdTQyQXNLQWstLVMxZWJlTWlVWkRpQkpRSFVjWXhwcVRGampxN0dnaUp0Y3FXdUVBVHBDVTBMUmpBUDU2OWFHa1pJaXp5S0hpMFhJajF2UjFvWnE5d1NMZ0d1ZHp5X2hqalByc3l6WGxVQkM3NEVJb0NxUl9XdDVmaWNvT2NwYm43OUVDWDYzYlJaRnphZ05idDBheHp4VTR5WkNEMGFOOFBjS2tJcXhfRHB1b05mYUE4NGR3Y1RYVGdHTGNmeDlSRnFFbmRONllBZFRRZGYtQzBDY0FQOHlLblZvU0hzQVhySDgxUVJTdGJWS1ZRZUpzSEZNWG95N2p0OFBSQzNzUllramlZOWlrSl91Rlk0MUR3d2hhOEczWmhRZnhQV2MyNFY?oc=5",
-    "source_name": "Tom's Hardware",
-    "source_url": "https://www.tomshardware.com",
-    "published": "2026-11-04T13:13:32+00:00"
-   },
-   {
-    "title": "Democrats’ Wins Threaten AI Trade and Data Center Boom - Bloomberg.com",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdHpYSWhBcnlmcG9PNFNCai1tVnAtWTdfd2JhRjlxMG1RSklKc1VWbFlacDJOMzJ4TjFidGp4VEZEUFBNWTVHTWpWMVFCY1hreUxvWG9IOE5HdEJYQ1p3eWVKcGd4WW1FNS1zS25TMHJ1bFBCc1Z2WWRRQjZWdW5WSlN1dVdpeDZ1MHdIcUFUb0tuZ2lQMThSdWxKN1AwRG9lOHBCZS0zbkhqMG5GOGgwWHY1UEpvenRO?oc=5",
-    "source_name": "Bloomberg.com",
-    "source_url": "https://www.bloomberg.com",
-    "published": "2026-11-04T11:28:01+00:00"
-   },
-   {
-    "title": "Microsoft hires International Energy Agency attorney for its energy team - Data Center Dynamics",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVm04QnFSc1pFdWRyaVgtMi1RSDhQNzZDUWt5YlJDdEhxRzg3cFFQVzhMYlgzNmxpdkxORl91TDFja1VUNG1sNzFobFp1TmFHRVozblRpTlFJUnRoaUNRNFZwY1o1Rm4xcWJxLS1wdTRkOGdYV21WNmJlYndrdkZCazRZLXhIdTJfRU1MclVlNTJaYnFQaXhQLVRsTzJ3YWdKZF9jOTMzOUdmT1p0R3hhM1oxT1QxTEE?oc=5",
-    "source_name": "Data Center Dynamics",
-    "source_url": "https://www.datacenterdynamics.com",
-    "published": "2026-11-04T10:17:57+00:00"
-   },
-   {
-    "title": "Trump's midterm drubbing demonstrates the power of data center opponents - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ0RKVlY1MlliV3dhVWp3b2FVOGNsTGEyYnZLb1ZENVpINVdLdDVFTnNsazZ5b3FsbmVocktWZUhacFZmRU83cEFLOTNnOVBKZXJ6RUFoTjFncjJsNHB4Z25QMHlVLTNPRnE5TE5KNU9NN2JQQ09rQmo2N1N4dHFGNUEySXhLUVFhZVlJU0ZUd0V6aXhKVy1OT3JIa3lwdUpDT184VXpQYkthTXg1VWc?oc=5",
-    "source_name": "Reuters",
-    "source_url": "https://www.reuters.com",
-    "published": "2026-11-04T09:57:00+00:00"
-   },
-   {
-    "title": "5 midterm election takeaways: Tech billionaires suffer as Democrats drub Republicans - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOaGNsSHBKRlFhVFY5dzNhSXZXWWJpM1pzLWUxRmxnd0FNa3Z6OWJlUi15TmNFMHJlSW5Qd2lFNmtINHFVSHluMXJEYXFMQjBUaG56VDRXVG5PbWN4RV8zYXU3dk04ZFp2VGFiX09Nekdubk5Da1hvSDJ3cmIxN3c4Tk9PRVBIdTZacUHSAY8BQVVfeXFMTUZlZmNXRnJaYW4xZGNldmdFUVVmakFJMEt0amdjWm9XalY1ejUwZ2syZzFqYV96cmxYaTlxakVSTXdzbHFETExvTEhJcHRrYzhkSXVGZXVfcXhXQ3pHY2F4UDVucllVS3I3bjZjWUVNOERiSEt4aC1MSnllTDMzMUxEUklVR29yWlMyOUI2Q2s?oc=5",
-    "source_name": "CNBC",
-    "source_url": "https://www.cnbc.com",
-    "published": "2026-11-04T07:03:48+00:00"
    }
   ],
   "queries": [
