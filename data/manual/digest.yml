@@ -4,6 +4,23 @@
 # 本站自有数据写站内锚点如 "#p-gpu_table"）。
 # 收录门槛：今天才知道的增量信息；数字必须在来源里能核对到；没有新信息就不写当天条目。
 digest:
+  - date: 2026-11-27
+    items:
+      - tag: GPU
+        text:
+          zh: vast.ai 按需 B200 租价中位数 11-26 为 $10.63/小时，比 11-25（$7.66）高 39%，首次高于 B300（$10.28）；当天 B200 只有 8 条报价，样本薄，单日跳动可能来自报价构成变化。
+          en: "The vast.ai on-demand B200 median was $10.63/hr on Nov 26, 39% above Nov 25 ($7.66) and above B300 ($10.28) for the first time; B200 had only 8 offers that day, so the jump may reflect a change in the offer mix."
+        source_url: "#p-gpu_table"
+      - tag: Token
+        text:
+          zh: OpenRouter 上 Gemini 4 Carbon 滚动 7 天用量 11-26 为 1.87 万亿 token，比 11-23 的峰值 2.43 万亿回落 23%，但仍比 7 天前（1.55 万亿）多 21%。
+          en: "On OpenRouter, Gemini 4 Carbon's rolling 7-day usage was 1.87T tokens on Nov 26, 23% below its Nov 23 peak of 2.43T but still 21% above seven days earlier (1.55T)."
+        source_url: "#p-or_tracked"
+      - tag: Token
+        text:
+          zh: GPT-6 Luna 仍是 OpenRouter 重点模型中用量最大的一个：滚动 7 天 11-26 为 7.88 万亿 token，比 11-20 的 8.96 万亿少 12%；Claude Opus 5.5 为 6.48 万亿，7 天 −15%。
+          en: "GPT-6 Luna remains the most-used tracked model on OpenRouter: 7.88T tokens in the rolling 7 days to Nov 26, 12% below the 8.96T of Nov 20; Claude Opus 5.5 processed 6.48T, down 15% over seven days."
+        source_url: "#p-or_tracked"
   - date: 2026-11-26
     items:
       - tag: DC
