@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "vercel_gateway",
- "snapshot_date": "2026-11-27",
- "fetched_at": "2026-11-27T04:19:11+00:00",
+ "snapshot_date": "2026-11-28",
+ "fetched_at": "2026-11-28T03:58:40+00:00",
  "source_meta": {
   "kind": "scrape"
  },
@@ -17,12 +17,7 @@
    {
     "day": "2025-10-01",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.9235
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -40,12 +35,7 @@
    {
     "day": "2025-10-02",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.13
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -63,12 +53,7 @@
    {
     "day": "2025-10-03",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.6958
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -86,12 +71,7 @@
    {
     "day": "2025-10-04",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.7989
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -109,12 +89,7 @@
    {
     "day": "2025-10-05",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.7072
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -132,12 +107,7 @@
    {
     "day": "2025-10-06",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      10.0787
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -155,12 +125,7 @@
    {
     "day": "2025-10-07",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.3189
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -178,12 +143,7 @@
    {
     "day": "2025-10-08",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.9699
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -201,12 +161,7 @@
    {
     "day": "2025-10-09",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.6843
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -224,12 +179,7 @@
    {
     "day": "2025-10-10",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      12.4922
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -247,12 +197,7 @@
    {
     "day": "2025-10-11",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      16.5554
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -270,12 +215,7 @@
    {
     "day": "2025-10-12",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      11.1183
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -293,12 +233,7 @@
    {
     "day": "2025-10-13",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.3484
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -316,12 +251,7 @@
    {
     "day": "2025-10-14",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.9811
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -339,12 +269,7 @@
    {
     "day": "2025-10-15",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.4819
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -362,12 +287,7 @@
    {
     "day": "2025-10-16",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.8041
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -385,12 +305,7 @@
    {
     "day": "2025-10-17",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.2187
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -408,12 +323,7 @@
    {
     "day": "2025-10-18",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.3882
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -431,12 +341,7 @@
    {
     "day": "2025-10-19",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.6322
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -454,12 +359,7 @@
    {
     "day": "2025-10-20",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.4051
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -477,12 +377,7 @@
    {
     "day": "2025-10-21",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.8227
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -500,12 +395,7 @@
    {
     "day": "2025-10-22",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.1423
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -523,12 +413,7 @@
    {
     "day": "2025-10-23",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.7079
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -546,12 +431,7 @@
    {
     "day": "2025-10-24",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.2054
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -569,12 +449,7 @@
    {
     "day": "2025-10-25",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.7837
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -592,12 +467,7 @@
    {
     "day": "2025-10-26",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.2452
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -615,12 +485,7 @@
    {
     "day": "2025-10-27",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.5711
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -638,12 +503,7 @@
    {
     "day": "2025-10-28",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.7458
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -661,12 +521,7 @@
    {
     "day": "2025-10-29",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.6349
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -684,12 +539,7 @@
    {
     "day": "2025-10-30",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.578
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -707,12 +557,7 @@
    {
     "day": "2025-10-31",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.8502
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -730,12 +575,7 @@
    {
     "day": "2025-11-01",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.4938
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -753,12 +593,7 @@
    {
     "day": "2025-11-02",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.6498
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -776,12 +611,7 @@
    {
     "day": "2025-11-03",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.7018
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -799,12 +629,7 @@
    {
     "day": "2025-11-04",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.6427
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -822,12 +647,7 @@
    {
     "day": "2025-11-05",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.5084
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -845,12 +665,7 @@
    {
     "day": "2025-11-06",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.7733
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -868,12 +683,7 @@
    {
     "day": "2025-11-07",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.2229
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -891,12 +701,7 @@
    {
     "day": "2025-11-08",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.9699
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -914,12 +719,7 @@
    {
     "day": "2025-11-09",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      8.3493
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -937,12 +737,7 @@
    {
     "day": "2025-11-10",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.445
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -960,12 +755,7 @@
    {
     "day": "2025-11-11",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.534
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -983,12 +773,7 @@
    {
     "day": "2025-11-12",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.8929
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1006,12 +791,7 @@
    {
     "day": "2025-11-13",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      8.0631
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1029,12 +809,7 @@
    {
     "day": "2025-11-14",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      14.5338
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1052,12 +827,7 @@
    {
     "day": "2025-11-15",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      8.3622
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1075,12 +845,7 @@
    {
     "day": "2025-11-16",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.7548
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1098,12 +863,7 @@
    {
     "day": "2025-11-17",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.0419
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1121,12 +881,7 @@
    {
     "day": "2025-11-18",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.3896
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1144,12 +899,7 @@
    {
     "day": "2025-11-19",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.9963
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1167,12 +917,7 @@
    {
     "day": "2025-11-20",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.4275
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1190,12 +935,7 @@
    {
     "day": "2025-11-21",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.9701
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1213,12 +953,7 @@
    {
     "day": "2025-11-22",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.37
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1236,12 +971,7 @@
    {
     "day": "2025-11-23",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.7398
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1259,12 +989,7 @@
    {
     "day": "2025-11-24",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.6555
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1282,12 +1007,7 @@
    {
     "day": "2025-11-25",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.7193
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1305,12 +1025,7 @@
    {
     "day": "2025-11-26",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.3874
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1328,12 +1043,7 @@
    {
     "day": "2025-11-27",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.2777
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1351,12 +1061,7 @@
    {
     "day": "2025-11-28",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.3772
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1374,12 +1079,7 @@
    {
     "day": "2025-11-29",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.5401
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1397,12 +1097,7 @@
    {
     "day": "2025-11-30",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.5875
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1420,12 +1115,7 @@
    {
     "day": "2025-12-01",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.3007
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1443,12 +1133,7 @@
    {
     "day": "2025-12-02",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.8177
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1466,12 +1151,7 @@
    {
     "day": "2025-12-03",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.5276
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1489,12 +1169,7 @@
    {
     "day": "2025-12-04",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.288
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1512,12 +1187,7 @@
    {
     "day": "2025-12-05",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.7912
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1535,12 +1205,7 @@
    {
     "day": "2025-12-06",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.013
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1558,12 +1223,7 @@
    {
     "day": "2025-12-07",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.5545
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1581,12 +1241,7 @@
    {
     "day": "2025-12-08",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.9988
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1604,12 +1259,7 @@
    {
     "day": "2025-12-09",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.4524
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1627,12 +1277,7 @@
    {
     "day": "2025-12-10",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.909
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1650,12 +1295,7 @@
    {
     "day": "2025-12-11",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.2111
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1673,12 +1313,7 @@
    {
     "day": "2025-12-12",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.9547
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1696,12 +1331,7 @@
    {
     "day": "2025-12-13",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.0047
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1719,12 +1349,7 @@
    {
     "day": "2025-12-14",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.85
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1742,12 +1367,7 @@
    {
     "day": "2025-12-15",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.4292
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1765,12 +1385,7 @@
    {
     "day": "2025-12-16",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.0914
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1788,12 +1403,7 @@
    {
     "day": "2025-12-17",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.5657
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1811,12 +1421,7 @@
    {
     "day": "2025-12-18",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.6953
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1834,12 +1439,7 @@
    {
     "day": "2025-12-19",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.214
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1857,12 +1457,7 @@
    {
     "day": "2025-12-20",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      8.1438
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1880,12 +1475,7 @@
    {
     "day": "2025-12-21",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      8.1921
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1903,12 +1493,7 @@
    {
     "day": "2025-12-22",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      7.1131
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1926,12 +1511,7 @@
    {
     "day": "2025-12-23",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      7.6096
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1949,12 +1529,7 @@
    {
     "day": "2025-12-24",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      7.1144
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1972,12 +1547,7 @@
    {
     "day": "2025-12-25",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      9.3463
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -1995,12 +1565,7 @@
    {
     "day": "2025-12-26",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      7.8607
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2018,12 +1583,7 @@
    {
     "day": "2025-12-27",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      7.8148
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2041,12 +1601,7 @@
    {
     "day": "2025-12-28",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.5415
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2064,12 +1619,7 @@
    {
     "day": "2025-12-29",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.4609
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2087,12 +1637,7 @@
    {
     "day": "2025-12-30",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.7806
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2110,12 +1655,7 @@
    {
     "day": "2025-12-31",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.5053
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2133,12 +1673,7 @@
    {
     "day": "2026-01-01",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.6607
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2156,12 +1691,7 @@
    {
     "day": "2026-01-02",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.4784
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2179,12 +1709,7 @@
    {
     "day": "2026-01-03",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      7.6538
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2202,12 +1727,7 @@
    {
     "day": "2026-01-04",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      7.3331
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2225,12 +1745,7 @@
    {
     "day": "2026-01-05",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.9791
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2248,12 +1763,7 @@
    {
     "day": "2026-01-06",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.8273
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2271,12 +1781,7 @@
    {
     "day": "2026-01-07",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.3376
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2294,12 +1799,7 @@
    {
     "day": "2026-01-08",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.5415
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2317,12 +1817,7 @@
    {
     "day": "2026-01-09",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      7.0798
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2340,12 +1835,7 @@
    {
     "day": "2026-01-10",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.4768
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2363,12 +1853,7 @@
    {
     "day": "2026-01-11",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.8932
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2386,12 +1871,7 @@
    {
     "day": "2026-01-12",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.2276
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2409,12 +1889,7 @@
    {
     "day": "2026-01-13",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.2361
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2432,12 +1907,7 @@
    {
     "day": "2026-01-14",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.2124
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2455,12 +1925,7 @@
    {
     "day": "2026-01-15",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.9253
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2478,12 +1943,7 @@
    {
     "day": "2026-01-16",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.6796
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2501,12 +1961,7 @@
    {
     "day": "2026-01-17",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.3442
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2524,12 +1979,7 @@
    {
     "day": "2026-01-18",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.5758
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2547,12 +1997,7 @@
    {
     "day": "2026-01-19",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.3506
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2570,12 +2015,7 @@
    {
     "day": "2026-01-20",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.7304
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2593,12 +2033,7 @@
    {
     "day": "2026-01-21",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.2506
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2616,12 +2051,7 @@
    {
     "day": "2026-01-22",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.7095
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2639,12 +2069,7 @@
    {
     "day": "2026-01-23",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.7018
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2662,12 +2087,7 @@
    {
     "day": "2026-01-24",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.6636
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2685,12 +2105,7 @@
    {
     "day": "2026-01-25",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.8998
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2708,12 +2123,7 @@
    {
     "day": "2026-01-26",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.1352
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2731,12 +2141,7 @@
    {
     "day": "2026-01-27",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.6514
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2754,12 +2159,7 @@
    {
     "day": "2026-01-28",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.1604
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2777,12 +2177,7 @@
    {
     "day": "2026-01-29",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.892
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2800,12 +2195,7 @@
    {
     "day": "2026-01-30",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.5406
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2823,12 +2213,7 @@
    {
     "day": "2026-01-31",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.4532
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2846,12 +2231,7 @@
    {
     "day": "2026-02-01",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.8334
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2869,12 +2249,7 @@
    {
     "day": "2026-02-02",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.2285
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2892,12 +2267,7 @@
    {
     "day": "2026-02-03",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.015
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2915,12 +2285,7 @@
    {
     "day": "2026-02-04",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.5619
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2938,12 +2303,7 @@
    {
     "day": "2026-02-05",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.4602
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2961,12 +2321,7 @@
    {
     "day": "2026-02-06",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.0954
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -2984,12 +2339,7 @@
    {
     "day": "2026-02-07",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.2368
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3007,12 +2357,7 @@
    {
     "day": "2026-02-08",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.1751
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3030,12 +2375,7 @@
    {
     "day": "2026-02-09",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.5069
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3053,12 +2393,7 @@
    {
     "day": "2026-02-10",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.4594
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3076,12 +2411,7 @@
    {
     "day": "2026-02-11",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.863
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3099,12 +2429,7 @@
    {
     "day": "2026-02-12",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.4228
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3122,12 +2447,7 @@
    {
     "day": "2026-02-13",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.2444
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3145,12 +2465,7 @@
    {
     "day": "2026-02-14",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.6715
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3168,12 +2483,7 @@
    {
     "day": "2026-02-15",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.2772
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3191,12 +2501,7 @@
    {
     "day": "2026-02-16",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.3501
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3214,12 +2519,7 @@
    {
     "day": "2026-02-17",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.3454
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3237,12 +2537,7 @@
    {
     "day": "2026-02-18",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.2852
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3260,12 +2555,7 @@
    {
     "day": "2026-02-19",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.7542
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3283,12 +2573,7 @@
    {
     "day": "2026-02-20",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.7532
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3306,12 +2591,7 @@
    {
     "day": "2026-02-21",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.7283
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3329,12 +2609,7 @@
    {
     "day": "2026-02-22",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.4519
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3352,12 +2627,7 @@
    {
     "day": "2026-02-23",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.5878
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3375,12 +2645,7 @@
    {
     "day": "2026-02-24",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.1884
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3398,12 +2663,7 @@
    {
     "day": "2026-02-25",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.8519
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3421,12 +2681,7 @@
    {
     "day": "2026-02-26",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.7992
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3444,12 +2699,7 @@
    {
     "day": "2026-02-27",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.7966
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3467,12 +2717,7 @@
    {
     "day": "2026-02-28",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.966
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3490,12 +2735,7 @@
    {
     "day": "2026-03-01",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.6956
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3513,12 +2753,7 @@
    {
     "day": "2026-03-02",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.6486
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3536,12 +2771,7 @@
    {
     "day": "2026-03-03",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.2426
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3559,12 +2789,7 @@
    {
     "day": "2026-03-04",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.6899
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3582,12 +2807,7 @@
    {
     "day": "2026-03-05",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.8229
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3605,12 +2825,7 @@
    {
     "day": "2026-03-06",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.9991
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3628,12 +2843,7 @@
    {
     "day": "2026-03-07",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.7988
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3651,12 +2861,7 @@
    {
     "day": "2026-03-08",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.9671
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3674,12 +2879,7 @@
    {
     "day": "2026-03-09",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.9735
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3697,12 +2897,7 @@
    {
     "day": "2026-03-10",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.4988
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3720,12 +2915,7 @@
    {
     "day": "2026-03-11",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.2809
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3743,12 +2933,7 @@
    {
     "day": "2026-03-12",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.6717
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3766,12 +2951,7 @@
    {
     "day": "2026-03-13",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.3769
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3789,12 +2969,7 @@
    {
     "day": "2026-03-14",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.5987
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3812,12 +2987,7 @@
    {
     "day": "2026-03-15",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.6462
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3835,12 +3005,7 @@
    {
     "day": "2026-03-16",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.0076
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3858,12 +3023,7 @@
    {
     "day": "2026-03-17",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.7077
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3881,12 +3041,7 @@
    {
     "day": "2026-03-18",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.2237
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3904,12 +3059,7 @@
    {
     "day": "2026-03-19",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.8698
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3927,12 +3077,7 @@
    {
     "day": "2026-03-20",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.0358
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3950,12 +3095,7 @@
    {
     "day": "2026-03-21",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.5426
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3973,12 +3113,7 @@
    {
     "day": "2026-03-22",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.482
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -3996,12 +3131,7 @@
    {
     "day": "2026-03-23",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.7076
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4019,12 +3149,7 @@
    {
     "day": "2026-03-24",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.8798
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4042,12 +3167,7 @@
    {
     "day": "2026-03-25",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.9267
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4065,12 +3185,7 @@
    {
     "day": "2026-03-26",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.3229
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4088,12 +3203,7 @@
    {
     "day": "2026-03-27",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.0898
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4111,12 +3221,7 @@
    {
     "day": "2026-03-28",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.5948
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4134,12 +3239,7 @@
    {
     "day": "2026-03-29",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.0769
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4157,12 +3257,7 @@
    {
     "day": "2026-03-30",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.8139
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4180,12 +3275,7 @@
    {
     "day": "2026-03-31",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.3713
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4203,12 +3293,7 @@
    {
     "day": "2026-04-01",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.4207
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4226,12 +3311,7 @@
    {
     "day": "2026-04-02",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.3954
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4249,12 +3329,7 @@
    {
     "day": "2026-04-03",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      1.8477
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4272,12 +3347,7 @@
    {
     "day": "2026-04-04",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.0358
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4295,12 +3365,7 @@
    {
     "day": "2026-04-05",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.1738
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4318,12 +3383,7 @@
    {
     "day": "2026-04-06",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.6141
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4341,12 +3401,7 @@
    {
     "day": "2026-04-07",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.309
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4364,12 +3419,7 @@
    {
     "day": "2026-04-08",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.4714
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4387,12 +3437,7 @@
    {
     "day": "2026-04-09",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.5045
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4410,12 +3455,7 @@
    {
     "day": "2026-04-10",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.6465
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4433,12 +3473,7 @@
    {
     "day": "2026-04-11",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.2484
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4456,12 +3491,7 @@
    {
     "day": "2026-04-12",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.6287
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4479,12 +3509,7 @@
    {
     "day": "2026-04-13",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.162
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4502,12 +3527,7 @@
    {
     "day": "2026-04-14",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.1751
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4525,12 +3545,7 @@
    {
     "day": "2026-04-15",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.7875
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4548,12 +3563,7 @@
    {
     "day": "2026-04-16",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.9194
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4571,12 +3581,7 @@
    {
     "day": "2026-04-17",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.5252
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4594,12 +3599,7 @@
    {
     "day": "2026-04-18",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.2472
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4617,12 +3617,7 @@
    {
     "day": "2026-04-19",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.6779
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4640,12 +3635,7 @@
    {
     "day": "2026-04-20",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.8446
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4663,12 +3653,7 @@
    {
     "day": "2026-04-21",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.5635
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4686,12 +3671,7 @@
    {
     "day": "2026-04-22",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.7395
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4709,12 +3689,7 @@
    {
     "day": "2026-04-23",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.5118
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4732,12 +3707,7 @@
    {
     "day": "2026-04-24",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.7847
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4755,12 +3725,7 @@
    {
     "day": "2026-04-25",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.3202
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4778,12 +3743,7 @@
    {
     "day": "2026-04-26",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.976
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4801,12 +3761,7 @@
    {
     "day": "2026-04-27",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.5703
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4824,12 +3779,7 @@
    {
     "day": "2026-04-28",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.5711
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4847,12 +3797,7 @@
    {
     "day": "2026-04-29",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.7259
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4870,12 +3815,7 @@
    {
     "day": "2026-04-30",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.1137
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4893,12 +3833,7 @@
    {
     "day": "2026-05-01",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.4184
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4916,12 +3851,7 @@
    {
     "day": "2026-05-02",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.9421
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4939,12 +3869,7 @@
    {
     "day": "2026-05-03",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.6471
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4962,12 +3887,7 @@
    {
     "day": "2026-05-04",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.2953
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -4985,12 +3905,7 @@
    {
     "day": "2026-05-05",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.3301
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5008,12 +3923,7 @@
    {
     "day": "2026-05-06",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.7951
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5031,12 +3941,7 @@
    {
     "day": "2026-05-07",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.8364
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5054,12 +3959,7 @@
    {
     "day": "2026-05-08",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.2672
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5077,12 +3977,7 @@
    {
     "day": "2026-05-09",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.6691
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5100,12 +3995,7 @@
    {
     "day": "2026-05-10",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.2955
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5123,12 +4013,7 @@
    {
     "day": "2026-05-11",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.9842
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5146,12 +4031,7 @@
    {
     "day": "2026-05-12",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.9351
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5169,12 +4049,7 @@
    {
     "day": "2026-05-13",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      9.2393
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5192,12 +4067,7 @@
    {
     "day": "2026-05-14",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      7.9479
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5215,12 +4085,7 @@
    {
     "day": "2026-05-15",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.8635
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5238,12 +4103,7 @@
    {
     "day": "2026-05-16",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.4824
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5261,12 +4121,7 @@
    {
     "day": "2026-05-17",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.8533
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5284,12 +4139,7 @@
    {
     "day": "2026-05-18",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.9276
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5307,12 +4157,7 @@
    {
     "day": "2026-05-19",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.8296
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5330,12 +4175,7 @@
    {
     "day": "2026-05-20",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.4885
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5353,12 +4193,7 @@
    {
     "day": "2026-05-21",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.6525
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5376,12 +4211,7 @@
    {
     "day": "2026-05-22",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.2679
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5399,12 +4229,7 @@
    {
     "day": "2026-05-23",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      8.1596
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5422,12 +4247,7 @@
    {
     "day": "2026-05-24",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.6419
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5445,12 +4265,7 @@
    {
     "day": "2026-05-25",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.3128
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5468,12 +4283,7 @@
    {
     "day": "2026-05-26",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.2266
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5491,12 +4301,7 @@
    {
     "day": "2026-05-27",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      8.8907
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5514,12 +4319,7 @@
    {
     "day": "2026-05-28",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.7404
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5537,12 +4337,7 @@
    {
     "day": "2026-05-29",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.8076
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5560,12 +4355,7 @@
    {
     "day": "2026-05-30",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      8.8036
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5583,12 +4373,7 @@
    {
     "day": "2026-05-31",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.5669
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5606,12 +4391,7 @@
    {
     "day": "2026-06-01",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.866
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5629,12 +4409,7 @@
    {
     "day": "2026-06-02",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.2221
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5652,12 +4427,7 @@
    {
     "day": "2026-06-03",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.1765
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5675,12 +4445,7 @@
    {
     "day": "2026-06-04",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.5984
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5698,12 +4463,7 @@
    {
     "day": "2026-06-05",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.9277
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5721,12 +4481,7 @@
    {
     "day": "2026-06-06",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.4635
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5744,12 +4499,7 @@
    {
     "day": "2026-06-07",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.3024
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5767,12 +4517,7 @@
    {
     "day": "2026-06-08",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.786
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5790,12 +4535,7 @@
    {
     "day": "2026-06-09",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.5976
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5813,12 +4553,7 @@
    {
     "day": "2026-06-10",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.9999
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5836,12 +4571,7 @@
    {
     "day": "2026-06-11",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.3378
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5859,12 +4589,7 @@
    {
     "day": "2026-06-12",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.8305
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5882,12 +4607,7 @@
    {
     "day": "2026-06-13",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.8171
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5905,12 +4625,7 @@
    {
     "day": "2026-06-14",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.1953
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5928,12 +4643,7 @@
    {
     "day": "2026-06-15",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.0191
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5951,12 +4661,7 @@
    {
     "day": "2026-06-16",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      9.1649
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5974,12 +4679,7 @@
    {
     "day": "2026-06-17",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      11.7661
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -5997,12 +4697,7 @@
    {
     "day": "2026-06-18",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      12.6769
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6020,12 +4715,7 @@
    {
     "day": "2026-06-19",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.4869
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6043,12 +4733,7 @@
    {
     "day": "2026-06-20",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.6788
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6066,12 +4751,7 @@
    {
     "day": "2026-06-21",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.8518
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6089,12 +4769,7 @@
    {
     "day": "2026-06-22",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.029
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6112,12 +4787,7 @@
    {
     "day": "2026-06-23",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.5791
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6135,12 +4805,7 @@
    {
     "day": "2026-06-24",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.581
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6158,12 +4823,7 @@
    {
     "day": "2026-06-25",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      7.1748
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6181,12 +4841,7 @@
    {
     "day": "2026-06-26",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.1317
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6204,12 +4859,7 @@
    {
     "day": "2026-06-27",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.9911
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6227,12 +4877,7 @@
    {
     "day": "2026-06-28",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.5653
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6250,12 +4895,7 @@
    {
     "day": "2026-06-29",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.9677
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6273,12 +4913,7 @@
    {
     "day": "2026-06-30",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.9424
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6296,12 +4931,7 @@
    {
     "day": "2026-07-01",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.1489
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6319,12 +4949,7 @@
    {
     "day": "2026-07-02",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.6526
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6342,12 +4967,7 @@
    {
     "day": "2026-07-03",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.544
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6365,12 +4985,7 @@
    {
     "day": "2026-07-04",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.1617
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6388,12 +5003,7 @@
    {
     "day": "2026-07-05",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.7704
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6411,12 +5021,7 @@
    {
     "day": "2026-07-06",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.7748
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6434,12 +5039,7 @@
    {
     "day": "2026-07-07",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.5491
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6457,12 +5057,7 @@
    {
     "day": "2026-07-08",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.6691
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6480,12 +5075,7 @@
    {
     "day": "2026-07-09",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.9105
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6503,12 +5093,7 @@
    {
     "day": "2026-07-10",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.0333
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6526,12 +5111,7 @@
    {
     "day": "2026-07-11",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.339
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6549,12 +5129,7 @@
    {
     "day": "2026-07-12",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.0445
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6572,12 +5147,7 @@
    {
     "day": "2026-07-13",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.5338
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6595,12 +5165,7 @@
    {
     "day": "2026-07-14",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.1977
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6623,12 +5188,7 @@
    {
     "day": "2026-07-15",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      6.4755
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6651,12 +5211,7 @@
    {
     "day": "2026-07-16",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.5043
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6679,12 +5234,7 @@
    {
     "day": "2026-07-17",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.895
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6707,12 +5257,7 @@
    {
     "day": "2026-07-18",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.2375
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6735,12 +5280,7 @@
    {
     "day": "2026-07-19",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.2161
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6763,12 +5303,7 @@
    {
     "day": "2026-07-20",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.8832
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6791,12 +5326,7 @@
    {
     "day": "2026-07-21",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.4623
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6819,12 +5349,7 @@
    {
     "day": "2026-07-22",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.2358
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6847,12 +5372,7 @@
    {
     "day": "2026-07-23",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.9004
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6875,12 +5395,7 @@
    {
     "day": "2026-07-24",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.9577
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6903,12 +5418,7 @@
    {
     "day": "2026-07-25",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.1499
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6931,12 +5441,7 @@
    {
     "day": "2026-07-26",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.2015
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6959,12 +5464,7 @@
    {
     "day": "2026-07-27",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.7611
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -6987,12 +5487,7 @@
    {
     "day": "2026-07-28",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.333
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7015,12 +5510,7 @@
    {
     "day": "2026-07-29",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.9449
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7043,12 +5533,7 @@
    {
     "day": "2026-07-30",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      5.3026
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7071,12 +5556,7 @@
    {
     "day": "2026-07-31",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      7.4676
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7099,12 +5579,7 @@
    {
     "day": "2026-08-01",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      13.6575
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7127,12 +5602,7 @@
    {
     "day": "2026-08-02",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      8.7846
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7155,12 +5625,7 @@
    {
     "day": "2026-08-03",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      7.768
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7183,12 +5648,7 @@
    {
     "day": "2026-08-04",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      11.6672
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7211,12 +5671,7 @@
    {
     "day": "2026-08-05",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      12.1228
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7239,12 +5694,7 @@
    {
     "day": "2026-08-06",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      12.7045
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7267,12 +5717,7 @@
    {
     "day": "2026-08-07",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      13.1839
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7295,12 +5740,7 @@
    {
     "day": "2026-08-08",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      16.487
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7323,12 +5763,7 @@
    {
     "day": "2026-08-09",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      15.2094
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7351,12 +5786,7 @@
    {
     "day": "2026-08-10",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      12.3065
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7379,12 +5809,7 @@
    {
     "day": "2026-08-11",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      14.2231
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7407,12 +5832,7 @@
    {
     "day": "2026-08-12",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      8.6213
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7435,12 +5855,7 @@
    {
     "day": "2026-08-13",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.4676
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7467,12 +5882,7 @@
    {
     "day": "2026-08-14",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.4854
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7504,12 +5914,7 @@
    {
     "day": "2026-08-15",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.9142
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7541,12 +5946,7 @@
    {
     "day": "2026-08-16",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      4.5275
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7578,12 +5978,7 @@
    {
     "day": "2026-08-17",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.8239
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7615,12 +6010,7 @@
    {
     "day": "2026-08-18",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.5427
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7652,12 +6042,7 @@
    {
     "day": "2026-08-19",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.5684
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7689,12 +6074,7 @@
    {
     "day": "2026-08-20",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.7912
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7726,12 +6106,7 @@
    {
     "day": "2026-08-21",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.9901
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7763,12 +6138,7 @@
    {
     "day": "2026-08-22",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.5918
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7800,12 +6170,7 @@
    {
     "day": "2026-08-23",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      3.0119
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7837,12 +6202,7 @@
    {
     "day": "2026-08-24",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.9342
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7874,12 +6234,7 @@
    {
     "day": "2026-08-25",
     "metric": "requests",
-    "shares": [
-     [
-      "text-embedding-3-small",
-      2.5872
-     ]
-    ],
+    "shares": [],
     "others_share": 0
    },
    {
@@ -7916,10 +6271,6 @@
     "day": "2026-08-26",
     "metric": "requests",
     "shares": [
-     [
-      "text-embedding-3-small",
-      3.7896
-     ],
      [
       "GLM 5.3 Flash",
       0.6542
@@ -7966,10 +6317,6 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      2.9973
-     ],
-     [
       "GLM 5.3 Flash",
       2.3187
      ]
@@ -8014,10 +6361,6 @@
     "day": "2026-08-28",
     "metric": "requests",
     "shares": [
-     [
-      "text-embedding-3-small",
-      2.9153
-     ],
      [
       "GLM 5.3 Flash",
       1.5879
@@ -8064,10 +6407,6 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      4.2541
-     ],
-     [
       "GLM 5.3 Flash",
       1.9299
      ]
@@ -8112,10 +6451,6 @@
     "day": "2026-08-30",
     "metric": "requests",
     "shares": [
-     [
-      "text-embedding-3-small",
-      4.7231
-     ],
      [
       "GLM 5.3 Flash",
       1.8224
@@ -8162,10 +6497,6 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      3.4306
-     ],
-     [
       "GLM 5.3 Flash",
       2.0959
      ]
@@ -8210,10 +6541,6 @@
     "day": "2026-09-01",
     "metric": "requests",
     "shares": [
-     [
-      "text-embedding-3-small",
-      3.7158
-     ],
      [
       "GLM 5.3 Flash",
       2.1428
@@ -8260,10 +6587,6 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      4.1401
-     ],
-     [
       "GLM 5.3 Flash",
       2.0714
      ]
@@ -8308,10 +6631,6 @@
     "day": "2026-09-03",
     "metric": "requests",
     "shares": [
-     [
-      "text-embedding-3-small",
-      2.8099
-     ],
      [
       "GLM 5.3 Flash",
       2.1144
@@ -8358,10 +6677,6 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      3.0995
-     ],
-     [
       "GLM 5.3 Flash",
       2.3903
      ]
@@ -8406,10 +6721,6 @@
     "day": "2026-09-05",
     "metric": "requests",
     "shares": [
-     [
-      "text-embedding-3-small",
-      4.2267
-     ],
      [
       "GLM 5.3 Flash",
       3.8653
@@ -8456,10 +6767,6 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      4.3019
-     ],
-     [
       "GLM 5.3 Flash",
       2.6056
      ]
@@ -8505,10 +6812,6 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      4.3007
-     ],
-     [
       "GLM 5.3 Flash",
       3.0963
      ]
@@ -8553,10 +6856,6 @@
     "day": "2026-09-08",
     "metric": "requests",
     "shares": [
-     [
-      "text-embedding-3-small",
-      3.3563
-     ],
      [
       "GLM 5.3 Flash",
       2.9028
@@ -8611,10 +6910,6 @@
     "metric": "requests",
     "shares": [
      [
-      "text-embedding-3-small",
-      3.1053
-     ],
-     [
       "GLM 5.3 Flash",
       2.8
      ]
@@ -8662,10 +6957,6 @@
      [
       "DeepSeek V4.1 Flash",
       9.9564
-     ],
-     [
-      "text-embedding-3-small",
-      3.0741
      ],
      [
       "GLM 5.3 Flash",
@@ -8721,10 +7012,6 @@
       15.8342
      ],
      [
-      "text-embedding-3-small",
-      2.6513
-     ],
-     [
       "GLM 5.3 Flash",
       2.2852
      ]
@@ -8776,10 +7063,6 @@
      [
       "DeepSeek V4.1 Flash",
       23.2248
-     ],
-     [
-      "text-embedding-3-small",
-      2.9006
      ],
      [
       "GLM 5.3 Flash",
@@ -8835,10 +7118,6 @@
       23.864
      ],
      [
-      "text-embedding-3-small",
-      3.2323
-     ],
-     [
       "GLM 5.3 Flash",
       2.154
      ]
@@ -8890,10 +7169,6 @@
      [
       "DeepSeek V4.1 Flash",
       17.621
-     ],
-     [
-      "text-embedding-3-small",
-      2.4048
      ],
      [
       "GLM 5.3 Flash",
@@ -8951,10 +7226,6 @@
      [
       "GLM 5.3 Flash",
       2.3306
-     ],
-     [
-      "text-embedding-3-small",
-      2.27
      ]
     ],
     "others_share": 0
@@ -9008,10 +7279,6 @@
      [
       "GLM 5.3 Flash",
       3.1827
-     ],
-     [
-      "text-embedding-3-small",
-      2.1017
      ],
      [
       "Jev",
@@ -9077,10 +7344,6 @@
      [
       "GLM 5.3 Flash",
       5.0963
-     ],
-     [
-      "text-embedding-3-small",
-      2.2769
      ]
     ],
     "others_share": 0
@@ -9142,10 +7405,6 @@
      [
       "GLM 5.3 Flash",
       6.5785
-     ],
-     [
-      "text-embedding-3-small",
-      2.1058
      ]
     ],
     "others_share": 0
@@ -9207,10 +7466,6 @@
      [
       "GLM 5.3 Flash",
       4.1525
-     ],
-     [
-      "text-embedding-3-small",
-      1.8116
      ]
     ],
     "others_share": 0
@@ -9253,6 +7508,10 @@
      [
       "GLM 5.3",
       0.6534
+     ],
+     [
+      "Grok 4.7",
+      0.0184
      ]
     ],
     "others_share": 0
@@ -9272,10 +7531,6 @@
      [
       "GLM 5.3 Flash",
       4.2859
-     ],
-     [
-      "text-embedding-3-small",
-      1.691
      ]
     ],
     "others_share": 0
@@ -9318,6 +7573,10 @@
      [
       "GLM 5.3 Flash",
       0.947
+     ],
+     [
+      "Grok 4.7",
+      0.0693
      ]
     ],
     "others_share": 0
@@ -9337,10 +7596,6 @@
      [
       "GLM 5.3 Flash",
       4.4593
-     ],
-     [
-      "text-embedding-3-small",
-      1.7766
      ]
     ],
     "others_share": 0
@@ -9387,6 +7642,10 @@
      [
       "Claude Opus 5.5",
       0.8542
+     ],
+     [
+      "Grok 4.7",
+      0.2351
      ]
     ],
     "others_share": 0
@@ -9406,10 +7665,6 @@
      [
       "GLM 5.3 Flash",
       4.1135
-     ],
-     [
-      "text-embedding-3-small",
-      1.7551
      ],
      [
       "GPT-6 Luna",
@@ -9472,6 +7727,10 @@
      [
       "GLM 5.3",
       0.8922
+     ],
+     [
+      "Grok 4.7",
+      0.4126
      ]
     ],
     "others_share": 0
@@ -9495,10 +7754,6 @@
      [
       "GPT-6 Luna",
       3.1735
-     ],
-     [
-      "text-embedding-3-small",
-      1.7076
      ],
      [
       "Claude Opus 5.5",
@@ -9557,6 +7812,10 @@
      [
       "GLM 5.3 Flash",
       0.8863
+     ],
+     [
+      "Grok 4.7",
+      0.3246
      ]
     ],
     "others_share": 0
@@ -9580,10 +7839,6 @@
      [
       "GLM 5.3 Flash",
       3.6407
-     ],
-     [
-      "text-embedding-3-small",
-      1.8674
      ],
      [
       "Claude Opus 5.5",
@@ -9642,6 +7897,10 @@
      [
       "GLM 5.3 Flash",
       1.4602
+     ],
+     [
+      "Grok 4.7",
+      0.3832
      ]
     ],
     "others_share": 0
@@ -9665,10 +7924,6 @@
      [
       "GPT-6 Luna",
       4.281
-     ],
-     [
-      "text-embedding-3-small",
-      2.0028
      ],
      [
       "Claude Opus 5.5",
@@ -9727,6 +7982,10 @@
      [
       "GLM 5.3",
       1.4717
+     ],
+     [
+      "Grok 4.7",
+      0.2933
      ]
     ],
     "others_share": 0
@@ -9750,10 +8009,6 @@
      [
       "GPT-6 Luna",
       4.5621
-     ],
-     [
-      "text-embedding-3-small",
-      2.1236
      ],
      [
       "Claude Opus 5.5",
@@ -9812,6 +8067,10 @@
      [
       "GLM 5.3",
       1.348
+     ],
+     [
+      "Grok 4.7",
+      0.3694
      ]
     ],
     "others_share": 0
@@ -9835,10 +8094,6 @@
      [
       "GPT-6 Luna",
       4.9156
-     ],
-     [
-      "text-embedding-3-small",
-      2.4068
      ],
      [
       "Claude Opus 5.5",
@@ -9899,6 +8154,10 @@
       1.5888
      ],
      [
+      "Grok 4.7",
+      0.5715
+     ],
+     [
       "Claude Sonnet 5.5",
       0.2885
      ]
@@ -9926,12 +8185,12 @@
       5.056
      ],
      [
-      "text-embedding-3-small",
-      2.3037
-     ],
-     [
       "Claude Opus 5.5",
       1.4766
+     ],
+     [
+      "Claude Sonnet 5.5",
+      0.0668
      ]
     ],
     "others_share": 0
@@ -9996,6 +8255,10 @@
       1.1258
      ],
      [
+      "Grok 4.7",
+      1.0677
+     ],
+     [
       "GPT-6.1 Sol",
       0.1601
      ]
@@ -10023,12 +8286,12 @@
       3.7014
      ],
      [
-      "text-embedding-3-small",
-      2.031
-     ],
-     [
       "Claude Opus 5.5",
       1.2671
+     ],
+     [
+      "Claude Sonnet 5.5",
+      0.6584
      ]
     ],
     "others_share": 0
@@ -10095,6 +8358,10 @@
      [
       "GLM 5.3 Flash",
       1.2253
+     ],
+     [
+      "Grok 4.7",
+      0.5074
      ]
     ],
     "others_share": 0
@@ -10120,12 +8387,12 @@
       2.8173
      ],
      [
-      "text-embedding-3-small",
-      2.0765
-     ],
-     [
       "Claude Opus 5.5",
       1.3232
+     ],
+     [
+      "Claude Sonnet 5.5",
+      0.6309
      ]
     ],
     "others_share": 0
@@ -10190,6 +8457,10 @@
       1.9135
      ],
      [
+      "Grok 4.7",
+      1.6511
+     ],
+     [
       "GLM 5.3 Flash",
       1.3306
      ]
@@ -10217,12 +8488,12 @@
       3.1039
      ],
      [
-      "text-embedding-3-small",
-      2.2146
-     ],
-     [
       "Claude Opus 5.5",
       1.1342
+     ],
+     [
+      "Claude Sonnet 5.5",
+      0.4877
      ]
     ],
     "others_share": 0
@@ -10266,6 +8537,10 @@
     "day": "2026-10-02",
     "metric": "cost",
     "shares": [
+     [
+      "Grok 4.7",
+      15.408
+     ],
      [
       "Claude Opus 5.5",
       12.9298
@@ -10314,12 +8589,12 @@
       2.95
      ],
      [
-      "text-embedding-3-small",
-      2.1386
-     ],
-     [
       "Claude Opus 5.5",
       1.1103
+     ],
+     [
+      "Claude Sonnet 5.5",
+      0.667
      ]
     ],
     "others_share": 0
@@ -10386,6 +8661,10 @@
      [
       "GLM 5.3 Flash",
       1.1485
+     ],
+     [
+      "Grok 4.7",
+      0.3498
      ]
     ],
     "others_share": 0
@@ -10411,12 +8690,12 @@
       3.1258
      ],
      [
-      "text-embedding-3-small",
-      2.2899
-     ],
-     [
       "Claude Opus 5.5",
       0.827
+     ],
+     [
+      "Claude Sonnet 5.5",
+      0.5716
      ]
     ],
     "others_share": 0
@@ -10483,6 +8762,10 @@
      [
       "GLM 5.3 Flash",
       1.615
+     ],
+     [
+      "Grok 4.7",
+      0.3148
      ]
     ],
     "others_share": 0
@@ -10508,12 +8791,12 @@
       4.2256
      ],
      [
-      "text-embedding-3-small",
-      2.4602
-     ],
-     [
       "Claude Opus 5.5",
       0.8261
+     ],
+     [
+      "Claude Sonnet 5.5",
+      0.6743
      ]
     ],
     "others_share": 0
@@ -10580,6 +8863,10 @@
      [
       "GLM 5.3 Flash",
       1.5523
+     ],
+     [
+      "Grok 4.7",
+      0.795
      ]
     ],
     "others_share": 0
@@ -10605,12 +8892,12 @@
       4.047
      ],
      [
-      "text-embedding-3-small",
-      2.59
-     ],
-     [
       "Claude Opus 5.5",
       1.2565
+     ],
+     [
+      "Claude Sonnet 5.5",
+      0.9923
      ]
     ],
     "others_share": 0
@@ -10677,6 +8964,10 @@
      [
       "GLM 5.3 Flash",
       1.2539
+     ],
+     [
+      "Grok 4.7",
+      1.0151
      ]
     ],
     "others_share": 0
@@ -10702,12 +8993,12 @@
       2.7671
      ],
      [
-      "text-embedding-3-small",
-      2.4915
-     ],
-     [
       "Claude Opus 5.5",
       1.2167
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.1402
      ]
     ],
     "others_share": 0
@@ -10774,6 +9065,10 @@
      [
       "GLM 5.3 Flash",
       1.6375
+     ],
+     [
+      "Grok 4.7",
+      0.8039
      ]
     ],
     "others_share": 0
@@ -10795,16 +9090,16 @@
       5.8163
      ],
      [
-      "text-embedding-3-small",
-      3.2685
-     ],
-     [
       "GLM 5.3 Flash",
       3.2127
      ],
      [
       "Claude Opus 5.5",
       1.1919
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.1427
      ],
      [
       "Claude Haiku 5.5",
@@ -10873,6 +9168,10 @@
       3.3019
      ],
      [
+      "Grok 4.7",
+      1.8444
+     ],
+     [
       "GLM 5.3 Flash",
       1.5643
      ]
@@ -10900,12 +9199,12 @@
       3.7161
      ],
      [
-      "text-embedding-3-small",
-      3.004
-     ],
-     [
       "Claude Haiku 5.5",
       1.2993
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.1937
      ],
      [
       "Claude Opus 5.5",
@@ -10976,6 +9275,10 @@
      [
       "GLM 5.3 Flash",
       2.1756
+     ],
+     [
+      "Grok 4.7",
+      1.3504
      ]
     ],
     "others_share": 0
@@ -11001,16 +9304,16 @@
       4.6364
      ],
      [
-      "text-embedding-3-small",
-      2.9019
-     ],
-     [
       "Claude Haiku 5.5",
       1.2901
      ],
      [
       "Claude Opus 5.5",
       1.2454
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.1528
      ]
     ],
     "others_share": 0
@@ -11077,6 +9380,10 @@
      [
       "GLM 5.3 Flash",
       2.4206
+     ],
+     [
+      "Grok 4.7",
+      1.6761
      ]
     ],
     "others_share": 0
@@ -11102,8 +9409,8 @@
       5.1973
      ],
      [
-      "text-embedding-3-small",
-      3.7831
+      "Claude Sonnet 5.5",
+      1.2428
      ],
      [
       "Claude Opus 5.5",
@@ -11164,6 +9471,10 @@
       11.7037
      ],
      [
+      "Grok 4.7",
+      9.8939
+     ],
+     [
       "Kimi K3",
       6.7697
      ],
@@ -11203,8 +9514,8 @@
       5.0926
      ],
      [
-      "text-embedding-3-small",
-      2.7125
+      "Claude Sonnet 5.5",
+      1.1104
      ],
      [
       "Claude Haiku 5.5",
@@ -11277,6 +9588,10 @@
       4.5773
      ],
      [
+      "Grok 4.7",
+      2.5539
+     ],
+     [
       "GLM 5.3 Flash",
       1.925
      ]
@@ -11304,12 +9619,12 @@
       4.4009
      ],
      [
-      "text-embedding-3-small",
-      2.4457
-     ],
-     [
       "Claude Haiku 5.5",
       1.3764
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.2952
      ],
      [
       "Claude Opus 5.5",
@@ -11378,6 +9693,10 @@
       3.4467
      ],
      [
+      "Grok 4.7",
+      2.2253
+     ],
+     [
       "GLM 5.3 Flash",
       1.3817
      ]
@@ -11405,12 +9724,12 @@
       3.7038
      ],
      [
-      "text-embedding-3-small",
-      2.561
-     ],
-     [
       "Claude Haiku 5.5",
       1.4547
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.4505
      ],
      [
       "Claude Opus 5.5",
@@ -11483,6 +9802,10 @@
       3.9541
      ],
      [
+      "Grok 4.7",
+      2.3526
+     ],
+     [
       "GLM 5.3 Flash",
       1.4253
      ]
@@ -11510,8 +9833,8 @@
       3.6785
      ],
      [
-      "text-embedding-3-small",
-      3.3755
+      "Claude Sonnet 5.5",
+      1.5906
      ],
      [
       "Claude Opus 5.5",
@@ -11576,6 +9899,10 @@
       15.2843
      ],
      [
+      "Grok 4.7",
+      5.9056
+     ],
+     [
       "Kimi K3",
       4.8862
      ],
@@ -11615,8 +9942,8 @@
       4.0824
      ],
      [
-      "text-embedding-3-small",
-      2.363
+      "Claude Sonnet 5.5",
+      1.6093
      ],
      [
       "Claude Opus 5.5",
@@ -11689,6 +10016,10 @@
       15.7665
      ],
      [
+      "Grok 4.7",
+      5.7244
+     ],
+     [
       "Claude Sonnet 5.5",
       4.6789
      ],
@@ -11732,8 +10063,8 @@
       2.7136
      ],
      [
-      "text-embedding-3-small",
-      2.6438
+      "Claude Sonnet 5.5",
+      1.7271
      ],
      [
       "Claude Haiku 5.5",
@@ -11822,6 +10153,10 @@
       2.4772
      ],
      [
+      "Grok 4.7",
+      1.9387
+     ],
+     [
       "DeepSeek V4.1 Flash 1017",
       0.1127
      ]
@@ -11853,8 +10188,8 @@
       4.7644
      ],
      [
-      "text-embedding-3-small",
-      2.7064
+      "Claude Sonnet 5.5",
+      1.4919
      ],
      [
       "Claude Haiku 5.5",
@@ -11943,6 +10278,10 @@
       4.3087
      ],
      [
+      "Grok 4.7",
+      3.2451
+     ],
+     [
       "GPT-6.1 Sol",
       3.1233
      ],
@@ -11982,16 +10321,16 @@
       4.4757
      ],
      [
-      "text-embedding-3-small",
-      2.949
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       2.392
      ],
      [
       "Claude Haiku 5.5",
       1.3555
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.2728
      ],
      [
       "Claude Opus 5.5",
@@ -12076,6 +10415,10 @@
       3.643
      ],
      [
+      "Grok 4.7",
+      2.0548
+     ],
+     [
       "GLM 5.3 Flash",
       1.5299
      ],
@@ -12115,8 +10458,8 @@
       3.3377
      ],
      [
-      "text-embedding-3-small",
-      2.726
+      "Claude Sonnet 5.5",
+      1.6776
      ],
      [
       "Claude Haiku 5.5",
@@ -12193,6 +10536,10 @@
       15.4943
      ],
      [
+      "Grok 4.7",
+      13.4054
+     ],
+     [
       "Kimi K3",
       8.0122
      ],
@@ -12248,8 +10595,8 @@
       2.5276
      ],
      [
-      "text-embedding-3-small",
-      2.4743
+      "Claude Sonnet 5.5",
+      2.0653
      ],
      [
       "Claude Opus 5.5",
@@ -12322,6 +10669,10 @@
       13.8019
      ],
      [
+      "Grok 4.7",
+      12.9454
+     ],
+     [
       "Kimi K3",
       6.3635
      ],
@@ -12369,16 +10720,16 @@
       4.7993
      ],
      [
-      "text-embedding-3-small",
-      2.8097
-     ],
-     [
       "GLM 5.3 Flash",
       2.4982
      ],
      [
       "Claude Haiku 5.5",
       1.8116
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.5805
      ],
      [
       "Claude Opus 5.5",
@@ -12451,6 +10802,10 @@
       13.7957
      ],
      [
+      "Grok 4.7",
+      8.1511
+     ],
+     [
       "Kimi K3",
       6.3871
      ],
@@ -12502,12 +10857,12 @@
       4.3349
      ],
      [
-      "text-embedding-3-small",
-      2.9972
-     ],
-     [
       "Claude Haiku 5.5",
       1.9431
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.6625
      ],
      [
       "Claude Opus 5.5",
@@ -12596,6 +10951,10 @@
       3.6607
      ],
      [
+      "Grok 4.7",
+      1.8085
+     ],
+     [
       "DeepSeek V4.1 Flash 1017",
       1.4796
      ]
@@ -12631,12 +10990,12 @@
       4.4668
      ],
      [
-      "text-embedding-3-small",
-      2.938
-     ],
-     [
       "Claude Haiku 5.5",
       1.8771
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.5505
      ],
      [
       "Claude Opus 5.5",
@@ -12725,6 +11084,10 @@
       3.6491
      ],
      [
+      "Grok 4.7",
+      1.8731
+     ],
+     [
       "DeepSeek V4.1 Flash 1017",
       1.4049
      ]
@@ -12760,12 +11123,12 @@
       3.3475
      ],
      [
-      "text-embedding-3-small",
-      3.2434
-     ],
-     [
       "Claude Haiku 5.5",
       2.0162
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.2303
      ],
      [
       "Jev 1.13.0",
@@ -12838,6 +11201,10 @@
       15.4877
      ],
      [
+      "Grok 4.7",
+      7.6065
+     ],
+     [
       "Kimi K3",
       6.1311
      ],
@@ -12885,10 +11252,6 @@
       5.0764
      ],
      [
-      "text-embedding-3-small",
-      3.4786
-     ],
-     [
       "Claude Haiku 5.5",
       2.7778
      ],
@@ -12899,6 +11262,10 @@
      [
       "Jev 1.13.0",
       1.6618
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.2111
      ],
      [
       "Claude Opus 5.5",
@@ -12983,6 +11350,10 @@
       2.2394
      ],
      [
+      "Grok 4.7",
+      2.1548
+     ],
+     [
       "GLM 5.3 Flash",
       1.1082
      ]
@@ -13014,16 +11385,16 @@
       4.5692
      ],
      [
-      "text-embedding-3-small",
-      3.3284
-     ],
-     [
       "Claude Haiku 5.5",
       2.8613
      ],
      [
       "GLM 5.3 Flash",
       2.2797
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.5215
      ],
      [
       "Claude Opus 5.5",
@@ -13096,6 +11467,10 @@
       10.4331
      ],
      [
+      "Grok 4.7",
+      9.2533
+     ],
+     [
       "Claude Sonnet 5.5",
       6.0128
      ],
@@ -13151,8 +11526,8 @@
       3.4475
      ],
      [
-      "text-embedding-3-small",
-      3.2443
+      "Claude Sonnet 5.5",
+      1.6213
      ],
      [
       "Claude Opus 5.5",
@@ -13221,6 +11596,10 @@
       16.8327
      ],
      [
+      "Grok 4.7",
+      15.6527
+     ],
+     [
       "Kimi K3",
       8.7399
      ],
@@ -13276,16 +11655,16 @@
       4.1093
      ],
      [
-      "text-embedding-3-small",
-      3.4047
-     ],
-     [
       "Jev 1.13.0",
       2.559
      ],
      [
       "Claude Haiku 5.5",
       1.9196
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.6994
      ],
      [
       "Claude Opus 5.5",
@@ -13354,6 +11733,10 @@
       11.2595
      ],
      [
+      "Grok 4.7",
+      11.1442
+     ],
+     [
       "Claude Sonnet 5.5",
       5.536
      ],
@@ -13405,10 +11788,6 @@
       3.8461
      ],
      [
-      "text-embedding-3-small",
-      3.0445
-     ],
-     [
       "Jev 1.13.0",
       2.3229
      ],
@@ -13419,6 +11798,10 @@
      [
       "Claude Opus 5.5",
       1.7579
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.6778
      ]
     ],
     "others_share": 0
@@ -13479,6 +11862,10 @@
       19.2718
      ],
      [
+      "Grok 4.7",
+      17.7758
+     ],
+     [
       "GLM 5.3",
       11.2847
      ],
@@ -13534,16 +11921,16 @@
       4.484
      ],
      [
-      "text-embedding-3-small",
-      3.7477
-     ],
-     [
       "Jev 1.13.0",
       2.4193
      ],
      [
       "Claude Haiku 5.5",
       2.3106
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.7947
      ],
      [
       "Claude Opus 5.5",
@@ -13612,6 +11999,10 @@
       14.1982
      ],
      [
+      "Grok 4.7",
+      12.4854
+     ],
+     [
       "Kimi K3",
       8.2111
      ],
@@ -13663,16 +12054,16 @@
       4.2042
      ],
      [
-      "text-embedding-3-small",
-      3.61
-     ],
-     [
       "Jev 1.13.0",
       2.9869
      ],
      [
       "Claude Haiku 5.5",
       2.0552
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.6648
      ],
      [
       "Claude Opus 5.5",
@@ -13733,6 +12124,10 @@
     "metric": "cost",
     "shares": [
      [
+      "Grok 4.7",
+      17.8159
+     ],
+     [
       "Claude Opus 5.5",
       17.2217
      ],
@@ -13792,16 +12187,16 @@
       4.6057
      ],
      [
-      "text-embedding-3-small",
-      4.1428
-     ],
-     [
       "Jev 1.13.0",
       2.9981
      ],
      [
       "Claude Haiku 5.5",
       2.0911
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.4061
      ],
      [
       "Claude Opus 5.5",
@@ -13861,6 +12256,10 @@
     "day": "2026-11-02",
     "metric": "cost",
     "shares": [
+     [
+      "Grok 4.7",
+      23.5469
+     ],
      [
       "Claude Opus 5.5",
       21.0881
@@ -13925,16 +12324,16 @@
       4.3041
      ],
      [
-      "text-embedding-3-small",
-      2.8013
-     ],
-     [
       "Claude Haiku 5.5",
       2.1307
      ],
      [
       "Claude Opus 5.5",
       1.7353
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.5777
      ]
     ],
     "others_share": 0
@@ -13993,6 +12392,10 @@
      [
       "Claude Opus 5.5",
       23.3298
+     ],
+     [
+      "Grok 4.7",
+      16.3198
      ],
      [
       "GLM 5.3",
@@ -14058,12 +12461,12 @@
       2.1543
      ],
      [
-      "text-embedding-3-small",
-      2.1183
-     ],
-     [
       "Claude Opus 5.5",
       1.9406
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.8506
      ]
     ],
     "others_share": 0
@@ -14144,6 +12547,10 @@
       1.9968
      ],
      [
+      "Grok 4.7",
+      1.604
+     ],
+     [
       "GLM 5.3 Flash",
       0.9638
      ]
@@ -14187,8 +12594,8 @@
       2.2408
      ],
      [
-      "text-embedding-3-small",
-      2.206
+      "Claude Sonnet 5.5",
+      1.974
      ],
      [
       "Claude Opus 5.5",
@@ -14273,6 +12680,10 @@
       2.6506
      ],
      [
+      "Grok 4.7",
+      2.5804
+     ],
+     [
       "GLM 5.3 Flash",
       0.9956
      ]
@@ -14320,8 +12731,8 @@
       2.0153
      ],
      [
-      "text-embedding-3-small",
-      1.8435
+      "Claude Sonnet 5.5",
+      1.8979
      ]
     ],
     "others_share": 0
@@ -14398,6 +12809,10 @@
       5.4034
      ],
      [
+      "Grok 4.7",
+      2.9246
+     ],
+     [
       "DeepSeek V4.1 Flash 1017",
       2.4049
      ],
@@ -14445,12 +12860,12 @@
       2.402
      ],
      [
-      "text-embedding-3-small",
-      2.0293
-     ],
-     [
       "Claude Opus 5.5",
       1.9865
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.7908
      ]
     ],
     "others_share": 0
@@ -14527,6 +12942,10 @@
       5.167
      ],
      [
+      "Grok 4.7",
+      4.0565
+     ],
+     [
       "DeepSeek V4.1 Flash 1017",
       3.9946
      ],
@@ -14574,12 +12993,12 @@
       2.0971
      ],
      [
-      "text-embedding-3-small",
-      1.9664
-     ],
-     [
       "Claude Opus 5.5",
       1.436
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.4312
      ]
     ],
     "others_share": 0
@@ -14660,6 +13079,10 @@
       1.9894
      ],
      [
+      "Grok 4.7",
+      1.6776
+     ],
+     [
       "GLM 5.3 Flash",
       1.1528
      ]
@@ -14699,16 +13122,16 @@
       2.7513
      ],
      [
-      "text-embedding-3-small",
-      2.5143
-     ],
-     [
       "GLM 5.3 Flash",
       2.0931
      ],
      [
       "Claude Opus 5.5",
       1.4905
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.4633
      ]
     ],
     "others_share": 0
@@ -14789,6 +13212,10 @@
       2.5655
      ],
      [
+      "Grok 4.7",
+      1.8023
+     ],
+     [
       "Claude Fable 5.2",
       0.8747
      ],
@@ -14832,8 +13259,8 @@
       2.1849
      ],
      [
-      "text-embedding-3-small",
-      2.0934
+      "Claude Sonnet 5.5",
+      2.1162
      ],
      [
       "Claude Opus 5.5",
@@ -14922,6 +13349,10 @@
       4.5572
      ],
      [
+      "Grok 4.7",
+      2.0882
+     ],
+     [
       "DeepSeek V4.1 Flash 1017",
       1.9647
      ],
@@ -14969,8 +13400,8 @@
       2.5242
      ],
      [
-      "text-embedding-3-small",
-      2.0549
+      "Claude Sonnet 5.5",
+      2.0175
      ],
      [
       "Claude Opus 5.5",
@@ -15047,6 +13478,10 @@
       5.5202
      ],
      [
+      "Grok 4.7",
+      5.0649
+     ],
+     [
       "GPT-6.1 Sol",
       5.0419
      ],
@@ -15106,8 +13541,8 @@
       2.3248
      ],
      [
-      "text-embedding-3-small",
-      2.0971
+      "Claude Sonnet 5.5",
+      1.7487
      ]
     ],
     "others_share": 0
@@ -15184,6 +13619,10 @@
       4.4193
      ],
      [
+      "Grok 4.7",
+      4.2638
+     ],
+     [
       "GPT-6.1 Sol",
       3.9756
      ],
@@ -15239,8 +13678,8 @@
       2.599
      ],
      [
-      "text-embedding-3-small",
-      1.764
+      "Claude Sonnet 5.5",
+      1.867
      ]
     ],
     "others_share": 0
@@ -15321,6 +13760,10 @@
       4.8988
      ],
      [
+      "Grok 4.7",
+      3.3912
+     ],
+     [
       "DeepSeek V4.1 Flash 1017",
       2.2555
      ],
@@ -15372,8 +13815,8 @@
       2.8059
      ],
      [
-      "text-embedding-3-small",
-      1.608
+      "Claude Sonnet 5.5",
+      1.9926
      ]
     ],
     "others_share": 0
@@ -15450,6 +13893,10 @@
       5.0838
      ],
      [
+      "Grok 4.7",
+      4.7793
+     ],
+     [
       "Claude Fable 5.2",
       4.5936
      ],
@@ -15505,8 +13952,8 @@
       1.9698
      ],
      [
-      "text-embedding-3-small",
-      1.6687
+      "Claude Sonnet 5.5",
+      1.7804
      ]
     ],
     "others_share": 0
@@ -15583,6 +14030,10 @@
       5.5748
      ],
      [
+      "Grok 4.7",
+      3.4962
+     ],
+     [
       "Kimi K3",
       3.2914
      ],
@@ -15630,16 +14081,16 @@
       3.157
      ],
      [
-      "text-embedding-3-small",
-      1.9684
-     ],
-     [
       "Claude Haiku 5.5",
       1.9324
      ],
      [
       "Claude Opus 5.5",
       1.897
+     ],
+     [
+      "Claude Sonnet 5.5",
+      1.4145
      ]
     ],
     "others_share": 0
@@ -15724,6 +14175,10 @@
       2.3894
      ],
      [
+      "Grok 4.7",
+      1.6506
+     ],
+     [
       "GLM 5.3 Flash",
       1.6248
      ]
@@ -15771,8 +14226,8 @@
       2.3856
      ],
      [
-      "text-embedding-3-small",
-      2.0302
+      "Claude Sonnet 5.5",
+      2.0752
      ]
     ],
     "others_share": 0
@@ -15857,6 +14312,10 @@
       2.6601
      ],
      [
+      "Grok 4.7",
+      1.9465
+     ],
+     [
       "GLM 5.3 Flash",
       1.7018
      ],
@@ -15908,8 +14367,8 @@
       2.2694
      ],
      [
-      "text-embedding-3-small",
-      2.0303
+      "Claude Sonnet 5.5",
+      2.2676
      ]
     ],
     "others_share": 0
@@ -15994,16 +14453,16 @@
       2.1283
      ],
      [
+      "Grok 4.7",
+      2.0608
+     ],
+     [
       "DeepSeek V4.1 Flash 1017",
       2.0341
      ],
      [
       "GPT-6.2 Sol",
       1.0322
-     ],
-     [
-      "Gemini 4 Neon",
-      0.2181
      ]
     ],
     "others_share": 0
@@ -16049,8 +14508,8 @@
       2.3965
      ],
      [
-      "text-embedding-3-small",
-      1.9148
+      "Claude Sonnet 5.5",
+      2.3128
      ]
     ],
     "others_share": 0
@@ -16119,6 +14578,10 @@
       9.132
      ],
      [
+      "Grok 4.7",
+      9.047
+     ],
+     [
       "Kimi K3",
       8.5828
      ],
@@ -16141,10 +14604,6 @@
      [
       "DeepSeek V4.1 Flash 1017",
       1.1337
-     ],
-     [
-      "Gemini 4 Neon",
-      0.5225
      ]
     ],
     "others_share": 0
@@ -16178,6 +14637,10 @@
       3.0854
      ],
      [
+      "Claude Sonnet 5.5",
+      2.8491
+     ],
+     [
       "Claude Opus 5.5",
       2.6418
      ],
@@ -16188,10 +14651,6 @@
      [
       "DeepSeek V4.1 Flash",
       2.2645
-     ],
-     [
-      "text-embedding-3-small",
-      1.5171
      ]
     ],
     "others_share": 0
@@ -16256,6 +14715,10 @@
       12.3234
      ],
      [
+      "Grok 4.7",
+      11.951
+     ],
+     [
       "Claude Sonnet 5.5",
       8.7185
      ],
@@ -16282,10 +14745,6 @@
      [
       "GPT-6.2 Sol",
       1.5671
-     ],
-     [
-      "Gemini 4 Neon",
-      0.8198
      ]
     ],
     "others_share": 0
@@ -16319,6 +14778,10 @@
       3.5114
      ],
      [
+      "Claude Sonnet 5.5",
+      3.3069
+     ],
+     [
       "Claude Opus 5.5",
       2.6267
      ],
@@ -16329,10 +14792,6 @@
      [
       "DeepSeek V4.1 Flash",
       2.5451
-     ],
-     [
-      "text-embedding-3-small",
-      1.4475
      ]
     ],
     "others_share": 0
@@ -16405,6 +14864,10 @@
       9.8345
      ],
      [
+      "Grok 4.7",
+      6.2423
+     ],
+     [
       "Claude Fable 5.2",
       5.4143
      ],
@@ -16419,10 +14882,6 @@
      [
       "GLM 5.3 Flash",
       1.5853
-     ],
-     [
-      "Gemini 4 Neon",
-      1.4492
      ],
      [
       "GPT-6.2 Sol",
@@ -16460,6 +14919,10 @@
       3.5065
      ],
      [
+      "Claude Sonnet 5.5",
+      3.1825
+     ],
+     [
       "DeepSeek V4.1 Flash",
       2.9637
      ],
@@ -16470,10 +14933,6 @@
      [
       "Claude Opus 5.5",
       2.1031
-     ],
-     [
-      "text-embedding-3-small",
-      1.9083
      ]
     ],
     "others_share": 0
@@ -16546,6 +15005,10 @@
       11.1573
      ],
      [
+      "Grok 4.7",
+      5.3373
+     ],
+     [
       "Claude Fable 5.2",
       5.3238
      ],
@@ -16564,10 +15027,6 @@
      [
       "GPT-6.2 Sol",
       1.169
-     ],
-     [
-      "Gemini 4 Neon",
-      1.0596
      ]
     ],
     "others_share": 0
@@ -16601,16 +15060,16 @@
       3.1673
      ],
      [
+      "Claude Sonnet 5.5",
+      2.8734
+     ],
+     [
       "DeepSeek V4.1 Flash",
       2.8204
      ],
      [
       "Claude Haiku 5.5",
       2.0407
-     ],
-     [
-      "text-embedding-3-small",
-      1.7345
      ],
      [
       "Claude Opus 5.5",
@@ -16699,12 +15158,12 @@
       3.4192
      ],
      [
-      "GLM 5.3 Flash",
-      1.8797
+      "Grok 4.7",
+      1.987
      ],
      [
-      "Gemini 4 Neon",
-      1.5535
+      "GLM 5.3 Flash",
+      1.8797
      ],
      [
       "GPT-6.2 Sol",
@@ -16742,6 +15201,10 @@
       3.4522
      ],
      [
+      "Claude Sonnet 5.5",
+      3.0825
+     ],
+     [
       "DeepSeek V4.1 Flash",
       3.0296
      ],
@@ -16752,10 +15215,6 @@
      [
       "Claude Opus 5.5",
       1.9884
-     ],
-     [
-      "text-embedding-3-small",
-      1.8833
      ]
     ],
     "others_share": 0
@@ -16844,8 +15303,8 @@
       1.7866
      ],
      [
-      "Gemini 4 Neon",
-      1.63
+      "Grok 4.7",
+      1.6173
      ],
      [
       "GPT-6.2 Sol",
@@ -16887,12 +15346,12 @@
       3.0547
      ],
      [
-      "Claude Haiku 5.5",
-      2.0644
+      "Claude Sonnet 5.5",
+      2.3897
      ],
      [
-      "text-embedding-3-small",
-      2.0393
+      "Claude Haiku 5.5",
+      2.0644
      ],
      [
       "Claude Opus 5.5",
@@ -16981,12 +15440,12 @@
       3.6295
      ],
      [
-      "Gemini 4 Neon",
-      3.202
-     ],
-     [
       "DeepSeek V4.1 Flash 1017",
       2.5825
+     ],
+     [
+      "Grok 4.7",
+      2.038
      ],
      [
       "GLM 5.3 Flash",
@@ -17032,8 +15491,8 @@
       2.3662
      ],
      [
-      "text-embedding-3-small",
-      2.0298
+      "Claude Sonnet 5.5",
+      1.9729
      ],
      [
       "Claude Opus 5.5",
@@ -17110,10 +15569,6 @@
       5.1292
      ],
      [
-      "Gemini 4 Neon",
-      5.034
-     ],
-     [
       "GPT-6.1 Sol",
       4.1877
      ],
@@ -17132,6 +15587,10 @@
      [
       "DeepSeek V4.1 Flash 1017",
       2.3761
+     ],
+     [
+      "Grok 4.7",
+      1.1424
      ]
     ],
     "others_share": 0
@@ -17173,12 +15632,12 @@
       2.6927
      ],
      [
-      "text-embedding-3-small",
-      2.4132
-     ],
-     [
       "Claude Opus 5.5",
       2.4102
+     ],
+     [
+      "Claude Sonnet 5.5",
+      2.005
      ]
     ],
     "others_share": 0
@@ -17226,6 +15685,147 @@
      [
       "DeepSeek V4.1 Flash",
       2.2382
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-11-27",
+    "metric": "cost",
+    "shares": [
+     [
+      "Claude Opus 5.5",
+      31.3528
+     ],
+     [
+      "Claude Sonnet 5.5",
+      8.5418
+     ],
+     [
+      "Kimi K3",
+      5.6953
+     ],
+     [
+      "Claude Fable 5.2",
+      5.5384
+     ],
+     [
+      "GPT-6.1 Sol",
+      3.8607
+     ],
+     [
+      "GLM 5.3",
+      3.7143
+     ],
+     [
+      "GLM 5.3 Flash",
+      2.9564
+     ],
+     [
+      "GPT-6.2 Sol",
+      2.9523
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      2.5331
+     ],
+     [
+      "Grok 4.7",
+      2.1211
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-11-27",
+    "metric": "requests",
+    "shares": [
+     [
+      "Jev",
+      17.9902
+     ],
+     [
+      "GPT-6 Luna",
+      8.0589
+     ],
+     [
+      "DeepSeek V4.1 Flash 1017",
+      7.8324
+     ],
+     [
+      "GLM 5.3 Flash",
+      7.6611
+     ],
+     [
+      "Jev 1.14.0",
+      4.7705
+     ],
+     [
+      "Jev 1.13.0",
+      3.8531
+     ],
+     [
+      "Claude Opus 5.5",
+      3.2925
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      2.9531
+     ],
+     [
+      "Claude Haiku 5.5",
+      2.4277
+     ],
+     [
+      "Claude Sonnet 5.5",
+      2.288
+     ]
+    ],
+    "others_share": 0
+   },
+   {
+    "day": "2026-11-27",
+    "metric": "tokens",
+    "shares": [
+     [
+      "DeepSeek V4.1 Flash 1017",
+      26.8709
+     ],
+     [
+      "Beam 1.0",
+      12.0645
+     ],
+     [
+      "GLM 5.3 Flash",
+      11.6941
+     ],
+     [
+      "Claude Opus 5.5",
+      8.438
+     ],
+     [
+      "Nemotron 3.5 Lightning Free",
+      6.168
+     ],
+     [
+      "GPT-6 Luna",
+      4.8995
+     ],
+     [
+      "GLM 5.3",
+      2.8972
+     ],
+     [
+      "Claude Sonnet 5.5",
+      2.8816
+     ],
+     [
+      "DeepSeek V4.1 Flash",
+      2.1467
+     ],
+     [
+      "Jev",
+      1.9156
      ]
     ],
     "others_share": 0

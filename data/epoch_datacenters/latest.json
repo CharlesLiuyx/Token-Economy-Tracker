@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
  "source": "epoch_datacenters",
- "snapshot_date": "2026-11-27",
- "fetched_at": "2026-11-27T04:18:05+00:00",
+ "snapshot_date": "2026-11-28",
+ "fetched_at": "2026-11-28T03:58:16+00:00",
  "source_meta": {
   "kind": "official-download"
  },
@@ -10,9 +10,9 @@
   "sites": [
    {
     "name": "Colossus 2",
-    "h100_equivalents": 1111672.5618999496,
-    "power_mw": 946.0,
-    "capital_cost_busd": 35.836372,
+    "h100_equivalents": 1475492.6730672056,
+    "power_mw": 1246.0,
+    "capital_cost_busd": 47.200972,
     "owner": "SpaceXAI",
     "users": [
      "Anthropic",
@@ -1005,6 +1005,20 @@
     "country": "United States"
    },
    {
+    "name": "Mistral BruyÃ¨res-le-ChÃ¢tel",
+    "h100_equivalents": 34866.09398686205,
+    "power_mw": 31.0,
+    "capital_cost_busd": 1.174342,
+    "owner": "Mistral AI",
+    "users": [
+     "Mistral AI"
+    ],
+    "chip_types": [
+     "B300"
+    ],
+    "country": "France"
+   },
+   {
     "name": "CoreWeave Dalton 1 & 2",
     "h100_equivalents": 32238.504295098533,
     "power_mw": 28.0,
@@ -1074,11 +1088,35 @@
     "country": "Iceland"
    },
    {
+    "name": "Anthropic Abernathy",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "AI XPV Platform",
+    "users": [
+     "Anthropic"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
     "name": "Anthropic Barber Lake",
     "h100_equivalents": 0.0,
     "power_mw": 0.0,
     "capital_cost_busd": 0.0,
     "owner": "Cipher Mining",
+    "users": [
+     "Anthropic"
+    ],
+    "chip_types": [],
+    "country": "United States"
+   },
+   {
+    "name": "Anthropic River Bend",
+    "h100_equivalents": 0.0,
+    "power_mw": 0.0,
+    "capital_cost_busd": 0.0,
+    "owner": "AI XPV Platform",
     "users": [
      "Anthropic"
     ],
@@ -1359,10 +1397,45 @@
    },
    {
     "site": "Colossus 2",
-    "date": "2027-02-25",
-    "it_power_mw": 1531.0,
-    "power_mw": 2065.0,
-    "h100_equivalents": 1824153.6129358262
+    "date": "2026-08-20",
+    "it_power_mw": 946.0,
+    "power_mw": 1276.0,
+    "h100_equivalents": 1111672.5618999496
+   },
+   {
+    "site": "Colossus 2",
+    "date": "2026-09-16",
+    "it_power_mw": 1119.0,
+    "power_mw": 1510.0,
+    "h100_equivalents": 1323900.960080849
+   },
+   {
+    "site": "Colossus 2",
+    "date": "2026-10-06",
+    "it_power_mw": 1119.0,
+    "power_mw": 1510.0,
+    "h100_equivalents": 1323900.960080849
+   },
+   {
+    "site": "Colossus 2",
+    "date": "2026-10-28",
+    "it_power_mw": 1246.0,
+    "power_mw": 1680.0,
+    "h100_equivalents": 1475492.6730672056
+   },
+   {
+    "site": "Colossus 2",
+    "date": "2027-02-05",
+    "it_power_mw": 1511.0,
+    "power_mw": 2037.0,
+    "h100_equivalents": 1798888.3274381
+   },
+   {
+    "site": "Colossus 2",
+    "date": "2027-03-05",
+    "it_power_mw": 1776.0,
+    "power_mw": 2395.0,
+    "h100_equivalents": 2122283.9818089944
    },
    {
     "site": "OpenAI Stargate Abilene",
@@ -4382,6 +4455,27 @@
     "h100_equivalents": 154623.54724608388
    },
    {
+    "site": "Mistral BruyÃ¨res-le-ChÃ¢tel",
+    "date": "2023-04-05",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Mistral BruyÃ¨res-le-ChÃ¢tel",
+    "date": "2026-06-30",
+    "it_power_mw": 31.0,
+    "power_mw": 44.0,
+    "h100_equivalents": 34866.09398686205
+   },
+   {
+    "site": "Mistral BruyÃ¨res-le-ChÃ¢tel",
+    "date": "2026-07-04",
+    "it_power_mw": 31.0,
+    "power_mw": 44.0,
+    "h100_equivalents": 34866.09398686205
+   },
+   {
     "site": "CoreWeave Dalton 1 & 2",
     "date": "2024-06-03",
     "it_power_mw": 0.0,
@@ -4550,6 +4644,34 @@
     "h100_equivalents": 11642.243557352198
    },
    {
+    "site": "Anthropic Abernathy",
+    "date": "2025-12-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic Abernathy",
+    "date": "2026-03-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic Abernathy",
+    "date": "2026-05-13",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic Abernathy",
+    "date": "2026-12-31",
+    "it_power_mw": 168.0,
+    "power_mw": 240.0,
+    "h100_equivalents": 234461.84941889843
+   },
+   {
     "site": "Anthropic Barber Lake",
     "date": "2025-09-18",
     "it_power_mw": 0.0,
@@ -4583,6 +4705,41 @@
     "it_power_mw": 207.0,
     "power_mw": 300.0,
     "h100_equivalents": 288529.5603840323
+   },
+   {
+    "site": "Anthropic River Bend",
+    "date": "2025-09-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic River Bend",
+    "date": "2026-04-01",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic River Bend",
+    "date": "2026-10-09",
+    "it_power_mw": 0.0,
+    "power_mw": 0.0,
+    "h100_equivalents": 0.0
+   },
+   {
+    "site": "Anthropic River Bend",
+    "date": "2027-09-30",
+    "it_power_mw": 61.0,
+    "power_mw": 83.0,
+    "h100_equivalents": 85396.6649823143
+   },
+   {
+    "site": "Anthropic River Bend",
+    "date": "2027-12-31",
+    "it_power_mw": 245.0,
+    "power_mw": 330.0,
+    "h100_equivalents": 341586.6599292572
    },
    {
     "site": "CoreWeave Lancaster Greenfield site",
@@ -4943,17 +5100,24 @@
    },
    {
     "site": "Meta Hyperion",
-    "date": "2026-12-01",
+    "date": "2026-09-19",
     "it_power_mw": 0.0,
     "power_mw": 0.0,
     "h100_equivalents": 0.0
    },
    {
     "site": "Meta Hyperion",
-    "date": "2028-01-01",
-    "it_power_mw": 1632.0,
-    "power_mw": 2203.0,
-    "h100_equivalents": 4142944.4163719052
+    "date": "2028-12-31",
+    "it_power_mw": 1117.0,
+    "power_mw": 1508.0,
+    "h100_equivalents": 2835795.8564931783
+   },
+   {
+    "site": "Meta Hyperion",
+    "date": "2029-12-31",
+    "it_power_mw": 2064.0,
+    "power_mw": 2786.0,
+    "h100_equivalents": 5239919.151086408
    },
    {
     "site": "Microsoft Narvik Norway",
@@ -5349,10 +5513,10 @@
    }
   ],
   "aggregates": {
-   "site_count": 96,
-   "total_power_mw": 15122.0,
-   "total_h100_equivalents": 15768420,
-   "total_capital_cost_busd": 572.85
+   "site_count": 99,
+   "total_power_mw": 15453.0,
+   "total_h100_equivalents": 16167106,
+   "total_capital_cost_busd": 585.39
   }
  }
 }
