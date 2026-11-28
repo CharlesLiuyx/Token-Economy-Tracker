@@ -4,6 +4,23 @@
 # 本站自有数据写站内锚点如 "#p-gpu_table"）。
 # 收录门槛：今天才知道的增量信息；数字必须在来源里能核对到；没有新信息就不写当天条目。
 digest:
+  - date: 2026-11-28
+    items:
+      - tag: Token
+        text:
+          zh: Vercel AI Gateway 上 DeepSeek V4.1 Flash（1017 版）11-26 占全网关 token 的 23.9%，是 11-19（12.7%）的近两倍；自 11-22 起超过 Beam 1.0 成为份额第一，Beam 1.0 从 11-20 的 21.8% 降到 12.6%。
+          en: "On the Vercel AI Gateway, DeepSeek V4.1 Flash (1017) took 23.9% of all tokens on Nov 26, nearly double its 12.7% on Nov 19; it has led since Nov 22, overtaking Beam 1.0, which fell from 21.8% on Nov 20 to 12.6%."
+        source_url: "#p-vercel_tokens"
+      - tag: Token
+        text:
+          zh: OpenRouter 全平台滚动 7 天用量 11-27 为 240.2 万亿 token，自 11-21 低点（198.8 万亿）连续 6 天回升、累计 +21%，但仍比 11-20 的峰值 280.2 万亿低 14%。
+          en: "OpenRouter's platform-wide rolling 7-day volume was 240.2T tokens on Nov 27, up for six straight days and 21% above the Nov 21 low of 198.8T, but still 14% below the Nov 20 peak of 280.2T."
+        source_url: "#p-or_weekly_total"
+      - tag: GPU
+        text:
+          zh: vast.ai 按需 H100 租价中位数 11-27 为 $1.79/小时；10 月底到 11 月中多数日子在 $2.40 上下，11-19 起多日落在 $1.73–2.00，比 $2.40 低约 25%。
+          en: "The vast.ai on-demand H100 median was $1.79/hr on Nov 27; it sat around $2.40 on most days from late October to mid-November, but since Nov 19 has mostly landed in the $1.73-2.00 range, about 25% below $2.40."
+        source_url: "#p-gpu_table"
   - date: 2026-11-27
     items:
       - tag: GPU
